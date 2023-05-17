@@ -43,7 +43,8 @@ public class Login_page extends Base_Utility {
 	{
 		for(int i=0;i<=5;i++)
 		{
-			driver.findElement(By.xpath("//android.widget.EditText[@index='i']")).sendKeys("i");
+			custom_sendkeys(driver.findElement(By.xpath("//android.widget.EditText[@index='i']")), 
+					"+i+", " send OTP" +(i+1));
 		}
 	}
 }
