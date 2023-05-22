@@ -1,5 +1,7 @@
 package com.page_object;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +22,27 @@ public class Login_page extends Base_Utility {
 	private WebElement mobile_No;
 	@FindBy(id= "com.customerapp.hero:id/cus_orange_button_lay")
 	private WebElement continue_button;
-	@FindBy(id ="com.customerapp.hero:id/welcome_view")
-	private WebElement right_button;
+	@FindBy(className ="android.widget.EditText")
+	private List<WebElement> OTP;
+	@FindBy(xpath ="//android.widget.TextView[@text ='Resend']")
+	private WebElement resend_button;
+	@FindBy(xpath ="//android.widget.TextView[@text = 'Verify']")
+	private WebElement verify_button;
+	@FindBy(xpath ="//android.widget.TextView[@text ='Please proceed with your registered Hero mobile number']")
+	private WebElement Wrong_mobile_message;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/user_no_lbl']")
+	private WebElement registered_mobile_no;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/term_nd_cond_lbl']")
+	private WebElement Terms_of_Use;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/pp_lbl']")
+	private WebElement Privacy_Policy;
+	@FindBy(xpath ="//android.widget.TextView[@text = 'Contact Us']")
+	private WebElement contact_us;
+	@FindBy(xpath="//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/back_btn']")
+	private WebElement back_page;
+	@FindBy(id ="com.customerapp.hero:id/edit_phn_no_btn")
+	private WebElement edit_moble_button;
+
 	public WebElement close()
 	{
 		return close;
@@ -35,16 +56,55 @@ public class Login_page extends Base_Utility {
 	{
 		return continue_button;
 	}
-	public WebElement right_button()
+		public void enter_Valid_OTP()
 	{
-		return right_button;
-	}
-	public void enterOTP()
-	{
-		for(int i=0;i<=5;i++)
+			System.out.println(OTP.size());
+		for(int i=0;i<OTP.size();i++)
 		{
-			custom_sendkeys(driver.findElement(By.xpath("//android.widget.EditText[@index='i']")), 
-					"+i+", " send OTP" +(i+1));
+			custom_sendkeys(OTP.get(i), ""+(i+1), "enterOTP =" +(i+1));
 		}
 	}
+		public void enter_inavalid_OTP()
+		{
+			for(int i=0,j=5;i<OTP.size();i++,j++)
+			{
+				custom_sendkeys(OTP.get(i), ""+(j+1), "enterOTP =" +(j+1));
+			}
+		}
+		public WebElement resend_button()
+		{
+			return resend_button;
+		}
+		public WebElement verify_button()
+		{
+			return verify_button;
+		}
+		public WebElement Wrong_mobile_message()
+		{
+			return Wrong_mobile_message;
+		}
+		public WebElement registered_mobile_no()
+		{
+			return registered_mobile_no;
+		}
+		public WebElement Terms_of_Use()
+		{
+			return Terms_of_Use;
+		}
+		public WebElement Privacy_Policy()
+		{
+			return Privacy_Policy;
+		}
+		public WebElement contact_us()
+		{
+			return contact_us;
+		}
+		public WebElement back_page()
+		{
+			return back_page;
+		}
+		public WebElement edit_moble_button()
+		{
+			return edit_moble_button;
+		}
 }

@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-17T16:25:47 IST" name="Default suite" finished-at="2023-05-17T16:26:17 IST" duration-ms="29115">
+  <suite started-at="2023-05-22T19:43:42 IST" name="Hero_App" finished-at="2023-05-22T19:46:27 IST" duration-ms="165733">
     <groups>
     </groups>
-    <test started-at="2023-05-17T16:25:47 IST" name="Default test" finished-at="2023-05-17T16:26:17 IST" duration-ms="29115">
-      <class name="Page_Test.Appium_test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Appium_test@6b2ea799]" started-at="2023-05-17T16:25:47 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-05-17T16:26:08 IST" duration-ms="20589" status="PASS">
+    <test started-at="2023-05-22T19:43:42 IST" name="Login_page" finished-at="2023-05-22T19:46:27 IST" duration-ms="165733">
+      <class name="Page_Test.Login_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@411f53a0]" started-at="2023-05-22T19:43:42 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-05-22T19:44:06 IST" duration-ms="24675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC001_test()[pri:0, instance:Page_Test.Appium_test@6b2ea799]" started-at="2023-05-17T16:26:08 IST" name="TC001_test" finished-at="2023-05-17T16:26:17 IST" duration-ms="8494" status="PASS">
+        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@411f53a0]" started-at="2023-05-22T19:44:06 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-05-22T19:44:18 IST" duration-ms="11771" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_test -->
-      </class> <!-- Page_Test.Appium_test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
+        <test-method signature="TC002_Verify_Login_with_short_length_of_mobile_number_credential()[pri:1, instance:Page_Test.Login_Page_Test@411f53a0]" started-at="2023-05-22T19:44:18 IST" name="TC002_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-05-22T19:44:50 IST" duration-ms="32000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_Verify_Login_with_short_length_of_mobile_number_credential -->
+        <test-method signature="TC003_Verify_Login_with_valid_credential()[pri:2, instance:Page_Test.Login_Page_Test@411f53a0]" started-at="2023-05-22T19:44:50 IST" name="TC003_Verify_Login_with_valid_credential" finished-at="2023-05-22T19:46:27 IST" duration-ms="97241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_Verify_Login_with_valid_credential -->
+      </class> <!-- Page_Test.Login_Page_Test -->
+    </test> <!-- Login_page -->
+  </suite> <!-- Hero_App -->
 </testng-results>

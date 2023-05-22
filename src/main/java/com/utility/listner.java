@@ -5,6 +5,7 @@ import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -20,25 +21,32 @@ public class listner extends Base_Utility implements ITestListener {
 
 		public void onTestStart(ITestResult result) {
 			test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
-	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
+	
 			extent_test.set(test);
 		}
 	
 		public void onTestSuccess(ITestResult result) {
 			test.log(Status.PASS, "Test Case Pass" );
-			test.addScreenCaptureFromBase64String(result.getName());
-			
+//			if(result.getStatus()==ITestResult.SUCCESS)
+//			{
+//				test.addScreenCaptureFromPath(getcapcture(result.getName()));
+//			}
 		}
 	
 		public void onTestFailure(ITestResult result) {
 			test.log(Status.FAIL, "Test Case Fail");
-			test.addScreenCaptureFromBase64String(result.getName());
-//			library.test.addScreenCaptureFromBase64String(getscreenshot1());
-			
+			if(result.getStatus()==ITestResult.FAILURE)
+			{
+				test.addScreenCaptureFromPath(getcapcture(result.getName()));
+			}
 		}
 	
 		public void onTestSkipped(ITestResult result) {
 			test.log(Status.SKIP, "Test Case Skip");
+			if(result.getStatus()==ITestResult.SKIP)
+			{
+				test.addScreenCaptureFromPath(getcapcture(result.getName()));
+			}
 		}
 	
 	
@@ -63,9 +71,25 @@ public class listner extends Base_Utility implements ITestListener {
 			}			
 			return destination;
 		}
+//		public void getScreenShot(String foldername, String filename) {
+//			String path = System.getProperty("user.dir") + "\\Screen_Shot\\" + foldername + "\\" + filename + ".png";
+//			try {
+//				@SuppressWarnings("deprecation")
+//				EventFiringWebDriver ewf = new EventFiringWebDriver(driver);
+//				@SuppressWarnings("deprecation")
+//				File src = ewf.getScreenshotAs(OutputType.FILE);
+//				FileUtils.copyFile(src, new File(path));
+//			} catch (Exception e) {
+//				System.out.println("Problem in getScreen shot meythod" + e);
+//				
+//			}
+
+		
+		}
+
 		
 
 		
 	
 
-}
+

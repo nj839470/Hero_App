@@ -5,18 +5,18 @@ import java.io.FileOutputStream;
 import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -37,9 +37,11 @@ public class Base_Utility implements Config_data_provider , Excel_data_Provider 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static listner lis;
+	public WebDriverWait wait;
 	String confipath=System.getProperty("user.dir")+"\\config_data\\config.properties";
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
 	public static AppiumDriver driver;
+	
 @BeforeTest
 public void OPEN_AND_INSTALL_APP() 
 {
@@ -54,11 +56,12 @@ public void OPEN_AND_INSTALL_APP()
 	db.setCapability("appium:avdLaunchTimeout", 600000);
 	db.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\app-debug.apk"));
 	driver =new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	log = LogManager.getLogger("Hero_App_Apk");
 	db.setCapability("appium:ensureWebviewsHavePages", true);
 	db.setCapability("appium:nativeWebScreenshot", true);
 	db.setCapability("appium:newCommandTimeout", 6600);
+	 lis = new listner();
 
  //-------- for real device----------
 //	
@@ -72,8 +75,6 @@ public void OPEN_AND_INSTALL_APP()
 	} catch (Exception e) {
 	System.out.println(e);
 	}
-
-	
 }
 @Override
 public String config_getdata(String key) 
@@ -174,13 +175,14 @@ public void custom_sendkeys(WebElement element, String value, String fieldname) 
 			element.click();
 			element.sendKeys(value);
 		test.log(Status.PASS, fieldname+ " value send successfully ="+value +" " +fieldname );
-		log.info(" Value send successfully "+fieldname);
+		log.info(fieldname +" send successfully");
 		}
 }
 catch(Exception e) {
-		test.log(Status.FAIL, fieldname+"== Unable To Send  Value=="+e);
-		log.error("==Not==Value not send "+fieldname);
-}
+		test.log(Status.FAIL, fieldname +" is not able to send" +e);
+		log.error(fieldname +" is not able to send");
+		
+		}
 	
 }
 @Override
@@ -189,16 +191,15 @@ public void Custom_click(WebElement element, String fieldname) {
 		if(element.isDisplayed() || element.isEnabled()==true) {
 			element.click();
 			test.log(Status.PASS, "Successfully click on = "+ fieldname);
-			log.info("OK==Element is clickable "+fieldname);
+			log.info(fieldname + " is clickable");
 		}
 	}
 catch(Exception e) {
 		test.log(Status.FAIL,fieldname+ "==Unable To Click =="+e);
-		log.error("Unable To Click on  = "+fieldname);
-		
+		log.error(fieldname + " is not clickable");
+		lis.onTestFailure(null);
 					}
-	
-}
+	}
 @Override
 public void Swipe_page_Action(WebElement element, String direction, String fieldname) 
 {
@@ -218,5 +219,65 @@ public void Swipe_page_Action(WebElement element, String direction, String field
 
 	
 }
-
+@Override
+public void VerifyImagePresent(WebElement image, String fieldname) {
+	try {
+		Boolean ImagePresent = (Boolean)((JavascriptExecutor) driver)
+.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				image);
+		if (ImagePresent) {
+			test.log(Status.PASS, "Image is present:  " + fieldname);
+			log.info("Image is present " + fieldname);
+		}
+		else
+		{
+			test.log(Status.FAIL, fieldname + "==Image is not present ==" );
+			log.error("Image is not present" + fieldname);
+			lis.onTestFailure(null);
+			
+			}
+	} catch (Exception e) {
+		test.log(Status.FAIL, fieldname + "==Image is not present ==" + e);
+		log.error("Image is not present" + fieldname);
+		lis.onTestFailure(null);
+	}
 }
+@SuppressWarnings("deprecation")
+@Override
+public void PageLoaded() {
+	String	Title = null;
+	try {
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		Title = driver.getTitle();
+			test.log(Status.PASS, "Page is loaded : " + Title);
+			log.info("Page is loaded " + Title);
+		} catch (Exception e) {
+			test.log(Status.FAIL, "==page is not loaded :" + e);
+			log.error("page is not able to loaded " + Title);
+			lis.onTestFailure(null);
+			}
+	}
+@Override
+public void VerifyElementPresent(WebElement ele, String fieldname) {
+	try {
+		if (ele.isDisplayed()&& ele.isEnabled()== true){
+			String Text = ele.getText();
+			test.log(Status.PASS, "Element is present:  " + fieldname );
+			log.info(fieldname +" is present");
+		}
+		else
+		{
+			test.log(Status.PASS, "Element is not present:  " + fieldname );
+			log.info(fieldname +" is not present" );
+		}
+	} catch (Exception e) {
+		test.log(Status.FAIL, fieldname + "==Element is not present ==" + e);
+		log.error(fieldname  +" is not present");
+		lis.onTestFailure(null);
+	}
+
+	
+}
+}
+
+
