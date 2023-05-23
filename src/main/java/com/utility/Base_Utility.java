@@ -263,16 +263,16 @@ public void VerifyElementPresent(WebElement ele, String fieldname) {
 		if (ele.isDisplayed()&& ele.isEnabled()== true){
 			String Text = ele.getText();
 			test.log(Status.PASS, "Element is present:  " + fieldname );
-			log.info(fieldname +" is present");
+			log.info(fieldname +" present");
 		}
 		else
 		{
 			test.log(Status.PASS, "Element is not present:  " + fieldname );
-			log.info(fieldname +" is not present" );
+			log.info(fieldname +"  not present" );
 		}
 	} catch (Exception e) {
 		test.log(Status.FAIL, fieldname + "==Element is not present ==" + e);
-		log.error(fieldname  +" is not present");
+		log.error(fieldname  +"  not present");
 		lis.onTestFailure(null);
 	}
 

@@ -24,18 +24,19 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC003_Verify_Login_with_valid_credential() throws InterruptedException {
 		custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
-		VerifyElementPresent(ob.continue_button(), "Coninue button");
+		VerifyElementPresent(ob.continue_button(), "Coninue button is");
 		Custom_click(ob.continue_button(), "Coninue button");
 		String registered_mob = ob.registered_mobile_no().getText();
 		String[] mob = registered_mob.split(" ");
 		System.out.println(mob[1]);
 		assertEquals(config_getdata("mobileno"),mob[1]);
 		Thread.sleep(15000);
-		VerifyElementPresent(ob.resend_button(), "Resend button");
+		VerifyElementPresent(ob.resend_button(), "Resend button is");
 		Custom_click(ob.resend_button(), "Resend button");
 		Thread.sleep(15000);
 		ob.enter_inavalid_OTP();
 		Custom_click(ob.verify_button(), "Verify Button");
+		VerifyElementPresent(ob.verify_button(), "Verify Button is still");
 		Custom_click(ob.edit_moble_button(), "Edit Mobile Number");
 		custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
@@ -62,7 +63,7 @@ public class Login_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.mobile_No(), config_getdata("short_digit_mobile_number"),
 				"Login with short_digit_mobile_number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
-		VerifyElementPresent(ob.continue_button(), "Coninue button enter after short length of mobile number");
+		VerifyElementPresent(ob.continue_button(), "Coninue button enter after short length of mobile number is");
 		custom_sendkeys(ob.mobile_No(), config_getdata("max_digit_mobile_number"),
 				"Login with More than 10 digit mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
@@ -88,6 +89,7 @@ public class Login_Page_Test extends Base_Utility {
 		Thread.sleep(5000);
 		Custom_click(ob.back_page(), "back Contact us page ");
 	}
+	
 	public void login()
 	{
 		ob = new Login_page();

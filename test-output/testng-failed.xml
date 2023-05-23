@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Hero_App]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Login_page(failed)">
+  <test thread-count="5" name="Select_Vehicle_Page(failed)">
     <classes>
-      <class name="Page_Test.Login_Page_Test">
+      <class name="Page_Test.Select_Vehicle_Page_Test">
         <methods>
+          <include name="TC004_Select_Vehicle"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC003_Verify_Login_with_valid_credential"/>
         </methods>
-      </class> <!-- Page_Test.Login_Page_Test -->
+      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
     </classes>
-  </test> <!-- Login_page(failed) -->
+  </test> <!-- Select_Vehicle_Page(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

@@ -42,7 +42,6 @@ public class Login_page extends Base_Utility {
 	private WebElement back_page;
 	@FindBy(id ="com.customerapp.hero:id/edit_phn_no_btn")
 	private WebElement edit_moble_button;
-
 	public WebElement close()
 	{
 		return close;
@@ -107,4 +106,5 @@ public class Login_page extends Base_Utility {
 		{
 			return edit_moble_button;
 		}
+		
 }
