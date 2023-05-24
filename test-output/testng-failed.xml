@@ -5,7 +5,7 @@
     <classes>
       <class name="Page_Test.Select_Vehicle_Page_Test">
         <methods>
-          <include name="TC004_Select_Vehicle"/>
+          <include name="TC004_verify_Nick_Name"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
