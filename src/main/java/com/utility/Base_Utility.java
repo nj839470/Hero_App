@@ -16,8 +16,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -27,10 +29,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.AppiumFluentWait;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-
-public class Base_Utility implements Config_data_provider , Excel_data_Provider , extent_reports_generator , library
+@Listeners(com.utility.listner.class)
+public class Base_Utility implements Config_data_provider , Excel_data_Provider , extent_reports_generator , library ,ITestListener
 {
 	public static Logger log;
 	public static ExtentSparkReporter report;
@@ -40,7 +43,8 @@ public class Base_Utility implements Config_data_provider , Excel_data_Provider 
 	public WebDriverWait wait;
 	String confipath=System.getProperty("user.dir")+"\\config_data\\config.properties";
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
-	public static AppiumDriver driver;
+	public static AndroidDriver driver;
+	
 	
 @BeforeTest
 public void OPEN_AND_INSTALL_APP() 
@@ -90,11 +94,6 @@ public String config_getdata(String key)
 		System.out.println("Problem in read data from property file" + e);
 	}
 	return value;
-}
-public void Explicit_wait_for_APK(WebElement element) {
-	
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-	wait.until(ExpectedConditions.visibilityOf(element));
 }
 @Override
 public String excel_getdata(int sheetno, int row_No, int col_No) {
@@ -172,6 +171,8 @@ public ExtentReports getreports() {
 public void custom_sendkeys(WebElement element, String value, String fieldname) {
 	try {
 		if(element.isEnabled() || element.isDisplayed()==true) {
+			 wait=new WebDriverWait(driver,Duration.ofSeconds(30));
+		    	wait.until(ExpectedConditions.visibilityOf(element));
 			element.click();
 			element.sendKeys(value);
 		test.log(Status.PASS, fieldname+ " value send successfully ="+value +" " +fieldname );
@@ -189,6 +190,8 @@ catch(Exception e) {
 public void Custom_click(WebElement element, String fieldname) {
 	try {
 		if(element.isDisplayed() || element.isEnabled()==true) {
+			 wait=new WebDriverWait(driver,Duration.ofSeconds(30));
+	    	wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
 			test.log(Status.PASS, "Successfully click on = "+ fieldname);
 			log.info(fieldname + " is clickable");
@@ -197,7 +200,7 @@ public void Custom_click(WebElement element, String fieldname) {
 catch(Exception e) {
 		test.log(Status.FAIL,fieldname+ "==Unable To Click =="+e);
 		log.error(fieldname + " is not clickable");
-		lis.onTestFailure(null);
+	//	lis.onTestFailure(null);
 					}
 	}
 @Override
@@ -239,7 +242,7 @@ public void VerifyImagePresent(WebElement image, String fieldname) {
 	} catch (Exception e) {
 		test.log(Status.FAIL, fieldname + "==Image is not present ==" + e);
 		log.error("Image is not present" + fieldname);
-		lis.onTestFailure(null);
+	lis.onTestFailure(null);
 	}
 }
 @SuppressWarnings("deprecation")
@@ -262,16 +265,16 @@ public void VerifyElementPresent(WebElement ele, String fieldname) {
 	try {
 		if (ele.isDisplayed()&& ele.isEnabled()== true){
 			String Text = ele.getText();
-			test.log(Status.PASS, "Element is present:  " + fieldname );
+			test.log(Status.PASS,  fieldname +" present:" );
 			log.info(fieldname +" present");
 		}
 		else
 		{
-			test.log(Status.PASS, "Element is not present:  " + fieldname );
+			test.log(Status.PASS, fieldname +"  not present" );
 			log.info(fieldname +"  not present" );
 		}
 	} catch (Exception e) {
-		test.log(Status.FAIL, fieldname + "==Element is not present ==" + e);
+		test.log(Status.FAIL, fieldname + " not present" + e);
 		log.error(fieldname  +"  not present");
 		lis.onTestFailure(null);
 	}

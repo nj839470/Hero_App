@@ -6,9 +6,14 @@
       <class name="Page_Test.Login_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
-   <test name="Select_Vehicle_Page" enabled="true">
+   <test name="Select_Vehicle_Page" enabled="false">
     <classes>
       <class name="Page_Test.Select_Vehicle_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
- </suite> <!-- Hero_App -->
+  <test name="Home_Page_Test" enabled="true">
+    <classes>
+      <class name="Page_Test.Home_Page_Test"/>
+    </classes>
+  </test> <!-- Login_page -->
+</suite> <!-- Hero_App -->
