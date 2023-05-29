@@ -5,7 +5,7 @@
     <classes>
       <class name="Page_Test.Home_Page_Test">
         <methods>
-          <include name="TC006_Home_page_verify"/>
+          <include name="TC009_Verify_Insurance"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.Home_Page_Test -->

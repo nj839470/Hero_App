@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -30,8 +31,11 @@ import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumFluentWait;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 @Listeners(com.utility.listner.class)
 public class Base_Utility implements Config_data_provider , Excel_data_Provider , extent_reports_generator , library ,ITestListener
 {
@@ -182,7 +186,7 @@ public void custom_sendkeys(WebElement element, String value, String fieldname) 
 catch(Exception e) {
 		test.log(Status.FAIL, fieldname +" is not able to send" +e);
 		log.error(fieldname +" is not able to send");
-		
+		lis.onTestFailure(null);
 		}
 	
 }
@@ -200,28 +204,42 @@ public void Custom_click(WebElement element, String fieldname) {
 catch(Exception e) {
 		test.log(Status.FAIL,fieldname+ "==Unable To Click =="+e);
 		log.error(fieldname + " is not clickable");
-	//	lis.onTestFailure(null);
+		lis.onTestFailure(null);
 					}
 	}
-@Override
-public void Swipe_page_Action(WebElement element, String direction, String fieldname) 
-{
-	try {
-		if(element.isEnabled() && element.isDisplayed()==true) {
-	((JavascriptExecutor)driver).executeScript("mobile: swipeGesture", 
-			ImmutableMap.of("elementId",((RemoteWebElement)element).getId(),"direction",direction,"percent",1));
-	//direction ( left , right , up , down) & increase percentage you want
-	test.log(Status.PASS, fieldname+ "Successfully swipe Action=="+ direction);
-			log.info("OK==Successfully swipe Action "+fieldname);
-			}
-		}
-	catch(Exception e) {
-		test.log(Status.FAIL,fieldname+ "Unable To swipe Action =="+e);
-		log.error("==NOT==Unable To swipe Action  "+fieldname);
-		}
-
-	
+//======================================================================================================================================================	    
+@SuppressWarnings({ "deprecation", "rawtypes" })
+public void Scroll_down_page_Action(String fieldname) {  	
+    try {
+    	Dimension dim = driver.manage().window().getSize();	    	
+    	int startx = (int) (dim.width*0.5);
+    	int starty = (int) (dim.height*0.2);	    	
+    	int endx   =  (int) (dim.width*0.2);  	
+    	int endy   = (int) (dim.height*0.8);
+    	TouchAction action = new TouchAction(driver);
+    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
+    		.release().perform();
+    	test.log(Status.PASS, "Successfully Scroll page Action =="+ fieldname);
+    	log.info("Successfully  Scroll page down Action "+fieldname);
+    	
+    }catch(Exception e) {		    	
+		test.log(Status.FAIL,fieldname+ "Unable To Scroll page Action =="+e);
+    	log.error("==NOT==Unable To Scroll page down Action "+fieldname);
+	}	    
 }
+//======================================================================================================================================================
+@SuppressWarnings({ "rawtypes", "deprecation" })
+	public void swipe_page_direction(int startx,int starty,int endx,int endy,String fieldname ) {
+  	try {
+  		TouchAction action = new TouchAction(driver);
+      	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
+  		.release().perform();
+      	log.info("Successfully  Swipe page direction Action "+fieldname);
+  	}catch(Exception e) {		    	
+  		log.error("==NOT==Unable To Swipe page direction Action "+fieldname);
+		}	
+  }
+////////////////////////////////////////////////////////////////////////////////////////////////////
 @Override
 public void VerifyImagePresent(WebElement image, String fieldname) {
 	try {

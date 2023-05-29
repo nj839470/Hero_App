@@ -21,8 +21,8 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC004_verify_Nick_Name() {
-		login = new Login_Page_Test();
 		ob = new Select_Vehicle_Page();
+		login = new Login_Page_Test();
 		login.login();
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		VerifyElementPresent(ob.save_button(), "Save button before updating the nick name is ");
