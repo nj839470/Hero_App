@@ -5,9 +5,15 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.Status;
 import com.utility.Base_Utility;
+
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Home_Page extends Base_Utility{
 	public Home_Page()
@@ -247,10 +253,24 @@ public WebElement Technical_Support_Manager_Contact_Number()
 //****************************Dealer Locator************************************
 @FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='5']")
 private WebElement Dealer_Locator;
-@FindBy(xpath ="//android.widget.TextView[@text ='Select State']")
+@FindBy(xpath ="(//android.widget.TextView[@text])[2]")
 private WebElement Select_State;
-@FindBy(xpath ="//android.widget.TextView[@text ='Select City']")
+@FindBy(xpath ="(//android.widget.TextView[@text])[3]")
 private WebElement Select_City;
+@FindBy(xpath ="//android.widget.TextView[@text]")
+private List<WebElement> Select_State_list;
+@FindBy(xpath ="//android.widget.ImageButton[@resource-id='com.customerapp.hero:id/floating_button2']")
+private WebElement map_view;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/service_center_lbl']")
+private WebElement Dealer_name;
+@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_center_address_lbl']")
+private WebElement Dealer_address;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/service_center_km_lbl']")
+private WebElement Dealer_distance;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/service_center_duration_lbl']")
+private WebElement Dealer_duration_time;
+@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/callBtn']")
+private WebElement Call_Dealer;
 public WebElement Dealer_Locator()
 {
 	return Dealer_Locator;
@@ -263,4 +283,55 @@ public WebElement Select_City()
 {
 	return Select_City;
 }
+public void Select_State(String value)
+{for(int i=0;i<Select_State_list.size();i++)
+	{if(Select_State_list.get(i).getText().equalsIgnoreCase(value))
+		{Custom_click(Select_State_list.get(i), value);
+			break;}
+		else
+		{((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			if(i==17)
+			{Select_State_list.get(i).click();
+				Select_State.click();
+				i=0;}}}}
+public void Select_City(String value)
+{for(int i=0;i<Select_State_list.size();i++)
+	{if(Select_State_list.get(i).getText().equalsIgnoreCase(value))
+		{Custom_click(Select_State_list.get(i), value);
+			break;}
+		else
+		{((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			if(i==17)
+			{Select_State_list.get(i).click();
+				Select_City.click();
+				i=0;
+				}}}}
+public WebElement map_view()
+{
+	return map_view;
 }
+public WebElement Dealer_name()
+{
+	return Dealer_name;
+}
+public WebElement Dealer_address()
+{
+	return Dealer_address;
+}
+public WebElement Dealer_distance()
+{
+	return Dealer_distance;
+}
+public WebElement Dealer_duration_time()
+{
+	return Dealer_duration_time;
+}
+public WebElement Call_Dealer()
+{
+	return Call_Dealer;
+}
+
+}
+
+
+

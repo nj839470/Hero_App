@@ -44,10 +44,13 @@ public class Base_Utility implements Config_data_provider , Excel_data_Provider 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static listner lis;
-	public WebDriverWait wait;
+	public static WebDriverWait wait;
+	public static TouchAction action;
 	String confipath=System.getProperty("user.dir")+"\\config_data\\config.properties";
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
 	public static AndroidDriver driver;
+
+	
 	
 	
 @BeforeTest
@@ -56,7 +59,7 @@ public void OPEN_AND_INSTALL_APP()
 	try {
   //-----for virtual device---------
 	UiAutomator2Options db=new UiAutomator2Options();
-//	DesiredCapabilities db = new DesiredCapabilities();
+//  DesiredCapabilities db = new DesiredCapabilities();
 	db.setCapability("appium:automationName", "uiautomator2");
 	db.setCapability("platformName", "Android");
 	db.setCapability("appium:deviceName", "Pixel_6_API_31");
@@ -70,6 +73,7 @@ public void OPEN_AND_INSTALL_APP()
 	db.setCapability("appium:nativeWebScreenshot", true);
 	db.setCapability("appium:newCommandTimeout", 6600);
 	 lis = new listner();
+	 
 
  //-------- for real device----------
 //	
@@ -216,7 +220,7 @@ public void Scroll_down_page_Action(String fieldname) {
     	int starty = (int) (dim.height*0.2);	    	
     	int endx   =  (int) (dim.width*0.2);  	
     	int endy   = (int) (dim.height*0.8);
-    	TouchAction action = new TouchAction(driver);
+    	 action = new TouchAction(driver);
     	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
     		.release().perform();
     	test.log(Status.PASS, "Successfully Scroll page Action =="+ fieldname);
@@ -231,7 +235,7 @@ public void Scroll_down_page_Action(String fieldname) {
 @SuppressWarnings({ "rawtypes", "deprecation" })
 	public void swipe_page_direction(int startx,int starty,int endx,int endy,String fieldname ) {
   	try {
-  		TouchAction action = new TouchAction(driver);
+  		 action = new TouchAction(driver);
       	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
   		.release().perform();
       	log.info("Successfully  Swipe page direction Action "+fieldname);

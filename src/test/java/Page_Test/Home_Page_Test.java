@@ -1,5 +1,6 @@
 package Page_Test;
 
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -7,6 +8,7 @@ import com.aventstack.extentreports.Status;
 import com.page_object.Home_Page;
 import com.utility.Base_Utility;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -16,6 +18,7 @@ public class Home_Page_Test extends Base_Utility {
 
 	public Login_Page_Test login;
 	public Home_Page ob;
+	
 
 	@Test(priority = 0)
 	public void TC006_Home_page_verify() throws InterruptedException {
@@ -92,11 +95,25 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.Back(), "Back from Technical Support Manager");
 	}
 	@Test(priority = 5)
-	public void TC011_Verify_Dealer_Locator()
+	public void TC012_Verify_Dealer_Locator()
 	{
+		login = new Login_Page_Test();
+		ob = new Home_Page();
+		login.login();
 		Custom_click(ob.Dealer_Locator(), "Dealer Locator");
-		custom_sendkeys(ob.Select_State(), "Bihar", "State");
-		custom_sendkeys(ob.Select_City(), "Samstipur", "City");
+		Custom_click(ob.Select_State(), "Select state");
+		ob.Select_State("BIHAR");
+		Custom_click(ob.Select_City(), "Select city");
+		ob.Select_City("BAGAHA");
+		Custom_click(ob.map_view(), "Map View dealer name and address");
+		msg("Dealer name =" +ob.Dealer_name().getText());
+		msg("Dealer address =" +ob.Dealer_address().getText());
+		msg("Dealer distance =" +ob.Dealer_distance().getText());
+		msg("Dealer duration time ="+ob.Dealer_duration_time().getText());
+		Custom_click(ob.Call_Dealer(), "Call Dealer button ");
+		driver.navigate().back();
+		driver.navigate().back();
+		driver.navigate().back();
 		Custom_click(ob.Back(), "Back from Dealer Locator");
 	}
 }

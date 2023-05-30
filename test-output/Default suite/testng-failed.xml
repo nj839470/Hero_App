@@ -6,7 +6,7 @@
       <class name="Page_Test.Home_Page_Test">
         <methods>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC008_Verify_Relationship_Manager"/>
+          <include name="TC012_Verify_Dealer_Locator"/>
         </methods>
       </class> <!-- Page_Test.Home_Page_Test -->
     </classes>
