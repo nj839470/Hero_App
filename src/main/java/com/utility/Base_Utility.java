@@ -299,6 +299,19 @@ public void VerifyElementPresent(WebElement ele, String fieldname) {
 
 	
 }
+@Override
+public void msg(String filedname) {
+	try {
+		test.log(Status.PASS,filedname );
+		log.info(filedname);
+	} catch (Exception e) {
+		test.log(Status.FAIL, filedname + e);
+		log.error(filedname);
+		lis.onTestFailure(null);
+	}
+
+	
+}
 }
 
 

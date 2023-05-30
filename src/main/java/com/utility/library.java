@@ -8,4 +8,5 @@ public interface library {
 	public void VerifyImagePresent(WebElement image, String fieldname);
 	public void PageLoaded();
 	public void VerifyElementPresent(WebElement ele, String fieldname);
+	public void msg(String filedname);
 }

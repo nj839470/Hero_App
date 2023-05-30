@@ -147,6 +147,10 @@ public WebElement Documents_Menu()
 {
 	return Documents_Menu;
 }
+public WebElement Back()
+{
+	return Back;
+}
 public void Documents_list() throws InterruptedException
 {
 	for(int i=1;i<Documents_list.size();i++) 
@@ -173,5 +177,90 @@ public void Documents_list() throws InterruptedException
 		Custom_click(Back, name +" Back Document");
 
 	}
+}
+//****************************Relationship Manager************************************
+@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='2']")
+private WebElement Relationship_Manager;
+@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
+private WebElement Relationship_Manager_name;
+@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl2']")
+private WebElement Relationship_Manager_Address;
+@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl3']")
+private WebElement Relationship_Manager_Contact_number;
+@FindBy(xpath ="//android.widget.TextView[contains(@resource-id, 'com.customerapp.hero:id/tsmAsmName')]")
+private List<WebElement> Others_Contacts;
+public WebElement Relationship_Manager()
+{
+	return Relationship_Manager;
+}
+public WebElement Relationship_Manager_name()
+{
+	return Relationship_Manager_name;	
+}
+public WebElement Relationship_Manager_Address()
+{
+	return Relationship_Manager_Address;
+}
+public WebElement Relationship_Manager_Contact_number()
+{
+	return Relationship_Manager_Contact_number;
+}
+public void Others_Contacts()
+{
+	for(int i=0;i<Others_Contacts.size();i++)
+	{
+		msg("Others Contacts information =" +Others_Contacts.get(i).getText());
+	}
+}
+//****************************RSA************************************
+@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='3']")
+private WebElement RSA;
+public WebElement RSA()
+{
+	return RSA;
+}
+//****************************Technical Support************************************
+@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='4']")
+private WebElement Technical_Support;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl1']")
+private WebElement Technical_Support_Manager_Name;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl2']")
+private WebElement Technical_Support_Manager_Address;
+@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl3']")
+private WebElement Technical_Support_Manager_Contact_Number;
+public WebElement Technical_Support()
+{
+	return Technical_Support;
+}
+public WebElement Technical_Support_Manager_Name()
+{
+	return Technical_Support_Manager_Name;
+}
+public WebElement Technical_Support_Manager_Address()
+{
+	return Technical_Support_Manager_Address;
+}
+public WebElement Technical_Support_Manager_Contact_Number()
+{
+	return Technical_Support_Manager_Contact_Number;
+}
+//****************************Dealer Locator************************************
+@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='5']")
+private WebElement Dealer_Locator;
+@FindBy(xpath ="//android.widget.TextView[@text ='Select State']")
+private WebElement Select_State;
+@FindBy(xpath ="//android.widget.TextView[@text ='Select City']")
+private WebElement Select_City;
+public WebElement Dealer_Locator()
+{
+	return Dealer_Locator;
+}
+public WebElement Select_State()
+{
+	return Select_State;
+}
+public WebElement Select_City()
+{
+	return Select_City;
 }
 }
