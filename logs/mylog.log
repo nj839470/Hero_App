@@ -1,0 +1,24 @@
+[INFO ] 2023-05-31 16:34:01.956 [main] Hero_App - Close button is clickable
+[INFO ] 2023-05-31 16:34:05.148 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-05-31 16:34:07.218 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-05-31 16:34:26.517 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-05-31 16:34:28.729 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-05-31 16:34:30.022 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-05-31 16:34:31.301 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-05-31 16:34:32.604 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-05-31 16:34:33.878 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-05-31 16:34:34.850 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-05-31 16:34:39.113 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-05-31 16:34:44.853 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-05-31 16:34:47.474 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-05-31 16:34:59.281 [main] Hero_App - Vodeo close is clickable
+[INFO ] 2023-05-31 16:35:01.748 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-05-31 16:35:02.779 [main] Hero_App - My profile is clickable
+[INFO ] 2023-05-31 16:35:04.095 [main] Hero_App - User name = ANKIT
+[INFO ] 2023-05-31 16:35:04.166 [main] Hero_App - User mobile number =+91 8726494540
+[INFO ] 2023-05-31 16:35:04.250 [main] Hero_App - User email =ankit@gmail.com
+[INFO ] 2023-05-31 16:35:04.613 [main] Hero_App - More details is clickable
+[INFO ] 2023-05-31 16:35:05.290 [main] Hero_App - Date of Birth = 
+[INFO ] 2023-05-31 16:35:05.408 [main] Hero_App - Gender = Male
+[INFO ] 2023-05-31 16:35:05.531 [main] Hero_App - Blood Group = 
+[INFO ] 2023-05-31 16:35:05.900 [main] Hero_App - Edit profile details button is clickable
