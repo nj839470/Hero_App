@@ -9,6 +9,7 @@ import com.utility.Base_Utility;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+
 @Listeners(com.utility.listner.class)
 public class Home_Page_Test extends Base_Utility {
 
@@ -82,7 +83,7 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(2000);
 		Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
-		
+
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 
@@ -97,15 +98,24 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 5)
-	public void TC012_Verify_Dealer_Locator() {
+	public void TC012_Verify_Dealer_Locator() throws InterruptedException {
 //		login = new Login_Page_Test();
 //		ob = new Home_Page();
 //		login.login();
 		Custom_click(ob.Dealer_Locator(), "Dealer Locator");
+		Thread.sleep(2000);
 		Custom_click(ob.Select_State(), "Select state");
 		ob.Select_State("BIHAR");
+	}
+
+	@Test(priority = 6)
+	public void Select_city() {
 		Custom_click(ob.Select_City(), "Select city");
 		ob.Select_City("BAGAHA");
+	}
+
+	@Test(priority = 7)
+	public void View_dealer_name_and_address() {
 		Custom_click(ob.map_view(), "Map View dealer name and address");
 		ob.Dealer_info();
 		Custom_click(ob.Back(), "Back from Dealer Locator");

@@ -12,6 +12,7 @@ import com.utility.Base_Utility;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+
 @Listeners(com.utility.listner.class)
 
 public class Select_Vehicle_Page_Test extends Base_Utility {
@@ -40,6 +41,10 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		}
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
+	}
+
+	@Test(priority = 1)
+	public void Verify_With_30_letter_nick_name() {
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("30_letter_nick_name"), " 30 letter Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.save_button(), "Save button after updating the 30 letter nick name is ");
@@ -51,6 +56,10 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 			test.log(Status.PASS, " = 30 letter nick name are not acceptable");
 			log.info("30 letter nick name are not acceptable ");
 		}
+	}
+
+	@Test(priority = 2)
+	public void Verify_With_31_letter_nick_name() {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("31_letter_nick_name"), "31 letter Nick Name ");
@@ -64,6 +73,10 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 			test.log(Status.PASS, " = 31 letter nick name are not acceptable");
 			log.info("31 letter nick name are not acceptable ");
 		}
+	}
+
+	@Test(priority = 3)
+	public void Verify_With_29_letter_nick_name() {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("29_letter_nick_name"), "29 letter Nick Name ");
@@ -81,7 +94,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 4)
 	public void TC005_Select_Vehicle() throws InterruptedException {
 		VerifyElementPresent(ob.continue_button(), "Continue Button before select vehicle is");
 		ob.vehicle_count();
@@ -90,9 +103,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 		Custom_click(ob.While_using_the_app(), "While using the app");
 		Thread.sleep(2000);
-	//	Custom_click(ob.video_full_video(), "Video full");
-	//	Thread.sleep(2000);
-	//	Custom_click(ob.video_close_button(), "Vodeo close");
+		// Custom_click(ob.video_full_video(), "Video full");
+		// Thread.sleep(2000);
+		// Custom_click(ob.video_close_button(), "Vodeo close");
 
 	}
 }
