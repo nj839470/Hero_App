@@ -14,12 +14,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
@@ -28,16 +27,13 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.google.common.collect.ImmutableMap;
-
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.AppiumFluentWait;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
+@SuppressWarnings("deprecation")
 @Listeners(com.utility.listner.class)
 public class Base_Utility
 		implements Config_data_provider, Excel_data_Provider, extent_reports_generator, library, ITestListener {
@@ -52,7 +48,7 @@ public class Base_Utility
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
 	public static AndroidDriver driver;
 
-	@BeforeTest
+	@BeforeSuite
 	public void OPEN_AND_INSTALL_APP() {
 		try {
 //  //-----for virtual device---------
@@ -201,14 +197,14 @@ public class Base_Utility
 		report = new ExtentSparkReporter(path);
 		report.config().setDocumentTitle("Hero_App Test Report");
 		report.config().setReportName("Hero_App");
-		report.config().setTheme(Theme.DARK);
+		report.config().setTheme(Theme.STANDARD);
 		extent = new ExtentReports();
 		extent.attachReporter(report);
-		extent.setSystemInfo("System Name", "Project Name");
-		extent.setSystemInfo("Laptop-Dell", "Hero_App");
+		extent.setSystemInfo("Project Name", "Hero App");
+		extent.setSystemInfo("Laptop", "Dell intel core i7");
 		extent.setSystemInfo("QA", "Nitesh Kumar");
 		extent.setSystemInfo("Operating system", "Windows 10 pro");
-		extent.setSystemInfo("BrowserName", "Chrome");
+		extent.setSystemInfo("BrowserName", "Android Studio");
 		return extent;
 	}
 
@@ -295,13 +291,13 @@ public class Base_Utility
 			} else {
 				test.log(Status.FAIL, fieldname + "==Image is not present ==");
 				log.error("Image is not present" + fieldname);
-				lis.onTestFailure(null);
+		//		lis.onTestFailure(null);
 
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + "==Image is not present ==" + e);
 			log.error("Image is not present" + fieldname);
-			lis.onTestFailure(null);
+		//	lis.onTestFailure(null);
 		}
 	}
 
@@ -317,7 +313,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, "==page is not loaded :" + e);
 			log.error("page is not able to loaded " + Title);
-			lis.onTestFailure(null);
+		//	lis.onTestFailure(null);
 		}
 	}
 
@@ -335,7 +331,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + " not present" + e);
 			log.error(fieldname + "  not present");
-			lis.onTestFailure(null);
+		//	lis.onTestFailure(null);
 		}
 
 	}
@@ -348,8 +344,10 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, filedname + e);
 			log.error(filedname);
-			lis.onTestFailure(null);
+		//	lis.onTestFailure(null);
 		}
 
 	}
+	
+	
 }

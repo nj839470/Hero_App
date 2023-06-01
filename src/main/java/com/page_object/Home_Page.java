@@ -221,10 +221,17 @@ public class Home_Page extends Base_Utility {
 //****************************RSA************************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='3']")
 	private WebElement RSA;
+	@FindBy(xpath ="//android.widget.TextView[@text ='Locate nearest dealer']")
+	private WebElement locate_nearest_dealer;
 
 	public WebElement RSA() {
 		return RSA;
 	}
+		public WebElement locate_nearest_dealer()
+		{
+			return locate_nearest_dealer;
+		}
+	
 
 //****************************Technical Support************************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='4']")

@@ -1,6 +1,7 @@
 package com.utility;
 
 import org.openqa.selenium.WebElement;
+import org.testng.ITestResult;
 
 public interface library {
 	public void custom_sendkeys(WebElement element,String value,String fieldname);

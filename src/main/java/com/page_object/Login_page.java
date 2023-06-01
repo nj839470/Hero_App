@@ -34,10 +34,16 @@ public class Login_page extends Base_Utility {
 	private WebElement registered_mobile_no;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/term_nd_cond_lbl']")
 	private WebElement Terms_of_Use;
+	@FindBy(xpath ="(//android.view.View[@text])[23]")
+	private WebElement Terms_of_Use_condition;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/pp_lbl']")
 	private WebElement Privacy_Policy;
+	@FindBy(xpath="(//android.view.View[@text])[24]")
+	private WebElement Privacy_Policy_condition;
 	@FindBy(xpath ="//android.widget.TextView[@text = 'Contact Us']")
 	private WebElement contact_us;
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/btn_lay']")
+	private WebElement contact_via_email;
 	@FindBy(xpath="//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/back_btn']")
 	private WebElement back_page;
 	@FindBy(id ="com.customerapp.hero:id/edit_phn_no_btn")
@@ -65,7 +71,7 @@ public class Login_page extends Base_Utility {
 	}
 		public void enter_inavalid_OTP()
 		{
-			for(int i=0,j=5;i<OTP.size();i++,j++)
+			for(int i=0,j=3;i<OTP.size();i++,j++)
 			{
 				custom_sendkeys(OTP.get(i), ""+(j+1), "enterOTP =" +(j+1));
 			}
@@ -90,9 +96,21 @@ public class Login_page extends Base_Utility {
 		{
 			return Terms_of_Use;
 		}
+		public WebElement Terms_of_Use_condition()
+		{
+			return Terms_of_Use_condition;
+		}
 		public WebElement Privacy_Policy()
 		{
 			return Privacy_Policy;
+		}
+		public WebElement Privacy_Policy_condition()
+		{
+			return Privacy_Policy_condition;
+		}
+		public WebElement contact_via_email()
+		{
+			return contact_via_email;
 		}
 		public WebElement contact_us()
 		{

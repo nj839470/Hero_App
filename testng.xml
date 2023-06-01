@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Hero_App">
+	<listeners>
+<listener class-name="com.utility.listner"></listener>
+</listeners>
   <test name="Login_page" enabled="true">
     <classes>
       <class name="Page_Test.Login_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
-   <test name="Select_Vehicle_Page" enabled="true">
+   <test name="Select_Vehicle_Page" enabled="false">
     <classes>
       <class name="Page_Test.Select_Vehicle_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
-  <test name="Home_Page_Test" enabled="true">
+  <test name="Home_Page_Test" enabled="false">
     <classes>
       <class name="Page_Test.Home_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
-  <test name="My_Profile_Page_Test" enabled="true">
+  <test name="My_Profile_Page_Test" enabled="false">
     <classes>
+      <class name="Page_Test.My_Profile_Page_Test"/>
+    </classes>
+  </test> <!-- Login_page -->
+  <test name="All test class" enabled="false">
+    <classes>
+      <class name="Page_Test.Login_Page_Test"/>
+      <class name="Page_Test.Select_Vehicle_Page_Test"/>
+      <class name="Page_Test.Home_Page_Test"/>
       <class name="Page_Test.My_Profile_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->

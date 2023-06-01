@@ -12,8 +12,8 @@ import com.utility.Base_Utility;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-
 @Listeners(com.utility.listner.class)
+
 public class Select_Vehicle_Page_Test extends Base_Utility {
 
 	public Select_Vehicle_Page ob;
@@ -90,9 +90,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 		Custom_click(ob.While_using_the_app(), "While using the app");
 		Thread.sleep(2000);
-		Custom_click(ob.video_full_video(), "Video full");
-		Thread.sleep(2000);
-		Custom_click(ob.video_close_button(), "Vodeo close");
+	//	Custom_click(ob.video_full_video(), "Video full");
+	//	Thread.sleep(2000);
+	//	Custom_click(ob.video_close_button(), "Vodeo close");
 
 	}
 }

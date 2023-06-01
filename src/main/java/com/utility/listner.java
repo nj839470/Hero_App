@@ -1,6 +1,9 @@
 package com.utility;
 
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -57,7 +60,7 @@ public class listner extends Base_Utility implements ITestListener {
 		
 		public String getcapcture(String screenshot_name) {
 			String destination = System.getProperty("user.dir")+ "/failed_Tests_ScreenShots/" + 
-					screenshot_name +".png";
+					screenshot_name +".png" +date_and_Time("dd-MM-yyyy_hh mm ss");
 			try {
 				
 				TakesScreenshot ts=(TakesScreenshot) driver;
@@ -83,7 +86,17 @@ public class listner extends Base_Utility implements ITestListener {
 //				System.out.println("Problem in getScreen shot meythod" + e);
 //				
 //			}
-
+		public String date_and_Time(String formate) {
+			String value = "";
+			try {
+				Date db = new Date();
+				DateFormat df = new SimpleDateFormat(formate);
+				value = df.format(db);
+			} catch (Exception e) {
+				System.out.println("Problem in data and time" + e);
+			}
+			return value;
+		}
 		
 		}
 

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.page_object.My_Profile_Page;
 import com.utility.Base_Utility;
+
 @Listeners(com.utility.listner.class)
 public class My_Profile_Page_Test extends Base_Utility {
 	
@@ -34,5 +35,6 @@ public class My_Profile_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
 		Custom_click(ob.upload_close_button(), " Upload close button ");
+		
 	}
 }

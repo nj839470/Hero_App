@@ -9,7 +9,6 @@ import com.utility.Base_Utility;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-
 @Listeners(com.utility.listner.class)
 public class Home_Page_Test extends Base_Utility {
 
@@ -82,6 +81,8 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC010_Verify_RSA() throws InterruptedException {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(2000);
+		Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+		
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 

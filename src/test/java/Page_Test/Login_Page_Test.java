@@ -80,13 +80,17 @@ public class Login_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		driver.navigate().back();
 		Custom_click(ob.Terms_of_Use(), "Terms of use button");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
+		msg("Terms of use: First condition = " +ob.Terms_of_Use_condition().getText());
 		Custom_click(ob.back_page(), "back terms of use page ");
 		Custom_click(ob.Privacy_Policy(), "Privacy Policy");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
+		msg("Privacy policy : First Condition = "+ob.Privacy_Policy_condition().getText());
 		Custom_click(ob.back_page(), "back Privacy Policy page ");
 		Custom_click(ob.contact_us(), "Contact us");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		Custom_click(ob.contact_via_email(), "contact via email");
+		driver.navigate().back();
 		Custom_click(ob.back_page(), "back Contact us page ");
 	}
 
@@ -106,7 +110,7 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob1.click_first_vehicle(), " Select first vehicle"); 
 			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
 			Custom_click(ob1.While_using_the_app(), "While using the app");
-			Custom_click(ob1.video_close_button(), "Vodeo close");
+//			Custom_click(ob1.video_close_button(), "Vodeo close");
 		} catch (Exception e) {
 			System.out.println("Problem with login" + e);
 		}
