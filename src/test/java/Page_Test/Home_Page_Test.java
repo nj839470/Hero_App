@@ -18,9 +18,10 @@ public class Home_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC006_Home_page_verify() throws InterruptedException {
+		msg("************************Home_Page_Test**************************");
 		ob = new Home_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(2000);
 		msg("Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");

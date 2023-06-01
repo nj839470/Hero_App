@@ -13,9 +13,10 @@ public class My_Profile_Page_Test extends Base_Utility {
 	@Test(priority = 0)
 	public void TC013_Verify_My_Profile() throws InterruptedException
 	{
+		msg("************************My_Profile_Page_Test**************************");
 		ob = new My_Profile_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.my_profile(), "My profile");

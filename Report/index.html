@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Hero_App</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 31, 2023 04:33:36 pm</span></a>
+<a href="#"><span class="badge badge-primary">May 31, 2023 09:59:41 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,207 +74,120 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Page_Test.My_Profile_Page_Test == TC013_Verify_My_Profile</p>
             <p class="text-sm">
-              <span>4:33:57 pm</span> / <span>00:01:08:354</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>10:12:41 pm</span> / <span>00:01:51:307</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC013_Verify_My_Profile</h5>
-<span class='badge badge-success'>05.31.2023 4:33:57 pm</span>
-<span class='badge badge-danger'>05.31.2023 4:35:05 pm</span>
-<span class='badge badge-default'>00:01:08:354</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<h5 class="test-status text-fail">Page_Test.My_Profile_Page_Test == TC013_Verify_My_Profile</h5>
+<span class='badge badge-success'>05.31.2023 10:12:41 pm</span>
+<span class='badge badge-danger'>05.31.2023 10:14:32 pm</span>
+<span class='badge badge-default'>00:01:51:307</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC013_Verify_My_Profile.png' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC013_Verify_My_Profile.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:01 pm</td>
+        <td>10:12:41 pm</td>
+        <td>
+          ************************My_Profile_Page_Test**************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:12:44 pm</td>
         <td>
           Successfully click on = Close button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:05 pm</td>
+        <td>10:12:46 pm</td>
         <td>
           Login with Registerd mobile number value send successfully =8726494540 Login with Registerd mobile number
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:07 pm</td>
+        <td>10:12:51 pm</td>
         <td>
           Successfully click on = Coninue button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:26 pm</td>
+        <td>10:13:08 pm</td>
         <td>
           enterOTP =1 value send successfully =1 enterOTP =1
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:28 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:13:49 pm</td>
         <td>
-          enterOTP =2 value send successfully =2 enterOTP =2
+          Verify Button==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [23a2d3db-8754-4f3a-a09f-835136abe184, findElement {using=xpath, value=//android.widget.TextView[@text = 'Verify']}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 23a2d3db-8754-4f3a-a09f-835136abe184
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:30 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:13:49 pm</td>
         <td>
-          enterOTP =3 value send successfully =3 enterOTP =3
+          Test Case Fail
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:31 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:14:32 pm</td>
         <td>
-          enterOTP =4 value send successfully =4 enterOTP =4
+          Side menu button==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [23a2d3db-8754-4f3a-a09f-835136abe184, findElement {using=xpath, value=//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/side_menu_btn']}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 23a2d3db-8754-4f3a-a09f-835136abe184
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:32 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:14:32 pm</td>
         <td>
-          enterOTP =5 value send successfully =5 enterOTP =5
+          Test Case Fail
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:33 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:14:32 pm</td>
         <td>
-          enterOTP =6 value send successfully =6 enterOTP =6
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:34 pm</td>
-        <td>
-          Successfully click on = Verify Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:39 pm</td>
-        <td>
-          Successfully click on =  Select first vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:44 pm</td>
-        <td>
-          Successfully click on = Continue Button after select vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:47 pm</td>
-        <td>
-          Successfully click on = While using the app
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:34:59 pm</td>
-        <td>
-          Successfully click on = Vodeo close
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:01 pm</td>
-        <td>
-          Successfully click on = Side menu button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:02 pm</td>
-        <td>
-          Successfully click on = My profile
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:04 pm</td>
-        <td>
-          User name = ANKIT
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:04 pm</td>
-        <td>
-          User mobile number =+91 8726494540
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:04 pm</td>
-        <td>
-          User email =ankit@gmail.com
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:04 pm</td>
-        <td>
-          Successfully click on = More details
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:05 pm</td>
-        <td>
-          Date of Birth = 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:05 pm</td>
-        <td>
-          Gender = Male
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:05 pm</td>
-        <td>
-          Blood Group = 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:05 pm</td>
-        <td>
-          Successfully click on = Edit profile details button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:35:05 pm</td>
-        <td>
-          Test Case Pass
+          Test Case Fail
         </td>
       </tr>
   </tbody>
@@ -296,25 +209,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 31, 2023 04:33:36 pm</h3>
+<h3>May 31, 2023 09:59:41 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 31, 2023 04:35:05 pm</h3>
+<h3>May 31, 2023 10:14:32 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -330,12 +243,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='100%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -353,9 +266,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>25</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='50%'><b>5</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -372,7 +285,7 @@
 </div></div>
 <script>
 var timeline = {
-"Page_Test.My_Profile_Page_Test == TC013_Verify_My_Profile":68.354
+"Page_Test.My_Profile_Page_Test == TC013_Verify_My_Profile":111.307
 };
 </script>
 <div class="row">
@@ -411,8 +324,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -428,8 +341,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 25,
-failEvents: 0,
+passEvents: 5,
+failEvents: 5,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

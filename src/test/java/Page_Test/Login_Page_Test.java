@@ -51,6 +51,7 @@ public class Login_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC001_Verify_Login_with_Invalid_credential() {
+		msg("************************Login page test**************************");
 		ob = new Login_page();
 		Custom_click(ob.close(), "Close button");
 		custom_sendkeys(ob.mobile_No(), config_getdata("invalidmobileno"), "Login with unregisterd mobile number");
