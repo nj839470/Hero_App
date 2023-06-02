@@ -24,12 +24,18 @@
       <class name="Page_Test.My_Profile_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
+   <test name="Services_Page_Test" enabled="true">
+    <classes>
+      <class name="Page_Test.Services_Page_Test"/>
+    </classes>
+  </test> <!-- Login_page -->
   <test name="All test class" enabled="false">
     <classes>
       <class name="Page_Test.Login_Page_Test"/>
-      <class name="Page_Test.Select_Vehicle_Page_Test"/>
+      <class name="Page_Test.Select_Vehicle_Page_Test"/> 
       <class name="Page_Test.Home_Page_Test"/>
       <class name="Page_Test.My_Profile_Page_Test"/>
+      <class name="Page_Test.Services_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
 </suite> <!-- Hero_App -->

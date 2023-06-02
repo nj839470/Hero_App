@@ -163,8 +163,7 @@ public class Home_Page extends Base_Utility {
 		for (int i = 1; i < Documents_list.size(); i++) {
 			String name = Documents_list.get(i).getText();
 			Custom_click(Documents_list.get(i), name);
-			test.log(Status.PASS, Document_Check.getText());
-			log.info(Document_Check.getText());
+			msg(Document_Check.getText());
 			Custom_click(Add_Now, name + " Add now");
 			if (i == 1) {
 				Custom_click(While_using_the_app, "While using the app");

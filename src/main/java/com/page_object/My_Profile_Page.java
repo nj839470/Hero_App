@@ -43,7 +43,10 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement Take_a_Photo;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
 	private WebElement upload_close_button;
-
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
+	private WebElement Back;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross']")
+	private WebElement close_my_profile_page;
 	public WebElement side_menu_button() {
 		return side_menu_button;
 	}
@@ -67,7 +70,9 @@ public class My_Profile_Page extends Base_Utility {
 	public WebElement More_details() {
 		return More_details;
 	}
-
+	public WebElement Back() {
+		return Back;
+	}
 	public void user_info() {
 		msg(user_info.get(0).getText() + " = " + user_dob.getText());
 		msg(user_info.get(1).getText() + " = " + user_gender.getText());
@@ -84,6 +89,10 @@ public class My_Profile_Page extends Base_Utility {
 
 	public WebElement Choose_from_library() {
 		return Choose_from_library;
+	}
+	public WebElement close_my_profile_page()
+	{
+		return close_my_profile_page;
 	}
 
 	public WebElement Take_a_Photo() {

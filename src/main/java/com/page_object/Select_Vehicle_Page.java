@@ -74,15 +74,14 @@ public class Select_Vehicle_Page extends Base_Utility {
 
 	public void vehicle_count() {
 		String vehicle_mess = vehicle_info.getText();
-		System.out.println(vehicle_mess);
+		msg(vehicle_mess);
 		char vehicle[] = vehicle_mess.toCharArray();
 		for (int i = 0; i < vehicle.length; i++) {
 			if (Character.isDigit(vehicle[i])) {
 				Vehicle_count = vehicle[i];
 			}
 		}
-		test.log(Status.PASS, "Total number of Vehicles registered in this number is = " + Vehicle_count);
-		log.info("Total number of Vehicles registered in this number is  " + Vehicle_count);
+		msg("Total number of Vehicles registered in this number is = " + Vehicle_count);
 	}
 		public WebElement video_close_button()
 	{

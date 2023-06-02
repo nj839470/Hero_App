@@ -63,7 +63,6 @@ public class Login_page extends Base_Utility {
 	}
 		public void enter_Valid_OTP()
 	{
-			System.out.println(OTP.size());
 		for(int i=0;i<OTP.size();i++)
 		{
 			custom_sendkeys(OTP.get(i), ""+(i+1), "enterOTP =" +(i+1));

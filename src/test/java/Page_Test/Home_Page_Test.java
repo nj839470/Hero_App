@@ -17,7 +17,7 @@ public class Home_Page_Test extends Base_Utility {
 	public Home_Page ob;
 
 	@Test(priority = 0)
-	public void TC006_Home_page_verify() throws InterruptedException {
+	public void TC017_Home_page_verify() throws InterruptedException {
 		msg("************************Home_Page_Test**************************");
 		ob = new Home_Page();
 //		login = new Login_Page_Test();
@@ -36,7 +36,7 @@ public class Home_Page_Test extends Base_Utility {
 
 	}
 
-	public void TC007__verify_Navigate() {
+	public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
 		Custom_click(ob.Search_destination(), "Search destination");
 		custom_sendkeys(ob.Search_here(), config_getdata("search_destination"), "Noida");
@@ -52,7 +52,7 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC008_Verify_Documents() throws InterruptedException // 54 steps
+	public void TC019_Verify_Documents() throws InterruptedException // 54 steps
 	{
 //		login = new Login_Page_Test();
 //		ob = new Home_Page();
@@ -63,7 +63,7 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC009_Verify_Relationship_Manager() throws InterruptedException {
+	public void TC020_Verify_Relationship_Manager() throws InterruptedException {
 //		login = new Login_Page_Test();
 //		ob = new Home_Page();
 //		login.login();
@@ -79,16 +79,24 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 3)
-	public void TC010_Verify_RSA() throws InterruptedException {
+	public void TC021_Verify_RSA() throws InterruptedException {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(2000);
 		Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+		if(ob.locate_nearest_dealer().isDisplayed()==true)
+		{
+			msg("Locate nearest dealer link is not working");
+		}
+		else
+		{
+			msg("Locate nearest dealer link is working");
+		}
 
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 
 	@Test(priority = 4)
-	public void TC011_Verify_Technical_Support_Manager() throws InterruptedException {
+	public void TC022_Verify_Technical_Support_Manager() throws InterruptedException {
 		Custom_click(ob.Technical_Support(), "Technical Support");
 		Thread.sleep(2000);
 		msg("Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
@@ -98,7 +106,7 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 5)
-	public void TC012_Verify_Dealer_Locator() throws InterruptedException {
+	public void TC023_Verify_Dealer_Locator() throws InterruptedException {
 //		login = new Login_Page_Test();
 //		ob = new Home_Page();
 //		login.login();
@@ -109,13 +117,13 @@ public class Home_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 6)
-	public void Select_city() {
+	public void TC024_Select_city() {
 		Custom_click(ob.Select_City(), "Select city");
 		ob.Select_City("BAGAHA");
 	}
 
 	@Test(priority = 7)
-	public void View_dealer_name_and_address() {
+	public void TC025_View_dealer_name_and_address() {
 		Custom_click(ob.map_view(), "Map View dealer name and address");
 		ob.Dealer_info();
 		Custom_click(ob.Back(), "Back from Dealer Locator");
