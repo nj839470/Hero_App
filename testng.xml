@@ -4,7 +4,7 @@
 	<listeners>
 <listener class-name="com.utility.listner"></listener>
 </listeners>
-  <test name="Login_page" enabled="false">
+  <test name="Login_page" enabled="true">
     <classes>
       <class name="Page_Test.Login_Page_Test"/>
     </classes>
@@ -24,7 +24,7 @@
       <class name="Page_Test.My_Profile_Page_Test"/>
     </classes>
   </test> <!-- Login_page -->
-   <test name="Services_Page_Test" enabled="true">
+   <test name="Services_Page_Test" enabled="false">
     <classes>
       <class name="Page_Test.Services_Page_Test"/>
     </classes>

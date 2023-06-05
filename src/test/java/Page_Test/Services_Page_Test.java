@@ -14,8 +14,8 @@ public class Services_Page_Test extends Base_Utility {
 	@Test(priority = 0)
 	public void TC029_Vehicle_details_on_service_page() throws InterruptedException {
 		ob = new Services_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(2000);
 		Custom_click(ob.Services(), " Services button");
 		msg("Vehicle brand name = " + ob.Vehicle_brand_Name().getText());

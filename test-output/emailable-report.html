@@ -9,15 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Hero_App</th></tr>
-<tr><td><a href="#t0">Services_Page_Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">238,182</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Select_Vehicle_Page</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">340,728</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hero_App</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Services_Page_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Page_Test.Services_Page_Test</td><td><a href="#m0">TC029_Vehicle_details_on_service_page</a></td><td rowspan="1">1685710278137</td><td rowspan="1">57410</td></tr><tr class="passedeven"><td><a href="#m1">TC030_verify_service_info_and_raised_button</a></td><td rowspan="1">1685710335552</td><td rowspan="1">9472</td></tr><tr class="passedeven"><td><a href="#m2">TC031_verify_service_booked_info</a></td><td rowspan="1">1685710345026</td><td rowspan="1">9731</td></tr><tr class="passedeven"><td><a href="#m3">TC032_Verify_Last_Serviced</a></td><td rowspan="1">1685710354759</td><td rowspan="1">38900</td></tr><tr class="passedeven"><td><a href="#m4">TC033_Verify_Tips</a></td><td rowspan="1">1685710393661</td><td rowspan="1">61376</td></tr><tr class="passedeven"><td><a href="#m5">TC034_Verify_DIY_Videos</a></td><td rowspan="1">1685710455038</td><td rowspan="1">61251</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hero_App</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Select_Vehicle_Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">Page_Test.Select_Vehicle_Page_Test</td><td><a href="#m0">TC012_verify_Nick_Name</a></td><td rowspan="1">1685964528132</td><td rowspan="1">95814</td></tr><tr class="failedeven"><td><a href="#m1">TC013_Verify_With_30_letter_nick_name</a></td><td rowspan="1">1685964624632</td><td rowspan="1">40260</td></tr><tr class="failedeven"><td><a href="#m2">TC014_Verify_With_31_letter_nick_name</a></td><td rowspan="1">1685964665434</td><td rowspan="1">40329</td></tr><tr class="failedeven"><td><a href="#m3">TC015_Verify_With_29_letter_nick_name</a></td><td rowspan="1">1685964706113</td><td rowspan="1">40224</td></tr><tr class="failedeven"><td><a href="#m4">TC016_Select_Vehicle</a></td><td rowspan="1">1685964747058</td><td rowspan="1">121091</td></tr></tbody>
 </table>
-<h2>Services_Page_Test</h2><h3 id="m0">Page_Test.Services_Page_Test#TC029_Vehicle_details_on_service_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Page_Test.Services_Page_Test#TC030_verify_service_info_and_raised_button</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Page_Test.Services_Page_Test#TC031_verify_service_booked_info</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Page_Test.Services_Page_Test#TC032_Verify_Last_Serviced</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Page_Test.Services_Page_Test#TC033_Verify_Tips</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Page_Test.Services_Page_Test#TC034_Verify_DIY_Videos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Select_Vehicle_Page</h2><h3 id="m0">Page_Test.Select_Vehicle_Page_Test#TC012_verify_Nick_Name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name(Select_Vehicle_Page_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Page_Test.Select_Vehicle_Page_Test#TC013_Verify_With_30_letter_nick_name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.custom_sendkeys(Base_Utility.java:225)
+	at Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name(Select_Vehicle_Page_Test.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Page_Test.Select_Vehicle_Page_Test#TC014_Verify_With_31_letter_nick_name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name(Select_Vehicle_Page_Test.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Page_Test.Select_Vehicle_Page_Test#TC015_Verify_With_29_letter_nick_name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name(Select_Vehicle_Page_Test.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Page_Test.Select_Vehicle_Page_Test#TC016_Select_Vehicle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle(Select_Vehicle_Page_Test.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

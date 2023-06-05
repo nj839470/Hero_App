@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Hero_App" class="navigator-link">
-              <span class="suite-name border-passed">Hero_App</span>
+              <span class="suite-name border-failed">Hero_App</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,46 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Hero_App" class="hide-methods passed suite-Hero_App"> (hide)</a> <!-- hide-methods passed suite-Hero_App -->
-                      <a href="#" panel-name="suite-Hero_App" class="show-methods passed suite-Hero_App"> (show)</a> <!-- show-methods passed suite-Hero_App -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Hero_App" class="hide-methods failed suite-Hero_App"> (hide)</a> <!-- hide-methods failed suite-Hero_App -->
+                      <a href="#" panel-name="suite-Hero_App" class="show-methods failed suite-Hero_App"> (show)</a> <!-- show-methods failed suite-Hero_App -->
                     </span>
-                    <div class="method-list-content passed suite-Hero_App">
+                    <div class="method-list-content failed suite-Hero_App">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC029_Vehicle_details_on_service_page">TC029_Vehicle_details_on_service_page</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Select_Vehicle_Page_Test" class="method navigator-link" hash-for-method="TC012_verify_Nick_Name">TC012_verify_Nick_Name</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC030_verify_service_info_and_raised_button">TC030_verify_service_info_and_raised_button</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Select_Vehicle_Page_Test" class="method navigator-link" hash-for-method="TC013_Verify_With_30_letter_nick_name">TC013_Verify_With_30_letter_nick_name</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC031_verify_service_booked_info">TC031_verify_service_booked_info</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Select_Vehicle_Page_Test" class="method navigator-link" hash-for-method="TC014_Verify_With_31_letter_nick_name">TC014_Verify_With_31_letter_nick_name</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC032_Verify_Last_Serviced">TC032_Verify_Last_Serviced</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Select_Vehicle_Page_Test" class="method navigator-link" hash-for-method="TC015_Verify_With_29_letter_nick_name">TC015_Verify_With_29_letter_nick_name</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC033_Verify_Tips">TC033_Verify_Tips</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Select_Vehicle_Page_Test" class="method navigator-link" hash-for-method="TC016_Select_Vehicle">TC016_Select_Vehicle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Services_Page_Test" class="method navigator-link" hash-for-method="TC034_Verify_DIY_Videos">TC034_Verify_DIY_Videos</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Hero_App -->
+                    </div> <!-- method-list-content failed suite-Hero_App -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,56 +139,84 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Hero_App" class="panel Hero_App">
-          <div class="suite-Hero_App-class-passed">
+          <div class="suite-Hero_App-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Page_Test.Services_Page_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">Page_Test.Select_Vehicle_Page_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC029_Vehicle_details_on_service_page">
-                  </a> <!-- TC029_Vehicle_details_on_service_page -->
-                  <span class="method-name">TC029_Vehicle_details_on_service_page</span>
+                  <a name="TC012_verify_Nick_Name">
+                  </a> <!-- TC012_verify_Nick_Name -->
+                  <span class="method-name">TC012_verify_Nick_Name</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name(Select_Vehicle_Page_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC030_verify_service_info_and_raised_button">
-                  </a> <!-- TC030_verify_service_info_and_raised_button -->
-                  <span class="method-name">TC030_verify_service_info_and_raised_button</span>
+                  <a name="TC013_Verify_With_30_letter_nick_name">
+                  </a> <!-- TC013_Verify_With_30_letter_nick_name -->
+                  <span class="method-name">TC013_Verify_With_30_letter_nick_name</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.custom_sendkeys(Base_Utility.java:225)
+	at Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name(Select_Vehicle_Page_Test.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC031_verify_service_booked_info">
-                  </a> <!-- TC031_verify_service_booked_info -->
-                  <span class="method-name">TC031_verify_service_booked_info</span>
+                  <a name="TC014_Verify_With_31_letter_nick_name">
+                  </a> <!-- TC014_Verify_With_31_letter_nick_name -->
+                  <span class="method-name">TC014_Verify_With_31_letter_nick_name</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name(Select_Vehicle_Page_Test.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC032_Verify_Last_Serviced">
-                  </a> <!-- TC032_Verify_Last_Serviced -->
-                  <span class="method-name">TC032_Verify_Last_Serviced</span>
+                  <a name="TC015_Verify_With_29_letter_nick_name">
+                  </a> <!-- TC015_Verify_With_29_letter_nick_name -->
+                  <span class="method-name">TC015_Verify_With_29_letter_nick_name</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name(Select_Vehicle_Page_Test.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC033_Verify_Tips">
-                  </a> <!-- TC033_Verify_Tips -->
-                  <span class="method-name">TC033_Verify_Tips</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC034_Verify_DIY_Videos">
-                  </a> <!-- TC034_Verify_DIY_Videos -->
-                  <span class="method-name">TC034_Verify_DIY_Videos</span>
+                  <a name="TC016_Select_Vehicle">
+                  </a> <!-- TC016_Select_Vehicle -->
+                  <span class="method-name">TC016_Select_Vehicle</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.testng.ITestResult.getStatus()&quot; because &quot;result&quot; is null
+	at com.utility.listner.onTestFailure(listner.java:41)
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+	at Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle(Select_Vehicle_Page_Test.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hero_App-class-passed -->
+          </div> <!-- suite-Hero_App-class-failed -->
         </div> <!-- panel Hero_App -->
         <div panel-name="test-xml-Hero_App" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -207,11 +230,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.utility.listner&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Services_Page_Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Select_Vehicle_Page&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Page_Test.Services_Page_Test&quot;/&gt;
+      &lt;class name=&quot;Page_Test.Select_Vehicle_Page_Test&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Services_Page_Test --&gt;
+  &lt;/test&gt; &lt;!-- Select_Vehicle_Page --&gt;
 &lt;/suite&gt; &lt;!-- Hero_App --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,7 +246,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Services_Page_Test (1 class)</span>
+                <span class="test-name">Select_Vehicle_Page (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,36 +272,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC033_Verify_Tips')
-data.setCell(0, 2, 'Page_Test.Services_Page_Test')
-data.setCell(0, 3, 61376);
+data.setCell(0, 1, 'TC016_Select_Vehicle')
+data.setCell(0, 2, 'Page_Test.Select_Vehicle_Page_Test')
+data.setCell(0, 3, 121091);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC034_Verify_DIY_Videos')
-data.setCell(1, 2, 'Page_Test.Services_Page_Test')
-data.setCell(1, 3, 61251);
+data.setCell(1, 1, 'TC012_verify_Nick_Name')
+data.setCell(1, 2, 'Page_Test.Select_Vehicle_Page_Test')
+data.setCell(1, 3, 95814);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC029_Vehicle_details_on_service_page')
-data.setCell(2, 2, 'Page_Test.Services_Page_Test')
-data.setCell(2, 3, 57410);
+data.setCell(2, 1, 'TC014_Verify_With_31_letter_nick_name')
+data.setCell(2, 2, 'Page_Test.Select_Vehicle_Page_Test')
+data.setCell(2, 3, 40329);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC032_Verify_Last_Serviced')
-data.setCell(3, 2, 'Page_Test.Services_Page_Test')
-data.setCell(3, 3, 38900);
+data.setCell(3, 1, 'TC013_Verify_With_30_letter_nick_name')
+data.setCell(3, 2, 'Page_Test.Select_Vehicle_Page_Test')
+data.setCell(3, 3, 40260);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC031_verify_service_booked_info')
-data.setCell(4, 2, 'Page_Test.Services_Page_Test')
-data.setCell(4, 3, 9731);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC030_verify_service_info_and_raised_button')
-data.setCell(5, 2, 'Page_Test.Services_Page_Test')
-data.setCell(5, 3, 9472);
+data.setCell(4, 1, 'TC015_Verify_With_29_letter_nick_name')
+data.setCell(4, 2, 'Page_Test.Select_Vehicle_Page_Test')
+data.setCell(4, 3, 40224);
 window.suiteTableData['Hero_App']= { tableData: data, tableDiv: 'times-div-Hero_App'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Hero_App">
               </div> <!-- times-div-Hero_App -->
             </div> <!-- times-div -->
@@ -304,34 +323,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Page_Test.Services_Page_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Page_Test.Select_Vehicle_Page_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">OPEN_AND_INSTALL_APP</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">TC029_Vehicle_details_on_service_page</span>
-                <span class="method-start">17532 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC012_verify_Nick_Name</span>
+                <span class="method-start">19440 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC030_verify_service_info_and_raised_button</span>
-                <span class="method-start">74947 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC013_Verify_With_30_letter_nick_name</span>
+                <span class="method-start">115940 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC031_verify_service_booked_info</span>
-                <span class="method-start">84421 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC014_Verify_With_31_letter_nick_name</span>
+                <span class="method-start">156742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC032_Verify_Last_Serviced</span>
-                <span class="method-start">94154 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC015_Verify_With_29_letter_nick_name</span>
+                <span class="method-start">197421 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC033_Verify_Tips</span>
-                <span class="method-start">133056 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC034_Verify_DIY_Videos</span>
-                <span class="method-start">194433 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC016_Select_Vehicle</span>
+                <span class="method-start">238366 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

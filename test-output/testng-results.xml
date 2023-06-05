@@ -1,41 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T18:21:18 IST" name="Hero_App" finished-at="2023-06-02T18:25:16 IST" duration-ms="238182">
+  <suite started-at="2023-06-05T16:58:48 IST" name="Hero_App" finished-at="2023-06-05T17:04:28 IST" duration-ms="340728">
     <groups>
     </groups>
-    <test started-at="2023-06-02T18:21:18 IST" name="Services_Page_Test" finished-at="2023-06-02T18:25:16 IST" duration-ms="238182">
-      <class name="Page_Test.Services_Page_Test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:21:00 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-02T18:21:18 IST" duration-ms="17502" status="PASS">
+    <test started-at="2023-06-05T16:58:48 IST" name="Select_Vehicle_Page" finished-at="2023-06-05T17:04:28 IST" duration-ms="340728">
+      <class name="Page_Test.Select_Vehicle_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T16:58:28 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-05T16:58:48 IST" duration-ms="19406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC029_Vehicle_details_on_service_page()[pri:0, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:21:18 IST" name="TC029_Vehicle_details_on_service_page" finished-at="2023-06-02T18:22:15 IST" duration-ms="57410" status="PASS">
+        <test-method signature="TC012_verify_Nick_Name()[pri:0, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T16:58:48 IST" name="TC012_verify_Nick_Name" finished-at="2023-06-05T17:00:23 IST" duration-ms="95814" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
+at com.utility.listner.onTestFailure(listner.java:41)
+at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+at Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name(Select_Vehicle_Page_Test.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC029_Vehicle_details_on_service_page -->
-        <test-method signature="TC030_verify_service_info_and_raised_button()[pri:1, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:22:15 IST" name="TC030_verify_service_info_and_raised_button" finished-at="2023-06-02T18:22:25 IST" duration-ms="9472" status="PASS">
+        </test-method> <!-- TC012_verify_Nick_Name -->
+        <test-method signature="TC013_Verify_With_30_letter_nick_name()[pri:1, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T17:00:24 IST" name="TC013_Verify_With_30_letter_nick_name" finished-at="2023-06-05T17:01:04 IST" duration-ms="40260" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
+at com.utility.listner.onTestFailure(listner.java:41)
+at com.utility.Base_Utility.custom_sendkeys(Base_Utility.java:225)
+at Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name(Select_Vehicle_Page_Test.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC030_verify_service_info_and_raised_button -->
-        <test-method signature="TC031_verify_service_booked_info()[pri:2, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:22:25 IST" name="TC031_verify_service_booked_info" finished-at="2023-06-02T18:22:34 IST" duration-ms="9731" status="PASS">
+        </test-method> <!-- TC013_Verify_With_30_letter_nick_name -->
+        <test-method signature="TC014_Verify_With_31_letter_nick_name()[pri:2, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T17:01:05 IST" name="TC014_Verify_With_31_letter_nick_name" finished-at="2023-06-05T17:01:45 IST" duration-ms="40329" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
+at com.utility.listner.onTestFailure(listner.java:41)
+at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+at Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name(Select_Vehicle_Page_Test.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC031_verify_service_booked_info -->
-        <test-method signature="TC032_Verify_Last_Serviced()[pri:3, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:22:34 IST" name="TC032_Verify_Last_Serviced" finished-at="2023-06-02T18:23:13 IST" duration-ms="38900" status="PASS">
+        </test-method> <!-- TC014_Verify_With_31_letter_nick_name -->
+        <test-method signature="TC015_Verify_With_29_letter_nick_name()[pri:3, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T17:01:46 IST" name="TC015_Verify_With_29_letter_nick_name" finished-at="2023-06-05T17:02:26 IST" duration-ms="40224" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
+at com.utility.listner.onTestFailure(listner.java:41)
+at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+at Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name(Select_Vehicle_Page_Test.java:74)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC032_Verify_Last_Serviced -->
-        <test-method signature="TC033_Verify_Tips()[pri:4, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:23:13 IST" name="TC033_Verify_Tips" finished-at="2023-06-02T18:24:15 IST" duration-ms="61376" status="PASS">
+        </test-method> <!-- TC015_Verify_With_29_letter_nick_name -->
+        <test-method signature="TC016_Select_Vehicle()[pri:4, instance:Page_Test.Select_Vehicle_Page_Test@210ab13f]" started-at="2023-06-05T17:02:27 IST" name="TC016_Select_Vehicle" finished-at="2023-06-05T17:04:28 IST" duration-ms="121091" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
+at com.utility.listner.onTestFailure(listner.java:41)
+at com.utility.Base_Utility.Custom_click(Base_Utility.java:243)
+at Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle(Select_Vehicle_Page_Test.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC033_Verify_Tips -->
-        <test-method signature="TC034_Verify_DIY_Videos()[pri:5, instance:Page_Test.Services_Page_Test@20b2475a]" started-at="2023-06-02T18:24:15 IST" name="TC034_Verify_DIY_Videos" finished-at="2023-06-02T18:25:16 IST" duration-ms="61251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC034_Verify_DIY_Videos -->
-      </class> <!-- Page_Test.Services_Page_Test -->
-    </test> <!-- Services_Page_Test -->
+        </test-method> <!-- TC016_Select_Vehicle -->
+      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
+    </test> <!-- Select_Vehicle_Page -->
   </suite> <!-- Hero_App -->
 </testng-results>
