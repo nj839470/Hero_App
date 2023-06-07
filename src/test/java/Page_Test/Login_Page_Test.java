@@ -81,6 +81,7 @@ public class Login_Page_Test extends Base_Utility {
 		Custom_click(ob.contact_us(), "Contact us");
 		Thread.sleep(2000);
 		Custom_click(ob.contact_via_email(), "contact via email");
+		Thread.sleep(2000);
 		driver.navigate().back();
 		if(ob.back_page().isDisplayed()==true)
 		{

@@ -4,14 +4,8 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="Login_page(failed)">
     <classes>
-      <class name="Page_Test.Select_Vehicle_Page_Test">
-        <methods>
-          <include name="TC013_Verify_With_30_letter_nick_name"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-        </methods>
-      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
       <class name="Page_Test.Login_Page_Test">
         <methods>
           <include name="TC007_contact_Us"/>
@@ -19,5 +13,5 @@
         </methods>
       </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- Login_page(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
