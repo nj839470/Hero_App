@@ -58,58 +58,58 @@ implements Config_data_provider, Excel_data_Provider, extent_reports_generator, 
 
 	@BeforeSuite
 	//******************Automatic server start code ************************
-//	public void appiumTest() throws Exception {
-//		
-//		Thread.sleep(2000);
-//		service =new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
-//		service.start();
-//		UiAutomator2Options db = new UiAutomator2Options();
-//		db.setCapability("appium:automationName", "uiautomator2");
-//		db.setCapability("platformName", "Android");
-//		db.setCapability("appium:deviceName", "Pixel_6_API_31");
-//		db.setCapability("appium:udid", "emulator-5554");
-// //       db.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-//        db.setCapability("appium:avdLaunchTimeout", 600000);
-//		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-//		Thread.sleep(2000);
-//		driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-//		log = LogManager.getLogger("Hero_App");
-//		db.setCapability("appium:ensureWebviewsHavePages", true);
-//		db.setCapability("appium:nativeWebScreenshot", true);
-//		db.setCapability("appium:newCommandTimeout", 6600);
-//
-//	}
-	//******************Automatic server start code ************************
+	public void appiumTest() throws Exception {
+		
+		Thread.sleep(2000);
+		service =new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
+		service.start();
+		UiAutomator2Options db = new UiAutomator2Options();
+		db.setCapability("appium:automationName", "uiautomator2");
+		db.setCapability("platformName", "Android");
+		db.setCapability("appium:deviceName", "Pixel_6_API_31");
+		db.setCapability("appium:udid", "emulator-5554");
+ //       db.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+        db.setCapability("appium:avdLaunchTimeout", 600000);
+		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+		Thread.sleep(2000);
+		driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		log = LogManager.getLogger("Hero_App");
+		db.setCapability("appium:ensureWebviewsHavePages", true);
+		db.setCapability("appium:nativeWebScreenshot", true);
+		db.setCapability("appium:newCommandTimeout", 6600);
 
-	public void OPEN_AND_INSTALL_APP() {
-		try {
-//  //-----for virtual device---------
-			
-//  DesiredCapabilities db = new DesiredCapabilities();
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-			db.setCapability("appium:udid", "emulator-5554");
-			db.setCapability("appium:avdLaunchTimeout", 600000);
-			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-//			if(checkIfServerIsRunning(4723))
-//			{
-//				stopServer();
-//			}
-//			startServer();
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			log = LogManager.getLogger("Hero_App");
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
-			lis = new listner();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
 	}
+	//******************Automatic server end code ************************
+
+//	public void OPEN_AND_INSTALL_APP() {
+//		try {
+////  //-----for virtual device---------
+//			
+////  DesiredCapabilities db = new DesiredCapabilities();
+//			UiAutomator2Options db = new UiAutomator2Options();
+//			db.setCapability("appium:automationName", "uiautomator2");
+//			db.setCapability("platformName", "Android");
+//			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+//			db.setCapability("appium:udid", "emulator-5554");
+//			db.setCapability("appium:avdLaunchTimeout", 600000);
+//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+////			if(checkIfServerIsRunning(4723))
+////			{
+////				stopServer();
+////			}
+////			startServer();
+//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//			log = LogManager.getLogger("Hero_App");
+//			db.setCapability("appium:ensureWebviewsHavePages", true);
+//			db.setCapability("appium:nativeWebScreenshot", true);
+//			db.setCapability("appium:newCommandTimeout", 6600);
+//			lis = new listner();
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//	}
 	
 			// *************************pCloudy************************************************
 //	DesiredCapabilities capabilities = new DesiredCapabilities();
