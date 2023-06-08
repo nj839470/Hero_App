@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T09:39:47 IST" name="Hero_App" finished-at="2023-06-08T09:42:52 IST" duration-ms="184817">
+  <suite started-at="2023-06-08T12:48:31 IST" name="Hero_App" finished-at="2023-06-08T12:50:57 IST" duration-ms="145412">
     <groups>
     </groups>
-    <test started-at="2023-06-08T09:39:47 IST" name="Login_page" finished-at="2023-06-08T09:42:52 IST" duration-ms="184817">
+    <test started-at="2023-06-08T12:48:31 IST" name="Login_page" finished-at="2023-06-08T12:50:57 IST" duration-ms="145412">
       <class name="Page_Test.Login_Page_Test">
-        <test-method is-config="true" signature="appiumTest()[pri:0, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:39:05 IST" name="appiumTest" finished-at="2023-06-08T09:39:47 IST" duration-ms="41859" status="PASS">
+        <test-method is-config="true" signature="appiumTest()[pri:0, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:47:52 IST" name="appiumTest" finished-at="2023-06-08T12:48:31 IST" duration-ms="39349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appiumTest -->
-        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:39:47 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-06-08T09:39:51 IST" duration-ms="4450" status="PASS">
+        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:48:31 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-06-08T12:48:35 IST" duration-ms="3440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
-        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:39:51 IST" name="TC002_invalidmobileno" finished-at="2023-06-08T09:39:59 IST" duration-ms="7934" status="PASS">
+        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:48:35 IST" name="TC002_invalidmobileno" finished-at="2023-06-08T12:48:43 IST" duration-ms="8228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_invalidmobileno -->
-        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:39:59 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-06-08T09:40:04 IST" duration-ms="5228" status="PASS">
+        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:48:43 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-06-08T12:48:47 IST" duration-ms="4056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_Verify_Login_with_short_length_of_mobile_number_credential -->
-        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:40:04 IST" name="TC004_max_digit_mobile_number" finished-at="2023-06-08T09:40:12 IST" duration-ms="7786" status="PASS">
+        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:48:47 IST" name="TC004_max_digit_mobile_number" finished-at="2023-06-08T12:48:54 IST" duration-ms="6964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_max_digit_mobile_number -->
-        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:40:12 IST" name="TC005_Terms_of_use_button" finished-at="2023-06-08T09:40:26 IST" duration-ms="14166" status="PASS">
+        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:48:54 IST" name="TC005_Terms_of_use_button" finished-at="2023-06-08T12:49:07 IST" duration-ms="13310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC005_Terms_of_use_button -->
-        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:40:26 IST" name="TC006_Privacy_policy" finished-at="2023-06-08T09:40:37 IST" duration-ms="10778" status="PASS">
+        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:49:07 IST" name="TC006_Privacy_policy" finished-at="2023-06-08T12:49:18 IST" duration-ms="10367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_Privacy_policy -->
-        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:40:37 IST" name="TC007_contact_Us" finished-at="2023-06-08T09:40:45 IST" duration-ms="7969" status="PASS">
+        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:49:18 IST" name="TC007_contact_Us" finished-at="2023-06-08T12:49:26 IST" duration-ms="8320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC007_contact_Us -->
-        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:40:45 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-06-08T09:41:10 IST" duration-ms="24586" status="PASS">
+        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:49:26 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-06-08T12:49:49 IST" duration-ms="23236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC008_Verify_Login_with_valid_credential -->
-        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:41:10 IST" name="TC009_resend_butn" finished-at="2023-06-08T09:41:28 IST" duration-ms="18135" status="PASS">
+        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:49:49 IST" name="TC009_resend_butn" finished-at="2023-06-08T12:50:07 IST" duration-ms="17984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC009_resend_butn -->
-        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:41:28 IST" name="TC010_inavalid_OTP" finished-at="2023-06-08T09:41:45 IST" duration-ms="16928" status="PASS">
+        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:50:07 IST" name="TC010_inavalid_OTP" finished-at="2023-06-08T12:50:22 IST" duration-ms="15143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC010_inavalid_OTP -->
-        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T09:41:45 IST" name="TC011_edit_moble" finished-at="2023-06-08T09:42:52 IST" duration-ms="66757" status="PASS">
+        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@387a8303]" started-at="2023-06-08T12:50:22 IST" name="TC011_edit_moble" finished-at="2023-06-08T12:50:57 IST" duration-ms="34288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC011_edit_moble -->
