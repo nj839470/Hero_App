@@ -4,14 +4,20 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Login_page(failed)">
+  <test thread-count="5" name="All test class(failed)">
     <classes>
+      <class name="Page_Test.Services_Page_Test">
+        <methods>
+          <include name="TC030_verify_service_info_and_raised_button"/>
+          <include name="appiumTest"/>
+        </methods>
+      </class> <!-- Page_Test.Services_Page_Test -->
       <class name="Page_Test.Login_Page_Test">
         <methods>
           <include name="TC007_contact_Us"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="appiumTest"/>
         </methods>
       </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
-  </test> <!-- Login_page(failed) -->
+  </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
