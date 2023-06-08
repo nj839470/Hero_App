@@ -58,66 +58,61 @@ implements Config_data_provider, Excel_data_Provider, extent_reports_generator, 
 
 	@BeforeSuite
 	//******************Automatic server start code ************************
-	public void appiumTest() throws Exception {
-		
-		Thread.sleep(2000);
-//		service =new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-//				.withIPAddress("127.0.0.1").usingPort(4723).build();
-		service = AppiumDriverLocalService
-				.buildService(new AppiumServiceBuilder().usingAnyFreePort()
-						.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
-						.withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")));
-		service.start();
-		UiAutomator2Options db = new UiAutomator2Options();
-		db.setCapability("appium:automationName", "uiautomator2");
-		db.setCapability("platformName", "Android");
-		db.setCapability("appium:deviceName", "Pixel_6_API_31");
-		db.setCapability("appium:udid", "emulator-5554");
- //       db.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-        db.setCapability("appium:avdLaunchTimeout", 600000);
-		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-		Thread.sleep(2000);
-		String service_url = service.getUrl().toString();
-		driver = new AndroidDriver(new URL(service_url),db);
-		 
-//		driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-		log = LogManager.getLogger("Hero_App");
-		db.setCapability("appium:ensureWebviewsHavePages", true);
-		db.setCapability("appium:nativeWebScreenshot", true);
-		db.setCapability("appium:newCommandTimeout", 6600);
-
-	}
+//	public void appiumTest() throws Exception {
+//		
+//		Thread.sleep(2000);
+////		service =new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+////				.withIPAddress("127.0.0.1").usingPort(4723).build();
+//		service = AppiumDriverLocalService
+//				.buildService(new AppiumServiceBuilder().usingAnyFreePort()
+//						.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
+//						.withAppiumJS(new File("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")));
+//		service.start();
+//		UiAutomator2Options db = new UiAutomator2Options();
+//		db.setCapability("appium:automationName", "uiautomator2");
+//		db.setCapability("platformName", "Android");
+//		db.setCapability("appium:deviceName", "Pixel_6_API_31");
+//		db.setCapability("appium:udid", "emulator-5554");
+// //       db.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+//        db.setCapability("appium:avdLaunchTimeout", 600000);
+//		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+//		Thread.sleep(2000);
+//		String service_url = service.getUrl().toString();
+//		driver = new AndroidDriver(new URL(service_url),db);
+//		 
+////		driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//		log = LogManager.getLogger("Hero_App");
+//		db.setCapability("appium:ensureWebviewsHavePages", true);
+//		db.setCapability("appium:nativeWebScreenshot", true);
+//		db.setCapability("appium:newCommandTimeout", 6600);
+//
+//	}
 	//******************Automatic server end code ************************
 
-//	public void OPEN_AND_INSTALL_APP() {
-//		try {
-////  //-----for virtual device---------
-//			
-////  DesiredCapabilities db = new DesiredCapabilities();
-//			UiAutomator2Options db = new UiAutomator2Options();
-//			db.setCapability("appium:automationName", "uiautomator2");
-//			db.setCapability("platformName", "Android");
-//			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-//			db.setCapability("appium:udid", "emulator-5554");
-//			db.setCapability("appium:avdLaunchTimeout", 600000);
-//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-////			if(checkIfServerIsRunning(4723))
-////			{
-////				stopServer();
-////			}
-////			startServer();
-//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-//			log = LogManager.getLogger("Hero_App");
-//			db.setCapability("appium:ensureWebviewsHavePages", true);
-//			db.setCapability("appium:nativeWebScreenshot", true);
-//			db.setCapability("appium:newCommandTimeout", 6600);
-//			lis = new listner();
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//	}
+	public void OPEN_AND_INSTALL_APP() {
+		try {
+//  //-----for virtual device---------
+			
+//  DesiredCapabilities db = new DesiredCapabilities();
+			UiAutomator2Options db = new UiAutomator2Options();
+			db.setCapability("appium:automationName", "uiautomator2");
+			db.setCapability("platformName", "Android");
+			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+			db.setCapability("appium:udid", "emulator-5554");
+			db.setCapability("appium:avdLaunchTimeout", 600000);
+			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+			log = LogManager.getLogger("Hero_App");
+			db.setCapability("appium:ensureWebviewsHavePages", true);
+			db.setCapability("appium:nativeWebScreenshot", true);
+			db.setCapability("appium:newCommandTimeout", 6600);
+			lis = new listner();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 	
 			// *************************pCloudy************************************************
 //	DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -160,50 +155,6 @@ implements Config_data_provider, Excel_data_Provider, extent_reports_generator, 
 //		db.setCapability(MobileCapabilityType.UDID, "74633a84");
 //		db.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
 //		db.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-
-	
-	public void startServer() {
-		CommandLine cmd = new CommandLine("C:\\Program Files\\nodejs\\node.exe");
-		cmd.addArgument("C:\\Users\\Welcome\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
-		cmd.addArgument("--address");
-		cmd.addArgument("127.0.0.1");
-		cmd.addArgument("--port");
-		cmd.addArgument("4723");
-
-		DefaultExecuteResultHandler handler = new DefaultExecuteResultHandler();
-		DefaultExecutor excutor = new DefaultExecutor();
-		excutor.setExitValue(1);
-		try {
-			excutor.execute(cmd ,handler);
-			Thread.sleep(10000);
-			} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-	public void stopServer() {
-		Runtime runtime = Runtime.getRuntime();
-			try {
-				
-				runtime.exec("taskkill /f /IM node.exe");
-			} catch (Exception e) {
-				System.out.println(e);
-			}
-		}
-		
-	public boolean checkIfServerIsRunning(int port) {
-		boolean isServerRunning = false;
-		ServerSocket serversocket;
-	try {
-		serversocket = new ServerSocket(port);
-		serversocket.close();
-	} catch (IOException e) {
-		isServerRunning =true;
-	}finally
-	{
-		serversocket =null;
-	}
-		return isServerRunning;
-	}
 
 	@Override
 	public String config_getdata(String key) {
