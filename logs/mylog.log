@@ -1,35 +1,42 @@
-[INFO ] 2023-06-07 21:38:22.567 [main] Hero_App - ************************Login page test**************************
-[INFO ] 2023-06-07 21:38:25.056 [main] Hero_App - Close button is clickable
-[INFO ] 2023-06-07 21:38:28.627 [main] Hero_App - Login with unregisterd mobile number send successfully
-[INFO ] 2023-06-07 21:38:31.041 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
-[INFO ] 2023-06-07 21:38:35.940 [main] Hero_App - Login with short_digit_mobile_number send successfully
-[INFO ] 2023-06-07 21:38:37.778 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
-[INFO ] 2023-06-07 21:38:39.893 [main] Hero_App - Login with More than 10 digit mobile number send successfully
-[INFO ] 2023-06-07 21:38:41.816 [main] Hero_App - More then 10 digits mobiles number are not acceptable
-[INFO ] 2023-06-07 21:38:46.511 [main] Hero_App - Terms of use button is clickable
-[INFO ] 2023-06-07 21:38:54.788 [main] Hero_App - Terms of use: First condition = This document is published in accordance with the provisions of Information Technology Act 2000 and related amendments thereafter that require publishing the rules and regulations, Privacy Policy and Terms of Use for access or usage of www.heromotocorp.com website through a user agreement.
-[INFO ] 2023-06-07 21:38:56.007 [main] Hero_App - back terms of use page  is clickable
-[INFO ] 2023-06-07 21:38:57.742 [main] Hero_App - Privacy Policy is clickable
-[INFO ] 2023-06-07 21:39:06.108 [main] Hero_App - Privacy policy : First Condition = Hero MotoCorp Ltd. together with its affiliates and subsidiaries (collectively referred to as the "Company" or "Hero" or "Us" and also indicated by "us", "we" or "our") is committed to protecting your privacy and personal information you give to us. We encourage you to read the Privacy Policy.
-[INFO ] 2023-06-07 21:39:07.179 [main] Hero_App - back Privacy Policy page  is clickable
-[INFO ] 2023-06-07 21:39:08.288 [main] Hero_App - Contact us is clickable
-[INFO ] 2023-06-07 21:39:11.227 [main] Hero_App - contact via email is clickable
-[INFO ] 2023-06-07 21:39:14.979 [main] Hero_App - back Contact us page  is clickable
-[INFO ] 2023-06-07 21:39:17.930 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-07 21:39:20.054 [main] Hero_App - Coninue button is present
-[INFO ] 2023-06-07 21:39:23.255 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-07 21:39:41.661 [main] Hero_App - Resend button is present
-[INFO ] 2023-06-07 21:39:42.035 [main] Hero_App - Resend button is clickable
-[INFO ] 2023-06-07 21:40:03.972 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-06-07 21:40:05.593 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-06-07 21:40:07.302 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-06-07 21:40:09.045 [main] Hero_App - enterOTP =7 send successfully
-[INFO ] 2023-06-07 21:40:10.425 [main] Hero_App - enterOTP =8 send successfully
-[INFO ] 2023-06-07 21:40:12.030 [main] Hero_App - enterOTP =9 send successfully
-[INFO ] 2023-06-07 21:40:13.300 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-06-07 21:40:15.267 [main] Hero_App - Verify Button is still present
-[INFO ] 2023-06-07 21:40:15.589 [main] Hero_App - Edit Mobile Number is clickable
-[INFO ] 2023-06-07 21:40:18.264 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-07 21:40:20.533 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-07 21:40:37.837 [main] Hero_App - enterOTP =1 send successfully
-[ERROR] 2023-06-07 21:41:18.917 [main] Hero_App - Verify Button is not clickable
+[INFO ] 2023-06-09 19:45:55.510 [main] Hero_App - ************************Login page test**************************
+[INFO ] 2023-06-09 19:46:07.065 [main] Hero_App - Deny is clickable
+[INFO ] 2023-06-09 19:46:08.636 [main] Hero_App - Allow Now is clickable
+[INFO ] 2023-06-09 19:46:12.072 [main] Hero_App - Open is clickable
+[INFO ] 2023-06-09 19:46:20.334 [main] Hero_App - Login with unregisterd mobile number send successfully
+[INFO ] 2023-06-09 19:46:24.028 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
+[INFO ] 2023-06-09 19:46:28.498 [main] Hero_App - Login with short_digit_mobile_number send successfully
+[INFO ] 2023-06-09 19:46:30.369 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
+[INFO ] 2023-06-09 19:46:33.479 [main] Hero_App - Login with More than 10 digit mobile number send successfully
+[INFO ] 2023-06-09 19:46:35.365 [main] Hero_App - More then 10 digits mobiles number are not acceptable
+[INFO ] 2023-06-09 19:46:40.453 [main] Hero_App - Terms of use button is clickable
+[INFO ] 2023-06-09 19:46:52.755 [main] Hero_App - Terms of use: First condition =  
+[INFO ] 2023-06-09 19:46:55.878 [main] Hero_App - back terms of use page  is clickable
+[INFO ] 2023-06-09 19:46:57.811 [main] Hero_App - Privacy Policy is clickable
+[INFO ] 2023-06-09 19:47:07.010 [main] Hero_App - Privacy policy : First Condition = Hero MotoCorp Ltd. together with its affiliates and subsidiaries (collectively referred to as the "Company" or "Hero" or "Us" and also indicated by "us", "we" or "our") is committed to protecting your privacy and personal information you give to us. We encourage you to read the Privacy Policy.
+[INFO ] 2023-06-09 19:47:09.573 [main] Hero_App - back Privacy Policy page  is clickable
+[INFO ] 2023-06-09 19:47:12.269 [main] Hero_App - Successfully  Scroll page down Action Contact us
+[ERROR] 2023-06-09 19:47:52.452 [main] Hero_App - Contact us is not clickable
+[INFO ] 2023-06-09 19:47:55.816 [main] Hero_App - contact via email is clickable
+[INFO ] 2023-06-09 19:48:45.454 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-06-09 19:48:47.522 [main] Hero_App - Coninue button is present
+[INFO ] 2023-06-09 19:48:48.560 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-06-09 19:49:11.206 [main] Hero_App - Resend button is present
+[INFO ] 2023-06-09 19:49:11.791 [main] Hero_App - Resend button is clickable
+[INFO ] 2023-06-09 19:49:33.734 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-06-09 19:49:35.852 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-06-09 19:49:38.009 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-06-09 19:49:40.109 [main] Hero_App - enterOTP =7 send successfully
+[INFO ] 2023-06-09 19:49:42.392 [main] Hero_App - enterOTP =8 send successfully
+[INFO ] 2023-06-09 19:49:44.466 [main] Hero_App - enterOTP =9 send successfully
+[INFO ] 2023-06-09 19:49:45.882 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-06-09 19:49:47.949 [main] Hero_App - Verify Button is still present
+[INFO ] 2023-06-09 19:49:48.328 [main] Hero_App - Edit Mobile Number is clickable
+[INFO ] 2023-06-09 19:49:52.269 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-06-09 19:49:55.234 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-06-09 19:50:16.709 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-06-09 19:50:18.967 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-06-09 19:50:21.046 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-06-09 19:50:23.095 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-06-09 19:50:25.179 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-06-09 19:50:27.280 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-06-09 19:50:28.728 [main] Hero_App - Verify Button is clickable

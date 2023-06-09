@@ -20,6 +20,16 @@ public class Login_page extends Base_Utility {
 	private WebElement close;
 	@FindBy(id = "com.customerapp.hero:id/text_input_editext")
 	private WebElement mobile_No;
+	@FindBy(xpath = "//android.widget.Button[@text = 'While using the app']")
+	private WebElement While_using_the_app;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_deny_button']")
+	private WebElement deny;
+	@FindBy(xpath ="//android.widget.Button[@text='OK']")
+	private WebElement ok;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.settings:id/button1']")
+	private WebElement open;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='android:id/button1']")
+	private WebElement allow;
 	@FindBy(id= "com.customerapp.hero:id/cus_orange_button_lay")
 	private WebElement continue_button;
 	@FindBy(className ="android.widget.EditText")
@@ -36,6 +46,8 @@ public class Login_page extends Base_Utility {
 	private WebElement Terms_of_Use;
 	@FindBy(xpath ="(//android.view.View[@text])[23]")
 	private WebElement Terms_of_Use_condition;
+	@FindBy(xpath ="(//android.widget.TextView[@text])[6]")
+	private WebElement Terms_of_Use_condition_for_real_device;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/pp_lbl']")
 	private WebElement Privacy_Policy;
 	@FindBy(xpath="(//android.view.View[@text])[24]")
@@ -52,7 +64,26 @@ public class Login_page extends Base_Utility {
 	{
 		return close;
 	}
-
+	public WebElement While_using_the_app()
+	{
+		return While_using_the_app;
+	}
+	public WebElement open()
+	{
+		return open;
+	}
+	public WebElement ok()
+	{
+		return ok;
+	}
+	public WebElement allow()
+	{
+		return allow;
+	}
+public WebElement deny()
+{
+	return deny;
+}
 	public WebElement mobile_No()
 	{
 		return mobile_No;
@@ -98,6 +129,10 @@ public class Login_page extends Base_Utility {
 		public WebElement Terms_of_Use_condition()
 		{
 			return Terms_of_Use_condition;
+		}
+		public WebElement Terms_of_Use_condition_for_real_device()
+		{
+			return Terms_of_Use_condition_for_real_device;
 		}
 		public WebElement Privacy_Policy()
 		{

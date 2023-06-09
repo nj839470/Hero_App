@@ -27,7 +27,13 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC001_Verify_Login_with_Invalid_credential() {
 		msg("************************Login page test**************************");
 		ob = new Login_page();
-		Custom_click(ob.close(), "Close button");
+//		Custom_click(ob.While_using_the_app(), "While using the app");
+//		Custom_click(ob.ok(), "OK");									// all 3 line for pcloudy
+//		Custom_click(ob.allow(), "allow"); 
+//		Custom_click(ob.close(), "Close button"); // for emulator
+		Custom_click(ob.deny(), "Deny");
+		Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
+		Custom_click(ob.open(), "Open");
 	}
 
 	@Test(priority = 1)
@@ -64,7 +70,8 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC005_Terms_of_use_button() throws InterruptedException {
 		Custom_click(ob.Terms_of_Use(), "Terms of use button");
 		Thread.sleep(8000);
-		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());
+//		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());	// For emulator
+		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText()); // for real device
 		Custom_click(ob.back_page(), "back terms of use page ");
 	}
 
@@ -72,17 +79,21 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC006_Privacy_policy() throws InterruptedException {
 		Custom_click(ob.Privacy_Policy(), "Privacy Policy");
 		Thread.sleep(8000);
-		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());
+//		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());// For emulator
+		msg("Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());// for real device
 		Custom_click(ob.back_page(), "back Privacy Policy page ");
+		
 	}
 
 	@Test(priority = 6)
 	public void TC007_contact_Us() throws InterruptedException {
+		Scroll_down_page_Action("Contact us");
 		Custom_click(ob.contact_us(), "Contact us");
 		Thread.sleep(2000);
 		Custom_click(ob.contact_via_email(), "contact via email");
 		Thread.sleep(2000);
 		driver.navigate().back();
+		Thread.sleep(1000);
 		if(ob.back_page().isDisplayed()==true)
 		{
 		Custom_click(ob.back_page(), "back Contact us page ");

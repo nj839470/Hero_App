@@ -3,6 +3,7 @@ package Page_Test;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.page_object.Home_Page;
 import com.utility.Base_Utility;
 
@@ -86,10 +87,13 @@ public class Home_Page_Test extends Base_Utility {
 		if(ob.locate_nearest_dealer().isDisplayed()==true)
 		{
 			msg("Locate nearest dealer link is not working");
+			test.log(Status.FAIL, "Locate nearest dealer link is not working");
+			log.error("Locate nearest dealer link is not working");
 		}
 		else
 		{
-			msg("Locate nearest dealer link is working");
+			test.log(Status.PASS, "Locate nearest dealer link is working");
+			log.info("Locate nearest dealer link is working");
 		}
 
 		Custom_click(ob.Back(), "Back from RSA");
