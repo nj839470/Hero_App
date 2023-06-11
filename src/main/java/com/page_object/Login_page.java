@@ -20,7 +20,7 @@ public class Login_page extends Base_Utility {
 	private WebElement close;
 	@FindBy(id = "com.customerapp.hero:id/text_input_editext")
 	private WebElement mobile_No;
-	@FindBy(xpath = "//android.widget.Button[@text = 'While using the app']")
+	@FindBy(xpath = "//android.widget.Button[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
 	private WebElement While_using_the_app;
 	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_deny_button']")
 	private WebElement deny;
@@ -30,6 +30,8 @@ public class Login_page extends Base_Utility {
 	private WebElement open;
 	@FindBy(xpath ="//android.widget.Button[@resource-id ='android:id/button1']")
 	private WebElement allow;
+	@FindBy(xpath = "//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
+	private WebElement Allow;
 	@FindBy(id= "com.customerapp.hero:id/cus_orange_button_lay")
 	private WebElement continue_button;
 	@FindBy(className ="android.widget.EditText")
@@ -80,6 +82,10 @@ public class Login_page extends Base_Utility {
 	{
 		return allow;
 	}
+public WebElement Allow()
+{
+	return Allow;
+}
 public WebElement deny()
 {
 	return deny;

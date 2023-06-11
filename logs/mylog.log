@@ -1,42 +1,114 @@
-[INFO ] 2023-06-09 19:45:55.510 [main] Hero_App - ************************Login page test**************************
-[INFO ] 2023-06-09 19:46:07.065 [main] Hero_App - Deny is clickable
-[INFO ] 2023-06-09 19:46:08.636 [main] Hero_App - Allow Now is clickable
-[INFO ] 2023-06-09 19:46:12.072 [main] Hero_App - Open is clickable
-[INFO ] 2023-06-09 19:46:20.334 [main] Hero_App - Login with unregisterd mobile number send successfully
-[INFO ] 2023-06-09 19:46:24.028 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
-[INFO ] 2023-06-09 19:46:28.498 [main] Hero_App - Login with short_digit_mobile_number send successfully
-[INFO ] 2023-06-09 19:46:30.369 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
-[INFO ] 2023-06-09 19:46:33.479 [main] Hero_App - Login with More than 10 digit mobile number send successfully
-[INFO ] 2023-06-09 19:46:35.365 [main] Hero_App - More then 10 digits mobiles number are not acceptable
-[INFO ] 2023-06-09 19:46:40.453 [main] Hero_App - Terms of use button is clickable
-[INFO ] 2023-06-09 19:46:52.755 [main] Hero_App - Terms of use: First condition =  
-[INFO ] 2023-06-09 19:46:55.878 [main] Hero_App - back terms of use page  is clickable
-[INFO ] 2023-06-09 19:46:57.811 [main] Hero_App - Privacy Policy is clickable
-[INFO ] 2023-06-09 19:47:07.010 [main] Hero_App - Privacy policy : First Condition = Hero MotoCorp Ltd. together with its affiliates and subsidiaries (collectively referred to as the "Company" or "Hero" or "Us" and also indicated by "us", "we" or "our") is committed to protecting your privacy and personal information you give to us. We encourage you to read the Privacy Policy.
-[INFO ] 2023-06-09 19:47:09.573 [main] Hero_App - back Privacy Policy page  is clickable
-[INFO ] 2023-06-09 19:47:12.269 [main] Hero_App - Successfully  Scroll page down Action Contact us
-[ERROR] 2023-06-09 19:47:52.452 [main] Hero_App - Contact us is not clickable
-[INFO ] 2023-06-09 19:47:55.816 [main] Hero_App - contact via email is clickable
-[INFO ] 2023-06-09 19:48:45.454 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-09 19:48:47.522 [main] Hero_App - Coninue button is present
-[INFO ] 2023-06-09 19:48:48.560 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-09 19:49:11.206 [main] Hero_App - Resend button is present
-[INFO ] 2023-06-09 19:49:11.791 [main] Hero_App - Resend button is clickable
-[INFO ] 2023-06-09 19:49:33.734 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-06-09 19:49:35.852 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-06-09 19:49:38.009 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-06-09 19:49:40.109 [main] Hero_App - enterOTP =7 send successfully
-[INFO ] 2023-06-09 19:49:42.392 [main] Hero_App - enterOTP =8 send successfully
-[INFO ] 2023-06-09 19:49:44.466 [main] Hero_App - enterOTP =9 send successfully
-[INFO ] 2023-06-09 19:49:45.882 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-06-09 19:49:47.949 [main] Hero_App - Verify Button is still present
-[INFO ] 2023-06-09 19:49:48.328 [main] Hero_App - Edit Mobile Number is clickable
-[INFO ] 2023-06-09 19:49:52.269 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-09 19:49:55.234 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-09 19:50:16.709 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-06-09 19:50:18.967 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-06-09 19:50:21.046 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-06-09 19:50:23.095 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-06-09 19:50:25.179 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-06-09 19:50:27.280 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-06-09 19:50:28.728 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-06-11 11:42:15.121 [main] Hero_App - ************************Login page test**************************
+[INFO ] 2023-06-11 11:42:16.871 [main] Hero_App - Deny is clickable
+[INFO ] 2023-06-11 11:42:18.191 [main] Hero_App - Allow Now is clickable
+[INFO ] 2023-06-11 11:42:21.265 [main] Hero_App - Open is clickable
+[INFO ] 2023-06-11 11:42:24.515 [main] Hero_App - Close button is clickable
+[INFO ] 2023-06-11 11:42:28.435 [main] Hero_App - Login with unregisterd mobile number send successfully
+[INFO ] 2023-06-11 11:42:31.723 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
+[INFO ] 2023-06-11 11:42:35.773 [main] Hero_App - Login with short_digit_mobile_number send successfully
+[INFO ] 2023-06-11 11:42:38.113 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
+[INFO ] 2023-06-11 11:42:41.065 [main] Hero_App - Login with More than 10 digit mobile number send successfully
+[INFO ] 2023-06-11 11:42:43.127 [main] Hero_App - More then 10 digits mobiles number are not acceptable
+[INFO ] 2023-06-11 11:42:48.295 [main] Hero_App - Terms of use button is clickable
+[INFO ] 2023-06-11 11:42:57.729 [main] Hero_App - Terms of use: First condition =  
+[INFO ] 2023-06-11 11:43:00.256 [main] Hero_App - back terms of use page  is clickable
+[INFO ] 2023-06-11 11:43:01.473 [main] Hero_App - Privacy Policy is clickable
+[INFO ] 2023-06-11 11:43:10.204 [main] Hero_App - Privacy policy : First Condition = Hero MotoCorp Ltd. together with its affiliates and subsidiaries (collectively referred to as the "Company" or "Hero" or "Us" and also indicated by "us", "we" or "our") is committed to protecting your privacy and personal information you give to us. We encourage you to read the Privacy Policy.
+[INFO ] 2023-06-11 11:43:13.024 [main] Hero_App - back Privacy Policy page  is clickable
+[INFO ] 2023-06-11 11:43:15.608 [main] Hero_App - Successfully  Scroll page down Action Contact us
+[INFO ] 2023-06-11 11:43:16.243 [main] Hero_App - Contact us is clickable
+[INFO ] 2023-06-11 11:43:18.815 [main] Hero_App - contact via email is clickable
+[INFO ] 2023-06-11 11:44:03.060 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-06-11 11:44:05.239 [main] Hero_App - Coninue button is present
+[INFO ] 2023-06-11 11:44:06.142 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-06-11 11:44:26.294 [main] Hero_App - Resend button is present
+[INFO ] 2023-06-11 11:44:26.739 [main] Hero_App - Resend button is clickable
+[INFO ] 2023-06-11 11:44:47.952 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-06-11 11:44:49.290 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-06-11 11:44:50.619 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-06-11 11:44:51.974 [main] Hero_App - enterOTP =7 send successfully
+[INFO ] 2023-06-11 11:44:53.291 [main] Hero_App - enterOTP =8 send successfully
+[INFO ] 2023-06-11 11:44:54.633 [main] Hero_App - enterOTP =9 send successfully
+[INFO ] 2023-06-11 11:44:55.728 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-06-11 11:44:57.477 [main] Hero_App - Verify Button is still present
+[INFO ] 2023-06-11 11:44:57.755 [main] Hero_App - Edit Mobile Number is clickable
+[INFO ] 2023-06-11 11:45:01.175 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-06-11 11:45:03.886 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-06-11 11:45:24.561 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-06-11 11:45:25.898 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-06-11 11:45:27.248 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-06-11 11:45:28.586 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-06-11 11:45:29.912 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-06-11 11:45:31.271 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-06-11 11:45:32.337 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-06-11 11:45:32.348 [main] Hero_App - ************************Select_Vehicle_Page_Test**************************
+[INFO ] 2023-06-11 11:45:45.512 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-06-11 11:45:46.285 [main] Hero_App - Save button before updating the nick name is  present
+[INFO ] 2023-06-11 11:45:48.113 [main] Hero_App - Nick Name  send successfully
+[INFO ] 2023-06-11 11:45:50.026 [main] Hero_App - Nick name close button  is clickable
+[INFO ] 2023-06-11 11:45:50.770 [main] Hero_App - Nick name is not saved
+[INFO ] 2023-06-11 11:45:51.039 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-06-11 11:45:53.964 [main] Hero_App -  30 letter Nick Name  send successfully
+[INFO ] 2023-06-11 11:45:55.771 [main] Hero_App - Save button after updating the 30 letter nick name is  is clickable
+[INFO ] 2023-06-11 11:45:57.334 [main] Hero_App -  = 30 letter nick name are acceptable
+[INFO ] 2023-06-11 11:45:57.676 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-06-11 11:46:00.979 [main] Hero_App - 31 letter Nick Name  send successfully
+[INFO ] 2023-06-11 11:46:03.474 [main] Hero_App - Save button after updating 31 letter nick name the nick name   is clickable
+[INFO ] 2023-06-11 11:46:03.556 [main] Hero_App -  = 31 letter nick name are not acceptable
+[INFO ] 2023-06-11 11:46:03.848 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-06-11 11:46:06.746 [main] Hero_App - 29 letter Nick Name  send successfully
+[INFO ] 2023-06-11 11:46:08.583 [main] Hero_App - Save button after updating the 29 letter nick name   is clickable
+[INFO ] 2023-06-11 11:46:09.803 [main] Hero_App -  = 29 letter nick name are acceptable
+[INFO ] 2023-06-11 11:46:10.104 [main] Hero_App - Continue Button before select vehicle is present
+[INFO ] 2023-06-11 11:46:10.190 [main] Hero_App - We found 1 vehicles linked to you
+[INFO ] 2023-06-11 11:46:10.191 [main] Hero_App - Total number of Vehicles registered in this number is = 1
+[INFO ] 2023-06-11 11:46:10.520 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-06-11 11:46:10.772 [main] Hero_App - Continue Button after select vehicle is present
+[INFO ] 2023-06-11 11:46:13.084 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-06-11 11:46:13.392 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-06-11 11:46:15.405 [main] Hero_App - ************************Home_Page_Test**************************
+[INFO ] 2023-06-11 11:46:17.593 [main] Hero_App - Current Temperature is =35°C
+[INFO ] 2023-06-11 11:46:18.247 [main] Hero_App - Vehicle Img is present
+[INFO ] 2023-06-11 11:46:21.754 [main] Hero_App -  Drop down is clickable
+[INFO ] 2023-06-11 11:46:22.807 [main] Hero_App - 0 vehicle is clickable
+[INFO ] 2023-06-11 11:46:26.257 [main] Hero_App -  Drop down is clickable
+[INFO ] 2023-06-11 11:46:27.366 [main] Hero_App -  Drop down is clickable
+[INFO ] 2023-06-11 11:46:28.712 [main] Hero_App - Collapse button is clickable
+[INFO ] 2023-06-11 11:46:31.399 [main] Hero_App -  Return collapse button is clickable
+[INFO ] 2023-06-11 11:46:32.592 [main] Hero_App - Notification is clickable
+[INFO ] 2023-06-11 11:46:34.116 [main] Hero_App - Total Notification are=3
+[INFO ] 2023-06-11 11:46:35.096 [main] Hero_App - Notification back is clickable
+[INFO ] 2023-06-11 11:46:35.827 [main] Hero_App - Document menu is clickable
+[INFO ] 2023-06-11 11:46:37.388 [main] Hero_App - Back from Documents is clickable
+[INFO ] 2023-06-11 11:46:40.158 [main] Hero_App - Relationship Manager is clickable
+[INFO ] 2023-06-11 11:46:42.823 [main] Hero_App - Relationship Manager name is =ANIL TYAGI
+[INFO ] 2023-06-11 11:46:42.892 [main] Hero_App - Relationship Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
+[INFO ] 2023-06-11 11:46:42.963 [main] Hero_App - Relationship Manager Contact number is =8282828282
+[INFO ] 2023-06-11 11:46:45.137 [main] Hero_App - Others Contacts information =Krishan Kumar Sharma
+[INFO ] 2023-06-11 11:46:45.326 [main] Hero_App - Others Contacts information =TSM
+[INFO ] 2023-06-11 11:46:45.532 [main] Hero_App - Others Contacts information =krishan.sharma@heromotocorp.com
+[INFO ] 2023-06-11 11:46:45.759 [main] Hero_App - Others Contacts information =NITIN PARASHAR
+[INFO ] 2023-06-11 11:46:45.954 [main] Hero_App - Others Contacts information =ASM
+[INFO ] 2023-06-11 11:46:46.161 [main] Hero_App - Others Contacts information =nitin.parashar@heromotocorp.com
+[INFO ] 2023-06-11 11:46:47.363 [main] Hero_App - Back from Relationship Manager is clickable
+[INFO ] 2023-06-11 11:46:48.097 [main] Hero_App - RSA is clickable
+[ERROR] 2023-06-11 11:47:30.180 [main] Hero_App - locate nearest dealer is not clickable
+[ERROR] 2023-06-11 11:48:50.721 [main] Hero_App - Technical Support is not clickable
+[INFO ] 2023-06-11 11:48:56.048 [main] Hero_App - Technical Support Manager Name is =SPLENDOR +
+[INFO ] 2023-06-11 11:48:56.249 [main] Hero_App - Technical Support Manager address is =qwertyuiopasdfghjklzxcvbnmqwe
+[ERROR] 2023-06-11 11:49:26.778 [main] Hero_App - Dealer Locator is not clickable
+[ERROR] 2023-06-11 11:49:28.821 [main] Hero_App - Select state is not clickable
+[ERROR] 2023-06-11 11:49:28.905 [main] Hero_App - Select city is not clickable
+[ERROR] 2023-06-11 11:49:28.963 [main] Hero_App - Map View dealer name and address is not clickable
+[INFO ] 2023-06-11 11:49:29.001 [main] Hero_App - ************************My_Profile_Page_Test**************************
+[ERROR] 2023-06-11 11:49:31.034 [main] Hero_App - Side menu button is not clickable
+[ERROR] 2023-06-11 11:49:31.061 [main] Hero_App - My profile is not clickable
+[ERROR] 2023-06-11 11:49:31.148 [main] Hero_App - More details is not clickable
+[ERROR] 2023-06-11 11:49:31.210 [main] Hero_App - Edit profile details button is not clickable
+[ERROR] 2023-06-11 11:49:31.227 [main] Hero_App - profile pic edit button is not clickable
+[ERROR] 2023-06-11 11:49:31.247 [main] Hero_App -  Chose profile pic from liberary  is not clickable
+[ERROR] 2023-06-11 11:49:33.325 [main] Hero_App -  Services button is not clickable
+[ERROR] 2023-06-11 11:49:33.424 [main] Hero_App - Service Booked details is not clickable
+[ERROR] 2023-06-11 11:49:33.474 [main] Hero_App - Last Serviced  is not clickable
+[ERROR] 2023-06-11 11:49:33.530 [main] Hero_App - Tips and DIY is not clickable
+[ERROR] 2023-06-11 11:49:35.864 [main] Hero_App - DIY Videos button is not clickable

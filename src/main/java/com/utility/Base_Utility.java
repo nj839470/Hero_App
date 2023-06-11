@@ -91,30 +91,30 @@ public class Base_Utility
 //	}
 	// ******************Automatic server end code ************************
 
-//	public void OPEN_AND_INSTALL_APP() {
-//		try {
-////  //-----for virtual device---------
-//			
-////  DesiredCapabilities db = new DesiredCapabilities();
-//			UiAutomator2Options db = new UiAutomator2Options();
-//			db.setCapability("appium:automationName", "uiautomator2");
-//			db.setCapability("platformName", "Android");
-//			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-//			db.setCapability("appium:udid", "emulator-5554");
-//			db.setCapability("appium:avdLaunchTimeout", 600000);
-//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-//			db.setCapability("appium:ensureWebviewsHavePages", true);
-//			db.setCapability("appium:nativeWebScreenshot", true);
-//			db.setCapability("appium:newCommandTimeout", 6600);
-//			log = LogManager.getLogger("Hero_App");
-//			lis = new listner();
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//	}
-//
+	public void OPEN_AND_INSTALL_APP() {
+		try {
+//  //-----for virtual device---------
+			
+//  DesiredCapabilities db = new DesiredCapabilities();
+			UiAutomator2Options db = new UiAutomator2Options();
+			db.setCapability("appium:automationName", "uiautomator2");
+			db.setCapability("platformName", "Android");
+			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+			db.setCapability("appium:udid", "emulator-5554");
+			db.setCapability("appium:avdLaunchTimeout", 600000);
+			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+			db.setCapability("appium:ensureWebviewsHavePages", true);
+			db.setCapability("appium:nativeWebScreenshot", true);
+			db.setCapability("appium:newCommandTimeout", 6600);
+			log = LogManager.getLogger("Hero_App");
+			lis = new listner();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
 	// *************************pCloudy************************************************
 	
 //	public void OPEN_AND_INSTALL_APP() {
@@ -132,7 +132,7 @@ public class Base_Utility
 //			capabilities.setCapability("automationName", "uiautomator2");
 //			capabilities.setCapability("pCloudy_ApplicationName", "Hero_app.apk");
 //			capabilities.setCapability("appPackage", "com.customerapp.hero");
-//			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.MainActivity");
+//			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
 //			capabilities.setCapability("pCloudy_WildNet", "false");
 //			capabilities.setCapability("pCloudy_EnableVideo", "false");
 //			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
@@ -145,29 +145,29 @@ public class Base_Utility
 //		}
 //	}
 	// -------- for real device----------
-	public void OPEN_AND_INSTALL_APP() {
-		try {
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "Galaxy M01 Core");
-			db.setCapability("appium:udid", "RZ8N71NVKQV");
-			db.setCapability("appium:avdLaunchTimeout", 600000);
-			db.setCapability("appPackage", "com.customerapp.hero");
-			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-			db.setCapability("appium:noReset", "false");
-//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
-			log = LogManager.getLogger("Hero_App");
-			lis = new listner();	
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
+//	public void OPEN_AND_INSTALL_APP() {
+//		try {
+//			UiAutomator2Options db = new UiAutomator2Options();
+//			db.setCapability("appium:automationName", "uiautomator2");
+//			db.setCapability("platformName", "Android");
+//			db.setCapability("appium:deviceName", "realme C33 2023");
+//			db.setCapability("appium:udid", "3323262910AA04DS");
+//			db.setCapability("appium:avdLaunchTimeout", 600000);
+//			db.setCapability("appPackage", "com.customerapp.hero");
+//			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+//			db.setCapability("appium:noReset", "false");
+////			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//			db.setCapability("appium:ensureWebviewsHavePages", true);
+//			db.setCapability("appium:nativeWebScreenshot", true);
+//			db.setCapability("appium:newCommandTimeout", 6600);
+//			log = LogManager.getLogger("Hero_App");
+//			lis = new listner();
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//	}
 	@Override
 	public String config_getdata(String key) {
 		String value = "";

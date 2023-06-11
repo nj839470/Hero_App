@@ -27,13 +27,12 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC001_Verify_Login_with_Invalid_credential() {
 		msg("************************Login page test**************************");
 		ob = new Login_page();
-//		Custom_click(ob.While_using_the_app(), "While using the app");
-//		Custom_click(ob.ok(), "OK");									// all 3 line for pcloudy
-//		Custom_click(ob.allow(), "allow"); 
-//		Custom_click(ob.close(), "Close button"); // for emulator
-		Custom_click(ob.deny(), "Deny");
-		Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
-		Custom_click(ob.open(), "Open");
+//		Custom_click(ob.deny(), "Deny");
+//		Custom_click(ob.allow(), "Allow Now");	
+//		Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
+//		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+//		Custom_click(ob.open(), "Open");	//This line for real device
+	Custom_click(ob.close(), "Close button"); // for emulator and real device
 	}
 
 	@Test(priority = 1)
@@ -70,8 +69,8 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC005_Terms_of_use_button() throws InterruptedException {
 		Custom_click(ob.Terms_of_Use(), "Terms of use button");
 		Thread.sleep(8000);
-//		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());	// For emulator
-		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText()); // for real device
+		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());	// For emulator
+//		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText()); // for real device
 		Custom_click(ob.back_page(), "back terms of use page ");
 	}
 
@@ -79,8 +78,8 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC006_Privacy_policy() throws InterruptedException {
 		Custom_click(ob.Privacy_Policy(), "Privacy Policy");
 		Thread.sleep(8000);
-//		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());// For emulator
-		msg("Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());// for real device
+		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());// For emulator
+//		msg("Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());// for real device
 		Custom_click(ob.back_page(), "back Privacy Policy page ");
 		
 	}
@@ -91,13 +90,12 @@ public class Login_Page_Test extends Base_Utility {
 		Custom_click(ob.contact_us(), "Contact us");
 		Thread.sleep(2000);
 		Custom_click(ob.contact_via_email(), "contact via email");
-		Thread.sleep(2000);
 		driver.navigate().back();
-		Thread.sleep(1000);
-		if(ob.back_page().isDisplayed()==true)
+		if(ob.back_page().isDisplayed()!=true)
 		{
-		Custom_click(ob.back_page(), "back Contact us page ");
+			driver.navigate().back();
 		}
+		Custom_click(ob.back_page(), "back Contact us page ");
 	}
 
 	@Test(priority = 7)
@@ -142,6 +140,9 @@ public class Login_Page_Test extends Base_Utility {
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
 		try {
+			Custom_click(ob.deny(), "Deny");
+			Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
+			Custom_click(ob.open(), "Open");
 			Custom_click(ob.close(), "Close button");
 			custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));

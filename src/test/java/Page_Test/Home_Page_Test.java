@@ -83,8 +83,9 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC021_Verify_RSA() throws InterruptedException {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(2000);
-		Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
-		if(ob.locate_nearest_dealer().isDisplayed()==true)
+		Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); //for emulator
+//		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
+		if(ob.locate_nearest_dealer_real_device().isDisplayed()==true)
 		{
 			msg("Locate nearest dealer link is not working");
 			test.log(Status.FAIL, "Locate nearest dealer link is not working");

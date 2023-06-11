@@ -138,9 +138,9 @@ public class Home_Page extends Base_Utility {
 	private WebElement Add_Now;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
 	private WebElement Document_Check;
-	@FindBy(xpath = "//android.widget.Button[@text ='While using the app']")
+	@FindBy(xpath = "//android.widget.Button[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
 	private WebElement While_using_the_app;
-	@FindBy(xpath = "//android.widget.Button[@text ='Allow']")
+	@FindBy(xpath = "//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
 	private WebElement Allow;
 	@FindBy(xpath = "//android.widget.TextView[@text ='Choose from library']")
 	private WebElement Choose_Document_from_library;
@@ -222,6 +222,8 @@ public class Home_Page extends Base_Utility {
 	private WebElement RSA;
 	@FindBy(xpath ="//android.widget.TextView[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer;
+	@FindBy(xpath ="//android.view.View[@text ='Locate nearest dealer']")
+	private WebElement locate_nearest_dealer_real_device;
 
 	public WebElement RSA() {
 		return RSA;
@@ -230,7 +232,10 @@ public class Home_Page extends Base_Utility {
 		{
 			return locate_nearest_dealer;
 		}
-	
+	public WebElement locate_nearest_dealer_real_device()
+	{
+		return locate_nearest_dealer_real_device;
+	}
 
 //****************************Technical Support************************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='4']")

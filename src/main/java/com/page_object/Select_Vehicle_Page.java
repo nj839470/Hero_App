@@ -29,7 +29,7 @@ public class Select_Vehicle_Page extends Base_Utility {
 	private WebElement continue_button;
 	@FindBy(xpath = "(//android.view.ViewGroup[@index ='0'])[1]")
 	private WebElement click_first_vehicle;
-	@FindBy(xpath = "//android.widget.Button[@text = 'While using the app']")
+	@FindBy(xpath = "//android.widget.Button[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
 	private WebElement While_using_the_app;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl1']")
 	private WebElement vehicle_info;
