@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.page_object.Home_Page;
+import com.page_object.Services_Page;
 import com.utility.Base_Utility;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -16,13 +17,14 @@ public class Home_Page_Test extends Base_Utility {
 
 	public Login_Page_Test login;
 	public Home_Page ob;
+	
 
 	@Test(priority = 0)
 	public void TC017_Home_page_verify() throws InterruptedException {
 		msg("************************Home_Page_Test**************************");
 		ob = new Home_Page();
-//		login = new Login_Page_Test();
-//		login.login();
+		login = new Login_Page_Test();
+		login.login();
 		Thread.sleep(2000);
 		msg("Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
@@ -34,10 +36,10 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.notification(), "Notification");
 		msg("Total Notification are=" + ob.notification_count());
 		Custom_click(ob.notification_back(), "Notification back");
+		
 
 	}
-
-	public void TC018__verify_Navigate() {
+		public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
 		Custom_click(ob.Search_destination(), "Search destination");
 		custom_sendkeys(ob.Search_here(), config_getdata("search_destination"), "Noida");
@@ -133,4 +135,15 @@ public class Home_Page_Test extends Base_Utility {
 		ob.Dealer_info();
 		Custom_click(ob.Back(), "Back from Dealer Locator");
 	}
+	@Test(priority = 8)
+	public void TC035_Service_information()
+	{
+//		ob = new Home_Page();
+//		login = new Login_Page_Test();
+//		login.login();
+		scrollByText("Discover");
+		ob.Service_info();
+			}
+
+
 }

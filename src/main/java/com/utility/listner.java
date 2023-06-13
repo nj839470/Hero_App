@@ -37,7 +37,7 @@ public class listner extends Base_Utility implements ITestListener {
 		}
 	
 		public void onTestFailure(ITestResult result) {
-		//	test.log(Status.FAIL, "Test Case Fail");
+			test.log(Status.FAIL, "Test Case Fail");
 			if(result.getStatus()==ITestResult.FAILURE)
 			{
 				test.addScreenCaptureFromPath(getcapcture(result.getName()));

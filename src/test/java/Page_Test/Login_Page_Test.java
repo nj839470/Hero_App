@@ -3,6 +3,7 @@ package Page_Test;
 import static org.testng.Assert.assertEquals;
 
 import org.asynchttpclient.util.Assertions;
+import org.openqa.selenium.By;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
@@ -31,6 +32,7 @@ public class Login_Page_Test extends Base_Utility {
 //		Custom_click(ob.allow(), "Allow Now");	
 //		Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
 //		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+//		driver.findElement(By.xpath("cdshvkdfjk")).click();
 //		Custom_click(ob.open(), "Open");	//This line for real device
 	Custom_click(ob.close(), "Close button"); // for emulator and real device
 	}
@@ -140,9 +142,9 @@ public class Login_Page_Test extends Base_Utility {
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
 		try {
-			Custom_click(ob.deny(), "Deny");
-			Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
-			Custom_click(ob.open(), "Open");
+//			Custom_click(ob.deny(), "Deny");
+//			Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
+//			Custom_click(ob.open(), "Open");
 			Custom_click(ob.close(), "Close button");
 			custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));

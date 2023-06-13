@@ -17,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -34,6 +35,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -57,7 +59,7 @@ public class Base_Utility
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
 	public static AndroidDriver driver;
 
-	@BeforeSuite
+	@BeforeTest
 	// ******************Automatic server start code ************************
 //	public void appiumTest() throws Exception {
 //		
@@ -123,7 +125,7 @@ public class Base_Utility
 //			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
 //			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
 //			capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-//			capabilities.setCapability("newCommandTimeout", 600);
+//			capabilities.setCapability("newCommandTimeout", 6000);
 //			capabilities.setCapability("launchTimeout", 90000);
 //			capabilities.setCapability("pCloudy_DeviceManufacturer", "SAMSUNG");
 //			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
@@ -137,9 +139,11 @@ public class Base_Utility
 //			capabilities.setCapability("pCloudy_EnableVideo", "false");
 //			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
 //			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+//			capabilities.setCapability("autoGrantPermissions",true); 
 //			driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 //			 log = LogManager.getLogger("Hero_App");
+//			 
 //		} catch (Exception e) {
 //			System.out.println(e);
 //		}
@@ -268,7 +272,7 @@ public class Base_Utility
 				wait.until(ExpectedConditions.visibilityOf(element));
 				element.click();
 				element.sendKeys(value);
-				test.log(Status.PASS, fieldname + " value send successfully =" + value + " " + fieldname);
+				test.log(Status.PASS, fieldname + " send successfully =" + value);
 				log.info(fieldname + " send successfully");
 			}
 		} catch (Exception e) {
@@ -300,14 +304,15 @@ public class Base_Utility
 	@SuppressWarnings({ "deprecation", "rawtypes" })
 	public static void Scroll_down_page_Action(String fieldname) {  	
 		    try {
-		    	Dimension dim = driver.manage().window().getSize();	    	
-		    	int startx = (int) (dim.width*0.5);
-		    	int starty = (int) (dim.height*0.2);	    	
-		    	int endx   =  (int) (dim.width*0.2);  	
-		    	int endy   = (int) (dim.height*0.8);
+		    	Dimension dim = driver.manage().window().getSize();	 
+		    	System.out.println(dim);
+		    	int startx = (int)(dim.width*0.5);
+		    	int starty = (int)(dim.height*0.2);	    	
+		    	int endx   =  (int)(dim.width*0.2);  	
+		    	int endy   = (int)(dim.height*0.8);
 				TouchAction action = new TouchAction(driver);
 		    	for(int i=0;i<=1;i++) {
-		    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
+		    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(10))).moveTo(PointOption.point(endx ,endy))
 		    		.release().perform();
 		    	}
 		    	test.log(Status.PASS, "Successfully Scroll page Action =="+ fieldname);
@@ -330,7 +335,15 @@ public class Base_Utility
 			log.error("==NOT==Unable To Swipe page direction Action " + fieldname);
 		}
 	}
+	public void scrollByText(String menuText) {
 
+        try {
+
+             driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
+	}
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void VerifyImagePresent(WebElement image, String fieldname) {

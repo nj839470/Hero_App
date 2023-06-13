@@ -109,7 +109,7 @@ public WebElement deny()
 		{
 			for(int i=0,j=3;i<OTP.size();i++,j++)
 			{
-				custom_sendkeys(OTP.get(i), ""+(j+1), "enterOTP =" +(j+1));
+				custom_sendkeys(OTP.get(i), ""+(j+1), "OTP is ");
 			}
 		}
 		public WebElement resend_button()

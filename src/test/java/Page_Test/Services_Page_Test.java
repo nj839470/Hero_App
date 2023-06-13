@@ -33,6 +33,11 @@ public class Services_Page_Test extends Base_Utility {
 			if (ob.service_booked_date().isDisplayed() != true) {
 				Custom_click(ob.service_info_and_raised_button(), "Service Request Raised button");
 			}
+			else
+			{
+				msg("Service is already bokked on" +ob.service_booked_date().getText());
+			
+			}
 		}
 		msg("Vehicle brand name in Ongoing Service details= " + ob.Vehicle_brand_Name().getText());
 		msg("Vehicle number in Ongoing Service details  = " + ob.Vehicle_Nick_Name().getText());

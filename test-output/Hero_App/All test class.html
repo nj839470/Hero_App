@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>All test class</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/13/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 11 12:15:14 IST 2023</td>
+<td>Started on:</td><td>Tue Jun 13 17:58:35 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>830 seconds (830426 ms)</td>
+<tr><td>Total time:</td><td>828 seconds (828386 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,132 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.temperature()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157876232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157876232'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.temperature()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page()'><b>TC029_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page(Services_Page_Test.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1411675719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1411675719'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page(Services_Page_Test.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>44</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
+<tr>
 <td title='Page_Test.Login_Page_Test.TC007_contact_Us()'><b>TC007_contact_Us</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.ImageView[@resource-id = &apos;com.customerapp.hero:id/back_btn&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.ImageView[@resource-id = &apos;com.customerapp.hero:id/back_btn&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -98,17 +215,17 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:98)
+	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:96)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532675992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1532675992'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397639322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397639322'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.ImageView[@resource-id = &apos;com.customerapp.hero:id/back_btn&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.ImageView[@resource-id = &apos;com.customerapp.hero:id/back_btn&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -125,7 +242,7 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:98)
+	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:96)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -153,59 +270,16 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>33</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
+<td>78</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC027_verify_more_detais_button()'><b>TC027_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/tv&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.get(Unknown Source)
-	at com.page_object.My_Profile_Page.user_info(My_Profile_Page.java:77)
-	at Page_Test.My_Profile_Page_Test.TC027_verify_more_detais_button(My_Profile_Page_Test.java:32)
+<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.map_view()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address(Home_Page_Test.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332464215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace332464215'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/tv&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.get(Unknown Source)
-	at com.page_object.My_Profile_Page.user_info(My_Profile_Page.java:77)
-	at Page_Test.My_Profile_Page_Test.TC027_verify_more_detais_button(My_Profile_Page_Test.java:32)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812442475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812442475'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.map_view()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address(Home_Page_Test.java:134)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -234,56 +308,52 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Page_Test.My_Profile_Page_Test@19b843ba</td></tr>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC031_verify_service_booked_info()'><b>TC031_verify_service_booked_info</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandName&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC031_verify_service_booked_info(Services_Page_Test.java:62)
+<td title='Page_Test.Home_Page_Test.TC035_Service_information()'><b>TC035_Service_information</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Service_info()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC035_Service_information(Home_Page_Test.java:145)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace812012641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace812012641'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandName&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC031_verify_service_booked_info(Services_Page_Test.java:62)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424832797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424832797'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Service_info()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC035_Service_information(Home_Page_Test.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Documents_Menu()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC019_Verify_Documents(Home_Page_Test.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2043383802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2043383802'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Documents_Menu()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC019_Verify_Documents(Home_Page_Test.java:63)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -312,48 +382,15 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_edit_prifile()'><b>TC028_edit_prifile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, goBack {}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
-	at Page_Test.My_Profile_Page_Test.TC028_edit_prifile(My_Profile_Page_Test.java:40)
+<td title='Page_Test.Home_Page_Test.TC021_Verify_RSA()'><b>TC021_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.RSA()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC021_Verify_RSA(Home_Page_Test.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace707108719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace707108719'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, goBack {}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
-	at Page_Test.My_Profile_Page_Test.TC028_edit_prifile(My_Profile_Page_Test.java:40)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1207664329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1207664329'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.RSA()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC021_Verify_RSA(Home_Page_Test.java:86)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -382,16 +419,54 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Page_Test.My_Profile_Page_Test@19b843ba</td></tr>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page()'><b>TC029_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
+<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Dealer_Locator()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator(Home_Page_Test.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1837581973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1837581973'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Dealer_Locator()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator(Home_Page_Test.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandName&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=(//android.view.View[@text])[24]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -405,16 +480,17 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page(Services_Page_Test.java:21)
+	at Page_Test.Login_Page_Test.TC006_Privacy_policy(Login_Page_Test.java:83)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace979620424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace979620424'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1232819726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232819726'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandName&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=(//android.view.View[@text])[24]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -431,7 +507,44 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC029_Vehicle_details_on_service_page(Services_Page_Test.java:21)
+	at Page_Test.Login_Page_Test.TC006_Privacy_policy(Login_Page_Test.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>49</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Relationship_Manager()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager(Home_Page_Test.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527147571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527147571'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Relationship_Manager()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager(Home_Page_Test.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -460,496 +573,17 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC004_max_digit_mobile_number()'><b>TC004_max_digit_mobile_number</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=id, value=com.customerapp.hero:id/text_input_editext}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC004_max_digit_mobile_number(Login_Page_Test.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1822651119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1822651119'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=id, value=com.customerapp.hero:id/text_input_editext}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC004_max_digit_mobile_number(Login_Page_Test.java:63)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>41</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC032_Verify_Last_Serviced()'><b>TC032_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.Service_history(Services_Page.java:121)
-	at Page_Test.Services_Page_Test.TC032_Verify_Last_Serviced(Services_Page_Test.java:88)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279399383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1279399383'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.Service_history(Services_Page.java:121)
-	at Page_Test.Services_Page_Test.TC032_Verify_Last_Serviced(Services_Page_Test.java:88)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC002_invalidmobileno()'><b>TC002_invalidmobileno</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@text =&apos;Please proceed with your registered Hero mobile number&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC002_invalidmobileno(Login_Page_Test.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1859724001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1859724001'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@text =&apos;Please proceed with your registered Hero mobile number&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC002_invalidmobileno(Login_Page_Test.java:47)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>61</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/user_no_lbl&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential(Login_Page_Test.java:111)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace491762195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace491762195'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/user_no_lbl&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential(Login_Page_Test.java:111)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>82</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC033_Verify_Tips()'><b>TC033_Verify_Tips</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id, &apos;com.customerapp.hero:id&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:173)
-	at Page_Test.Services_Page_Test.TC033_Verify_Tips(Services_Page_Test.java:96)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1234980193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1234980193'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id, &apos;com.customerapp.hero:id&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:173)
-	at Page_Test.Services_Page_Test.TC033_Verify_Tips(Services_Page_Test.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC034_Verify_DIY_Videos()'><b>TC034_Verify_DIY_Videos</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/lbl&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:197)
-	at Page_Test.Services_Page_Test.TC034_Verify_DIY_Videos(Services_Page_Test.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace945213643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace945213643'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/lbl&apos;)]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:197)
-	at Page_Test.Services_Page_Test.TC034_Verify_DIY_Videos(Services_Page_Test.java:102)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
 <tr>
 <td title='Page_Test.Services_Page_Test.TC030_verify_service_info_and_raised_button()'><b>TC030_verify_service_info_and_raised_button</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/btn_lbl&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -963,16 +597,17 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC030_verify_service_info_and_raised_button(Services_Page_Test.java:30)
+	at Page_Test.Services_Page_Test.TC030_verify_service_info_and_raised_button(Services_Page_Test.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace434297724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace434297724'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865505544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865505544'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/btn_lbl&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -989,7 +624,44 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC030_verify_service_info_and_raised_button(Services_Page_Test.java:30)
+	at Page_Test.Services_Page_Test.TC030_verify_service_info_and_raised_button(Services_Page_Test.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Technical_Support()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager(Home_Page_Test.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191430552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1191430552'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Technical_Support()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager(Home_Page_Test.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -1018,56 +690,15 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Page_Test.Services_Page_Test@64ec96c6</td></tr>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC026_Verify_My_Profile()'><b>TC026_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/user_name&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.My_Profile_Page_Test.TC026_Verify_My_Profile(My_Profile_Page_Test.java:24)
+<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Select_City()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC024_Select_city(Home_Page_Test.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1855947104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1855947104'><pre>org.openqa.selenium.WebDriverException: An unknown error has occurred
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ce33f940-9849-443d-9ff9-cef79b050a81, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/user_name&apos;]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, deviceName: 778, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 15, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30964}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M127G, appium:deviceName: RZ8R916R5ND, appium:deviceScreenDensity: 300, appium:deviceScreenSize: 720x1600, appium:deviceUDID: RZ8R916R5ND, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 15, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 1.875, appium:platformVersion: 13, appium:statBarHeight: 45, appium:systemPort: 30964, appium:takesScreenshot: true, appium:viewportRect: {height: 1420, left: 0, top: 45, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.My_Profile_Page_Test.TC026_Verify_My_Profile(My_Profile_Page_Test.java:24)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041435954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041435954'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Select_City()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC024_Select_city(Home_Page_Test.java:128)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -1095,8 +726,88 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>Page_Test.My_Profile_Page_Test@19b843ba</td></tr>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@7b50df34</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC031_verify_service_booked_info()'><b>TC031_verify_service_booked_info</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+	at Page_Test.Services_Page_Test.TC031_verify_service_booked_info(Services_Page_Test.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131888461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131888461'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/brandDetail1&apos;]}]
+Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e0bebac-eb32-43a6-9a4f-ebd50f93bc9e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+	at Page_Test.Services_Page_Test.TC031_verify_service_booked_info(Services_Page_Test.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1107,105 +818,105 @@ Session ID: ce33f940-9849-443d-9ff9-cef79b050a81
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>13</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>27</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>94</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential()'><b>TC001_Verify_Login_with_Invalid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>45</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>10</td>
-<td>Page_Test.Select_Vehicle_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>42</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>51</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
-<tr>
 <td title='Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name()'><b>TC012_verify_Nick_Name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
 <td></td>
-<td>18</td>
-<td>Page_Test.Select_Vehicle_Page_Test@1b410b60</td></tr>
+<td>13</td>
+<td>Page_Test.Select_Vehicle_Page_Test@51bd8b5c</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC026_Verify_My_Profile()'><b>TC026_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>14</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
+<td>7</td>
+<td>Page_Test.My_Profile_Page_Test@2462cb01</td></tr>
 <tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>10</td>
-<td>Page_Test.Select_Vehicle_Page_Test@1b410b60</td></tr>
+<td>25</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC027_verify_more_detais_button()'><b>TC027_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>46</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
+<td>1</td>
+<td>Page_Test.My_Profile_Page_Test@2462cb01</td></tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td title='Page_Test.Services_Page_Test.TC032_Verify_Last_Serviced()'><b>TC032_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>23</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
+<td>13</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC033_Verify_Tips()'><b>TC033_Verify_Tips</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>63</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC011_edit_moble()'><b>TC011_edit_moble</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>55</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
+<td>37</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>7</td>
+<td>Page_Test.Select_Vehicle_Page_Test@51bd8b5c</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>8</td>
+<td>Page_Test.Select_Vehicle_Page_Test@51bd8b5c</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>16</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC028_edit_prifile()'><b>TC028_edit_prifile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>187</td>
+<td>Page_Test.My_Profile_Page_Test@2462cb01</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC009_resend_butn()'><b>TC009_resend_butn</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>56</td>
-<td>Page_Test.Login_Page_Test@7905a0b8</td></tr>
+<td>16</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.Login_Page_Test.TC004_max_digit_mobile_number()'><b>TC004_max_digit_mobile_number</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>28</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
+<td>5</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>6</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC021_Verify_RSA()'><b>TC021_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.Login_Page_Test.TC002_invalidmobileno()'><b>TC002_invalidmobileno</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
 <td>8</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
 <td></td>
-<td>24</td>
-<td>Page_Test.Home_Page_Test@2462cb01</td></tr>
+<td>6</td>
+<td>Page_Test.Select_Vehicle_Page_Test@51bd8b5c</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC034_Verify_DIY_Videos()'><b>TC034_Verify_DIY_Videos</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>77</td>
+<td>Page_Test.Services_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>11</td>
+<td>Page_Test.Select_Vehicle_Page_Test@51bd8b5c</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential()'><b>TC001_Verify_Login_with_Invalid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>18</td>
+<td>Page_Test.Login_Page_Test@163370c2</td></tr>
 </table><p>
 </body>
 </html>

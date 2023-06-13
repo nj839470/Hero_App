@@ -16,6 +16,7 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Home_Page extends Base_Utility {
+	public Services_Page ob1;
 	public Home_Page() {
 		PageFactory.initElements(driver, this);
 	}
@@ -37,7 +38,6 @@ public class Home_Page extends Base_Utility {
 	private WebElement notification_back;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/collapse_btn']")
 	private WebElement Collapse_btn;
-
 	public WebElement temperature() {
 		return temperature;
 	}
@@ -71,7 +71,135 @@ public class Home_Page extends Base_Utility {
 	public WebElement Collapse_btn() {
 		return Collapse_btn;
 	}
-
+	//**************************************Service********************************	
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/book_now_btn']")
+		private WebElement Service_booked_now_button;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl1']")
+		private List<WebElement> Service_info;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_date_lbl']")
+		private WebElement service_due_date;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerName']")
+		private WebElement center_Name;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerAddress']")
+		private WebElement center_Address;
+		@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
+		private WebElement Select_service_center_key_arrow_button;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/calendarDate']")
+		private WebElement date;
+		@FindBy(xpath ="//android.view.View[@content-desc=\"21 June 2023\"]")
+		private WebElement date_pick;
+		@FindBy(xpath ="//android.widget.Button[@resource-id = 'android:id/button1']")
+		private WebElement ok_button;
+		@FindBy(xpath ="//android.widget.Button[@resource-id = 'android:id/button2']")
+		private WebElement cancel_button;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/timeText']")
+		private WebElement time;
+		@FindBy(xpath ="//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"3\"]")
+		private WebElement time_hour_pick;
+		@FindBy(xpath ="//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"20\"]")
+		private WebElement time_minute_pick;
+		@FindBy(xpath ="//android.widget.ImageButton[@resource-id ='android:id/toggle_mode']")
+		private WebElement send_time;;
+		@FindBy(xpath ="//android.widget.EditText[@resource-id='android:id/input_hour']")
+		private WebElement Enter_Hour;
+		@FindBy(xpath ="//android.widget.EditText[@resource-id='android:id/input_minute']")
+		private WebElement Enter_Minute;;
+		@FindBy(xpath ="//android.widget.Spinner[@resource-id ='android:id/am_pm_spinner']")
+		private WebElement AM_PM_Selector;
+		@FindBy(xpath ="(//android.widget.CheckedTextView[@resource-id ='android:id/text1'])[2]")
+		private WebElement chose_PM;
+		@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='com.customerapp.hero:id/radio2']")
+		private WebElement paid_service;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
+		private WebElement last_service_details;
+		@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/btn_lay']")
+		private WebElement Continue_button;
+		@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_select']")
+		private List<WebElement> select_key_issue;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+		private WebElement book_service;
+		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tvHome']")
+		private WebElement back_button_from_booked_service;
+		public WebElement Service_booked_now_button()
+		{
+			return Service_booked_now_button;
+		}
+		public void Service_info()
+		{
+			ob1 = new Services_Page();
+			int i = Service_info.size();
+			String service_nfo=Service_info.get(i-1).getText();
+			msg(service_nfo);
+			if(service_nfo.equalsIgnoreCase("Service Booked"))
+			{
+			Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+			if(Service_booked_now_button().isDisplayed()==true)
+			{
+				msg(Service_booked_now_button().getText()+ "is not clickable");
+				
+			}
+			msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
+			msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
+			msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
+			if (ob1.Service_center_name().isDisplayed() == true) {
+				msg("Service center name =" + ob1.Service_center_name().getText());
+			} else {
+				msg("Service center name is not given");
+			}
+			msg("Service center address =" + ob1.Service_center_address().getText());
+			msg("******************Job card , Estimated date & price ************************");
+			msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
+			msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
+			ob1.Support_info();
+			Custom_click(ob1.call_supporter(), " call supporter name ");
+			driver.navigate().back();
+			driver.navigate().back();
+			driver.navigate().back();
+			Custom_click(ob1.collapse_button(), "Collapse Button");
+			Custom_click(ob1.collapse_button(), "Back collapse_button");
+			Custom_click(ob1.back(), "Back from Ongoing Service details");
+			}
+			else
+			{
+				msg("Service was due on =" + service_due_date.getText());
+				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+				msg("Service Centername & address =" +center_Name.getText() +"\n" +center_Address.getText());
+				Custom_click(Select_service_center_key_arrow_button, "Select service center key arrow button");
+				Custom_click(Select_State(), "Select state");
+				Select_State("DELHI");
+				Custom_click(Select_City(), "Select City");
+				Select_City("MUNIRKA");
+				Custom_click(map_view(), "Map View dealer name and address");
+				Dealer_info();
+				Custom_click(Back(), "Back from Dealer Locator");
+				Custom_click(date, "Date");
+				Custom_click(date_pick, "21 June 2023");
+				Custom_click(ok_button, "Ok button");
+				Custom_click(date, "Date");
+				Custom_click(cancel_button, "Cancel Button");
+				Custom_click(time, "Time");
+				Custom_click(time_hour_pick, "Time hour pick");
+				Custom_click(time_minute_pick, "Time_minute_pick");
+				Custom_click(ok_button, "Ok button");
+				Custom_click(time, "Time");
+				Custom_click(send_time, "Send time button");
+				custom_sendkeys(Enter_Hour, "01", " hour");
+				custom_sendkeys(Enter_Minute, "33", " Minute");
+				Custom_click(AM_PM_Selector, " AM ,PM Selector");
+				Custom_click(chose_PM, "Chose PM");
+				Custom_click(ok_button, "Ok button");
+				Custom_click(paid_service, "paid service");
+				msg("Last Service info =" +last_service_details.getText());
+				Custom_click(Continue_button, "Continue button");
+				for(int j =0;j<select_key_issue.size();j++)
+				{
+					Custom_click(select_key_issue.get(j), +(i+0) +" Key issue");
+				}
+				Custom_click(book_service, "Book Service");
+				}
+			Custom_click(back_button_from_booked_service, "back button from booked service");
+			
+			}
 //*************************Navigate Page**********************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='0']")
 	private WebElement Navigate_menu;
