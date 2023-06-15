@@ -155,7 +155,7 @@ public class Base_Utility
 //			db.setCapability("appium:automationName", "uiautomator2");
 //			db.setCapability("platformName", "Android");
 //			db.setCapability("appium:deviceName", "realme C33 2023");
-//			db.setCapability("appium:udid", "3323262910AA04DS");
+//			db.setCapability("appium:udid", "192.168.1.2:35287"); 
 //			db.setCapability("appium:avdLaunchTimeout", 600000);
 //			db.setCapability("appPackage", "com.customerapp.hero");
 //			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");

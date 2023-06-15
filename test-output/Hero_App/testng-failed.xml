@@ -9,18 +9,11 @@
       <class name="Page_Test.Services_Page_Test">
         <methods>
           <include name="TC033_Verify_Last_Serviced"/>
+          <include name="TC036_Verify_all_DIY_Videos_list"/>
           <include name="TC035_Verify_all_tips_list"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC031_verify_Dealer_information"/>
         </methods>
       </class> <!-- Page_Test.Services_Page_Test -->
-      <class name="Page_Test.Home_Page_Test">
-        <methods>
-          <include name="TC022_Verify_Technical_Support_Manager"/>
-          <include name="TC020_Verify_Relationship_Manager"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-        </methods>
-      </class> <!-- Page_Test.Home_Page_Test -->
     </classes>
   </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

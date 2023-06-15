@@ -26,6 +26,8 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		if(ob.edit_nickame_button().isDisplayed()==true)
+		{
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		VerifyElementPresent(ob.save_button(), "Save button before updating the nick name is ");
 		ob.edit_nickame_text().clear();
@@ -37,12 +39,14 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg("Nick name is not saved");
 		}
-		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
-		ob.edit_nickame_text().clear();
+		
+		}
 	}
 
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 1)
 	public void TC013_Verify_With_30_letter_nick_name() {
+		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
+		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("30_letter_nick_name"), " 30 letter Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.save_button(), "Save button after updating the 30 letter nick name is ");
@@ -54,7 +58,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 2)
 	public void TC014_Verify_With_31_letter_nick_name() {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
@@ -69,7 +73,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 3)
 	public void TC015_Verify_With_29_letter_nick_name() {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();

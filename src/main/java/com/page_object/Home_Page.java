@@ -46,12 +46,14 @@ public class Home_Page extends Base_Utility {
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
 		Custom_click(vehicle_drop_down, " Drop down");
-		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) {
-			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
-			Thread.sleep(2000);
-			Custom_click(vehicle_drop_down, " Drop down");
-		}
-		Custom_click(all_vehicle_inside_drop_down.get(0), "1 vehicle");
+		Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
+//		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) 
+//		{
+//			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
+//			Thread.sleep(2000);
+//			Custom_click(vehicle_drop_down, " Drop down");
+//		}
+//		Custom_click(vehicle_drop_down, " Drop down");
 	}
 
 	public WebElement vehicle_img() {

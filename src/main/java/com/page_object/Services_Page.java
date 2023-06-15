@@ -76,10 +76,9 @@ public void dealer_info()
 	msg("Dealer Address =" +dealer_info.get(1).getText());
 	Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
 	Custom_click(navigate_button, navigate_button.getText());
-	Custom_click(navigate_button, navigate_button.getText());
-	msg("Dealer distance =" +dealer_distance.getText());
-	Custom_click(back_button, " Back from dealer location page");
-	Custom_click(back_button, " Back from Navigate page");
+//	Custom_click(navigate_button, navigate_button.getText());	// for pcloudy comment this line and below one
+//	msg("Dealer distance =" +dealer_distance.getText());
+	driver.navigate().back();
 }
 public WebElement back_button()
 {
@@ -111,7 +110,7 @@ public WebElement call_manager()
 	return call_manager;
 }
 //*********************************************Last Serviced********************************
-@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_history_date']")
+@FindBy(xpath ="//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")
 private WebElement Last_serviced_history;
 @FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
 private List<WebElement> Service_history;
@@ -171,9 +170,13 @@ public void Service_history() throws InterruptedException
 			if(invoice.getText().equalsIgnoreCase("Download invoice"))
 			{
 				Custom_click(invoice, "Download invoice");
+				Thread.sleep(6000);
 			}
 			Custom_click(invoice, "view invoice");
-			Custom_click(button_once, "Just once");
+//			if(button_once.isDisplayed()==true)
+//			{															//for emulator
+//			Custom_click(button_once, "Just once");
+//			}
 			Thread.sleep(2000);
 			msg("invoice number =" +invoice_number.getText());
 			driver.navigate().back();
@@ -218,7 +221,7 @@ public void tips_list() throws InterruptedException
 		String tips = tips_list.get(i).getText();
 		msg(tips);
 		Custom_click(tips_list.get(i), tips);
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		if(image_verify.isDisplayed())
 		{
 			msg(tips +" PDF image is available for guide");

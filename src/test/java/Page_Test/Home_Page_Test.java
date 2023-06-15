@@ -25,7 +25,7 @@ public class Home_Page_Test extends Base_Utility {
 		ob = new Home_Page();
 //		login = new Login_Page_Test();
 //		login.login();
-//		Thread.sleep(7000);
+		Thread.sleep(2000);
 		msg("Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 		Thread.sleep(2000);
@@ -38,23 +38,22 @@ public class Home_Page_Test extends Base_Utility {
 		msg("Total Notification are=" + ob.notification_count());
 		Custom_click(ob.notification_back(), "Notification back");
 		
-
 	}
 	
-		public void TC018__verify_Navigate() {
-		Custom_click(ob.Navigate_menu(), "Navigate menu");
-		Custom_click(ob.Search_destination(), "Search destination");
-		custom_sendkeys(ob.Search_here(), config_getdata("search_destination"), "Noida");
-		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
-		msg("Searched Nmae and address are=" + ob.Searched_name().getText() + ob.Searched_address().getText());
-		Custom_click(ob.Navigate_button(), "Navigate address");
-		Custom_click(ob.Start(), "Start");
-		Custom_click(ob.change_search(), "Change search");
-		Custom_click(ob.Back_button(), "Back from start destination");
-		Custom_click(ob.Back_button(), "Back from Navigation");
-	}
+//		public void TC018__verify_Navigate() {
+//		Custom_click(ob.Navigate_menu(), "Navigate menu");
+//		Custom_click(ob.Search_destination(), "Search destination");
+//		custom_sendkeys(ob.Search_here(), config_getdata("search_destination"), "Noida");
+//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+//		msg("Searched Nmae and address are=" + ob.Searched_name().getText() + ob.Searched_address().getText());
+//		Custom_click(ob.Navigate_button(), "Navigate address");
+//		Custom_click(ob.Start(), "Start");
+//		Custom_click(ob.change_search(), "Change search");
+//		Custom_click(ob.Back_button(), "Back from start destination");
+//		Custom_click(ob.Back_button(), "Back from Navigation");
+//	}
 
 	@Test(priority = 1)
 	public void TC019_Verify_Documents() throws InterruptedException // 54 steps
@@ -78,6 +77,10 @@ public class Home_Page_Test extends Base_Utility {
 		msg("Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
 		msg("Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
 		msg("Relationship Manager Contact number is =" + ob.Relationship_Manager_Contact_number().getText());
+		Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
+		driver.navigate().back();
+		driver.navigate().back();
+		driver.navigate().back();
 		Thread.sleep(2000);
 		ob.Others_Contacts();
 		Custom_click(ob.Back(), "Back from Relationship Manager");

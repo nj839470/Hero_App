@@ -43,7 +43,8 @@ public class Services_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC031_verify_Dealer_information() {
+	public void TC031_verify_Dealer_information() 
+	{
 		ob.dealer_info();
 	}
 
@@ -67,9 +68,11 @@ public class Services_Page_Test extends Base_Utility {
 	@Test(priority = 6)
 	public void TC035_Verify_all_tips_list() throws InterruptedException
 	{
+		scrollByText("Tips & DIY");
 		Custom_click(ob.Tips_and_DIY(), "Tips and DIY");
 		ob.tips_list();
 	}
+	@Test(priority = 7)
 	public void TC036_Verify_all_DIY_Videos_list() throws InterruptedException
 	{
 		Custom_click(ob.DIY_Videos_button(), "DIY video button");

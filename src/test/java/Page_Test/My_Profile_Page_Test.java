@@ -37,6 +37,13 @@ public class My_Profile_Page_Test extends Base_Utility {
 	public void TC028_edit_prifile() {
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
+		if(ob.Choose_from_library().isDisplayed()!=true)
+		{
+		Custom_click(ob.while_using_the_app(), "while_using_the_app");
+		Custom_click(ob.allow(), "Allow");
+		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
+		}
+		
 		Custom_click(ob.Choose_from_library(), " Chose profile pic from liberary ");
 		driver.navigate().back();
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");

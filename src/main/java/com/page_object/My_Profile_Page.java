@@ -38,6 +38,10 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement edit_profile_details_button;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/profile_pic_edit_btn']")
 	private WebElement profile_pic_edit_btn;
+	@FindBy(xpath ="//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
+	private WebElement while_using_the_app;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
+	private WebElement allow;
 	@FindBy(xpath = "//android.widget.TextView[@text ='Choose from library']")
 	private WebElement Choose_from_library;
 	@FindBy(xpath = "//android.widget.TextView[@text ='Take a Photo']")
@@ -91,7 +95,14 @@ public class My_Profile_Page extends Base_Utility {
 	public WebElement profile_pic_edit_btn() {
 		return profile_pic_edit_btn;
 	}
-
+	public WebElement while_using_the_app()
+{
+	return while_using_the_app;
+}
+	public WebElement allow()
+	{
+		return allow;
+	}
 	public WebElement Choose_from_library() {
 		return Choose_from_library;
 	}

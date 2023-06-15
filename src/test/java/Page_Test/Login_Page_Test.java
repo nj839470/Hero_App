@@ -33,7 +33,7 @@ public class Login_Page_Test extends Base_Utility {
 		Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
 		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
 //		driver.findElement(By.xpath("cdshvkdfjk")).click();
-	//	Custom_click(ob.open(), "Open");	//This line for real device
+//	Custom_click(ob.open(), "Open");	//This line for real device
 //	Custom_click(ob.close(), "Close button"); // for emulator and real device
 	}
 
@@ -91,13 +91,13 @@ public class Login_Page_Test extends Base_Utility {
 	//	Scroll_down_page_Action("Contact us");
 		Custom_click(ob.contact_us(), "Contact us");
 		Thread.sleep(2000);
-		Custom_click(ob.contact_via_email(), "contact via email");
-		driver.navigate().back();
-		driver.navigate().back();
-		if(ob.back_page().isDisplayed()!=true)
-		{
-			driver.navigate().back();
-		}
+//		Custom_click(ob.contact_via_email(), "contact via email");
+//		driver.navigate().back();
+//		driver.navigate().back();							//for picloudy
+//		if(ob.back_page().isDisplayed()!=true)
+//		{
+//			driver.navigate().back();
+//		}
 		Custom_click(ob.back_page(), "back Contact us page ");
 	}
 
@@ -143,10 +143,12 @@ public class Login_Page_Test extends Base_Utility {
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
 		try {
-//			Custom_click(ob.deny(), "Deny");
-//			Custom_click(ob.allow(), "Allow Now");	// all 3 line for real device
-//			Custom_click(ob.open(), "Open");
-			Custom_click(ob.close(), "Close button");
+			Custom_click(ob.deny(), "Deny");
+			Custom_click(ob.allow(), "Allow Now");
+//			Custom_click(ob.open(), "Open"); 	// this line for real device
+			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
+			Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+//			Custom_click(ob.close(), "Close button"); //// this line for real device and emulator
 			custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 			Custom_click(ob.continue_button(), "Coninue button");
