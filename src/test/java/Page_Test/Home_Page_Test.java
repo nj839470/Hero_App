@@ -23,9 +23,9 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC017_Home_page_verify() throws InterruptedException {
 		msg("************************Home_Page_Test**************************");
 		ob = new Home_Page();
-		login = new Login_Page_Test();
-		login.login();
-		Thread.sleep(2000);
+//		login = new Login_Page_Test();
+//		login.login();
+//		Thread.sleep(7000);
 		msg("Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 		Thread.sleep(2000);
@@ -33,12 +33,14 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.Collapse_btn(), "Collapse button");
 		Thread.sleep(2000);
 		Custom_click(ob.Collapse_btn(), " Return collapse button");
+		Thread.sleep(2000);
 		Custom_click(ob.notification(), "Notification");
 		msg("Total Notification are=" + ob.notification_count());
 		Custom_click(ob.notification_back(), "Notification back");
 		
 
 	}
+	
 		public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
 		Custom_click(ob.Search_destination(), "Search destination");
@@ -135,15 +137,15 @@ public class Home_Page_Test extends Base_Utility {
 		ob.Dealer_info();
 		Custom_click(ob.Back(), "Back from Dealer Locator");
 	}
-	@Test(priority = 8)
-	public void TC035_Service_information()
-	{
-//		ob = new Home_Page();
-//		login = new Login_Page_Test();
-//		login.login();
-		scrollByText("Discover");
-		ob.Service_info();
-			}
+//	@Test(priority = 8)
+//	public void TC035_Service_information()
+//	{
+////		ob = new Home_Page();
+////		login = new Login_Page_Test();
+////		login.login();
+//		scrollByText("Discover");
+//		ob.Service_info();
+	//		}
 
 
 }

@@ -38,6 +38,8 @@ public class Home_Page extends Base_Utility {
 	private WebElement notification_back;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/collapse_btn']")
 	private WebElement Collapse_btn;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_close']")
+	private WebElement close_drop_down;
 	public WebElement temperature() {
 		return temperature;
 	}
@@ -49,7 +51,7 @@ public class Home_Page extends Base_Utility {
 			Thread.sleep(2000);
 			Custom_click(vehicle_drop_down, " Drop down");
 		}
-		Custom_click(vehicle_drop_down, " Drop down");
+		Custom_click(all_vehicle_inside_drop_down.get(0), "1 vehicle");
 	}
 
 	public WebElement vehicle_img() {
@@ -124,84 +126,113 @@ public class Home_Page extends Base_Utility {
 		{
 			return Service_booked_now_button;
 		}
-		public void Service_info()
-		{
-			ob1 = new Services_Page();
-			int i = Service_info.size();
-			String service_nfo=Service_info.get(i-1).getText();
-			msg(service_nfo);
-			if(service_nfo.equalsIgnoreCase("Service Booked"))
-			{
-			Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-			if(Service_booked_now_button().isDisplayed()==true)
-			{
-				msg(Service_booked_now_button().getText()+ "is not clickable");
-				
-			}
-			msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
-			msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
-			msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
-			if (ob1.Service_center_name().isDisplayed() == true) {
-				msg("Service center name =" + ob1.Service_center_name().getText());
-			} else {
-				msg("Service center name is not given");
-			}
-			msg("Service center address =" + ob1.Service_center_address().getText());
-			msg("******************Job card , Estimated date & price ************************");
-			msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
-			msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
-			ob1.Support_info();
-			Custom_click(ob1.call_supporter(), " call supporter name ");
-			driver.navigate().back();
-			driver.navigate().back();
-			driver.navigate().back();
-			Custom_click(ob1.collapse_button(), "Collapse Button");
-			Custom_click(ob1.collapse_button(), "Back collapse_button");
-			Custom_click(ob1.back(), "Back from Ongoing Service details");
-			}
-			else
-			{
-				msg("Service was due on =" + service_due_date.getText());
-				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-				msg("Service Centername & address =" +center_Name.getText() +"\n" +center_Address.getText());
-				Custom_click(Select_service_center_key_arrow_button, "Select service center key arrow button");
-				Custom_click(Select_State(), "Select state");
-				Select_State("DELHI");
-				Custom_click(Select_City(), "Select City");
-				Select_City("MUNIRKA");
-				Custom_click(map_view(), "Map View dealer name and address");
-				Dealer_info();
-				Custom_click(Back(), "Back from Dealer Locator");
-				Custom_click(date, "Date");
-				Custom_click(date_pick, "21 June 2023");
-				Custom_click(ok_button, "Ok button");
-				Custom_click(date, "Date");
-				Custom_click(cancel_button, "Cancel Button");
-				Custom_click(time, "Time");
-				Custom_click(time_hour_pick, "Time hour pick");
-				Custom_click(time_minute_pick, "Time_minute_pick");
-				Custom_click(ok_button, "Ok button");
-				Custom_click(time, "Time");
-				Custom_click(send_time, "Send time button");
-				custom_sendkeys(Enter_Hour, "01", " hour");
-				custom_sendkeys(Enter_Minute, "33", " Minute");
-				Custom_click(AM_PM_Selector, " AM ,PM Selector");
-				Custom_click(chose_PM, "Chose PM");
-				Custom_click(ok_button, "Ok button");
-				Custom_click(paid_service, "paid service");
-				msg("Last Service info =" +last_service_details.getText());
-				Custom_click(Continue_button, "Continue button");
-				for(int j =0;j<select_key_issue.size();j++)
-				{
-					Custom_click(select_key_issue.get(j), +(i+0) +" Key issue");
-				}
-				Custom_click(book_service, "Book Service");
-				}
-			Custom_click(back_button_from_booked_service, "back button from booked service");
-			
-			}
+//		public void Service_info()
+//		{
+//			ob1 = new Services_Page();
+//			int i = Service_info.size();
+//			String service_nfo=Service_info.get(i-1).getText();
+//			msg(service_nfo);
+//			if(Service_booked_now_button().getText().equalsIgnoreCase("Service Request Raised"))
+//			{
+//			msg("Service was due on =" + service_due_date.getText());
+//			if(service_due_date.getText().equals(""))
+//			{
+//			Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+//			msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
+//			msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
+//			msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
+//			if (ob1.Service_center_name().isDisplayed() == true) {
+//				msg("Service center name =" + ob1.Service_center_name().getText());
+//			} else {
+//				msg("Service center name is not given");
+//			}
+//			msg("Service center address =" + ob1.Service_center_address().getText());
+//			msg("******************Job card , Estimated date & price ************************");
+//			msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
+//			msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
+//			ob1.Support_info();
+//			Custom_click(ob1.call_supporter(), " call supporter name ");
+//			driver.navigate().back();
+//			driver.navigate().back();
+//			driver.navigate().back();
+//			Custom_click(ob1.collapse_button(), "Collapse Button");
+//			Custom_click(ob1.collapse_button(), "Back collapse_button");
+//			Custom_click(ob1.back(), "Back from Ongoing Service details");
+//			}
+//			else
+//			{
+//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+//				if(Service_booked_now_button().isDisplayed()==true)
+//				{
+//					msg(Service_booked_now_button().getText()+" is not clickable");
+//				}
+//			}
+//			}
+//			else if(Service_booked_now_button().getText().equalsIgnoreCase("book_now"))
+//			{
+//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+//				msg("Service Centername & address =" +center_Name.getText() +"\n" +center_Address.getText());
+//				Custom_click(Select_service_center_key_arrow_button, "Select service center key arrow button");
+//				Custom_click(Select_State(), "Select state");
+//				Select_State("DELHI");
+//				Custom_click(Select_City(), "Select City");
+//				Select_City("MUNIRKA");
+//				Custom_click(map_view(), "Map View dealer name and address");
+//				Dealer_info();
+//				Custom_click(Back(), "Back from Dealer Locator");
+//				Custom_click(date, "Date");
+//				Custom_click(date_pick, "21 June 2023");
+//				Custom_click(ok_button, "Ok button");
+//				Custom_click(date, "Date");
+//				Custom_click(cancel_button, "Cancel Button");
+//				Custom_click(time, "Time");
+//				Custom_click(time_hour_pick, "Time hour pick");
+//				Custom_click(time_minute_pick, "Time_minute_pick");
+//				Custom_click(ok_button, "Ok button");
+//				Custom_click(time, "Time");
+//				Custom_click(send_time, "Send time button");
+//				custom_sendkeys(Enter_Hour, "01", " hour");
+//				custom_sendkeys(Enter_Minute, "33", " Minute");
+//				Custom_click(AM_PM_Selector, " AM ,PM Selector");
+//				Custom_click(chose_PM, "Chose PM");
+//				Custom_click(ok_button, "Ok button");
+//				Custom_click(paid_service, "paid service");
+//				msg("Last Service info =" +last_service_details.getText());
+//				Custom_click(Continue_button, "Continue button");
+//				for(int j =0;j<select_key_issue.size();j++)
+//				{
+//					Custom_click(select_key_issue.get(j), +(i+0) +" Key issue");
+//				}
+//				Custom_click(book_service, "Book Service");
+//				Custom_click(back_button_from_booked_service, "back button from booked service");
+//				}
+//			else
+//			{
+//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
+//				msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
+//				msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
+//				msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
+//				if (ob1.Service_center_name().isDisplayed() == true) {
+//					msg("Service center name =" + ob1.Service_center_name().getText());
+//				} else {
+//					msg("Service center name is not given");
+//				}
+//				msg("Service center address =" + ob1.Service_center_address().getText());
+//				msg("******************Job card , Estimated date & price ************************");
+//				msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
+//				msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
+//				ob1.Support_info();
+//				Custom_click(ob1.call_supporter(), " call supporter name ");
+//				driver.navigate().back();
+//				driver.navigate().back();
+//				driver.navigate().back();
+//				Custom_click(ob1.collapse_button(), "Collapse Button");
+//				Custom_click(ob1.collapse_button(), "Back collapse_button");
+//				Custom_click(ob1.back(), "Back from Ongoing Service details");
+//			}
+//			}
 //*************************Navigate Page**********************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='0']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[1]")
 	private WebElement Navigate_menu;
 	@FindBy(xpath = "//android.widget.TextView[@text ='Search Destination']")
 	private WebElement Search_destination;
@@ -258,7 +289,7 @@ public class Home_Page extends Base_Utility {
 	}
 
 //****************************Documents Page************************************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='1']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[2]")
 	private WebElement Documents_Menu;
 	@FindBy(xpath = "//android.widget.TextView[@text ]")
 	private List<WebElement> Documents_list;
@@ -312,7 +343,7 @@ public class Home_Page extends Base_Utility {
 	}
 
 //****************************Relationship Manager************************************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='2']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[3]")
 	private WebElement Relationship_Manager;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
 	private WebElement Relationship_Manager_name;
@@ -346,7 +377,7 @@ public class Home_Page extends Base_Utility {
 	}
 
 //****************************RSA************************************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='3']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[4]")
 	private WebElement RSA;
 	@FindBy(xpath ="//android.widget.TextView[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer;
@@ -366,7 +397,7 @@ public class Home_Page extends Base_Utility {
 	}
 
 //****************************Technical Support************************************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='4']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[5]")
 	private WebElement Technical_Support;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl1']")
 	private WebElement Technical_Support_Manager_Name;
@@ -392,7 +423,7 @@ public class Home_Page extends Base_Utility {
 	}
 
 //****************************Dealer Locator************************************
-	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'][@index ='5']")
+	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[6]")
 	private WebElement Dealer_Locator;
 	@FindBy(xpath = "(//android.widget.TextView[@text])[2]")
 	private WebElement Select_State;

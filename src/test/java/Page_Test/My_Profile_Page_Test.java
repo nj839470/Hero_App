@@ -18,6 +18,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		ob = new My_Profile_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.my_profile(), "My profile");

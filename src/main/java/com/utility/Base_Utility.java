@@ -78,7 +78,7 @@ public class Base_Utility
 //		db.setCapability("appium:udid", "emulator-5554");
 // //       db.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
 //        db.setCapability("appium:avdLaunchTimeout", 600000);
-//		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+//		db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
 //		Thread.sleep(2000);
 //		String service_url = service.getUrl().toString();
 //		driver = new AndroidDriver(new URL(service_url),db);
@@ -93,61 +93,61 @@ public class Base_Utility
 //	}
 	// ******************Automatic server end code ************************
 
-	public void OPEN_AND_INSTALL_APP() {
-		try {
-//  //-----for virtual device---------
-			
-//  DesiredCapabilities db = new DesiredCapabilities();
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-			db.setCapability("appium:udid", "emulator-5554");
-			db.setCapability("appium:avdLaunchTimeout", 600000);
-			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
-			log = LogManager.getLogger("Hero_App");
-			lis = new listner();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-
-	// *************************pCloudy************************************************
-	
 //	public void OPEN_AND_INSTALL_APP() {
 //		try {
-//			DesiredCapabilities capabilities = new DesiredCapabilities();
-//			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-//			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-//			capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-//			capabilities.setCapability("newCommandTimeout", 6000);
-//			capabilities.setCapability("launchTimeout", 90000);
-//			capabilities.setCapability("pCloudy_DeviceManufacturer", "SAMSUNG");
-//			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-//			capabilities.setCapability("platformVersion", "13.0.0");
-//			capabilities.setCapability("platformName", "Android");
-//			capabilities.setCapability("automationName", "uiautomator2");
-//			capabilities.setCapability("pCloudy_ApplicationName", "Hero_app.apk");
-//			capabilities.setCapability("appPackage", "com.customerapp.hero");
-//			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-//			capabilities.setCapability("pCloudy_WildNet", "false");
-//			capabilities.setCapability("pCloudy_EnableVideo", "false");
-//			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
-//			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
-//			capabilities.setCapability("autoGrantPermissions",true); 
-//			driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//			 log = LogManager.getLogger("Hero_App");
-//			 
+////  //-----for virtual device---------
+//			
+////  DesiredCapabilities db = new DesiredCapabilities();
+//			UiAutomator2Options db = new UiAutomator2Options();
+//			db.setCapability("appium:automationName", "uiautomator2");
+//			db.setCapability("platformName", "Android");
+//			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+//			db.setCapability("appium:udid", "emulator-5554");
+//			db.setCapability("appium:avdLaunchTimeout", 600000);
+//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
+//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//			db.setCapability("appium:ensureWebviewsHavePages", true);
+//			db.setCapability("appium:nativeWebScreenshot", true);
+//			db.setCapability("appium:newCommandTimeout", 6600);
+//			log = LogManager.getLogger("Hero_App");
+//			lis = new listner();
 //		} catch (Exception e) {
 //			System.out.println(e);
 //		}
 //	}
+//
+	// *************************pCloudy************************************************
+	
+	public void OPEN_AND_INSTALL_APP() {
+		try {
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+			capabilities.setCapability("pCloudy_DurationInMinutes", 15);
+			capabilities.setCapability("newCommandTimeout", 600);
+			capabilities.setCapability("launchTimeout", 90000);
+			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+			capabilities.setCapability("platformVersion", "13.0.0");
+			capabilities.setCapability("platformName", "Android");
+			capabilities.setCapability("automationName", "uiautomator2");
+			capabilities.setCapability("pCloudy_ApplicationName", "app-debug-connected.apk");
+			capabilities.setCapability("appPackage", "com.customerapp.hero");
+			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+			capabilities.setCapability("pCloudy_WildNet", "false");
+			capabilities.setCapability("pCloudy_EnableVideo", "true");
+			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
+			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+			capabilities.setCapability("appiumVersion", "2.0.0");
+			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			 log = LogManager.getLogger("Hero_App");
+			 
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 	// -------- for real device----------
 //	public void OPEN_AND_INSTALL_APP() {
 //		try {
@@ -160,7 +160,7 @@ public class Base_Utility
 //			db.setCapability("appPackage", "com.customerapp.hero");
 //			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
 //			db.setCapability("appium:noReset", "false");
-////			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+////			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
 //			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 //			db.setCapability("appium:ensureWebviewsHavePages", true);

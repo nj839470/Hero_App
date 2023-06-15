@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Page_Test.Home_Page_Test">
+      <class name="Page_Test.Login_Page_Test">
         <methods>
+          <include name="TC006_Privacy_policy"/>
+          <include name="TC007_contact_Us"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC035_Service_information"/>
         </methods>
-      </class> <!-- Page_Test.Home_Page_Test -->
+      </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

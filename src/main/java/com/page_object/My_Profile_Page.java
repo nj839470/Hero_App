@@ -12,7 +12,8 @@ public class My_Profile_Page extends Base_Utility {
 	public My_Profile_Page() {
 		PageFactory.initElements(driver, this);
 	}
-
+	@FindBy(xpath ="//android.widget.FrameLayout[@resource-id ='com.customerapp.hero:id/hmcDashboardFrg']")
+	private WebElement home;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/side_menu_btn']")
 	private WebElement side_menu_button;
 	@FindBy(xpath = "//android.widget.TextView[@text ='My Profile']")
@@ -47,6 +48,10 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement Back;
 	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross']")
 	private WebElement close_my_profile_page;
+	public WebElement home()
+	{
+		return home;
+	}
 	public WebElement side_menu_button() {
 		return side_menu_button;
 	}

@@ -52,7 +52,7 @@ public class Login_page extends Base_Utility {
 	private WebElement Terms_of_Use_condition_for_real_device;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/pp_lbl']")
 	private WebElement Privacy_Policy;
-	@FindBy(xpath="(//android.view.View[@text])[24]")
+	@FindBy(xpath="(//android.view.View[@text])[16]")
 	private WebElement Privacy_Policy_condition;
 	@FindBy(xpath ="//android.widget.TextView[@text = 'Contact Us']")
 	private WebElement contact_us;
