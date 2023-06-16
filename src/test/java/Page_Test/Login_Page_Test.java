@@ -145,10 +145,10 @@ public class Login_Page_Test extends Base_Utility {
 		try {
 			Custom_click(ob.deny(), "Deny");
 			Custom_click(ob.allow(), "Allow Now");
-//			Custom_click(ob.open(), "Open"); 	// this line for real device
-			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
-			Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
-//			Custom_click(ob.close(), "Close button"); //// this line for real device and emulator
+			Custom_click(ob.open(), "Open"); 	// this line for real device
+//			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
+//			Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+			Custom_click(ob.close(), "Close button"); //// this line for real device and emulator
 			custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 			Custom_click(ob.continue_button(), "Coninue button");

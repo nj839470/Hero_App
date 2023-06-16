@@ -118,4 +118,83 @@ public class My_Profile_Page extends Base_Utility {
 	public WebElement upload_close_button() {
 		return upload_close_button;
 	}
+//************************************************Edit personal Details**************************	
+	@FindBy(xpath ="(//android.widget.EditText[@resource-id='com.customerapp.hero:id/text_input_editext'])[1]")
+	private WebElement edit_full_name;
+	@FindBy(xpath ="(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[2]")
+	private WebElement edit_email_id;
+	@FindBy(xpath ="(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[3]")
+	private WebElement edit_registered_mobile_number;
+	@FindBy(xpath ="(//android.widget.EditText[@resource-id='com.customerapp.hero:id/text_input_editext'])[4]")
+	private WebElement edit_date_of_birth;
+	@FindBy(xpath ="//android.widget.RadioButton[contains(@resource-id , 'com.customerapp.hero:id')]")
+	private List<WebElement> gender_radio_button;
+	@FindBy(xpath ="//android.widget.ImageButton[@resource-id ='com.customerapp.hero:id/mtrl_picker_header_toggle']")
+	private WebElement DOB_edit_button;
+	@FindBy(xpath ="//android.widget.EditText[@text]")
+	private WebElement send_dob;
+	@FindBy(xpath ="//android.widget.Button[@resource-id='com.customerapp.hero:id/confirm_button']")
+	private WebElement confirm_dob;
+	@FindBy(xpath ="//android.widget.Spinner[@resource-id = 'com.customerapp.hero:id/filled_exposed']")
+	private WebElement blood_group;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='com.customerapp.hero:id/address_input_editext']")
+	private WebElement Street_name;
+	@FindBy(xpath ="(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[5]")
+	private WebElement pin_code;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+	private WebElement Save_button;
+
+	public WebElement edit_full_name()
+	{
+		return edit_full_name;
+	}
+	public WebElement edit_email_id()
+	{
+		return edit_email_id;
+	}
+	public WebElement edit_registered_mobile_number()
+	{
+		return edit_registered_mobile_number;
+	}
+	public WebElement edit_date_of_birth()
+	{
+		return edit_date_of_birth;
+	}
+	public void gender_selection() throws InterruptedException
+	{
+		for(int i=0;i<gender_radio_button.size();i++)
+		{
+			Custom_click(gender_radio_button.get(i), "Tset radio button for =" +gender_radio_button.get(i).getText());
+			Thread.sleep(2000);
+		}
+		Custom_click(gender_radio_button.get(0), "Finally choose is =" +gender_radio_button.get(0).getText());
+	}
+	public WebElement DOB_edit_button()
+	{
+		return DOB_edit_button;
+	}
+	public WebElement send_dob()
+	{
+		return send_dob;
+	}
+	public WebElement confirm_dob()
+	{
+		return confirm_dob;
+	}
+	public WebElement blood_group()
+	{
+		return blood_group;
+	}
+	public WebElement Street_name()
+	{
+		return Street_name;
+	}
+	public WebElement pin_code()
+	{
+		return pin_code;
+	}
+	public WebElement Save_button()
+	{
+		return Save_button;
+	}
 }

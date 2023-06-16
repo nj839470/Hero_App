@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 15 09:29:01 IST 2023</td>
+<td>Started on:</td><td>Fri Jun 16 09:20:13 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>30250 seconds (30250075 ms)</td>
+<tr><td>Total time:</td><td>142 seconds (142431 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
+<td title='Page_Test.Services_Page_Test.TC033_View_Service_Schedule()'><b>TC033_View_Service_Schedule</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [55441f9c-ddb0-4fc6-ab4e-359bd1b7c63e, findElement {using=xpath, value=//android.widget.SeekBar[@content-desc = &apos;Value,0&apos;]}]
+Capabilities {appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: realme C33 2023, noReset: false, platformName: android, udid: 192.168.1.2:5555}, appium:deviceApiLevel: 31, appium:deviceManufacturer: realme, appium:deviceModel: RMX3627, appium:deviceName: 192.168.1.2:5555, appium:deviceScreenDensity: 272, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 192.168.1.2:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 1.7, appium:platformVersion: 12, appium:statBarHeight: 54, appium:takesScreenshot: true, appium:udid: 192.168.1.2:5555, appium:viewportRect: {height: 1394, left: 0, top: 54, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 55441f9c-ddb0-4fc6-ab4e-359bd1b7c63e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
@@ -89,10 +98,7 @@ function toggleAllBoxes() {
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:29)
+	at Page_Test.Services_Page_Test.TC033_View_Service_Schedule(Services_Page_Test.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -119,23 +125,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
+</pre></div><a href='#' onClick='toggleBox("stack-trace132065521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace132065521'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 40 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace225507106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace225507106'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [55441f9c-ddb0-4fc6-ab4e-359bd1b7c63e, findElement {using=xpath, value=//android.widget.SeekBar[@content-desc = &apos;Value,0&apos;]}]
+Capabilities {appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: realme C33 2023, noReset: false, platformName: android, udid: 192.168.1.2:5555}, appium:deviceApiLevel: 31, appium:deviceManufacturer: realme, appium:deviceModel: RMX3627, appium:deviceName: 192.168.1.2:5555, appium:deviceScreenDensity: 272, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 192.168.1.2:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 1.7, appium:platformVersion: 12, appium:statBarHeight: 54, appium:takesScreenshot: true, appium:udid: 192.168.1.2:5555, appium:viewportRect: {height: 1394, left: 0, top: 54, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 55441f9c-ddb0-4fc6-ab4e-359bd1b7c63e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
@@ -144,10 +147,7 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:29)
+	at Page_Test.Services_Page_Test.TC033_View_Service_Schedule(Services_Page_Test.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -174,21 +174,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 40 more
 </pre></div></td>
-<td>30187</td>
-<td>Page_Test.Home_Page_Test@7d20d0b</td></tr>
+<td>110</td>
+<td>Page_Test.Services_Page_Test@5e5d171f</td></tr>
 </table><p>
 </body>
 </html>

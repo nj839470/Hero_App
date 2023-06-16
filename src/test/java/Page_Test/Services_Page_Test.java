@@ -58,7 +58,17 @@ public class Services_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		msg("Manager contact number =" + ob.manage_phone_number().getText());
 	}
-
+//	@Test(priority = 4)
+//	public void TC033_View_Service_Schedule()
+//	{
+////		ob = new Services_Page();
+////		login = new Login_Page_Test();
+////		login.login();
+//		Custom_click(ob.Services(), " Services button");
+//		Custom_click(ob.Service_Schedule(), "View Service Schedule");
+//		Custom_click(ob.Kilometer(), ob.Kilometer().getText());
+//		Custom_click(ob.Kilometer_750(), "750 Kilometer");
+//	}
 	@Test(priority = 4)
 	public void TC033_Verify_Last_Serviced() throws InterruptedException {
 		Custom_click(ob.Last_serviced_history(), "Last serviced history");

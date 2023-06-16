@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Hero_App]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.utility.listner"/>
-  </listeners>
-  <test thread-count="5" name="All test class(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Page_Test.Services_Page_Test">
         <methods>
-          <include name="TC033_Verify_Last_Serviced"/>
-          <include name="TC036_Verify_all_DIY_Videos_list"/>
-          <include name="TC035_Verify_all_tips_list"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC033_View_Service_Schedule"/>
         </methods>
       </class> <!-- Page_Test.Services_Page_Test -->
     </classes>
-  </test> <!-- All test class(failed) -->
-</suite> <!-- Failed suite [Hero_App] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -8,251 +8,290 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.utility.Base_Utility;
 
-public class Services_Page extends Base_Utility{
-	public Services_Page()
-	{
+public class Services_Page extends Base_Utility {
+	public Services_Page() {
 		PageFactory.initElements(driver, this);
 	}
-@FindBy(xpath ="//android.widget.FrameLayout[@content-desc ='Services']")
-private WebElement Services;
-@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
-private WebElement Vehicle_brand_Name;
-@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_nickname']")
-private WebElement Vehicle_Nick_Name;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_license_no']")
-private WebElement Vehicle_Number;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_type']")
-private WebElement Vehicle_Service_type;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_booking_no']")
-private WebElement Vehicle_service_booking_no;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_nextservice']")
-private WebElement next_service_info;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_date_lbl']")
-private WebElement service_date_time;
-public WebElement Services()
-{
-	return Services;
-}
-public WebElement Vehicle_brand_Name()
-{
-	return Vehicle_brand_Name;
-}
-public WebElement Vehicle_Nick_Name()
-{
-	return Vehicle_Nick_Name;
-}
-public WebElement Vehicle_Number()
-{
-	return Vehicle_Number;
-}
-public WebElement Vehicle_Service_type()
-{
-	return Vehicle_Service_type;
-}
-public WebElement Vehicle_service_booking_no()
-{
-	return Vehicle_service_booking_no;
-}
-public WebElement next_service_info()
-{
-	return next_service_info;
-}
-public WebElement service_date_time()
-{
-	return service_date_time;
-}
+
+	@FindBy(xpath = "//android.widget.FrameLayout[@content-desc ='Services']")
+	private WebElement Services;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
+	private WebElement Vehicle_brand_Name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_nickname']")
+	private WebElement Vehicle_Nick_Name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_license_no']")
+	private WebElement Vehicle_Number;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_type']")
+	private WebElement Vehicle_Service_type;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_booking_no']")
+	private WebElement Vehicle_service_booking_no;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_nextservice']")
+	private WebElement next_service_info;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_date_lbl']")
+	private WebElement service_date_time;
+
+	public WebElement Services() {
+		return Services;
+	}
+
+	public WebElement Vehicle_brand_Name() {
+		return Vehicle_brand_Name;
+	}
+
+	public WebElement Vehicle_Nick_Name() {
+		return Vehicle_Nick_Name;
+	}
+
+	public WebElement Vehicle_Number() {
+		return Vehicle_Number;
+	}
+
+	public WebElement Vehicle_Service_type() {
+		return Vehicle_Service_type;
+	}
+
+	public WebElement Vehicle_service_booking_no() {
+		return Vehicle_service_booking_no;
+	}
+
+	public WebElement next_service_info() {
+		return next_service_info;
+	}
+
+	public WebElement service_date_time() {
+		return service_date_time;
+	}
+
 //*********************************************verify_Dealer_information********************************
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id , 'com.customerapp.hero:id/tv_dealer')]")
-private List<WebElement> dealer_info;
-@FindBy(xpath="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
-private WebElement navigate_button;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/distance_text']")
-private WebElement dealer_distance;
-@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
-private WebElement back_button;
-public void dealer_info()
-{
-	msg("Dealer name =" +dealer_info.get(0).getText());
-	msg("Dealer Address =" +dealer_info.get(1).getText());
-	Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
-	Custom_click(navigate_button, navigate_button.getText());
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id , 'com.customerapp.hero:id/tv_dealer')]")
+	private List<WebElement> dealer_info;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+	private WebElement navigate_button;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/distance_text']")
+	private WebElement dealer_distance;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
+	private WebElement back_button;
+
+	public void dealer_info() {
+		msg("Dealer name =" + dealer_info.get(0).getText());
+		msg("Dealer Address =" + dealer_info.get(1).getText());
+		Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
+		Custom_click(navigate_button, navigate_button.getText());
 //	Custom_click(navigate_button, navigate_button.getText());	// for pcloudy comment this line and below one
 //	msg("Dealer distance =" +dealer_distance.getText());
-	driver.navigate().back();
-}
-public WebElement back_button()
-{
-	return back_button;
-}
-
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm']")
-private WebElement manager_type;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm_name']")
-private WebElement manager_name;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm_phone']")
-private WebElement manage_phone_number;
-@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_call']")
-private WebElement call_manager;
-public WebElement manager_type()
-{
-	return manager_type;
-}
-public WebElement manager_name()
-{
-	return manager_name;
-}
-public WebElement manage_phone_number()
-{
-	return manage_phone_number;
-}
-public WebElement call_manager()
-{
-	return call_manager;
-}
-//*********************************************Last Serviced********************************
-@FindBy(xpath ="//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")
-private WebElement Last_serviced_history;
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
-private List<WebElement> Service_history;
-@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandName']")
-private WebElement service_brand_name;
-@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandDetail2']")
-private WebElement service_seral_no;
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/center')]")
-private List<WebElement> sevice_center_info;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedPrice']")
-private WebElement Estimated_Amount;
-@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedDate']")
-private WebElement Estimated_Date_Time;
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/support')]")
-private List<WebElement> support_info;
-@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
-private WebElement collapse_arrow;
-@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/callImg1']")
-private WebElement call_supporter;
-@FindBy(xpath="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_Invoice']")
-private WebElement invoice;
-@FindBy(xpath ="//android.widget.Button[@resource-id ='android:id/button_once']")
-private WebElement button_once;
-@FindBy(xpath ="//android.widget.TextView[contains(@text,'Hero')]")
-private WebElement invoice_number;
-public WebElement Last_serviced_history()
-{
-	return Last_serviced_history;
-}
-public void support_information()
-{
-	for(int i=0; i<support_info.size();i++)
-	{
-		msg("Support information =" +support_info.get(i).getText());
+		driver.navigate().back();
 	}
-}
-public void Service_history() throws InterruptedException
-{
-	for(int i=0;i<Service_history.size();i++)
+
+	public WebElement back_button() {
+		return back_button;
+	}
+
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm']")
+	private WebElement manager_type;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm_name']")
+	private WebElement manager_name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_rm_phone']")
+	private WebElement manage_phone_number;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_call']")
+	private WebElement call_manager;
+
+	public WebElement manager_type() {
+		return manager_type;
+	}
+
+	public WebElement manager_name() {
+		return manager_name;
+	}
+
+	public WebElement manage_phone_number() {
+		return manage_phone_number;
+	}
+
+	public WebElement call_manager() {
+		return call_manager;
+	}
+//*********************************************View_Service_Schedule********************************
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/service_schedule_lay']")
+	private WebElement Service_Schedule;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/tv_km']")
+	private WebElement Kilometer;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 0']")
+	private WebElement Kilometer_750;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 1']")
+	private WebElement Kilometer_3500;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 2']")
+	private WebElement Kilometer_6500;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 3']")
+	private WebElement Kilometer_9500;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 4']")
+	private WebElement Kilometer_12500;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 5']")
+	private WebElement Kilometer_morethan_15500;
+	public WebElement Service_Schedule()
 	{
-		String service_info = Service_history.get(i).getText();
-		if(service_info.equalsIgnoreCase("Details"))
-		{
-			Custom_click(Service_history.get(i), service_info);
-			msg("Vehicle brand name in Service details= " + service_brand_name.getText());
-			msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
-			if (sevice_center_info.get(0).isDisplayed() == true) {
-				msg("Service center name =" + sevice_center_info.get(0).getText());
-		
-			} else {
-				msg("Service center name is not given");
-			}
-			msg("Service center address =" + sevice_center_info.get(1).getText());
-			msg("******************Job card , Completion date & price ************************");
-			msg("Estimated Amount =" + Estimated_Amount.getText());
-			msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
-			if(invoice.getText().equalsIgnoreCase("Download invoice"))
-			{
-				Custom_click(invoice, "Download invoice");
-				Thread.sleep(6000);
-			}
-			Custom_click(invoice, "view invoice");
+		return Service_Schedule;
+	}
+	public WebElement Kilometer()
+	{
+		return Kilometer;
+	}
+	public WebElement Kilometer_750()
+	{
+		return Kilometer_750;
+	}
+	public WebElement Kilometer_3500()
+	{
+		return Kilometer_3500;
+	}
+	public WebElement Kilometer_6500()
+	{
+		return Kilometer_6500;
+	}
+	public WebElement Kilometer_9500()
+	{
+		return Kilometer_9500;
+	}
+	public WebElement Kilometer_12500()
+	{
+		return Kilometer_12500;
+	}
+	public WebElement Kilometer_morethan_15500()
+	{
+		return Kilometer_morethan_15500;
+	}
+//*********************************************Last Serviced********************************
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")
+	private WebElement Last_serviced_history;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
+	private List<WebElement> Service_history;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandName']")
+	private WebElement service_brand_name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandDetail2']")
+	private WebElement service_seral_no;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/center')]")
+	private List<WebElement> sevice_center_info;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedPrice']")
+	private WebElement Estimated_Amount;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedDate']")
+	private WebElement Estimated_Date_Time;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/support')]")
+	private List<WebElement> support_info;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
+	private WebElement collapse_arrow;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/callImg1']")
+	private WebElement call_supporter;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_Invoice']")
+	private WebElement invoice;
+	@FindBy(xpath = "//android.widget.Button[@resource-id ='android:id/button_once']")
+	private WebElement button_once;
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'Hero')]")
+	private WebElement invoice_number;
+
+	public WebElement Last_serviced_history() {
+		return Last_serviced_history;
+	}
+
+	public void support_information() {
+		for (int i = 0; i < support_info.size(); i++) {
+			msg("Support information =" + support_info.get(i).getText());
+		}
+	}
+
+	public void Service_history() throws InterruptedException {
+		for (int i = 0; i < Service_history.size(); i++) {
+			String service_info = Service_history.get(i).getText();
+			if (service_info.equalsIgnoreCase("Details")) {
+				Custom_click(Service_history.get(i), service_info);
+				msg("Vehicle brand name in Service details= " + service_brand_name.getText());
+				msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
+				if (sevice_center_info.get(0).isDisplayed() == true) {
+					msg("Service center name =" + sevice_center_info.get(0).getText());
+
+				} else {
+					msg("Service center name is not given");
+				}
+				msg("Service center address =" + sevice_center_info.get(1).getText());
+				msg("******************Job card , Completion date & price ************************");
+				msg("Estimated Amount =" + Estimated_Amount.getText());
+				msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
+				if (invoice.getText().equalsIgnoreCase("Download invoice")) {
+					Custom_click(invoice, "Download invoice");
+					Thread.sleep(6000);
+				}
+				Custom_click(invoice, "view invoice");
 //			if(button_once.isDisplayed()==true)
 //			{															//for emulator
 //			Custom_click(button_once, "Just once");
 //			}
-			Thread.sleep(2000);
-			msg("invoice number =" +invoice_number.getText());
-			driver.navigate().back();
-			support_information();
-			Custom_click(collapse_arrow, "collapse Key arrow in");
-			Custom_click(collapse_arrow, "collapse Key arrow out");
-			Custom_click(call_supporter, " call supporter ");
-			driver.navigate().back();
-			driver.navigate().back();
-			driver.navigate().back();
-			Custom_click(back_button,Service_history.get(0).getText() );
-		}
-		else
-		{
-			msg(service_info);
-		}
+				Thread.sleep(2000);
+				msg("invoice number =" + invoice_number.getText());
+				driver.navigate().back();
+				support_information();
+				Custom_click(collapse_arrow, "collapse Key arrow in");
+				Custom_click(collapse_arrow, "collapse Key arrow out");
+				Custom_click(call_supporter, " call supporter ");
+				driver.navigate().back();
+				driver.navigate().back();
+				driver.navigate().back();
+				Custom_click(back_button, Service_history.get(0).getText());
+			} else {
+				msg(service_info);
+			}
 		}
 	}
-//*********************************************Tips & DIY********************************
-@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/tips_diy_constraint_lay']")
-private WebElement Tips_and_DIY;
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id, 'com.customerapp.hero:id')]")
-private List<WebElement> tips_list;
-@FindBy(xpath ="//android.widget.ImageView[@content-desc ='PDF PAGE']")
-private WebElement image_verify;
-@FindBy(xpath ="//android.widget.TextView[@text ='DIY Videos']")
-private WebElement DIY_Videos_button;
-@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/lbl')]")
-private List<WebElement> DIY_Videos_list ;
-@FindBy(xpath ="//android.widget.Button[@text ='Play']")
-private WebElement play_video;
-@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
-private WebElement Video_close_button;
-public WebElement Tips_and_DIY()
-{
-	return Tips_and_DIY;
-}
-public void tips_list() throws InterruptedException
-{
-	for(int i=1;i<tips_list.size();i++)
-	{
-		String tips = tips_list.get(i).getText();
-		msg(tips);
-		Custom_click(tips_list.get(i), tips);
-		Thread.sleep(5000);
-		if(image_verify.isDisplayed())
-		{
-			msg(tips +" PDF image is available for guide");
-		}
-		else
-		{
-			msg(tips +" PDF image is not available for guide");
-		}
-		Custom_click(back_button, "Back from " +tips);
-		i++;
-	}
-}
-public WebElement DIY_Videos_button()
-{
-	return DIY_Videos_button;
-}
-public void DIY_Videos_list() throws InterruptedException
-{
-	for(int i=2;i<DIY_Videos_list.size();i++)
-	{
-		String video = DIY_Videos_list.get(i).getText();
-		msg(video +" Video");
-		i++;
-		Custom_click(DIY_Videos_list.get(i), video);
-		Thread.sleep(3000);
-		Custom_click(play_video, video +" Play video");
-		Thread.sleep(1000);
-		Custom_click(Video_close_button, video +" close");
-		i++;
-		
-	}
-}
-}
 
+//*********************************************Tips & DIY********************************
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/tips_diy_constraint_lay']")
+	private WebElement Tips_and_DIY;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id, 'com.customerapp.hero:id')]")
+	private List<WebElement> tips_list;
+	@FindBy(xpath = "//android.widget.ImageView[@content-desc ='PDF PAGE']")
+	private WebElement image_verify;
+	@FindBy(xpath = "//android.widget.TextView[@text ='DIY Videos']")
+	private WebElement DIY_Videos_button;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/lbl')]")
+	private List<WebElement> DIY_Videos_list;
+	@FindBy(xpath = "//android.widget.Button[@text ='Play']")
+	private WebElement play_video;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
+	private WebElement Video_close_button;
+
+	public WebElement Tips_and_DIY() {
+		return Tips_and_DIY;
+	}
+
+	public void tips_list() throws InterruptedException {
+		for (int i = 1; i < tips_list.size(); i++) {
+			String tips = tips_list.get(i).getText();
+			msg(tips);
+			Custom_click(tips_list.get(i), tips);
+			Thread.sleep(5000);
+			if (image_verify.isDisplayed()) {
+				msg(tips + " PDF image is available for guide");
+			} else {
+				msg(tips + " PDF image is not available for guide");
+			}
+			Custom_click(back_button, "Back from " + tips);
+			i++;
+		}
+	}
+
+	public WebElement DIY_Videos_button() {
+		return DIY_Videos_button;
+	}
+
+	public void DIY_Videos_list() throws InterruptedException {
+		for (int i = 2; i < DIY_Videos_list.size(); i++) {
+			String video = DIY_Videos_list.get(i).getText();
+			msg(video + " Video");
+			i++;
+			Custom_click(DIY_Videos_list.get(i), video);
+			Thread.sleep(3000);
+			Custom_click(play_video, video + " Play video");
+			Thread.sleep(1000);
+			Custom_click(Video_close_button, video + " close");
+			i++;
+
+		}
+	}
+}
