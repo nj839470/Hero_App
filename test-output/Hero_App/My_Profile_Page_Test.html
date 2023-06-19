@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>My_Profile_Page_Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 16 18:47:36 IST 2023</td>
+<td>Started on:</td><td>Mon Jun 19 21:54:01 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>215 seconds (215012 ms)</td>
+<tr><td>Total time:</td><td>458 seconds (458005 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,95 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC032_Manage_License()'><b>TC032_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5ef5e412-9ea9-4df7-b1eb-78e4f1bfbede, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/title&apos;]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30332, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30332, deviceName: 805, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 20, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30334, udid: 2B081FDH3003ZV}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7 Pro, appium:deviceName: 2B081FDH3003ZV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 2B081FDH3003ZV, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 20, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 130, appium:systemPort: 30334, appium:takesScreenshot: true, appium:udid: 2B081FDH3003ZV, appium:viewportRect: {height: 2734, left: 0, top: 130, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5ef5e412-9ea9-4df7-b1eb-78e4f1bfbede
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+	at Page_Test.My_Profile_Page_Test.TC032_Manage_License(My_Profile_Page_Test.java:117)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954097071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace954097071'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5ef5e412-9ea9-4df7-b1eb-78e4f1bfbede, findElement {using=xpath, value=//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/title&apos;]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30332, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30332, deviceName: 805, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 20, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 30334, udid: 2B081FDH3003ZV}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7 Pro, appium:deviceName: 2B081FDH3003ZV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 2B081FDH3003ZV, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 20, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 130, appium:systemPort: 30334, appium:takesScreenshot: true, appium:udid: 2B081FDH3003ZV, appium:viewportRect: {height: 2734, left: 0, top: 130, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5ef5e412-9ea9-4df7-b1eb-78e4f1bfbede
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+	at Page_Test.My_Profile_Page_Test.TC032_Manage_License(My_Profile_Page_Test.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>43</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,30 +165,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC027_verify_more_detais_button()'><b>TC027_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts()'><b>TC033_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>4</td>
-<td>Page_Test.My_Profile_Page_Test@3e62d773</td></tr>
+<td>22</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_change_original_Personal_Details()'><b>TC028_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC029_edit_prifile_button()'><b>TC029_edit_prifile_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>23</td>
-<td>Page_Test.My_Profile_Page_Test@3e62d773</td></tr>
+<td>32</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC026_Verify_My_Profile()'><b>TC026_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details()'><b>TC030_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>74</td>
-<td>Page_Test.My_Profile_Page_Test@3e62d773</td></tr>
+<td>149</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_edit_prifile_button()'><b>TC028_edit_prifile_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile()'><b>TC027_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>26</td>
-<td>Page_Test.My_Profile_Page_Test@3e62d773</td></tr>
+<td>109</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_edit_Personal_Details()'><b>TC028_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details()'><b>TC031_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>56</td>
-<td>Page_Test.My_Profile_Page_Test@3e62d773</td></tr>
+<td>35</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button()'><b>TC028_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>6</td>
+<td>Page_Test.My_Profile_Page_Test@7283d3eb</td></tr>
 </table><p>
 </body>
 </html>

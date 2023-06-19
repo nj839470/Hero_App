@@ -24,7 +24,7 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement user_mobile_no;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/user_email']")
 	private WebElement user_email;
-	@FindBy(xpath = "//android.widget.TextView[@text ='More details']")
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_details']")
 	private WebElement More_details;
 	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/tv')]")
 	private List<WebElement> user_info;
@@ -196,5 +196,49 @@ public class My_Profile_Page extends Base_Utility {
 	public WebElement Save_button()
 	{
 		return Save_button;
+	}
+//	*******************************Manage License *****************************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/manage_license']")
+	private WebElement manage_license;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
+	private WebElement License_verify;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/subtitle']")
+	private WebElement add_Liense_now;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[1]")
+	private WebElement Choose_License_from_library;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
+	private WebElement Take_License_Photo;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
+	private WebElement close_button_for_license_upload;
+	public WebElement manage_license()
+	{
+		return manage_license;
+	}
+	public WebElement License_verify()
+	{
+		return License_verify;
+	}
+	public WebElement add_Liense_now()
+	{
+		return add_Liense_now;
+	}
+	public WebElement Choose_License_from_library()
+	{
+		return Choose_License_from_library;
+	}
+	public WebElement Take_License_Photo()
+	{
+		return Take_License_Photo;
+	}
+	public WebElement close_button_for_license_upload()
+	{
+		return close_button_for_license_upload;
+	}
+//****************************emergency_contacts***************************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/emergency_contacts']")
+	private WebElement emergency_contacts;
+	public WebElement emergency_contacts()
+	{
+		return emergency_contacts;
 	}
 }

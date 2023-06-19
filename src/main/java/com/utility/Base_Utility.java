@@ -14,6 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestListener;
@@ -109,59 +110,59 @@ public class Base_Utility
 //
 	// *************************pCloudy************************************************
 	
-//	public void OPEN_AND_INSTALL_APP() {
-//		try {
-//			DesiredCapabilities capabilities = new DesiredCapabilities();
-//			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-//			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-//			capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-//			capabilities.setCapability("newCommandTimeout", 600);
-//			capabilities.setCapability("launchTimeout", 90000);
-//			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-//			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-//			capabilities.setCapability("platformVersion", "13.0.0");
-//			capabilities.setCapability("platformName", "Android");
-//			capabilities.setCapability("automationName", "uiautomator2");
-//			capabilities.setCapability("pCloudy_ApplicationName", "app-debug-connected.apk");
-//			capabilities.setCapability("appPackage", "com.customerapp.hero");
-//			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-//			capabilities.setCapability("pCloudy_WildNet", "false");
-//			capabilities.setCapability("pCloudy_EnableVideo", "true");
-//			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
-//			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
-//			capabilities.setCapability("appiumVersion", "2.0.0");
-//			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//			 log = LogManager.getLogger("Hero_App");
-//			 
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//	}
-	// -------- for real device----------
 	public void OPEN_AND_INSTALL_APP() {
 		try {
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "realme C33 2023");
-			db.setCapability("appium:udid", "192.168.1.2:5555"); 
-			db.setCapability("appium:avdLaunchTimeout", 600000);
-			db.setCapability("appPackage", "com.customerapp.hero");
-			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-			db.setCapability("appium:noReset", "false");
-//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
-			log = LogManager.getLogger("Hero_App");
-			lis = new listner();
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+			capabilities.setCapability("pCloudy_DurationInMinutes", 40);
+			capabilities.setCapability("newCommandTimeout", 600);
+			capabilities.setCapability("launchTimeout", 90000);
+			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+			capabilities.setCapability("platformVersion", "13.0.0");
+			capabilities.setCapability("platformName", "Android");
+			capabilities.setCapability("automationName", "uiautomator2");
+			capabilities.setCapability("pCloudy_ApplicationName", "app-debug-connected.apk");
+			capabilities.setCapability("appPackage", "com.customerapp.hero");
+			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+			capabilities.setCapability("pCloudy_WildNet", "false");
+			capabilities.setCapability("pCloudy_EnableVideo", "true");
+			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
+			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+			capabilities.setCapability("appiumVersion", "2.0.0");
+			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			 log = LogManager.getLogger("Hero_App");
+			 
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 	}
+	// -------- for real device----------
+//	public void OPEN_AND_INSTALL_APP() {
+//		try {
+//			UiAutomator2Options db = new UiAutomator2Options();
+//			db.setCapability("appium:automationName", "uiautomator2");
+//			db.setCapability("platformName", "Android");
+//			db.setCapability("appium:deviceName", "realme C33 2023");
+//			db.setCapability("appium:udid", "192.168.1.2:5555"); 
+//			db.setCapability("appium:avdLaunchTimeout", 600000);
+//			db.setCapability("appPackage", "com.customerapp.hero");
+//			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+//			db.setCapability("appium:noReset", "false");
+////			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
+//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//			db.setCapability("appium:ensureWebviewsHavePages", true);
+//			db.setCapability("appium:nativeWebScreenshot", true);
+//			db.setCapability("appium:newCommandTimeout", 6600);
+//			log = LogManager.getLogger("Hero_App");
+//			lis = new listner();
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//	}
 	@Override
 	public String config_getdata(String key) {
 		String value = "";

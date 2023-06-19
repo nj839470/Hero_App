@@ -59,7 +59,6 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC019_Verify_Documents() throws InterruptedException // 54 steps
 	{
 //		login = new Login_Page_Test();
-//		ob = new Home_Page();
 //		login.login();
 		Custom_click(ob.Documents_Menu(), "Document menu");
 		ob.Documents_list();

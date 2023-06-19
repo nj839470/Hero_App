@@ -19,11 +19,11 @@ public class My_Profile_Page_Test extends Base_Utility {
 	public My_Profile_Page ob;
 
 	@Test(priority = 0)
-	public void TC026_Verify_My_Profile() throws InterruptedException {
+	public void TC027_Verify_My_Profile() throws InterruptedException {
 		msg("************************My_Profile_Page_Test**************************");
 		ob = new My_Profile_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
@@ -34,16 +34,17 @@ public class My_Profile_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC027_verify_more_detais_button() {
+	public void TC028_verify_more_detais_button() {
 		Custom_click(ob.More_details(), "More details");
 		ob.user_info();
 	}
 
 	@Test(priority = 2)
-	public void TC028_edit_prifile_button() {
+	public void TC029_edit_prifile_button() {
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
-		if (ob.Choose_from_library().isDisplayed() != true) {
+		if (ob.while_using_the_app().getSize() != null) 
+		{
 			Custom_click(ob.while_using_the_app(), "while_using_the_app");
 			Custom_click(ob.allow(), "Allow");
 			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
@@ -59,7 +60,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 
 	}
 	@Test(priority = 3)
-	public void TC028_edit_Personal_Details() throws InterruptedException {
+	public void TC030_edit_Personal_Details() throws InterruptedException {
 		map = new LinkedHashMap<>();
 		map.put("Name", ob.edit_full_name().getText());
 		map.put("Email ID", ob.edit_email_id().getText());
@@ -80,24 +81,62 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Scroll_down_page_Action("Street name");
 		custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-		custom_sendkeys(ob.pin_code(), "110030", "Pin code");
+		custom_sendkeys(ob.pin_code(), "110027", "Pin code");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.Save_button(), "Save button");
+		if(ob.Save_button().isDisplayed())
+		{
+			Custom_click(ob.Back(), " Back from profile Details");
+			Custom_click(ob.More_details(), "More details");
+		}
 
 	}
-	@Test(dependsOnMethods = "TC028_edit_Personal_Details()",priority = 4)
-	public void TC028_change_original_Personal_Details() throws InterruptedException {
+	@Test(dependsOnMethods = "TC030_edit_Personal_Details()",priority = 4)
+	public void TC031_change_original_Personal_Details() throws InterruptedException {
 		Custom_click(ob.More_details(), "More details");
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
-//		System.out.println(map.get("Name"));
 		custom_sendkeys(ob.edit_full_name(), map.get("Name"), " Original Name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		custom_sendkeys(ob.edit_email_id(), map.get("Email ID"), "Original Email id");
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 //		custom_sendkeys(ob.edit_registered_mobile_number(), map.get("Registered mobile number"),
 //				"Original registered mobile number");
+		driver.navigate().back();
 		Custom_click(ob.Save_button(), "Save button");
+		
+		
+	}
+	@Test(priority = 5)
+	public void TC032_Manage_License() throws InterruptedException
+	{
+		Custom_click(ob.manage_license(), " Manage License");
 		Thread.sleep(2000);
+		msg(ob.License_verify().getText());
+		Custom_click(ob.add_Liense_now(), "  Add License now");
+		Custom_click(ob.Choose_License_from_library(), "Choose license from Libery");
+		driver.navigate().back();
+		Custom_click(ob.add_Liense_now(), "  Add License now");
+		Custom_click(ob.Take_License_Photo(), "Take License Photo");
+		driver.navigate().back();
+		Custom_click(ob.add_Liense_now(), "  Add License now");
+		Custom_click(ob.close_button_for_license_upload(), " Close license upload page");
+		Custom_click(ob.Back(), " Back from Driver License");
+
+	}
+	@Test(priority = 6)
+	public void TC033_Verify_emergency_contacts() throws InterruptedException
+	{
+		Custom_click(ob.emergency_contacts(), "Emergency contacts");
+		Thread.sleep(2000);
+		msg("Emergency contacts" +ob.License_verify().getText());
+		Custom_click(ob.add_Liense_now(), "  Add Emergency contacts");
+		if(ob.allow() != null)
+		{
+		Custom_click(ob.allow(), "Allow");
+		}
+		Custom_click(ob.Back(), " Back from Select Contacts page");
+		Custom_click(ob.Back(), " Back from Emergency Contacts page");
 		Custom_click(ob.Back(), " Back from profile Details");
-		Custom_click(ob.close_my_profile_page(), " close my profile page ");
+		Custom_click(ob.close_my_profile_page(), " close my profile page ");	
 	}
 }

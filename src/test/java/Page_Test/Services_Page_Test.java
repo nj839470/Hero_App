@@ -12,7 +12,7 @@ public class Services_Page_Test extends Base_Utility {
 	public Services_Page ob;
 
 	@Test(priority = 0)
-	public void TC029_Vehicle_details_on_service_page() throws InterruptedException {
+	public void TC034_Vehicle_details_on_service_page() throws InterruptedException {
 		ob = new Services_Page();
 //		login = new Login_Page_Test();
 //		login.login();
@@ -28,7 +28,7 @@ public class Services_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC030_verify_service_type() {
+	public void TC035_verify_service_type() {
 		if (ob.Vehicle_Service_type().isDisplayed() == true) {
 			msg("Vehicle Service type =" + ob.Vehicle_Service_type().getText());
 		}
@@ -43,13 +43,13 @@ public class Services_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC031_verify_Dealer_information() 
+	public void TC036_verify_Dealer_information() 
 	{
 		ob.dealer_info();
 	}
 
 	@Test(priority = 3)
-	public void TC032_Verify_dealer_manager_info() {
+	public void TC037_Verify_dealer_manager_info() {
 		msg("Manager type =" + ob.manager_type().getText());
 		msg("Manager name =" + ob.manager_name().getText());
 		Custom_click(ob.call_manager(), " Call amanger");
@@ -59,7 +59,7 @@ public class Services_Page_Test extends Base_Utility {
 		msg("Manager contact number =" + ob.manage_phone_number().getText());
 	}
 //	@Test(priority = 4)
-//	public void TC033_View_Service_Schedule()
+//	public void TC036_View_Service_Schedule()
 //	{
 ////		ob = new Services_Page();
 ////		login = new Login_Page_Test();
@@ -70,20 +70,20 @@ public class Services_Page_Test extends Base_Utility {
 //		Custom_click(ob.Kilometer_750(), "750 Kilometer");
 //	}
 	@Test(priority = 4)
-	public void TC033_Verify_Last_Serviced() throws InterruptedException {
+	public void TC038_Verify_Last_Serviced() throws InterruptedException {
 		Custom_click(ob.Last_serviced_history(), "Last serviced history");
 		ob.Service_history();
 		Custom_click(ob.back_button(), " Back from servie history");
 	}
 	@Test(priority = 6)
-	public void TC035_Verify_all_tips_list() throws InterruptedException
+	public void TC039_Verify_all_tips_list() throws InterruptedException
 	{
 		scrollByText("Tips & DIY");
 		Custom_click(ob.Tips_and_DIY(), "Tips and DIY");
 		ob.tips_list();
 	}
 	@Test(priority = 7)
-	public void TC036_Verify_all_DIY_Videos_list() throws InterruptedException
+	public void TC040_Verify_all_DIY_Videos_list() throws InterruptedException
 	{
 		Custom_click(ob.DIY_Videos_button(), "DIY video button");
 		ob.DIY_Videos_list();

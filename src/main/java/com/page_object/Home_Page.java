@@ -46,7 +46,7 @@ public class Home_Page extends Base_Utility {
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
 		Custom_click(vehicle_drop_down, " Drop down");
-		Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
+		Custom_click(all_vehicle_inside_drop_down.get(1), "Select Vehicle");
 //		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) 
 //		{
 //			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
@@ -128,111 +128,6 @@ public class Home_Page extends Base_Utility {
 		{
 			return Service_booked_now_button;
 		}
-//		public void Service_info()
-//		{
-//			ob1 = new Services_Page();
-//			int i = Service_info.size();
-//			String service_nfo=Service_info.get(i-1).getText();
-//			msg(service_nfo);
-//			if(Service_booked_now_button().getText().equalsIgnoreCase("Service Request Raised"))
-//			{
-//			msg("Service was due on =" + service_due_date.getText());
-//			if(service_due_date.getText().equals(""))
-//			{
-//			Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-//			msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
-//			msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
-//			msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
-//			if (ob1.Service_center_name().isDisplayed() == true) {
-//				msg("Service center name =" + ob1.Service_center_name().getText());
-//			} else {
-//				msg("Service center name is not given");
-//			}
-//			msg("Service center address =" + ob1.Service_center_address().getText());
-//			msg("******************Job card , Estimated date & price ************************");
-//			msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
-//			msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
-//			ob1.Support_info();
-//			Custom_click(ob1.call_supporter(), " call supporter name ");
-//			driver.navigate().back();
-//			driver.navigate().back();
-//			driver.navigate().back();
-//			Custom_click(ob1.collapse_button(), "Collapse Button");
-//			Custom_click(ob1.collapse_button(), "Back collapse_button");
-//			Custom_click(ob1.back(), "Back from Ongoing Service details");
-//			}
-//			else
-//			{
-//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-//				if(Service_booked_now_button().isDisplayed()==true)
-//				{
-//					msg(Service_booked_now_button().getText()+" is not clickable");
-//				}
-//			}
-//			}
-//			else if(Service_booked_now_button().getText().equalsIgnoreCase("book_now"))
-//			{
-//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-//				msg("Service Centername & address =" +center_Name.getText() +"\n" +center_Address.getText());
-//				Custom_click(Select_service_center_key_arrow_button, "Select service center key arrow button");
-//				Custom_click(Select_State(), "Select state");
-//				Select_State("DELHI");
-//				Custom_click(Select_City(), "Select City");
-//				Select_City("MUNIRKA");
-//				Custom_click(map_view(), "Map View dealer name and address");
-//				Dealer_info();
-//				Custom_click(Back(), "Back from Dealer Locator");
-//				Custom_click(date, "Date");
-//				Custom_click(date_pick, "21 June 2023");
-//				Custom_click(ok_button, "Ok button");
-//				Custom_click(date, "Date");
-//				Custom_click(cancel_button, "Cancel Button");
-//				Custom_click(time, "Time");
-//				Custom_click(time_hour_pick, "Time hour pick");
-//				Custom_click(time_minute_pick, "Time_minute_pick");
-//				Custom_click(ok_button, "Ok button");
-//				Custom_click(time, "Time");
-//				Custom_click(send_time, "Send time button");
-//				custom_sendkeys(Enter_Hour, "01", " hour");
-//				custom_sendkeys(Enter_Minute, "33", " Minute");
-//				Custom_click(AM_PM_Selector, " AM ,PM Selector");
-//				Custom_click(chose_PM, "Chose PM");
-//				Custom_click(ok_button, "Ok button");
-//				Custom_click(paid_service, "paid service");
-//				msg("Last Service info =" +last_service_details.getText());
-//				Custom_click(Continue_button, "Continue button");
-//				for(int j =0;j<select_key_issue.size();j++)
-//				{
-//					Custom_click(select_key_issue.get(j), +(i+0) +" Key issue");
-//				}
-//				Custom_click(book_service, "Book Service");
-//				Custom_click(back_button_from_booked_service, "back button from booked service");
-//				}
-//			else
-//			{
-//				Custom_click(Service_booked_now_button(), Service_booked_now_button().getText());
-//				msg("Vehicle brand name in Ongoing Service details= " + ob1.Vehicle_brand_Name().getText());
-//				msg("Vehicle number in Ongoing Service details  = " + ob1.Vehicle_Nick_Name().getText());
-//				msg("Vehicle Serial number in Ongoing Service details =" + ob1.Vehicle_Number().getText());
-//				if (ob1.Service_center_name().isDisplayed() == true) {
-//					msg("Service center name =" + ob1.Service_center_name().getText());
-//				} else {
-//					msg("Service center name is not given");
-//				}
-//				msg("Service center address =" + ob1.Service_center_address().getText());
-//				msg("******************Job card , Estimated date & price ************************");
-//				msg("Estimated Amount =" + ob1.Estimated_Amount().getText());
-//				msg("Estimated Date & Time =" + ob1.Estimated_date().getText());
-//				ob1.Support_info();
-//				Custom_click(ob1.call_supporter(), " call supporter name ");
-//				driver.navigate().back();
-//				driver.navigate().back();
-//				driver.navigate().back();
-//				Custom_click(ob1.collapse_button(), "Collapse Button");
-//				Custom_click(ob1.collapse_button(), "Back collapse_button");
-//				Custom_click(ob1.back(), "Back from Ongoing Service details");
-//			}
-//			}
 //*************************Navigate Page**********************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[1]")
 	private WebElement Navigate_menu;
@@ -324,6 +219,9 @@ public class Home_Page extends Base_Utility {
 		for (int i = 1; i < Documents_list.size(); i++) {
 			String name = Documents_list.get(i).getText();
 			Custom_click(Documents_list.get(i), name);
+			Thread.sleep(2000);
+			if(Document_Check != null)
+			{
 			msg(Document_Check.getText());
 			Custom_click(Add_Now, name + " Add now");
 			if (i == 1) {
@@ -340,7 +238,12 @@ public class Home_Page extends Base_Utility {
 			Custom_click(Add_Now, name + " Add now");
 			Custom_click(document_upload_close_button, "Close upload document page");
 			Custom_click(Back, name + " Back Document");
-
+			}
+			else
+			{
+			msg(name + " is already available");
+			Custom_click(Back, name + " Back Document");
+			}
 		}
 	}
 
