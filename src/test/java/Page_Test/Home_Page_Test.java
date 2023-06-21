@@ -73,6 +73,8 @@ public class Home_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		Custom_click(ob.Relationship_Manager(), "Relationship Manager");
 		Thread.sleep(2000);
+		if(ob.Relationship_Manager_name().getSize()!= null)
+		{
 		msg("Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
 		msg("Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
 		msg("Relationship Manager Contact number is =" + ob.Relationship_Manager_Contact_number().getText());
@@ -80,6 +82,10 @@ public class Home_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		driver.navigate().back();
 		driver.navigate().back();
+		}else
+		{
+			msg("Relationship Manager name is not given");
+		}
 		Thread.sleep(2000);
 		ob.Others_Contacts();
 		Custom_click(ob.Back(), "Back from Relationship Manager");

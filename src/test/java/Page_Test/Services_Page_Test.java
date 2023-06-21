@@ -13,6 +13,7 @@ public class Services_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC034_Vehicle_details_on_service_page() throws InterruptedException {
+		msg("************************Service Page**************************");
 		ob = new Services_Page();
 //		login = new Login_Page_Test();
 //		login.login();

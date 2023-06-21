@@ -276,10 +276,19 @@ public class Home_Page extends Base_Utility {
 	}
 
 	public void Others_Contacts() {
-		for (int i = 0; i < Others_Contacts.size(); i++) {
-			msg("Others Contacts information =" + Others_Contacts.get(i).getText());
+		try {
+			if(Others_Contacts.size()!=0)
+			{
+			for (int i = 0; i < Others_Contacts.size(); i++) {
+				msg("Others Contacts information =" + Others_Contacts.get(i).getText());
+			}
+			}
+		} catch (Exception e) {
+			System.err.println(e);
 		}
-	}
+		
+		}
+	
 
 //****************************RSA************************************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[4]")

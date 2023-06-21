@@ -1,161 +1,82 @@
-[INFO ] 2023-06-12 20:46:07.946 [main] Hero_App - ************************Login page test**************************
-[INFO ] 2023-06-12 20:46:12.356 [main] Hero_App - Close button is clickable
-[INFO ] 2023-06-12 20:46:16.317 [main] Hero_App - Login with unregisterd mobile number send successfully
-[INFO ] 2023-06-12 20:46:19.443 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
-[INFO ] 2023-06-12 20:46:24.364 [main] Hero_App - Login with short_digit_mobile_number send successfully
-[INFO ] 2023-06-12 20:46:27.367 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
-[INFO ] 2023-06-12 20:46:29.656 [main] Hero_App - Login with More than 10 digit mobile number send successfully
-[INFO ] 2023-06-12 20:46:31.729 [main] Hero_App - More then 10 digits mobiles number are not acceptable
-[INFO ] 2023-06-12 20:46:36.032 [main] Hero_App - Terms of use button is clickable
-[INFO ] 2023-06-12 20:46:46.673 [main] Hero_App - Terms of use: First condition = This document is published in accordance with the provisions of Information Technology Act 2000 and related amendments thereafter that require publishing the rules and regulations, Privacy Policy and Terms of Use for access or usage of www.heromotocorp.com website through a user agreement.
-[INFO ] 2023-06-12 20:46:48.686 [main] Hero_App - back terms of use page  is clickable
-[INFO ] 2023-06-12 20:46:50.001 [main] Hero_App - Privacy Policy is clickable
-[INFO ] 2023-06-12 20:46:59.199 [main] Hero_App - Privacy policy : First Condition = Hero MotoCorp Ltd. together with its affiliates and subsidiaries (collectively referred to as the "Company" or "Hero" or "Us" and also indicated by "us", "we" or "our") is committed to protecting your privacy and personal information you give to us. We encourage you to read the Privacy Policy.
-[INFO ] 2023-06-12 20:47:01.431 [main] Hero_App - back Privacy Policy page  is clickable
-[INFO ] 2023-06-12 20:47:19.064 [main] Hero_App - Successfully  Scroll page down Action Contact us
-[INFO ] 2023-06-12 20:47:20.033 [main] Hero_App - Contact us is clickable
-[INFO ] 2023-06-12 20:47:23.064 [main] Hero_App - contact via email is clickable
-[INFO ] 2023-06-12 20:47:28.341 [main] Hero_App - back Contact us page  is clickable
-[INFO ] 2023-06-12 20:47:32.125 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-12 20:47:35.355 [main] Hero_App - Coninue button is present
-[INFO ] 2023-06-12 20:47:35.681 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-12 20:47:56.941 [main] Hero_App - Resend button is present
-[INFO ] 2023-06-12 20:47:57.476 [main] Hero_App - Resend button is clickable
-[INFO ] 2023-06-12 20:48:18.816 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-06-12 20:48:20.357 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-06-12 20:48:21.972 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-06-12 20:48:23.580 [main] Hero_App - enterOTP =7 send successfully
-[INFO ] 2023-06-12 20:48:25.357 [main] Hero_App - enterOTP =8 send successfully
-[INFO ] 2023-06-12 20:48:26.801 [main] Hero_App - enterOTP =9 send successfully
-[INFO ] 2023-06-12 20:48:28.225 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-06-12 20:48:30.006 [main] Hero_App - Verify Button is still present
-[INFO ] 2023-06-12 20:48:30.215 [main] Hero_App - Edit Mobile Number is clickable
-[INFO ] 2023-06-12 20:48:33.479 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-06-12 20:48:37.814 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-06-12 20:48:57.597 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-06-12 20:48:59.209 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-06-12 20:49:01.321 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-06-12 20:49:03.057 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-06-12 20:49:04.675 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-06-12 20:49:06.382 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-06-12 20:49:07.538 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-06-12 20:49:07.548 [main] Hero_App - ************************Select_Vehicle_Page_Test**************************
-[INFO ] 2023-06-12 20:49:12.823 [main] Hero_App - Tap on pencil for Nick name  is clickable
-[INFO ] 2023-06-12 20:49:14.264 [main] Hero_App - Save button before updating the nick name is  present
-[INFO ] 2023-06-12 20:49:18.181 [main] Hero_App - Nick Name  send successfully
-[INFO ] 2023-06-12 20:49:21.247 [main] Hero_App - Nick name close button  is clickable
-[INFO ] 2023-06-12 20:49:21.536 [main] Hero_App - Nick name is not saved
-[INFO ] 2023-06-12 20:49:23.035 [main] Hero_App - Tap on pencil for Nick name  is clickable
-[INFO ] 2023-06-12 20:49:26.811 [main] Hero_App -  30 letter Nick Name  send successfully
-[INFO ] 2023-06-12 20:49:31.312 [main] Hero_App - Save button after updating the 30 letter nick name is  is clickable
-[INFO ] 2023-06-12 20:49:31.374 [main] Hero_App -  = 30 letter nick name are acceptable
-[INFO ] 2023-06-12 20:49:31.728 [main] Hero_App - Tap on pencil for Nick name  is clickable
-[INFO ] 2023-06-12 20:49:35.301 [main] Hero_App - 31 letter Nick Name  send successfully
-[INFO ] 2023-06-12 20:49:38.470 [main] Hero_App - Save button after updating 31 letter nick name the nick name   is clickable
-[INFO ] 2023-06-12 20:49:38.683 [main] Hero_App -  = 31 letter nick name are not acceptable
-[INFO ] 2023-06-12 20:49:39.192 [main] Hero_App - Tap on pencil for Nick name  is clickable
-[INFO ] 2023-06-12 20:49:43.196 [main] Hero_App - 29 letter Nick Name  send successfully
-[INFO ] 2023-06-12 20:49:45.501 [main] Hero_App - Save button after updating the 29 letter nick name   is clickable
-[INFO ] 2023-06-12 20:49:47.335 [main] Hero_App -  = 29 letter nick name are acceptable
-[INFO ] 2023-06-12 20:49:47.845 [main] Hero_App - Continue Button before select vehicle is present
-[INFO ] 2023-06-12 20:49:47.987 [main] Hero_App - We found 2 vehicles linked to you
-[INFO ] 2023-06-12 20:49:47.988 [main] Hero_App - Total number of Vehicles registered in this number is = 2
-[INFO ] 2023-06-12 20:49:48.565 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-06-12 20:49:48.866 [main] Hero_App - Continue Button after select vehicle is present
-[INFO ] 2023-06-12 20:49:50.596 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-06-12 20:49:57.865 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-06-12 20:49:59.882 [main] Hero_App - ************************Home_Page_Test**************************
-[ERROR] 2023-06-12 20:50:40.039 [main] Hero_App - Close button is not clickable
-[ERROR] 2023-06-12 20:51:20.129 [main] Hero_App - Login with Registerd mobile number is not able to send
-[ERROR] 2023-06-12 20:52:00.834 [main] Hero_App - Coninue button is not clickable
-[ERROR] 2023-06-12 20:53:35.932 [main] Hero_App - Verify Button is not clickable
-[INFO ] 2023-06-12 20:53:38.363 [main] Hero_App -  Select first vehicle is clickable
-[ERROR] 2023-06-12 20:54:18.452 [main] Hero_App - Continue Button after select vehicle is not clickable
-[ERROR] 2023-06-12 20:54:58.576 [main] Hero_App - While using the app is not clickable
-[INFO ] 2023-06-12 20:55:00.899 [main] Hero_App - Current Temperature is =16°C
-[INFO ] 2023-06-12 20:55:01.471 [main] Hero_App - Vehicle Img is present
-[INFO ] 2023-06-12 20:55:03.999 [main] Hero_App -  Drop down is clickable
-[INFO ] 2023-06-12 20:55:05.762 [main] Hero_App - 0 vehicle is clickable
-[INFO ] 2023-06-12 20:55:08.190 [main] Hero_App -  Drop down is clickable
-[INFO ] 2023-06-12 20:55:09.114 [main] Hero_App - 1 vehicle is clickable
-[INFO ] 2023-06-12 20:55:13.674 [main] Hero_App -  Drop down is clickable
-[INFO ] 2023-06-12 20:55:55.033 [main] Hero_App -  Drop down is clickable
-[INFO ] 2023-06-12 20:55:55.514 [main] Hero_App - Collapse button is clickable
-[INFO ] 2023-06-12 20:55:58.440 [main] Hero_App -  Return collapse button is clickable
-[INFO ] 2023-06-12 20:56:01.292 [main] Hero_App - Notification is clickable
-[INFO ] 2023-06-12 20:56:41.517 [main] Hero_App - Total Notification are=0
-[ERROR] 2023-06-12 20:57:21.757 [main] Hero_App - Notification back is not clickable
-[INFO ] 2023-06-12 20:57:22.464 [main] Hero_App - Document menu is clickable
-[INFO ] 2023-06-12 20:57:23.627 [main] Hero_App - Registration Certificate (R.C.) is clickable
-[INFO ] 2023-06-12 20:57:25.407 [main] Hero_App - You have not added your R.C.
-[INFO ] 2023-06-12 20:57:25.924 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-06-12 20:57:27.591 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-06-12 20:57:28.948 [main] Hero_App - Allow is clickable
-[INFO ] 2023-06-12 20:57:31.247 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-06-12 20:57:32.958 [main] Hero_App - Registration Certificate (R.C.) Document frmo library is clickable
-[INFO ] 2023-06-12 20:57:35.411 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-06-12 20:57:37.974 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-06-12 20:57:40.275 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-06-12 20:57:41.345 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-06-12 20:57:42.830 [main] Hero_App - Registration Certificate (R.C.) Back Document is clickable
-[INFO ] 2023-06-12 20:57:43.733 [main] Hero_App - Insurance is clickable
-[INFO ] 2023-06-12 20:57:45.211 [main] Hero_App - You have not added your insurance.
-[INFO ] 2023-06-12 20:57:45.678 [main] Hero_App - Insurance Add now is clickable
-[INFO ] 2023-06-12 20:57:46.614 [main] Hero_App - Insurance Document frmo library is clickable
-[INFO ] 2023-06-12 20:57:49.482 [main] Hero_App - Insurance Add now is clickable
-[INFO ] 2023-06-12 20:57:50.564 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-06-12 20:57:54.347 [main] Hero_App - Insurance Add now is clickable
-[INFO ] 2023-06-12 20:57:55.519 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-06-12 20:57:56.345 [main] Hero_App - Insurance Back Document is clickable
-[INFO ] 2023-06-12 20:57:57.283 [main] Hero_App - P.U.C. is clickable
-[INFO ] 2023-06-12 20:57:58.778 [main] Hero_App - You have not added your P.U.C.
-[INFO ] 2023-06-12 20:57:59.172 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-06-12 20:58:00.667 [main] Hero_App - P.U.C. Document frmo library is clickable
-[INFO ] 2023-06-12 20:58:03.212 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-06-12 20:58:04.307 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-06-12 20:58:07.744 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-06-12 20:58:08.945 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-06-12 20:58:09.900 [main] Hero_App - P.U.C. Back Document is clickable
-[INFO ] 2023-06-12 20:58:10.878 [main] Hero_App - Other is clickable
-[INFO ] 2023-06-12 20:58:12.469 [main] Hero_App - You have not added any documents.
-[INFO ] 2023-06-12 20:58:12.714 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-06-12 20:58:13.908 [main] Hero_App - Other Document frmo library is clickable
-[INFO ] 2023-06-12 20:58:16.448 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-06-12 20:58:17.755 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-06-12 20:58:21.168 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-06-12 20:58:22.833 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-06-12 20:58:24.033 [main] Hero_App - Other Back Document is clickable
-[INFO ] 2023-06-12 20:58:25.723 [main] Hero_App - Back from Documents is clickable
-[INFO ] 2023-06-12 20:58:28.396 [main] Hero_App - Relationship Manager is clickable
-[INFO ] 2023-06-12 20:58:31.428 [main] Hero_App - Relationship Manager name is =
-[INFO ] 2023-06-12 20:58:31.581 [main] Hero_App - Relationship Manager address is =
-[INFO ] 2023-06-12 20:58:31.782 [main] Hero_App - Relationship Manager Contact number is =
-[INFO ] 2023-06-12 20:58:34.103 [main] Hero_App - Others Contacts information =ASHUTOSH SINGH
-[INFO ] 2023-06-12 20:58:34.271 [main] Hero_App - Others Contacts information =ASM
-[INFO ] 2023-06-12 20:58:34.400 [main] Hero_App - Others Contacts information =ashutosh.singh@heromotocorp.com
-[INFO ] 2023-06-12 20:58:34.498 [main] Hero_App - Others Contacts information =SWSTIK GUPTA
-[INFO ] 2023-06-12 20:58:34.614 [main] Hero_App - Others Contacts information =TSM
-[INFO ] 2023-06-12 20:58:34.806 [main] Hero_App - Others Contacts information =swstik.gupta@heromotocorp.com
-[INFO ] 2023-06-12 20:58:35.871 [main] Hero_App - Back from Relationship Manager is clickable
-[INFO ] 2023-06-12 20:58:36.746 [main] Hero_App - RSA is clickable
-[INFO ] 2023-06-12 20:58:39.760 [main] Hero_App - locate nearest dealer is clickable
-[INFO ] 2023-06-12 20:58:40.409 [main] Hero_App - Locate nearest dealer link is not working
-[ERROR] 2023-06-12 20:58:40.410 [main] Hero_App - Locate nearest dealer link is not working
-[INFO ] 2023-06-12 20:58:41.426 [main] Hero_App - Back from RSA is clickable
-[INFO ] 2023-06-12 20:58:42.325 [main] Hero_App - Technical Support is clickable
-[ERROR] 2023-06-12 21:00:05.506 [main] Hero_App - Dealer Locator is not clickable
-[INFO ] 2023-06-12 21:00:07.761 [main] Hero_App - Select state is clickable
-[INFO ] 2023-06-12 21:00:34.493 [main] Hero_App - Select city is clickable
-[ERROR] 2023-06-12 21:01:03.501 [main] Hero_App - Map View dealer name and address is not clickable
-[INFO ] 2023-06-12 21:01:03.521 [main] Hero_App - ************************My_Profile_Page_Test**************************
-[ERROR] 2023-06-12 21:01:05.536 [main] Hero_App - Side menu button is not clickable
-[ERROR] 2023-06-12 21:01:05.545 [main] Hero_App - My profile is not clickable
-[ERROR] 2023-06-12 21:01:05.583 [main] Hero_App - More details is not clickable
-[ERROR] 2023-06-12 21:01:05.619 [main] Hero_App - Edit profile details button is not clickable
-[ERROR] 2023-06-12 21:01:05.628 [main] Hero_App - profile pic edit button is not clickable
-[ERROR] 2023-06-12 21:01:05.638 [main] Hero_App -  Chose profile pic from liberary  is not clickable
-[ERROR] 2023-06-12 21:01:07.690 [main] Hero_App -  Services button is not clickable
-[ERROR] 2023-06-12 21:01:07.720 [main] Hero_App - Service Booked details is not clickable
-[ERROR] 2023-06-12 21:01:07.731 [main] Hero_App - Last Serviced  is not clickable
-[ERROR] 2023-06-12 21:01:07.741 [main] Hero_App - Tips and DIY is not clickable
-[ERROR] 2023-06-12 21:01:09.772 [main] Hero_App - DIY Videos button is not clickable
+[INFO ] 2023-06-21 18:46:47.574 [main] Hero_App - *********************My Vehicle page**************************
+[INFO ] 2023-06-21 18:46:52.226 [main] Hero_App - Deny is clickable
+[INFO ] 2023-06-21 18:46:55.941 [main] Hero_App - Allow Now is clickable
+[INFO ] 2023-06-21 18:47:00.460 [main] Hero_App - OK is clickable
+[INFO ] 2023-06-21 18:47:04.801 [main] Hero_App - Allow notification is clickable
+[INFO ] 2023-06-21 18:47:09.409 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-06-21 18:47:14.376 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-06-21 18:47:34.998 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-06-21 18:47:37.319 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-06-21 18:47:39.223 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-06-21 18:47:41.993 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-06-21 18:47:44.497 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-06-21 18:47:46.872 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-06-21 18:47:51.699 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-06-21 18:47:57.276 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-06-21 18:48:00.501 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-06-21 18:48:04.735 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-06-21 18:48:12.882 [main] Hero_App - Vodeo close is clickable
+[INFO ] 2023-06-21 18:48:14.977 [main] Hero_App - Home is clickable
+[INFO ] 2023-06-21 18:48:19.441 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-06-21 18:48:28.802 [main] Hero_App - Vehicle Details is clickable
+[INFO ] 2023-06-21 18:48:33.385 [main] Hero_App - HARLEY X440 (Rahul Kumar Panday) is clickable
+[INFO ] 2023-06-21 18:48:37.041 [main] Hero_App - HARLEY X440 (Rahul Kumar Panday) is clickable
+[INFO ] 2023-06-21 18:48:37.577 [main] Hero_App - Vehicle image is present
+[INFO ] 2023-06-21 18:48:38.119 [main] Hero_App - Vehicle status =Primary Vehicle
+[INFO ] 2023-06-21 18:49:04.177 [main] Hero_App - More details is clickable
+[INFO ] 2023-06-21 18:49:06.546 [main] Hero_App - VIN No. = MBLYGL001P4E00008
+[INFO ] 2023-06-21 18:49:08.510 [main] Hero_App - Engine no. = YG01AAP4E00002
+[INFO ] 2023-06-21 18:49:10.656 [main] Hero_App - Colour = MMD
+[INFO ] 2023-06-21 18:49:16.059 [main] Hero_App - Nickname = Rahul Kumar Panday
+[INFO ] 2023-06-21 18:49:18.852 [main] Hero_App - Nick name is clickable
+[INFO ] 2023-06-21 18:49:23.350 [main] Hero_App - Nick name edit send successfully
+[INFO ] 2023-06-21 18:49:25.993 [main] Hero_App - Save button is clickable
+[INFO ] 2023-06-21 18:49:29.911 [main] Hero_App - Less Details is clickable
+[INFO ] 2023-06-21 18:49:33.284 [main] Hero_App - Documents is clickable
+[INFO ] 2023-06-21 18:49:35.061 [main] Hero_App - Registration Certificate (R.C.) is clickable
+[INFO ] 2023-06-21 18:49:40.862 [main] Hero_App - You have not added your R.C.
+[INFO ] 2023-06-21 18:49:44.712 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-06-21 18:49:47.264 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-06-21 18:49:50.002 [main] Hero_App - Allow is clickable
+[INFO ] 2023-06-21 18:49:53.999 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-06-21 18:49:56.426 [main] Hero_App - Registration Certificate (R.C.) Document frmo library is clickable
+[INFO ] 2023-06-21 18:50:00.917 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-06-21 18:50:03.758 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-06-21 18:50:09.532 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-06-21 18:50:12.094 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-06-21 18:50:14.574 [main] Hero_App - Registration Certificate (R.C.) Back Document is clickable
+[INFO ] 2023-06-21 18:50:16.896 [main] Hero_App - Insurance is clickable
+[INFO ] 2023-06-21 18:50:19.446 [main] Hero_App - You have not added your insurance.
+[INFO ] 2023-06-21 18:50:21.524 [main] Hero_App - Insurance Add now is clickable
+[INFO ] 2023-06-21 18:50:24.076 [main] Hero_App - Insurance Document frmo library is clickable
+[INFO ] 2023-06-21 18:50:31.626 [main] Hero_App - Insurance Add now is clickable
+[INFO ] 2023-06-21 18:50:33.940 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-06-21 18:50:37.998 [main] Hero_App - Insurance Add now is clickable
+[INFO ] 2023-06-21 18:50:40.745 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-06-21 18:50:45.927 [main] Hero_App - Insurance Back Document is clickable
+[INFO ] 2023-06-21 18:50:47.742 [main] Hero_App - P.U.C. is clickable
+[INFO ] 2023-06-21 18:50:50.172 [main] Hero_App - You have not added your P.U.C.
+[INFO ] 2023-06-21 18:50:51.957 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-06-21 18:50:54.254 [main] Hero_App - P.U.C. Document frmo library is clickable
+[INFO ] 2023-06-21 18:50:58.602 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-06-21 18:51:01.851 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-06-21 18:51:11.892 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-06-21 18:51:14.620 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-06-21 18:51:16.744 [main] Hero_App - P.U.C. Back Document is clickable
+[INFO ] 2023-06-21 18:51:21.260 [main] Hero_App - Other is clickable
+[INFO ] 2023-06-21 18:51:23.712 [main] Hero_App - You have not added any documents.
+[INFO ] 2023-06-21 18:51:25.794 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-06-21 18:51:33.695 [main] Hero_App - Other Document frmo library is clickable
+[INFO ] 2023-06-21 18:51:39.970 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-06-21 18:51:44.120 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-06-21 18:51:49.495 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-06-21 18:51:52.014 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-06-21 18:51:55.278 [main] Hero_App - Other Back Document is clickable
+[INFO ] 2023-06-21 18:51:58.238 [main] Hero_App -  Back from my vehicle documents page is clickable
+[INFO ] 2023-06-21 18:52:01.661 [main] Hero_App - Owners manual is clickable
+[INFO ] 2023-06-21 18:52:03.251 [main] Hero_App - My Vehicle Owners manual =No Owner's Manual available
+[INFO ] 2023-06-21 18:52:05.206 [main] Hero_App -  Back from Owners manual page is clickable
+[INFO ] 2023-06-21 18:52:08.091 [main] Hero_App - My Vehicle Service history is clickable
+[INFO ] 2023-06-21 18:52:09.485 [main] Hero_App - My Vehicle Service historyNo Service History found.
+[INFO ] 2023-06-21 18:52:11.291 [main] Hero_App -  Back from Service History page is clickable
+[INFO ] 2023-06-21 18:52:13.879 [main] Hero_App -  Back from My Vehicle page is clickable

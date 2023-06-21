@@ -40,10 +40,10 @@ public class My_Profile_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC029_edit_prifile_button() {
+	public void TC029_edit_profile_button() {
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
-		if (ob.while_using_the_app().getSize() != null) 
+		if (ob.Choose_from_library() == null) 
 		{
 			Custom_click(ob.while_using_the_app(), "while_using_the_app");
 			Custom_click(ob.allow(), "Allow");

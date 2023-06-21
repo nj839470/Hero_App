@@ -160,7 +160,7 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
 			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
 			Custom_click(ob1.While_using_the_app(), "While using the app");
-//			Custom_click(ob1.video_close_button(), "Vodeo close");
+			Custom_click(ob1.video_close_button(), "Vodeo close");
 		} catch (Exception e) {
 			System.out.println("Problem with login" + e);
 		}

@@ -16,18 +16,14 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 @Listeners(com.utility.listner.class)
 
 public class Select_Vehicle_Page_Test extends Base_Utility {
-
 	public Select_Vehicle_Page ob;
 	public Login_Page_Test login;
-
 	@Test(priority = 0)
 	public void TC012_verify_Nick_Name() {
 		msg("************************Select_Vehicle_Page_Test**************************");
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
 //		login.login();
-		if(ob.edit_nickame_button().isDisplayed()==true)
-		{
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		VerifyElementPresent(ob.save_button(), "Save button before updating the nick name is ");
 		ob.edit_nickame_text().clear();
@@ -39,10 +35,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg("Nick name is not saved");
 		}
-		
-		}
 	}
-
 	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 1)
 	public void TC013_Verify_With_30_letter_nick_name() {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
@@ -99,9 +92,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 		Custom_click(ob.While_using_the_app(), "While using the app");
 		Thread.sleep(2000);
-		// Custom_click(ob.video_full_video(), "Video full");
-		// Thread.sleep(2000);
-		// Custom_click(ob.video_close_button(), "Vodeo close");
+		 Custom_click(ob.video_full_video(), "Video full");
+		 Thread.sleep(2000);
+		 Custom_click(ob.video_close_button(), "Vodeo close");
 
 	}
 }
