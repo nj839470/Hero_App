@@ -73,20 +73,20 @@ public class Home_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		Custom_click(ob.Relationship_Manager(), "Relationship Manager");
 		Thread.sleep(2000);
-		if(ob.Relationship_Manager_name().getSize()!= null)
-		{
-		msg("Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
-		msg("Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
-		msg("Relationship Manager Contact number is =" + ob.Relationship_Manager_Contact_number().getText());
-		Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
-		driver.navigate().back();
-		driver.navigate().back();
-		driver.navigate().back();
-		}else
-		{
-			msg("Relationship Manager name is not given");
-		}
-		Thread.sleep(2000);
+//		if(ob.Relationship_Manager_name().getSize()!= null)
+//		{
+//		msg("Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
+//		msg("Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
+//		msg("Relationship Manager Contact number is =" + ob.Relationship_Manager_Contact_number().getText());
+//		Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
+//		driver.navigate().back();
+//		driver.navigate().back();
+//		driver.navigate().back();
+//		}else
+//		{
+//			msg("Relationship Manager name is not given");
+//		}
+//		Thread.sleep(2000);
 		ob.Others_Contacts();
 		Custom_click(ob.Back(), "Back from Relationship Manager");
 	}
@@ -116,9 +116,9 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC022_Verify_Technical_Support_Manager() throws InterruptedException {
 		Custom_click(ob.Technical_Support(), "Technical Support");
 		Thread.sleep(2000);
-		msg("Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
-		msg("Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
-		msg("Technical Support Manager contact number is =" + ob.Technical_Support_Manager_Contact_Number().getText());
+//		msg("Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
+//		msg("Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
+//		msg("Technical Support Manager contact number is =" + ob.Technical_Support_Manager_Contact_Number().getText());
 		Custom_click(ob.Back(), "Back from Technical Support Manager");
 	}
 

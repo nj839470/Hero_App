@@ -74,6 +74,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 //				" Change registered mobile number");
 		Custom_click(ob.edit_date_of_birth(), " Date of Birth");
 		Custom_click(ob.DOB_edit_button(), "Edit DOB");
+		ob.send_dob().clear();
 		custom_sendkeys(ob.send_dob(), config_getdata("edit_DOB"), "change dob in mm/dd/yyyy");
 		Custom_click(ob.confirm_dob(), " Confirm DOB");
 		custom_sendkeys(ob.blood_group(), "B+", "Blood group");
@@ -81,11 +82,13 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Scroll_down_page_Action("Street name");
 		custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+		ob.pin_code().clear();
 		custom_sendkeys(ob.pin_code(), "110027", "Pin code");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.Save_button(), "Save button");
 		if(ob.Save_button().isDisplayed())
 		{
+			driver.navigate().back();
 			Custom_click(ob.Back(), " Back from profile Details");
 			Custom_click(ob.More_details(), "More details");
 		}
