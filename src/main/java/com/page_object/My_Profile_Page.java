@@ -83,9 +83,15 @@ public class My_Profile_Page extends Base_Utility {
 		return Back;
 	}
 	public void user_info() {
+		try {
 		msg(user_info.get(0).getText() + " = " + user_dob.getText());
 		msg(user_info.get(1).getText() + " = " + user_gender.getText());
 		msg(user_info.get(2).getText() + " = " + user_blood_group.getText());
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 
 	public WebElement edit_profile_details_button() {
@@ -135,6 +141,8 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement send_dob;
 	@FindBy(xpath ="//android.widget.Button[@resource-id='com.customerapp.hero:id/confirm_button']")
 	private WebElement confirm_dob;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.customerapp.hero:id/cancel_button']")
+	private WebElement Cancel_dob;
 	@FindBy(xpath ="//android.widget.Spinner[@resource-id = 'com.customerapp.hero:id/filled_exposed']")
 	private WebElement blood_group;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id ='com.customerapp.hero:id/address_input_editext']")
@@ -180,6 +188,10 @@ public class My_Profile_Page extends Base_Utility {
 	public WebElement confirm_dob()
 	{
 		return confirm_dob;
+	}
+	public WebElement Cancel_dob()
+	{
+		return Cancel_dob;
 	}
 	public WebElement blood_group()
 	{

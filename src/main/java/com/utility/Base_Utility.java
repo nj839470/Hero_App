@@ -259,7 +259,7 @@ public class Base_Utility
 	public void custom_sendkeys(WebElement element, String value, String fieldname) {
 		try {
 			if (element.isEnabled() || element.isDisplayed() == true) {
-				wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+				wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 				wait.until(ExpectedConditions.visibilityOf(element));
 				element.click();
 				element.sendKeys(value);
@@ -278,7 +278,7 @@ public class Base_Utility
 	public void Custom_click(WebElement element, String fieldname) {
 		try {
 			if (element.isDisplayed() || element.isEnabled() == true) {
-				wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+				wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 				wait.until(ExpectedConditions.elementToBeClickable(element));
 				element.click();
 				test.log(Status.PASS, "Successfully click on = " + fieldname);
@@ -405,5 +405,4 @@ public class Base_Utility
 		}
 
 	}
-
 }

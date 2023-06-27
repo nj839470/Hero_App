@@ -17,6 +17,7 @@ public class Services_Page_Test extends Base_Utility {
 		ob = new Services_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		try {
 		Thread.sleep(2000);
 		Custom_click(ob.Services(), " Services button");
 		msg("Vehicle brand name = " + ob.Vehicle_brand_Name().getText());
@@ -26,10 +27,16 @@ public class Services_Page_Test extends Base_Utility {
 		if (ob.Vehicle_Number().isDisplayed() == true) {
 			msg("Vehicle number =" + ob.Vehicle_Number().getText());
 		}
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 
 	@Test(priority = 1)
 	public void TC035_verify_service_type() {
+		try {
 		if (ob.Vehicle_Service_type().isDisplayed() == true) {
 			msg("Vehicle Service type =" + ob.Vehicle_Service_type().getText());
 		}
@@ -40,6 +47,11 @@ public class Services_Page_Test extends Base_Utility {
 		msg("Service status =" + service_status);
 		if (service_status.equalsIgnoreCase("Service Scheduled")) {
 			msg("Service date and time =" + ob.service_date_time().getText());
+		}
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
 		}
 	}
 

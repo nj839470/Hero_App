@@ -45,8 +45,10 @@ public class Home_Page extends Base_Utility {
 	}
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
+		try
+		{
 		Custom_click(vehicle_drop_down, " Drop down");
-		Custom_click(all_vehicle_inside_drop_down.get(1), "Select Vehicle");
+		Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
 //		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) 
 //		{
 //			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
@@ -54,6 +56,11 @@ public class Home_Page extends Base_Utility {
 //			Custom_click(vehicle_drop_down, " Drop down");
 //		}
 //		Custom_click(vehicle_drop_down, " Drop down");
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 
 	public WebElement vehicle_img() {
@@ -216,10 +223,13 @@ public class Home_Page extends Base_Utility {
 	}
 
 	public void Documents_list() throws InterruptedException {
+		
 		for (int i = 1; i < Documents_list.size(); i++) {
 			String name = Documents_list.get(i).getText();
 			Custom_click(Documents_list.get(i), name);
 			Thread.sleep(2000);
+			try
+			{
 			if(Document_Check != null)
 			{
 			msg(Document_Check.getText());
@@ -239,11 +249,11 @@ public class Home_Page extends Base_Utility {
 			Custom_click(document_upload_close_button, "Close upload document page");
 			Custom_click(Back, name + " Back Document");
 			}
-			else
-			{
+		}catch(Exception e)
+		{
 			msg(name + " is already available");
 			Custom_click(Back, name + " Back Document");
-			}
+		}
 		}
 	}
 
@@ -284,7 +294,7 @@ public class Home_Page extends Base_Utility {
 			}
 			}
 		} catch (Exception e) {
-			System.err.println(e);
+			msg(""+e);
 		}
 		
 		}

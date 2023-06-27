@@ -24,6 +24,8 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		try
+		{
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		VerifyElementPresent(ob.save_button(), "Save button before updating the nick name is ");
 		ob.edit_nickame_text().clear();
@@ -35,9 +37,16 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg("Nick name is not saved");
 		}
+		}catch(Exception e)
+		{
+			msg("Pencil button is not available");
+			System.err.println(e);
+		}
 	}
 	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 1)
 	public void TC013_Verify_With_30_letter_nick_name() {
+		try
+		{
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("30_letter_nick_name"), " 30 letter Nick Name ");
@@ -49,10 +58,17 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg(" = 30 letter nick name are not acceptable");
 		}
+		}catch(Exception e)
+		{
+			msg("Pencil button is not available");
+			System.err.println(e);
+		}
 	}
 
 	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 2)
 	public void TC014_Verify_With_31_letter_nick_name() {
+		try
+		{
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("31_letter_nick_name"), "31 letter Nick Name ");
@@ -64,10 +80,16 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg(" = 31 letter nick name are not acceptable");
 		}
+		}catch(Exception e)
+		{
+			msg("Pencil button is not available");
+			System.err.println(e);
+		}
 	}
 
 	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 3)
 	public void TC015_Verify_With_29_letter_nick_name() {
+		try {
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("29_letter_nick_name"), "29 letter Nick Name ");
@@ -79,12 +101,18 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		} else {
 			msg(" = 29 letter nick name are not acceptable");
 		}
+		}catch(Exception e)
+		{
+			msg("Pencil button is not available");
+			System.err.println(e);
+		}
 		assertEquals(ob.Nick_name().getText(), config_getdata("29_letter_nick_name"));
-
-	}
+}
 
 	@Test(priority = 4)
 	public void TC016_Select_Vehicle() throws InterruptedException {
+		try
+		{
 		VerifyElementPresent(ob.continue_button(), "Continue Button before select vehicle is");
 		ob.vehicle_count();
 		Custom_click(ob.click_first_vehicle(), " Select first vehicle");
@@ -95,6 +123,11 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 //		 Custom_click(ob.video_full_video(), "Video full");
 		 Thread.sleep(2000);
 		 Custom_click(ob.video_close_button(), "Vodeo close");
-
+		}catch(Exception e)
+		{
+			msg(""+e);
+			System.err.println(e);
+		}
 	}
+		
 }

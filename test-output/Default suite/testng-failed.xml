@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Page_Test.Services_Page_Test">
+      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
         <methods>
+          <include name="TC040_Refer_a_friend"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC033_View_Service_Schedule"/>
         </methods>
-      </class> <!-- Page_Test.Services_Page_Test -->
+      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

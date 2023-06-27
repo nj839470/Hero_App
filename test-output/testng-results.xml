@@ -1,299 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="38" passed="34" failed="4" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-21T21:29:30 IST" name="Hero_App" finished-at="2023-06-21T21:48:51 IST" duration-ms="1160740">
+  <suite started-at="2023-06-27T20:40:13 IST" name="Default suite" finished-at="2023-06-27T20:45:43 IST" duration-ms="330009">
     <groups>
     </groups>
-    <test started-at="2023-06-21T21:29:30 IST" name="All test class" finished-at="2023-06-21T21:48:51 IST" duration-ms="1160740">
-      <class name="Page_Test.Home_Page_Test">
-        <test-method signature="TC017_Home_page_verify()[pri:0, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:35:41 IST" name="TC017_Home_page_verify" finished-at="2023-06-21T21:36:07 IST" duration-ms="26538" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC017_Home_page_verify -->
-        <test-method signature="TC019_Verify_Documents()[pri:1, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:36:07 IST" name="TC019_Verify_Documents" finished-at="2023-06-21T21:37:57 IST" duration-ms="109302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC019_Verify_Documents -->
-        <test-method signature="TC020_Verify_Relationship_Manager()[pri:2, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:37:57 IST" name="TC020_Verify_Relationship_Manager" finished-at="2023-06-21T21:38:11 IST" duration-ms="14320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC020_Verify_Relationship_Manager -->
-        <test-method signature="TC021_Verify_RSA()[pri:3, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:38:11 IST" name="TC021_Verify_RSA" finished-at="2023-06-21T21:38:21 IST" duration-ms="10345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC021_Verify_RSA -->
-        <test-method signature="TC022_Verify_Technical_Support_Manager()[pri:4, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:38:21 IST" name="TC022_Verify_Technical_Support_Manager" finished-at="2023-06-21T21:38:28 IST" duration-ms="6425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC022_Verify_Technical_Support_Manager -->
-        <test-method signature="TC023_Verify_Dealer_Locator()[pri:5, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:38:28 IST" name="TC023_Verify_Dealer_Locator" finished-at="2023-06-21T21:38:42 IST" duration-ms="14733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC023_Verify_Dealer_Locator -->
-        <test-method signature="TC024_Select_city()[pri:6, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:38:42 IST" name="TC024_Select_city" finished-at="2023-06-21T21:39:21 IST" duration-ms="38636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC024_Select_city -->
-        <test-method signature="TC025_View_dealer_name_and_address()[pri:7, instance:Page_Test.Home_Page_Test@77659b30]" started-at="2023-06-21T21:39:21 IST" name="TC025_View_dealer_name_and_address" finished-at="2023-06-21T21:39:41 IST" duration-ms="20368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC025_View_dealer_name_and_address -->
-      </class> <!-- Page_Test.Home_Page_Test -->
-      <class name="Page_Test.Services_Page_Test">
-        <test-method signature="TC034_Vehicle_details_on_service_page()[pri:0, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:44:12 IST" name="TC034_Vehicle_details_on_service_page" finished-at="2023-06-21T21:44:19 IST" duration-ms="7601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC034_Vehicle_details_on_service_page -->
-        <test-method signature="TC035_verify_service_type()[pri:1, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:44:19 IST" name="TC035_verify_service_type" finished-at="2023-06-21T21:44:22 IST" duration-ms="3122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC035_verify_service_type -->
-        <test-method signature="TC036_verify_Dealer_information()[pri:2, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:44:22 IST" name="TC036_verify_Dealer_information" finished-at="2023-06-21T21:44:29 IST" duration-ms="6732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC036_verify_Dealer_information -->
-        <test-method signature="TC037_Verify_dealer_manager_info()[pri:3, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:44:29 IST" name="TC037_Verify_dealer_manager_info" finished-at="2023-06-21T21:44:36 IST" duration-ms="7250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC037_Verify_dealer_manager_info -->
-        <test-method signature="TC038_Verify_Last_Serviced()[pri:4, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:44:36 IST" name="TC038_Verify_Last_Serviced" finished-at="2023-06-21T21:45:53 IST" duration-ms="76675" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.TextView[contains(@text,'Hero')]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.TextView[contains(@text,'Hero')]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
-at com.page_object.Services_Page.Service_history(Services_Page.java:227)
-at Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced(Services_Page_Test.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC038_Verify_Last_Serviced -->
-        <test-method signature="TC039_Verify_all_tips_list()[pri:6, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:45:54 IST" name="TC039_Verify_all_tips_list" finished-at="2023-06-21T21:47:05 IST" duration-ms="70717" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.ImageView[@content-desc ='PDF PAGE']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.ImageView[@content-desc ='PDF PAGE']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
-at com.page_object.Services_Page.tips_list(Services_Page.java:269)
-at Page_Test.Services_Page_Test.TC039_Verify_all_tips_list(Services_Page_Test.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC039_Verify_all_tips_list -->
-        <test-method signature="TC040_Verify_all_DIY_Videos_list()[pri:7, instance:Page_Test.Services_Page_Test@1e13529a]" started-at="2023-06-21T21:47:05 IST" name="TC040_Verify_all_DIY_Videos_list" finished-at="2023-06-21T21:48:51 IST" duration-ms="105497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC040_Verify_all_DIY_Videos_list -->
-      </class> <!-- Page_Test.Services_Page_Test -->
-      <class name="Page_Test.My_Profile_Page_Test">
-        <test-method signature="TC027_Verify_My_Profile()[pri:0, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:39:41 IST" name="TC027_Verify_My_Profile" finished-at="2023-06-21T21:39:53 IST" duration-ms="11292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC027_Verify_My_Profile -->
-        <test-method signature="TC028_verify_more_detais_button()[pri:1, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:39:53 IST" name="TC028_verify_more_detais_button" finished-at="2023-06-21T21:39:58 IST" duration-ms="5314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC028_verify_more_detais_button -->
-        <test-method signature="TC029_edit_profile_button()[pri:2, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:39:58 IST" name="TC029_edit_profile_button" finished-at="2023-06-21T21:40:20 IST" duration-ms="22018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC029_edit_profile_button -->
-        <test-method signature="TC030_edit_Personal_Details()[pri:3, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:40:20 IST" name="TC030_edit_Personal_Details" finished-at="2023-06-21T21:42:47 IST" duration-ms="147047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC030_edit_Personal_Details -->
-        <test-method signature="TC031_change_original_Personal_Details()[pri:4, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:42:47 IST" name="TC031_change_original_Personal_Details" finished-at="2023-06-21T21:43:22 IST" depends-on-methods="TC030_edit_Personal_Details()" duration-ms="34605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC031_change_original_Personal_Details -->
-        <test-method signature="TC032_Manage_License()[pri:5, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:43:22 IST" name="TC032_Manage_License" finished-at="2023-06-21T21:43:51 IST" duration-ms="29344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC032_Manage_License -->
-        <test-method signature="TC033_Verify_emergency_contacts()[pri:6, instance:Page_Test.My_Profile_Page_Test@456d6c1e]" started-at="2023-06-21T21:43:51 IST" name="TC033_Verify_emergency_contacts" finished-at="2023-06-21T21:44:12 IST" duration-ms="20608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC033_Verify_emergency_contacts -->
-      </class> <!-- Page_Test.My_Profile_Page_Test -->
-      <class name="Page_Test.Login_Page_Test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:29:30 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-21T21:30:24 IST" duration-ms="53567" status="PASS">
+    <test started-at="2023-06-27T20:40:13 IST" name="Default test" finished-at="2023-06-27T20:45:43 IST" duration-ms="330009">
+      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Refer_a_friend_and_Contact_us_test@24313fcc]" started-at="2023-06-27T20:40:13 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-27T20:41:08 IST" duration-ms="55283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:30:24 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-06-21T21:30:34 IST" duration-ms="10080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
-        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:30:34 IST" name="TC002_invalidmobileno" finished-at="2023-06-21T21:30:42 IST" duration-ms="8164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC002_invalidmobileno -->
-        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:30:42 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-06-21T21:30:47 IST" duration-ms="4729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC003_Verify_Login_with_short_length_of_mobile_number_credential -->
-        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:30:47 IST" name="TC004_max_digit_mobile_number" finished-at="2023-06-21T21:30:54 IST" duration-ms="6817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC004_max_digit_mobile_number -->
-        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:30:54 IST" name="TC005_Terms_of_use_button" finished-at="2023-06-21T21:31:07 IST" duration-ms="13500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC005_Terms_of_use_button -->
-        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:31:07 IST" name="TC006_Privacy_policy" finished-at="2023-06-21T21:31:17 IST" duration-ms="9899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC006_Privacy_policy -->
-        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:31:17 IST" name="TC007_contact_Us" finished-at="2023-06-21T21:31:23 IST" duration-ms="5588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC007_contact_Us -->
-        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:31:23 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-06-21T21:31:47 IST" duration-ms="24480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC008_Verify_Login_with_valid_credential -->
-        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:31:47 IST" name="TC009_resend_butn" finished-at="2023-06-21T21:32:08 IST" duration-ms="21200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC009_resend_butn -->
-        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:32:08 IST" name="TC010_inavalid_OTP" finished-at="2023-06-21T21:32:27 IST" duration-ms="18597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC010_inavalid_OTP -->
-        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@35a3d49f]" started-at="2023-06-21T21:32:27 IST" name="TC011_edit_moble" finished-at="2023-06-21T21:33:08 IST" duration-ms="40836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC011_edit_moble -->
-      </class> <!-- Page_Test.Login_Page_Test -->
-      <class name="Page_Test.Select_Vehicle_Page_Test">
-        <test-method signature="TC012_verify_Nick_Name()[pri:0, instance:Page_Test.Select_Vehicle_Page_Test@64ec96c6]" started-at="2023-06-21T21:33:08 IST" name="TC012_verify_Nick_Name" finished-at="2023-06-21T21:33:23 IST" duration-ms="14823" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC012_verify_Nick_Name -->
-        <test-method signature="TC013_Verify_With_30_letter_nick_name()[pri:1, instance:Page_Test.Select_Vehicle_Page_Test@64ec96c6]" started-at="2023-06-21T21:33:23 IST" name="TC013_Verify_With_30_letter_nick_name" finished-at="2023-06-21T21:33:33 IST" depends-on-methods="TC012_verify_Nick_Name()" duration-ms="10553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC013_Verify_With_30_letter_nick_name -->
-        <test-method signature="TC014_Verify_With_31_letter_nick_name()[pri:2, instance:Page_Test.Select_Vehicle_Page_Test@64ec96c6]" started-at="2023-06-21T21:33:33 IST" name="TC014_Verify_With_31_letter_nick_name" finished-at="2023-06-21T21:34:14 IST" depends-on-methods="TC012_verify_Nick_Name()" duration-ms="40715" status="FAIL">
+        <test-method signature="TC040_Refer_a_friend()[pri:0, instance:Page_Test.Refer_a_friend_and_Contact_us_test@24313fcc]" started-at="2023-06-27T20:41:08 IST" name="TC040_Refer_a_friend" finished-at="2023-06-27T20:45:42 IST" duration-ms="273702" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -301,9 +19,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.EditText[@resource-id = 'com.customerapp.hero:id/text_input_editext']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9]]>
+Command: [37b4e117-0a19-4a41-a421-c2e05915d5d5, findElement {using=xpath, value=(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[4]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31232, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31232, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31234, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31234, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 37b4e117-0a19-4a41-a421-c2e05915d5d5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -311,9 +29,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.EditText[@resource-id = 'com.customerapp.hero:id/text_input_editext']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9
+Command: [37b4e117-0a19-4a41-a421-c2e05915d5d5, findElement {using=xpath, value=(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[4]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31232, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31232, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31234, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31234, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 37b4e117-0a19-4a41-a421-c2e05915d5d5
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -329,8 +47,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy32.clear(Unknown Source)
-at Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name(Select_Vehicle_Page_Test.java:57)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+at Page_Test.Refer_a_friend_and_Contact_us_test.TC040_Refer_a_friend(Refer_a_friend_and_Contact_us_test.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -362,82 +80,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC014_Verify_With_31_letter_nick_name -->
-        <test-method signature="TC015_Verify_With_29_letter_nick_name()[pri:3, instance:Page_Test.Select_Vehicle_Page_Test@64ec96c6]" started-at="2023-06-21T21:34:15 IST" name="TC015_Verify_With_29_letter_nick_name" finished-at="2023-06-21T21:34:56 IST" depends-on-methods="TC012_verify_Nick_Name()" duration-ms="41222" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.EditText[@resource-id = 'com.customerapp.hero:id/text_input_editext']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [77243022-6ade-4df2-b776-a536f2dcb1c9, findElement {using=xpath, value=//android.widget.EditText[@resource-id = 'com.customerapp.hero:id/text_input_editext']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 77243022-6ade-4df2-b776-a536f2dcb1c9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy32.clear(Unknown Source)
-at Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name(Select_Vehicle_Page_Test.java:72)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC015_Verify_With_29_letter_nick_name -->
-        <test-method signature="TC016_Select_Vehicle()[pri:4, instance:Page_Test.Select_Vehicle_Page_Test@64ec96c6]" started-at="2023-06-21T21:34:58 IST" name="TC016_Select_Vehicle" finished-at="2023-06-21T21:35:41 IST" duration-ms="42346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC016_Select_Vehicle -->
-      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
-    </test> <!-- All test class -->
-  </suite> <!-- Hero_App -->
+        </test-method> <!-- TC040_Refer_a_friend -->
+      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

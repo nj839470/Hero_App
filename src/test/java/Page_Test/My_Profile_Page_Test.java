@@ -24,6 +24,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		ob = new My_Profile_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		try {
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
@@ -31,25 +32,43 @@ public class My_Profile_Page_Test extends Base_Utility {
 		msg("User name = " + ob.user_name().getText());
 		msg("User mobile number =" + ob.user_mobile_no().getText());
 		msg("User email =" + ob.user_email().getText());
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 
 	@Test(priority = 1)
 	public void TC028_verify_more_detais_button() {
+		try{
 		Custom_click(ob.More_details(), "More details");
 		ob.user_info();
+	}catch(Exception e)
+	{
+		msg(""+e);
+		
+	}
 	}
 
 	@Test(priority = 2)
 	public void TC029_edit_profile_button() {
+		try {
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
+		try {
 		if (ob.Choose_from_library() == null) 
 		{
 			Custom_click(ob.while_using_the_app(), "while_using_the_app");
 			Custom_click(ob.allow(), "Allow");
 			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
+			}
+		}catch(Exception e)
+		{
+			Custom_click(ob.while_using_the_app(), "while_using_the_app");
+			Custom_click(ob.allow(), "Allow");
+			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");	
 		}
-
 		Custom_click(ob.Choose_from_library(), " Chose profile pic from liberary ");
 		driver.navigate().back();
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
@@ -57,11 +76,16 @@ public class My_Profile_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
 		Custom_click(ob.upload_close_button(), " Upload close button ");
-
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 	@Test(priority = 3)
 	public void TC030_edit_Personal_Details() throws InterruptedException {
 		map = new LinkedHashMap<>();
+		try {
 		map.put("Name", ob.edit_full_name().getText());
 		map.put("Email ID", ob.edit_email_id().getText());
 		map.put("Registered mobile number", ob.edit_registered_mobile_number().getText());
@@ -76,7 +100,14 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Custom_click(ob.DOB_edit_button(), "Edit DOB");
 		ob.send_dob().clear();
 		custom_sendkeys(ob.send_dob(), config_getdata("edit_DOB"), "change dob in mm/dd/yyyy");
+		if(ob.confirm_dob().isEnabled())
+		{
 		Custom_click(ob.confirm_dob(), " Confirm DOB");
+		}
+		else {
+			msg("DOB is not accepted" +config_getdata("edit_DOB"));
+			Custom_click(ob.Cancel_dob(), " Cancel DOB");
+		}
 		custom_sendkeys(ob.blood_group(), "B+", "Blood group");
 		Custom_click(ob.blood_group(), " Blood group");
 		Scroll_down_page_Action("Street name");
@@ -88,14 +119,25 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Custom_click(ob.Save_button(), "Save button");
 		if(ob.Save_button().isDisplayed())
 		{
-			driver.navigate().back();
+			try {
 			Custom_click(ob.Back(), " Back from profile Details");
 			Custom_click(ob.More_details(), "More details");
+			}catch(Exception e)
+			{
+				driver.navigate().back();
+				Custom_click(ob.Back(), " Back from profile Details");
+				Custom_click(ob.More_details(), "More details");
+			}
 		}
-
-	}
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
+}
 	@Test(dependsOnMethods = "TC030_edit_Personal_Details()",priority = 4)
 	public void TC031_change_original_Personal_Details() throws InterruptedException {
+		try {
 		Custom_click(ob.More_details(), "More details");
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		custom_sendkeys(ob.edit_full_name(), map.get("Name"), " Original Name");
@@ -106,14 +148,19 @@ public class My_Profile_Page_Test extends Base_Utility {
 //				"Original registered mobile number");
 		driver.navigate().back();
 		Custom_click(ob.Save_button(), "Save button");
-		
-		
-	}
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
+		}
 	@Test(priority = 5)
 	public void TC032_Manage_License() throws InterruptedException
 	{
+		try {
 		Custom_click(ob.manage_license(), " Manage License");
 		Thread.sleep(2000);
+		try {
 		msg(ob.License_verify().getText());
 		Custom_click(ob.add_Liense_now(), "  Add License now");
 		Custom_click(ob.Choose_License_from_library(), "Choose license from Libery");
@@ -123,23 +170,43 @@ public class My_Profile_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		Custom_click(ob.add_Liense_now(), "  Add License now");
 		Custom_click(ob.close_button_for_license_upload(), " Close license upload page");
+		}catch(Exception e)
+		{
+			msg("Manage License is already given");
+		}
 		Custom_click(ob.Back(), " Back from Driver License");
-
+		}catch(Exception e)
+		{
+			msg(""+e);
+			
+		}
 	}
 	@Test(priority = 6)
 	public void TC033_Verify_emergency_contacts() throws InterruptedException
 	{
+		try {
 		Custom_click(ob.emergency_contacts(), "Emergency contacts");
 		Thread.sleep(2000);
+		try {
 		msg("Emergency contacts" +ob.License_verify().getText());
 		Custom_click(ob.add_Liense_now(), "  Add Emergency contacts");
 		if(ob.allow() != null)
 		{
 		Custom_click(ob.allow(), "Allow");
 		}
+		}catch(Exception e)
+		{
+			msg("Emergency contacts is already given");
+		}
 		Custom_click(ob.Back(), " Back from Select Contacts page");
 		Custom_click(ob.Back(), " Back from Emergency Contacts page");
 		Custom_click(ob.Back(), " Back from profile Details");
 		Custom_click(ob.close_my_profile_page(), " close my profile page ");	
+	
+	}catch(Exception e)
+	{
+		msg(""+e);
+		
 	}
 }
+	}

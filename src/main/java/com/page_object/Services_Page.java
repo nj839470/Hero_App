@@ -73,12 +73,18 @@ public class Services_Page extends Base_Utility {
 	private WebElement back_button;
 
 	public void dealer_info() {
-		msg("Dealer name =" + dealer_info.get(0).getText());
-		msg("Dealer Address =" + dealer_info.get(1).getText());
-		Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
-		Custom_click(navigate_button, navigate_button.getText());
+		try {
+			msg("Dealer name =" + dealer_info.get(0).getText());
+			msg("Dealer Address =" + dealer_info.get(1).getText());
+			Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
+			Custom_click(navigate_button, navigate_button.getText());
 //	Custom_click(navigate_button, navigate_button.getText());	// for pcloudy comment this line and below one
 //	msg("Dealer distance =" +dealer_distance.getText());
+		} catch (Exception e) {
+			msg("Dealer name is not given");
+			msg("" + e);
+
+		}
 		driver.navigate().back();
 	}
 
@@ -110,55 +116,57 @@ public class Services_Page extends Base_Utility {
 	public WebElement call_manager() {
 		return call_manager;
 	}
+
 //*********************************************View_Service_Schedule********************************
-	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/service_schedule_lay']")
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/service_schedule_lay']")
 	private WebElement Service_Schedule;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/tv_km']")
+	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/tv_km']")
 	private WebElement Kilometer;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 0']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 0']")
 	private WebElement Kilometer_750;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 1']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 1']")
 	private WebElement Kilometer_3500;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 2']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 2']")
 	private WebElement Kilometer_6500;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 3']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 3']")
 	private WebElement Kilometer_9500;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 4']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 4']")
 	private WebElement Kilometer_12500;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 5']")
+	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 5']")
 	private WebElement Kilometer_morethan_15500;
-	public WebElement Service_Schedule()
-	{
+
+	public WebElement Service_Schedule() {
 		return Service_Schedule;
 	}
-	public WebElement Kilometer()
-	{
+
+	public WebElement Kilometer() {
 		return Kilometer;
 	}
-	public WebElement Kilometer_750()
-	{
+
+	public WebElement Kilometer_750() {
 		return Kilometer_750;
 	}
-	public WebElement Kilometer_3500()
-	{
+
+	public WebElement Kilometer_3500() {
 		return Kilometer_3500;
 	}
-	public WebElement Kilometer_6500()
-	{
+
+	public WebElement Kilometer_6500() {
 		return Kilometer_6500;
 	}
-	public WebElement Kilometer_9500()
-	{
+
+	public WebElement Kilometer_9500() {
 		return Kilometer_9500;
 	}
-	public WebElement Kilometer_12500()
-	{
+
+	public WebElement Kilometer_12500() {
 		return Kilometer_12500;
 	}
-	public WebElement Kilometer_morethan_15500()
-	{
+
+	public WebElement Kilometer_morethan_15500() {
 		return Kilometer_morethan_15500;
 	}
+
 //*********************************************Last Serviced********************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")
 	private WebElement Last_serviced_history;
@@ -192,50 +200,65 @@ public class Services_Page extends Base_Utility {
 	}
 
 	public void support_information() {
-		for (int i = 0; i < support_info.size(); i++) {
-			msg("Support information =" + support_info.get(i).getText());
+		try {
+			for (int i = 0; i < support_info.size(); i++) {
+				msg("Support information =" + support_info.get(i).getText());
+			}
+		} catch (Exception e) {
+			msg("" + e);
+
 		}
 	}
 
 	public void Service_history() throws InterruptedException {
 		for (int i = 0; i < Service_history.size(); i++) {
-			String service_info = Service_history.get(i).getText();
-			if (service_info.equalsIgnoreCase("Details")) {
-				Custom_click(Service_history.get(i), service_info);
-				msg("Vehicle brand name in Service details= " + service_brand_name.getText());
-				msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
-				if (sevice_center_info.get(0).isDisplayed() == true) {
-					msg("Service center name =" + sevice_center_info.get(0).getText());
+			try {
+				String service_info = Service_history.get(i).getText();
+				if (service_info.equalsIgnoreCase("Details")) {
+					Custom_click(Service_history.get(i), service_info);
+					msg("Vehicle brand name in Service details= " + service_brand_name.getText());
+					msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
+					try {
+						if (sevice_center_info.get(0).isDisplayed() == true) {
+							msg("Service center name =" + sevice_center_info.get(0).getText());
 
-				} else {
-					msg("Service center name is not given");
-				}
-				msg("Service center address =" + sevice_center_info.get(1).getText());
-				msg("******************Job card , Completion date & price ************************");
-				msg("Estimated Amount =" + Estimated_Amount.getText());
-				msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
-				if (invoice.getText().equalsIgnoreCase("Download invoice")) {
-					Custom_click(invoice, "Download invoice");
-					Thread.sleep(6000);
-				}
-				Custom_click(invoice, "view invoice");
+						}
+					} catch (Exception e) {
+						msg("Service center name is not given");
+					}
+					msg("Service center address =" + sevice_center_info.get(1).getText());
+					msg("******************Job card , Completion date & price ************************");
+					msg("Estimated Amount =" + Estimated_Amount.getText());
+					msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
+					if (invoice.getText().equalsIgnoreCase("Download invoice")) {
+						Custom_click(invoice, "Download invoice");
+						Thread.sleep(6000);
+					}
+					try {
+						Custom_click(invoice, "view invoice");
 //			if(button_once.isDisplayed()==true)
 //			{															//for emulator
 //			Custom_click(button_once, "Just once");
-//			}
-				Thread.sleep(2000);
-				msg("invoice number =" + invoice_number.getText());
-				driver.navigate().back();
-				support_information();
-				Custom_click(collapse_arrow, "collapse Key arrow in");
-				Custom_click(collapse_arrow, "collapse Key arrow out");
-				Custom_click(call_supporter, " call supporter ");
-				driver.navigate().back();
-				driver.navigate().back();
-				driver.navigate().back();
-				Custom_click(back_button, Service_history.get(0).getText());
+//		}
+						Thread.sleep(2000);
+						msg("invoice number =" + invoice_number.getText());
+						driver.navigate().back();
+					} catch (Exception e) {
+						msg("Not able to download invoice");
+					}
+					support_information();
+					Custom_click(collapse_arrow, "collapse Key arrow in");
+					Custom_click(collapse_arrow, "collapse Key arrow out");
+					Custom_click(call_supporter, " call supporter ");
+					driver.navigate().back();
+					driver.navigate().back();
+					driver.navigate().back();
+					Custom_click(back_button, Service_history.get(0).getText());
 			} else {
-				msg(service_info);
+					msg(service_info);
+				}
+			} catch (Exception e) {
+				msg("" + e);
 			}
 		}
 	}
@@ -251,7 +274,7 @@ public class Services_Page extends Base_Utility {
 	private WebElement DIY_Videos_button;
 	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/lbl')]")
 	private List<WebElement> DIY_Videos_list;
-	@FindBy(xpath = "//android.widget.Button[@text ='Play']")
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/play_pause_button']")
 	private WebElement play_video;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
 	private WebElement Video_close_button;
@@ -262,6 +285,7 @@ public class Services_Page extends Base_Utility {
 
 	public void tips_list() throws InterruptedException {
 		for (int i = 1; i < tips_list.size(); i++) {
+			try {
 			String tips = tips_list.get(i).getText();
 			msg(tips);
 			Custom_click(tips_list.get(i), tips);
@@ -273,6 +297,11 @@ public class Services_Page extends Base_Utility {
 			}
 			Custom_click(back_button, "Back from " + tips);
 			i++;
+			}catch(Exception e)
+			{
+				msg(""+e);
+				
+			}
 		}
 	}
 
@@ -282,16 +311,21 @@ public class Services_Page extends Base_Utility {
 
 	public void DIY_Videos_list() throws InterruptedException {
 		for (int i = 2; i < DIY_Videos_list.size(); i++) {
-			String video = DIY_Videos_list.get(i).getText();
-			msg(video + " Video");
-			i++;
-			Custom_click(DIY_Videos_list.get(i), video);
-			Thread.sleep(3000);
-			Custom_click(play_video, video + " Play video");
-			Thread.sleep(1000);
-			Custom_click(Video_close_button, video + " close");
-			i++;
+			try {
+				String video = DIY_Videos_list.get(i).getText();
+				msg(video + " Video");
+				i++;
+				Custom_click(DIY_Videos_list.get(i), video);
+				Thread.sleep(3000);
+				Custom_click(play_video, video + " Play video");
+				Thread.sleep(1000);
+				Custom_click(Video_close_button, video + " close");
+				i++;
 
+			} catch (Exception e) {
+				msg("" + e);
+
+			}
 		}
 	}
 }

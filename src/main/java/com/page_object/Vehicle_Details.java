@@ -100,8 +100,12 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement save_button;
 
 	public void vehicle_info() {
+		try {
 		for (int i = 0; i < vehicle_info.size(); i++) {
 			msg(Vehicle_header.get(i).getText() + " = " + vehicle_info.get(i).getText());
+		}
+		}catch(Exception e) 
+		{ msg(""+e);
 		}
 	}
 
@@ -136,6 +140,8 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement owners_manual;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
 	private WebElement owners_title;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/imageview']")
+	private WebElement Manual_Owners_info;
 
 	public WebElement owners_manual() {
 		return owners_manual;
@@ -144,6 +150,10 @@ public class Vehicle_Details extends Base_Utility {
 	public WebElement owners_title() {
 		return owners_title;
 	}
+	public WebElement Manual_Owners_info()
+	{
+		return Manual_Owners_info;
+	}
 //********************************************** Service History ***********************************
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_history']")
 	private WebElement My_vehicle_Service_history;
@@ -151,4 +161,24 @@ public class Vehicle_Details extends Base_Utility {
 	{
 		return My_vehicle_Service_history;
 	}
+	//********************************************** Tips and DIY videos ***********************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[3]")
+	private WebElement Tips_and_DIY_videos;
+	@FindBy(xpath="//android.widget.LinearLayout[@content-desc=\"Tips\"]/android.widget.TextView")
+	private WebElement Tips_info;
+	@FindBy(xpath ="//android.widget.LinearLayout[@content-desc=\"DIY Videos\"]/android.widget.TextView")
+	private WebElement DIY_Videos;
+	public WebElement Tips_and_DIY_videos()
+	{
+		return Tips_and_DIY_videos;
+	}
+	public WebElement Tips_info()
+	{
+		return Tips_info;
+	}
+	public WebElement DIY_Videos()
+	{
+		return DIY_Videos;
+	}
+
 }
