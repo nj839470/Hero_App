@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Hero_App</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 28, 2023 05:01:58 am</span></a>
+<a href="#"><span class="badge badge-primary">Jun 29, 2023 05:01:18 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,6 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -74,35 +75,31 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC034_Verify_My_Vehicle</p>
+            <p class="name">Page_Test.Login_Page_Test == TC001_Verify_Login_with_Invalid_credential</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:031</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:11 am</span> / <span>00:00:10:045</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC034_Verify_My_Vehicle</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:031</span>
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC001_Verify_Login_with_Invalid_credential</h5>
+<span class='badge badge-success'>06.29.2023 5:02:11 am</span>
+<span class='badge badge-danger'>06.29.2023 5:02:21 am</span>
+<span class='badge badge-default'>00:00:10:045</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC034_Verify_My_Vehicle.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC034_Verify_My_Vehicle.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
@@ -110,21 +107,42 @@
         <td><span class="badge log pass-bg">Pass</span></td>
         <td>5:02:11 am</td>
         <td>
-          *********************My Vehicle page**************************
+          ************************Login page test**************************
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:13 am</td>
         <td>
-          *********************My Vehicle page**************************java.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          Successfully click on = Deny
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:16 am</td>
         <td>
-          Test Case Fail
+          Successfully click on = Allow Now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:18 am</td>
+        <td>
+          Successfully click on = OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:21 am</td>
+        <td>
+          Successfully click on = Allow notification
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:21 am</td>
+        <td>
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -132,57 +150,53 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC035_Verify_My_Vehicle_more_details</p>
+            <p class="name">Page_Test.Login_Page_Test == TC002_invalidmobileno</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:005</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:21 am</span> / <span>00:00:08:186</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC035_Verify_My_Vehicle_more_details</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:005</span>
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC002_invalidmobileno</h5>
+<span class='badge badge-success'>06.29.2023 5:02:21 am</span>
+<span class='badge badge-danger'>06.29.2023 5:02:29 am</span>
+<span class='badge badge-default'>00:00:08:186</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC035_Verify_My_Vehicle_more_details.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC035_Verify_My_Vehicle_more_details.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:02:11 am</td>
+        <td>5:02:25 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.more_details()" because "this.ob" is null
+          Login with unregisterd mobile number send successfully =8178510217
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:28 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.more_details()" because "this.ob" is nulljava.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          Successfully click on = Coninue button enter after unregistered mobile number
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:29 am</td>
         <td>
-          Test Case Fail
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -190,57 +204,53 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC036_Verify_My_Vehicle_Documents</p>
+            <p class="name">Page_Test.Login_Page_Test == TC003_Verify_Login_with_short_length_of_mobile_number_credential</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:005</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:29 am</span> / <span>00:00:04:041</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC036_Verify_My_Vehicle_Documents</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:005</span>
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC003_Verify_Login_with_short_length_of_mobile_number_credential</h5>
+<span class='badge badge-success'>06.29.2023 5:02:29 am</span>
+<span class='badge badge-danger'>06.29.2023 5:02:33 am</span>
+<span class='badge badge-default'>00:00:04:041</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC036_Verify_My_Vehicle_Documents.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC036_Verify_My_Vehicle_Documents.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:02:11 am</td>
+        <td>5:02:31 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.my_vehicle_documents()" because "this.ob" is null
+          Login with short_digit_mobile_number send successfully =786576549
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:33 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.my_vehicle_documents()" because "this.ob" is nulljava.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          Coninue button enter after short length of mobile number is  not present
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:33 am</td>
         <td>
-          Test Case Fail
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -248,57 +258,53 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC037_Verify_Owners_Manual</p>
+            <p class="name">Page_Test.Login_Page_Test == TC004_max_digit_mobile_number</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:009</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:33 am</span> / <span>00:00:06:076</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC037_Verify_Owners_Manual</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:009</span>
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC004_max_digit_mobile_number</h5>
+<span class='badge badge-success'>06.29.2023 5:02:33 am</span>
+<span class='badge badge-danger'>06.29.2023 5:02:39 am</span>
+<span class='badge badge-default'>00:00:06:076</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC037_Verify_Owners_Manual.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC037_Verify_Owners_Manual.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:02:11 am</td>
+        <td>5:02:36 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.owners_manual()" because "this.ob" is null
+          Login with More than 10 digit mobile number send successfully =828282828282
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:37 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.owners_manual()" because "this.ob" is nulljava.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          More then 10 digits mobiles number are not acceptable
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:39 am</td>
         <td>
-          Test Case Fail
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -306,57 +312,60 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC038_Verify_my_Vehicle_service_History</p>
+            <p class="name">Page_Test.Login_Page_Test == TC005_Terms_of_use_button</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:010</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:39 am</span> / <span>00:00:14:455</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC038_Verify_my_Vehicle_service_History</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:010</span>
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC005_Terms_of_use_button</h5>
+<span class='badge badge-success'>06.29.2023 5:02:39 am</span>
+<span class='badge badge-danger'>06.29.2023 5:02:54 am</span>
+<span class='badge badge-default'>00:00:14:455</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC038_Verify_my_Vehicle_service_History.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC038_Verify_my_Vehicle_service_History.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:02:11 am</td>
+        <td>5:02:43 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.My_vehicle_Service_history()" because "this.ob" is null
+          Successfully click on = Terms of use button
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:51 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.My_vehicle_Service_history()" because "this.ob" is nulljava.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          Terms of use: First condition = These Terms of Use along with 
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:54 am</td>
         <td>
-          Test Case Fail
+          Successfully click on = back terms of use page 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:54 am</td>
+        <td>
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -364,14 +373,600 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="6"
+        <li class="test-item"  status="pass" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Page_Test.Vehicle_Details_test == TC039_Verify_Tips_and_DIY_videos_inside_sideMenu</p>
+            <p class="name">Page_Test.Login_Page_Test == TC006_Privacy_policy</p>
             <p class="text-sm">
-              <span>5:02:11 am</span> / <span>00:00:00:003</span>
+              <span>5:02:54 am</span> / <span>00:00:09:876</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC006_Privacy_policy</h5>
+<span class='badge badge-success'>06.29.2023 5:02:54 am</span>
+<span class='badge badge-danger'>06.29.2023 5:03:04 am</span>
+<span class='badge badge-default'>00:00:09:876</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:02:55 am</td>
+        <td>
+          Successfully click on = Privacy Policy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:01 am</td>
+        <td>
+          Privacy policy : First Condition = This Privacy Policy ("Policy") apply to all visitors, users and others (hereinafter referred to as "You" or the "User") who access or use the
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:04 am</td>
+        <td>
+          Successfully click on = back Privacy Policy page 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:04 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Login_Page_Test == TC007_contact_Us</p>
+            <p class="text-sm">
+              <span>5:03:04 am</span> / <span>00:00:06:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC007_contact_Us</h5>
+<span class='badge badge-success'>06.29.2023 5:03:04 am</span>
+<span class='badge badge-danger'>06.29.2023 5:03:10 am</span>
+<span class='badge badge-default'>00:00:06:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:06 am</td>
+        <td>
+          Successfully click on = Contact us
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:10 am</td>
+        <td>
+          Successfully click on = back Contact us page 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:10 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Login_Page_Test == TC008_Verify_Login_with_valid_credential</p>
+            <p class="text-sm">
+              <span>5:03:10 am</span> / <span>00:00:24:516</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC008_Verify_Login_with_valid_credential</h5>
+<span class='badge badge-success'>06.29.2023 5:03:10 am</span>
+<span class='badge badge-danger'>06.29.2023 5:03:34 am</span>
+<span class='badge badge-default'>00:00:24:516</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:14 am</td>
+        <td>
+          Login with Registerd mobile number send successfully =8726494540
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:16 am</td>
+        <td>
+          Coninue button is present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:17 am</td>
+        <td>
+          Successfully click on = Coninue button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:34 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Login_Page_Test == TC009_resend_butn</p>
+            <p class="text-sm">
+              <span>5:03:34 am</span> / <span>00:00:21:201</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC009_resend_butn</h5>
+<span class='badge badge-success'>06.29.2023 5:03:34 am</span>
+<span class='badge badge-danger'>06.29.2023 5:03:56 am</span>
+<span class='badge badge-default'>00:00:21:201</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:39 am</td>
+        <td>
+          Resend button is present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:40 am</td>
+        <td>
+          Successfully click on = Resend button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:56 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Login_Page_Test == TC010_inavalid_OTP</p>
+            <p class="text-sm">
+              <span>5:03:56 am</span> / <span>00:00:18:527</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC010_inavalid_OTP</h5>
+<span class='badge badge-success'>06.29.2023 5:03:56 am</span>
+<span class='badge badge-danger'>06.29.2023 5:04:14 am</span>
+<span class='badge badge-default'>00:00:18:527</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:03:58 am</td>
+        <td>
+          OTP is  send successfully =4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:01 am</td>
+        <td>
+          OTP is  send successfully =5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:03 am</td>
+        <td>
+          OTP is  send successfully =6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:06 am</td>
+        <td>
+          OTP is  send successfully =7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:08 am</td>
+        <td>
+          OTP is  send successfully =8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:10 am</td>
+        <td>
+          OTP is  send successfully =9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:12 am</td>
+        <td>
+          Successfully click on = Verify Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:14 am</td>
+        <td>
+          Verify Button is still present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:14 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Login_Page_Test == TC011_edit_moble</p>
+            <p class="text-sm">
+              <span>5:04:14 am</span> / <span>00:00:40:141</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Login_Page_Test == TC011_edit_moble</h5>
+<span class='badge badge-success'>06.29.2023 5:04:14 am</span>
+<span class='badge badge-danger'>06.29.2023 5:04:54 am</span>
+<span class='badge badge-default'>00:00:40:141</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:16 am</td>
+        <td>
+          Successfully click on = Edit Mobile Number
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:19 am</td>
+        <td>
+          Login with Registerd mobile number send successfully =8726494540
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:24 am</td>
+        <td>
+          Successfully click on = Coninue button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:41 am</td>
+        <td>
+          enterOTP =1 send successfully =1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:44 am</td>
+        <td>
+          enterOTP =2 send successfully =2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:46 am</td>
+        <td>
+          enterOTP =3 send successfully =3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:48 am</td>
+        <td>
+          enterOTP =4 send successfully =4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:50 am</td>
+        <td>
+          enterOTP =5 send successfully =5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:52 am</td>
+        <td>
+          enterOTP =6 send successfully =6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:54 am</td>
+        <td>
+          Successfully click on = Verify Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:54 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Select_Vehicle_Page_Test == TC012_verify_Nick_Name</p>
+            <p class="text-sm">
+              <span>5:04:54 am</span> / <span>00:00:21:233</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Select_Vehicle_Page_Test == TC012_verify_Nick_Name</h5>
+<span class='badge badge-success'>06.29.2023 5:04:54 am</span>
+<span class='badge badge-danger'>06.29.2023 5:05:15 am</span>
+<span class='badge badge-default'>00:00:21:233</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:54 am</td>
+        <td>
+          ************************Select_Vehicle_Page_Test**************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:06 am</td>
+        <td>
+          Successfully click on = Tap on pencil for Nick name 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:07 am</td>
+        <td>
+          Save button before updating the nick name is  present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:12 am</td>
+        <td>
+          Nick Name  send successfully =Rahul Kumar Panday
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:15 am</td>
+        <td>
+          Successfully click on = Nick name close button 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:15 am</td>
+        <td>
+          Nick name is not saved
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:15 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Select_Vehicle_Page_Test == TC013_Verify_With_30_letter_nick_name</p>
+            <p class="text-sm">
+              <span>5:05:15 am</span> / <span>00:00:09:556</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Select_Vehicle_Page_Test == TC013_Verify_With_30_letter_nick_name</h5>
+<span class='badge badge-success'>06.29.2023 5:05:15 am</span>
+<span class='badge badge-danger'>06.29.2023 5:05:25 am</span>
+<span class='badge badge-default'>00:00:09:556</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:17 am</td>
+        <td>
+          Successfully click on = Tap on pencil for Nick name 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:21 am</td>
+        <td>
+           30 letter Nick Name  send successfully =qwertyuiopasdfghjklzxcvbnmqwer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:23 am</td>
+        <td>
+          Successfully click on = Save button after updating the 30 letter nick name is 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:25 am</td>
+        <td>
+           = 30 letter nick name are not acceptable
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:25 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Select_Vehicle_Page_Test == TC014_Verify_With_31_letter_nick_name</p>
+            <p class="text-sm">
+              <span>5:05:25 am</span> / <span>00:00:40:911</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -379,42 +974,3316 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Page_Test.Vehicle_Details_test == TC039_Verify_Tips_and_DIY_videos_inside_sideMenu</h5>
-<span class='badge badge-success'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-danger'>06.28.2023 5:02:11 am</span>
-<span class='badge badge-default'>00:00:00:003</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<h5 class="test-status text-fail">Page_Test.Select_Vehicle_Page_Test == TC014_Verify_With_31_letter_nick_name</h5>
+<span class='badge badge-success'>06.29.2023 5:05:25 am</span>
+<span class='badge badge-danger'>06.29.2023 5:06:06 am</span>
+<span class='badge badge-default'>00:00:40:911</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC039_Verify_Tips_and_DIY_videos_inside_sideMenu.png28-06-2023_05 02 11' src="C:\Users\Welcome\Documents\GitHub\Hero_App/failed_Tests_ScreenShots/TC039_Verify_Tips_and_DIY_videos_inside_sideMenu.png28-06-2023_05 02 11">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:05:46 am</td>
+        <td>
+          Tap on pencil for Nick name ==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=(//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/ic_edit'])[1]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:06 am</td>
+        <td>
+          Pencil button is not available
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:06 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Select_Vehicle_Page_Test == TC015_Verify_With_29_letter_nick_name</p>
+            <p class="text-sm">
+              <span>5:06:06 am</span> / <span>00:00:41:704</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Page_Test.Select_Vehicle_Page_Test == TC015_Verify_With_29_letter_nick_name</h5>
+<span class='badge badge-success'>06.29.2023 5:06:06 am</span>
+<span class='badge badge-danger'>06.29.2023 5:06:48 am</span>
+<span class='badge badge-default'>00:00:41:704</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:06:27 am</td>
+        <td>
+          Tap on pencil for Nick name ==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=(//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/ic_edit'])[1]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:47 am</td>
+        <td>
+          Pencil button is not available
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:48 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Select_Vehicle_Page_Test == TC016_Select_Vehicle</p>
+            <p class="text-sm">
+              <span>5:06:48 am</span> / <span>00:00:31:646</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Page_Test.Select_Vehicle_Page_Test == TC016_Select_Vehicle</h5>
+<span class='badge badge-success'>06.29.2023 5:06:48 am</span>
+<span class='badge badge-danger'>06.29.2023 5:07:19 am</span>
+<span class='badge badge-default'>00:00:31:646</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:02:11 am</td>
+        <td>5:06:49 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.Tips_and_DIY_videos()" because "this.ob" is null
+          Continue Button before select vehicle is present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:49 am</td>
+        <td>
+          We found 3 vehicles linked to you
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:49 am</td>
+        <td>
+          Total number of Vehicles registered in this number is = 3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:51 am</td>
+        <td>
+          Successfully click on =  Select first vehicle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:52 am</td>
+        <td>
+          Continue Button after select vehicle is present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:54 am</td>
+        <td>
+          Successfully click on = Continue Button after select vehicle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:06:57 am</td>
+        <td>
+          Successfully click on = While using the app
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td>5:07:19 am</td>
         <td>
-          java.lang.NullPointerException: Cannot invoke "com.page_object.Vehicle_Details.Tips_and_DIY_videos()" because "this.ob" is nulljava.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "com.utility.Base_Utility.log" is null
+          Vodeo close==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_close']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:19 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC017_Home_page_verify</p>
+            <p class="text-sm">
+              <span>5:07:19 am</span> / <span>00:00:29:631</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC017_Home_page_verify</h5>
+<span class='badge badge-success'>06.29.2023 5:07:19 am</span>
+<span class='badge badge-danger'>06.29.2023 5:07:49 am</span>
+<span class='badge badge-default'>00:00:29:631</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:19 am</td>
+        <td>
+          ************************Home_Page_Test**************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:28 am</td>
+        <td>
+          Current Temperature is =21°C
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:29 am</td>
+        <td>
+          Vehicle Img is present:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:33 am</td>
+        <td>
+          Successfully click on =  Drop down
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:36 am</td>
+        <td>
+          Successfully click on = Select Vehicle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:37 am</td>
+        <td>
+          Successfully click on = Collapse button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:41 am</td>
+        <td>
+          Successfully click on =  Return collapse button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:45 am</td>
+        <td>
+          Successfully click on = Notification
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:47 am</td>
+        <td>
+          Total Notification are=3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:49 am</td>
+        <td>
+          Successfully click on = Notification back
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:49 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC019_Verify_Documents</p>
+            <p class="text-sm">
+              <span>5:07:49 am</span> / <span>00:01:51:262</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC019_Verify_Documents</h5>
+<span class='badge badge-success'>06.29.2023 5:07:49 am</span>
+<span class='badge badge-danger'>06.29.2023 5:09:40 am</span>
+<span class='badge badge-default'>00:01:51:262</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:54 am</td>
+        <td>
+          Successfully click on = Document menu
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:56 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:07:58 am</td>
+        <td>
+          You have not added your R.C.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:00 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:03 am</td>
+        <td>
+          Successfully click on = While using the app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:05 am</td>
+        <td>
+          Successfully click on = Allow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:09 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:11 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Document frmo library
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:15 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:17 am</td>
+        <td>
+          Successfully click on = Take a Photo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:22 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:24 am</td>
+        <td>
+          Successfully click on = Close upload document page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:26 am</td>
+        <td>
+          Successfully click on = Registration Certificate (R.C.) Back Document
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:28 am</td>
+        <td>
+          Successfully click on = Insurance
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:50 am</td>
+        <td>
+          Insurance is already available
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:52 am</td>
+        <td>
+          Successfully click on = Insurance Back Document
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:54 am</td>
+        <td>
+          Successfully click on = P.U.C.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:56 am</td>
+        <td>
+          You have not added your P.U.C.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:08:58 am</td>
+        <td>
+          Successfully click on = P.U.C. Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:01 am</td>
+        <td>
+          Successfully click on = P.U.C. Document frmo library
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:04 am</td>
+        <td>
+          Successfully click on = P.U.C. Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:06 am</td>
+        <td>
+          Successfully click on = Take a Photo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:10 am</td>
+        <td>
+          Successfully click on = P.U.C. Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:12 am</td>
+        <td>
+          Successfully click on = Close upload document page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:14 am</td>
+        <td>
+          Successfully click on = P.U.C. Back Document
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:16 am</td>
+        <td>
+          Successfully click on = Other
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:18 am</td>
+        <td>
+          You have not added any documents.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:20 am</td>
+        <td>
+          Successfully click on = Other Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:23 am</td>
+        <td>
+          Successfully click on = Other Document frmo library
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:26 am</td>
+        <td>
+          Successfully click on = Other Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:28 am</td>
+        <td>
+          Successfully click on = Take a Photo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:33 am</td>
+        <td>
+          Successfully click on = Other Add now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:35 am</td>
+        <td>
+          Successfully click on = Close upload document page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:37 am</td>
+        <td>
+          Successfully click on = Other Back Document
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:40 am</td>
+        <td>
+          Successfully click on = Back from Documents
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:40 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC020_Verify_Relationship_Manager</p>
+            <p class="text-sm">
+              <span>5:09:40 am</span> / <span>00:00:24:046</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC020_Verify_Relationship_Manager</h5>
+<span class='badge badge-success'>06.29.2023 5:09:40 am</span>
+<span class='badge badge-danger'>06.29.2023 5:10:04 am</span>
+<span class='badge badge-default'>00:00:24:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:46 am</td>
+        <td>
+          Successfully click on = Relationship Manager
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:49 am</td>
+        <td>
+          Relationship Manager name is =ANIL TYAGI
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:49 am</td>
+        <td>
+          Relationship Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:50 am</td>
+        <td>
+          Relationship Manager Contact number is =8282828282
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:52 am</td>
+        <td>
+          Successfully click on = Relationship manager contact
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:58 am</td>
+        <td>
+          Others Contacts information =NITIN PARASHAR
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:58 am</td>
+        <td>
+          Others Contacts information =ASM
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:09:59 am</td>
+        <td>
+          Others Contacts information =nitin.parashar@heromotocorp.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:00 am</td>
+        <td>
+          Others Contacts information =SHASHI PRAKASH
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:01 am</td>
+        <td>
+          Others Contacts information =TSM
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:01 am</td>
+        <td>
+          Others Contacts information =shashi1.prakash@heromotocorp.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:04 am</td>
+        <td>
+          Successfully click on = Back from Relationship Manager
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:04 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC021_Verify_RSA</p>
+            <p class="text-sm">
+              <span>5:10:04 am</span> / <span>00:01:01:018</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Page_Test.Home_Page_Test == TC021_Verify_RSA</h5>
+<span class='badge badge-success'>06.29.2023 5:10:04 am</span>
+<span class='badge badge-danger'>06.29.2023 5:11:05 am</span>
+<span class='badge badge-default'>00:01:01:018</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:08 am</td>
+        <td>
+          Successfully click on = RSA
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:02:11 am</td>
+        <td>5:10:31 am</td>
         <td>
-          Test Case Fail
+          locate nearest dealer==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=//android.widget.TextView[@text ='Locate nearest dealer']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:52 am</td>
+        <td>
+          Locate nearest dealer link is working
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:05 am</td>
+        <td>
+          Successfully click on = Back from RSA
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:05 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC022_Verify_Technical_Support_Manager</p>
+            <p class="text-sm">
+              <span>5:11:05 am</span> / <span>00:00:08:036</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC022_Verify_Technical_Support_Manager</h5>
+<span class='badge badge-success'>06.29.2023 5:11:05 am</span>
+<span class='badge badge-danger'>06.29.2023 5:11:13 am</span>
+<span class='badge badge-default'>00:00:08:036</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:08 am</td>
+        <td>
+          Successfully click on = Technical Support
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:11 am</td>
+        <td>
+          Technical Support Manager Name is =SHAHNAWAZ QURESHI
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:11 am</td>
+        <td>
+          Technical Support Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:12 am</td>
+        <td>
+          Technical Support Manager contact number is =8282828282
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:13 am</td>
+        <td>
+          Successfully click on = Back from Technical Support Manager
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:13 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC023_Verify_Dealer_Locator</p>
+            <p class="text-sm">
+              <span>5:11:13 am</span> / <span>00:00:14:190</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC023_Verify_Dealer_Locator</h5>
+<span class='badge badge-success'>06.29.2023 5:11:13 am</span>
+<span class='badge badge-danger'>06.29.2023 5:11:27 am</span>
+<span class='badge badge-default'>00:00:14:190</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:15 am</td>
+        <td>
+          Successfully click on = Dealer Locator
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:19 am</td>
+        <td>
+          Successfully click on = Select state
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:27 am</td>
+        <td>
+          Successfully click on = BIHAR
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:27 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC024_Select_city</p>
+            <p class="text-sm">
+              <span>5:11:27 am</span> / <span>00:00:34:812</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC024_Select_city</h5>
+<span class='badge badge-success'>06.29.2023 5:11:27 am</span>
+<span class='badge badge-danger'>06.29.2023 5:12:02 am</span>
+<span class='badge badge-default'>00:00:34:812</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:11:29 am</td>
+        <td>
+          Successfully click on = Select city
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:02 am</td>
+        <td>
+          Successfully click on = BAGAHA
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:02 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Home_Page_Test == TC025_View_dealer_name_and_address</p>
+            <p class="text-sm">
+              <span>5:12:02 am</span> / <span>00:00:18:237</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Home_Page_Test == TC025_View_dealer_name_and_address</h5>
+<span class='badge badge-success'>06.29.2023 5:12:02 am</span>
+<span class='badge badge-danger'>06.29.2023 5:12:20 am</span>
+<span class='badge badge-default'>00:00:18:237</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:04 am</td>
+        <td>
+          Successfully click on = Map View dealer name and address
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:05 am</td>
+        <td>
+          Total available dealer is =2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:05 am</td>
+        <td>
+          1 Dealer name =MAA KALI AUTOMOBILES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:05 am</td>
+        <td>
+          1 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 am</td>
+        <td>
+          1 Dealer distance =2156,1 Km.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 am</td>
+        <td>
+          1 Dealer duration time =1 Day 14 hrs 2 mins
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 am</td>
+        <td>
+          Successfully click on = 1 Call Dealer button 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 am</td>
+        <td>
+          2 Dealer name =VINAY AUTO AGENCY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 am</td>
+        <td>
+          2 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 am</td>
+        <td>
+          2 Dealer distance =2156,1 Km.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 am</td>
+        <td>
+          2 Dealer duration time =1 Day 14 hrs 2 mins
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:15 am</td>
+        <td>
+          Successfully click on = 2 Call Dealer button 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:20 am</td>
+        <td>
+          Successfully click on = Back from Dealer Locator
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:20 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC027_Verify_My_Profile</p>
+            <p class="text-sm">
+              <span>5:12:20 am</span> / <span>00:00:11:223</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC027_Verify_My_Profile</h5>
+<span class='badge badge-success'>06.29.2023 5:12:20 am</span>
+<span class='badge badge-danger'>06.29.2023 5:12:32 am</span>
+<span class='badge badge-default'>00:00:11:223</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:20 am</td>
+        <td>
+          ************************My_Profile_Page_Test**************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:23 am</td>
+        <td>
+          Successfully click on = Home
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:28 am</td>
+        <td>
+          Successfully click on = Side menu button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:29 am</td>
+        <td>
+          Successfully click on = My profile
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:31 am</td>
+        <td>
+          User name = d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:31 am</td>
+        <td>
+          User mobile number =+91 8726494540
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:32 am</td>
+        <td>
+          User email =ankit@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:32 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC028_verify_more_detais_button</p>
+            <p class="text-sm">
+              <span>5:12:32 am</span> / <span>00:00:04:881</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC028_verify_more_detais_button</h5>
+<span class='badge badge-success'>06.29.2023 5:12:32 am</span>
+<span class='badge badge-danger'>06.29.2023 5:12:37 am</span>
+<span class='badge badge-default'>00:00:04:881</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:33 am</td>
+        <td>
+          Successfully click on = More details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:35 am</td>
+        <td>
+          Date of Birth = 04 mei 2002
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:36 am</td>
+        <td>
+          Gender = Male
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:37 am</td>
+        <td>
+          Blood Group = B+ve
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:37 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC029_edit_profile_button</p>
+            <p class="text-sm">
+              <span>5:12:37 am</span> / <span>00:00:19:718</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC029_edit_profile_button</h5>
+<span class='badge badge-success'>06.29.2023 5:12:37 am</span>
+<span class='badge badge-danger'>06.29.2023 5:12:56 am</span>
+<span class='badge badge-default'>00:00:19:718</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:39 am</td>
+        <td>
+          Successfully click on = Edit profile details button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:41 am</td>
+        <td>
+          Successfully click on = profile pic edit button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:44 am</td>
+        <td>
+          Successfully click on =  Chose profile pic from liberary 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:48 am</td>
+        <td>
+          Successfully click on = profile pic edit button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:50 am</td>
+        <td>
+          Successfully click on =  Take a pic for profile 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:54 am</td>
+        <td>
+          Successfully click on = profile pic edit button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:56 am</td>
+        <td>
+          Successfully click on =  Upload close button 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:56 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC030_edit_Personal_Details</p>
+            <p class="text-sm">
+              <span>5:12:56 am</span> / <span>00:01:22:081</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC030_edit_Personal_Details</h5>
+<span class='badge badge-success'>06.29.2023 5:12:56 am</span>
+<span class='badge badge-danger'>06.29.2023 5:14:18 am</span>
+<span class='badge badge-default'>00:01:22:081</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:02 am</td>
+        <td>
+           Change Name send successfully =Punit singh
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:04 am</td>
+        <td>
+          Successfully click on = Tset radio button for =Male
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:07 am</td>
+        <td>
+          Successfully click on = Tset radio button for =Female
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:11 am</td>
+        <td>
+          Successfully click on = Tset radio button for =Other
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:14 am</td>
+        <td>
+          Successfully click on = Finally choose is =Male
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:19 am</td>
+        <td>
+           Change Email id send successfully =punit@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:22 am</td>
+        <td>
+          Successfully click on =  Date of Birth
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:25 am</td>
+        <td>
+          Successfully click on = Edit DOB
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:29 am</td>
+        <td>
+          change dob in mm/dd/yyyy send successfully =04/05/2002
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:30 am</td>
+        <td>
+          DOB is not accepted 04/05/2002
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:33 am</td>
+        <td>
+          Successfully click on =  Cancel DOB
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:36 am</td>
+        <td>
+          Blood group send successfully =B+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:40 am</td>
+        <td>
+          Successfully click on =  Blood group
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:53 am</td>
+        <td>
+          Successfully Scroll page Action ==Street name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:13:57 am</td>
+        <td>
+          Street name send successfully =Jindal colony
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:14:18 am</td>
+        <td>
+          org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[5]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:14:18 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC031_change_original_Personal_Details</p>
+            <p class="text-sm">
+              <span>5:14:18 am</span> / <span>00:01:02:021</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Page_Test.My_Profile_Page_Test == TC031_change_original_Personal_Details</h5>
+<span class='badge badge-success'>06.29.2023 5:14:18 am</span>
+<span class='badge badge-danger'>06.29.2023 5:15:20 am</span>
+<span class='badge badge-default'>00:01:02:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:14:39 am</td>
+        <td>
+          More details==Unable To Click ==org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, findElement {using=xpath, value=//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_details']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:14:55 am</td>
+        <td>
+          Successfully click on = Edit profile details button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:14:57 am</td>
+        <td>
+           Original Name is not able to sendorg.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: (//android.widget.EditText[@resource-id='com.customerapp.hero:id/text_input_editext'])[1]' does not exist in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9bcdf95d-2077-480b-a671-124c3d1be03f, isElementEnabled {id=00000000-0000-0020-ffff-ffff0000085e}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31802, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31802, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31804, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31804, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (9bcdf95d-2077-480b-a671-124c3d1be03f)] -> xpath: (//android.widget.EditText[@resource-id='com.customerapp.hero:id/text_input_editext'])[1]]
+Session ID: 9bcdf95d-2077-480b-a671-124c3d1be03f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:15 am</td>
+        <td>
+          Original Email id send successfully =ankit@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:20 am</td>
+        <td>
+          Successfully click on = Save button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:20 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC032_Manage_License</p>
+            <p class="text-sm">
+              <span>5:15:20 am</span> / <span>00:00:23:322</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC032_Manage_License</h5>
+<span class='badge badge-success'>06.29.2023 5:15:20 am</span>
+<span class='badge badge-danger'>06.29.2023 5:15:44 am</span>
+<span class='badge badge-default'>00:00:23:322</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:22 am</td>
+        <td>
+          Successfully click on =  Manage License
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:25 am</td>
+        <td>
+          You have not added your driving license.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:26 am</td>
+        <td>
+          Successfully click on =   Add License now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:30 am</td>
+        <td>
+          Successfully click on = Choose license from Libery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:32 am</td>
+        <td>
+          Successfully click on =   Add License now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:35 am</td>
+        <td>
+          Successfully click on = Take License Photo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:39 am</td>
+        <td>
+          Successfully click on =   Add License now
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:41 am</td>
+        <td>
+          Successfully click on =  Close license upload page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:44 am</td>
+        <td>
+          Successfully click on =  Back from Driver License
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:44 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.My_Profile_Page_Test == TC033_Verify_emergency_contacts</p>
+            <p class="text-sm">
+              <span>5:15:44 am</span> / <span>00:00:20:257</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.My_Profile_Page_Test == TC033_Verify_emergency_contacts</h5>
+<span class='badge badge-success'>06.29.2023 5:15:44 am</span>
+<span class='badge badge-danger'>06.29.2023 5:16:04 am</span>
+<span class='badge badge-default'>00:00:20:257</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:46 am</td>
+        <td>
+          Successfully click on = Emergency contacts
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:49 am</td>
+        <td>
+          Emergency contactsNo users here yet. Add users to continue
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:51 am</td>
+        <td>
+          Successfully click on =   Add Emergency contacts
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:53 am</td>
+        <td>
+          Successfully click on = Allow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:56 am</td>
+        <td>
+          Successfully click on =  Back from Select Contacts page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:15:59 am</td>
+        <td>
+          Successfully click on =  Back from Emergency Contacts page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:02 am</td>
+        <td>
+          Successfully click on =  Back from profile Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:04 am</td>
+        <td>
+          Successfully click on =  close my profile page 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:04 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC034_Vehicle_details_on_service_page</p>
+            <p class="text-sm">
+              <span>5:16:04 am</span> / <span>00:00:07:112</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC034_Vehicle_details_on_service_page</h5>
+<span class='badge badge-success'>06.29.2023 5:16:04 am</span>
+<span class='badge badge-danger'>06.29.2023 5:16:11 am</span>
+<span class='badge badge-default'>00:00:07:112</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:04 am</td>
+        <td>
+          ************************Service Page**************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:08 am</td>
+        <td>
+          Successfully click on =  Services button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:09 am</td>
+        <td>
+          Vehicle brand name = SPLENDOR +
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:10 am</td>
+        <td>
+          Vehicle nick name = qwertyuiopasdfghjklzxcvbnmqwe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:11 am</td>
+        <td>
+          Vehicle number =DL5SCH1073
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:11 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC035_verify_service_type</p>
+            <p class="text-sm">
+              <span>5:16:11 am</span> / <span>00:00:02:388</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC035_verify_service_type</h5>
+<span class='badge badge-success'>06.29.2023 5:16:11 am</span>
+<span class='badge badge-danger'>06.29.2023 5:16:14 am</span>
+<span class='badge badge-default'>00:00:02:388</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:12 am</td>
+        <td>
+          Vehicle Service type =Paid Service
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:13 am</td>
+        <td>
+          Vehicle Service booking number = SR No.: 10375-03-RSRB-0423-146
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:14 am</td>
+        <td>
+          Service status =Service In-progress
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:14 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC036_verify_Dealer_information</p>
+            <p class="text-sm">
+              <span>5:16:14 am</span> / <span>00:00:06:756</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC036_verify_Dealer_information</h5>
+<span class='badge badge-success'>06.29.2023 5:16:14 am</span>
+<span class='badge badge-danger'>06.29.2023 5:16:20 am</span>
+<span class='badge badge-default'>00:00:06:756</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:14 am</td>
+        <td>
+          Dealer name =HIMGIRI AUTOMOBILES (P) LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:15 am</td>
+        <td>
+          Dealer Address =A-19 JHILMIL IND AREA GT Road  EAST DELHI DELHI DELHI 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:17 am</td>
+        <td>
+          Successfully click on = HIMGIRI AUTOMOBILES (P) LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:20 am</td>
+        <td>
+          Successfully click on = Navigate
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:20 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC037_Verify_dealer_manager_info</p>
+            <p class="text-sm">
+              <span>5:16:20 am</span> / <span>00:00:06:917</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC037_Verify_dealer_manager_info</h5>
+<span class='badge badge-success'>06.29.2023 5:16:20 am</span>
+<span class='badge badge-danger'>06.29.2023 5:16:27 am</span>
+<span class='badge badge-default'>00:00:06:917</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:21 am</td>
+        <td>
+          Manager type =Relationship Manager
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:22 am</td>
+        <td>
+          Manager name =MANPREET KAUR
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:24 am</td>
+        <td>
+          Successfully click on =  Call amanger
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:27 am</td>
+        <td>
+          Manager contact number =8953646786
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:27 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC038_Verify_Last_Serviced</p>
+            <p class="text-sm">
+              <span>5:16:27 am</span> / <span>00:02:46:734</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC038_Verify_Last_Serviced</h5>
+<span class='badge badge-success'>06.29.2023 5:16:27 am</span>
+<span class='badge badge-danger'>06.29.2023 5:19:14 am</span>
+<span class='badge badge-default'>00:02:46:734</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:29 am</td>
+        <td>
+          Successfully click on = Last serviced history
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:31 am</td>
+        <td>
+          Service History
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:31 am</td>
+        <td>
+          02 mrt. 2022
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:32 am</td>
+        <td>
+          General Repair
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:33 am</td>
+        <td>
+          5284 km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:34 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:35 am</td>
+        <td>
+          11780-03-RSRB-0721-2842
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:36 am</td>
+        <td>
+          Successfully click on = Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:38 am</td>
+        <td>
+          Vehicle brand name in Service details= SPLENDOR +
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:38 am</td>
+        <td>
+          Vehicle Serial number in Service details  = SR No: 11780-03-RSRB-0721-2842
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:39 am</td>
+        <td>
+          Service center name =R.K.AUTOMOBILES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:40 am</td>
+        <td>
+          Service center address =PLOT NO- 340, G/F KH NO-1184/20 MAIN G.T. ROAD FRIENDS CLY. NEW DELHI NEW DELHI DELHI 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:40 am</td>
+        <td>
+          ******************Job card , Completion date & price ************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:40 am</td>
+        <td>
+          Estimated Amount =? 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:41 am</td>
+        <td>
+          Estimated Date & Time =02 mrt. 2022 at 03:53 a.m.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:43 am</td>
+        <td>
+          Successfully click on = Download invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:51 am</td>
+        <td>
+          Successfully click on = view invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:54 am</td>
+        <td>
+          invoice number =Hero_11780CC22V14173.pdf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:56 am</td>
+        <td>
+          Support information =RAJENDER CHOODHARY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:56 am</td>
+        <td>
+          Support information =Supervisor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:57 am</td>
+        <td>
+          Support information =8750057009
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:00 am</td>
+        <td>
+          Successfully click on = collapse Key arrow in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:02 am</td>
+        <td>
+          Successfully click on = collapse Key arrow out
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:04 am</td>
+        <td>
+          Successfully click on =  call supporter 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:10 am</td>
+        <td>
+          Successfully click on = Service History
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:11 am</td>
+        <td>
+          06 sep. 2020
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:12 am</td>
+        <td>
+          FSC
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:12 am</td>
+        <td>
+          5284 km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:13 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:14 am</td>
+        <td>
+          11780-03-RSRB-0920-5553
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:16 am</td>
+        <td>
+          Successfully click on = Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:18 am</td>
+        <td>
+          Vehicle brand name in Service details= SPLENDOR +
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:18 am</td>
+        <td>
+          Vehicle Serial number in Service details  = SR No: 11780-03-RSRB-0920-5553
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:19 am</td>
+        <td>
+          Service center name =R.K.AUTOMOBILES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:20 am</td>
+        <td>
+          Service center address =PLOT NO- 340, G/F KH NO-1184/20 MAIN G.T. ROAD FRIENDS CLY. NEW DELHI NEW DELHI DELHI 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:20 am</td>
+        <td>
+          ******************Job card , Completion date & price ************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:20 am</td>
+        <td>
+          Estimated Amount =? 406.402
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:20 am</td>
+        <td>
+          Estimated Date & Time =06 sep. 2020 at 10:46 a.m.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:23 am</td>
+        <td>
+          Successfully click on = Download invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:32 am</td>
+        <td>
+          Successfully click on = view invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:34 am</td>
+        <td>
+          invoice number =Hero_11780CI20V5336.pdf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:36 am</td>
+        <td>
+          Support information =RANJEET SINGH
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:37 am</td>
+        <td>
+          Support information =Supervisor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:37 am</td>
+        <td>
+          Support information =8282828282
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:40 am</td>
+        <td>
+          Successfully click on = collapse Key arrow in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:42 am</td>
+        <td>
+          Successfully click on = collapse Key arrow out
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:45 am</td>
+        <td>
+          Successfully click on =  call supporter 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:50 am</td>
+        <td>
+          Successfully click on = Service History
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:51 am</td>
+        <td>
+          31 mei 2020
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:52 am</td>
+        <td>
+          FSC
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:53 am</td>
+        <td>
+          3965 km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:54 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:55 am</td>
+        <td>
+          11780-03-RSRB-0520-665
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:56 am</td>
+        <td>
+          Successfully click on = Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:58 am</td>
+        <td>
+          Vehicle brand name in Service details= SPLENDOR +
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:58 am</td>
+        <td>
+          Vehicle Serial number in Service details  = SR No: 11780-03-RSRB-0520-665
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:59 am</td>
+        <td>
+          Service center name =R.K.AUTOMOBILES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:00 am</td>
+        <td>
+          Service center address =PLOT NO- 340, G/F KH NO-1184/20 MAIN G.T. ROAD FRIENDS CLY. NEW DELHI NEW DELHI DELHI 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:00 am</td>
+        <td>
+          ******************Job card , Completion date & price ************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:00 am</td>
+        <td>
+          Estimated Amount =? 304.4518
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:01 am</td>
+        <td>
+          Estimated Date & Time =31 mei 2020 at 09:20 a.m.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:03 am</td>
+        <td>
+          Successfully click on = Download invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:11 am</td>
+        <td>
+          Successfully click on = view invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:14 am</td>
+        <td>
+          invoice number =Hero_11780CE20V510.pdf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:15 am</td>
+        <td>
+          Support information =RAJENDER CHOODHARY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:16 am</td>
+        <td>
+          Support information =Supervisor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:17 am</td>
+        <td>
+          Support information =8750057009
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:19 am</td>
+        <td>
+          Successfully click on = collapse Key arrow in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:22 am</td>
+        <td>
+          Successfully click on = collapse Key arrow out
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:23 am</td>
+        <td>
+          Successfully click on =  call supporter 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:28 am</td>
+        <td>
+          Successfully click on = Service History
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:30 am</td>
+        <td>
+          12 feb. 2020
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:30 am</td>
+        <td>
+          FSC
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:31 am</td>
+        <td>
+          2210 km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:32 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:33 am</td>
+        <td>
+          11780-03-RSRB-0220-20200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:34 am</td>
+        <td>
+          Successfully click on = Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:36 am</td>
+        <td>
+          Vehicle brand name in Service details= SPLENDOR +
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:36 am</td>
+        <td>
+          Vehicle Serial number in Service details  = SR No: 11780-03-RSRB-0220-20200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:37 am</td>
+        <td>
+          Service center name =R.K.AUTOMOBILES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:38 am</td>
+        <td>
+          Service center address =PLOT NO- 340, G/F KH NO-1184/20 MAIN G.T. ROAD FRIENDS CLY. NEW DELHI NEW DELHI DELHI 110095
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:38 am</td>
+        <td>
+          ******************Job card , Completion date & price ************************
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:38 am</td>
+        <td>
+          Estimated Amount =? 157.8368
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:39 am</td>
+        <td>
+          Estimated Date & Time =12 feb. 2020 at 08:32 a.m.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:41 am</td>
+        <td>
+          Successfully click on = Download invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:50 am</td>
+        <td>
+          Successfully click on = view invoice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:52 am</td>
+        <td>
+          invoice number =Hero_11780CB20V19004.pdf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:54 am</td>
+        <td>
+          Support information =BOBBY .11780-130
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:55 am</td>
+        <td>
+          Support information =Supervisor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:56 am</td>
+        <td>
+          Support information =8742927812
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:58 am</td>
+        <td>
+          Successfully click on = collapse Key arrow in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:01 am</td>
+        <td>
+          Successfully click on = collapse Key arrow out
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:03 am</td>
+        <td>
+          Successfully click on =  call supporter 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:08 am</td>
+        <td>
+          Successfully click on = Service History
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:09 am</td>
+        <td>
+          06 nov. 2019
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:10 am</td>
+        <td>
+          FSC
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:11 am</td>
+        <td>
+          503 km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:12 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:14 am</td>
+        <td>
+          Successfully click on =  Back from servie history
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:14 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC039_Verify_all_tips_list</p>
+            <p class="text-sm">
+              <span>5:19:14 am</span> / <span>00:01:38:309</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC039_Verify_all_tips_list</h5>
+<span class='badge badge-success'>06.29.2023 5:19:14 am</span>
+<span class='badge badge-danger'>06.29.2023 5:20:52 am</span>
+<span class='badge badge-default'>00:01:38:309</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:19 am</td>
+        <td>
+          Successfully click on = Tips and DIY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:21 am</td>
+        <td>
+          Pre Bike Riding Tips_Air Suction Valve
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:22 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Air Suction Valve
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:28 am</td>
+        <td>
+          Pre Bike Riding Tips_Air Suction Valve PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:30 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Air Suction Valve
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:32 am</td>
+        <td>
+          Pre Bike Riding Tips_Battery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:33 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Battery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:38 am</td>
+        <td>
+          Pre Bike Riding Tips_Battery PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:40 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Battery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:42 am</td>
+        <td>
+          Pre Bike Riding Tips_Clutch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:43 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Clutch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:49 am</td>
+        <td>
+          Pre Bike Riding Tips_Clutch PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:51 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Clutch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:52 am</td>
+        <td>
+          Pre Bike Riding Tips_Drive Chain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:53 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Drive Chain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:19:59 am</td>
+        <td>
+          Pre Bike Riding Tips_Drive Chain PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:01 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Drive Chain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:02 am</td>
+        <td>
+          Pre Bike Riding Tips_Engine Oil Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:04 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Engine Oil Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:09 am</td>
+        <td>
+          Pre Bike Riding Tips_Engine Oil Level PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:12 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Engine Oil Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:13 am</td>
+        <td>
+          Pre Bike Riding Tips_FITTING AND FASTENERS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:14 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_FITTING AND FASTENERS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:20 am</td>
+        <td>
+          Pre Bike Riding Tips_FITTING AND FASTENERS PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:22 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_FITTING AND FASTENERS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:23 am</td>
+        <td>
+          Pre Bike Riding Tips_Front and Rear brakes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:24 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Front and Rear brakes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:29 am</td>
+        <td>
+          Pre Bike Riding Tips_Front and Rear brakes PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:32 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Front and Rear brakes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:33 am</td>
+        <td>
+          Pre Bike Riding Tips_Fuel Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:34 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Fuel Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:39 am</td>
+        <td>
+          Pre Bike Riding Tips_Fuel Level PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:42 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Fuel Level
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:43 am</td>
+        <td>
+          Pre Bike Riding Tips_Tyres
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:44 am</td>
+        <td>
+          Successfully click on = Pre Bike Riding Tips_Tyres
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:49 am</td>
+        <td>
+          Pre Bike Riding Tips_Tyres PDF image is available for guide
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:51 am</td>
+        <td>
+          Successfully click on = Back from Pre Bike Riding Tips_Tyres
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:52 am</td>
+        <td>
+          Test Case Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Page_Test.Services_Page_Test == TC040_Verify_all_DIY_Videos_list</p>
+            <p class="text-sm">
+              <span>5:20:52 am</span> / <span>00:01:39:751</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Page_Test.Services_Page_Test == TC040_Verify_all_DIY_Videos_list</h5>
+<span class='badge badge-success'>06.29.2023 5:20:52 am</span>
+<span class='badge badge-danger'>06.29.2023 5:22:32 am</span>
+<span class='badge badge-default'>00:01:39:751</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:54 am</td>
+        <td>
+          Successfully click on = DIY video button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:56 am</td>
+        <td>
+          Tyre Care Video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:20:57 am</td>
+        <td>
+          Successfully click on = Tyre Care
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:09 am</td>
+        <td>
+          Successfully click on = Tyre Care Play video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:15 am</td>
+        <td>
+          Successfully click on = Tyre Care close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:16 am</td>
+        <td>
+          7 tips to maintain your Vehicle when in idle condition Video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:17 am</td>
+        <td>
+          Successfully click on = 7 tips to maintain your Vehicle when in idle condition
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:28 am</td>
+        <td>
+          Successfully click on = 7 tips to maintain your Vehicle when in idle condition Play video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:32 am</td>
+        <td>
+          Successfully click on = 7 tips to maintain your Vehicle when in idle condition close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:33 am</td>
+        <td>
+          Engine Care Video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:34 am</td>
+        <td>
+          Successfully click on = Engine Care
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:45 am</td>
+        <td>
+          Successfully click on = Engine Care Play video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:50 am</td>
+        <td>
+          Successfully click on = Engine Care close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:51 am</td>
+        <td>
+          Battery Care Video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:21:52 am</td>
+        <td>
+          Successfully click on = Battery Care
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:04 am</td>
+        <td>
+          Successfully click on = Battery Care Play video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:08 am</td>
+        <td>
+          Successfully click on = Battery Care close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:09 am</td>
+        <td>
+          Drive Chain Cover Video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:10 am</td>
+        <td>
+          Successfully click on = Drive Chain Cover
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:21 am</td>
+        <td>
+          Successfully click on = Drive Chain Cover Play video
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:26 am</td>
+        <td>
+          Successfully click on = Drive Chain Cover close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:32 am</td>
+        <td>
+          Successfully click on =  Back from Tips and DIY page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:22:32 am</td>
+        <td>
+          Test Case Pass
         </td>
       </tr>
   </tbody>
@@ -436,25 +4305,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 28, 2023 05:01:58 am</h3>
+<h3>Jun 29, 2023 05:01:18 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 28, 2023 05:02:11 am</h3>
+<h3>Jun 29, 2023 05:22:32 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>33</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>6</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -470,12 +4339,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='86%'>
+<b>33</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>6</b> tests failed,
+<small data-tooltip='13%'><b>5</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -493,9 +4362,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>6</b> events passed</small></div>
+<div><small data-tooltip='98%'><b>410</b> events passed</small></div>
 <div>
-<small data-tooltip='66%'><b>12</b> events failed,
+<small data-tooltip='1%'><b>6</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -512,7 +4381,7 @@
 </div></div>
 <script>
 var timeline = {
-"Page_Test.Vehicle_Details_test == TC034_Verify_My_Vehicle":0.031,"Page_Test.Vehicle_Details_test == TC035_Verify_My_Vehicle_more_details":0.005,"Page_Test.Vehicle_Details_test == TC036_Verify_My_Vehicle_Documents":0.005,"Page_Test.Vehicle_Details_test == TC037_Verify_Owners_Manual":0.009,"Page_Test.Vehicle_Details_test == TC038_Verify_my_Vehicle_service_History":0.01,"Page_Test.Vehicle_Details_test == TC039_Verify_Tips_and_DIY_videos_inside_sideMenu":0.003
+"Page_Test.Login_Page_Test == TC001_Verify_Login_with_Invalid_credential":10.045,"Page_Test.Login_Page_Test == TC002_invalidmobileno":8.186,"Page_Test.Login_Page_Test == TC003_Verify_Login_with_short_length_of_mobile_number_credential":4.041,"Page_Test.Login_Page_Test == TC004_max_digit_mobile_number":6.076,"Page_Test.Login_Page_Test == TC005_Terms_of_use_button":14.455,"Page_Test.Login_Page_Test == TC006_Privacy_policy":9.876,"Page_Test.Login_Page_Test == TC007_contact_Us":6.067,"Page_Test.Login_Page_Test == TC008_Verify_Login_with_valid_credential":24.516,"Page_Test.Login_Page_Test == TC009_resend_butn":21.201,"Page_Test.Login_Page_Test == TC010_inavalid_OTP":18.527,"Page_Test.Login_Page_Test == TC011_edit_moble":40.141,"Page_Test.Select_Vehicle_Page_Test == TC012_verify_Nick_Name":21.233,"Page_Test.Select_Vehicle_Page_Test == TC013_Verify_With_30_letter_nick_name":9.556,"Page_Test.Select_Vehicle_Page_Test == TC014_Verify_With_31_letter_nick_name":40.911,"Page_Test.Select_Vehicle_Page_Test == TC015_Verify_With_29_letter_nick_name":41.704,"Page_Test.Select_Vehicle_Page_Test == TC016_Select_Vehicle":31.646,"Page_Test.Home_Page_Test == TC017_Home_page_verify":29.631,"Page_Test.Home_Page_Test == TC019_Verify_Documents":111.262,"Page_Test.Home_Page_Test == TC020_Verify_Relationship_Manager":24.046,"Page_Test.Home_Page_Test == TC021_Verify_RSA":61.018,"Page_Test.Home_Page_Test == TC022_Verify_Technical_Support_Manager":8.036,"Page_Test.Home_Page_Test == TC023_Verify_Dealer_Locator":14.19,"Page_Test.Home_Page_Test == TC024_Select_city":34.812,"Page_Test.Home_Page_Test == TC025_View_dealer_name_and_address":18.237,"Page_Test.My_Profile_Page_Test == TC027_Verify_My_Profile":11.223,"Page_Test.My_Profile_Page_Test == TC028_verify_more_detais_button":4.881,"Page_Test.My_Profile_Page_Test == TC029_edit_profile_button":19.718,"Page_Test.My_Profile_Page_Test == TC030_edit_Personal_Details":82.081,"Page_Test.My_Profile_Page_Test == TC031_change_original_Personal_Details":62.021,"Page_Test.My_Profile_Page_Test == TC032_Manage_License":23.322,"Page_Test.My_Profile_Page_Test == TC033_Verify_emergency_contacts":20.257,"Page_Test.Services_Page_Test == TC034_Vehicle_details_on_service_page":7.112,"Page_Test.Services_Page_Test == TC035_verify_service_type":2.388,"Page_Test.Services_Page_Test == TC036_verify_Dealer_information":6.756,"Page_Test.Services_Page_Test == TC037_Verify_dealer_manager_info":6.917,"Page_Test.Services_Page_Test == TC038_Verify_Last_Serviced":166.734,"Page_Test.Services_Page_Test == TC039_Verify_all_tips_list":98.309,"Page_Test.Services_Page_Test == TC040_Verify_all_DIY_Videos_list":99.751
 };
 </script>
 <div class="row">
@@ -551,8 +4420,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 6,
+passParent: 33,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -568,8 +4437,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 6,
-failEvents: 12,
+passEvents: 410,
+failEvents: 6,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

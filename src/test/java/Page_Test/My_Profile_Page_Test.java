@@ -105,7 +105,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Custom_click(ob.confirm_dob(), " Confirm DOB");
 		}
 		else {
-			msg("DOB is not accepted" +config_getdata("edit_DOB"));
+			msg("DOB is not accepted " +config_getdata("edit_DOB"));
 			Custom_click(ob.Cancel_dob(), " Cancel DOB");
 		}
 		custom_sendkeys(ob.blood_group(), "B+", "Blood group");
@@ -121,12 +121,12 @@ public class My_Profile_Page_Test extends Base_Utility {
 		{
 			try {
 			Custom_click(ob.Back(), " Back from profile Details");
-			Custom_click(ob.More_details(), "More details");
+			Custom_click(ob.More_details(), ob.More_details().getText());
 			}catch(Exception e)
 			{
 				driver.navigate().back();
 				Custom_click(ob.Back(), " Back from profile Details");
-				Custom_click(ob.More_details(), "More details");
+				Custom_click(ob.More_details(), ob.More_details().getText());
 			}
 		}
 		}catch(Exception e)

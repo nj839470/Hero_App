@@ -24,7 +24,7 @@
 			<class name="Page_Test.My_Profile_Page_Test" />
 		</classes>
 	</test>
-	<test name="Vehicle_Details_test" enabled="true">
+	<test name="Vehicle_Details_test" enabled="false">
 		<classes>
 			<class name="Page_Test.Vehicle_Details_test" />
 		</classes>
@@ -34,7 +34,7 @@
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
 	</test>
-	<test name="All test class" enabled="false">
+	<test name="All test class" enabled="true">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
 			<class name="Page_Test.Select_Vehicle_Page_Test" />

@@ -67,12 +67,12 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 			}
 		}catch(Exception e) 
 		{ msg(""+e);
-		}
+		} 
 	}
 	public void TC044_Verify_Refer_yourself()
 	{
 		Custom_click(ob.side_menu_button(), "Side menu button");
-		Custom_click(ob.refer_friend(), ob.refer_friend().getText());
+		Custom_click(ob.refer_friend(), ob.refer_friend().getText()); 
 		Custom_click(ob.Refer_yourself(), ob.Refer_yourself().getText());
 
 	}
