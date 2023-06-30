@@ -62,7 +62,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 17) {
+				if (i == 15) {
 					Select_State_list.get(i).click();
 					Select_state.click();
 					i = 0;
@@ -85,7 +85,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 17) {
+				if (i == 15) {
 					Select_State_list.get(i).click();
 					Select_City.click();
 					i = 0;
@@ -114,7 +114,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			break;
 		} else {
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-			if (i == 17) {
+			if (i == 15) {
 				Select_State_list.get(i).click();
 				Select_Model.click();
 				i = 0;
@@ -140,5 +140,37 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	public WebElement Refer_yourself()
 	{
 		return Refer_yourself;
+	}
+	//************************************ Contact Us **********************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[5]")
+	private WebElement Contact_us;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl3']")
+	private List<WebElement> visit_Page;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_header']")
+	private List<WebElement> social_media_header;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/whatsapp_visit_page']")
+	private WebElement whatsapp_visit_page;
+	public WebElement Contact_us()
+	{
+		return Contact_us;
+	}
+	public void media_list()
+	{
+		for(int i=0,j=0; i<social_media_header.size();i++)
+		{
+			String header = social_media_header.get(i).getText();
+			if(header.equalsIgnoreCase("Whatsapp"))
+			{
+				Custom_click(whatsapp_visit_page, header);
+				msg(" Whatsapp number =" +whatsapp_visit_page.getText());
+				j--;
+			}
+			Custom_click(visit_Page.get(j), header);
+			j++;
+			if(j>3)
+			{
+				Scroll_down_page_Action("Twitter");
+			}
+		}
 	}
 }
