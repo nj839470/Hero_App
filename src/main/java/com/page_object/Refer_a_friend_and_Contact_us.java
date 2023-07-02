@@ -114,7 +114,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			break;
 		} else {
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-			if (i == 15) {
+			if (i == 10) {
 				Select_State_list.get(i).click();
 				Select_Model.click();
 				i = 0;

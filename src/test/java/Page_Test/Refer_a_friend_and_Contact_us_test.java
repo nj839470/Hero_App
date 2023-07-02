@@ -79,10 +79,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		Custom_click(ob.refer_friend(), ob.refer_friend().getText()); 
 		Custom_click(ob.Refer_yourself(), ob.Refer_yourself().getText());
 		assertEquals(config_getdata("mobileno"), ob.friend_mob_no().getText());
-		System.out.println("config data =" +config_getdata("mobileno"));
-		System.out.println("get mobile from app" +ob.friend_mob_no().getText());
 		try {
-		if(config_getdata("mobileno") == ob.friend_mob_no().getText())
+		if(config_getdata("mobileno").equalsIgnoreCase(ob.friend_mob_no().getText()))
 		{
 
 			Custom_click(ob.Select_Model(), ob.Select_Model().getText());

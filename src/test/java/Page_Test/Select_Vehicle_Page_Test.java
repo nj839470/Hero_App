@@ -121,8 +121,8 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.While_using_the_app(), "While using the app");
 //		Thread.sleep(2000);
 //		 Custom_click(ob.video_full_video(), "Video full");
-		 Thread.sleep(2000);
-		 Custom_click(ob.video_close_button(), "Vodeo close");
+//		 Thread.sleep(2000);
+//		 Custom_click(ob.video_close_button(), "Vodeo close");
 		}catch(Exception e)
 		{
 			msg(""+e);

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 30 09:18:36 IST 2023</td>
+<td>Started on:</td><td>Sun Jul 02 16:31:02 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>384 seconds (384717 ms)</td>
+<tr><td>Total time:</td><td>737 seconds (737705 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC044_Verify_Refer_yourself()'><b>TC044_Verify_Refer_yourself</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e38ecb05-5ac3-469c-95fc-ff313cfe64c8, findElement {using=xpath, value=(//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/rv_item_lbl&apos;])[4]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31712, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31712, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31714, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31714, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e38ecb05-5ac3-469c-95fc-ff313cfe64c8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
+	at org.openqa.selenium.json.Json.toType(Json.java:57)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
@@ -100,20 +94,23 @@ Session ID: e38ecb05-5ac3-469c-95fc-ff313cfe64c8
 	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
 	at Page_Test.Refer_a_friend_and_Contact_us_test.TC044_Verify_Refer_yourself(Refer_a_friend_and_Contact_us_test.java:79)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847905873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1847905873'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e38ecb05-5ac3-469c-95fc-ff313cfe64c8, findElement {using=xpath, value=(//android.widget.TextView[@resource-id =&apos;com.customerapp.hero:id/rv_item_lbl&apos;])[4]}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31712, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31712, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31714, udid: 2B011FDH2004N4}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 118, appium:systemPort: 31714, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e38ecb05-5ac3-469c-95fc-ff313cfe64c8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
+	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
+	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+	at org.openqa.selenium.json.Json.toType(Json.java:71)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	... 40 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257745083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257745083'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
+	at org.openqa.selenium.json.Json.toType(Json.java:57)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
@@ -152,8 +149,20 @@ Session ID: e38ecb05-5ac3-469c-95fc-ff313cfe64c8
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
+	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
+	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+	at org.openqa.selenium.json.Json.toType(Json.java:71)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	... 40 more
 </pre></div></td>
-<td>40</td>
+<td>0</td>
 <td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -165,24 +174,24 @@ Session ID: e38ecb05-5ac3-469c-95fc-ff313cfe64c8
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC043_Verify_Select_Model()'><b>TC043_Verify_Select_Model</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
+<tr>
 <td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC040_Refer_a_friend()'><b>TC040_Refer_a_friend</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
 <td></td>
-<td>220</td>
+<td>685</td>
 <td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
 <tr>
 <td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC042_Verify_Select_City()'><b>TC042_Verify_Select_City</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
 <td></td>
-<td>9</td>
-<td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
-<tr>
-<td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC043_Verify_Select_Model()'><b>TC043_Verify_Select_Model</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
-<td></td>
-<td>38</td>
+<td>0</td>
 <td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
 <tr>
 <td title='Page_Test.Refer_a_friend_and_Contact_us_test.TC041_Verify_Select_State()'><b>TC041_Verify_Select_State</b><br>Test class: Page_Test.Refer_a_friend_and_Contact_us_test</td>
 <td></td>
-<td>20</td>
+<td>0</td>
 <td>Page_Test.Refer_a_friend_and_Contact_us_test@47c81abf</td></tr>
 </table><p>
 </body>

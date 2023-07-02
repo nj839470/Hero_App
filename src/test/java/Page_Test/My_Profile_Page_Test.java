@@ -65,6 +65,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 			}
 		}catch(Exception e)
 		{
+			msg("while_using_the_app popup is given");
 			Custom_click(ob.while_using_the_app(), "while_using_the_app");
 			Custom_click(ob.allow(), "Allow");
 			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");	
@@ -113,10 +114,13 @@ public class My_Profile_Page_Test extends Base_Utility {
 		Scroll_down_page_Action("Street name");
 		custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+		Custom_click(ob.pin_code(), "Pin code");
 		ob.pin_code().clear();
 		custom_sendkeys(ob.pin_code(), "110027", "Pin code");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.Save_button(), "Save button");
+		try {
 		if(ob.Save_button().isDisplayed())
 		{
 			try {
@@ -128,6 +132,11 @@ public class My_Profile_Page_Test extends Base_Utility {
 				Custom_click(ob.Back(), " Back from profile Details");
 				Custom_click(ob.More_details(), ob.More_details().getText());
 			}
+		}
+		}catch(Exception e)
+		{
+			msg("Personal Details editd sucessfully");
+			
 		}
 		}catch(Exception e)
 		{

@@ -131,6 +131,8 @@ public class Base_Utility
 			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
 			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
 			capabilities.setCapability("appiumVersion", "2.0.0");
+			capabilities.setCapability("unicodeKeyboard", "true");                                     
+			capabilities.setCapability("resetKeyboard", "true");
 			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			 log = LogManager.getLogger("Hero_App");
@@ -296,7 +298,7 @@ public class Base_Utility
 	public static void Scroll_down_page_Action(String fieldname) {  	
 		    try {
 		    	Dimension dim = driver.manage().window().getSize();	
-		    	System.out.println(dim);
+//		    	System.out.println(dim);
 		    	int startx = (int)(dim.width/2);
 		    	int starty = (int)(dim.height/2);	    	
 		    	int endx   =  (int)(dim.width/2);  	
