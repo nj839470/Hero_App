@@ -48,7 +48,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{
 		try {
 		Custom_click(ob.Select_City(), ob.Select_City().getText());
-		ob.Select_City("AGRA");
+		ob.Select_City("AMBALA");
 		}catch(Exception e) 
 		{ msg(""+e);
 		}

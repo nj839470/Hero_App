@@ -8,11 +8,7 @@
     <classes>
       <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
         <methods>
-          <include name="TC042_Verify_Select_City"/>
-          <include name="TC041_Verify_Select_State"/>
-          <include name="TC043_Verify_Select_Model"/>
           <include name="TC044_Verify_Refer_yourself"/>
-          <include name="TC040_Refer_a_friend"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->

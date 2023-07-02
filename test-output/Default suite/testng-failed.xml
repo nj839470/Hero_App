@@ -5,7 +5,7 @@
     <classes>
       <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
         <methods>
-          <include name="TC040_Refer_a_friend"/>
+          <include name="TC044_Verify_Refer_yourself"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
