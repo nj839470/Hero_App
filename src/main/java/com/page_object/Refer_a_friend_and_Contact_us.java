@@ -150,27 +150,111 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private List<WebElement> social_media_header;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/whatsapp_visit_page']")
 	private WebElement whatsapp_visit_page;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_text']")
+	private List<WebElement> Visit_page_text;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='u_0_5m_6q']")
+	private WebElement facebook_login;
+	@FindBy(xpath ="//android.view.View[@content-desc=\"Log in\"]/android.widget.Button")
+	private WebElement instagram_login;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+	private WebElement contact_via_email;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
+	private WebElement back;
+	@FindBy(xpath ="(//android.widget.TextView[@text])[4]")
+	private WebElement subscribers_count;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='join-form-submit']")
+	private WebElement Linkedin_agree_and_join;
+	@FindBy(xpath ="//android.view.View[@resource-id ='modal-header']")
+	private WebElement Twiter_header;
 	public WebElement Contact_us()
 	{
 		return Contact_us;
 	}
-	public void media_list()
+	public void facebook() throws InterruptedException
 	{
-		for(int i=0,j=0; i<social_media_header.size();i++)
+		try {
+		String header = social_media_header.get(0).getText();
+		msg(Visit_page_text.get(0).getText());
+		Custom_click(visit_Page.get(0), header);
+		Thread.sleep(2000);
+		Custom_click(facebook_login, header +" Login");
+		Custom_click(back, " Back from " +header);
+		}catch(Exception e)
 		{
-			String header = social_media_header.get(i).getText();
-			if(header.equalsIgnoreCase("Whatsapp"))
-			{
-				Custom_click(whatsapp_visit_page, header);
-				msg(" Whatsapp number =" +whatsapp_visit_page.getText());
-				j--;
-			}
-			Custom_click(visit_Page.get(j), header);
-			j++;
-			if(j>3)
-			{
-				Scroll_down_page_Action("Twitter");
-			}
+			msg(""+e);
 		}
 	}
+	public void instagram() throws InterruptedException
+	{
+		try {
+		String header = social_media_header.get(1).getText();
+		msg(Visit_page_text.get(1).getText());
+		Custom_click(visit_Page.get(1), header);
+		Thread.sleep(4000);
+		Custom_click(instagram_login, header +" Login");
+		Custom_click(back, " Back from " +header);
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
+	}
+	public void Whatsapp()
+	{
+		try {
+		String header = social_media_header.get(2).getText();
+		msg(Visit_page_text.get(2).getText());
+		msg(" Whatsapp number =" +whatsapp_visit_page.getText());
+		Custom_click(whatsapp_visit_page, header);
+		Custom_click(back, " Back from " +header);
+		driver.navigate().back();
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
+	}
+	public void youTube() throws InterruptedException
+	{
+		try {
+		String header = social_media_header.get(3).getText();
+		msg(Visit_page_text.get(3).getText());
+		Custom_click(visit_Page.get(2), header);
+		Thread.sleep(2000);
+		msg("Total subscribers count =" +subscribers_count.getText());
+		Custom_click(back, " Back from " +header);
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
+	}
+	public void Linkedin() throws InterruptedException
+	{
+		try {
+		String header = social_media_header.get(4).getText();
+		msg(Visit_page_text.get(4).getText());
+		Custom_click(visit_Page.get(3), header);
+		Thread.sleep(2000);
+		Custom_click(Linkedin_agree_and_join, header);
+		Custom_click(Linkedin_agree_and_join, Linkedin_agree_and_join.getText());
+		Custom_click(back, " Back from " +header);
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
+	}
+	public void twitter() throws InterruptedException
+	{
+		try {
+		Scroll_down_page_Action("Twitter");
+		String header = social_media_header.get(4).getText();
+		msg(Visit_page_text.get(4).getText());
+		Custom_click(visit_Page.get(4), header);
+		Thread.sleep(5000);
+		msg(Twiter_header.getText());
+		Custom_click(back, " Back from " +header);
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
+	}
+
 }

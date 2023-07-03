@@ -103,10 +103,36 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		}
 	
 	}
-	public void TC045_Verify_Contact_us_page()
+	@Test(priority = 5)
+	public void TC045_Verify_Facebook_in_Contact_us_page() throws InterruptedException
 	{
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.Contact_us(), ob.Contact_us().getText());
-		
+		ob.facebook();
+		}
+	@Test(priority = 6)
+	public void TC046_Verify_instagram_in_Contact_us_page() throws InterruptedException
+	{
+		ob.instagram();
+	}
+	@Test(priority = 7)
+	public void TC047_Verify_Whatsapp_in_Contact_us_page()
+	{
+		ob.Whatsapp();
+	}
+	@Test(priority = 8)
+	public void TC048_Verify_youTube_in_Contact_us_page() throws InterruptedException
+	{
+		ob.youTube();
+	}
+	@Test(priority = 9)
+	public void TC049_Verify_Linkedin_in_Contact_us_page() throws InterruptedException
+	{
+		ob.Linkedin();
+	}
+	@Test(priority = 10)
+	public void TC050_Verify_twitter_in_Contact_us_page() throws InterruptedException
+	{
+		ob.twitter();
 	}
 }
