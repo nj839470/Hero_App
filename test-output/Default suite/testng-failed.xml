@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
+      <class name="Page_Test.Login_Page_Test">
         <methods>
-          <include name="TC045_Verify_Contact_us_page"/>
+          <include name="TC001_Verify_Login_with_Invalid_credential"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+      </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

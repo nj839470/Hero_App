@@ -26,7 +26,7 @@
 	</test>
 	<test name="Vehicle_Details_test" enabled="false">
 		<classes>
-			<class name="Page_Test.Vehicle_Details_test" />
+			<class name="Page_Test.Vehicle_Details_test" /> 
 		</classes>
 	</test>
 	<test name="Refer_a_friend_and_Contact_us_test" enabled="true">

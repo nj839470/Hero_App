@@ -27,7 +27,7 @@ public class Home_Page_Test extends Base_Utility {
 //		login.login();
 		try
 		{
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		msg("Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 		Thread.sleep(2000);

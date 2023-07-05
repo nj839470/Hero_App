@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>All test class</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/34/4</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 02 18:37:41 IST 2023</td>
+<td>Started on:</td><td>Tue Jul 04 10:21:52 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1333 seconds (1333202 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5950 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,194 +76,1429 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC007_contact_Us()'><b>TC007_contact_Us</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>5</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC035_verify_service_type()'><b>TC035_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC002_invalidmobileno()'><b>TC002_invalidmobileno</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>6</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>3</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>18</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>26</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page()'><b>TC034_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>6</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC036_verify_Dealer_information()'><b>TC036_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>5</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC009_resend_butn()'><b>TC009_resend_butn</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>20</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details()'><b>TC030_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>98</td>
+<td title='Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts()'><b>TC033_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts(My_Profile_Page_Test.java:217)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927369095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927369095'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts(My_Profile_Page_Test.java:217)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
 <tr>
+<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential(Login_Page_Test.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651433745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651433745'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential(Login_Page_Test.java:106)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.Terms_of_Use()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC005_Terms_of_use_button(Login_Page_Test.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1185575212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1185575212'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.Terms_of_Use()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC005_Terms_of_use_button(Login_Page_Test.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC024_Select_city(Home_Page_Test.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553701447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553701447'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC024_Select_city(Home_Page_Test.java:197)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
 <td title='Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced()'><b>TC038_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>177</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>23</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>6</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC039_Verify_all_tips_list()'><b>TC039_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>124</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.Last_serviced_history()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced(Services_Page_Test.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1361409513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1361409513'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.Last_serviced_history()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced(Services_Page_Test.java:87)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Services_Page_Test@15f47664</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC004_max_digit_mobile_number()'><b>TC004_max_digit_mobile_number</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>5</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC004_max_digit_mobile_number(Login_Page_Test.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713464342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace713464342'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC004_max_digit_mobile_number(Login_Page_Test.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Login_Page_Test@1b410b60</td></tr>
 <tr>
+<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager(Home_Page_Test.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101086700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101086700'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager(Home_Page_Test.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
 <td title='Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile()'><b>TC027_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>231</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile(My_Profile_Page_Test.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1483998054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1483998054'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile(My_Profile_Page_Test.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
 <tr>
 <td title='Page_Test.Home_Page_Test.TC021_Verify_RSA()'><b>TC021_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>7</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC021_Verify_RSA(Home_Page_Test.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294651011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace294651011'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC021_Verify_RSA(Home_Page_Test.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>41</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list()'><b>TC040_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>86</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details()'><b>TC031_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>16</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
 <tr>
 <td title='Page_Test.My_Profile_Page_Test.TC029_edit_profile_button()'><b>TC029_edit_profile_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>18</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC029_edit_profile_button(My_Profile_Page_Test.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859985937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859985937'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC029_edit_profile_button(My_Profile_Page_Test.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>96</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>17</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>12</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button()'><b>TC028_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>3</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>16</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>12</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<td title='Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list()'><b>TC040_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.DIY_Videos_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list(Services_Page_Test.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135002781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace135002781'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.DIY_Videos_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list(Services_Page_Test.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@15f47664</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC011_edit_moble()'><b>TC011_edit_moble</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>37</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.edit_moble_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC011_edit_moble(Login_Page_Test.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793657559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793657559'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.edit_moble_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC011_edit_moble(Login_Page_Test.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Login_Page_Test@1b410b60</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC032_Manage_License()'><b>TC032_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>29</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>31</td>
+<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator(Home_Page_Test.java:185)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1287875609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1287875609'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator(Home_Page_Test.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Home_Page_Test@928763c</td></tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential()'><b>TC001_Verify_Login_with_Invalid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>7</td>
+<td title='Page_Test.Login_Page_Test.TC002_invalidmobileno()'><b>TC002_invalidmobileno</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC002_invalidmobileno(Login_Page_Test.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace765702264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace765702264'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC002_invalidmobileno(Login_Page_Test.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Login_Page_Test@1b410b60</td></tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info()'><b>TC037_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>6</td>
+<td title='Page_Test.Services_Page_Test.TC035_verify_service_type()'><b>TC035_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Services_Page_Test.TC035_verify_service_type(Services_Page_Test.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace856047451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace856047451'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Services_Page_Test.TC035_verify_service_type(Services_Page_Test.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@15f47664</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC009_resend_butn()'><b>TC009_resend_butn</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.resend_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC009_resend_butn(Login_Page_Test.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace45703335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace45703335'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.resend_button()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC009_resend_butn(Login_Page_Test.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address(Home_Page_Test.java:210)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace494951073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494951073'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address(Home_Page_Test.java:210)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC036_verify_Dealer_information()'><b>TC036_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.dealer_info()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC036_verify_Dealer_information(Services_Page_Test.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892262157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace892262157'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.dealer_info()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC036_verify_Dealer_information(Services_Page_Test.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@15f47664</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC007_contact_Us()'><b>TC007_contact_Us</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.contact_us()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2068450031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2068450031'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.contact_us()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC007_contact_Us(Login_Page_Test.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential(Login_Page_Test.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142660176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142660176'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.mobile_No()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential(Login_Page_Test.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager(Home_Page_Test.java:167)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace156127720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace156127720'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager(Home_Page_Test.java:167)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page()'><b>TC034_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page(Services_Page_Test.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114701475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114701475'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page(Services_Page_Test.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Services_Page_Test@15f47664</td></tr>
 <tr>
 <td title='Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name()'><b>TC012_verify_Nick_Name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>11</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name(Select_Vehicle_Page_Test.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411748515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411748515'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name(Select_Vehicle_Page_Test.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>23</td>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle(Select_Vehicle_Page_Test.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50826412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace50826412'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle(Select_Vehicle_Page_Test.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC039_Verify_all_tips_list()'><b>TC039_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.Tips_and_DIY()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC039_Verify_all_tips_list(Services_Page_Test.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1403780103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1403780103'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.Tips_and_DIY()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC039_Verify_all_tips_list(Services_Page_Test.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@15f47664</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential()'><b>TC001_Verify_Login_with_Invalid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential(Login_Page_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596278280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596278280'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential(Login_Page_Test.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.Login_Page_Test@1b410b60</td></tr>
 <tr>
-<td title='Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts()'><b>TC033_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>17</td>
+<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC019_Verify_Documents(Home_Page_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603483530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603483530'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC019_Verify_Documents(Home_Page_Test.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button()'><b>TC028_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button(My_Profile_Page_Test.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace734275312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace734275312'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button(My_Profile_Page_Test.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.enter_inavalid_OTP()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC010_inavalid_OTP(Login_Page_Test.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934617920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace934617920'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.enter_inavalid_OTP()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC010_inavalid_OTP(Login_Page_Test.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089054322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089054322'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC032_Manage_License()'><b>TC032_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC032_Manage_License(My_Profile_Page_Test.java:189)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace203785427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace203785427'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC032_Manage_License(My_Profile_Page_Test.java:189)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.Privacy_Policy()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC006_Privacy_policy(Login_Page_Test.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947397483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947397483'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Login_page.Privacy_Policy()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Login_Page_Test.TC006_Privacy_policy(Login_Page_Test.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details()'><b>TC030_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details(My_Profile_Page_Test.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace240000757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240000757'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.error(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.msg(Base_Utility.java:403)
+	at Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details(My_Profile_Page_Test.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info()'><b>TC037_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.manager_type()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info(Services_Page_Test.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace91831175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace91831175'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Services_Page.manager_type()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info(Services_Page_Test.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@15f47664</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td><div><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1894338251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1894338251'><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td><div><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152554134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152554134'><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td><div><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1475982439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475982439'><pre>java.lang.Throwable: Method Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820 depends on not successfully finished methods 
+[Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name() on instance Page_Test.Select_Vehicle_Page_Test@3cfdd820]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details()'><b>TC031_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td><div><pre>java.lang.Throwable: Method Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details() on instance Page_Test.My_Profile_Page_Test@e25951c depends on not successfully finished methods 
+[Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details() on instance Page_Test.My_Profile_Page_Test@e25951c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1286771084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1286771084'><pre>java.lang.Throwable: Method Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details() on instance Page_Test.My_Profile_Page_Test@e25951c depends on not successfully finished methods 
+[Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details() on instance Page_Test.My_Profile_Page_Test@e25951c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
 </table><p>
 </body>

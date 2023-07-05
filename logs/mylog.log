@@ -1,76 +1,57 @@
-[INFO ] 2023-07-03 17:00:57.653 [main] Hero_App - ************************Refer a Friend**************************
-[INFO ] 2023-07-03 17:01:00.650 [main] Hero_App - Deny is clickable
-[INFO ] 2023-07-03 17:01:03.350 [main] Hero_App - Allow Now is clickable
-[INFO ] 2023-07-03 17:01:06.522 [main] Hero_App - OK is clickable
-[INFO ] 2023-07-03 17:01:10.103 [main] Hero_App - Allow notification is clickable
-[INFO ] 2023-07-03 17:01:13.519 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-07-03 17:01:16.112 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-07-03 17:01:34.805 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-07-03 17:01:38.293 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-07-03 17:01:40.579 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-07-03 17:01:42.546 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-07-03 17:01:44.877 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-07-03 17:01:47.162 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-07-03 17:01:49.732 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-07-03 17:01:55.497 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-07-03 17:01:57.813 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-07-03 17:02:01.549 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-07-03 17:02:12.355 [main] Hero_App - Home is clickable
-[INFO ] 2023-07-03 17:02:17.830 [main] Hero_App - Side menu button is clickable
-[INFO ] 2023-07-03 17:02:20.822 [main] Hero_App - Refer a friend is clickable
-[INFO ] 2023-07-03 17:02:25.439 [main] Hero_App - Friend name send successfully
-[INFO ] 2023-07-03 17:02:29.051 [main] Hero_App - Friend mob no send successfully
-[INFO ] 2023-07-03 17:02:32.309 [main] Hero_App - Select State is clickable
-[INFO ] 2023-07-03 17:02:56.820 [main] Hero_App - HARYANA is clickable
-[INFO ] 2023-07-03 17:03:00.016 [main] Hero_App - Select City is clickable
-[INFO ] 2023-07-03 17:03:06.096 [main] Hero_App - AMBALA is clickable
-[INFO ] 2023-07-03 17:03:08.963 [main] Hero_App - Select Model is clickable
-[INFO ] 2023-07-03 17:03:36.094 [main] Hero_App - Passion Pro is clickable
-[INFO ] 2023-07-03 17:03:57.053 [main] Hero_App - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [f180d401-2ba7-487b-8571-420ab4389e6c, findElement {using=xpath, value=//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30992, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30992, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, resetKeyboard: true, systemPort: 30994, udid: 2B011FDH2004N4, unicodeKeyboard: true}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:resetKeyboard: true, appium:statBarHeight: 118, appium:systemPort: 30994, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:unicodeKeyboard: true, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: f180d401-2ba7-487b-8571-420ab4389e6c
-[ERROR] 2023-07-03 17:04:17.407 [main] Hero_App - Side menu button is not clickable
-[INFO ] 2023-07-03 17:04:20.875 [main] Hero_App - Refer a friend is clickable
-[INFO ] 2023-07-03 17:04:24.561 [main] Hero_App - Refer yourself is clickable
-[INFO ] 2023-07-03 17:04:29.517 [main] Hero_App - Select Model is clickable
-[INFO ] 2023-07-03 17:04:55.643 [main] Hero_App - Passion Pro is clickable
-[INFO ] 2023-07-03 17:04:58.471 [main] Hero_App - Submit is clickable
-[INFO ] 2023-07-03 17:05:00.007 [main] Hero_App - We have successfully captured the Referral. Stay Tuned for more update.
-[INFO ] 2023-07-03 17:05:02.716 [main] Hero_App - OK is clickable
-[INFO ] 2023-07-03 17:05:07.521 [main] Hero_App - Side menu button is clickable
-[INFO ] 2023-07-03 17:05:10.912 [main] Hero_App - Contact Us is clickable
-[INFO ] 2023-07-03 17:05:13.191 [main] Hero_App - Welcome to the official account of Hero MotoCorp - your favourite & the world's largest two-wheeler Company
-[INFO ] 2023-07-03 17:05:14.519 [main] Hero_App - Facebook is clickable
-[ERROR] 2023-07-03 17:05:37.016 [main] Hero_App - Facebook Login is not clickable
-[INFO ] 2023-07-03 17:05:39.895 [main] Hero_App -  Back from Facebook is clickable
-[INFO ] 2023-07-03 17:05:41.526 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
-[INFO ] 2023-07-03 17:05:42.841 [main] Hero_App - Instagram is clickable
-[INFO ] 2023-07-03 17:05:52.997 [main] Hero_App - Instagram Login is clickable
-[INFO ] 2023-07-03 17:05:57.628 [main] Hero_App -  Back from Instagram is clickable
-[INFO ] 2023-07-03 17:05:59.222 [main] Hero_App - Contact us here for support and queries related to service, products and events
-[INFO ] 2023-07-03 17:06:00.047 [main] Hero_App -  Whatsapp number =7011670116
-[INFO ] 2023-07-03 17:06:02.633 [main] Hero_App - Whatsapp is clickable
-[ERROR] 2023-07-03 17:06:23.280 [main] Hero_App -  Back from Whatsapp is not clickable
-[INFO ] 2023-07-03 17:06:25.519 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
-[INFO ] 2023-07-03 17:06:26.942 [main] Hero_App - YouTube is clickable
-[INFO ] 2023-07-03 17:06:30.265 [main] Hero_App - Total subscribers count =Shorts
-[INFO ] 2023-07-03 17:06:33.601 [main] Hero_App -  Back from YouTube is clickable
-[INFO ] 2023-07-03 17:06:35.162 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
-[INFO ] 2023-07-03 17:06:36.450 [main] Hero_App - Linkedin is clickable
-[ERROR] 2023-07-03 17:06:58.928 [main] Hero_App - Linkedin is not clickable
-[INFO ] 2023-07-03 17:07:19.138 [main] Hero_App - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [f180d401-2ba7-487b-8571-420ab4389e6c, findElement {using=xpath, value=//android.widget.Button[@resource-id ='join-form-submit']}]
-Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30992, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30992, deviceName: 803, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, resetKeyboard: true, systemPort: 30994, udid: 2B011FDH2004N4, unicodeKeyboard: true}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2B011FDH2004N4, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2B011FDH2004N4, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:resetKeyboard: true, appium:statBarHeight: 118, appium:systemPort: 30994, appium:takesScreenshot: true, appium:udid: 2B011FDH2004N4, appium:unicodeKeyboard: true, appium:viewportRect: {height: 2101, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: f180d401-2ba7-487b-8571-420ab4389e6c
-[INFO ] 2023-07-03 17:07:32.510 [main] Hero_App - Successfully  Scroll page down Action Twitter
-[INFO ] 2023-07-03 17:07:36.484 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
-[INFO ] 2023-07-03 17:07:36.837 [main] Hero_App - java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+[INFO ] 2023-07-04 10:33:07.761 [main] Hero_App - ************************Refer a Friend**************************
+[INFO ] 2023-07-04 10:33:10.317 [main] Hero_App - Deny is clickable
+[INFO ] 2023-07-04 10:33:12.938 [main] Hero_App - Allow Now is clickable
+[INFO ] 2023-07-04 10:33:15.740 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-04 10:33:19.264 [main] Hero_App - Allow notification is clickable
+[INFO ] 2023-07-04 10:33:23.175 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-07-04 10:33:26.117 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-07-04 10:33:44.752 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-07-04 10:33:47.735 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-07-04 10:33:50.142 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-07-04 10:33:52.454 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-07-04 10:33:54.866 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-07-04 10:33:57.153 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-07-04 10:34:00.153 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-07-04 10:34:05.452 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-07-04 10:34:07.274 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-07-04 10:34:10.647 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-07-04 10:34:17.604 [main] Hero_App - Home is clickable
+[INFO ] 2023-07-04 10:34:22.060 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-04 10:34:25.228 [main] Hero_App - Refer a friend is clickable
+[INFO ] 2023-07-04 10:34:30.155 [main] Hero_App - Friend name send successfully
+[INFO ] 2023-07-04 10:34:33.095 [main] Hero_App - Friend mob no send successfully
+[INFO ] 2023-07-04 10:34:35.859 [main] Hero_App - Select State is clickable
+[INFO ] 2023-07-04 10:34:59.214 [main] Hero_App - HARYANA is clickable
+[INFO ] 2023-07-04 10:35:01.861 [main] Hero_App - Select City is clickable
+[INFO ] 2023-07-04 10:35:07.836 [main] Hero_App - AMBALA is clickable
+[INFO ] 2023-07-04 10:35:10.340 [main] Hero_App - Select Model is clickable
+[INFO ] 2023-07-04 10:35:35.393 [main] Hero_App - Passion Pro is clickable
+[INFO ] 2023-07-04 10:35:41.320 [main] Hero_App - Submit is clickable
+[INFO ] 2023-07-04 10:35:42.721 [main] Hero_App - We have successfully captured the Referral. Stay Tuned for more update.
+[INFO ] 2023-07-04 10:35:45.193 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-04 10:35:49.677 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-04 10:35:52.824 [main] Hero_App - Refer a friend is clickable
+[INFO ] 2023-07-04 10:35:56.046 [main] Hero_App - Refer yourself is clickable
+[INFO ] 2023-07-04 10:36:03.287 [main] Hero_App - Select Model is clickable
+[INFO ] 2023-07-04 10:36:27.727 [main] Hero_App - Passion Pro is clickable
+[INFO ] 2023-07-04 10:36:30.465 [main] Hero_App - Submit is clickable
+[INFO ] 2023-07-04 10:36:31.936 [main] Hero_App - We have successfully captured the Referral. Stay Tuned for more update.
+[INFO ] 2023-07-04 10:36:34.249 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-04 10:36:38.678 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-04 10:36:41.487 [main] Hero_App - Contact Us is clickable
+[INFO ] 2023-07-04 10:36:43.789 [main] Hero_App - Welcome to the official account of Hero MotoCorp - your favourite & the world's largest two-wheeler Company
+[INFO ] 2023-07-04 10:36:45.112 [main] Hero_App - Facebook is clickable
+[ERROR] 2023-07-04 10:37:07.695 [main] Hero_App - Facebook Login is not clickable
+[INFO ] 2023-07-04 10:37:10.508 [main] Hero_App -  Back from Facebook is clickable
+[INFO ] 2023-07-04 10:37:12.015 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
+[INFO ] 2023-07-04 10:37:13.333 [main] Hero_App - Instagram is clickable
+[INFO ] 2023-07-04 10:37:21.551 [main] Hero_App - Instagram Login is clickable
+[INFO ] 2023-07-04 10:37:25.654 [main] Hero_App -  Back from Instagram is clickable
+[INFO ] 2023-07-04 10:37:27.223 [main] Hero_App - Contact us here for support and queries related to service, products and events
+[INFO ] 2023-07-04 10:37:27.895 [main] Hero_App -  Whatsapp number =7011670116
+[INFO ] 2023-07-04 10:37:30.340 [main] Hero_App - Whatsapp is clickable
+[ERROR] 2023-07-04 10:37:50.705 [main] Hero_App -  Back from Whatsapp is not clickable
+[INFO ] 2023-07-04 10:38:11.928 [main] Hero_App - java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 0
+[INFO ] 2023-07-04 10:38:32.237 [main] Hero_App - java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 0
+[INFO ] 2023-07-04 10:38:46.920 [main] Hero_App - Successfully  Scroll page down Action Twitter
+[INFO ] 2023-07-04 10:39:07.238 [main] Hero_App - java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 0
