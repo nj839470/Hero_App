@@ -12,8 +12,6 @@ public class GoodLife extends Base_Utility {
 	public GoodLife() {
 		PageFactory.initElements(driver, this);
 	}
-
-//******************************goodlife_image*******************************
 	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/navigation_bar_item_small_label_view'])[2]")
 	private WebElement GoodLife;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/goodLifeSlider_imageview']")
@@ -65,6 +63,8 @@ public class GoodLife extends Base_Utility {
 	private WebElement point_earning_end_message;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement become_member_button;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
+	private WebElement back_button;
 	public WebElement point_earning_message() {
 		return point_earning_message;
 	}
@@ -99,6 +99,7 @@ public class GoodLife extends Base_Utility {
 			else
 			{
 				Scroll_down_page_Action("Become a GoodLife Member");
+				break;
 			}
 		}
 	}
@@ -117,5 +118,9 @@ public class GoodLife extends Base_Utility {
 	public WebElement become_member_button()
 	{
 		return become_member_button;
+	}
+	public WebElement back_button()
+	{
+		return back_button;
 	}
 }

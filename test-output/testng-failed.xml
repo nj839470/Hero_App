@@ -4,24 +4,14 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Refer_a_friend_and_Contact_us_test(failed)">
+  <test thread-count="5" name="GoodLife_test(failed)">
     <classes>
-      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
+      <class name="Page_Test.GoodLife_test">
         <methods>
-          <include name="TC041_Verify_Select_State"/>
-          <include name="TC042_Verify_Select_City"/>
-          <include name="TC043_Verify_Select_Model"/>
-          <include name="TC044_Verify_Refer_yourself"/>
-          <include name="TC046_Verify_instagram_in_Contact_us_page"/>
-          <include name="TC049_Verify_Linkedin_in_Contact_us_page"/>
-          <include name="TC040_Refer_a_friend"/>
-          <include name="TC050_Verify_twitter_in_Contact_us_page"/>
-          <include name="TC047_Verify_Whatsapp_in_Contact_us_page"/>
-          <include name="TC045_Verify_Facebook_in_Contact_us_page"/>
+          <include name="verify_Points_Earning_and_Redemption"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC048_Verify_youTube_in_Contact_us_page"/>
         </methods>
-      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+      </class> <!-- Page_Test.GoodLife_test -->
     </classes>
-  </test> <!-- Refer_a_friend_and_Contact_us_test(failed) -->
+  </test> <!-- GoodLife_test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

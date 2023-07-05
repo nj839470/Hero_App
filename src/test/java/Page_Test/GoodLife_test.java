@@ -12,8 +12,11 @@ public class GoodLife_test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void verify_image_in_goodlife_page() throws InterruptedException {
+		msg("*********************Goodlife_page**************************");
 		ob = new GoodLife();
 		login = new Login_Page_Test();
+		login.login();
+		Thread.sleep(3000);
 		Custom_click(ob.goodLife(), ob.goodLife().getText());
 		Thread.sleep(2000);
 		try {
@@ -32,10 +35,11 @@ public class GoodLife_test extends Base_Utility {
 		scrollByText("Points Earning & Redemption");
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 		ob.service_previleges_all_message();
+		scrollByText("Points Earning & Redemption");
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 
 	}
-	
+	@Test(priority = 2)
 	public void verify_Points_Earning_and_Redemption() {
 		msg(ob.point_earning_message().getText());
 		Custom_click(ob.points_earning_redemption_view_detail(),
@@ -45,5 +49,7 @@ public class GoodLife_test extends Base_Utility {
 			msg(ob.Tier3_distance().getText() + " = " +ob.Tier3_distance_message().getText());
 			msg(ob.point_earning_end_message().getText());
 			Custom_click(ob.become_member_button(), ob.become_member_button().getText());
+			Custom_click(ob.back_button(), " Back from become a member ");
+			Custom_click(ob.back_button(), " Back from points earning redemption ");
 	}
 }
