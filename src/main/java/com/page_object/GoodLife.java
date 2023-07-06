@@ -123,4 +123,100 @@ public class GoodLife extends Base_Utility {
 	{
 		return back_button;
 	}
+	//******************************winner information *******************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
+	private WebElement winner_of_month;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl2'])[2]")
+	private WebElement winner_month;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_name_lbl']")
+	private WebElement winner_name;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_loc_lbl']")
+	private WebElement winner_loc;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/winner_prize_lbl2']")
+	private WebElement winner_prize;
+	public WebElement winner_of_month()
+	{
+		return winner_of_month;
+	}
+	public WebElement winner_month()
+	{
+		return winner_month;
+		
+	}
+	public WebElement winner_name()
+	{
+		return winner_name;
+	}
+	public WebElement winner_loc()
+	{
+		return winner_loc;
+	}
+	public WebElement winner_prize()
+	{
+		return winner_prize;
+	}
+	//******************************Benefits and Experiences *******************************	
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/benefit_lbl']")
+	private List<WebElement> Benefits_message;
+	public void Benefits_message()
+	{
+		for(int i=0;i<Benefits_message.size();i++)
+		{
+			msg(Benefits_message.get(i).getText());
+		}
+	}
+	//******************************Remarkable Rewards *******************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/down_ic_btn'])[2]")
+	private WebElement Show_more_in_remarkable_rewards;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/benefit_lbl']")
+	private List<WebElement> Remarkable_Rewards_message;
+	public WebElement Show_more_in_remarkable_rewards()
+	{
+		return Show_more_in_remarkable_rewards;
+	}
+	public void Remarkable_Rewards_message()
+	{
+		for(int i=0;i<Remarkable_Rewards_message.size();i++)
+		{
+			msg(Remarkable_Rewards_message.get(i).getText());
+		}
+	}
+	
+
+//******************************Pro Membership in become member *******************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/plan_name'])[1]")
+	private WebElement plan_name;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/plan_price'])[1]")
+	private WebElement plan_price;
+	@FindBy(xpath ="//android.widget.TextView[@text]")
+	private List<WebElement> pro_membership_plan_info;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
+	private WebElement Select_plan_button;
+	public WebElement plan_name()
+	{
+		return plan_name;
+	}
+	public void pro_membership_plan_info()
+	{
+		for(int i=1;i<10;i++)
+		{
+			if(i<3)
+			{
+				msg(pro_membership_plan_info.get(i).getText());
+			}
+			else if(i>=3 && i<9)
+			{
+			msg(pro_membership_plan_info.get(i).getText() +" = " +pro_membership_plan_info.get(i+1).getText());
+			i++;
+			}
+			else if(i==9)
+			{
+				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
+			}
+		}
+	}
+	public WebElement Select_plan_button()
+	{
+		return Select_plan_button;
+	}
 }

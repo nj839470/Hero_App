@@ -8,6 +8,9 @@
     <classes>
       <class name="Page_Test.GoodLife_test">
         <methods>
+          <include name="verify_Remarkable_Rewards"/>
+          <include name="verify_Benefits_and_Experiences"/>
+          <include name="verify_Service_Privilegers"/>
           <include name="verify_Points_Earning_and_Redemption"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>

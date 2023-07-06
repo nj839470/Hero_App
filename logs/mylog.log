@@ -1,47 +1,69 @@
-[INFO ] 2023-07-05 18:33:40.081 [main] Hero_App - *********************Goodlife_page**************************
-[INFO ] 2023-07-05 18:33:41.439 [main] Hero_App - Deny is clickable
-[INFO ] 2023-07-05 18:33:43.364 [main] Hero_App - Allow Now is clickable
-[INFO ] 2023-07-05 18:33:45.127 [main] Hero_App - OK is clickable
-[INFO ] 2023-07-05 18:33:46.970 [main] Hero_App - Allow notification is clickable
-[INFO ] 2023-07-05 18:33:50.658 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-07-05 18:33:54.187 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-07-05 18:34:11.463 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-07-05 18:34:14.081 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-07-05 18:34:15.970 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-07-05 18:34:17.978 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-07-05 18:34:19.888 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-07-05 18:34:21.778 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-07-05 18:34:24.295 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-07-05 18:34:28.756 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-07-05 18:34:29.835 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-07-05 18:34:32.025 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-07-05 18:34:36.619 [main] Hero_App - GoodLife is clickable
-[INFO ] 2023-07-05 18:34:39.129 [main] Hero_App - Image available on Goodlife page
-[INFO ] 2023-07-05 18:34:39.478 [main] Hero_App - We promise to go the extra mile for you
-[INFO ] 2023-07-05 18:34:41.754 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-05 18:34:43.187 [main] Hero_App - Up to 10% Discount on Accessories
-[INFO ] 2023-07-05 18:34:43.839 [main] Hero_App - 50% Discount on Paint Protection Treatment & Paid Service (after Renewal)
-[INFO ] 2023-07-05 18:34:44.868 [main] Hero_App - Free Express Service, Nitrogen Filling and Vehicle Wash
-[INFO ] 2023-07-05 18:34:45.362 [main] Hero_App - Exclusive Joyride Package for GoodLife Members & Discount on Joyride Renewal
-[INFO ] 2023-07-05 18:34:51.307 [main] Hero_App - Show Less is clickable
-[INFO ] 2023-07-05 18:34:52.645 [main] Hero_App - Make the most of your Hero GoodLife Membership, earn Points at various steps
-[INFO ] 2023-07-05 18:34:55.537 [main] Hero_App - points earning redemptionView Details is clickable
-[INFO ] 2023-07-05 18:34:56.206 [main] Hero_App - Points Earning & Redemption
-[INFO ] 2023-07-05 18:34:56.932 [main] Hero_App -   Tier 1 (₹1 Spent = 1 Point earned)
-[INFO ] 2023-07-05 18:34:57.659 [main] Hero_App - Milestone Rewards
-[INFO ] 2023-07-05 18:34:59.356 [main] Hero_App - 500 = Service Voucher ₹50
-[INFO ] 2023-07-05 18:35:00.555 [main] Hero_App - 1,000 = Service Voucher INR 50
-[INFO ] 2023-07-05 18:35:01.782 [main] Hero_App - 2,000 = Executive Pen / Service Voucher/ Online Vouchers INR 80
-[INFO ] 2023-07-05 18:35:03.033 [main] Hero_App - 3,500 = Color set/ Service Voucher/ Online Shopping Vouchers INR 100
-[INFO ] 2023-07-05 18:35:04.437 [main] Hero_App - 5,000 = Sling Bag/ Service Voucher/ Online Shopping Vouchers INR 150
-[INFO ] 2023-07-05 18:35:05.172 [main] Hero_App -   Tier 2 (₹1 Spent = 1.25 Points earned)
-[INFO ] 2023-07-05 18:35:06.287 [main] Hero_App - 7,500 = Casserole/ Service Voucher/ Online Shopping Vouchers INR 150
-[INFO ] 2023-07-05 18:35:07.571 [main] Hero_App - 10,000 = Lunch Box/ Service Voucher/ Online Shopping Vouchers INR 180
-[INFO ] 2023-07-05 18:35:08.827 [main] Hero_App - 15,000 = Duffle Bag/ Service Voucher/ Online Shopping Vouchers INR 250
-[INFO ] 2023-07-05 18:35:10.104 [main] Hero_App - 20,000 = Water Jug/ Service Voucher/ Online Shopping Vouchers INR 300
-[INFO ] 2023-07-05 18:35:11.246 [main] Hero_App - 30,000 = Power Bank/ Service/ Sales Voucher/ Online Vouchers INR 500
-[INFO ] 2023-07-05 18:35:12.327 [main] Hero_App - 40,000 = Service Voucher/ Sales Voucher/ Online Vouchers INR 500
-[INFO ] 2023-07-05 18:35:23.880 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
-[INFO ] 2023-07-05 18:35:24.374 [main] Hero_App -   Tier 3 (₹1 Spent = 1.5 Points earned)
-[INFO ] 2023-07-05 18:35:25.498 [main] Hero_App - 50,000 = Duffle Bag/ Service Voucher/ Online Shopping Vouchers INR 250
-[INFO ] 2023-07-05 18:35:25.999 [main] Hero_App - The Program shall continue even after you reach 50,000 milestone points. For every 10,000 points added thereafter, you can earn vouchers INR 500/-.
+[INFO ] 2023-07-06 14:04:01.941 [main] Hero_App - *********************Goodlife_page**************************
+[INFO ] 2023-07-06 14:04:05.701 [main] Hero_App - Close button is clickable
+[INFO ] 2023-07-06 14:04:10.341 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-07-06 14:04:14.491 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-07-06 14:04:36.113 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-07-06 14:04:37.913 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-07-06 14:04:39.648 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-07-06 14:04:41.533 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-07-06 14:04:43.378 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-07-06 14:04:45.040 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-07-06 14:04:46.137 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-07-06 14:04:52.711 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-07-06 14:04:53.326 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-07-06 14:05:01.964 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-07-06 14:05:08.281 [main] Hero_App - GoodLife is clickable
+[INFO ] 2023-07-06 14:05:12.047 [main] Hero_App - Image available on Goodlife page
+[INFO ] 2023-07-06 14:05:12.214 [main] Hero_App - We promise to go the extra mile for you
+[INFO ] 2023-07-06 14:05:23.567 [main] Hero_App - Show More is clickable
+[INFO ] 2023-07-06 14:05:25.337 [main] Hero_App - Up to 10% Discount on Accessories
+[INFO ] 2023-07-06 14:05:25.647 [main] Hero_App - 50% Discount on Paint Protection Treatment & Paid Service (after Renewal)
+[INFO ] 2023-07-06 14:05:25.836 [main] Hero_App - Free Express Service, Nitrogen Filling and Vehicle Wash
+[INFO ] 2023-07-06 14:05:26.010 [main] Hero_App - Exclusive Joyride Package for GoodLife Members & Discount on Joyride Renewal
+[INFO ] 2023-07-06 14:05:28.030 [main] Hero_App - Show Less is clickable
+[INFO ] 2023-07-06 14:05:28.943 [main] Hero_App - Make the most of your Hero GoodLife Membership, earn Points at various steps
+[INFO ] 2023-07-06 14:05:30.250 [main] Hero_App - points earning redemptionView Details is clickable
+[INFO ] 2023-07-06 14:05:31.482 [main] Hero_App - Points Earning & Redemption
+[INFO ] 2023-07-06 14:05:31.929 [main] Hero_App -   Tier 1 (₹1 Spent = 1 Point earned)
+[INFO ] 2023-07-06 14:05:32.372 [main] Hero_App - Milestone Rewards
+[INFO ] 2023-07-06 14:05:32.964 [main] Hero_App - 500 = Service Voucher ₹50
+[INFO ] 2023-07-06 14:05:33.587 [main] Hero_App - 1,000 = Service Voucher INR 50
+[INFO ] 2023-07-06 14:05:34.231 [main] Hero_App - 2,000 = Executive Pen / Service Voucher/ Online Vouchers INR 80
+[INFO ] 2023-07-06 14:05:34.649 [main] Hero_App - 3,500 = Color set/ Service Voucher/ Online Shopping Vouchers INR 100
+[INFO ] 2023-07-06 14:05:35.009 [main] Hero_App - 5,000 = Sling Bag/ Service Voucher/ Online Shopping Vouchers INR 150
+[INFO ] 2023-07-06 14:05:35.226 [main] Hero_App -   Tier 2 (₹1 Spent = 1.25 Points earned)
+[INFO ] 2023-07-06 14:05:35.585 [main] Hero_App - 7,500 = Casserole/ Service Voucher/ Online Shopping Vouchers INR 150
+[INFO ] 2023-07-06 14:05:35.953 [main] Hero_App - 10,000 = Lunch Box/ Service Voucher/ Online Shopping Vouchers INR 180
+[INFO ] 2023-07-06 14:05:36.374 [main] Hero_App - 15,000 = Duffle Bag/ Service Voucher/ Online Shopping Vouchers INR 250
+[INFO ] 2023-07-06 14:05:36.759 [main] Hero_App - 20,000 = Water Jug/ Service Voucher/ Online Shopping Vouchers INR 300
+[INFO ] 2023-07-06 14:05:37.300 [main] Hero_App - 30,000 = Power Bank/ Service/ Sales Voucher/ Online Vouchers INR 500
+[INFO ] 2023-07-06 14:05:37.659 [main] Hero_App - 40,000 = Service Voucher/ Sales Voucher/ Online Vouchers INR 500
+[INFO ] 2023-07-06 14:05:54.953 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
+[INFO ] 2023-07-06 14:05:55.496 [main] Hero_App -   Tier 3 (₹1 Spent = 1.5 Points earned)
+[INFO ] 2023-07-06 14:05:55.973 [main] Hero_App - 50,000 = Bag pack or Wrist-Watch/ Service Voucher/Sales Voucher/Online Shopping Vouchers INR 500
+[INFO ] 2023-07-06 14:05:56.120 [main] Hero_App - The Program shall continue even after you reach 50,000 milestone points. For every 10,000 points added thereafter, you can earn vouchers INR 500/-.
+[INFO ] 2023-07-06 14:05:57.500 [main] Hero_App -  Back from points earning redemption  is clickable
+[INFO ] 2023-07-06 14:05:57.761 [main] Hero_App - Winner Of The Month
+[INFO ] 2023-07-06 14:05:57.945 [main] Hero_App - Winner month =May' 23
+[INFO ] 2023-07-06 14:05:58.108 [main] Hero_App - Winner name =ARPANA YADAV
+[INFO ] 2023-07-06 14:05:58.315 [main] Hero_App - Winner Loction =From Varanasi
+[INFO ] 2023-07-06 14:05:59.268 [main] Hero_App - Winner prize =Won Hero 2-Wheeler
+[INFO ] 2023-07-06 14:06:15.815 [main] Hero_App - Show More in Benefits & Experiences is clickable
+[INFO ] 2023-07-06 14:06:17.287 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
+[INFO ] 2023-07-06 14:06:17.692 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
+[INFO ] 2023-07-06 14:06:18.002 [main] Hero_App - Multiple Sweepstakes
+[INFO ] 2023-07-06 14:06:18.935 [main] Hero_App - Rides, Rallies & Biking Expeditions
+[INFO ] 2023-07-06 14:06:19.140 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
+[INFO ] 2023-07-06 14:06:20.007 [main] Hero_App - Show Less in Benefits & Experiences is clickable
+[INFO ] 2023-07-06 14:06:38.929 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
+[INFO ] 2023-07-06 14:06:39.735 [main] Hero_App - Show More is clickable
+[INFO ] 2023-07-06 14:06:57.482 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
+[INFO ] 2023-07-06 14:06:57.855 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
+[INFO ] 2023-07-06 14:06:58.175 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
+[INFO ] 2023-07-06 14:06:59.093 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
+[INFO ] 2023-07-06 14:06:59.316 [main] Hero_App - Reward Points on all Service Spends
+[INFO ] 2023-07-06 14:06:59.595 [main] Hero_App - Referral Reward Points of up to 4500 & Double Referral points on Upgrade
+[INFO ] 2023-07-06 14:06:59.786 [main] Hero_App - Bonus Reward Points on PUC, Birthday Week, every Service and it’s Continuity
+[INFO ] 2023-07-06 14:07:01.345 [main] Hero_App - Show Less is clickable
+[INFO ] 2023-07-06 14:07:04.085 [main] Hero_App - Become a member is clickable
+[INFO ] 2023-07-06 14:07:06.928 [main] Hero_App -  Back from become a member  is clickable
