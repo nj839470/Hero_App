@@ -87,12 +87,42 @@ public class GoodLife_test extends Base_Utility {
 		ob.Remarkable_Rewards_message();
 		Custom_click(ob.Show_more_in_remarkable_rewards(), ob.Show_more_in_remarkable_rewards().getText());
 	}
-	public void Verify_Pro_Membership()
+	@Test(priority = 6)
+	public void Verify_Pro_Membership() throws InterruptedException
 	{
 		Custom_click(ob.become_member_button(), ob.become_member_button().getText());
+		Thread.sleep(2000);
 		ob.pro_membership_plan_info();
+		Custom_click(ob.Select_plan_button(), ob.Select_plan_button().getText());
 		Custom_click(ob.back_button(), " Back from profile Form ");
 		Custom_click(ob.back_button(), " Back from plan ");
 	}
-	 
-}
+	@Test(priority = 7)
+	public void Verify_Silver_Membership()
+	{
+		ob.Silver_Membership_plan_info();
+		Custom_click(ob.Select_plan_button(), ob.Select_plan_button().getText());
+		Custom_click(ob.back_button(), " Back from profile Form ");
+		Custom_click(ob.back_button(), " Back from plan ");
+	}
+	@Test(priority = 8)
+	public void Verify_Gold_Membership()
+	{
+		scrollByText("Gold Membership");
+		ob.Gold_Membership_info();
+		Custom_click(ob.Select_plan_button(), ob.Select_plan_button().getText());
+		Custom_click(ob.back_button(), " Back from profile Form ");
+		Custom_click(ob.back_button(), " Back from plan ");
+	}
+	@Test(priority = 9)
+	public void Verify_Platinum_Membership()
+	{
+		Scroll_down_page_Action("Platinum Membership");
+		ob.Platinum_Membership_info();
+		Custom_click(ob.Select_plan_button(), ob.Select_plan_button().getText());
+		Custom_click(ob.back_button(), " Back from profile Form ");
+		Custom_click(ob.back_button(), " Back from plan ");
+		Custom_click(ob.back_button(), " Back from GoodLife Plans ");
+		Custom_click(ob.back_button(), " Back from Hero GoodLife ");
+	}
+	}

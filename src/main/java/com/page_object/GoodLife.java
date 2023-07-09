@@ -219,4 +219,77 @@ public class GoodLife extends Base_Utility {
 	{
 		return Select_plan_button;
 	}
+	public void Silver_Membership_plan_info()
+	{
+		for(int i=10;i<19;i++)
+		{
+			if(i<12)
+			{
+				msg(pro_membership_plan_info.get(i).getText());
+			}
+			else if(i>=12 && i<18)
+			{
+			msg(pro_membership_plan_info.get(i).getText() +" = " +pro_membership_plan_info.get(i+1).getText());
+			i++;
+			}
+			else if(i==18)
+			{
+				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
+			}
+		}
+	}
+	public void Gold_Membership_info()
+	{
+		for(int i=0;i< pro_membership_plan_info.size();i++)
+		{
+			String plan_name = pro_membership_plan_info.get(i).getText();
+			if(plan_name.equalsIgnoreCase("Gold Membership"))
+			{
+				for(int j=i;j<(i+9);j++)
+				{
+					if(j<(i+2))
+					{
+						msg(pro_membership_plan_info.get(j).getText());
+					}
+					else if(j>=(i+2) && j<(i+8))
+					{
+					msg(pro_membership_plan_info.get(j).getText() +" = " +pro_membership_plan_info.get(j+1).getText());
+					j++;
+					}
+					else if(j==(i+8))
+					{
+						Custom_click(pro_membership_plan_info.get(j), pro_membership_plan_info.get(j).getText());
+					}	
+				}
+				break;
+			}
+		}
+	}
+	public void Platinum_Membership_info()
+	{
+		for(int i=0;i< pro_membership_plan_info.size();i++)
+		{
+			String plan_name = pro_membership_plan_info.get(i).getText();
+			if(plan_name.equalsIgnoreCase("Platinum Membership"))
+			{
+				for(int j=i;j<(i+9);j++)
+				{
+					if(j<(i+2))
+					{
+						msg(pro_membership_plan_info.get(j).getText());
+					}
+					else if(j>=(i+2) && j<(i+8))
+					{
+					msg(pro_membership_plan_info.get(j).getText() +" = " +pro_membership_plan_info.get(j+1).getText());
+					j++;
+					}
+					else if(j==(i+8))
+					{
+						Custom_click(pro_membership_plan_info.get(j), pro_membership_plan_info.get(j).getText());
+					}	
+				}
+				break;
+			}
+		}
+	}
 }
