@@ -1,106 +1,72 @@
-[INFO ] 2023-07-07 11:11:31.178 [main] Hero_App - *********************Goodlife_page**************************
-[INFO ] 2023-07-07 11:11:34.660 [main] Hero_App - Close button is clickable
-[INFO ] 2023-07-07 11:11:37.457 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-07-07 11:11:39.152 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-07-07 11:12:01.324 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-07-07 11:12:03.015 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-07-07 11:12:04.323 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-07-07 11:12:05.625 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-07-07 11:12:06.901 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-07-07 11:12:08.160 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-07-07 11:12:09.115 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-07-07 11:12:12.980 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-07-07 11:12:14.232 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-07-07 11:12:20.562 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-07-07 11:12:24.181 [main] Hero_App - GoodLife is clickable
-[INFO ] 2023-07-07 11:12:28.762 [main] Hero_App - Image available on Goodlife page
-[INFO ] 2023-07-07 11:12:28.840 [main] Hero_App - We promise to go the extra mile for you
-[INFO ] 2023-07-07 11:12:40.548 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-07 11:12:41.272 [main] Hero_App - Up to 10% Discount on Accessories
-[INFO ] 2023-07-07 11:12:41.417 [main] Hero_App - 50% Discount on Paint Protection Treatment & Paid Service (after Renewal)
-[INFO ] 2023-07-07 11:12:42.143 [main] Hero_App - Free Express Service, Nitrogen Filling and Vehicle Wash
-[INFO ] 2023-07-07 11:12:42.253 [main] Hero_App - Exclusive Joyride Package for GoodLife Members & Discount on Joyride Renewal
-[INFO ] 2023-07-07 11:12:42.748 [main] Hero_App - Show Less is clickable
-[INFO ] 2023-07-07 11:12:43.388 [main] Hero_App - Make the most of your Hero GoodLife Membership, earn Points at various steps
-[INFO ] 2023-07-07 11:12:44.369 [main] Hero_App - points earning redemptionView Details is clickable
-[INFO ] 2023-07-07 11:12:45.234 [main] Hero_App - Points Earning & Redemption
-[INFO ] 2023-07-07 11:12:45.504 [main] Hero_App -   Tier 1 (₹1 Spent = 1 Point earned)
-[INFO ] 2023-07-07 11:12:45.757 [main] Hero_App - Milestone Rewards
-[INFO ] 2023-07-07 11:12:46.176 [main] Hero_App - 500 = Service Voucher ₹50
-[INFO ] 2023-07-07 11:12:46.618 [main] Hero_App - 1,000 = Service Voucher INR 50
-[INFO ] 2023-07-07 11:12:47.010 [main] Hero_App - 2,000 = Executive Pen / Service Voucher/ Online Vouchers INR 80
-[INFO ] 2023-07-07 11:12:47.465 [main] Hero_App - 3,500 = Color set/ Service Voucher/ Online Shopping Vouchers INR 100
-[INFO ] 2023-07-07 11:12:47.857 [main] Hero_App - 5,000 = Sling Bag/ Service Voucher/ Online Shopping Vouchers INR 150
-[INFO ] 2023-07-07 11:12:48.088 [main] Hero_App -   Tier 2 (₹1 Spent = 1.25 Points earned)
-[INFO ] 2023-07-07 11:12:48.454 [main] Hero_App - 7,500 = Casserole/ Service Voucher/ Online Shopping Vouchers INR 150
-[INFO ] 2023-07-07 11:12:48.885 [main] Hero_App - 10,000 = Lunch Box/ Service Voucher/ Online Shopping Vouchers INR 180
-[INFO ] 2023-07-07 11:12:49.274 [main] Hero_App - 15,000 = Duffle Bag/ Service Voucher/ Online Shopping Vouchers INR 250
-[INFO ] 2023-07-07 11:12:49.654 [main] Hero_App - 20,000 = Water Jug/ Service Voucher/ Online Shopping Vouchers INR 300
-[INFO ] 2023-07-07 11:12:50.047 [main] Hero_App - 30,000 = Power Bank/ Service/ Sales Voucher/ Online Vouchers INR 500
-[INFO ] 2023-07-07 11:12:50.426 [main] Hero_App - 40,000 = Service Voucher/ Sales Voucher/ Online Vouchers INR 500
-[INFO ] 2023-07-07 11:13:05.589 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
-[INFO ] 2023-07-07 11:13:05.705 [main] Hero_App -   Tier 3 (₹1 Spent = 1.5 Points earned)
-[INFO ] 2023-07-07 11:13:05.892 [main] Hero_App - 50,000 = Bag pack or Wrist-Watch/ Service Voucher/Sales Voucher/Online Shopping Vouchers INR 500
-[INFO ] 2023-07-07 11:13:06.017 [main] Hero_App - The Program shall continue even after you reach 50,000 milestone points. For every 10,000 points added thereafter, you can earn vouchers INR 500/-.
-[INFO ] 2023-07-07 11:13:07.091 [main] Hero_App -  Back from points earning redemption  is clickable
-[INFO ] 2023-07-07 11:13:07.155 [main] Hero_App - Winner Of The Month
-[INFO ] 2023-07-07 11:13:07.222 [main] Hero_App - Winner month =June' 23
-[INFO ] 2023-07-07 11:13:07.280 [main] Hero_App - Winner name =Babu Pannuri
-[INFO ] 2023-07-07 11:13:07.342 [main] Hero_App - Winner Loction =From Vijayawada
-[INFO ] 2023-07-07 11:13:07.396 [main] Hero_App - Winner prize =Won Hero 2-Wheeler
-[INFO ] 2023-07-07 11:13:13.268 [main] Hero_App - Show More in Benefits & Experiences is clickable
-[INFO ] 2023-07-07 11:13:14.113 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
-[INFO ] 2023-07-07 11:13:14.226 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
-[INFO ] 2023-07-07 11:13:14.334 [main] Hero_App - Multiple Sweepstakes
-[INFO ] 2023-07-07 11:13:14.485 [main] Hero_App - Rides, Rallies & Biking Expeditions
-[INFO ] 2023-07-07 11:13:14.621 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
-[INFO ] 2023-07-07 11:13:15.163 [main] Hero_App - Show Less in Benefits & Experiences is clickable
-[INFO ] 2023-07-07 11:13:32.821 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
-[INFO ] 2023-07-07 11:13:33.281 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-07 11:13:48.575 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
-[INFO ] 2023-07-07 11:13:48.698 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
-[INFO ] 2023-07-07 11:13:48.804 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
-[INFO ] 2023-07-07 11:13:48.929 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
-[INFO ] 2023-07-07 11:13:49.073 [main] Hero_App - Reward Points on all Service Spends
-[INFO ] 2023-07-07 11:13:49.210 [main] Hero_App - Referral Reward Points of up to 4500 & Double Referral points on Upgrade
-[INFO ] 2023-07-07 11:13:49.348 [main] Hero_App - Bonus Reward Points on PUC, Birthday Week, every Service and it’s Continuity
-[INFO ] 2023-07-07 11:13:50.348 [main] Hero_App - Show Less is clickable
-[INFO ] 2023-07-07 11:13:51.296 [main] Hero_App - Become a member is clickable
-[INFO ] 2023-07-07 11:13:53.377 [main] Hero_App - Pro Membership
-[INFO ] 2023-07-07 11:13:53.435 [main] Hero_App - ₹199
-[INFO ] 2023-07-07 11:13:53.524 [main] Hero_App - Welcome e-Comm Reward Offers = ₹600
-[INFO ] 2023-07-07 11:13:53.623 [main] Hero_App - Referral Reward Points = 3000
-[INFO ] 2023-07-07 11:13:53.737 [main] Hero_App - Accidental Death Insurance = None
-[INFO ] 2023-07-07 11:13:53.928 [main] Hero_App - View all Benefits is clickable
-[INFO ] 2023-07-07 11:13:55.067 [main] Hero_App - Select Plan is clickable
-[INFO ] 2023-07-07 11:13:56.363 [main] Hero_App -  Back from profile Form  is clickable
-[INFO ] 2023-07-07 11:13:57.246 [main] Hero_App -  Back from plan  is clickable
-[INFO ] 2023-07-07 11:13:57.911 [main] Hero_App - Silver Membership
-[INFO ] 2023-07-07 11:13:57.960 [main] Hero_App - ₹299
-[INFO ] 2023-07-07 11:13:58.079 [main] Hero_App - Welcome e-Comm Reward Offers = ₹1200
-[INFO ] 2023-07-07 11:13:58.169 [main] Hero_App - Referral Reward Points = 3500
-[INFO ] 2023-07-07 11:13:58.285 [main] Hero_App - Accidental Death Insurance = 1 Lakh
-[INFO ] 2023-07-07 11:13:58.462 [main] Hero_App - View all Benefits is clickable
-[INFO ] 2023-07-07 11:13:59.545 [main] Hero_App - Select Plan is clickable
-[INFO ] 2023-07-07 11:14:01.050 [main] Hero_App -  Back from profile Form  is clickable
-[INFO ] 2023-07-07 11:14:02.493 [main] Hero_App -  Back from plan  is clickable
-[INFO ] 2023-07-07 11:14:07.247 [main] Hero_App - Gold Membership
-[INFO ] 2023-07-07 11:14:07.302 [main] Hero_App - ₹399
-[INFO ] 2023-07-07 11:14:07.411 [main] Hero_App - Welcome e-Comm Reward Offers = ₹2400
-[INFO ] 2023-07-07 11:14:07.622 [main] Hero_App - Referral Reward Points = 4000
-[INFO ] 2023-07-07 11:14:07.774 [main] Hero_App - Accidental Death Insurance = 2 Lakhs
-[INFO ] 2023-07-07 11:14:08.004 [main] Hero_App - View all Benefits is clickable
-[INFO ] 2023-07-07 11:14:09.116 [main] Hero_App - Select Plan is clickable
-[INFO ] 2023-07-07 11:14:10.499 [main] Hero_App -  Back from profile Form  is clickable
-[INFO ] 2023-07-07 11:14:11.361 [main] Hero_App -  Back from plan  is clickable
-[INFO ] 2023-07-07 11:14:28.486 [main] Hero_App - Successfully  Scroll page down Action Platinum Membership
-[INFO ] 2023-07-07 11:14:30.103 [main] Hero_App - Platinum Membership
-[INFO ] 2023-07-07 11:14:30.161 [main] Hero_App - ₹499
-[INFO ] 2023-07-07 11:14:30.313 [main] Hero_App - Welcome e-Comm Reward Offers = ₹4800
-[INFO ] 2023-07-07 11:14:30.463 [main] Hero_App - Referral Reward Points = 4500
-[INFO ] 2023-07-07 11:14:30.617 [main] Hero_App - Accidental Death Insurance = 2 Lakhs
-[INFO ] 2023-07-07 11:14:30.832 [main] Hero_App - View all Benefits is clickable
-[INFO ] 2023-07-07 11:14:31.950 [main] Hero_App - Select Plan is clickable
-[INFO ] 2023-07-07 11:14:33.478 [main] Hero_App -  Back from profile Form  is clickable
-[INFO ] 2023-07-07 11:14:34.295 [main] Hero_App -  Back from plan  is clickable
-[INFO ] 2023-07-07 11:14:36.057 [main] Hero_App -  Back from GoodLife Plans  is clickable
+[INFO ] 2023-07-09 18:10:37.455 [main] Hero_App - ************************Refer a Friend**************************
+[INFO ] 2023-07-09 18:10:38.945 [main] Hero_App - Deny is clickable
+[INFO ] 2023-07-09 18:10:40.742 [main] Hero_App - Allow Now is clickable
+[INFO ] 2023-07-09 18:10:42.535 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-09 18:10:44.326 [main] Hero_App - Allow notification is clickable
+[INFO ] 2023-07-09 18:10:48.224 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-07-09 18:10:51.586 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-07-09 18:11:08.861 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-07-09 18:11:11.617 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-07-09 18:11:13.377 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-07-09 18:11:15.314 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-07-09 18:11:17.080 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-07-09 18:11:18.809 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-07-09 18:11:20.604 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-07-09 18:11:25.360 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-07-09 18:11:26.436 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-07-09 18:11:28.728 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-07-09 18:11:32.982 [main] Hero_App - Home is clickable
+[INFO ] 2023-07-09 18:11:36.181 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-09 18:11:38.147 [main] Hero_App - Refer a friend is clickable
+[INFO ] 2023-07-09 18:11:43.214 [main] Hero_App - Friend name send successfully
+[INFO ] 2023-07-09 18:11:45.615 [main] Hero_App - Friend mob no send successfully
+[INFO ] 2023-07-09 18:11:47.512 [main] Hero_App - Select State is clickable
+[INFO ] 2023-07-09 18:12:04.896 [main] Hero_App - HARYANA is clickable
+[INFO ] 2023-07-09 18:12:06.378 [main] Hero_App - Select City is clickable
+[INFO ] 2023-07-09 18:12:11.235 [main] Hero_App - AMBALA is clickable
+[INFO ] 2023-07-09 18:12:12.978 [main] Hero_App - Select Model is clickable
+[INFO ] 2023-07-09 18:12:34.070 [main] Hero_App - Passion Pro is clickable
+[INFO ] 2023-07-09 18:12:37.174 [main] Hero_App - Submit is clickable
+[INFO ] 2023-07-09 18:12:38.736 [main] Hero_App - We have successfully captured the Referral. Stay Tuned for more update.
+[INFO ] 2023-07-09 18:12:40.119 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-09 18:12:43.817 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-09 18:12:46.198 [main] Hero_App - Refer a friend is clickable
+[INFO ] 2023-07-09 18:12:48.488 [main] Hero_App - Refer yourself is clickable
+[INFO ] 2023-07-09 18:12:52.400 [main] Hero_App - Select Model is clickable
+[INFO ] 2023-07-09 18:13:13.679 [main] Hero_App - Passion Pro is clickable
+[INFO ] 2023-07-09 18:13:15.501 [main] Hero_App - Submit is clickable
+[INFO ] 2023-07-09 18:13:17.016 [main] Hero_App - We have successfully captured the Referral. Stay Tuned for more update.
+[INFO ] 2023-07-09 18:13:18.373 [main] Hero_App - OK is clickable
+[INFO ] 2023-07-09 18:13:22.256 [main] Hero_App - Side menu button is clickable
+[INFO ] 2023-07-09 18:13:24.834 [main] Hero_App - Contact Us is clickable
+[INFO ] 2023-07-09 18:13:26.808 [main] Hero_App - Welcome to the official account of Hero MotoCorp - your favourite & the world's largest two-wheeler Company
+[INFO ] 2023-07-09 18:13:27.524 [main] Hero_App - Facebook is clickable
+[INFO ] 2023-07-09 18:13:33.196 [main] Hero_App - Facebook Login is clickable
+[INFO ] 2023-07-09 18:13:36.412 [main] Hero_App -  Back from Facebook is clickable
+[INFO ] 2023-07-09 18:13:37.712 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
+[INFO ] 2023-07-09 18:13:38.523 [main] Hero_App - Instagram is clickable
+[INFO ] 2023-07-09 18:13:46.715 [main] Hero_App - Instagram Login is clickable
+[INFO ] 2023-07-09 18:13:50.044 [main] Hero_App -  Back from Instagram is clickable
+[INFO ] 2023-07-09 18:13:51.186 [main] Hero_App - Contact us here for support and queries related to service, products and events
+[INFO ] 2023-07-09 18:13:51.552 [main] Hero_App -  Whatsapp number =7011670116
+[INFO ] 2023-07-09 18:13:53.033 [main] Hero_App - Whatsapp is clickable
+[INFO ] 2023-07-09 18:13:53.937 [main] Hero_App - We can’t find WhatsApp on your device. Please install for better experience
+[INFO ] 2023-07-09 18:13:54.624 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
+[INFO ] 2023-07-09 18:13:55.360 [main] Hero_App - YouTube is clickable
+[INFO ] 2023-07-09 18:14:00.378 [main] Hero_App - Total subscribers count =Shorts
+[INFO ] 2023-07-09 18:14:02.620 [main] Hero_App -  Back from YouTube is clickable
+[INFO ] 2023-07-09 18:14:03.996 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
+[INFO ] 2023-07-09 18:14:04.749 [main] Hero_App - Linkedin is clickable
+[ERROR] 2023-07-09 18:14:27.167 [main] Hero_App - Linkedin is not clickable
+[INFO ] 2023-07-09 18:14:28.812 [main] Hero_App -  Back from Linkedin is clickable
+[INFO ] 2023-07-09 18:14:40.161 [main] Hero_App - Successfully  Scroll page down Action Twitter
+[INFO ] 2023-07-09 18:14:41.052 [main] Hero_App - Welcome to the official account of Hero MotoCorp..... #100MillionHeroes #MadeOfTrust
+[INFO ] 2023-07-09 18:14:41.816 [main] Hero_App - Linkedin is clickable
+[INFO ] 2023-07-09 18:15:07.043 [main] Hero_App - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3964a02b-f75f-40e3-b439-4484d0160bb0, findElement {using=xpath, value=//android.view.View[@resource-id ='modal-header']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 31952, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 31952, deviceName: 805, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 13.0.0, pCloudy_DurationInMinutes: 40, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 13.0.0, systemPort: 31954, udid: 2B081FDH3003ZV}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7 Pro, appium:deviceName: 2B081FDH3003ZV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 2B081FDH3003ZV, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 13.0.0, appium:pCloudy_DurationInMinutes: 40, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 130, appium:systemPort: 31954, appium:takesScreenshot: true, appium:udid: 2B081FDH3003ZV, appium:viewportRect: {height: 2734, left: 0, top: 130, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3964a02b-f75f-40e3-b439-4484d0160bb0

@@ -62,7 +62,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 10) {
+				if (i == (Select_State_list.size()-1)) {
 					Select_State_list.get(i).click();
 					Select_state.click();
 					i = 0;
@@ -85,7 +85,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 10) {
+				if (i == (Select_State_list.size()-1)) {
 					Select_State_list.get(i).click();
 					Select_City.click();
 					i = 0;
@@ -114,7 +114,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			break;
 		} else {
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-			if (i == 10) {
+			if (i == (Select_State_list.size()-1)) {
 				Select_State_list.get(i).click();
 				Select_Model.click();
 				i = 0;
@@ -152,7 +152,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement whatsapp_visit_page;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_text']")
 	private List<WebElement> Visit_page_text;
-	@FindBy(xpath ="//android.widget.Button[@resource-id ='u_0_5m_6q']")
+	@FindBy(xpath ="//android.widget.Button[@text ='Log in']")
 	private WebElement facebook_login;
 	@FindBy(xpath ="//android.view.View[@content-desc=\"Log in\"]/android.widget.Button")
 	private WebElement instagram_login;
@@ -205,8 +205,20 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		msg(Visit_page_text.get(2).getText());
 		msg(" Whatsapp number =" +whatsapp_visit_page.getText());
 		Custom_click(whatsapp_visit_page, header);
+		try {
+		if(whatsapp_visit_page.isDisplayed()==true)
+		{
+			msg("We can’t find WhatsApp on your device. Please install for better experience");
+		}
+		else
+		{
 		Custom_click(back, " Back from " +header);
 		driver.navigate().back();
+		}
+		}catch(Exception e)
+		{
+			msg("WhatsApp on your device is available");
+		}
 		}catch(Exception e)
 		{
 			msg(""+e);
@@ -234,7 +246,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		Custom_click(visit_Page.get(3), header);
 		Thread.sleep(2000);
 		Custom_click(Linkedin_agree_and_join, header);
-		Custom_click(Linkedin_agree_and_join, Linkedin_agree_and_join.getText());
+//		Custom_click(Linkedin_agree_and_join, Linkedin_agree_and_join.getText());
 		Custom_click(back, " Back from " +header);
 		}catch(Exception e)
 		{
@@ -251,6 +263,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		Thread.sleep(5000);
 		msg(Twiter_header.getText());
 		Custom_click(back, " Back from " +header);
+		Custom_click(back, " Back from Contact Us page");
 		}catch(Exception e)
 		{
 			msg(""+e);
