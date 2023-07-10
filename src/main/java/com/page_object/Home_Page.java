@@ -387,7 +387,7 @@ public class Home_Page extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 17) {
+				if (i == (Select_State_list.size()-1)) {
 					Select_State_list.get(i).click();
 					Select_State.click();
 					i = 0;
@@ -403,7 +403,7 @@ public class Home_Page extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == 17) {
+				if (i == (Select_State_list.size()-1)) {
 					Select_State_list.get(i).click();
 					Select_City.click();
 					i = 0;

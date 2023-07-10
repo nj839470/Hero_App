@@ -66,15 +66,16 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		msg(ob.message().getText());
 		Custom_click(ob.ok_button(), ob.ok_button().getText());
 		}catch(Exception e)
-		{msg(""+e);
+		{msg("Submit button is not available");
 			}
 		}catch(Exception e) 
-		{ msg(""+e);
+		{ msg("Not able to Select Model");
 		} 
 	}
 	@Test(priority = 4)
-	public void TC044_Verify_Refer_yourself()
+	public void TC044_Verify_Refer_yourself() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.refer_friend(), ob.refer_friend().getText()); 
 		Custom_click(ob.Refer_yourself(), ob.Refer_yourself().getText());
@@ -82,7 +83,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		if(config_getdata("mobileno").equalsIgnoreCase(ob.friend_mob_no().getText()))
 		{
-
+			msg("Information matched as per registered account by mobile number");
 			Custom_click(ob.Select_Model(), ob.Select_Model().getText());
 			ob.Select_Model("Passion Pro");
 			Custom_click(ob.Submit_button(), ob.Submit_button().getText());
@@ -134,5 +135,32 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	public void TC050_Verify_twitter_in_Contact_us_page() throws InterruptedException
 	{
 		ob.twitter();
+	}
+	@Test(priority = 11)
+	public void TC051_Verify_Contact_via_Email() throws InterruptedException
+	{
+		Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
+		if(ob.Contact_via_email().isDisplayed()==true)
+		{
+			Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
+		}
+		Thread.sleep(2000);
+		msg(ob.Welcome_message().getText());
+		msg(ob.Welcome_message2().getText());
+		Custom_click(ob.welcome_tour_next(), "welcome tour next");
+		msg(ob.welcome_tour_promotion().getText());
+		Custom_click(ob.welcome_tour_done(), ob.welcome_tour_done().getText());
+		msg(ob.addresses_title().getText());
+		Custom_click(ob.add_email_address(), ob.add_email_address().getText());
+		Custom_click(ob.google(), "Setup email with google");
+		Thread.sleep(5000);
+		driver.navigate().back();
+		Thread.sleep(1000);
+		driver.navigate().back();
+		Thread.sleep(1000);
+		driver.navigate().back();
+		Thread.sleep(1000);
+		driver.navigate().back();
+		Custom_click(ob.back(), " Back from Contact Us page");
 	}
 }

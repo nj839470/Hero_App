@@ -45,11 +45,11 @@ public class Home_Page_Test extends Base_Utility {
 			
 		}
 	}
-	
-//		public void TC018__verify_Navigate() {
-//		Custom_click(ob.Navigate_menu(), "Navigate menu");
-//		Custom_click(ob.Search_destination(), "Search destination");
-//		custom_sendkeys(ob.Search_here(), config_getdata("search_destination"), "Noida");
+		@Test(priority = 1)
+		public void TC018__verify_Navigate() {
+		Custom_click(ob.Navigate_menu(), "Navigate menu");
+		Custom_click(ob.Search_destination(), "Search destination");
+		msg(ob.Search_here().getText());
 //		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 //		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 //		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
@@ -57,15 +57,13 @@ public class Home_Page_Test extends Base_Utility {
 //		Custom_click(ob.Navigate_button(), "Navigate address");
 //		Custom_click(ob.Start(), "Start");
 //		Custom_click(ob.change_search(), "Change search");
-//		Custom_click(ob.Back_button(), "Back from start destination");
-//		Custom_click(ob.Back_button(), "Back from Navigation");
-//	}
+		Custom_click(ob.Back_button(), "Back from Search here");
+		Custom_click(ob.Back_button(), "Back from Navigation");
+	}
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void TC019_Verify_Documents() throws InterruptedException // 54 steps
 	{
-//		login = new Login_Page_Test();
-//		login.login();
 		try
 		{
 		Custom_click(ob.Documents_Menu(), "Document menu");
@@ -78,11 +76,8 @@ public class Home_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void TC020_Verify_Relationship_Manager() throws InterruptedException {
-//		login = new Login_Page_Test();
-//		ob = new Home_Page();
-//		login.login();
 		try
 		{
 		Thread.sleep(2000);
@@ -114,7 +109,7 @@ public class Home_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void TC021_Verify_RSA() throws InterruptedException {
 		try {
 		Custom_click(ob.RSA(), "RSA");
@@ -147,7 +142,7 @@ public class Home_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void TC022_Verify_Technical_Support_Manager() throws InterruptedException {
 		try {
 		Custom_click(ob.Technical_Support(), "Technical Support");
@@ -169,11 +164,8 @@ public class Home_Page_Test extends Base_Utility {
 	}
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void TC023_Verify_Dealer_Locator() throws InterruptedException {
-//		login = new Login_Page_Test();
-//		ob = new Home_Page();
-//		login.login();
 		try
 		{
 		Custom_click(ob.Dealer_Locator(), "Dealer Locator");
@@ -187,7 +179,7 @@ public class Home_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void TC024_Select_city() {
 		try {
 		Custom_click(ob.Select_City(), "Select city");
@@ -199,7 +191,7 @@ public class Home_Page_Test extends Base_Utility {
 		}
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void TC025_View_dealer_name_and_address() {
 		try {
 		Custom_click(ob.map_view(), "Map View dealer name and address");
