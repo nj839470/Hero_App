@@ -34,7 +34,7 @@
 			<class name="Page_Test.Refer_a_friend_and_Contact_us_test" />
 		</classes>
 	</test>
-		<test name="Services_Page_Test" enabled="false">
+		<test name="Services_Page_Test" enabled="true">
 		<classes>
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
