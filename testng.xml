@@ -34,7 +34,7 @@
 			<class name="Page_Test.Refer_a_friend_and_Contact_us_test" />
 		</classes>
 	</test>
-		<test name="Services_Page_Test" enabled="true">
+		<test name="Services_Page_Test" enabled="false">
 		<classes>
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
@@ -44,12 +44,13 @@
 			<class name="Page_Test.GoodLife_test" />
 		</classes>
 	</test>
-	<test name="All test class" enabled="false">
+	<test name="All test class" enabled="true">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
 			<class name="Page_Test.Select_Vehicle_Page_Test" />
 			<class name="Page_Test.Home_Page_Test" />
 			<class name="Page_Test.My_Profile_Page_Test" />
+			<class name="Page_Test.Vehicle_Details_test" /> 
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
 	</test>

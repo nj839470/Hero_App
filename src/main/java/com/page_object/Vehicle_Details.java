@@ -28,14 +28,15 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement vehicle_status;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id= 'com.customerapp.hero:id/tv_vehicle_no']")
 	private WebElement Vehicle_number;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[1]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[1]")
 	private WebElement verify_GoodLife;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl'])[2]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl'])[2]")
 	private WebElement verify_goodlife_page;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[2]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[2]")
 	private WebElement verify_joyRide;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/subtitle']")
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/subtitle']")
 	private WebElement verify_joyRide_page;
+
 	public WebElement home() {
 		return home;
 	}
@@ -63,20 +64,20 @@ public class Vehicle_Details extends Base_Utility {
 	public WebElement Vehicle_number() {
 		return Vehicle_number;
 	}
-	public WebElement verify_GoodLife()
-	{
+
+	public WebElement verify_GoodLife() {
 		return verify_GoodLife;
 	}
-	public WebElement verify_goodlife_page()
-	{
+
+	public WebElement verify_goodlife_page() {
 		return verify_goodlife_page;
 	}
-	public WebElement verify_joyRide()
-	{
+
+	public WebElement verify_joyRide() {
 		return verify_joyRide;
 	}
-	public WebElement verify_joyRide_page()
-	{
+
+	public WebElement verify_joyRide_page() {
 		return verify_joyRide_page;
 	}
 
@@ -101,11 +102,11 @@ public class Vehicle_Details extends Base_Utility {
 
 	public void vehicle_info() {
 		try {
-		for (int i = 0; i < vehicle_info.size(); i++) {
-			msg(Vehicle_header.get(i).getText() + " = " + vehicle_info.get(i).getText());
-		}
-		}catch(Exception e) 
-		{ msg(""+e);
+			for (int i = 0; i < vehicle_info.size(); i++) {
+				msg(Vehicle_header.get(i).getText() + " = " + vehicle_info.get(i).getText());
+			}
+		} catch (Exception e) {
+			msg("" + e);
 		}
 	}
 
@@ -124,15 +125,49 @@ public class Vehicle_Details extends Base_Utility {
 //******************************************My vehicle documents *****************************
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_documents']")
 	private WebElement my_vehicle_documents;
+	@FindBy(xpath = "//android.widget.TextView[@text ]")
+	private List<WebElement> Documents_list;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
+	private WebElement Document_Check;
+//	@FindBy(xpath = "//android.widget.TextView[@text ='Add now']")
+//	private WebElement Add_Now;
+//	@FindBy(xpath = "//android.widget.Button[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
+//	private WebElement While_using_the_app;
+//	@FindBy(xpath = "//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
+//	private WebElement Allow;
+//	@FindBy(xpath = "//android.widget.TextView[@text ='Choose from library']")
+//	private WebElement Choose_Document_from_library;
+//	@FindBy(xpath = "//android.widget.TextView[@text ='Take a Photo']")
+//	private WebElement Take_a_Photo;
+//	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
+//	private WebElement document_upload_close_button;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
-	private WebElement back_button;
+	private WebElement Back;
 
 	public WebElement my_vehicle_documents() {
 		return my_vehicle_documents;
 	}
 
 	public WebElement back_button() {
-		return back_button;
+		return Back;
+	}
+
+	public void Documents_list() throws InterruptedException {
+
+		for (int i = 1; i < Documents_list.size(); i++) {
+			String name = Documents_list.get(i).getText();
+			Custom_click(Documents_list.get(i), name);
+			Thread.sleep(2000);
+			try {
+				if (Document_Check != null) {
+					msg(Document_Check.getText());
+					Custom_click(Back, name + " Back Document");
+				}
+			} catch (Exception e) {
+				msg(name + " is already available");
+				Custom_click(Back, name + " Back Document");
+			}
+		}
 	}
 
 //******************************************My owners Manual *****************************
@@ -140,7 +175,7 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement owners_manual;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
 	private WebElement owners_title;
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/imageview']")
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/imageview']")
 	private WebElement Manual_Owners_info;
 
 	public WebElement owners_manual() {
@@ -150,35 +185,132 @@ public class Vehicle_Details extends Base_Utility {
 	public WebElement owners_title() {
 		return owners_title;
 	}
-	public WebElement Manual_Owners_info()
-	{
+
+	public WebElement Manual_Owners_info() {
 		return Manual_Owners_info;
 	}
+
 //********************************************** Service History ***********************************
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_history']")
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_service_history']")
 	private WebElement My_vehicle_Service_history;
-	public WebElement My_vehicle_Service_history()
-	{
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
+	private List<WebElement> Service_history;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandName']")
+	private WebElement service_brand_name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/brandDetail2']")
+	private WebElement service_seral_no;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/center')]")
+	private List<WebElement> sevice_center_info;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedPrice']")
+	private WebElement Estimated_Amount;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/estimatedDate']")
+	private WebElement Estimated_Date_Time;
+	@FindBy(xpath = "//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/support')]")
+	private List<WebElement> support_info;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
+	private WebElement collapse_arrow;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/callImg1']")
+	private WebElement call_supporter;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_Invoice']")
+	private WebElement invoice;
+	@FindBy(xpath = "//android.widget.Button[@resource-id ='android:id/button_once']")
+	private WebElement button_once;
+	@FindBy(xpath = "//android.widget.TextView[contains(@text,'Hero')]")
+	private WebElement invoice_number;
+
+	public WebElement My_vehicle_Service_history() {
 		return My_vehicle_Service_history;
 	}
-	//********************************************** Tips and DIY videos ***********************************
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[3]")
+
+	public void Service_history() throws InterruptedException {
+		for (int i = 0; i < Service_history.size(); i++) {
+			try {
+				String service_info = Service_history.get(i).getText();
+				if (service_info.equalsIgnoreCase("Details")) {
+					Custom_click(Service_history.get(i), service_info);
+					msg("Vehicle brand name in Service details= " + service_brand_name.getText());
+					msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
+					try {
+						if (sevice_center_info.get(0).isDisplayed() == true) {
+							msg("Service center name =" + sevice_center_info.get(0).getText());
+							msg("Service center address =" + sevice_center_info.get(1).getText());
+						}
+					} catch (Exception e) {
+						msg("Service center name is not given");
+					}
+					
+					msg("******************Job card , Completion date & price ************************");
+					msg("Estimated Amount =" + Estimated_Amount.getText());
+					msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
+//					if (invoice.getText().equalsIgnoreCase("Download invoice")) {
+//						Custom_click(invoice, "Download invoice");
+//						Thread.sleep(6000);
+//					}
+//					try {
+//						Custom_click(invoice, "view invoice");
+////			if(button_once.isDisplayed()==true)
+////			{															//for emulator
+////			Custom_click(button_once, "Just once");
+////		}
+//						Thread.sleep(2000);
+//						msg("invoice number =" + invoice_number.getText());
+//						driver.navigate().back();
+//					} catch (Exception e) {
+//						msg("Not able to download invoice");
+//					}
+					support_information();
+					Custom_click(collapse_arrow, "collapse Key arrow in");
+					Custom_click(collapse_arrow, "collapse Key arrow out");
+					Custom_click(call_supporter, " call supporter ");
+					driver.navigate().back();
+					driver.navigate().back();
+					driver.navigate().back();
+					Custom_click(Back, Service_history.get(0).getText());
+				} else {
+					msg(service_info);
+				}
+			} catch (Exception e) {
+				msg("" + e);
+			}
+		}
+	}
+
+	public void support_information() {
+		try {
+			for (int i = 0; i < support_info.size(); i++) {
+				msg("Support information =" + support_info.get(i).getText());
+			}
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	// ********************************************** Tips and DIY videos
+	// ***********************************
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[3]")
 	private WebElement Tips_and_DIY_videos;
-	@FindBy(xpath="//android.widget.LinearLayout[@content-desc=\"Tips\"]/android.widget.TextView")
+	@FindBy(xpath = "//android.widget.LinearLayout[@content-desc=\"Tips\"]/android.widget.TextView")
 	private WebElement Tips_info;
-	@FindBy(xpath ="//android.widget.LinearLayout[@content-desc=\"DIY Videos\"]/android.widget.TextView")
+	@FindBy(xpath = "//android.widget.LinearLayout[@content-desc=\"DIY Videos\"]/android.widget.TextView")
 	private WebElement DIY_Videos;
-	public WebElement Tips_and_DIY_videos()
-	{
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross']")
+	private WebElement close_my_profile_page;
+
+	public WebElement Tips_and_DIY_videos() {
 		return Tips_and_DIY_videos;
 	}
-	public WebElement Tips_info()
-	{
+
+	public WebElement Tips_info() {
 		return Tips_info;
 	}
-	public WebElement DIY_Videos()
-	{
+
+	public WebElement DIY_Videos() {
 		return DIY_Videos;
+	}
+
+	public WebElement close_my_profile_page() {
+		return close_my_profile_page;
 	}
 
 }

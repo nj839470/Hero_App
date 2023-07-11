@@ -13,18 +13,14 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Vehicle_Details_test extends Base_Utility {
 	public Vehicle_Details ob;
-	public Home_Page hp;
-	public Services_Page sp;
 	public Login_Page_Test login;
 
 	@Test(priority = 0)
 	public void TC034_Verify_My_Vehicle() throws InterruptedException {
 		msg("*********************My Vehicle page**************************");
 		ob = new Vehicle_Details();
-		hp = new Home_Page();
-		sp = new Services_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		try {
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
@@ -73,7 +69,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	public void TC036_Verify_My_Vehicle_Documents() throws InterruptedException {
 		try {
 		Custom_click(ob.my_vehicle_documents(), ob.my_vehicle_documents().getText());
-		hp.Documents_list();
+		ob.Documents_list();
 		Custom_click(ob.back_button(), " Back from my vehicle documents page");
 		}catch(Exception e) 
 		{ msg(""+e);
@@ -106,7 +102,7 @@ public class Vehicle_Details_test extends Base_Utility {
 		Custom_click(ob.back_button(), " Back from My Vehicle page");
 		}catch(Exception e)
 		{
-			sp.Service_history();
+			ob.Service_history();
 			Custom_click(ob.back_button(), " Back from Service History page");
 			Custom_click(ob.back_button(), " Back from My Vehicle page");
 		}
@@ -122,6 +118,7 @@ public class Vehicle_Details_test extends Base_Utility {
 		Custom_click(ob.Tips_info(), ob.Tips_info().getText());
 		Custom_click(ob.DIY_Videos(), ob.DIY_Videos().getText());
 		Custom_click(ob.back_button(), " Back from My Tips page");
+		Custom_click(ob.close_my_profile_page(), " close my profile page ");
 		}catch(Exception e) 
 		{ msg(""+e);
 		}

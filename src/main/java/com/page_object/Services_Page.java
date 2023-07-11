@@ -134,6 +134,10 @@ public class Services_Page extends Base_Utility {
 	private WebElement Kilometer_12500;
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 5']")
 	private WebElement Kilometer_morethan_15500;
+	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
+	private List<WebElement> Service_schedule;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_subtitle']")
+	private List<WebElement> Service_schedule_subtitle;
 
 	public WebElement Service_Schedule() {
 		return Service_Schedule;
@@ -166,7 +170,37 @@ public class Services_Page extends Base_Utility {
 	public WebElement Kilometer_morethan_15500() {
 		return Kilometer_morethan_15500;
 	}
-
+	public void Service_schedule()
+	{
+		for(int i=4;i<Service_schedule.size();i++)
+		{
+			if(i<10)
+			{
+			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3));
+			}
+			else if(i>=10)
+			{
+				Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
+				for(int j=0;j<Service_schedule_subtitle.size();j++)
+				{
+					msg(Service_schedule_subtitle.get(j).getText());
+					if(j==8)
+					{
+						Scroll_down_page_Action("Below more then 9");
+						j=0;
+					}
+					
+				}
+				try {
+				Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
+				}catch(Exception e)
+				{
+					Scroll_UP_page_Action(Service_schedule.get(i).getText());
+					Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
+				}
+			}
+		}
+	}
 //*********************************************Last Serviced********************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")
 	private WebElement Last_serviced_history;

@@ -71,17 +71,43 @@ public class Services_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		msg("Manager contact number =" + ob.manage_phone_number().getText());
 	}
-	@Test(priority = 4)
-	public void TC036_View_Service_Schedule()
-	{
-//		ob = new Services_Page();
-//		login = new Login_Page_Test();
-//		login.login();
-		Custom_click(ob.Services(), " Services button");
-		Custom_click(ob.Service_Schedule(), "View Service Schedule");
-		Custom_click(ob.Kilometer(), ob.Kilometer().getText());
-		Custom_click(ob.Kilometer_750(), "750 Kilometer");
-	}
+//	@Test(priority = 4)
+//	public void TC036_View_Service_schedule_750()
+//	{
+////		ob = new Services_Page();
+////		login = new Login_Page_Test();
+////		login.login();
+////		Custom_click(ob.Services(), " Services button");
+//		Custom_click(ob.Service_Schedule(), "View Service Schedule");
+//		Custom_click(ob.Kilometer(), ob.Kilometer().getText());
+//		Custom_click(ob.Kilometer_750(), "750 Kilometer");
+//		ob.Service_schedule();
+//	}
+//	public void TC036_View_Service_schedule_3500()
+//	{
+//		Custom_click(ob.Kilometer_3500(),"3500 Kilometer");
+//		ob.Service_schedule();
+//	}
+//	public void TC036_View_Service_schedule_6500()
+//	{
+//		Custom_click(ob.Kilometer_6500(), "6500 Kilometer");
+//		ob.Service_schedule();
+//	}
+//	public void TC036_View_Service_schedule_9500()
+//	{
+//		Custom_click(ob.Kilometer_9500(), "9500 Kilometer");
+//		ob.Service_schedule();
+//	}
+//	public void TC036_View_Service_schedule_12500()
+//	{
+//		Custom_click(ob.Kilometer_12500(), "12500 Kilometer");
+//		ob.Service_schedule();
+//	}
+//	public void TC036_View_Service_schedule_15500()
+//	{
+//		Custom_click(ob.Kilometer_morethan_15500(), "More than 15500 Kilometer");
+//		ob.Service_schedule();
+//	}
 	@Test(priority = 4)
 	public void TC038_Verify_Last_Serviced() throws InterruptedException {
 		Custom_click(ob.Last_serviced_history(), "Last serviced history");

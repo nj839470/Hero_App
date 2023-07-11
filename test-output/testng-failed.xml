@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Refer_a_friend_and_Contact_us_test(failed)">
+  <test thread-count="5" name="All test class(failed)">
     <classes>
-      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
+      <class name="Page_Test.Services_Page_Test">
         <methods>
-          <include name="TC051_Verify_Contact_via_Email"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC037_Verify_dealer_manager_info"/>
         </methods>
-      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+      </class> <!-- Page_Test.Services_Page_Test -->
     </classes>
-  </test> <!-- Refer_a_friend_and_Contact_us_test(failed) -->
+  </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

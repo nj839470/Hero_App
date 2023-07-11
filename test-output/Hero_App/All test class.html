@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>All test class</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>33/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>45/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 05 17:55:16 IST 2023</td>
+<td>Started on:</td><td>Tue Jul 11 19:56:05 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>378 seconds (378119 ms)</td>
+<tr><td>Total time:</td><td>1324 seconds (1324409 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,460 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info()'><b>TC037_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info(Services_Page_Test.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 40 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225273918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace225273918'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
-	at Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info(Services_Page_Test.java:66)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 40 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced()'><b>TC038_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.Service_history(Services_Page.java:214)
-	at Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced(Services_Page_Test.java:88)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1311135309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1311135309'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.Service_history(Services_Page.java:214)
-	at Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced(Services_Page_Test.java:88)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC039_Verify_all_tips_list()'><b>TC039_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:287)
-	at Page_Test.Services_Page_Test.TC039_Verify_all_tips_list(Services_Page_Test.java:96)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace992309406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace992309406'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:287)
-	at Page_Test.Services_Page_Test.TC039_Verify_all_tips_list(Services_Page_Test.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list()'><b>TC040_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:313)
-	at Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list(Services_Page_Test.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816196187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace816196187'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:313)
-	at Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list(Services_Page_Test.java:102)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC036_verify_Dealer_information()'><b>TC036_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
-	at com.page_object.Services_Page.dealer_info(Services_Page.java:88)
-	at Page_Test.Services_Page_Test.TC036_verify_Dealer_information(Services_Page_Test.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: AppiumDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 37 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1874622547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1874622547'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
-	at com.page_object.Services_Page.dealer_info(Services_Page.java:88)
-	at Page_Test.Services_Page_Test.TC036_verify_Dealer_information(Services_Page_Test.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: AppiumDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 37 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -530,170 +76,230 @@ Driver info: driver.version: AppiumDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC009_resend_butn()'><b>TC009_resend_butn</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>21</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>17</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC004_max_digit_mobile_number()'><b>TC004_max_digit_mobile_number</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>5</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts()'><b>TC033_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC011_edit_moble()'><b>TC011_edit_moble</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>36</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>84</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>7</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>13</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page()'><b>TC034_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC032_Manage_License()'><b>TC032_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button()'><b>TC028_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>6</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC021_Verify_RSA()'><b>TC021_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>7</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile()'><b>TC027_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details()'><b>TC031_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>24</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
-<tr>
-<td title='Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details()'><b>TC030_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>21</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>3</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
-<td></td>
-<td>8</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC035_verify_service_type()'><b>TC035_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@15f47664</td></tr>
-<tr>
-<td title='Page_Test.Login_Page_Test.TC007_contact_Us()'><b>TC007_contact_Us</b><br>Test class: Page_Test.Login_Page_Test</td>
-<td></td>
-<td>5</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<td>9</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
 <tr>
 <td title='Page_Test.Select_Vehicle_Page_Test.TC012_verify_Nick_Name()'><b>TC012_verify_Nick_Name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
 <td></td>
 <td>12</td>
-<td>Page_Test.Select_Vehicle_Page_Test@3cfdd820</td></tr>
+<td>Page_Test.Select_Vehicle_Page_Test@4b2c5e02</td></tr>
 <tr>
-<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td title='Page_Test.Services_Page_Test.TC036_verify_Dealer_information()'><b>TC036_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>2</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<td>5</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC001_Verify_Login_with_Invalid_credential()'><b>TC001_Verify_Login_with_Invalid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>6</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<td>7</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC013_Verify_With_30_letter_nick_name()'><b>TC013_Verify_With_30_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>8</td>
+<td>Page_Test.Select_Vehicle_Page_Test@4b2c5e02</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC037_Verify_Owners_Manual()'><b>TC037_Verify_Owners_Manual</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>23</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC010_inavalid_OTP()'><b>TC010_inavalid_OTP</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>17</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC040_Verify_all_DIY_Videos_list()'><b>TC040_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>91</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC017_Home_page_verify()'><b>TC017_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>23</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC039_Verify_Tips_and_DIY_videos_inside_sideMenu()'><b>TC039_Verify_Tips_and_DIY_videos_inside_sideMenu</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>13</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC014_Verify_With_31_letter_nick_name()'><b>TC014_Verify_With_31_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>7</td>
+<td>Page_Test.Select_Vehicle_Page_Test@4b2c5e02</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC008_Verify_Login_with_valid_credential()'><b>TC008_Verify_Login_with_valid_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>21</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC011_edit_moble()'><b>TC011_edit_moble</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>36</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC035_Verify_My_Vehicle_more_details()'><b>TC035_Verify_My_Vehicle_more_details</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>16</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC038_Verify_my_Vehicle_service_History()'><b>TC038_Verify_my_Vehicle_service_History</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>136</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC037_Verify_dealer_manager_info()'><b>TC037_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC005_Terms_of_use_button()'><b>TC005_Terms_of_use_button</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>13</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC033_Verify_emergency_contacts()'><b>TC033_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>16</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC016_Select_Vehicle()'><b>TC016_Select_Vehicle</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>7</td>
+<td>Page_Test.Select_Vehicle_Page_Test@4b2c5e02</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC003_Verify_Login_with_short_length_of_mobile_number_credential()'><b>TC003_Verify_Login_with_short_length_of_mobile_number_credential</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>4</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC036_Verify_My_Vehicle_Documents()'><b>TC036_Verify_My_Vehicle_Documents</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>44</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC032_Manage_License()'><b>TC032_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>18</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
 <tr>
 <td title='Page_Test.Login_Page_Test.TC002_invalidmobileno()'><b>TC002_invalidmobileno</b><br>Test class: Page_Test.Login_Page_Test</td>
 <td></td>
-<td>6</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
+<td>7</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
 <tr>
-<td title='Page_Test.Login_Page_Test.TC006_Privacy_policy()'><b>TC006_Privacy_policy</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td title='Page_Test.My_Profile_Page_Test.TC027_Verify_My_Profile()'><b>TC027_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
 <td>9</td>
-<td>Page_Test.Login_Page_Test@1b410b60</td></tr>
-<tr>
-<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
-<td></td>
-<td>0</td>
-<td>Page_Test.Home_Page_Test@928763c</td></tr>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
 <tr>
 <td title='Page_Test.My_Profile_Page_Test.TC029_edit_profile_button()'><b>TC029_edit_profile_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
 <td></td>
-<td>0</td>
-<td>Page_Test.My_Profile_Page_Test@e25951c</td></tr>
+<td>15</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC007_contact_Us()'><b>TC007_contact_Us</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC034_Vehicle_details_on_service_page()'><b>TC034_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>6</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC034_Verify_My_Vehicle()'><b>TC034_Verify_My_Vehicle</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>25</td>
+<td>Page_Test.Vehicle_Details_test@4bc222e</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC028_verify_more_detais_button()'><b>TC028_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>4</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC038_Verify_Last_Serviced()'><b>TC038_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>179</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC039_Verify_all_tips_list()'><b>TC039_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>126</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC035_verify_service_type()'><b>TC035_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@2dc9b0f5</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC009_resend_butn()'><b>TC009_resend_butn</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>21</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC022_Verify_Technical_Support_Manager()'><b>TC022_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>7</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC030_edit_Personal_Details()'><b>TC030_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>81</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
+<tr>
+<td title='Page_Test.Select_Vehicle_Page_Test.TC015_Verify_With_29_letter_nick_name()'><b>TC015_Verify_With_29_letter_nick_name</b><br>Test class: Page_Test.Select_Vehicle_Page_Test</td>
+<td></td>
+<td>8</td>
+<td>Page_Test.Select_Vehicle_Page_Test@4b2c5e02</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC023_Verify_Dealer_Locator()'><b>TC023_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>13</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager()'><b>TC020_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>19</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC019_Verify_Documents()'><b>TC019_Verify_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>88</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC024_Select_city()'><b>TC024_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>35</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC021_Verify_RSA()'><b>TC021_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>28</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Login_Page_Test.TC004_max_digit_mobile_number()'><b>TC004_max_digit_mobile_number</b><br>Test class: Page_Test.Login_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.Login_Page_Test@6b0d80ed</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC018__verify_Navigate()'><b>TC018__verify_Navigate</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>9</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC025_View_dealer_name_and_address()'><b>TC025_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>15</td>
+<td>Page_Test.Home_Page_Test@57a3e26a</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC031_change_original_Personal_Details()'><b>TC031_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>14</td>
+<td>Page_Test.My_Profile_Page_Test@75c56eb9</td></tr>
 </table><p>
 </body>
 </html>
