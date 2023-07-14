@@ -204,15 +204,5 @@ public class Home_Page_Test extends Base_Utility {
 			
 		}
 	}
-//	@Test(priority = 8)
-//	public void TC035_Service_information()
-//	{
-////		ob = new Home_Page();
-////		login = new Login_Page_Test();
-////		login.login();
-//		scrollByText("Discover");
-//		ob.Service_info();
-	//		}
-
 
 }

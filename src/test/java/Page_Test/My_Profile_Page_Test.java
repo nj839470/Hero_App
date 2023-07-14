@@ -19,7 +19,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 	public My_Profile_Page ob;
 
 	@Test(priority = 0)
-	public void TC027_Verify_My_Profile() throws InterruptedException {
+	public void TC026_Verify_My_Profile() throws InterruptedException {
 		msg("************************My_Profile_Page_Test**************************");
 		ob = new My_Profile_Page();
 //		login = new Login_Page_Test();
@@ -40,7 +40,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC028_verify_more_detais_button() {
+	public void TC027_verify_more_detais_button() {
 		try{
 		Custom_click(ob.More_details(), "More details");
 		ob.user_info();
@@ -52,7 +52,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC029_edit_profile_button() {
+	public void TC028_edit_profile_button() {
 		try {
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
@@ -84,7 +84,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		}
 	}
 	@Test(priority = 3)
-	public void TC030_edit_Personal_Details() throws InterruptedException {
+	public void TC029_edit_Personal_Details() throws InterruptedException {
 		map = new LinkedHashMap<>();
 		try {
 		map.put("Name", ob.edit_full_name().getText());
@@ -145,7 +145,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		}
 }
 	@Test(dependsOnMethods = "TC030_edit_Personal_Details()",priority = 4)
-	public void TC031_change_original_Personal_Details() throws InterruptedException {
+	public void TC030_change_original_Personal_Details() throws InterruptedException {
 		try {
 		Custom_click(ob.More_details(), "More details");
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
@@ -164,7 +164,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		}
 		}
 	@Test(priority = 5)
-	public void TC032_Manage_License() throws InterruptedException
+	public void TC031_Manage_License() throws InterruptedException
 	{
 		try {
 		Custom_click(ob.manage_license(), " Manage License");
@@ -191,7 +191,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		}
 	}
 	@Test(priority = 6)
-	public void TC033_Verify_emergency_contacts() throws InterruptedException
+	public void TC032_Verify_emergency_contacts() throws InterruptedException
 	{
 		try {
 		Custom_click(ob.emergency_contacts(), "Emergency contacts");

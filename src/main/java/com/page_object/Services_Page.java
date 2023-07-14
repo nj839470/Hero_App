@@ -126,18 +126,6 @@ public class Services_Page extends Base_Utility {
 	private WebElement Days;
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 0']")
 	private WebElement Kilometer_750;
-	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 1']")
-	private WebElement Kilometer_3500;
-	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 2']")
-	private WebElement Kilometer_6500;
-	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 3']")
-	private WebElement Kilometer_9500;
-	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 4']")
-	private WebElement Kilometer_12500;
-	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 5']")
-	private WebElement Kilometer_15500;
-	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 0']")
-	private WebElement Days_60;
 	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
 	private List<WebElement> Service_schedule;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_subtitle']")
@@ -152,6 +140,16 @@ public class Services_Page extends Base_Utility {
 	private WebElement KM_24500;
 	@FindBy(xpath ="//android.widget.TextView[@text ='27.5k km']")
 	private WebElement KM_27500;
+	@FindBy(xpath ="//android.widget.TextView[@text = '560+ days']")
+	private WebElement days_560;
+	@FindBy(xpath ="//android.widget.TextView[@text = '660+ days']")
+	private WebElement days_660;
+	@FindBy(xpath ="//android.widget.TextView[@text = '760+ days']")
+	private WebElement days_760;
+	@FindBy(xpath ="//android.widget.TextView[@text = '860+ days']")
+	private WebElement days_860;
+	@FindBy(xpath ="//android.widget.TextView[@text = '960+ days']")
+	private WebElement days_960;
 	public WebElement Service_Schedule() {
 		return Service_Schedule;
 	}
@@ -182,27 +180,28 @@ public class Services_Page extends Base_Utility {
 	{
 		return Days;
 	}
+	public WebElement days_560()
+	{
+		return days_560;
+	}
+	public WebElement days_660()
+	{
+		return days_660;
+	}
+	public WebElement days_760()
+	{
+		return days_760;
+	}
+	public WebElement days_860()
+	{
+		return days_860;
+	}
+	public WebElement days_960()
+	{
+		return days_960;
+	}
 	public WebElement Kilometer_750() {
 		return Kilometer_750;
-	}
-	public WebElement Kilometer_3500() {
-		return Kilometer_3500 ;
-	}
-	public WebElement Kilometer_6500() {
-		return Kilometer_6500;
-	}
-	public WebElement Kilometer_9500() {
-		return Kilometer_9500;
-	}
-	public WebElement Kilometer_12500() {
-		return Kilometer_12500;
-	}
-	public WebElement Kilometer_15500() {
-		return Kilometer_15500;
-	}
-	public WebElement Days_60()
-	{
-		return Days_60;
 	}
 	public void Service_schedule()
 	{

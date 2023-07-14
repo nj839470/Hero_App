@@ -16,7 +16,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	public Login_Page_Test login;
 
 	@Test(priority = 0)
-	public void TC034_Verify_My_Vehicle() throws InterruptedException {
+	public void TC033_Verify_My_Vehicle() throws InterruptedException {
 		msg("*********************My Vehicle page**************************");
 		ob = new Vehicle_Details();
 //		login = new Login_Page_Test();
@@ -51,7 +51,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC035_Verify_My_Vehicle_more_details() {
+	public void TC034_Verify_My_Vehicle_more_details() {
 		try {
 		Custom_click(ob.more_details(), ob.more_details().getText());
 		ob.vehicle_info();
@@ -66,7 +66,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	}
 
 	@Test(priority = 2)
-	public void TC036_Verify_My_Vehicle_Documents() throws InterruptedException {
+	public void TC035_Verify_My_Vehicle_Documents() throws InterruptedException {
 		try {
 		Custom_click(ob.my_vehicle_documents(), ob.my_vehicle_documents().getText());
 		ob.Documents_list();
@@ -77,7 +77,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	}
 
 	@Test(priority = 3)
-	public void TC037_Verify_Owners_Manual() {
+	public void TC036_Verify_Owners_Manual() {
 		try {
 		Custom_click(ob.owners_manual(), "Owners manual");
 		try {
@@ -93,7 +93,7 @@ public class Vehicle_Details_test extends Base_Utility {
 		}
 	}
 	@Test(priority = 4)
-	public void TC038_Verify_my_Vehicle_service_History() {
+	public void TC037_Verify_my_Vehicle_service_History() {
 		try {
 		Custom_click(ob.My_vehicle_Service_history(), "My Vehicle Service history");
 		try {
@@ -111,7 +111,7 @@ public class Vehicle_Details_test extends Base_Utility {
 		}
 	}
 	@Test(priority = 5)
-	public void TC039_Verify_Tips_and_DIY_videos_inside_sideMenu() throws InterruptedException
+	public void TC038_Verify_Tips_and_DIY_videos_inside_sideMenu() throws InterruptedException
 	{
 		try {
 		Custom_click(ob.Tips_and_DIY_videos(), ob.Tips_and_DIY_videos().getText());

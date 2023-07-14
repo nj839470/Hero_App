@@ -8,9 +8,9 @@
     <classes>
       <class name="Page_Test.Services_Page_Test">
         <methods>
-          <include name="TC050_Verify_all_DIY_Videos_list"/>
+          <include name="TC059_Verify_all_tips_list"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC049_Verify_all_tips_list"/>
+          <include name="TC060_Verify_all_DIY_Videos_list"/>
         </methods>
       </class> <!-- Page_Test.Services_Page_Test -->
     </classes>
