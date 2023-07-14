@@ -122,6 +122,8 @@ public class Services_Page extends Base_Utility {
 	private WebElement Service_Schedule;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/tv_km']")
 	private WebElement Kilometer;
+	@FindBy(xpath="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_daystext']")
+	private WebElement Days;
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 0']")
 	private WebElement Kilometer_750;
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 1']")
@@ -133,42 +135,74 @@ public class Services_Page extends Base_Utility {
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 4']")
 	private WebElement Kilometer_12500;
 	@FindBy(xpath = "//android.widget.SeekBar[@content-desc ='Value, 5']")
-	private WebElement Kilometer_morethan_15500;
+	private WebElement Kilometer_15500;
+	@FindBy(xpath ="//android.widget.SeekBar[@content-desc ='Value, 0']")
+	private WebElement Days_60;
 	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
 	private List<WebElement> Service_schedule;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_subtitle']")
 	private List<WebElement> Service_schedule_subtitle;
-
+	@FindBy(xpath ="//android.widget.TextView[@text ='15.5k km']")
+	private WebElement KM_15500;
+	@FindBy(xpath ="//android.widget.TextView[@text ='18.5k km']")
+	private WebElement KM_18500;
+	@FindBy(xpath ="//android.widget.TextView[@text ='21.5k km']")
+	private WebElement KM_21500;
+	@FindBy(xpath ="//android.widget.TextView[@text ='24.5k km']")
+	private WebElement KM_24500;
+	@FindBy(xpath ="//android.widget.TextView[@text ='27.5k km']")
+	private WebElement KM_27500;
 	public WebElement Service_Schedule() {
 		return Service_Schedule;
 	}
-
+	public WebElement KM_15500()
+	{
+		return KM_15500;
+	}
+	public WebElement KM_18500()
+	{
+		return KM_18500;
+	}
+	public WebElement KM_21500()
+	{
+		return KM_21500;
+	}
+	public WebElement KM_24500()
+	{
+		return KM_24500;
+	}
+	public WebElement KM_27500()
+	{
+		return KM_27500;
+	}
 	public WebElement Kilometer() {
 		return Kilometer;
 	}
-
+	public WebElement Days()
+	{
+		return Days;
+	}
 	public WebElement Kilometer_750() {
 		return Kilometer_750;
 	}
-
 	public WebElement Kilometer_3500() {
-		return Kilometer_3500;
+		return Kilometer_3500 ;
 	}
-
 	public WebElement Kilometer_6500() {
 		return Kilometer_6500;
 	}
-
 	public WebElement Kilometer_9500() {
 		return Kilometer_9500;
 	}
-
 	public WebElement Kilometer_12500() {
 		return Kilometer_12500;
 	}
-
-	public WebElement Kilometer_morethan_15500() {
-		return Kilometer_morethan_15500;
+	public WebElement Kilometer_15500() {
+		return Kilometer_15500;
+	}
+	public WebElement Days_60()
+	{
+		return Days_60;
 	}
 	public void Service_schedule()
 	{
@@ -176,28 +210,45 @@ public class Services_Page extends Base_Utility {
 		{
 			if(i<10)
 			{
-			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3));
+			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
+			if(i==6)
+			{
+				i=9;
+			}
 			}
 			else if(i>=10)
 			{
-				Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
+				String Service_heading = Service_schedule.get(i).getText();
+				Custom_click(Service_schedule.get(i), Service_heading);
 				for(int j=0;j<Service_schedule_subtitle.size();j++)
 				{
 					msg(Service_schedule_subtitle.get(j).getText());
-					if(j==8)
-					{
-						Scroll_down_page_Action("Below more then 9");
-						j=0;
-					}
-					
 				}
-				try {
-				Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
-				}catch(Exception e)
+				Custom_click(Service_schedule.get(i),Service_heading);
+			}
+		}
+	}
+	public void Service_schedule_More_Than_15500()
+	{
+		for(int i=5;i<Service_schedule.size();i++)
+		{
+			if(i<11)
+			{
+			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
+			if(i==7)
+			{
+				i=10;
+			}
+			}
+			else if(i>=11)
+			{
+				String Service_heading = Service_schedule.get(i).getText();
+				Custom_click(Service_schedule.get(i), Service_heading);
+				for(int j=0;j<Service_schedule_subtitle.size();j++)
 				{
-					Scroll_UP_page_Action(Service_schedule.get(i).getText());
-					Custom_click(Service_schedule.get(i), Service_schedule.get(i).getText());
+					msg(Service_schedule_subtitle.get(j).getText());
 				}
+				Custom_click(Service_schedule.get(i),Service_heading);
 			}
 		}
 	}

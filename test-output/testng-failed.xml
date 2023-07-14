@@ -4,14 +4,15 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="Services_Page_Test(failed)">
     <classes>
       <class name="Page_Test.Services_Page_Test">
         <methods>
+          <include name="TC050_Verify_all_DIY_Videos_list"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC037_Verify_dealer_manager_info"/>
+          <include name="TC049_Verify_all_tips_list"/>
         </methods>
       </class> <!-- Page_Test.Services_Page_Test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- Services_Page_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

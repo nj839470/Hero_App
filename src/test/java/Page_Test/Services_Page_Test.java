@@ -18,51 +18,49 @@ public class Services_Page_Test extends Base_Utility {
 //		login = new Login_Page_Test();
 //		login.login();
 		try {
-		Thread.sleep(2000);
-		Custom_click(ob.Services(), " Services button");
-		msg("Vehicle brand name = " + ob.Vehicle_brand_Name().getText());
-		if (ob.Vehicle_Nick_Name().isDisplayed() == true) {
-			msg("Vehicle nick name = " + ob.Vehicle_Nick_Name().getText());
-		}
-		if (ob.Vehicle_Number().isDisplayed() == true) {
-			msg("Vehicle number =" + ob.Vehicle_Number().getText());
-		}
-		}catch(Exception e)
-		{
-			msg(""+e);
-			
+			Thread.sleep(2000);
+			Custom_click(ob.Services(), " Services button");
+			msg("Vehicle brand name = " + ob.Vehicle_brand_Name().getText());
+			if (ob.Vehicle_Nick_Name().isDisplayed() == true) {
+				msg("Vehicle nick name = " + ob.Vehicle_Nick_Name().getText());
+			}
+			if (ob.Vehicle_Number().isDisplayed() == true) {
+				msg("Vehicle number =" + ob.Vehicle_Number().getText());
+			}
+		} catch (Exception e) {
+			msg("" + e);
+
 		}
 	}
 
 	@Test(priority = 1)
 	public void TC035_verify_service_type() {
 		try {
-		if (ob.Vehicle_Service_type().isDisplayed() == true) {
-			msg("Vehicle Service type =" + ob.Vehicle_Service_type().getText());
-		}
-		if (ob.Vehicle_service_booking_no().isDisplayed() == true) {
-			msg("Vehicle Service booking number = " + ob.Vehicle_service_booking_no().getText());
-		}
-		String service_status = ob.next_service_info().getText();
-		msg("Service status =" + service_status);
-		if (service_status.equalsIgnoreCase("Service Scheduled")) {
-			msg("Service date and time =" + ob.service_date_time().getText());
-		}
-		}catch(Exception e)
-		{
-			msg(""+e);
-			
+			if (ob.Vehicle_Service_type().isDisplayed() == true) {
+				msg("Vehicle Service type =" + ob.Vehicle_Service_type().getText());
+			}
+			if (ob.Vehicle_service_booking_no().isDisplayed() == true) {
+				msg("Vehicle Service booking number = " + ob.Vehicle_service_booking_no().getText());
+			}
+			String service_status = ob.next_service_info().getText();
+			msg("Service status =" + service_status);
+			if (service_status.equalsIgnoreCase("Service Scheduled")) {
+				msg("Service date and time =" + ob.service_date_time().getText());
+			}
+		} catch (Exception e) {
+			msg("" + e);
+
 		}
 	}
 
 	@Test(priority = 2)
-	public void TC036_verify_Dealer_information() 
-	{
+	public void TC036_verify_Dealer_information() {
 		ob.dealer_info();
 	}
 
 	@Test(priority = 3)
 	public void TC037_Verify_dealer_manager_info() {
+		try {
 		msg("Manager type =" + ob.manager_type().getText());
 		msg("Manager name =" + ob.manager_name().getText());
 		Custom_click(ob.call_manager(), " Call amanger");
@@ -70,60 +68,163 @@ public class Services_Page_Test extends Base_Utility {
 		driver.navigate().back();
 		driver.navigate().back();
 		msg("Manager contact number =" + ob.manage_phone_number().getText());
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
 	}
-//	@Test(priority = 4)
-//	public void TC036_View_Service_schedule_750()
-//	{
-////		ob = new Services_Page();
-////		login = new Login_Page_Test();
-////		login.login();
-////		Custom_click(ob.Services(), " Services button");
-//		Custom_click(ob.Service_Schedule(), "View Service Schedule");
-//		Custom_click(ob.Kilometer(), ob.Kilometer().getText());
-//		Custom_click(ob.Kilometer_750(), "750 Kilometer");
-//		ob.Service_schedule();
-//	}
-//	public void TC036_View_Service_schedule_3500()
-//	{
-//		Custom_click(ob.Kilometer_3500(),"3500 Kilometer");
-//		ob.Service_schedule();
-//	}
-//	public void TC036_View_Service_schedule_6500()
-//	{
-//		Custom_click(ob.Kilometer_6500(), "6500 Kilometer");
-//		ob.Service_schedule();
-//	}
-//	public void TC036_View_Service_schedule_9500()
-//	{
-//		Custom_click(ob.Kilometer_9500(), "9500 Kilometer");
-//		ob.Service_schedule();
-//	}
-//	public void TC036_View_Service_schedule_12500()
-//	{
-//		Custom_click(ob.Kilometer_12500(), "12500 Kilometer");
-//		ob.Service_schedule();
-//	}
-//	public void TC036_View_Service_schedule_15500()
-//	{
-//		Custom_click(ob.Kilometer_morethan_15500(), "More than 15500 Kilometer");
-//		ob.Service_schedule();
-//	}
+
 	@Test(priority = 4)
-	public void TC038_Verify_Last_Serviced() throws InterruptedException {
+	public void TC038_View_Service_schedule_750() {
+		try {
+		Custom_click(ob.Service_Schedule(), "View Service Schedule");
+		Custom_click(ob.Kilometer(), ob.Kilometer().getText());
+		Custom_click(ob.Kilometer_750(), "750 Kilometer");
+		ob.Service_schedule();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 5)
+	public void TC039_View_Service_schedule_3500() {
+		try {
+//		swipe_page_direction(46, 295, 159, 295, "3500 Kilometer");	// for real device
+		swipe_page_direction(69, 412, 250, 412, "3500 Kilometer");	// for Emulator
+		ob.Service_schedule();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 6)
+	public void TC040_View_Service_schedule_6500() {
+		try {
+//		swipe_page_direction(159, 295, 290, 295, "3500 Kilometer");	// for real device
+		swipe_page_direction(250, 412, 435, 412, "6500 Kilometer");	// for Emulator
+		ob.Service_schedule();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 7)
+	public void TC041_View_Service_schedule_9500() {
+		try {
+//		swipe_page_direction(290, 295, 416, 295, "9500 Kilometer"); // for real device
+		swipe_page_direction(435, 412, 620, 412, "9500 Kilometer"); //for emulator
+		ob.Service_schedule();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 8)
+	public void TC042_View_Service_schedule_12500() {
+		try {
+//		swipe_page_direction(416, 295, 545, 295, "9500 Kilometer"); // for real device
+		swipe_page_direction(620, 412, 824, 412, "12500 Kilometer"); // for Emulator
+		ob.Service_schedule();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 9)
+	public void TC043_View_Service_schedule_15500() {
+		try {
+//		swipe_page_direction(545, 295, 675, 295, "9500 Kilometer"); // for real device
+		swipe_page_direction(824, 412, 1002, 412, "15500 Kilometer"); // for Emulator
+		String text = ob.KM_15500().getText();
+		Custom_click(ob.KM_15500(),text );
+		msg("Paid Service for = " +text);
+		ob.Service_schedule_More_Than_15500();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(dependsOnMethods = "TC043_View_Service_schedule_15500()", priority = 10)
+	public void TC044_View_Service_schedule_18500() {
+		try {
+		String text = ob.KM_18500().getText();
+		Custom_click(ob.KM_18500(), text);
+		msg("Paid Service for = " +text);
+		ob.Service_schedule_More_Than_15500();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+
+	}
+
+	@Test(dependsOnMethods = "TC043_View_Service_schedule_15500()", priority = 11)
+	public void TC045_View_Service_schedule_21500() {
+		try {
+			String text = ob.KM_21500().getText();
+		Custom_click(ob.KM_21500(),text );
+		msg("Paid Service for = " +text);
+		ob.Service_schedule_More_Than_15500();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(dependsOnMethods = "TC043_View_Service_schedule_15500()", priority = 12)
+	public void TC046_View_Service_schedule_24500() {
+		try {
+			String text = ob.KM_24500().getText();
+		Custom_click(ob.KM_24500(), text);
+		msg("Paid Service for = " +text);
+		ob.Service_schedule_More_Than_15500();
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(dependsOnMethods = "TC043_View_Service_schedule_15500()", priority = 13)
+	public void TC047_View_Service_schedule_27500() {
+		try {
+			String text = ob.KM_27500().getText();
+		Custom_click(ob.KM_27500(), text);
+		msg("Paid Service for = " +text);
+		ob.Service_schedule_More_Than_15500();
+		Custom_click(ob.back_button(), " Back from Servie Schedule");
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
+	}
+
+	@Test(priority = 14)
+	public void TC048_Verify_Last_Serviced() throws InterruptedException {
+		try {
 		Custom_click(ob.Last_serviced_history(), "Last serviced history");
 		ob.Service_history();
 		Custom_click(ob.back_button(), " Back from servie history");
+		} catch (Exception e) {
+			msg("" + e);
+
+		}
 	}
-	@Test(priority = 6)
-	public void TC039_Verify_all_tips_list() throws InterruptedException
-	{
+
+	@Test(priority = 15)
+	public void TC049_Verify_all_tips_list() throws InterruptedException {
 		scrollByText("Tips & DIY");
 		Custom_click(ob.Tips_and_DIY(), "Tips and DIY");
 		ob.tips_list();
 	}
-	@Test(priority = 7)
-	public void TC040_Verify_all_DIY_Videos_list() throws InterruptedException
-	{
+
+	@Test(priority = 16)
+	public void TC050_Verify_all_DIY_Videos_list() throws InterruptedException {
 		Custom_click(ob.DIY_Videos_button(), "DIY video button");
 		ob.DIY_Videos_list();
 		Custom_click(ob.back_button(), " Back from Tips and DIY page");

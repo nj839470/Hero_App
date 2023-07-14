@@ -144,7 +144,7 @@ public class Base_Utility
 //			db.setCapability("appium:automationName", "uiautomator2");
 //			db.setCapability("platformName", "Android");
 //			db.setCapability("appium:deviceName", "realme C33 2023");
-//			db.setCapability("appium:udid", "192.168.1.2:5555"); 
+//			db.setCapability("appium:udid", "3323262910AA04DS"); //3323262910AA04DS //192.168.1.2:5555
 //			db.setCapability("appium:avdLaunchTimeout", 600000);
 //			db.setCapability("appPackage", "com.customerapp.hero");
 //			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
@@ -340,8 +340,10 @@ public class Base_Utility
 			action.press(PointOption.point(startx, starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
 					.moveTo(PointOption.point(endx, endy)).release().perform();
 			log.info("Successfully  Swipe page direction Action " + fieldname);
+			test.log(Status.PASS, "Successfully  Swipe page direction Action = "+ fieldname);
 		} catch (Exception e) {
 			log.error("==NOT==Unable To Swipe page direction Action " + fieldname);
+			test.log(Status.FAIL,fieldname+ "Unable To Swipe page direction Action " + fieldname +e);
 		}
 	}
 	//======================================================================================================================================================	    
