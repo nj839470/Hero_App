@@ -115,7 +115,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Custom_click(ob.pin_code(), "Pin code");
 		ob.pin_code().clear();
 		custom_sendkeys(ob.pin_code(), "110027", "Pin code");

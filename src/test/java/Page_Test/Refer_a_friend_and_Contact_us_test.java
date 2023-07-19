@@ -19,9 +19,9 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{
 		msg("************************Refer a Friend**************************");
 		ob = new Refer_a_friend_and_Contact_us();
-		login = new Login_Page_Test();
-		login.login();
-		Thread.sleep(3000);
+//		login = new Login_Page_Test();
+//		login.login();
+//		Thread.sleep(3000);
 		try{
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
@@ -140,10 +140,12 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	public void TC050_Verify_Contact_via_Email() throws InterruptedException
 	{
 		Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
+		try {
 		if(ob.Contact_via_email().isDisplayed()==true)
 		{
 			Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
 		}
+		}catch(Exception e) { msg("Contact via email has already open");};
 		Thread.sleep(2000);
 		msg(ob.Welcome_message().getText());
 		msg(ob.Welcome_message2().getText());

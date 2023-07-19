@@ -163,7 +163,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private List<WebElement> Visit_page_text;
 	@FindBy(xpath = "//android.widget.Button[@text ='Log in']")
 	private WebElement facebook_login;
-	@FindBy(xpath = "//android.view.View[@content-desc=\"Log in\"]/android.widget.Button")
+	@FindBy(xpath = "//android.view.View[@content-desc=\"Log in\"]/android.widget.TextView")
 	private WebElement instagram_login;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement contact_via_email;

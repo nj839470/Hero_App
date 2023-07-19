@@ -57,6 +57,6 @@
 			<class name="Page_Test.My_Profile_Page_Test" />
 			<class name="Page_Test.Vehicle_Details_test" /> 
 			<class name="Page_Test.Services_Page_Test" />
-		</classes>
+			</classes>
 	</test>
 </suite> 

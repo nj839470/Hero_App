@@ -147,7 +147,7 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement blood_group;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id ='com.customerapp.hero:id/address_input_editext']")
 	private WebElement Street_name;
-	@FindBy(xpath ="(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[5]")
+	@FindBy(xpath ="//android.widget.LinearLayout[@resource-id ='com.customerapp.hero:id/user_pincode_lbl']//android.widget.EditText")
 	private WebElement pin_code;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement Save_button;
