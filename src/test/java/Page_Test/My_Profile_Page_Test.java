@@ -115,6 +115,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+		Thread.sleep(1000);
 		Custom_click(ob.pin_code(), "Pin code");
 		ob.pin_code().clear();
 		custom_sendkeys(ob.pin_code(), "110027", "Pin code");
@@ -144,13 +145,14 @@ public class My_Profile_Page_Test extends Base_Utility {
 			
 		}
 }
-	@Test(dependsOnMethods = "TC030_edit_Personal_Details()",priority = 4)
+	@Test(dependsOnMethods = "TC029_edit_Personal_Details()",priority = 4)
 	public void TC030_change_original_Personal_Details() throws InterruptedException {
 		try {
 		Custom_click(ob.More_details(), "More details");
 		Custom_click(ob.edit_profile_details_button(), "Edit profile details button");
 		custom_sendkeys(ob.edit_full_name(), map.get("Name"), " Original Name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+		driver.navigate().back();
 		custom_sendkeys(ob.edit_email_id(), map.get("Email ID"), "Original Email id");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 //		custom_sendkeys(ob.edit_registered_mobile_number(), map.get("Registered mobile number"),

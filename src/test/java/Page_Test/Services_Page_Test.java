@@ -15,8 +15,8 @@ public class Services_Page_Test extends Base_Utility {
 	public void TC034_Vehicle_details_on_service_page() throws InterruptedException {
 		msg("************************Service Page**************************");
 		ob = new Services_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		try {
 			Thread.sleep(2000);
 			Custom_click(ob.Services(), " Services button");

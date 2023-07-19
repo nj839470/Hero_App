@@ -1,125 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+<testng-results ignored="0" total="55" passed="54" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T16:11:44 IST" name="Hero_App" finished-at="2023-07-14T16:26:18 IST" duration-ms="874415">
+  <suite started-at="2023-07-18T16:25:01 IST" name="Hero_App" finished-at="2023-07-18T16:50:58 IST" duration-ms="1557522">
     <groups>
     </groups>
-    <test started-at="2023-07-14T16:11:44 IST" name="Services_Page_Test" finished-at="2023-07-14T16:26:18 IST" duration-ms="874415">
-      <class name="Page_Test.Services_Page_Test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:11:44 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-07-14T16:12:02 IST" duration-ms="18336" status="PASS">
+    <test started-at="2023-07-18T16:25:01 IST" name="All test class" finished-at="2023-07-18T16:50:58 IST" duration-ms="1557522">
+      <class name="Page_Test.Home_Page_Test">
+        <test-method signature="TC017_Home_page_verify()[pri:0, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:28:28 IST" name="TC017_Home_page_verify" finished-at="2023-07-18T16:28:47 IST" duration-ms="18867" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC034_Vehicle_details_on_service_page()[pri:0, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:12:02 IST" name="TC034_Vehicle_details_on_service_page" finished-at="2023-07-14T16:13:32 IST" duration-ms="89413" status="PASS">
+        </test-method> <!-- TC017_Home_page_verify -->
+        <test-method signature="TC018__verify_Navigate()[pri:1, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:28:47 IST" name="TC018__verify_Navigate" finished-at="2023-07-18T16:28:53 IST" duration-ms="6150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC018__verify_Navigate -->
+        <test-method signature="TC019_Verify_Documents()[pri:2, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:28:53 IST" name="TC019_Verify_Documents" finished-at="2023-07-18T16:30:23 IST" duration-ms="90082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC019_Verify_Documents -->
+        <test-method signature="TC020_Verify_Relationship_Manager()[pri:3, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:30:23 IST" name="TC020_Verify_Relationship_Manager" finished-at="2023-07-18T16:30:39 IST" duration-ms="15329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC020_Verify_Relationship_Manager -->
+        <test-method signature="TC021_Verify_RSA()[pri:4, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:30:39 IST" name="TC021_Verify_RSA" finished-at="2023-07-18T16:31:30 IST" duration-ms="51350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021_Verify_RSA -->
+        <test-method signature="TC022_Verify_Technical_Support_Manager()[pri:5, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:31:30 IST" name="TC022_Verify_Technical_Support_Manager" finished-at="2023-07-18T16:31:34 IST" duration-ms="4443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC022_Verify_Technical_Support_Manager -->
+        <test-method signature="TC023_Verify_Dealer_Locator()[pri:6, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:31:34 IST" name="TC023_Verify_Dealer_Locator" finished-at="2023-07-18T16:31:44 IST" duration-ms="9630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC023_Verify_Dealer_Locator -->
+        <test-method signature="TC024_Select_city()[pri:7, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:31:44 IST" name="TC024_Select_city" finished-at="2023-07-18T16:32:11 IST" duration-ms="26774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC024_Select_city -->
+        <test-method signature="TC025_View_dealer_name_and_address()[pri:8, instance:Page_Test.Home_Page_Test@74f6c5d8]" started-at="2023-07-18T16:32:11 IST" name="TC025_View_dealer_name_and_address" finished-at="2023-07-18T16:32:22 IST" duration-ms="11619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC025_View_dealer_name_and_address -->
+      </class> <!-- Page_Test.Home_Page_Test -->
+      <class name="Page_Test.Vehicle_Details_test">
+        <test-method signature="TC033_Verify_My_Vehicle()[pri:0, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:36:23 IST" name="TC033_Verify_My_Vehicle" finished-at="2023-07-18T16:36:38 IST" duration-ms="14206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC033_Verify_My_Vehicle -->
+        <test-method signature="TC034_Verify_My_Vehicle_more_details()[pri:1, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:36:38 IST" name="TC034_Verify_My_Vehicle_more_details" finished-at="2023-07-18T16:36:49 IST" duration-ms="11018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC034_Verify_My_Vehicle_more_details -->
+        <test-method signature="TC035_Verify_My_Vehicle_Documents()[pri:2, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:36:49 IST" name="TC035_Verify_My_Vehicle_Documents" finished-at="2023-07-18T16:37:44 IST" duration-ms="55489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC035_Verify_My_Vehicle_Documents -->
+        <test-method signature="TC036_Verify_Owners_Manual()[pri:3, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:37:44 IST" name="TC036_Verify_Owners_Manual" finished-at="2023-07-18T16:38:26 IST" duration-ms="42288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC036_Verify_Owners_Manual -->
+        <test-method signature="TC037_Verify_my_Vehicle_service_History()[pri:4, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:38:26 IST" name="TC037_Verify_my_Vehicle_service_History" finished-at="2023-07-18T16:40:05 IST" duration-ms="98499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC037_Verify_my_Vehicle_service_History -->
+        <test-method signature="TC038_Verify_Tips_and_DIY_videos_inside_sideMenu()[pri:5, instance:Page_Test.Vehicle_Details_test@34b9f960]" started-at="2023-07-18T16:40:05 IST" name="TC038_Verify_Tips_and_DIY_videos_inside_sideMenu" finished-at="2023-07-18T16:40:12 IST" duration-ms="7528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC038_Verify_Tips_and_DIY_videos_inside_sideMenu -->
+      </class> <!-- Page_Test.Vehicle_Details_test -->
+      <class name="Page_Test.Services_Page_Test">
+        <test-method signature="TC034_Vehicle_details_on_service_page()[pri:0, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:12 IST" name="TC034_Vehicle_details_on_service_page" finished-at="2023-07-18T16:40:17 IST" duration-ms="4763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC034_Vehicle_details_on_service_page -->
-        <test-method signature="TC035_verify_service_type()[pri:1, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:13:32 IST" name="TC035_verify_service_type" finished-at="2023-07-14T16:13:32 IST" duration-ms="490" status="PASS">
+        <test-method signature="TC035_verify_service_type()[pri:1, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:17 IST" name="TC035_verify_service_type" finished-at="2023-07-18T16:40:18 IST" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC035_verify_service_type -->
-        <test-method signature="TC036_verify_Dealer_information()[pri:2, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:13:32 IST" name="TC036_verify_Dealer_information" finished-at="2023-07-14T16:13:36 IST" duration-ms="3876" status="PASS">
+        <test-method signature="TC036_verify_Dealer_information()[pri:2, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:18 IST" name="TC036_verify_Dealer_information" finished-at="2023-07-18T16:40:21 IST" duration-ms="2840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC036_verify_Dealer_information -->
-        <test-method signature="TC037_Verify_dealer_manager_info()[pri:3, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:13:36 IST" name="TC037_Verify_dealer_manager_info" finished-at="2023-07-14T16:13:41 IST" duration-ms="4601" status="PASS">
+        <test-method signature="TC037_Verify_dealer_manager_info()[pri:3, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:21 IST" name="TC037_Verify_dealer_manager_info" finished-at="2023-07-18T16:40:26 IST" duration-ms="5375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC037_Verify_dealer_manager_info -->
-        <test-method signature="TC038_View_Service_schedule_750()[pri:4, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:13:41 IST" name="TC038_View_Service_schedule_750" finished-at="2023-07-14T16:14:05 IST" duration-ms="24025" status="PASS">
+        <test-method signature="TC038_View_Service_schedule_750()[pri:4, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:26 IST" name="TC038_View_Service_schedule_750" finished-at="2023-07-18T16:40:57 IST" duration-ms="30375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC038_View_Service_schedule_750 -->
-        <test-method signature="TC039_View_Service_schedule_3500()[pri:5, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:14:05 IST" name="TC039_View_Service_schedule_3500" finished-at="2023-07-14T16:14:24 IST" duration-ms="19678" status="PASS">
+        <test-method signature="TC039_View_Service_schedule_3500()[pri:5, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:40:57 IST" name="TC039_View_Service_schedule_3500" finished-at="2023-07-18T16:41:25 IST" duration-ms="28262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC039_View_Service_schedule_3500 -->
-        <test-method signature="TC040_View_Service_schedule_6500()[pri:6, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:14:24 IST" name="TC040_View_Service_schedule_6500" finished-at="2023-07-14T16:14:46 IST" duration-ms="21899" status="PASS">
+        <test-method signature="TC040_View_Service_schedule_6500()[pri:6, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:41:25 IST" name="TC040_View_Service_schedule_6500" finished-at="2023-07-18T16:41:54 IST" duration-ms="29507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC040_View_Service_schedule_6500 -->
-        <test-method signature="TC041_View_Service_schedule_9500()[pri:7, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:14:46 IST" name="TC041_View_Service_schedule_9500" finished-at="2023-07-14T16:15:06 IST" duration-ms="19580" status="PASS">
+        <test-method signature="TC041_View_Service_schedule_9500()[pri:7, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:41:54 IST" name="TC041_View_Service_schedule_9500" finished-at="2023-07-18T16:42:18 IST" duration-ms="23610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC041_View_Service_schedule_9500 -->
-        <test-method signature="TC042_View_Service_schedule_12500()[pri:8, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:15:06 IST" name="TC042_View_Service_schedule_12500" finished-at="2023-07-14T16:15:27 IST" duration-ms="21133" status="PASS">
+        <test-method signature="TC042_View_Service_schedule_12500()[pri:8, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:42:18 IST" name="TC042_View_Service_schedule_12500" finished-at="2023-07-18T16:42:57 IST" duration-ms="39324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC042_View_Service_schedule_12500 -->
-        <test-method signature="TC043_View_Service_schedule_15500()[pri:9, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:15:27 IST" name="TC043_View_Service_schedule_15500" finished-at="2023-07-14T16:15:47 IST" duration-ms="19768" status="PASS">
+        <test-method signature="TC043_View_Service_schedule_15500()[pri:9, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:42:57 IST" name="TC043_View_Service_schedule_15500" finished-at="2023-07-18T16:43:28 IST" duration-ms="30361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC043_View_Service_schedule_15500 -->
-        <test-method signature="TC044_View_Service_schedule_18500()[pri:10, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:15:47 IST" name="TC044_View_Service_schedule_18500" finished-at="2023-07-14T16:16:05 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="18631" status="PASS">
+        <test-method signature="TC044_View_Service_schedule_18500()[pri:10, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:43:28 IST" name="TC044_View_Service_schedule_18500" finished-at="2023-07-18T16:43:57 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="28927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC044_View_Service_schedule_18500 -->
-        <test-method signature="TC045_View_Service_schedule_21500()[pri:11, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:16:05 IST" name="TC045_View_Service_schedule_21500" finished-at="2023-07-14T16:16:26 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="20963" status="PASS">
+        <test-method signature="TC045_View_Service_schedule_21500()[pri:11, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:43:57 IST" name="TC045_View_Service_schedule_21500" finished-at="2023-07-18T16:44:30 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="33019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC045_View_Service_schedule_21500 -->
-        <test-method signature="TC046_View_Service_schedule_24500()[pri:12, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:16:26 IST" name="TC046_View_Service_schedule_24500" finished-at="2023-07-14T16:16:44 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="17982" status="PASS">
+        <test-method signature="TC046_View_Service_schedule_24500()[pri:12, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:44:30 IST" name="TC046_View_Service_schedule_24500" finished-at="2023-07-18T16:44:58 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="28736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC046_View_Service_schedule_24500 -->
-        <test-method signature="TC047_View_Service_schedule_27500()[pri:13, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:16:44 IST" name="TC047_View_Service_schedule_27500" finished-at="2023-07-14T16:17:05 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="21248" status="PASS">
+        <test-method signature="TC047_View_Service_schedule_27500()[pri:13, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:44:58 IST" name="TC047_View_Service_schedule_27500" finished-at="2023-07-18T16:45:33 IST" depends-on-methods="TC043_View_Service_schedule_15500()" duration-ms="34395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC047_View_Service_schedule_27500 -->
-        <test-method signature="TC048_View_Service_schedule_60_days()[pri:14, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:17:05 IST" name="TC048_View_Service_schedule_60_days" finished-at="2023-07-14T16:17:24 IST" duration-ms="18757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC048_View_Service_schedule_60_days -->
-        <test-method signature="TC049_View_Service_schedule_160_days()[pri:15, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:17:24 IST" name="TC049_View_Service_schedule_160_days" finished-at="2023-07-14T16:17:43 IST" duration-ms="19181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC049_View_Service_schedule_160_days -->
-        <test-method signature="TC050_View_Service_schedule_260_days()[pri:16, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:17:43 IST" name="TC050_View_Service_schedule_260_days" finished-at="2023-07-14T16:18:04 IST" duration-ms="20977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC050_View_Service_schedule_260_days -->
-        <test-method signature="TC051_View_Service_schedule_360_days()[pri:17, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:18:04 IST" name="TC051_View_Service_schedule_360_days" finished-at="2023-07-14T16:18:23 IST" duration-ms="18152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC051_View_Service_schedule_360_days -->
-        <test-method signature="TC052_View_Service_schedule_460_days()[pri:18, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:18:23 IST" name="TC052_View_Service_schedule_460_days" finished-at="2023-07-14T16:18:43 IST" duration-ms="20419" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC052_View_Service_schedule_460_days -->
-        <test-method signature="TC053_View_Service_schedule_560_days()[pri:19, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:18:43 IST" name="TC053_View_Service_schedule_560_days" finished-at="2023-07-14T16:19:03 IST" duration-ms="19650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC053_View_Service_schedule_560_days -->
-        <test-method signature="TC054_View_Service_schedule_660_days()[pri:20, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:19:03 IST" name="TC054_View_Service_schedule_660_days" finished-at="2023-07-14T16:19:20 IST" depends-on-methods="TC053_View_Service_schedule_560_days()" duration-ms="17810" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC054_View_Service_schedule_660_days -->
-        <test-method signature="TC055_View_Service_schedule_760_days()[pri:21, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:19:20 IST" name="TC055_View_Service_schedule_760_days" finished-at="2023-07-14T16:19:40 IST" depends-on-methods="TC053_View_Service_schedule_560_days()" duration-ms="19894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC055_View_Service_schedule_760_days -->
-        <test-method signature="TC056_View_Service_schedule_860_days()[pri:22, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:19:40 IST" name="TC056_View_Service_schedule_860_days" finished-at="2023-07-14T16:19:58 IST" depends-on-methods="TC053_View_Service_schedule_560_days()" duration-ms="18099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC056_View_Service_schedule_860_days -->
-        <test-method signature="TC057_View_Service_schedule_960_days()[pri:23, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:19:58 IST" name="TC057_View_Service_schedule_960_days" finished-at="2023-07-14T16:20:20 IST" depends-on-methods="TC053_View_Service_schedule_560_days()" duration-ms="21165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC057_View_Service_schedule_960_days -->
-        <test-method signature="TC058_Verify_Last_Serviced()[pri:24, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:20:20 IST" name="TC058_Verify_Last_Serviced" finished-at="2023-07-14T16:23:54 IST" duration-ms="214565" status="PASS">
+        <test-method signature="TC058_Verify_Last_Serviced()[pri:24, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:45:33 IST" name="TC058_Verify_Last_Serviced" finished-at="2023-07-18T16:46:21 IST" duration-ms="48662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC058_Verify_Last_Serviced -->
-        <test-method signature="TC059_Verify_all_tips_list()[pri:25, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:23:54 IST" name="TC059_Verify_all_tips_list" finished-at="2023-07-14T16:25:08 IST" duration-ms="73477" status="PASS">
+        <test-method signature="TC059_Verify_all_tips_list()[pri:25, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:46:21 IST" name="TC059_Verify_all_tips_list" finished-at="2023-07-18T16:47:41 IST" duration-ms="79546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC059_Verify_all_tips_list -->
-        <test-method signature="TC060_Verify_all_DIY_Videos_list()[pri:26, instance:Page_Test.Services_Page_Test@1787f2a0]" started-at="2023-07-14T16:25:08 IST" name="TC060_Verify_all_DIY_Videos_list" finished-at="2023-07-14T16:26:18 IST" duration-ms="70547" status="PASS">
+        <test-method signature="TC060_Verify_all_DIY_Videos_list()[pri:26, instance:Page_Test.Services_Page_Test@43015c69]" started-at="2023-07-18T16:47:41 IST" name="TC060_Verify_all_DIY_Videos_list" finished-at="2023-07-18T16:50:58 IST" duration-ms="197266" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [25a80165-f773-4e05-a524-037aac930fe0, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/lbl')]}]
+Capabilities {appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: realme C33 2023, noReset: false, platformName: android, udid: 3323262910AA04DS}, appium:deviceApiLevel: 31, appium:deviceManufacturer: realme, appium:deviceModel: RMX3627, appium:deviceName: 3323262910AA04DS, appium:deviceScreenDensity: 272, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 3323262910AA04DS, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 1.7, appium:platformVersion: 12, appium:statBarHeight: 54, appium:takesScreenshot: true, appium:udid: 3323262910AA04DS, appium:viewportRect: {height: 1394, left: 0, top: 54, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25a80165-f773-4e05-a524-037aac930fe0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [25a80165-f773-4e05-a524-037aac930fe0, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/lbl')]}]
+Capabilities {appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 600000, appium:databaseEnabled: false, appium:desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, avdLaunchTimeout: 600000, deviceName: realme C33 2023, noReset: false, platformName: android, udid: 3323262910AA04DS}, appium:deviceApiLevel: 31, appium:deviceManufacturer: realme, appium:deviceModel: RMX3627, appium:deviceName: 3323262910AA04DS, appium:deviceScreenDensity: 272, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 3323262910AA04DS, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 1.7, appium:platformVersion: 12, appium:statBarHeight: 54, appium:takesScreenshot: true, appium:udid: 3323262910AA04DS, appium:viewportRect: {height: 1394, left: 0, top: 54, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25a80165-f773-4e05-a524-037aac930fe0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+at jdk.proxy2/jdk.proxy2.$Proxy21.size(Unknown Source)
+at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:397)
+at Page_Test.Services_Page_Test.TC060_Verify_all_DIY_Videos_list(Services_Page_Test.java:357)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC060_Verify_all_DIY_Videos_list -->
       </class> <!-- Page_Test.Services_Page_Test -->
-    </test> <!-- Services_Page_Test -->
+      <class name="Page_Test.My_Profile_Page_Test">
+        <test-method signature="TC026_Verify_My_Profile()[pri:0, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:32:22 IST" name="TC026_Verify_My_Profile" finished-at="2023-07-18T16:32:30 IST" duration-ms="7465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC026_Verify_My_Profile -->
+        <test-method signature="TC027_verify_more_detais_button()[pri:1, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:32:30 IST" name="TC027_verify_more_detais_button" finished-at="2023-07-18T16:32:32 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC027_verify_more_detais_button -->
+        <test-method signature="TC028_edit_profile_button()[pri:2, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:32:32 IST" name="TC028_edit_profile_button" finished-at="2023-07-18T16:32:45 IST" duration-ms="12852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC028_edit_profile_button -->
+        <test-method signature="TC029_edit_Personal_Details()[pri:3, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:32:45 IST" name="TC029_edit_Personal_Details" finished-at="2023-07-18T16:33:58 IST" duration-ms="73032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC029_edit_Personal_Details -->
+        <test-method signature="TC030_change_original_Personal_Details()[pri:4, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:33:58 IST" name="TC030_change_original_Personal_Details" finished-at="2023-07-18T16:35:57 IST" depends-on-methods="TC029_edit_Personal_Details()" duration-ms="119609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC030_change_original_Personal_Details -->
+        <test-method signature="TC031_Manage_License()[pri:5, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:35:57 IST" name="TC031_Manage_License" finished-at="2023-07-18T16:36:13 IST" duration-ms="15287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC031_Manage_License -->
+        <test-method signature="TC032_Verify_emergency_contacts()[pri:6, instance:Page_Test.My_Profile_Page_Test@27912e3]" started-at="2023-07-18T16:36:13 IST" name="TC032_Verify_emergency_contacts" finished-at="2023-07-18T16:36:23 IST" duration-ms="10817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC032_Verify_emergency_contacts -->
+      </class> <!-- Page_Test.My_Profile_Page_Test -->
+      <class name="Page_Test.Login_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:01 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-07-18T16:25:25 IST" duration-ms="24230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OPEN_AND_INSTALL_APP -->
+        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:25 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-07-18T16:25:34 IST" duration-ms="8954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
+        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:34 IST" name="TC002_invalidmobileno" finished-at="2023-07-18T16:25:43 IST" duration-ms="8548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_invalidmobileno -->
+        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:43 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-07-18T16:25:46 IST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_Verify_Login_with_short_length_of_mobile_number_credential -->
+        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:46 IST" name="TC004_max_digit_mobile_number" finished-at="2023-07-18T16:25:53 IST" duration-ms="7104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_max_digit_mobile_number -->
+        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:25:53 IST" name="TC005_Terms_of_use_button" finished-at="2023-07-18T16:26:08 IST" duration-ms="15021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_Terms_of_use_button -->
+        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:26:08 IST" name="TC006_Privacy_policy" finished-at="2023-07-18T16:26:17 IST" duration-ms="8947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_Privacy_policy -->
+        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:26:17 IST" name="TC007_contact_Us" finished-at="2023-07-18T16:26:21 IST" duration-ms="3765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_contact_Us -->
+        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:26:21 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-07-18T16:26:44 IST" duration-ms="23484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_Verify_Login_with_valid_credential -->
+        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:26:44 IST" name="TC009_resend_butn" finished-at="2023-07-18T16:27:03 IST" duration-ms="18869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_resend_butn -->
+        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:27:03 IST" name="TC010_inavalid_OTP" finished-at="2023-07-18T16:27:19 IST" duration-ms="16234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_inavalid_OTP -->
+        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@a1f72f5]" started-at="2023-07-18T16:27:19 IST" name="TC011_edit_moble" finished-at="2023-07-18T16:27:54 IST" duration-ms="34920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_edit_moble -->
+      </class> <!-- Page_Test.Login_Page_Test -->
+      <class name="Page_Test.Select_Vehicle_Page_Test">
+        <test-method signature="TC012_verify_Nick_Name()[pri:0, instance:Page_Test.Select_Vehicle_Page_Test@102cec62]" started-at="2023-07-18T16:27:54 IST" name="TC012_verify_Nick_Name" finished-at="2023-07-18T16:28:05 IST" duration-ms="11095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_verify_Nick_Name -->
+        <test-method signature="TC013_Verify_With_30_letter_nick_name()[pri:1, instance:Page_Test.Select_Vehicle_Page_Test@102cec62]" started-at="2023-07-18T16:28:05 IST" name="TC013_Verify_With_30_letter_nick_name" finished-at="2023-07-18T16:28:11 IST" depends-on-methods="TC012_verify_Nick_Name()" duration-ms="6207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_Verify_With_30_letter_nick_name -->
+        <test-method signature="TC014_Verify_With_31_letter_nick_name()[pri:2, instance:Page_Test.Select_Vehicle_Page_Test@102cec62]" started-at="2023-07-18T16:28:11 IST" name="TC014_Verify_With_31_letter_nick_name" finished-at="2023-07-18T16:28:17 IST" depends-on-methods="TC013_Verify_With_30_letter_nick_name()" duration-ms="6115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014_Verify_With_31_letter_nick_name -->
+        <test-method signature="TC015_Verify_With_29_letter_nick_name()[pri:3, instance:Page_Test.Select_Vehicle_Page_Test@102cec62]" started-at="2023-07-18T16:28:18 IST" name="TC015_Verify_With_29_letter_nick_name" finished-at="2023-07-18T16:28:24 IST" depends-on-methods="TC014_Verify_With_31_letter_nick_name()" duration-ms="6838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_Verify_With_29_letter_nick_name -->
+        <test-method signature="TC016_Select_Vehicle()[pri:4, instance:Page_Test.Select_Vehicle_Page_Test@102cec62]" started-at="2023-07-18T16:28:24 IST" name="TC016_Select_Vehicle" finished-at="2023-07-18T16:28:28 IST" duration-ms="3761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_Select_Vehicle -->
+      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
+    </test> <!-- All test class -->
   </suite> <!-- Hero_App -->
 </testng-results>

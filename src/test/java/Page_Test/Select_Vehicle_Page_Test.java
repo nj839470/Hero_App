@@ -54,7 +54,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 
 	}
 
-	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 2)
+	@Test(dependsOnMethods = "TC013_Verify_With_30_letter_nick_name()",priority = 2)
 	public void TC014_Verify_With_31_letter_nick_name() {
 	
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
@@ -71,7 +71,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		
 	}
 
-	@Test(dependsOnMethods = "TC012_verify_Nick_Name()",priority = 3)
+	@Test(dependsOnMethods = "TC014_Verify_With_31_letter_nick_name()",priority = 3)
 	public void TC015_Verify_With_29_letter_nick_name() {
 		
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
