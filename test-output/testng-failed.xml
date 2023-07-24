@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="Select_Vehicle_Page(failed)">
     <classes>
       <class name="Page_Test.Select_Vehicle_Page_Test">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- Select_Vehicle_Page(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

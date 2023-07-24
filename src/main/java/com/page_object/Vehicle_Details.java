@@ -18,7 +18,13 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement home;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/side_menu_btn']")
 	private WebElement side_menu_button;
-	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[2]")
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/user_name']")
+	private WebElement user_name;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/vehicle_name']")
+	private WebElement vehicle_name_1;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/vehicle_nam1']")
+	private WebElement vehicle_number_1;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/vehicle_detail_btn']")
 	private WebElement Vehicle_Details;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/sp_selected_vehicle']")
 	private WebElement Selected_vehicle;
@@ -30,7 +36,7 @@ public class Vehicle_Details extends Base_Utility {
 	private WebElement Vehicle_number;
 	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[1]")
 	private WebElement verify_GoodLife;
-	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl'])[2]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1'])[1]")
 	private WebElement verify_goodlife_page;
 	@FindBy(xpath = "(//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/title'])[2]")
 	private WebElement verify_joyRide;
@@ -44,7 +50,18 @@ public class Vehicle_Details extends Base_Utility {
 	public WebElement side_menu_button() {
 		return side_menu_button;
 	}
-
+	public WebElement user_name()
+	{
+		return user_name;
+	}
+	public WebElement vehicle_name_1()
+	{
+		return vehicle_name_1;
+	}
+	public WebElement vehicle_number_1()
+	{
+		return vehicle_number_1;
+	}
 	public WebElement Vehicle_details() {
 		return Vehicle_Details;
 	}
@@ -288,7 +305,7 @@ public class Vehicle_Details extends Base_Utility {
 
 	// ********************************************** Tips and DIY videos
 	// ***********************************
-	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[3]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[2]")
 	private WebElement Tips_and_DIY_videos;
 	@FindBy(xpath = "//android.widget.LinearLayout[@content-desc=\"Tips\"]/android.widget.TextView")
 	private WebElement Tips_info;

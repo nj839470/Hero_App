@@ -25,6 +25,9 @@ public class Vehicle_Details_test extends Base_Utility {
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
+		msg(ob.user_name().getText());
+		msg("You are using =" +ob.vehicle_name_1().getText());
+		msg(ob.vehicle_number_1().getText());
 		Custom_click(ob.Vehicle_details(), "Vehicle Details");
 		Custom_click(ob.Selected_vehicle(), ob.Selected_vehicle().getText());
 		Custom_click(ob.Selected_vehicle(), ob.Selected_vehicle().getText());
@@ -118,7 +121,8 @@ public class Vehicle_Details_test extends Base_Utility {
 		Custom_click(ob.Tips_info(), ob.Tips_info().getText());
 		Custom_click(ob.DIY_Videos(), ob.DIY_Videos().getText());
 		Custom_click(ob.back_button(), " Back from My Tips page");
-		Custom_click(ob.close_my_profile_page(), " close my profile page ");
+//		Custom_click(ob.close_my_profile_page(), " close my profile page ");
+		driver.navigate().back();
 		}catch(Exception e) 
 		{ msg(""+e);
 		}

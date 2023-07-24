@@ -221,6 +221,10 @@ public class Home_Page extends Base_Utility {
 	public WebElement Back() {
 		return Back;
 	}
+	public WebElement While_using_the_app()
+	{
+		return While_using_the_app;
+	}
 
 	public void Documents_list() throws InterruptedException {
 		
@@ -244,6 +248,7 @@ public class Home_Page extends Base_Utility {
 			driver.navigate().back();
 			Custom_click(Add_Now, name + " Add now");
 			Custom_click(Take_a_Photo, "Take a Photo");
+			if(i==1){ Thread.sleep(2000); }
 			driver.navigate().back();
 			Custom_click(Add_Now, name + " Add now");
 			Custom_click(document_upload_close_button, "Close upload document page");
@@ -307,7 +312,8 @@ public class Home_Page extends Base_Utility {
 	private WebElement locate_nearest_dealer;
 	@FindBy(xpath ="//android.view.View[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer_real_device;
-
+	@FindBy(xpath ="//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
+	private WebElement locate_the_nearest_dealer;
 	public WebElement RSA() {
 		return RSA;
 	}
@@ -318,6 +324,10 @@ public class Home_Page extends Base_Utility {
 	public WebElement locate_nearest_dealer_real_device()
 	{
 		return locate_nearest_dealer_real_device;
+	}
+	public WebElement locate_the_nearest_dealer()
+	{
+		return locate_the_nearest_dealer;
 	}
 
 //****************************Technical Support************************************

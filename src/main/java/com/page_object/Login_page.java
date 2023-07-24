@@ -40,8 +40,10 @@ public class Login_page extends Base_Utility {
 	private WebElement resend_button;
 	@FindBy(xpath ="//android.widget.TextView[@text = 'Verify']")
 	private WebElement verify_button;
-	@FindBy(xpath ="//android.widget.TextView[@text ='Please proceed with your registered Hero mobile number']")
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_title']")
 	private WebElement Wrong_mobile_message;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[1]")
+	private WebElement Cancel_pop;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/user_no_lbl']")
 	private WebElement registered_mobile_no;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/term_nd_cond_lbl']")
@@ -56,8 +58,8 @@ public class Login_page extends Base_Utility {
 	private WebElement Privacy_Policy_condition;
 	@FindBy(xpath ="//android.widget.TextView[@text = 'Contact Us']")
 	private WebElement contact_us;
-	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/btn_lay']")
-	private WebElement contact_via_email;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_text'])[1]")
+	private WebElement contact_us_message;
 	@FindBy(xpath="//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/back_btn']")
 	private WebElement back_page;
 	@FindBy(id ="com.customerapp.hero:id/edit_phn_no_btn")
@@ -94,6 +96,10 @@ public WebElement deny()
 	{
 		return mobile_No;
 	}
+	public WebElement Cancel_pop()
+	{
+		return Cancel_pop;
+	}
 	public WebElement continue_button()
 	{
 		return continue_button;
@@ -109,7 +115,7 @@ public WebElement deny()
 		{
 			for(int i=0,j=3;i<OTP.size();i++,j++)
 			{
-				custom_sendkeys(OTP.get(i), ""+(j+1), "OTP is ");
+				custom_sendkeys(OTP.get(i), ""+(j+1), "OTP is " +(j+1));
 			}
 		}
 		public WebElement resend_button()
@@ -148,9 +154,9 @@ public WebElement deny()
 		{
 			return Privacy_Policy_condition;
 		}
-		public WebElement contact_via_email()
+		public WebElement contact_us_message()
 		{
-			return contact_via_email;
+			return contact_us_message;
 		}
 		public WebElement contact_us()
 		{

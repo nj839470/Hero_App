@@ -42,6 +42,8 @@ public class Login_Page_Test extends Base_Utility {
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.continue_button(), "Coninue button enter after unregistered mobile number");
 		assertEquals(ob.Wrong_mobile_message().getText(), config_getdata("invalid_message"));
+		Custom_click(ob.Cancel_pop(), ob.Cancel_pop().getText());
+		
 	}
 
 	@Test(priority = 2)
@@ -87,16 +89,10 @@ public class Login_Page_Test extends Base_Utility {
 
 	@Test(priority = 6)
 	public void TC007_contact_Us() throws InterruptedException {
-	//	Scroll_down_page_Action("Contact us");
+	
 		Custom_click(ob.contact_us(), "Contact us");
 		Thread.sleep(2000);
-//		Custom_click(ob.contact_via_email(), "contact via email");
-//		driver.navigate().back();
-//		driver.navigate().back();							//for picloudy
-//		if(ob.back_page().isDisplayed()!=true)
-//		{
-//			driver.navigate().back();
-//		}
+		msg(ob.contact_us_message().getText());
 		Custom_click(ob.back_page(), "back Contact us page ");
 	}
 
@@ -155,10 +151,17 @@ public class Login_Page_Test extends Base_Utility {
 			ob.enter_Valid_OTP();
 			Custom_click(ob.verify_button(), "Verify Button");
 			Thread.sleep(2000);
-			// when excute select vehicle page class then need to comment below three line.
+			// when excute select vehicle page class then need to comment below 7 line.
 			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
 			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
-			Custom_click(ob1.While_using_the_app(), "While using the app");
+			Thread.sleep(2000);
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+			Custom_click(ob1.Allow(), ob.Allow().getText()
+					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+//			Custom_click(ob1.While_using_the_app(), "While using the app");
 //			Custom_click(ob1.video_close_button(), "Vodeo close");
 		} catch (Exception e) {
 			System.out.println("Problem with login" + e);

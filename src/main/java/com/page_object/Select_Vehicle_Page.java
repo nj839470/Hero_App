@@ -39,7 +39,8 @@ public class Select_Vehicle_Page extends Base_Utility {
 	private WebElement video_close_button;
 	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_full']")
 	private WebElement video_full_video;
-
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
+	private WebElement Allow;
 	public WebElement edit_nickame_button() {
 		return edit_nickame_button;
 	}
@@ -55,7 +56,10 @@ public class Select_Vehicle_Page extends Base_Utility {
 	public WebElement nick_name_close_button() {
 		return nick_name_close_button;
 	}
-
+	public WebElement Allow()
+	{
+		return Allow;
+	}
 	public WebElement continue_button() {
 		return continue_button;
 	}

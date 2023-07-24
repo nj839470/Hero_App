@@ -14,9 +14,9 @@ public class GoodLife_test extends Base_Utility {
 	public void TC081_verify_image_in_goodlife_page() throws InterruptedException {
 		msg("*********************Goodlife_page**************************");
 		ob = new GoodLife();
-//		login = new Login_Page_Test();
-//		login.login();
-//		Thread.sleep(3000);
+		login = new Login_Page_Test();
+		login.login();
+		Thread.sleep(3000);
 		Custom_click(ob.goodLife(), ob.goodLife().getText());
 		Thread.sleep(2000);
 		try {
