@@ -17,6 +17,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Home_Page extends Base_Utility {
 	public Services_Page ob1;
+
 	public Home_Page() {
 		PageFactory.initElements(driver, this);
 	}
@@ -38,17 +39,17 @@ public class Home_Page extends Base_Utility {
 	private WebElement notification_back;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/collapse_btn']")
 	private WebElement Collapse_btn;
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_close']")
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_close']")
 	private WebElement close_drop_down;
+
 	public WebElement temperature() {
 		return temperature;
 	}
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
-		try
-		{
-		Custom_click(vehicle_drop_down, " Drop down");
-		Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
+		try {
+			Custom_click(vehicle_drop_down, " Drop down");
+			Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
 //		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) 
 //		{
 //			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
@@ -56,10 +57,9 @@ public class Home_Page extends Base_Utility {
 //			Custom_click(vehicle_drop_down, " Drop down");
 //		}
 //		Custom_click(vehicle_drop_down, " Drop down");
-		}catch(Exception e)
-		{
-			msg(""+e);
-			
+		} catch (Exception e) {
+			msg("" + e);
+
 		}
 	}
 
@@ -82,59 +82,61 @@ public class Home_Page extends Base_Utility {
 	public WebElement Collapse_btn() {
 		return Collapse_btn;
 	}
-	//**************************************Service********************************	
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/book_now_btn']")
-		private WebElement Service_booked_now_button;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl1']")
-		private List<WebElement> Service_info;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_date_lbl']")
-		private WebElement service_due_date;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerName']")
-		private WebElement center_Name;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerAddress']")
-		private WebElement center_Address;
-		@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
-		private WebElement Select_service_center_key_arrow_button;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/calendarDate']")
-		private WebElement date;
-		@FindBy(xpath ="//android.view.View[@content-desc=\"21 June 2023\"]")
-		private WebElement date_pick;
-		@FindBy(xpath ="//android.widget.Button[@resource-id = 'android:id/button1']")
-		private WebElement ok_button;
-		@FindBy(xpath ="//android.widget.Button[@resource-id = 'android:id/button2']")
-		private WebElement cancel_button;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/timeText']")
-		private WebElement time;
-		@FindBy(xpath ="//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"3\"]")
-		private WebElement time_hour_pick;
-		@FindBy(xpath ="//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"20\"]")
-		private WebElement time_minute_pick;
-		@FindBy(xpath ="//android.widget.ImageButton[@resource-id ='android:id/toggle_mode']")
-		private WebElement send_time;;
-		@FindBy(xpath ="//android.widget.EditText[@resource-id='android:id/input_hour']")
-		private WebElement Enter_Hour;
-		@FindBy(xpath ="//android.widget.EditText[@resource-id='android:id/input_minute']")
-		private WebElement Enter_Minute;;
-		@FindBy(xpath ="//android.widget.Spinner[@resource-id ='android:id/am_pm_spinner']")
-		private WebElement AM_PM_Selector;
-		@FindBy(xpath ="(//android.widget.CheckedTextView[@resource-id ='android:id/text1'])[2]")
-		private WebElement chose_PM;
-		@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='com.customerapp.hero:id/radio2']")
-		private WebElement paid_service;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
-		private WebElement last_service_details;
-		@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/btn_lay']")
-		private WebElement Continue_button;
-		@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_select']")
-		private List<WebElement> select_key_issue;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
-		private WebElement book_service;
-		@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tvHome']")
-		private WebElement back_button_from_booked_service;
-		public WebElement Service_booked_now_button()
-		{
-			return Service_booked_now_button;
-		}
+
+	// **************************************Service********************************
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/book_now_btn']")
+	private WebElement Service_booked_now_button;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/lbl1']")
+	private List<WebElement> Service_info;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/service_date_lbl']")
+	private WebElement service_due_date;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerName']")
+	private WebElement center_Name;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/centerAddress']")
+	private WebElement center_Address;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/keyArrow']")
+	private WebElement Select_service_center_key_arrow_button;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/calendarDate']")
+	private WebElement date;
+	@FindBy(xpath = "//android.view.View[@content-desc=\"21 June 2023\"]")
+	private WebElement date_pick;
+	@FindBy(xpath = "//android.widget.Button[@resource-id = 'android:id/button1']")
+	private WebElement ok_button;
+	@FindBy(xpath = "//android.widget.Button[@resource-id = 'android:id/button2']")
+	private WebElement cancel_button;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/timeText']")
+	private WebElement time;
+	@FindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"3\"]")
+	private WebElement time_hour_pick;
+	@FindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"20\"]")
+	private WebElement time_minute_pick;
+	@FindBy(xpath = "//android.widget.ImageButton[@resource-id ='android:id/toggle_mode']")
+	private WebElement send_time;;
+	@FindBy(xpath = "//android.widget.EditText[@resource-id='android:id/input_hour']")
+	private WebElement Enter_Hour;
+	@FindBy(xpath = "//android.widget.EditText[@resource-id='android:id/input_minute']")
+	private WebElement Enter_Minute;;
+	@FindBy(xpath = "//android.widget.Spinner[@resource-id ='android:id/am_pm_spinner']")
+	private WebElement AM_PM_Selector;
+	@FindBy(xpath = "(//android.widget.CheckedTextView[@resource-id ='android:id/text1'])[2]")
+	private WebElement chose_PM;
+	@FindBy(xpath = "//android.widget.RadioButton[@resource-id ='com.customerapp.hero:id/radio2']")
+	private WebElement paid_service;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
+	private WebElement last_service_details;
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/btn_lay']")
+	private WebElement Continue_button;
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_select']")
+	private List<WebElement> select_key_issue;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+	private WebElement book_service;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tvHome']")
+	private WebElement back_button_from_booked_service;
+
+	public WebElement Service_booked_now_button() {
+		return Service_booked_now_button;
+	}
+
 //*************************Navigate Page**********************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[1]")
 	private WebElement Navigate_menu;
@@ -221,44 +223,42 @@ public class Home_Page extends Base_Utility {
 	public WebElement Back() {
 		return Back;
 	}
-	public WebElement While_using_the_app()
-	{
+
+	public WebElement While_using_the_app() {
 		return While_using_the_app;
 	}
 
 	public void Documents_list() throws InterruptedException {
-		
+
 		for (int i = 1; i < Documents_list.size(); i++) {
 			String name = Documents_list.get(i).getText();
 			Custom_click(Documents_list.get(i), name);
 			Thread.sleep(2000);
-			try
-			{
-			if(Document_Check != null)
-			{
-			msg(Document_Check.getText());
-			Custom_click(Add_Now, name + " Add now");
-			if (i == 1) {
-				Custom_click(While_using_the_app, "While using the app");
-				Custom_click(Allow, "Allow");
-				Thread.sleep(2000);
-				Custom_click(Add_Now, name + " Add now");
+			try {
+				if (Document_Check != null) {
+					msg(Document_Check.getText());
+					Custom_click(Add_Now, name + " Add now");
+					if (i == 1) {
+						Custom_click(While_using_the_app, "While using the app");
+						Custom_click(Allow, "Allow");
+						Thread.sleep(2000);
+						Custom_click(Add_Now, name + " Add now");
+					}
+					Custom_click(Choose_Document_from_library, name + " Document frmo library");
+					Thread.sleep(2000);
+					driver.navigate().back();
+					Custom_click(Add_Now, name + " Add now");
+					Custom_click(Take_a_Photo, "Take a Photo");
+					Thread.sleep(2000);
+					driver.navigate().back();
+					Custom_click(Add_Now, name + " Add now");
+					Custom_click(document_upload_close_button, "Close upload document page");
+					Custom_click(Back, name + " Back Document");
+				}
+			} catch (Exception e) {
+				msg(name + " is already available");
+				Custom_click(Back, name + " Back Document");
 			}
-			Custom_click(Choose_Document_from_library, name + " Document frmo library");
-			driver.navigate().back();
-			Custom_click(Add_Now, name + " Add now");
-			Custom_click(Take_a_Photo, "Take a Photo");
-			if(i==1){ Thread.sleep(2000); }
-			driver.navigate().back();
-			Custom_click(Add_Now, name + " Add now");
-			Custom_click(document_upload_close_button, "Close upload document page");
-			Custom_click(Back, name + " Back Document");
-			}
-		}catch(Exception e)
-		{
-			msg(name + " is already available");
-			Custom_click(Back, name + " Back Document");
-		}
 		}
 	}
 
@@ -292,41 +292,40 @@ public class Home_Page extends Base_Utility {
 
 	public void Others_Contacts() {
 		try {
-			if(Others_Contacts.size()!=0)
-			{
-			for (int i = 0; i < Others_Contacts.size(); i++) {
-				msg("Others Contacts information =" + Others_Contacts.get(i).getText());
-			}
+			if (Others_Contacts.size() != 0) {
+				for (int i = 0; i < Others_Contacts.size(); i++) {
+					msg("Others Contacts information =" + Others_Contacts.get(i).getText());
+				}
 			}
 		} catch (Exception e) {
-			msg(""+e);
+			msg("" + e);
 		}
-		
-		}
-	
+
+	}
 
 //****************************RSA************************************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[4]")
 	private WebElement RSA;
-	@FindBy(xpath ="//android.widget.TextView[@text ='Locate nearest dealer']")
+	@FindBy(xpath = "//android.widget.TextView[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer;
-	@FindBy(xpath ="//android.view.View[@text ='Locate nearest dealer']")
+	@FindBy(xpath = "//android.view.View[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer_real_device;
-	@FindBy(xpath ="//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
+	@FindBy(xpath = "//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
 	private WebElement locate_the_nearest_dealer;
+
 	public WebElement RSA() {
 		return RSA;
 	}
-		public WebElement locate_nearest_dealer()
-		{
-			return locate_nearest_dealer;
-		}
-	public WebElement locate_nearest_dealer_real_device()
-	{
+
+	public WebElement locate_nearest_dealer() {
+		return locate_nearest_dealer;
+	}
+
+	public WebElement locate_nearest_dealer_real_device() {
 		return locate_nearest_dealer_real_device;
 	}
-	public WebElement locate_the_nearest_dealer()
-	{
+
+	public WebElement locate_the_nearest_dealer() {
 		return locate_the_nearest_dealer;
 	}
 
@@ -397,7 +396,7 @@ public class Home_Page extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == (Select_State_list.size()-1)) {
+				if (i == (Select_State_list.size() - 1)) {
 					Select_State_list.get(i).click();
 					Select_State.click();
 					i = 0;
@@ -413,7 +412,7 @@ public class Home_Page extends Base_Utility {
 				break;
 			} else {
 				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-				if (i == (Select_State_list.size()-1)) {
+				if (i == (Select_State_list.size() - 1)) {
 					Select_State_list.get(i).click();
 					Select_City.click();
 					i = 0;

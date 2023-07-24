@@ -141,6 +141,13 @@ public class Login_Page_Test extends Base_Utility {
 //			Custom_click(ob.deny(), "Deny");
 //			Custom_click(ob.allow(), "Allow Now");
 //			Custom_click(ob.open(), "Open"); 	// this line for real device
+			//*****************************Below 8 line for Pcloudy **********************************
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//			Custom_click(ob.Allow(), ob.Allow().getText()
+//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 //			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
 //			Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
 			Custom_click(ob.close(), "Close button"); // this line for real device and emulator
@@ -155,13 +162,15 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
 			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
 			Thread.sleep(2000);
-			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-			Custom_click(ob1.Allow(), ob.Allow().getText()
-					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-//			Custom_click(ob1.While_using_the_app(), "While using the app");
+//*****************************Below 6 line for emulator **********************************
+//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//			Custom_click(ob1.Allow(), ob.Allow().getText()
+//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+			//*****************************Below 6 line for emulator **********************************
+		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
 //			Custom_click(ob1.video_close_button(), "Vodeo close");
 		} catch (Exception e) {
 			System.out.println("Problem with login" + e);

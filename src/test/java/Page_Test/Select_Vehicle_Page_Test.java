@@ -1,11 +1,8 @@
 package Page_Test;
 
-import static org.testng.Assert.assertEquals;
-
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 import com.page_object.Select_Vehicle_Page;
 import com.utility.Base_Utility;
 

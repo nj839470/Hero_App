@@ -100,14 +100,15 @@ public class Vehicle_Details_test extends Base_Utility {
 		try {
 		Custom_click(ob.My_vehicle_Service_history(), "My Vehicle Service history");
 		try {
-		msg("My Vehicle Service history" +ob.owners_title().getText());
-		Custom_click(ob.back_button(), " Back from Service History page");
-		Custom_click(ob.back_button(), " Back from My Vehicle page");
-		}catch(Exception e)
-		{
 			ob.Service_history();
 			Custom_click(ob.back_button(), " Back from Service History page");
 			Custom_click(ob.back_button(), " Back from My Vehicle page");
+		}catch(Exception e)
+		{
+			msg("My Vehicle Service history" +ob.owners_title().getText());
+			Custom_click(ob.back_button(), " Back from Service History page");
+			Custom_click(ob.back_button(), " Back from My Vehicle page");
+			
 		}
 		}catch(Exception e) 
 		{ msg(""+e);

@@ -92,13 +92,13 @@ public class Base_Utility
 			db.setCapability("platformName", "Android");
 			db.setCapability("appium:deviceName", "Pixel_6_API_31");
 			db.setCapability("appium:udid", "emulator-5554");
-			db.setCapability("appium:avdLaunchTimeout", 600000);
+			db.setCapability("appium:avdLaunchTimeout", 900000);
 			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
 			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 			db.setCapability("appium:ensureWebviewsHavePages", true);
 			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
+			db.setCapability("appium:newCommandTimeout", 9600);
 			log = LogManager.getLogger("Hero_App");
 			lis = new listner();
 		} catch (Exception e) {
@@ -121,7 +121,7 @@ public class Base_Utility
 //			capabilities.setCapability("platformVersion", "13.0.0");
 //			capabilities.setCapability("platformName", "Android");
 //			capabilities.setCapability("automationName", "uiautomator2");
-//			capabilities.setCapability("pCloudy_ApplicationName", "app-debug-connected.apk");
+//			capabilities.setCapability("pCloudy_ApplicationName", "app-debug.apk");
 //			capabilities.setCapability("appPackage", "com.customerapp.hero");
 //			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
 //			capabilities.setCapability("pCloudy_WildNet", "false");

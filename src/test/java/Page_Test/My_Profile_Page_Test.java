@@ -66,9 +66,11 @@ public class My_Profile_Page_Test extends Base_Utility {
 				Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
 				Custom_click(ob.Choose_from_library(), " Chose profile pic from liberary ");
 			}
+			Thread.sleep(2000);
 			driver.navigate().back();
 			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
 			Custom_click(ob.Take_a_Photo(), " Take a pic for profile ");
+			Thread.sleep(2000);
 			driver.navigate().back();
 			Custom_click(ob.profile_pic_edit_btn(), "profile pic edit button");
 			Custom_click(ob.upload_close_button(), " Upload close button ");
@@ -157,9 +159,11 @@ public class My_Profile_Page_Test extends Base_Utility {
 				msg(ob.License_verify().getText());
 				Custom_click(ob.add_Liense_now(), "  Add License now");
 				Custom_click(ob.Choose_License_from_library(), "Choose license from Libery");
+				Thread.sleep(1000);
 				driver.navigate().back();
 				Custom_click(ob.add_Liense_now(), "  Add License now");
 				Custom_click(ob.Take_License_Photo(), "Take License Photo");
+				Thread.sleep(1000);
 				driver.navigate().back();
 				Custom_click(ob.add_Liense_now(), "  Add License now");
 				Custom_click(ob.close_button_for_license_upload(), " Close license upload page");

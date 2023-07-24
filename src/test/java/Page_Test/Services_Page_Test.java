@@ -345,7 +345,7 @@ public class Services_Page_Test extends Base_Utility {
 
 	@Test(priority = 25)
 	public void TC079_Verify_all_tips_list() throws InterruptedException {
-		scrollByText("Tips & DIY");
+		Scroll_down_page_Action("Tips and DIY");
 		Custom_click(ob.Tips_and_DIY(), "Tips and DIY");
 		ob.tips_list();
 	}
