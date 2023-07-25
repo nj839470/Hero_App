@@ -72,6 +72,7 @@ public class Vehicle_Details_test extends Base_Utility {
 	public void TC035_Verify_My_Vehicle_Documents() throws InterruptedException {
 		try {
 		Custom_click(ob.my_vehicle_documents(), ob.my_vehicle_documents().getText());
+		Thread.sleep(2000);
 		ob.Documents_list();
 		Custom_click(ob.back_button(), " Back from my vehicle documents page");
 		}catch(Exception e) 

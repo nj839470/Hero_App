@@ -22,7 +22,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement home;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/side_menu_btn']")
 	private WebElement side_menu_button;
-	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[4]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[3]")
 	private WebElement refer_friend;
 	@FindBy(xpath = "(//android.widget.EditText[@resource-id ='com.customerapp.hero:id/text_input_editext'])[1]")
 	private WebElement friend_name;
@@ -151,7 +151,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 
 	// ************************************ Contact Us
 	// **********************************
-	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[5]")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[6]")
 	private WebElement Contact_us;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl3']")
 	private List<WebElement> visit_Page;

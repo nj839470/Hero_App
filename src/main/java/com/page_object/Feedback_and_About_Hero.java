@@ -16,7 +16,7 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	private WebElement home;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/side_menu_btn']")
 	private WebElement side_menu_button;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[6]")
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[7]")
 	private WebElement feedback;
 	@FindBy(xpath ="(//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/filled_exposed'])[1]")
 	private WebElement Category;
@@ -69,7 +69,7 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	}
 	
 	//************************************************About Hero***************************************
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[7]")
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[8]")
 	private WebElement about_hero;
 	@FindBy(xpath ="//android.view.View[@resource-id='container-6a13db6644']/android.view.View")
 	private WebElement about_hero_message_1;
@@ -94,7 +94,7 @@ public class Feedback_and_About_Hero extends Base_Utility{
 		return Cross_button;
 	}
 	//**********************************************Side menu page function*********************************
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/iv_goodlife']")
+	@FindBy(xpath ="//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/sideMenuOffer']//android.widget.ImageView")
 	private WebElement goodlife;
 	@FindBy(xpath ="//android.widget.ImageView[@resource-id='com.customerapp.hero:id/iv_trust']")
 	private WebElement wheels_of_trust;

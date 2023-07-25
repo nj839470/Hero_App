@@ -14,7 +14,7 @@ public class GoodLife extends Base_Utility {
 	}
 	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/navigation_bar_item_small_label_view'])[2]")
 	private WebElement GoodLife;
-	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/goodLifeSlider_imageview']")
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/bike_img']")
 	private WebElement goodlife_image;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
 	private WebElement goodlife_text;
@@ -29,21 +29,177 @@ public class GoodLife extends Base_Utility {
 	public WebElement goodlife_text() {
 		return goodlife_text;
 	}
-
-//******************************show_more_service_privilegers*******************************
-	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/down_ic_btn']")
-	private WebElement show_more_service_privilegers;
-	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/benefit_lbl']")
-	private List<WebElement> service_previleges_all_message;
-
-	public WebElement show_more_service_privilegers() {
-		return show_more_service_privilegers;
+//******************************Pro Membership*******************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/plan_name']")
+	private WebElement plan_name;
+	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id/point')]")
+	private List<WebElement> plan_info;
+	@FindBy(xpath ="//android.widget.TextView[@text]")
+	private List<WebElement> pro_membership_plan_info;
+	public WebElement plan_name()
+	{
+		return plan_name;
 	}
-
-	public void service_previleges_all_message() {
-		for (int i = 0; i < service_previleges_all_message.size(); i++) {
-			msg(service_previleges_all_message.get(i).getText());
+	public void plan_info()
+	{
+		for(int i=0;i<plan_info.size()-1;i++)
+		{
+			msg(plan_info.get(i).getText());
 		}
+	}
+	public void pro_membership_plan_info()
+	{
+		for(int i=6;i<=12;i++)
+		{
+			if(i<12)
+			{
+				msg(pro_membership_plan_info.get(i).getText() + " = " +pro_membership_plan_info.get(i+1).getText());
+				i++;
+			}
+			else if(i==12)
+			{
+				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
+			}
+		}
+	}
+	//******************************Earning History*******************************
+	@FindBy(xpath ="//android.widget.LinearLayout[@content-desc=\"Earning History\"]/android.widget.TextView")
+	private WebElement Earning_History;
+	@FindBy(xpath ="//android.widget.LinearLayout[@resource-id ='com.customerapp.hero:id/linearLayout19']//android.widget.TextView")
+	private List<WebElement> Earning_History_value;
+	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id , 'com.customerapp.hero:id/textView')]")
+	private List<WebElement> Earning_History_heading;
+
+	public WebElement Earning_History()
+	{
+		return Earning_History;
+	}
+	public void earning_history()
+	{
+		try {
+		for(int i=0;i<Earning_History_heading.size();i++)
+		{
+			msg(Earning_History_heading.get(i).getText() + " = " +Earning_History_value.get(i).getText());
+		}
+		}catch(Exception e)
+		{
+			msg(" No Earning history ");
+		}
+	}
+	//******************************Redemption History*******************************
+	@FindBy(xpath ="//android.widget.LinearLayout[@content-desc=\"Redemption History\"]/android.widget.TextView")
+	private WebElement Redemption_History;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
+	private WebElement Redemption_History_value;
+	public WebElement Redemption_History()
+	{
+		return Redemption_History;
+	}
+	public WebElement Redemption_History_value()
+	{
+		return Redemption_History_value;
+	}
+	//******************************Complete Profile*******************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/renewal_txt'])[1]")
+	private WebElement Profile_text;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/view_detail_btn'])[1]")
+	private WebElement update_profile;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl']")
+	private WebElement update_profile_text;
+	@FindBy(xpath ="//android.widget.Image[@text ='Hero GoodLife']")
+	private WebElement profile_goodlife;
+	public WebElement Profile_text()
+	{
+		return Profile_text;
+	}
+	public WebElement update_profile()
+	{
+		return update_profile;
+	}
+	public WebElement update_profile_text()
+	{
+		return update_profile_text;
+	}
+	public WebElement profile_goodlife()
+	{
+		return profile_goodlife;
+	}
+	//******************************Welcome Rewards*******************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/renewal_txt'])[2]")
+	private WebElement Welcome_text;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/view_detail_btn'])[2]")
+	private WebElement View_Details;
+	public WebElement Welcome_text()
+	{
+		return Welcome_text;
+	}
+	public WebElement View_Details()
+	{
+		return View_Details;
+	}
+	//******************************Refer a Friend*******************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/offer_frnd_lbl']")
+	private WebElement Referral_Offer;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/points_earning_redemption_view_detail_btn']")
+	private WebElement Know_more;
+	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
+	private List<WebElement> Referral_all_offer;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/termCondition']")
+	private WebElement term_Condition;
+	public WebElement Referral_Offer()
+	{
+		return Referral_Offer;
+	}
+	public WebElement Know_more()
+	{
+		return Know_more;
+	}
+	public void Referral_all_offer()
+	{
+		for(int i =0;i<Referral_all_offer.size()-1;i++)
+		{
+			if(i==7)
+			{
+				Custom_click(Referral_all_offer.get(i), Referral_all_offer.get(i).getText());
+			}
+			msg(Referral_all_offer.get(i).getText());
+		}
+	}
+	public WebElement term_Condition()
+	{
+		return term_Condition;
+	}
+	//******************************winner information *******************************
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
+	private WebElement winner_of_month;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl2'])[2]")
+	private WebElement winner_month;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_name_lbl']")
+	private WebElement winner_name;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_loc_lbl']")
+	private WebElement winner_loc;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/winner_prize_lbl2']")
+	private WebElement winner_prize;
+	public WebElement winner_of_month()
+	{
+		return winner_of_month;
+	}
+	public WebElement winner_month()
+	{
+		return winner_month;
+		
+	}
+	public WebElement winner_name()
+	{
+		return winner_name;
+	}
+	public WebElement winner_loc()
+	{
+		return winner_loc;
+	}
+	public WebElement winner_prize()
+	{
+		return winner_prize;
 	}
 
 //******************************Points Earning & Redemption*******************************
@@ -123,38 +279,22 @@ public class GoodLife extends Base_Utility {
 	{
 		return back_button;
 	}
-	//******************************winner information *******************************
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
-	private WebElement winner_of_month;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl2'])[2]")
-	private WebElement winner_month;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_name_lbl']")
-	private WebElement winner_name;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/winner_loc_lbl']")
-	private WebElement winner_loc;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id='com.customerapp.hero:id/winner_prize_lbl2']")
-	private WebElement winner_prize;
-	public WebElement winner_of_month()
-	{
-		return winner_of_month;
-	}
-	public WebElement winner_month()
-	{
-		return winner_month;
-		
-	}
-	public WebElement winner_name()
-	{
-		return winner_name;
-	}
-	public WebElement winner_loc()
-	{
-		return winner_loc;
-	}
-	public WebElement winner_prize()
-	{
-		return winner_prize;
-	}
+	//******************************show_more_service_privilegers*******************************
+		@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/down_ic_btn']")
+		private WebElement show_more_service_privilegers;
+		@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/benefit_lbl']")
+		private List<WebElement> service_previleges_all_message;
+		public WebElement show_more_service_privilegers() {
+			return show_more_service_privilegers;
+		}
+
+		public void service_previleges_all_message() {
+			for (int i = 0; i < service_previleges_all_message.size(); i++) {
+				msg(service_previleges_all_message.get(i).getText());
+			}
+		}
+
+
 	//******************************Benefits and Experiences *******************************	
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/benefit_lbl']")
 	private List<WebElement> Benefits_message;
@@ -182,114 +322,4 @@ public class GoodLife extends Base_Utility {
 		}
 	}
 	
-
-//******************************Pro Membership in become member *******************************
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/plan_name'])[1]")
-	private WebElement plan_name;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/plan_price'])[1]")
-	private WebElement plan_price;
-	@FindBy(xpath ="//android.widget.TextView[@text]")
-	private List<WebElement> pro_membership_plan_info;
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
-	private WebElement Select_plan_button;
-	public WebElement plan_name()
-	{
-		return plan_name;
-	}
-	public void pro_membership_plan_info()
-	{
-		for(int i=1;i<10;i++)
-		{
-			if(i<3)
-			{
-				msg(pro_membership_plan_info.get(i).getText());
-			}
-			else if(i>=3 && i<9)
-			{
-			msg(pro_membership_plan_info.get(i).getText() +" = " +pro_membership_plan_info.get(i+1).getText());
-			i++;
-			}
-			else if(i==9)
-			{
-				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
-			}
-		}
-	}
-	public WebElement Select_plan_button()
-	{
-		return Select_plan_button;
-	}
-	public void Silver_Membership_plan_info()
-	{
-		for(int i=10;i<19;i++)
-		{
-			if(i<12)
-			{
-				msg(pro_membership_plan_info.get(i).getText());
-			}
-			else if(i>=12 && i<18)
-			{
-			msg(pro_membership_plan_info.get(i).getText() +" = " +pro_membership_plan_info.get(i+1).getText());
-			i++;
-			}
-			else if(i==18)
-			{
-				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
-			}
-		}
-	}
-	public void Gold_Membership_info()
-	{
-		for(int i=0;i< pro_membership_plan_info.size();i++)
-		{
-			String plan_name = pro_membership_plan_info.get(i).getText();
-			if(plan_name.equalsIgnoreCase("Gold Membership"))
-			{
-				for(int j=i;j<(i+9);j++)
-				{
-					if(j<(i+2))
-					{
-						msg(pro_membership_plan_info.get(j).getText());
-					}
-					else if(j>=(i+2) && j<(i+8))
-					{
-					msg(pro_membership_plan_info.get(j).getText() +" = " +pro_membership_plan_info.get(j+1).getText());
-					j++;
-					}
-					else if(j==(i+8))
-					{
-						Custom_click(pro_membership_plan_info.get(j), pro_membership_plan_info.get(j).getText());
-					}	
-				}
-				break;
-			}
-		}
-	}
-	public void Platinum_Membership_info()
-	{
-		for(int i=0;i< pro_membership_plan_info.size();i++)
-		{
-			String plan_name = pro_membership_plan_info.get(i).getText();
-			if(plan_name.equalsIgnoreCase("Platinum Membership"))
-			{
-				for(int j=i;j<(i+9);j++)
-				{
-					if(j<(i+2))
-					{
-						msg(pro_membership_plan_info.get(j).getText());
-					}
-					else if(j>=(i+2) && j<(i+8))
-					{
-					msg(pro_membership_plan_info.get(j).getText() +" = " +pro_membership_plan_info.get(j+1).getText());
-					j++;
-					}
-					else if(j==(i+8))
-					{
-						Custom_click(pro_membership_plan_info.get(j), pro_membership_plan_info.get(j).getText());
-					}	
-				}
-				break;
-			}
-		}
-	}
 }
