@@ -332,9 +332,10 @@ public class Services_Page_Test extends Base_Utility {
 	}
 
 	@Test(priority = 24)
-	public void TC078_Verify_Last_Serviced() throws InterruptedException {
+	public void TC078_Verify_Last_Serviced() {
 		try {
 			Custom_click(ob.Last_serviced_history(), "Last serviced history");
+			Thread.sleep(2000);
 			ob.Service_history();
 			Custom_click(ob.back_button(), " Back from servie history");
 		} catch (Exception e) {

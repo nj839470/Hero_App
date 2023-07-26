@@ -9,8 +9,16 @@
       <class name="Page_Test.GoodLife_test">
         <methods>
           <include name="TC087_Verify_refer_friend_in_Goodlife"/>
+          <include name="TC086_Verify_Welcome_Rewards"/>
+          <include name="TC092_verify_Remarkable_Rewards"/>
+          <include name="TC083_Verify_Earning_History_in_Pro_Membership"/>
+          <include name="TC081_verify_image_in_goodlife_page"/>
+          <include name="TC084_Verify_Redemption_History_in_Pro_Membership"/>
+          <include name="TC085_Verify_Complete_profile"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC082_Verify_Pro_Membership"/>
           <include name="TC089_verify_Points_Earning_and_Redemption"/>
+          <include name="TC091_verify_Benefits_and_Experiences"/>
           <include name="TC090_verify_Service_Privilegers"/>
         </methods>
       </class> <!-- Page_Test.GoodLife_test -->

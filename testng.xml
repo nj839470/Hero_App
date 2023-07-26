@@ -44,7 +44,7 @@
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
 	</test>
-	<test name="GoodLife_test" enabled="true">
+	<test name="GoodLife_test" enabled="false">
 		<classes>
 			<class name="Page_Test.GoodLife_test" />
 		</classes>

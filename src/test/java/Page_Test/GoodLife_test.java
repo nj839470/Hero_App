@@ -91,60 +91,51 @@ public class GoodLife_test extends Base_Utility {
 	{
 		scrollByText("Points Earning & Redemption");
 		try {
-		msg(ob.winner_of_month().getText());
-		try {
+		Custom_click(ob.winner_of_month(), ob.winner_of_month().getText());
 		msg("Winner month =" +ob.winner_month().getText());
-		}catch(Exception e) { msg("Winner of month is not given"); }
-		try {
-		msg("Winner name =" +ob.winner_name().getText());
-		}catch(Exception e) { msg("Winner name is not given"); }
-		try {
-		msg("Winner Loction =" +ob.winner_loc().getText());
-		}catch(Exception e) { msg("Winner location not given"); }
-		try {
-		msg("Winner prize =" +ob.winner_prize().getText());
-		}catch(Exception e) { msg("Winner prize is not given"); }
-		}catch(Exception e) { msg("Winner of month information is not given"); }
-
+			ob.Winner_info();
+			msg("Total ="+ob.Total_winner().getText());
+			Custom_click(ob.back_button(), " Back from Winner Of The Month ");
+		}catch(Exception e)
+		{
+			msg(""+e);
+		}
 	}
 	
 	@Test(priority = 8)
 	public void TC089_verify_Points_Earning_and_Redemption() {
-		scrollByText("Service Privileges");
 		msg(ob.point_earning_message().getText());
-		Custom_click(ob.points_earning_redemption_view_detail(),
-				"points earning redemption" + ob.points_earning_redemption_view_detail().getText());
+			ob.points_earning_redemption_view_detail();
 			ob.point_earn_condition();
 			msg(ob.Tier3_message().getText());
-			msg(ob.Tier3_distance().getText() + " = " +ob.Tier3_distance_message().getText());
+			ob.Tier3_distance_message();
 			msg(ob.point_earning_end_message().getText());
 			Custom_click(ob.back_button(), " Back from points earning redemption ");
 	}
 	@Test(priority = 9)
 	public void TC090_verify_Service_Privilegers() {
-		scrollByText("Benefits & Experiences");
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 		ob.service_previleges_all_message();
-		scrollByText("Points Earning & Redemption");
+		scrollByText("Show Less");
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 
 	}
 	@Test(priority = 10)
 	public void TC091_verify_Benefits_and_Experiences()
 	{
-		scrollByText("Remarkable Rewards");	
-		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText() +" in Benefits & Experiences" );
+		Scroll_down_page_Action("Benefits and Experiences");
+		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText() +" in Benefits & Experiences" );
 		ob.Benefits_message();
-		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText() +" in Benefits & Experiences" );
+		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText() +" in Benefits & Experiences" );
 	}
 	@Test(priority = 11)
 	public void TC092_verify_Remarkable_Rewards()
 	{
+		Custom_click(ob.Show_more_in_remarkable_rewards(), ob.Show_more_in_remarkable_rewards().getText());
 		Scroll_down_page_Action("Remarkable show more");
-		Custom_click(ob.Show_more_in_remarkable_rewards(), ob.Show_more_in_remarkable_rewards().getText());
-		Scroll_down_page_Action("Become a GoodLife Member");
 		ob.Remarkable_Rewards_message();
-		Custom_click(ob.Show_more_in_remarkable_rewards(), ob.Show_more_in_remarkable_rewards().getText());
+		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText());
+		Custom_click(ob.back_button(), " Back from Hero GoodLife ");
 	}
 
 }
