@@ -46,6 +46,7 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(priority = 1)
 	public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
+		//Please comment out from line no 50 to 54 for When script execute from pcloudy
 		try {
 			Custom_click(ob.While_using_the_app(), "While using the app");
 		} catch (Exception e) {
@@ -115,11 +116,11 @@ public class Home_Page_Test extends Base_Utility {
 			Thread.sleep(1000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
 			try {
-				msg(ob.locate_the_nearest_dealer().getText());
+				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator need  to check for pcloudy.
 				msg("Locate nearest dealer link is working");
 			} catch (Exception e) {
-				test.log(Status.FAIL, "Locate nearest dealer link is not working");
-				log.error("Locate nearest dealer link is not working");
+				test.log(Status.FAIL, "Locate nearest dealer link is not working"+e);
+				log.error("Locate nearest dealer link is not working"+e);
 			}
 			Custom_click(ob.Back(), "Back from RSA");
 		} catch (Exception e) {

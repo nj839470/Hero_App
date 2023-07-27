@@ -4,24 +4,15 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="GoodLife_test(failed)">
+  <test thread-count="5" name="Safety_Measures_and_Symbols_Glossary_Test(failed)">
     <classes>
-      <class name="Page_Test.GoodLife_test">
+      <class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test">
         <methods>
-          <include name="TC087_Verify_refer_friend_in_Goodlife"/>
-          <include name="TC086_Verify_Welcome_Rewards"/>
-          <include name="TC092_verify_Remarkable_Rewards"/>
-          <include name="TC083_Verify_Earning_History_in_Pro_Membership"/>
-          <include name="TC081_verify_image_in_goodlife_page"/>
-          <include name="TC084_Verify_Redemption_History_in_Pro_Membership"/>
-          <include name="TC085_Verify_Complete_profile"/>
+          <include name="Verify_Symbols_Glossary"/>
+          <include name="Verify_Safety_Measures"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC082_Verify_Pro_Membership"/>
-          <include name="TC089_verify_Points_Earning_and_Redemption"/>
-          <include name="TC091_verify_Benefits_and_Experiences"/>
-          <include name="TC090_verify_Service_Privilegers"/>
         </methods>
-      </class> <!-- Page_Test.GoodLife_test -->
+      </class> <!-- Page_Test.Safety_Measures_and_Symbols_Glossary_Test -->
     </classes>
-  </test> <!-- GoodLife_test(failed) -->
+  </test> <!-- Safety_Measures_and_Symbols_Glossary_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

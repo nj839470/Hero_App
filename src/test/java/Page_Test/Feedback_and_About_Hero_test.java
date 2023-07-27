@@ -12,8 +12,8 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	@Test(priority = 0)
 	public void TC051_verify_Feedback() throws InterruptedException {
 		ob =new Feedback_and_About_Hero();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
