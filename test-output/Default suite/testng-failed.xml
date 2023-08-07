@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Page_Test.Login_Page_Test">
+      <class name="Page_Test.E_Shop_test">
         <methods>
-          <include name="TC001_Verify_Login_with_Invalid_credential"/>
+          <include name="registered_customers"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.Login_Page_Test -->
+      </class> <!-- Page_Test.E_Shop_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,92 +1,25 @@
-[INFO ] 2023-07-25 18:27:34.048 [main] Hero_App - *********************Goodlife_page**************************
-[INFO ] 2023-07-25 18:27:38.350 [main] Hero_App - Close button is clickable
-[INFO ] 2023-07-25 18:27:42.495 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-07-25 18:27:47.593 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-07-25 18:28:10.411 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-07-25 18:28:12.040 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-07-25 18:28:13.628 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-07-25 18:28:15.318 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-07-25 18:28:16.954 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-07-25 18:28:18.682 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-07-25 18:28:20.535 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-07-25 18:28:25.902 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-07-25 18:28:27.309 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-07-25 18:28:32.884 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
-[INFO ] 2023-07-25 18:28:34.766 [main] Hero_App - Allow Hero App to access your contacts is clickable
-[INFO ] 2023-07-25 18:28:36.386 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
-[INFO ] 2023-07-25 18:28:37.696 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
-[INFO ] 2023-07-25 18:28:39.428 [main] Hero_App - Allow Hero App to find, connect to, and determine the relative position of nearby devices is clickable
-[INFO ] 2023-07-25 18:28:44.181 [main] Hero_App - GoodLife is clickable
-[INFO ] 2023-07-25 18:28:48.877 [main] Hero_App - Image available on Goodlife page
-[INFO ] 2023-07-25 18:28:49.423 [main] Hero_App - Every Journey is a Reward
-[INFO ] 2023-07-25 18:28:49.659 [main] Hero_App - Plan Name =Pro Membership
-[INFO ] 2023-07-25 18:28:50.123 [main] Hero_App - 199 
-[INFO ] 2023-07-25 18:28:50.563 [main] Hero_App - Points reached
-[INFO ] 2023-07-25 18:28:50.890 [main] Hero_App - 301 points to next milestone
-[INFO ] 2023-07-25 18:28:52.595 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-25 18:28:53.721 [main] Hero_App - Membership Valid Till = Jul 19 2026
-[INFO ] 2023-07-25 18:28:54.219 [main] Hero_App - Membership No. :  = 1037523390001855
-[INFO ] 2023-07-25 18:28:54.658 [main] Hero_App - Milestone Redeemed : = 0 of 0
-[INFO ] 2023-07-25 18:28:55.229 [main] Hero_App - Earning & Redemption History is clickable
-[INFO ] 2023-07-25 18:28:58.593 [main] Hero_App - Earning History is clickable
-[INFO ] 2023-07-25 18:28:59.470 [main] Hero_App - Date = 19 Jul 2023
-[INFO ] 2023-07-25 18:28:59.903 [main] Hero_App - Amount = ₹ 199 
-[INFO ] 2023-07-25 18:29:00.396 [main] Hero_App - Type = BON
-[INFO ] 2023-07-25 18:29:00.729 [main] Hero_App - Points = ₹199
-[INFO ] 2023-07-25 18:29:01.392 [main] Hero_App - Redemption History is clickable
-[INFO ] 2023-07-25 18:29:02.160 [main] Hero_App - No redemption history
-[INFO ] 2023-07-25 18:29:02.725 [main] Hero_App -  Back from Transaction History is clickable
-[INFO ] 2023-07-25 18:29:04.559 [main] Hero_App - Show Less is clickable
-[INFO ] 2023-07-25 18:29:05.168 [main] Hero_App - Complete your profile and win upto 500 points
-[INFO ] 2023-07-25 18:29:06.276 [main] Hero_App - Update Profile is clickable
-[INFO ] 2023-07-25 18:29:07.750 [main] Hero_App - Complete Profile Rewards
-[INFO ] 2023-07-25 18:29:08.905 [main] Hero_App - Hero GoodLife
-[INFO ] 2023-07-25 18:29:09.261 [main] Hero_App -  Back from Complete Profile Rewards is clickable
-[INFO ] 2023-07-25 18:29:10.066 [main] Hero_App - Check your welcome rewards & redemption status.
-[INFO ] 2023-07-25 18:29:10.915 [main] Hero_App - View Details is clickable
-[INFO ] 2023-07-25 18:29:12.066 [main] Hero_App - Welcome Rewards
-[INFO ] 2023-07-25 18:29:12.230 [main] Hero_App - Hero GoodLife
-[INFO ] 2023-07-25 18:29:13.156 [main] Hero_App -  Back from Complete Profile Rewards is clickable
-[INFO ] 2023-07-25 18:29:13.616 [main] Hero_App - Refer your near ones to buy a Hero 2-wheeler and Earn GoodLife Reward Points
-[INFO ] 2023-07-25 18:29:14.863 [main] Hero_App - Know More is clickable
-[INFO ] 2023-07-25 18:29:15.976 [main] Hero_App - Referrals
-[INFO ] 2023-07-25 18:29:16.172 [main] Hero_App - Amazing Benefits
-[INFO ] 2023-07-25 18:29:16.381 [main] Hero_App - ONLY for YOU
-[INFO ] 2023-07-25 18:29:16.706 [main] Hero_App - Easiest way to Earn Reward Points get even more exciting with Remarkable Reward Points when you refer a friend or yourself for another Hero 2 Wheeler
-[INFO ] 2023-07-25 18:29:16.859 [main] Hero_App - Use Referral For
-[INFO ] 2023-07-25 18:29:16.992 [main] Hero_App - Upgrade your 2 Wheeler
-[INFO ] 2023-07-25 18:29:17.143 [main] Hero_App - Upgrade to a New Hero 2 Wheeler and Earn double Reward points of 3000 points
-[INFO ] 2023-07-25 18:29:17.709 [main] Hero_App - Refer is clickable
-[INFO ] 2023-07-25 18:29:53.818 [main] Hero_App - Winner Of The Month
-[INFO ] 2023-07-25 18:29:54.121 [main] Hero_App - Winner month =Points Earning & Redemption
-[INFO ] 2023-07-25 18:29:54.422 [main] Hero_App - Winner name =Babu Pannuri
-[INFO ] 2023-07-25 18:29:54.716 [main] Hero_App - Winner Loction =From Vijayawada
-[INFO ] 2023-07-25 18:29:55.009 [main] Hero_App - Winner prize =Won Hero 2-Wheeler
-[INFO ] 2023-07-25 18:29:55.262 [main] Hero_App - Make the most of your Hero GoodLife Membership, earn Points at various steps
-[INFO ] 2023-07-25 18:29:56.574 [main] Hero_App - points earning redemptionKnow More is clickable
-[INFO ] 2023-07-25 18:29:57.499 [main] Hero_App - Referrals
-[INFO ] 2023-07-25 18:29:57.796 [main] Hero_App - Amazing Benefits
-[INFO ] 2023-07-25 18:29:58.086 [main] Hero_App - ONLY for YOU
-[INFO ] 2023-07-25 18:29:58.530 [main] Hero_App - Upgrade your 2 Wheeler = Upgrade to a New Hero 2 Wheeler and Earn double Reward points of 3000 points
-[INFO ] 2023-07-25 18:30:40.722 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-25 18:30:41.811 [main] Hero_App - Up to 10% Discount on Accessories
-[INFO ] 2023-07-25 18:30:42.100 [main] Hero_App - 50% Discount on Paint Protection Treatment & Paid Service (after Renewal)
-[INFO ] 2023-07-25 18:30:42.367 [main] Hero_App - Free Express Service, Nitrogen Filling and Vehicle Wash
-[INFO ] 2023-07-25 18:30:42.819 [main] Hero_App - Exclusive Joyride Package for GoodLife Members & Discount on Joyride Renewal
-[INFO ] 2023-07-25 18:31:31.878 [main] Hero_App - Show Less in Benefits & Experiences is clickable
-[INFO ] 2023-07-25 18:31:32.815 [main] Hero_App - 50% Discount on Paint Protection Treatment & Paid Service (after Renewal)
-[INFO ] 2023-07-25 18:31:33.268 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
-[INFO ] 2023-07-25 18:31:33.672 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
-[INFO ] 2023-07-25 18:31:34.046 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
-[INFO ] 2023-07-25 18:31:34.417 [main] Hero_App - Reward Points on all Service Spends
-[INFO ] 2023-07-25 18:31:36.125 [main] Hero_App - Show More in Benefits & Experiences is clickable
-[INFO ] 2023-07-25 18:31:54.567 [main] Hero_App - Successfully  Scroll page down Action Remarkable show more
-[INFO ] 2023-07-25 18:31:55.568 [main] Hero_App - Show More is clickable
-[INFO ] 2023-07-25 18:32:13.256 [main] Hero_App - Successfully  Scroll page down Action Become a GoodLife Member
-[INFO ] 2023-07-25 18:32:14.164 [main] Hero_App - Personal Accidental Death Insurance cover of up to ₹ 2 Lakhs
-[INFO ] 2023-07-25 18:32:15.140 [main] Hero_App - Invite to Digital Events, Sports Events & Engagement Campaigns
-[INFO ] 2023-07-25 18:32:15.659 [main] Hero_App - Multiple Sweepstakes
-[INFO ] 2023-07-25 18:32:16.005 [main] Hero_App - Rides, Rallies & Biking Expeditions
-[INFO ] 2023-07-25 18:32:16.259 [main] Hero_App - Welcome e-com. Reward Offers of up to ₹ 4800
-[INFO ] 2023-07-25 18:32:16.469 [main] Hero_App - Reward Points on all Service Spends
-[INFO ] 2023-07-25 18:32:17.231 [main] Hero_App - Show More is clickable
+[INFO ] 2023-08-05 19:02:34.798 [main] Hero_App - ************************E Shop**************************
+[INFO ] 2023-08-05 19:02:39.462 [main] Hero_App - Close button is clickable
+[INFO ] 2023-08-05 19:02:57.129 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-08-05 19:03:01.064 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-08-05 19:03:23.389 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-08-05 19:03:25.017 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-08-05 19:03:26.634 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-08-05 19:03:28.099 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-08-05 19:03:29.717 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-08-05 19:03:32.003 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-08-05 19:03:33.665 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-08-05 19:03:40.729 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-08-05 19:03:41.297 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-08-05 19:03:47.911 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
+[INFO ] 2023-08-05 19:03:49.865 [main] Hero_App - Allow Hero App to access your contacts is clickable
+[INFO ] 2023-08-05 19:03:51.484 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
+[INFO ] 2023-08-05 19:03:52.766 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
+[INFO ] 2023-08-05 19:03:54.353 [main] Hero_App - Allow Hero App to find, connect to, and determine the relative position of nearby devices is clickable
+[INFO ] 2023-08-05 19:03:56.762 [main] Hero_App - Eshop is clickable
+[INFO ] 2023-08-05 19:04:02.371 [main] Hero_App - Shoping Cart list is clickable
+[INFO ] 2023-08-05 19:04:03.892 [main] Hero_App - wishlist is clickable
+[INFO ] 2023-08-05 19:04:28.986 [main] Hero_App - forRegistered Customers
+[INFO ] 2023-08-05 19:04:29.112 [main] Hero_App - If you have an account, sign in with your email address.
+[INFO ] 2023-08-05 19:04:33.813 [main] Hero_App - Email ID send successfully
+[INFO ] 2023-08-05 19:04:35.156 [main] Hero_App - Continue button is clickable

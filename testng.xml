@@ -54,6 +54,11 @@
 			<class name="Page_Test.GoodLife_test" />
 		</classes>
 	</test>
+	<test name="E_Shop_test" enabled="false">
+		<classes>
+			<class name="Page_Test.E_Shop_test" />
+		</classes>
+	</test>
 	<test name="All test class" enabled="true">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
