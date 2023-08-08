@@ -1,5 +1,7 @@
 package com.page_object;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -123,6 +125,8 @@ public class E_Shop extends Base_Utility {
 	private WebElement create_an_account;
 	@FindBy(xpath ="//android.widget.TextView[@text ='BACK']")
 	private WebElement back_button;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
+	private WebElement back;
 	public WebElement user_account()
 	{
 		return user_account;
@@ -186,5 +190,48 @@ public class E_Shop extends Base_Utility {
 	public WebElement back_button()
 	{
 		return back_button;
+	}
+	public WebElement back()
+	{
+		return back;
+	}
+	@FindBy(xpath ="//android.widget.TextView[@text = 'Toggle Nav']")
+	private WebElement Side_menu;
+	@FindBy(xpath ="//android.view.View[@content-desc='HOME']")
+	private WebElement HOME;
+	@FindBy(xpath="//android.view.View[contains(@resource-id,'menu')]")
+	private List<WebElement> All_menu_inside_side_menu;
+	@FindBy(xpath="//android.view.View[@content-desc]/android.widget.TextView")
+	private List<WebElement> list_of_name;
+	@FindBy(xpath="//android.view.View[contains(@text,'₹')]")
+	private List<WebElement> list_of_price;
+	public WebElement Side_menu()
+	{
+		return Side_menu;
+	}
+	public void All_menu_inside_side_menu()
+	{
+		for(int i=2;i<All_menu_inside_side_menu.size();i++)
+		{
+			String menu_name = All_menu_inside_side_menu.get(i).getText();
+		 if(i==2 ||i==3)
+			{
+				Custom_click(All_menu_inside_side_menu.get(i), menu_name);
+				for(int j=0 ,k=i;j<list_of_price.size()-1;j++)
+				{
+					msg(list_of_name.get(k).getText() +" = " + list_of_price.get(j).getText());
+					k++;
+				}
+				Custom_click(All_menu_inside_side_menu.get(i), menu_name);
+			}
+		 else
+			{
+			 msg(menu_name);
+			}
+		}
+	}
+	public WebElement HOME()
+	{
+		return HOME;
 	}
 }

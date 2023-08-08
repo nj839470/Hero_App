@@ -22,7 +22,7 @@ public class E_Shop_test extends Base_Utility{
 		Thread.sleep(5000);
 		try {
 		Custom_click(ob.E_shop(), ob.E_shop().getText());
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		try {
 		Custom_click(ob.shoping_cart(), "Shoping Cart list");
 		Thread.sleep(2000);
@@ -75,12 +75,20 @@ public class E_Shop_test extends Base_Utility{
 		Custom_click(ob.otp_pop_up_close(), "OTP Pop Up close");
 		Custom_click(ob.create_an_account(), ob.create_an_account().getText());
 		Thread.sleep(2000);
-		driver.navigate().back();
+		scrollByText("CREATE AN ACCOUNT");
 		Custom_click(ob.back_button(), "Back from Create New Customer Account");
+		Custom_click(ob.back(), " Back from E-shop ");
 		}catch(Exception e)
 		{
 			System.out.println(e);
 		}
 		
 	}
+//	@Test(priority = 2)
+//	public void verify_Side_menu()
+//	{
+//		Custom_click(ob.Side_menu(), " Side menu ");
+//		ob.All_menu_inside_side_menu();
+//		Custom_click(ob.HOME(), ob.HOME().getText());
+//	}
 }
