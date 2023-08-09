@@ -50,13 +50,6 @@ public class Home_Page extends Base_Utility {
 		try {
 			Custom_click(vehicle_drop_down, " Drop down");
 			Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
-//		for (int i = 0; i < all_vehicle_inside_drop_down.size(); i++) 
-//		{
-//			Custom_click(all_vehicle_inside_drop_down.get(i), i + " vehicle");
-//			Thread.sleep(2000);
-//			Custom_click(vehicle_drop_down, " Drop down");
-//		}
-//		Custom_click(vehicle_drop_down, " Drop down");
 		} catch (Exception e) {
 			msg("" + e);
 
@@ -207,9 +200,9 @@ public class Home_Page extends Base_Utility {
 	private WebElement While_using_the_app;
 	@FindBy(xpath = "//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
 	private WebElement Allow;
-	@FindBy(xpath = "//android.widget.TextView[@text ='Choose from library']")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[1]")
 	private WebElement Choose_Document_from_library;
-	@FindBy(xpath = "//android.widget.TextView[@text ='Take a Photo']")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
 	private WebElement Take_a_Photo;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
 	private WebElement document_upload_close_button;

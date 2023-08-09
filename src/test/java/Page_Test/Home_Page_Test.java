@@ -109,9 +109,9 @@ public class Home_Page_Test extends Base_Utility {
 
 	@Test(priority = 4)
 	public void TC021_Verify_RSA() throws InterruptedException {
-		try {
 			Custom_click(ob.RSA(), "RSA");
 			Thread.sleep(1000);
+			try {
 			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); // for emulator
 			Thread.sleep(1000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
@@ -122,10 +122,12 @@ public class Home_Page_Test extends Base_Utility {
 				test.log(Status.FAIL, "Locate nearest dealer link is not working"+e);
 				log.error("Locate nearest dealer link is not working"+e);
 			}
-			Custom_click(ob.Back(), "Back from RSA");
+	
 		} catch (Exception e) {
-			msg("" + e);
+			test.log(Status.FAIL, "Locate nearest dealer link is not given" +e);
+			log.error("Locate nearest dealer link is not given"+e);
 		}
+			Custom_click(ob.Back(), "Back from RSA");
 	}
 
 	@Test(priority = 5)

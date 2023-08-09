@@ -205,7 +205,8 @@ public class Services_Page extends Base_Utility {
 	}
 	public void Service_schedule()
 	{
-		for(int i=4;i<Service_schedule.size();i++)
+		
+		for(int i=4;i<Service_schedule.size()-1;i++)
 		{
 			if(i<10)
 			{
@@ -226,10 +227,12 @@ public class Services_Page extends Base_Utility {
 				Custom_click(Service_schedule.get(i),Service_heading);
 			}
 		}
+		
 	}
 	public void Service_schedule_More_Than_15500()
 	{
-		for(int i=5;i<Service_schedule.size();i++)
+		
+		for(int i=5;i<Service_schedule.size()-1;i++)
 		{
 			if(i<11)
 			{
@@ -250,6 +253,7 @@ public class Services_Page extends Base_Utility {
 				Custom_click(Service_schedule.get(i),Service_heading);
 			}
 		}
+		
 	}
 //*********************************************Last Serviced********************************
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id= 'com.customerapp.hero:id/service_history_lay']")

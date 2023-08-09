@@ -42,9 +42,9 @@ public class My_Profile_Page extends Base_Utility {
 	private WebElement while_using_the_app;
 	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.android.permissioncontroller:id/permission_allow_button']")
 	private WebElement allow;
-	@FindBy(xpath = "//android.widget.TextView[@text ='Choose from library']")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[1]")
 	private WebElement Choose_from_library;
-	@FindBy(xpath = "//android.widget.TextView[@text ='Take a Photo']")
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
 	private WebElement Take_a_Photo;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross_btn']")
 	private WebElement upload_close_button;

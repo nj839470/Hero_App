@@ -4,15 +4,14 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Safety_Measures_and_Symbols_Glossary_Test(failed)">
+  <test thread-count="5" name="All test class(failed)">
     <classes>
-      <class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test">
+      <class name="Page_Test.Login_Page_Test">
         <methods>
-          <include name="Verify_Symbols_Glossary"/>
-          <include name="Verify_Safety_Measures"/>
+          <include name="TC002_invalidmobileno"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.Safety_Measures_and_Symbols_Glossary_Test -->
+      </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
-  </test> <!-- Safety_Measures_and_Symbols_Glossary_Test(failed) -->
+  </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

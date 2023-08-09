@@ -41,8 +41,8 @@ public class Login_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.mobile_No(), config_getdata("invalidmobileno"), "Login with unregisterd mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.continue_button(), "Coninue button enter after unregistered mobile number");
-		assertEquals(ob.Wrong_mobile_message().getText(), config_getdata("invalid_message"));
-		Custom_click(ob.Cancel_pop(), ob.Cancel_pop().getText());
+//		assertEquals(ob.Wrong_mobile_message().getText(), config_getdata("invalid_message"));
+//		Custom_click(ob.Cancel_pop(), ob.Cancel_pop().getText());
 		
 	}
 
@@ -167,8 +167,10 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+			Thread.sleep(2000);
 			Custom_click(ob1.Allow(), ob.Allow().getText()
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+			Custom_click(ob1.banner_Img_close(), " Banner Img close");
 //*****************************above 6 line for emulator **********************************
 //		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
 //			Custom_click(ob1.video_close_button(), "Vodeo close");

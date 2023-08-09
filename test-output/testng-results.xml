@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T15:42:09 IST" name="Hero_App" finished-at="2023-08-08T15:47:10 IST" duration-ms="300836">
+  <suite started-at="2023-08-09T16:29:32 IST" name="Hero_App" finished-at="2023-08-09T16:32:03 IST" duration-ms="150696">
     <groups>
     </groups>
-    <test started-at="2023-08-08T15:42:09 IST" name="E_Shop_test" finished-at="2023-08-08T15:47:10 IST" duration-ms="300836">
-      <class name="Page_Test.E_Shop_test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-08T15:42:09 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-08T15:42:32 IST" duration-ms="22909" status="PASS">
+    <test started-at="2023-08-09T16:29:32 IST" name="Login_page" finished-at="2023-08-09T16:32:03 IST" duration-ms="150696">
+      <class name="Page_Test.Login_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:29:32 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-09T16:29:50 IST" duration-ms="18208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="registered_customers()[pri:0, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-08T15:42:32 IST" name="registered_customers" finished-at="2023-08-08T15:44:17 IST" duration-ms="104872" status="PASS">
+        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:29:50 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-08-09T16:29:54 IST" duration-ms="3460" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registered_customers -->
-        <test-method signature="new_customers()[pri:1, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-08T15:44:17 IST" name="new_customers" finished-at="2023-08-08T15:44:52 IST" duration-ms="35689" status="PASS">
+        </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
+        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:29:54 IST" name="TC002_invalidmobileno" finished-at="2023-08-09T16:29:59 IST" duration-ms="4993" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- new_customers -->
-        <test-method signature="verify_Side_menu()[pri:2, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-08T15:44:52 IST" name="verify_Side_menu" finished-at="2023-08-08T15:47:10 IST" duration-ms="137273" status="PASS">
+        </test-method> <!-- TC002_invalidmobileno -->
+        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:29:59 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-08-09T16:30:04 IST" duration-ms="5172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Side_menu -->
-      </class> <!-- Page_Test.E_Shop_test -->
-    </test> <!-- E_Shop_test -->
+        </test-method> <!-- TC003_Verify_Login_with_short_length_of_mobile_number_credential -->
+        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:04 IST" name="TC004_max_digit_mobile_number" finished-at="2023-08-09T16:30:10 IST" duration-ms="5851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_max_digit_mobile_number -->
+        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:10 IST" name="TC005_Terms_of_use_button" finished-at="2023-08-09T16:30:20 IST" duration-ms="9953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_Terms_of_use_button -->
+        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:20 IST" name="TC006_Privacy_policy" finished-at="2023-08-09T16:30:27 IST" duration-ms="6925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_Privacy_policy -->
+        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:27 IST" name="TC007_contact_Us" finished-at="2023-08-09T16:30:31 IST" duration-ms="4032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_contact_Us -->
+        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:31 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-08-09T16:30:58 IST" duration-ms="26963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_Verify_Login_with_valid_credential -->
+        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:30:58 IST" name="TC009_resend_butn" finished-at="2023-08-09T16:31:13 IST" duration-ms="15405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_resend_butn -->
+        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:31:13 IST" name="TC010_inavalid_OTP" finished-at="2023-08-09T16:31:28 IST" duration-ms="15299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_inavalid_OTP -->
+        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@33f676f6]" started-at="2023-08-09T16:31:28 IST" name="TC011_edit_moble" finished-at="2023-08-09T16:32:03 IST" duration-ms="34352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_edit_moble -->
+      </class> <!-- Page_Test.Login_Page_Test -->
+    </test> <!-- Login_page -->
   </suite> <!-- Hero_App -->
 </testng-results>
