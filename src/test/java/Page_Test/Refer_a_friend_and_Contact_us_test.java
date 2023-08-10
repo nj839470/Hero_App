@@ -19,9 +19,9 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{
 		msg("************************Refer a Friend**************************");
 		ob = new Refer_a_friend_and_Contact_us();
-//		login = new Login_Page_Test();
-//		login.login();
-//		Thread.sleep(3000);
+		login = new Login_Page_Test();
+		login.login();
+		Thread.sleep(3000);
 		try{
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);

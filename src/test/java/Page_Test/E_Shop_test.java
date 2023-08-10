@@ -22,7 +22,7 @@ public class E_Shop_test extends Base_Utility{
 		Thread.sleep(5000);
 		try {
 		Custom_click(ob.E_shop(), ob.E_shop().getText());
-		Thread.sleep(8000);
+		Thread.sleep(10000);
 		try {
 		Custom_click(ob.shoping_cart(), "Shoping Cart list");
 		Thread.sleep(2000);
@@ -77,7 +77,7 @@ public class E_Shop_test extends Base_Utility{
 		Thread.sleep(2000);
 		scrollByText("CREATE AN ACCOUNT");
 		Custom_click(ob.back_button(), "Back from Create New Customer Account");
-		Custom_click(ob.back(), " Back from E-shop ");
+//		Custom_click(ob.back(), " Back from E-shop ");
 		}catch(Exception e)
 		{
 			System.out.println(e);
@@ -85,9 +85,10 @@ public class E_Shop_test extends Base_Utility{
 		
 	}
 //	@Test(priority = 2)
-//	public void verify_Side_menu()
+//	public void verify_Side_menu() throws InterruptedException
 //	{
 //		Custom_click(ob.Side_menu(), " Side menu ");
+//		Thread.sleep(2000);
 //		ob.All_menu_inside_side_menu();
 //		Custom_click(ob.HOME(), ob.HOME().getText());
 //	}

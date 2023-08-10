@@ -195,7 +195,7 @@ public class E_Shop extends Base_Utility {
 	{
 		return back;
 	}
-	@FindBy(xpath ="//android.widget.TextView[@text = 'Toggle Nav']")
+	@FindBy(xpath ="//android.view.View[@text ='']")
 	private WebElement Side_menu;
 	@FindBy(xpath ="//android.view.View[@content-desc='HOME']")
 	private WebElement HOME;

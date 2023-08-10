@@ -11,9 +11,10 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	public Login_Page_Test login;
 	@Test(priority = 0)
 	public void TC051_verify_Feedback() throws InterruptedException {
+		msg("************************Feedback and About Hero test**************************");
 		ob =new Feedback_and_About_Hero();
-//		login = new Login_Page_Test();
-//		login.login();
+		login = new Login_Page_Test();
+		login.login();
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
@@ -41,7 +42,7 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	{
 		try {
 		Custom_click(ob.goodlife(), "Goodlife");
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		msg("goodlife page test =" +ob.goodlife_page_test().getText());
 		Custom_click(ob.back_btn(), "Back from GoodLife page");
 		}catch(Exception e){msg("" +e);}

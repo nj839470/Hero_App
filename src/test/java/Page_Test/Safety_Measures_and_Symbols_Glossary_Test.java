@@ -14,8 +14,8 @@ public class Safety_Measures_and_Symbols_Glossary_Test extends Base_Utility{
 	{
 		msg("************************Safety Measures and Symbols Glossary Test**************************");
 		ob = new Safety_Measures_and_Symbols_Glossary();
-//		login = new Login_Page_Test();
-//		login.login();
+		login = new Login_Page_Test();
+		login.login();
 		Thread.sleep(5000);
 		Custom_click(ob.home(), ob.home().getText());
 		Custom_click(ob.side_menu_btn(), " Side Menu Button ");

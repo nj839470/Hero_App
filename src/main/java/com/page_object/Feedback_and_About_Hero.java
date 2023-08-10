@@ -96,9 +96,9 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	//**********************************************Side menu page function*********************************
 	@FindBy(xpath ="//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/sideMenuOffer']//android.widget.ImageView")
 	private WebElement goodlife;
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id='com.customerapp.hero:id/iv_trust']")
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_trust']")
 	private WebElement wheels_of_trust;
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id = 'com.customerapp.hero:id/iv_joyride']")
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_joyride']")
 	private WebElement Joyride;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
 	private WebElement goodlife_page_test;

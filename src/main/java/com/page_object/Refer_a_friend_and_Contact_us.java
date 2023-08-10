@@ -177,8 +177,10 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement Linkedin_Join_now;
 	@FindBy(xpath = "//android.widget.Button[@text ='Dismiss']")
 	private WebElement Close_linkedin_pop_message;
-	@FindBy(xpath = "//android.view.View[@resource-id ='modal-header']")
-	private WebElement Twiter_header;
+	@FindBy(xpath = "//android.widget.Button[contains(@text,'Follow')]")
+	private WebElement Twiter_Follow;
+	@FindBy(xpath="//android.view.View[@content-desc=\"155.2KFollowers\"]/android.widget.TextView[1]")
+	private WebElement Twiter_Followers;
 
 	public WebElement Contact_us() {
 		return Contact_us;
@@ -273,7 +275,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			msg(Visit_page_text.get(4).getText());
 			Custom_click(visit_Page.get(4), header);
 			Thread.sleep(7000);
-			msg(Twiter_header.getText());
+			msg(" Total Followers = " +Twiter_Followers.getText());
+			Custom_click(Twiter_Follow, Twiter_Follow.getText());
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			msg("" + e);
