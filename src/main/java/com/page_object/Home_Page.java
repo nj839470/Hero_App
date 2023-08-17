@@ -539,4 +539,64 @@ public class Home_Page extends Base_Utility {
 			j++;
 		}
 	}
+	//****************************verify_EShop************************************
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[2]")
+	private WebElement E_shop;
+	@FindBy(xpath ="//android.view.View[@resource-id ='nav-global-location-slot']")
+	private WebElement E_shop_location;
+	@FindBy(xpath ="(//android.widget.Button[@text])[3]")
+	private WebElement Categories;
+	@FindBy(xpath ="//android.widget.Button[contains(@text,'BACK')]")
+	private WebElement BACK_TO_HERO_MOTOCORP;
+	public WebElement E_shop()
+	{
+		return E_shop;
+	}
+	public WebElement E_shop_location()
+	{
+		return E_shop_location;
+	}
+	public WebElement Categories()
+	{
+		return Categories;
+	}
+	public WebElement BACK_TO_HERO_MOTOCORP()
+	{
+		return BACK_TO_HERO_MOTOCORP;
+	}
+	//****************************Benifits_Vehicle_Exchange************************************
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[3]")
+	private WebElement Benifits;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl']")
+	private WebElement goodlife;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1'])[1]")
+	private WebElement goodlife_message;
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[3]")
+	private WebElement Vehicle_Exchange;
+	@FindBy(xpath="(//android.widget.ListView)[1]//android.view.View[@index]")
+	private List<WebElement> Vehicle_Exchange_info;
+	public WebElement Benifits()
+	{
+		return Benifits;
+	}
+	public WebElement goodlife()
+	{
+		return goodlife;
+	}
+	public WebElement goodlife_message()
+	{
+		return goodlife_message;
+	}
+	public WebElement Vehicle_Exchange()
+	{
+		return Vehicle_Exchange;
+	}
+	public void Vehicle_Exchange_info()
+	{
+		for(int i=0;i<Vehicle_Exchange_info.size()-1;i++)
+		{
+			msg(Vehicle_Exchange_info.get(i).getText());
+		}
+	}
+	//****************************Community_and_Tips************************************
 }

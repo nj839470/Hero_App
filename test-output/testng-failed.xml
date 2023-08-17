@@ -8,10 +8,15 @@
     <classes>
       <class name="Page_Test.Home_Page_Test">
         <methods>
-          <include name="verify_Service_at_home_page"/>
+          <include name="TC024_Select_city"/>
+          <include name="TC017_Home_page_verify"/>
+          <include name="TC022_Verify_Technical_Support_Manager"/>
+          <include name="TC020_Verify_Relationship_Manager"/>
+          <include name="TC021_Verify_RSA"/>
+          <include name="TC019_Verify_Documents"/>
           <include name="TC018__verify_Navigate"/>
-          <include name="verify_Latest_at_home_page"/>
-          <include name="verify_Notify_me_in_Latest_at_home_page"/>
+          <include name="TC023_Verify_Dealer_Locator"/>
+          <include name="TC025_View_dealer_name_and_address"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.Home_Page_Test -->
