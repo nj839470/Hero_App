@@ -170,7 +170,7 @@ public class Login_Page_Test extends Base_Utility {
 			Thread.sleep(2000);
 			Custom_click(ob1.Allow(), ob.Allow().getText()
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-			Custom_click(ob1.banner_Img_close(), " Banner Img close");
+//			Custom_click(ob1.banner_Img_close(), " Banner Img close");
 //*****************************above 6 line for emulator **********************************
 //		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
 //			Custom_click(ob1.video_close_button(), "Vodeo close");

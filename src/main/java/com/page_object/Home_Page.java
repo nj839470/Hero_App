@@ -432,5 +432,111 @@ public class Home_Page extends Base_Utility {
 			driver.navigate().back();
 		}
 	}
-
+	//****************************Service_at_home_page************************************
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1'])[2]")
+	private WebElement Service_status;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/book_now_btn']")
+	private WebElement View_details_button;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl']")
+	private WebElement Vehicle_service;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_name']")
+	private WebElement Vehicle_name;
+	public WebElement Service_status()
+	{
+		return Service_status;
+	}
+	public WebElement View_details_button()
+	{
+		return View_details_button;
+	}
+	public WebElement Vehicle_service()
+	{
+		return Vehicle_service;
+	}
+	public WebElement Vehicle_name() {
+		return Vehicle_name;
+	}
+	//****************************Latest_at_home_page************************************
+	@FindBy(xpath ="(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[1]")
+	private WebElement Latest_Vehicle;
+	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[1]")
+	private WebElement latest_vehicle_message;
+	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[1]")
+	private WebElement mute;
+	@FindBy(xpath="//android.widget.Image[@text ='scroll_img']")
+	private WebElement scroll_img;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='notifyMeButton']")
+	private WebElement Notify_me;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id='userName']")
+	private WebElement user_name;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id='userEmail']")
+	private WebElement user_email;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id='pincode']")
+	private WebElement pincode;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id='userMobile']")
+	private WebElement user_mobile;
+	@FindBy(xpath ="//android.view.View[@content-desc=\"SEND OTP\"]/android.widget.TextView -button")
+	private WebElement Send_OTP_button;
+	@FindBy(xpath ="//android.widget.EditText[contains(@resource-id ,'digit')]")
+	private List<WebElement> otp;
+	@FindBy(xpath ="//android.view.View[@resource-id ='otperrormessage']")
+	private WebElement otp_error_message;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='lead-gen-submit-button']")
+	private WebElement submit_button;
+	public WebElement Latest_Vehicle()
+	{
+		return Latest_Vehicle;
+	}
+	public WebElement mute()
+	{
+		return mute;
+	}
+	public WebElement scroll_img()
+	{
+		return scroll_img;
+	}
+	public WebElement latest_vehicle_message()
+	{
+		return latest_vehicle_message;
+	}
+	public WebElement Notify_me()
+	{
+		return Notify_me;
+	}
+	public WebElement user_name()
+	{
+		return user_name;
+	}
+	public WebElement user_email()
+	{
+		return user_email;
+	}
+	public WebElement pincode()
+	{
+		return pincode;
+	}
+	public WebElement user_mobile()
+	{
+		return user_mobile;
+	}
+	public WebElement Send_OTP_button()
+	{
+		return Send_OTP_button;
+	}
+	public WebElement submit_button()
+	{
+		return submit_button;
+	}
+	public WebElement otp_error_message()
+	{
+		return otp_error_message;
+	}
+	public void otp()
+	{
+		for(int i=0,j=3;i<otp.size();i++)
+		{
+			custom_sendkeys(otp.get(i), "j", " OTP" +j);
+			j++;
+		}
+	}
 }

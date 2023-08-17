@@ -185,14 +185,10 @@ public class My_Profile_Page_Test extends Base_Utility {
 			try {
 				msg("Emergency contacts" + ob.License_verify().getText());
 				Custom_click(ob.add_Liense_now(), "  Add Emergency contacts");
-//		if(ob.allow() != null)
-//		{
-//		Custom_click(ob.allow(), "Allow");
-//		}
+				Custom_click(ob.Back(), " Back from Select Contacts page");
 			} catch (Exception e) {
 				msg("Emergency contacts is already given");
 			}
-			Custom_click(ob.Back(), " Back from Select Contacts page");
 			Custom_click(ob.Back(), " Back from Emergency Contacts page");
 			Custom_click(ob.Back(), " Back from profile Details");
 			driver.navigate().back();

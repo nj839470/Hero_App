@@ -294,7 +294,7 @@ public class GoodLife extends Base_Utility {
 	}
 
 	public void Benefits_message() {
-		for (int i = 1; i < Benefits_message.size()-1; i++) {
+		for (int i = 2; i < Benefits_message.size(); i++) {
 			msg(Benefits_message.get(i).getText());
 		}
 	}

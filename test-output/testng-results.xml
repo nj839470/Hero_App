@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T17:35:07 IST" name="Hero_App" finished-at="2023-08-10T17:40:22 IST" duration-ms="314840">
+  <suite started-at="2023-08-11T18:02:32 IST" name="Hero_App" finished-at="2023-08-11T18:04:58 IST" duration-ms="145576">
     <groups>
     </groups>
-    <test started-at="2023-08-10T17:35:07 IST" name="E_Shop_test" finished-at="2023-08-10T17:40:22 IST" duration-ms="314840">
+    <test started-at="2023-08-11T18:02:32 IST" name="E_Shop_test" finished-at="2023-08-11T18:04:58 IST" duration-ms="145576">
       <class name="Page_Test.E_Shop_test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-10T17:35:07 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-10T17:35:27 IST" duration-ms="19190" status="PASS">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.E_Shop_test@4bff7da0]" started-at="2023-08-11T18:02:32 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-11T18:02:47 IST" duration-ms="14944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="registered_customers()[pri:0, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-10T17:35:27 IST" name="registered_customers" finished-at="2023-08-10T17:37:17 IST" duration-ms="110434" status="PASS">
+        <test-method signature="registered_customers()[pri:0, instance:Page_Test.E_Shop_test@4bff7da0]" started-at="2023-08-11T18:02:47 IST" name="registered_customers" finished-at="2023-08-11T18:04:20 IST" duration-ms="93021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registered_customers -->
-        <test-method signature="new_customers()[pri:1, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-10T17:37:17 IST" name="new_customers" finished-at="2023-08-10T17:37:59 IST" duration-ms="41912" status="PASS">
+        <test-method signature="new_customers()[pri:1, instance:Page_Test.E_Shop_test@4bff7da0]" started-at="2023-08-11T18:04:20 IST" name="new_customers" finished-at="2023-08-11T18:04:58 IST" duration-ms="37527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_customers -->
-        <test-method signature="verify_Side_menu()[pri:2, instance:Page_Test.E_Shop_test@3f1d2e23]" started-at="2023-08-10T17:37:59 IST" name="verify_Side_menu" finished-at="2023-08-10T17:40:22 IST" duration-ms="143234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Side_menu -->
       </class> <!-- Page_Test.E_Shop_test -->
     </test> <!-- E_Shop_test -->
   </suite> <!-- Hero_App -->

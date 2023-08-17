@@ -324,7 +324,9 @@ public class Services_Page_Test extends Base_Utility {
 			Custom_click(ob.days_960(), text);
 			msg("Paid Service for = " + text);
 			ob.Service_schedule_More_Than_15500();
+			try {
 			Custom_click(ob.back_button(), " Back from Servie Schedule");
+			}catch (Exception e) {Custom_click(ob.back_button(), " Back from Servie Schedule"); }
 		} catch (Exception e) {
 			msg("" + e);
 

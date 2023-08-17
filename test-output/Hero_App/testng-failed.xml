@@ -8,7 +8,7 @@
     <classes>
       <class name="Page_Test.E_Shop_test">
         <methods>
-          <include name="verify_Side_menu"/>
+          <include name="registered_customers"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
       </class> <!-- Page_Test.E_Shop_test -->

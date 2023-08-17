@@ -179,7 +179,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement Close_linkedin_pop_message;
 	@FindBy(xpath = "//android.widget.Button[contains(@text,'Follow')]")
 	private WebElement Twiter_Follow;
-	@FindBy(xpath="//android.view.View[@content-desc=\"155.2KFollowers\"]/android.widget.TextView[1]")
+	@FindBy(xpath="//android.view.View[contains(@content-desc, 'Followers')]/android.widget.TextView[1]")
 	private WebElement Twiter_Followers;
 
 	public WebElement Contact_us() {
