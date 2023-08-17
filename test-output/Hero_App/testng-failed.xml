@@ -4,14 +4,17 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="E_Shop_test(failed)">
+  <test thread-count="5" name="Home_Page_Test(failed)">
     <classes>
-      <class name="Page_Test.E_Shop_test">
+      <class name="Page_Test.Home_Page_Test">
         <methods>
-          <include name="registered_customers"/>
+          <include name="verify_Service_at_home_page"/>
+          <include name="TC018__verify_Navigate"/>
+          <include name="verify_Latest_at_home_page"/>
+          <include name="verify_Notify_me_in_Latest_at_home_page"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.E_Shop_test -->
+      </class> <!-- Page_Test.Home_Page_Test -->
     </classes>
-  </test> <!-- E_Shop_test(failed) -->
+  </test> <!-- Home_Page_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

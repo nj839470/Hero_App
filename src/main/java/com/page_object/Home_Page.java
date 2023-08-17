@@ -433,7 +433,7 @@ public class Home_Page extends Base_Utility {
 		}
 	}
 	//****************************Service_at_home_page************************************
-	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1'])[2]")
+	@FindBy(xpath ="//android.widget.FrameLayout[@resource-id ='com.customerapp.hero:id/service_card_lay']//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
 	private WebElement Service_status;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/book_now_btn']")
 	private WebElement View_details_button;
@@ -461,7 +461,7 @@ public class Home_Page extends Base_Utility {
 	private WebElement Latest_Vehicle;
 	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[1]")
 	private WebElement latest_vehicle_message;
-	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[1]")
+	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[2]")
 	private WebElement mute;
 	@FindBy(xpath="//android.widget.Image[@text ='scroll_img']")
 	private WebElement scroll_img;
@@ -475,7 +475,7 @@ public class Home_Page extends Base_Utility {
 	private WebElement pincode;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id='userMobile']")
 	private WebElement user_mobile;
-	@FindBy(xpath ="//android.view.View[@content-desc=\"SEND OTP\"]/android.widget.TextView -button")
+	@FindBy(xpath ="//android.view.View[@content-desc='SEND OTP']/android.widget.TextView")
 	private WebElement Send_OTP_button;
 	@FindBy(xpath ="//android.widget.EditText[contains(@resource-id ,'digit')]")
 	private List<WebElement> otp;
@@ -535,7 +535,7 @@ public class Home_Page extends Base_Utility {
 	{
 		for(int i=0,j=3;i<otp.size();i++)
 		{
-			custom_sendkeys(otp.get(i), "j", " OTP" +j);
+			custom_sendkeys(otp.get(i), ""+j, " OTP " +j);
 			j++;
 		}
 	}
