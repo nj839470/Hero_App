@@ -569,9 +569,11 @@ public class Home_Page extends Base_Utility {
 	private WebElement Benifits;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl']")
 	private WebElement goodlife;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='eng_lang_select']")
+	private WebElement language;
 	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1'])[1]")
 	private WebElement goodlife_message;
-	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[3]")
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[4]")
 	private WebElement Vehicle_Exchange;
 	@FindBy(xpath="(//android.widget.ListView)[1]//android.view.View[@index]")
 	private List<WebElement> Vehicle_Exchange_info;
@@ -582,6 +584,10 @@ public class Home_Page extends Base_Utility {
 	public WebElement goodlife()
 	{
 		return goodlife;
+	}
+	public WebElement language()
+	{
+		return language;
 	}
 	public WebElement goodlife_message()
 	{
@@ -599,4 +605,28 @@ public class Home_Page extends Base_Utility {
 		}
 	}
 	//****************************Community_and_Tips************************************
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[2]")
+	private WebElement Community;
+	@FindBy(xpath ="//android.view.View[@resource-id = 'breadcrumb-1aaaf38848']")
+	private WebElement Community_message;
+	@FindBy(xpath="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl']")
+	private WebElement Community_message_1;
+	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[3]")
+	private WebElement Tips;
+	public WebElement Community()
+	{
+		return Community;
+	}
+	public WebElement Community_message()
+	{
+		return Community_message;
+	}
+	public WebElement Community_message_1()
+	{
+		return Community_message_1;
+	}
+	public WebElement Tips()
+	{
+		return Tips;
+	}
 }

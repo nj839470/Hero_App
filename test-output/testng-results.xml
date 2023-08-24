@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T18:10:30 IST" name="Hero_App" finished-at="2023-08-17T18:15:21 IST" duration-ms="290832">
+  <suite started-at="2023-08-23T16:10:56 IST" name="Hero_App" finished-at="2023-08-23T16:16:01 IST" duration-ms="304988">
     <groups>
     </groups>
-    <test started-at="2023-08-17T18:10:30 IST" name="Home_Page_Test" finished-at="2023-08-17T18:15:21 IST" duration-ms="290832">
+    <test started-at="2023-08-23T16:10:56 IST" name="Home_Page_Test" finished-at="2023-08-23T16:16:01 IST" duration-ms="304988">
       <class name="Page_Test.Home_Page_Test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:10:30 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-17T18:10:52 IST" duration-ms="21173" status="PASS">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:10:56 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-08-23T16:11:15 IST" duration-ms="19099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC017_Home_page_verify()[pri:0, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:10:52 IST" name="TC017_Home_page_verify" finished-at="2023-08-17T18:12:18 IST" duration-ms="86147" status="PASS">
+        <test-method signature="TC017_Home_page_verify()[pri:0, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:11:15 IST" name="TC017_Home_page_verify" finished-at="2023-08-23T16:12:44 IST" duration-ms="89309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC017_Home_page_verify -->
-        <test-method signature="TC018__verify_Navigate()[pri:1, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:12:18 IST" name="TC018__verify_Navigate" finished-at="2023-08-17T18:12:31 IST" duration-ms="12795" status="PASS">
+        <test-method signature="TC018__verify_Navigate()[pri:1, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:12:44 IST" name="TC018__verify_Navigate" finished-at="2023-08-23T16:12:59 IST" duration-ms="14609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC018__verify_Navigate -->
-        <test-method signature="TC019_Verify_Documents()[pri:2, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:12:31 IST" name="TC019_Verify_Documents" finished-at="2023-08-17T18:14:03 IST" duration-ms="92470" status="PASS">
+        <test-method signature="TC019_Verify_Documents()[pri:2, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:12:59 IST" name="TC019_Verify_Documents" finished-at="2023-08-23T16:14:34 IST" duration-ms="95183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC019_Verify_Documents -->
-        <test-method signature="TC020_Verify_Relationship_Manager()[pri:3, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:14:03 IST" name="TC020_Verify_Relationship_Manager" finished-at="2023-08-17T18:14:15 IST" duration-ms="12289" status="PASS">
+        <test-method signature="TC020_Verify_Relationship_Manager()[pri:3, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:14:34 IST" name="TC020_Verify_Relationship_Manager" finished-at="2023-08-23T16:14:49 IST" duration-ms="14826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC020_Verify_Relationship_Manager -->
-        <test-method signature="TC021_Verify_RSA()[pri:4, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:14:15 IST" name="TC021_Verify_RSA" finished-at="2023-08-17T18:14:31 IST" duration-ms="15080" status="PASS">
+        <test-method signature="TC021_Verify_RSA()[pri:4, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:14:49 IST" name="TC021_Verify_RSA" finished-at="2023-08-23T16:15:07 IST" duration-ms="18018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC021_Verify_RSA -->
-        <test-method signature="TC022_Verify_Technical_Support_Manager()[pri:5, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:14:31 IST" name="TC022_Verify_Technical_Support_Manager" finished-at="2023-08-17T18:14:36 IST" duration-ms="5815" status="PASS">
+        <test-method signature="TC022_Verify_Technical_Support_Manager()[pri:5, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:15:07 IST" name="TC022_Verify_Technical_Support_Manager" finished-at="2023-08-23T16:15:10 IST" duration-ms="3619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC022_Verify_Technical_Support_Manager -->
-        <test-method signature="TC023_Verify_Dealer_Locator()[pri:6, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:14:36 IST" name="TC023_Verify_Dealer_Locator" finished-at="2023-08-17T18:14:49 IST" duration-ms="12551" status="PASS">
+        <test-method signature="TC023_Verify_Dealer_Locator()[pri:6, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:15:10 IST" name="TC023_Verify_Dealer_Locator" finished-at="2023-08-23T16:15:23 IST" duration-ms="13112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC023_Verify_Dealer_Locator -->
-        <test-method signature="TC024_Select_city()[pri:7, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:14:49 IST" name="TC024_Select_city" finished-at="2023-08-17T18:15:11 IST" duration-ms="22324" status="PASS">
+        <test-method signature="TC024_Select_city()[pri:7, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:15:23 IST" name="TC024_Select_city" finished-at="2023-08-23T16:15:48 IST" duration-ms="24808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC024_Select_city -->
-        <test-method signature="TC025_View_dealer_name_and_address()[pri:8, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-17T18:15:11 IST" name="TC025_View_dealer_name_and_address" finished-at="2023-08-17T18:15:21 IST" duration-ms="10103" status="PASS">
+        <test-method signature="TC025_View_dealer_name_and_address()[pri:8, instance:Page_Test.Home_Page_Test@18ece7f4]" started-at="2023-08-23T16:15:48 IST" name="TC025_View_dealer_name_and_address" finished-at="2023-08-23T16:16:01 IST" duration-ms="12338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC025_View_dealer_name_and_address -->

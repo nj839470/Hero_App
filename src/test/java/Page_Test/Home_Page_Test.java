@@ -216,13 +216,13 @@ public class Home_Page_Test extends Base_Utility {
 //		custom_sendkeys(ob.user_email(), "Resnu@gmail.com", " User email ");
 //		custom_sendkeys(ob.pincode(), "657809", "Pin code ");
 //		custom_sendkeys(ob.user_mobile(), "9809786765", "Mobile number");
-//		Thread.sleep(2000);
+//		ob.pincode().click();
 //		Custom_click(ob.Send_OTP_button(), " Send OTP Button ");
 //		Thread.sleep(10000);
 //		ob.otp();
 //		if(ob.submit_button().isEnabled()!=true)
 //		{
-//			msg("Submitting but is not clickable");
+//			msg("Submitting buton is not clickable");
 //			msg(ob.otp_error_message().getText());
 //		}
 //		else
@@ -231,18 +231,18 @@ public class Home_Page_Test extends Base_Utility {
 //		}
 //		Custom_click(ob.Back(), " Back from Get ready to #LiveTheLegend");
 //	}
+//	@Test(priority = 12)
 //	public void verify_EShop() throws InterruptedException
 //	{
-//		scrollByText("Benefits");
+//		Scroll_down_page_Action("Benefits");
 //		Custom_click(ob.E_shop(), "E-Shop ");
-//		Custom_click(ob.E_shop_location(), ob.E_shop_location().getText());
-//		Thread.sleep(3000);
-//		Custom_click(ob.E_shop_location(), ob.E_shop_location().getText());
+//		msg(ob.E_shop_location().getText());
 //		Custom_click(ob.Categories(), ob.Categories().getText());
 //		Thread.sleep(2000);
 //		Custom_click(ob.BACK_TO_HERO_MOTOCORP(), " Back from hero Motocorp ");
 //		Custom_click(ob.Back(), " Back from Merchandise ");
 //		}
+//	@Test(priority = 13)
 //	public void verify_Benifits_Vehicle_Exchange() throws InterruptedException
 //	{
 //		Custom_click(ob.Benifits(), "Benifits ");
@@ -250,15 +250,23 @@ public class Home_Page_Test extends Base_Utility {
 //		msg("Welcome to " +ob.goodlife().getText() +" page");
 //		msg(ob.goodlife_message().getText());
 //		Custom_click(ob.Back(), " Back from Hero GoodLife ");
-//		scrollByText("What's New");
 //		Custom_click(ob.Vehicle_Exchange(), "Vehicle Exchange ");
 //		Thread.sleep(2000);
+//		Custom_click(ob.language(), " English ");
 //		msg("For exchange please fill below mandatory filled");
 //		ob.Vehicle_Exchange_info();
 //		Custom_click(ob.Back(), " Back from Wheels of Trust ");
 //	}
-//	public void verify_Community_and_Tips()
+//	@Test(priority = 14)
+//	public void verify_Community_and_Tips() throws InterruptedException
 //	{
-//		scrollByText("Tips");
+//		Scroll_down_page_Action("What's New");
+//		Custom_click(ob.Community(), "Community ");
+//		Thread.sleep(5000);
+//		msg(ob.Community_message_1().getText());
+//		msg(ob.Community_message().getText());
+//		Custom_click(ob.Back(), " Back from Xclan ");
+//		scrollByText("Key Actions");
+//		
 //	}
 }
