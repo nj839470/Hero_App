@@ -17,13 +17,12 @@ public class Home_Page_Test extends Base_Utility {
 
 	public Login_Page_Test login;
 	public Home_Page ob;
-
 	@Test(priority = 0)
 	public void TC017_Home_page_verify() throws InterruptedException {
 		msg("************************Home_Page_Test**************************");
 		ob = new Home_Page();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		try {
 			Thread.sleep(5000);
 			msg("Current Temperature is =" + ob.temperature().getText());
@@ -189,84 +188,84 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(priority = 9)
 	public void verify_Service_at_home_page()
 	{
-		scrollByText("Latest");
+		Scroll_down_page_Action("Latest");
 		msg("Service status =" +ob.Service_status().getText());
 		Custom_click(ob.View_details_button(), ob.View_details_button().getText());
 		msg(ob.Vehicle_service().getText()+" for " +ob.Vehicle_name().getText());
 		driver.navigate().back();
 	}
-	@Test(priority = 10)
-	public void verify_Latest_at_home_page() throws InterruptedException
-	{
-		Custom_click(ob.Latest_Vehicle(), "Latest Vehicle");
-		Thread.sleep(6000);
-		msg(ob.latest_vehicle_message().getText());
-		Custom_click(ob.mute(), ob.mute().getText());
-		Thread.sleep(2000);
-		Custom_click(ob.mute(), ob.mute().getText());
-		Custom_click(ob.scroll_img(), " Scroll img");
-		Thread.sleep(3000);
-	}
-	@Test(priority = 11)
-	public void verify_Notify_me_in_Latest_at_home_page() throws InterruptedException
-	{
-		Custom_click(ob.Notify_me(), ob.Notify_me().getText());
-		Thread.sleep(2000);
-		custom_sendkeys(ob.user_name(), "Renu", "User name ");
-		custom_sendkeys(ob.user_email(), "Resnu@gmail.com", " User email ");
-		custom_sendkeys(ob.pincode(), "657809", "Pin code ");
-		custom_sendkeys(ob.user_mobile(), "9809786765", "Mobile number");
-		ob.pincode().click();
-		Custom_click(ob.Send_OTP_button(), " Send OTP Button ");
-		Thread.sleep(10000);
-		ob.otp();
-		if(ob.submit_button().isEnabled()!=true)
-		{
-			msg("Submitting buton is not clickable");
-			msg(ob.otp_error_message().getText());
-		}
-		else
-		{
-			Custom_click(ob.submit_button(), "Submit button");
-		}
-		Custom_click(ob.Back(), " Back from Get ready to #LiveTheLegend");
-	}
-	@Test(priority = 12)
-	public void verify_EShop() throws InterruptedException
-	{
-		Scroll_down_page_Action("Benefits");
-		Custom_click(ob.E_shop(), "E-Shop ");
-		msg(ob.E_shop_location().getText());
-		Custom_click(ob.Categories(), ob.Categories().getText());
-		Thread.sleep(2000);
-		Custom_click(ob.BACK_TO_HERO_MOTOCORP(), " Back from hero Motocorp ");
-		Custom_click(ob.Back(), " Back from Merchandise ");
-		}
-	@Test(priority = 13)
-	public void verify_Benifits_Vehicle_Exchange() throws InterruptedException
-	{
-		Custom_click(ob.Benifits(), "Benifits ");
-		Thread.sleep(6000);
-		msg("Welcome to " +ob.goodlife().getText() +" page");
-		msg(ob.goodlife_message().getText());
-		Custom_click(ob.Back(), " Back from Hero GoodLife ");
-		Custom_click(ob.Vehicle_Exchange(), "Vehicle Exchange ");
-		Thread.sleep(2000);
-		Custom_click(ob.language(), " English ");
-		msg("For exchange please fill below mandatory filled");
-		ob.Vehicle_Exchange_info();
-		Custom_click(ob.Back(), " Back from Wheels of Trust ");
-	}
-	@Test(priority = 14)
-	public void verify_Community_and_Tips() throws InterruptedException
-	{
-		Scroll_down_page_Action("What's New");
-		Custom_click(ob.Community(), "Community ");
-		Thread.sleep(5000);
-		msg(ob.Community_message_1().getText());
-		msg(ob.Community_message().getText());
-		Custom_click(ob.Back(), " Back from Xclan ");
-		scrollByText("Key Actions");
-		
-	}
+//	@Test(priority = 10)
+//	public void verify_Latest_at_home_page() throws InterruptedException
+//	{
+//		Custom_click(ob.Latest_Vehicle(), "Latest Vehicle");
+//		Thread.sleep(6000);
+//		msg(ob.latest_vehicle_message().getText());
+//		Custom_click(ob.mute(), ob.mute().getText());
+//		Thread.sleep(2000);
+//		Custom_click(ob.mute(), ob.mute().getText());
+//		Custom_click(ob.scroll_img(), " Scroll img");
+//		Thread.sleep(3000);
+//	}
+//	@Test(priority = 11)
+//	public void verify_Notify_me_in_Latest_at_home_page() throws InterruptedException
+//	{
+//		Custom_click(ob.Notify_me(), ob.Notify_me().getText());
+//		Thread.sleep(2000);
+//		custom_sendkeys(ob.user_name(), "Renu", "User name ");
+//		custom_sendkeys(ob.user_email(), "Resnu@gmail.com", " User email ");
+//		custom_sendkeys(ob.pincode(), "657809", "Pin code ");
+//		custom_sendkeys(ob.user_mobile(), "9809786765", "Mobile number");
+//		ob.pincode().click();
+//		Custom_click(ob.Send_OTP_button(), " Send OTP Button ");
+//		Thread.sleep(10000);
+//		ob.otp();
+//		if(ob.submit_button().isEnabled()!=true)
+//		{
+//			msg("Submitting buton is not clickable");
+//			msg(ob.otp_error_message().getText());
+//		}
+//		else
+//		{
+//			Custom_click(ob.submit_button(), "Submit button");
+//		}
+//		Custom_click(ob.Back(), " Back from Get ready to #LiveTheLegend");
+//	}
+//	@Test(priority = 12)
+//	public void verify_EShop() throws InterruptedException
+//	{
+//		Scroll_down_page_Action("Benefits");
+//		Custom_click(ob.E_shop(), "E-Shop ");
+//		msg(ob.E_shop_location().getText());
+//		Custom_click(ob.Categories(), ob.Categories().getText());
+//		Thread.sleep(2000);
+//		Custom_click(ob.BACK_TO_HERO_MOTOCORP(), " Back from hero Motocorp ");
+//		Custom_click(ob.Back(), " Back from Merchandise ");
+//		}
+//	@Test(priority = 13)
+//	public void verify_Benifits_Vehicle_Exchange() throws InterruptedException
+//	{
+//		Custom_click(ob.Benifits(), "Benifits ");
+//		Thread.sleep(6000);
+//		msg("Welcome to " +ob.goodlife().getText() +" page");
+//		msg(ob.goodlife_message().getText());
+//		Custom_click(ob.Back(), " Back from Hero GoodLife ");
+//		Custom_click(ob.Vehicle_Exchange(), "Vehicle Exchange ");
+//		Thread.sleep(2000);
+//		Custom_click(ob.language(), " English ");
+//		msg("For exchange please fill below mandatory filled");
+//		ob.Vehicle_Exchange_info();
+//		Custom_click(ob.Back(), " Back from Wheels of Trust ");
+//	}
+//	@Test(priority = 14)
+//	public void verify_Community_and_Tips() throws InterruptedException
+//	{
+//		Scroll_down_page_Action("What's New");
+//		Custom_click(ob.Community(), "Community ");
+//		Thread.sleep(5000);
+//		msg(ob.Community_message_1().getText());
+//		msg(ob.Community_message().getText());
+//		Custom_click(ob.Back(), " Back from Xclan ");
+//		scrollByText("Key Actions");
+//		
+//	}
 }

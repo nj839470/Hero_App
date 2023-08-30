@@ -17,7 +17,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 	public Login_Page_Test login;
 
 	@Test(priority = 0)
-	public void TC012_verify_Nick_Name() {
+	public void TC012_verify_Nick_Name() throws InterruptedException {
 		msg("************************Select_Vehicle_Page_Test**************************");
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
@@ -28,6 +28,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("nickname"), "Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.nick_name_close_button(), "Nick name close button ");
+		Thread.sleep(2000);
 		if (ob.Nick_name().getText().equalsIgnoreCase(config_getdata("nickname"))) {
 			msg("Nick name saved with close button");
 		} else {
@@ -37,13 +38,14 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 	}
 
 	@Test(dependsOnMethods = "TC012_verify_Nick_Name()", priority = 1)
-	public void TC013_Verify_With_30_letter_nick_name() {
+	public void TC013_Verify_With_30_letter_nick_name() throws InterruptedException {
 
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("30_letter_nick_name"), " 30 letter Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.save_button(), "Save button after updating the 30 letter nick name is ");
+		Thread.sleep(2000);
 		String nick1 = ob.Nick_name().getText();
 		if (nick1.length() == 30) {
 			msg(" = 30 letter nick name are acceptable");
@@ -54,13 +56,14 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 	}
 
 	@Test(dependsOnMethods = "TC013_Verify_With_30_letter_nick_name()", priority = 2)
-	public void TC014_Verify_With_31_letter_nick_name() {
+	public void TC014_Verify_With_31_letter_nick_name() throws InterruptedException {
 
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("31_letter_nick_name"), "31 letter Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.save_button(), "Save button after updating 31 letter nick name the nick name  ");
+		Thread.sleep(2000);
 		String nick2 = ob.Nick_name().getText();
 		if (nick2.length() == 31) {
 			msg(" = 31 letter nick name are acceptable");
@@ -71,13 +74,14 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 	}
 
 	@Test(dependsOnMethods = "TC014_Verify_With_31_letter_nick_name()", priority = 3)
-	public void TC015_Verify_With_29_letter_nick_name() {
+	public void TC015_Verify_With_29_letter_nick_name() throws InterruptedException {
 
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		ob.edit_nickame_text().clear();
 		custom_sendkeys(ob.edit_nickame_text(), config_getdata("29_letter_nick_name"), "29 letter Nick Name ");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.save_button(), "Save button after updating the 29 letter nick name ");
+		Thread.sleep(2000);
 		String nick3 = ob.Nick_name().getText();
 		if (nick3.length() == 29) {
 			msg(" = 29 letter nick name are acceptable");
