@@ -305,11 +305,43 @@ public class Home_Page extends Base_Utility {
 	private WebElement locate_nearest_dealer_real_device;
 	@FindBy(xpath = "//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
 	private WebElement locate_the_nearest_dealer;
-
+	@FindBy(xpath ="//android.view.View[@resource-id ='OutletState']")
+	private WebElement State;
+	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
+	private List<WebElement> select_state;
+	@FindBy(xpath ="//android.view.View[@resource-id ='OutletCity']")
+	private WebElement City;
+	@FindBy(xpath ="//android.view.View[@resource-id ='OutletLocality']")
+	private WebElement Locality;
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='accept']")
+	private WebElement accept_cookie;
+	@FindBy(xpath ="//android.widget.Button[@text ='Search']")
+	private WebElement Search_button;
+	@FindBy(xpath ="//android.view.View[contains(@text,'HERO MOTOCORP')]")
+	private WebElement Local_dealer_fullname;
+	@FindBy(xpath="//android.widget.TextView[contains(@text,'Hero Motocorp')]")
+	private WebElement Local_dealer_name;
+	@FindBy(xpath ="//android.view.View[contains(@text,'No')]")
+	private WebElement Local_dealer_address;
 	public WebElement RSA() {
 		return RSA;
 	}
-
+	public WebElement accept_cookie()
+	{
+		return accept_cookie;
+	}
+	public WebElement Local_dealer_fullname()
+	{
+		return Local_dealer_fullname;
+	}
+	public WebElement Local_dealer_name()
+	{
+		return Local_dealer_name;
+	}
+	public WebElement Local_dealer_address()
+	{
+		return Local_dealer_address;
+	}
 	public WebElement locate_nearest_dealer() {
 		return locate_nearest_dealer;
 	}
@@ -321,7 +353,85 @@ public class Home_Page extends Base_Utility {
 	public WebElement locate_the_nearest_dealer() {
 		return locate_the_nearest_dealer;
 	}
-
+	public WebElement State()
+	{
+		return State;
+	}
+	public WebElement City()
+	{
+		return City;
+	}
+	public WebElement Locality()
+	{
+		return Locality;
+	}
+	public WebElement Search_button()
+	{
+		return Search_button;
+	}
+	public void select_state(String State_name)
+	{
+		for(int i=0;i<select_state.size();i++)
+		{
+			String name = select_state.get(i).getText();
+			if(State_name.equalsIgnoreCase(name))
+			{
+				Custom_click(select_state.get(i), name);
+				break;
+			}
+			else {
+			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			if(i==(select_state.size()-1))
+			{
+			select_state.get(i).click();
+				State.click();
+				 i = 0;
+			}
+			}
+			}
+		}
+	public void select_city(String City_name)
+	{
+		for(int i=0;i<select_state.size();i++)
+		{
+			String name = select_state.get(i).getText();
+			if(City_name.equalsIgnoreCase(name))
+			{
+				Custom_click(select_state.get(i), name);
+				break;
+			}
+			else {
+			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			if(i==(select_state.size()-1))
+			{
+				select_state.get(i).click();
+				City.click();
+				 i = 0;
+			}
+			}
+		}
+	}
+	public void select_Locality(String Locality_name)
+	{
+		for(int i=0;i<select_state.size();i++)
+		{
+			String name = select_state.get(i).getText();
+			if(Locality_name.equalsIgnoreCase(name))
+			{
+				Custom_click(select_state.get(i), name);
+				break;
+			}
+			else {
+			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			if(i==(select_state.size()-1))
+			{
+				select_state.get(i).click();
+				Locality.click();
+				 i = 0;
+			}
+			}
+		}
+	}
 //****************************Technical Support************************************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[5]")
 	private WebElement Technical_Support;
@@ -461,28 +571,28 @@ public class Home_Page extends Base_Utility {
 	private WebElement Latest_Vehicle;
 	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[1]")
 	private WebElement latest_vehicle_message;
-	@FindBy(xpath ="(//android.widget.TextView[@index ='1'])[2]")
+	@FindBy(xpath ="//android.view.View[contains(@text , 'THE LEGEND RETURNS')]")
 	private WebElement mute;
-	@FindBy(xpath="//android.widget.Image[@text ='scroll_img']")
-	private WebElement scroll_img;
-	@FindBy(xpath ="//android.widget.Button[@resource-id ='notifyMeButton']")
-	private WebElement Notify_me;
-	@FindBy(xpath ="//android.widget.EditText[@resource-id='userName']")
-	private WebElement user_name;
-	@FindBy(xpath ="//android.widget.EditText[@resource-id='userEmail']")
-	private WebElement user_email;
-	@FindBy(xpath ="//android.widget.EditText[@resource-id='pincode']")
-	private WebElement pincode;
-	@FindBy(xpath ="//android.widget.EditText[@resource-id='userMobile']")
-	private WebElement user_mobile;
-	@FindBy(xpath ="//android.view.View[@content-desc='SEND OTP']/android.widget.TextView")
-	private WebElement Send_OTP_button;
-	@FindBy(xpath ="//android.widget.EditText[contains(@resource-id ,'digit')]")
-	private List<WebElement> otp;
-	@FindBy(xpath ="//android.view.View[@resource-id ='otperrormessage']")
-	private WebElement otp_error_message;
-	@FindBy(xpath ="//android.widget.Button[@resource-id ='lead-gen-submit-button']")
-	private WebElement submit_button;
+//	@FindBy(xpath="//android.widget.Image[@text ='scroll_img']")
+//	private WebElement scroll_img;
+//	@FindBy(xpath ="//android.widget.Button[@resource-id ='notifyMeButton']")
+//	private WebElement Notify_me;
+//	@FindBy(xpath ="//android.widget.EditText[@resource-id='userName']")
+//	private WebElement user_name;
+//	@FindBy(xpath ="//android.widget.EditText[@resource-id='userEmail']")
+//	private WebElement user_email;
+//	@FindBy(xpath ="//android.widget.EditText[@resource-id='pincode']")
+//	private WebElement pincode;
+//	@FindBy(xpath ="//android.widget.EditText[@resource-id='userMobile']")
+//	private WebElement user_mobile;
+//	@FindBy(xpath ="//android.view.View[@content-desc='SEND OTP']/android.widget.TextView")
+//	private WebElement Send_OTP_button;
+//	@FindBy(xpath ="//android.widget.EditText[contains(@resource-id ,'digit')]")
+//	private List<WebElement> otp;
+//	@FindBy(xpath ="//android.view.View[@resource-id ='otperrormessage']")
+//	private WebElement otp_error_message;
+//	@FindBy(xpath ="//android.widget.Button[@resource-id ='lead-gen-submit-button']")
+//	private WebElement submit_button;
 	public WebElement Latest_Vehicle()
 	{
 		return Latest_Vehicle;
@@ -491,54 +601,54 @@ public class Home_Page extends Base_Utility {
 	{
 		return mute;
 	}
-	public WebElement scroll_img()
-	{
-		return scroll_img;
-	}
+//	public WebElement scroll_img()
+//	{
+//		return scroll_img;
+//	}
 	public WebElement latest_vehicle_message()
 	{
 		return latest_vehicle_message;
 	}
-	public WebElement Notify_me()
-	{
-		return Notify_me;
-	}
-	public WebElement user_name()
-	{
-		return user_name;
-	}
-	public WebElement user_email()
-	{
-		return user_email;
-	}
-	public WebElement pincode()
-	{
-		return pincode;
-	}
-	public WebElement user_mobile()
-	{
-		return user_mobile;
-	}
-	public WebElement Send_OTP_button()
-	{
-		return Send_OTP_button;
-	}
-	public WebElement submit_button()
-	{
-		return submit_button;
-	}
-	public WebElement otp_error_message()
-	{
-		return otp_error_message;
-	}
-	public void otp()
-	{
-		for(int i=0,j=3;i<otp.size();i++)
-		{
-			custom_sendkeys(otp.get(i), ""+j, " OTP " +j);
-			j++;
-		}
-	}
+//	public WebElement Notify_me()
+//	{
+//		return Notify_me;
+//	}
+//	public WebElement user_name()
+//	{
+//		return user_name;
+//	}
+//	public WebElement user_email()
+//	{
+//		return user_email;
+//	}
+//	public WebElement pincode()
+//	{
+//		return pincode;
+//	}
+//	public WebElement user_mobile()
+//	{
+//		return user_mobile;
+//	}
+//	public WebElement Send_OTP_button()
+//	{
+//		return Send_OTP_button;
+//	}
+//	public WebElement submit_button()
+//	{
+//		return submit_button;
+//	}
+//	public WebElement otp_error_message()
+//	{
+//		return otp_error_message;
+//	}
+//	public void otp()
+//	{
+//		for(int i=0,j=3;i<otp.size();i++)
+//		{
+//			custom_sendkeys(otp.get(i), ""+j, " OTP " +j);
+//			j++;
+//		}
+//	}
 	//****************************verify_EShop************************************
 	@FindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/recyclerView'])[2]")
 	private WebElement E_shop;

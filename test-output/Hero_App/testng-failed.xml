@@ -8,11 +8,10 @@
     <classes>
       <class name="Page_Test.Home_Page_Test">
         <methods>
-          <include name="verify_Benifits_Vehicle_Exchange"/>
-          <include name="verify_Community_and_Tips"/>
-          <include name="verify_Service_at_home_page"/>
+          <include name="TC025_Verify_Nearest_Dealer_info"/>
+          <include name="TC021_Verify_RSA"/>
+          <include name="TC022_Select_State_For_Nearest_Dealer"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="verify_EShop"/>
         </methods>
       </class> <!-- Page_Test.Home_Page_Test -->
     </classes>

@@ -1,10 +1,16 @@
 package com.page_object;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.utility.Base_Utility;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Feedback_and_About_Hero extends Base_Utility{
 	
@@ -18,11 +24,11 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	private WebElement side_menu_button;
 	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[7]")
 	private WebElement feedback;
-	@FindBy(xpath ="(//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/filled_exposed'])[1]")
+	@FindBy(xpath ="(//android.widget.ImageButton[@content-desc='Show dropdown menu'])[1]")
 	private WebElement Category;
-	@FindBy(xpath ="(//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/filled_exposed'])[2]")
+	@FindBy(xpath ="(//android.widget.ImageButton[@content-desc='Show dropdown menu'])[2]")
 	private WebElement Sub_Category;
-	@FindBy(xpath ="(//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/filled_exposed'])[3]")
+	@FindBy(xpath ="(//android.widget.ImageButton[@content-desc='Show dropdown menu'])[3]")
 	private WebElement Sub_Sub_Category;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id ='com.customerapp.hero:id/et_your_feedback']")
 	private WebElement feedback_message;
@@ -93,23 +99,23 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		return Cross_button;
 	}
-	//**********************************************Side menu page function*********************************
+	//**********************************************Wheels of_Trust_Select_State*********************************
 	@FindBy(xpath ="//androidx.recyclerview.widget.RecyclerView[@resource-id ='com.customerapp.hero:id/sideMenuOffer']//android.widget.ImageView")
 	private WebElement goodlife;
-	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_trust']")
-	private WebElement wheels_of_trust;
-	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_joyride']")
-	private WebElement Joyride;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl1']")
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/lbl']")
 	private WebElement goodlife_page_test;
-	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='eng_lang_select']")
-	private WebElement Language_select;
 	@FindBy(xpath ="//android.view.View[@resource-id ='cookieNotice']")
 	private WebElement cookieNotice;
-	@FindBy(xpath ="(//android.view.View[@text])[25]")
-	private WebElement wheels_of_trust_page_test;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
-	private WebElement Joyride_page_test;
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_trust']")
+	private WebElement wheels_of_trust;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='eng_lang_select']")
+	private WebElement Language_select;
+	@FindBy(xpath ="(//android.view.View[contains(@text , 'Vehicle')])[1]")
+	private WebElement Vehicle_Details;
+	@FindBy(xpath ="//android.view.View[@resource-id ='QRCodeState']")
+	private WebElement State;
+	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
+	private List<WebElement> Select_State;
 	public WebElement goodlife()
 	{
 		return goodlife;
@@ -122,14 +128,61 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		return wheels_of_trust;
 	}
-	public WebElement cookieNotice()
-	{
-		return cookieNotice;
-	}
 	public WebElement Language_select()
 	{
 		return Language_select;
 	}
+	public WebElement Vehicle_Details()
+	{
+		return Vehicle_Details;
+	}
+	public WebElement State()
+	{
+		return State;
+	}
+	public void Select_State(String State_Name)
+	{
+		for(int i=0;i<Select_State.size();i++)
+		{
+			String State_name = Select_State.get(i).getText();
+			if(State_name.equalsIgnoreCase(State_Name))
+			{
+				Custom_click(Select_State.get(i), State_name);
+				break;
+			}
+			else
+			{
+				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+				if(i== (Select_State.size()-1))
+				{
+					Select_State.get(i).click();
+					State.click();
+					i=0;
+				}
+			}
+		}
+	}
+	public WebElement cookieNotice()
+	{
+		return cookieNotice;
+	}
+ //**********************************************Wheels of_Trust_Select_city*********************************
+	@FindBy(xpath ="//android.view.View[@resource-id ='QRCodeCity']")
+	private WebElement Select_city;
+	//**********************************************Wheels of_Trust_Select_city*********************************
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='pincode']")
+	private WebElement pincode;
+	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_joyride']")
+	private WebElement Joyride;
+	
+	
+	
+	@FindBy(xpath ="//android.view.View[contains(@text ,'Select Two')]")
+	private WebElement wheels_of_trust_page_test;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
+	private WebElement Joyride_page_test;
+	
+	
 	public WebElement Joyride()
 	{
 		return Joyride;
