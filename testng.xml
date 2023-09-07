@@ -39,7 +39,7 @@
 			<class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test" />
 		</classes>
 	</test>
-	<test name="Feedback_and_About_Hero_test" enabled="true">
+	<test name="Feedback_and_About_Hero_test" enabled="false">
 		<classes>
 			<class name="Page_Test.Feedback_and_About_Hero_test" />
 		</classes>
@@ -59,7 +59,7 @@
 			<class name="Page_Test.E_Shop_test" />
 		</classes>
 	</test>
-	<test name="All test class" enabled="false">
+	<test name="All test class" enabled="true">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
 			<class name="Page_Test.Select_Vehicle_Page_Test" />

@@ -168,17 +168,132 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	}
  //**********************************************Wheels of_Trust_Select_city*********************************
 	@FindBy(xpath ="//android.view.View[@resource-id ='QRCodeCity']")
-	private WebElement Select_city;
-	//**********************************************Wheels of_Trust_Select_city*********************************
-	@FindBy(xpath ="//android.widget.EditText[@resource-id ='pincode']")
-	private WebElement pincode;
+	private WebElement City;
+	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
+	private List<WebElement> Select_city;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id = 'pincode']")
+	private WebElement Pincode;
+	@FindBy(xpath ="//android.view.View[contains(@text , 'Select Two')]")
+	private WebElement Two_Wheeler;
+	@FindBy(xpath ="//android.widget.Image[@text = 'motorcycle']")
+	private WebElement motorcycle;
+	public WebElement City()
+	{
+		return City;
+	}
+	public void Select_city(String State_Name)
+	{
+		for(int i=0;i<Select_city.size();i++)
+		{
+			String State_name = Select_city.get(i).getText();
+			if(State_name.equalsIgnoreCase(State_Name))
+			{
+				Custom_click(Select_city.get(i), State_name);
+				break;
+			}
+			else
+			{
+				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+				if(i== (Select_city.size()-1))
+				{
+					Select_city.get(i).click();
+					City.click();
+					i=0;
+				}
+			}
+		}
+	}
+	public WebElement Pincode()
+	{
+		return Pincode;
+	}
+	public WebElement Two_Wheeler()
+	{
+		return Two_Wheeler;
+	}
+	public WebElement motorcycle()
+	{
+		return motorcycle;
+	}
+	//**********************************************Wheels of_Trust_Select_company*********************************
+	@FindBy(xpath ="//android.view.View[@resource-id ='QRcodeMake']")
+	private WebElement Company;
+	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
+	private List<WebElement> Select_Company;
+	public WebElement Company()
+	{
+		return Company;
+	}
+	public void Select_Company(String State_Name)
+	{
+		for(int i=0;i<Select_Company.size();i++)
+		{
+			String State_name = Select_Company.get(i).getText();
+			if(State_name.equalsIgnoreCase(State_Name))
+			{
+				Custom_click(Select_Company.get(i), State_name);
+				break;
+			}
+			else
+			{
+				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+				if(i== (Select_Company.size()-1))
+				{
+					Select_Company.get(i).click();
+					Company.click();
+					i=0;
+				}
+			}
+		}
+	}
+	//**********************************************Wheels of_Trust_Select_Model*********************************
+	@FindBy(xpath ="//android.view.View[@resource-id ='QRCodeModel']")
+	private WebElement Model;
+	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
+	private List<WebElement> Select_Model;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='datepicker-view-mode']")
+	private WebElement enter_registraction_months_and_Years;
+	@FindBy(xpath ="//android.widget.Button[@text ='Next']")
+	private WebElement next_button;
+	public WebElement Model()
+	{
+		return Model;
+	}
+	public void Select_Model(String State_Name)
+	{
+		for(int i=0;i<Select_Model.size();i++)
+		{
+			String State_name = Select_Model.get(i).getText();
+			if(State_name.equalsIgnoreCase(State_Name))
+			{
+				Custom_click(Select_Model.get(i), State_name);
+				break;
+			}
+			else
+			{
+				((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+				if(i== (Select_Model.size()-1))
+				{
+					Select_Model.get(i).click();
+					Model.click();
+					i=0;
+				}
+			}
+		}
+	}
+	public WebElement enter_registraction_months_and_Years()
+	{
+		return enter_registraction_months_and_Years;
+	}
+	public WebElement next_button()
+	{
+		return next_button;
+	}
+	//**********************************************Wheels of_Trust_Select_Registraction_Months_And_Year*********************************
+	
+	//**********************************************Joyride*********************************
 	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_joyride']")
 	private WebElement Joyride;
-	
-	
-	
-	@FindBy(xpath ="//android.view.View[contains(@text ,'Select Two')]")
-	private WebElement wheels_of_trust_page_test;
 	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
 	private WebElement Joyride_page_test;
 	
@@ -186,10 +301,6 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	public WebElement Joyride()
 	{
 		return Joyride;
-	}
-	public WebElement wheels_of_trust_page_test()
-	{
-		return wheels_of_trust_page_test;
 	}
 	public WebElement Joyride_page_test()
 	{

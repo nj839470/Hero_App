@@ -5,14 +5,19 @@ import org.testng.annotations.Test;
 import com.page_object.Feedback_and_About_Hero;
 import com.utility.Base_Utility;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
 public class Feedback_and_About_Hero_test extends Base_Utility {
 
 	public Feedback_and_About_Hero ob;
 	public Login_Page_Test login;
+
 	@Test(priority = 0)
 	public void TC051_verify_Feedback() throws InterruptedException {
 		msg("************************Feedback and About Hero test**************************");
-		ob =new Feedback_and_About_Hero();
+		ob = new Feedback_and_About_Hero();
 		login = new Login_Page_Test();
 		login.login();
 		Custom_click(ob.home(), "Home");
@@ -34,56 +39,90 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		Thread.sleep(2000);
 		custom_sendkeys(ob.feedback_message(), "Nice facility", " your Feedback");
 		Custom_click(ob.back_btn(), "Back from Feedback page");
-		
+
 	}
+
 	@Test(priority = 1)
-	public void TC052_verify_About_Hero() 
-	{
+	public void TC052_verify_About_Hero() {
 		try {
-		Custom_click(ob.about_hero(), ob.about_hero().getText());
-		Thread.sleep(10000);
-		msg(ob.about_hero_message_1().getText());
-		msg(ob.about_hero_message_2().getText());
-		Custom_click(ob.back_btn(), "Back from About Hero page");
-		
-		}catch(Exception e)
-		{
-		msg(""+e);
+			Custom_click(ob.about_hero(), ob.about_hero().getText());
+			Thread.sleep(10000);
+			msg(ob.about_hero_message_1().getText());
+			msg(ob.about_hero_message_2().getText());
+			Custom_click(ob.back_btn(), "Back from About Hero page");
+
+		} catch (Exception e) {
+			msg("" + e);
 		}
 	}
+
 	@Test(priority = 2)
-	public void TC053_verify_Side_menu_page_function() 
-	{
+	public void TC053_verify_Side_menu_page_function() {
 		try {
-		Custom_click(ob.goodlife(), "Goodlife");
-		Thread.sleep(6000);
-		msg("goodlife page test =" +ob.goodlife_page_test().getText());
-		Custom_click(ob.back_btn(), "Back from GoodLife page");
-		}catch(Exception e){msg("" +e);}
+			Custom_click(ob.goodlife(), "Goodlife");
+			Thread.sleep(6000);
+			msg("goodlife page test =" + ob.goodlife_page_test().getText());
+			Custom_click(ob.back_btn(), "Back from GoodLife page");
+		} catch (Exception e) {
+			msg("" + e);
+		}
 	}
-		public void TC053_Vehicle_Details_in_Wheels_of_trust()
-		{
-		try {
+
+	@Test(priority = 3)
+	public void TC053_Vehicle_Details_in_Wheels_of_trust() throws InterruptedException {
 		Custom_click(ob.wheels_of_trust(), "Wheels of trust");
 		Thread.sleep(5000);
 		try {
-		Custom_click(ob.Language_select(), "English language");	
-		}catch(Exception e){msg("Language poup is not populate");}
-		try {
+			Custom_click(ob.Language_select(), "English language");
+			Thread.sleep(2000);
+
+		} catch (Exception e) {
+			msg("Language poup is not populate");
+		}
 		Custom_click(ob.Vehicle_Details(), ob.Vehicle_Details().getText());
 		Custom_click(ob.State(), ob.State().getText());
 		ob.Select_State("Delhi");
-		}catch(Exception e){msg("Text is not able to readable");}
+		Thread.sleep(2000);
+	}
+
+	@Test(priority = 4)
+	public void TC053_Chose_city_in_Vehicle_Details_in_Wheels_of_trust() throws InterruptedException {
+		Custom_click(ob.City(), ob.City().getText());
+		ob.Select_city("New Delhi");
+		Thread.sleep(2000);
+		custom_sendkeys(ob.Pincode(), "110037", "Pincode");
+		msg("Please " + ob.Two_Wheeler().getText());
+		Custom_click(ob.motorcycle(), ob.motorcycle().getText());
+	}
+
+	@Test(priority = 5)
+	public void TC053_Select_company_in_Vehicle_Details_in_Wheels_of_trust() throws InterruptedException {
+		Custom_click(ob.Company(), ob.Company().getText());
+		ob.Select_Company("Hero");
+		Thread.sleep(2000);
+	}
+
+	@Test(priority = 6)
+	public void TC053_Select_Model_in_Vehicle_Details_in_Wheels_of_trust() throws InterruptedException {
+		Custom_click(ob.Model(), ob.Model().getText());
+		ob.Select_Model("GLAMOUR");
+		Thread.sleep(2000);
+		custom_sendkeys(ob.enter_registraction_months_and_Years(), "2012-09", "Registraction Months and Year");
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
+		Custom_click(ob.next_button(), ob.next_button().getText());
 		Custom_click(ob.back_btn(), "Back from wheels of trust page");
-		}catch(Exception e){msg("" +e);}
+	}
+
+	@Test(priority = 7)
+	public void Verify_joyride() {
 		try {
-		Custom_click(ob.Joyride(), "Joyride");
-		msg("Joyride page test =" +ob.Joyride_page_test().getText());
-		Custom_click(ob.back_btn(), "Back from Joyride page");
-		driver.navigate().back();
-		}catch(Exception e)
-		{
-			msg("" +e);
+			Custom_click(ob.Joyride(), "Joyride");
+			msg("Joyride page test =" + ob.Joyride_page_test().getText());
+			Custom_click(ob.back_btn(), "Back from Joyride page");
+			driver.navigate().back();
+		} catch (Exception e) {
+			msg("" + e);
 		}
 	}
 }
