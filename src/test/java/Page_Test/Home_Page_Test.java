@@ -54,19 +54,12 @@ public class Home_Page_Test extends Base_Utility {
 		}
 		Custom_click(ob.Search_destination(), "Search destination");
 		msg(ob.Search_here().getText());
-//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
-//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
-//		msg("Searched Nmae and address are=" + ob.Searched_name().getText() + ob.Searched_address().getText());
-//		Custom_click(ob.Navigate_button(), "Navigate address");
-//		Custom_click(ob.Start(), "Start");
-//		Custom_click(ob.change_search(), "Change search");
 		Custom_click(ob.Back_button(), "Back from Search here");
 		Custom_click(ob.Back_button(), "Back from Navigation");
 	}
 
 	@Test(priority = 2)
-	public void TC019_Verify_Documents() throws InterruptedException // 54 steps
+	public void TC019_Verify_Documents() throws InterruptedException 
 	{
 		try {
 			Custom_click(ob.Documents_Menu(), "Document menu");
@@ -112,11 +105,12 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(1000);
 		try {
-			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); // for emulator
+			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); // for emulator and pCloudy
 			Thread.sleep(1000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
 			try {
-				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator need to check for pcloudy.
+				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator
+//				msg(ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
 				msg("Locate nearest dealer link is working");
 				Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
 			} catch (Exception e) {
@@ -130,12 +124,12 @@ public class Home_Page_Test extends Base_Utility {
 			log.error("Locate nearest dealer link is not given" + e);
 			Custom_click(ob.Back(), "Back from RSA");
 		}
-//		Custom_click(ob.Back(), "Back from RSA");
 	}
 	@Test(dependsOnMethods = "TC021_Verify_RSA()" ,priority = 5)
 	public void TC022_Select_State_For_Nearest_Dealer() throws InterruptedException {
 		Custom_click(ob.State(), ob.State().getText());
 		Thread.sleep(2000);
+		//For pCloudy please comment out line No:133 to 137.
 		String state_name = ob.State().getText();
 		if(state_name.equalsIgnoreCase("State*"))
 		{
@@ -162,10 +156,12 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		msg(ob.Local_dealer_fullname().getText());
+		msg(ob.Local_dealer_fullname().getText());  // for emulator
+//		msg(ob.Local_dealer_fullname_real().getText());   // for pCloudy and real device
 		Scroll_down_page_Action("View More");
 		msg(ob.Local_dealer_name().getText());
-		msg(ob.Local_dealer_address().getText());
+		msg(ob.Local_dealer_address().getText());   // for emulator
+//		msg(ob.Local_dealer_address_real().getText());   // for pCloudy and real device
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 	@Test(priority = 9)

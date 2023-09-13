@@ -1,369 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="3" failed="5" skipped="0">
+<testng-results ignored="0" total="69" passed="69" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-07T13:15:03 IST" name="Hero_App" finished-at="2023-09-07T13:17:35 IST" duration-ms="152659">
+  <suite started-at="2023-09-13T18:06:05 IST" name="Hero_App" finished-at="2023-09-13T18:36:40 IST" duration-ms="1834869">
     <groups>
     </groups>
-    <test started-at="2023-09-07T13:15:03 IST" name="Feedback_and_About_Hero_test" finished-at="2023-09-07T13:17:35 IST" duration-ms="152659">
-      <class name="Page_Test.Feedback_and_About_Hero_test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:15:03 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-09-07T13:15:23 IST" duration-ms="20456" status="PASS">
+    <test started-at="2023-09-13T18:06:05 IST" name="All test class" finished-at="2023-09-13T18:36:40 IST" duration-ms="1834869">
+      <class name="Page_Test.Home_Page_Test">
+        <test-method signature="TC017_Home_page_verify()[pri:0, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:10:13 IST" name="TC017_Home_page_verify" finished-at="2023-09-13T18:10:40 IST" duration-ms="27085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC017_Home_page_verify -->
+        <test-method signature="TC018__verify_Navigate()[pri:1, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:10:40 IST" name="TC018__verify_Navigate" finished-at="2023-09-13T18:10:52 IST" duration-ms="12123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC018__verify_Navigate -->
+        <test-method signature="TC019_Verify_Documents()[pri:2, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:10:52 IST" name="TC019_Verify_Documents" finished-at="2023-09-13T18:12:34 IST" duration-ms="102288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC019_Verify_Documents -->
+        <test-method signature="TC020_Verify_Relationship_Manager()[pri:3, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:12:34 IST" name="TC020_Verify_Relationship_Manager" finished-at="2023-09-13T18:12:49 IST" duration-ms="14317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC020_Verify_Relationship_Manager -->
+        <test-method signature="TC021_Verify_RSA()[pri:4, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:12:49 IST" name="TC021_Verify_RSA" finished-at="2023-09-13T18:13:00 IST" duration-ms="11222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021_Verify_RSA -->
+        <test-method signature="TC022_Select_State_For_Nearest_Dealer()[pri:5, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:13:00 IST" name="TC022_Select_State_For_Nearest_Dealer" finished-at="2023-09-13T18:13:34 IST" depends-on-methods="TC021_Verify_RSA()" duration-ms="33812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC022_Select_State_For_Nearest_Dealer -->
+        <test-method signature="TC023_Select_City_For_Nearest_Dealer()[pri:6, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:13:34 IST" name="TC023_Select_City_For_Nearest_Dealer" finished-at="2023-09-13T18:14:14 IST" depends-on-methods="TC022_Select_State_For_Nearest_Dealer()" duration-ms="40603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC023_Select_City_For_Nearest_Dealer -->
+        <test-method signature="TC024_Select_Locality_For_Nearest_Dealer()[pri:7, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:14:14 IST" name="TC024_Select_Locality_For_Nearest_Dealer" finished-at="2023-09-13T18:14:33 IST" depends-on-methods="TC022_Select_State_For_Nearest_Dealer()" duration-ms="19148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC024_Select_Locality_For_Nearest_Dealer -->
+        <test-method signature="TC025_Verify_Nearest_Dealer_info()[pri:8, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:14:33 IST" name="TC025_Verify_Nearest_Dealer_info" finished-at="2023-09-13T18:14:59 IST" depends-on-methods="TC022_Select_State_For_Nearest_Dealer()" duration-ms="25253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC025_Verify_Nearest_Dealer_info -->
+        <test-method signature="TC026_Verify_Technical_Support_Manager()[pri:9, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:14:59 IST" name="TC026_Verify_Technical_Support_Manager" finished-at="2023-09-13T18:15:03 IST" duration-ms="4742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC026_Verify_Technical_Support_Manager -->
+        <test-method signature="TC027_Verify_Dealer_Locator()[pri:10, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:15:03 IST" name="TC027_Verify_Dealer_Locator" finished-at="2023-09-13T18:15:14 IST" duration-ms="10773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC027_Verify_Dealer_Locator -->
+        <test-method signature="TC028_Select_city()[pri:11, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:15:14 IST" name="TC028_Select_city" finished-at="2023-09-13T18:15:40 IST" duration-ms="26141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC028_Select_city -->
+        <test-method signature="TC029_View_dealer_name_and_address()[pri:12, instance:Page_Test.Home_Page_Test@1890516e]" started-at="2023-09-13T18:15:40 IST" name="TC029_View_dealer_name_and_address" finished-at="2023-09-13T18:15:52 IST" duration-ms="11721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC029_View_dealer_name_and_address -->
+      </class> <!-- Page_Test.Home_Page_Test -->
+      <class name="Page_Test.Vehicle_Details_test">
+        <test-method signature="TC037_Verify_My_Vehicle()[pri:0, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:18:41 IST" name="TC037_Verify_My_Vehicle" finished-at="2023-09-13T18:19:01 IST" duration-ms="19747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC037_Verify_My_Vehicle -->
+        <test-method signature="TC038_Verify_My_Vehicle_more_details()[pri:1, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:19:01 IST" name="TC038_Verify_My_Vehicle_more_details" finished-at="2023-09-13T18:19:15 IST" duration-ms="13479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC038_Verify_My_Vehicle_more_details -->
+        <test-method signature="TC039_Verify_My_Vehicle_Documents()[pri:2, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:19:15 IST" name="TC039_Verify_My_Vehicle_Documents" finished-at="2023-09-13T18:20:14 IST" duration-ms="59351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC039_Verify_My_Vehicle_Documents -->
+        <test-method signature="TC040_Verify_Owners_Manual()[pri:3, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:20:14 IST" name="TC040_Verify_Owners_Manual" finished-at="2023-09-13T18:20:55 IST" duration-ms="41308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC040_Verify_Owners_Manual -->
+        <test-method signature="TC041_Verify_my_Vehicle_service_History()[pri:4, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:20:55 IST" name="TC041_Verify_my_Vehicle_service_History" finished-at="2023-09-13T18:21:59 IST" duration-ms="63498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC041_Verify_my_Vehicle_service_History -->
+        <test-method signature="TC042_Verify_Tips_and_DIY_videos_inside_sideMenu()[pri:5, instance:Page_Test.Vehicle_Details_test@16c069df]" started-at="2023-09-13T18:21:59 IST" name="TC042_Verify_Tips_and_DIY_videos_inside_sideMenu" finished-at="2023-09-13T18:22:08 IST" duration-ms="9473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC042_Verify_Tips_and_DIY_videos_inside_sideMenu -->
+      </class> <!-- Page_Test.Vehicle_Details_test -->
+      <class name="Page_Test.Services_Page_Test">
+        <test-method signature="TC068_Vehicle_details_on_service_page()[pri:0, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:08 IST" name="TC068_Vehicle_details_on_service_page" finished-at="2023-09-13T18:22:13 IST" duration-ms="4346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC068_Vehicle_details_on_service_page -->
+        <test-method signature="TC069_verify_service_type()[pri:1, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:13 IST" name="TC069_verify_service_type" finished-at="2023-09-13T18:22:13 IST" duration-ms="823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC069_verify_service_type -->
+        <test-method signature="TC070_verify_Dealer_information()[pri:2, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:13 IST" name="TC070_verify_Dealer_information" finished-at="2023-09-13T18:22:16 IST" duration-ms="2704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC070_verify_Dealer_information -->
+        <test-method signature="TC071_Verify_dealer_manager_info()[pri:3, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:16 IST" name="TC071_Verify_dealer_manager_info" finished-at="2023-09-13T18:22:22 IST" duration-ms="5779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC071_Verify_dealer_manager_info -->
+        <test-method signature="TC072_View_Service_schedule_750()[pri:4, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:22 IST" name="TC072_View_Service_schedule_750" finished-at="2023-09-13T18:22:52 IST" duration-ms="30410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC072_View_Service_schedule_750 -->
+        <test-method signature="TC073_View_Service_schedule_3500()[pri:5, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:22:52 IST" name="TC073_View_Service_schedule_3500" finished-at="2023-09-13T18:23:20 IST" duration-ms="27813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC073_View_Service_schedule_3500 -->
+        <test-method signature="TC074_View_Service_schedule_6500()[pri:6, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:23:20 IST" name="TC074_View_Service_schedule_6500" finished-at="2023-09-13T18:23:49 IST" duration-ms="28759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC074_View_Service_schedule_6500 -->
+        <test-method signature="TC075_View_Service_schedule_9500()[pri:7, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:23:49 IST" name="TC075_View_Service_schedule_9500" finished-at="2023-09-13T18:24:17 IST" duration-ms="28002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC075_View_Service_schedule_9500 -->
+        <test-method signature="TC076_View_Service_schedule_12500()[pri:8, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:24:17 IST" name="TC076_View_Service_schedule_12500" finished-at="2023-09-13T18:24:47 IST" duration-ms="29967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC076_View_Service_schedule_12500 -->
+        <test-method signature="TC077_View_Service_schedule_15500()[pri:9, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:24:47 IST" name="TC077_View_Service_schedule_15500" finished-at="2023-09-13T18:25:15 IST" duration-ms="28074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC077_View_Service_schedule_15500 -->
+        <test-method signature="TC078_View_Service_schedule_18500()[pri:10, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:25:15 IST" name="TC078_View_Service_schedule_18500" finished-at="2023-09-13T18:25:40 IST" depends-on-methods="TC077_View_Service_schedule_15500()" duration-ms="24738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC078_View_Service_schedule_18500 -->
+        <test-method signature="TC079_View_Service_schedule_21500()[pri:11, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:25:40 IST" name="TC079_View_Service_schedule_21500" finished-at="2023-09-13T18:26:09 IST" depends-on-methods="TC077_View_Service_schedule_15500()" duration-ms="29544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC079_View_Service_schedule_21500 -->
+        <test-method signature="TC080_View_Service_schedule_24500()[pri:12, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:26:09 IST" name="TC080_View_Service_schedule_24500" finished-at="2023-09-13T18:26:35 IST" depends-on-methods="TC077_View_Service_schedule_15500()" duration-ms="26072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC080_View_Service_schedule_24500 -->
+        <test-method signature="TC081_View_Service_schedule_27500()[pri:13, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:26:35 IST" name="TC081_View_Service_schedule_27500" finished-at="2023-09-13T18:27:02 IST" depends-on-methods="TC077_View_Service_schedule_15500()" duration-ms="27044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC081_View_Service_schedule_27500 -->
+        <test-method signature="TC082_View_Service_schedule_60_days()[pri:14, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:27:02 IST" name="TC082_View_Service_schedule_60_days" finished-at="2023-09-13T18:27:29 IST" duration-ms="26409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC082_View_Service_schedule_60_days -->
+        <test-method signature="TC083_View_Service_schedule_160_days()[pri:15, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:27:29 IST" name="TC083_View_Service_schedule_160_days" finished-at="2023-09-13T18:27:57 IST" duration-ms="28138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC083_View_Service_schedule_160_days -->
+        <test-method signature="TC084_View_Service_schedule_260_days()[pri:16, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:27:57 IST" name="TC084_View_Service_schedule_260_days" finished-at="2023-09-13T18:28:27 IST" duration-ms="29615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC084_View_Service_schedule_260_days -->
+        <test-method signature="TC085_View_Service_schedule_360_days()[pri:17, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:28:27 IST" name="TC085_View_Service_schedule_360_days" finished-at="2023-09-13T18:28:54 IST" duration-ms="27482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC085_View_Service_schedule_360_days -->
+        <test-method signature="TC086_View_Service_schedule_460_days()[pri:18, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:28:54 IST" name="TC086_View_Service_schedule_460_days" finished-at="2023-09-13T18:29:24 IST" duration-ms="29794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC086_View_Service_schedule_460_days -->
+        <test-method signature="TC087_View_Service_schedule_560_days()[pri:19, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:29:24 IST" name="TC087_View_Service_schedule_560_days" finished-at="2023-09-13T18:29:54 IST" duration-ms="30441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC087_View_Service_schedule_560_days -->
+        <test-method signature="TC088_View_Service_schedule_660_days()[pri:20, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:29:54 IST" name="TC088_View_Service_schedule_660_days" finished-at="2023-09-13T18:30:22 IST" depends-on-methods="TC087_View_Service_schedule_560_days()" duration-ms="27631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC088_View_Service_schedule_660_days -->
+        <test-method signature="TC089_View_Service_schedule_760_days()[pri:21, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:30:22 IST" name="TC089_View_Service_schedule_760_days" finished-at="2023-09-13T18:30:52 IST" depends-on-methods="TC087_View_Service_schedule_560_days()" duration-ms="30417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC089_View_Service_schedule_760_days -->
+        <test-method signature="TC090_View_Service_schedule_860_days()[pri:22, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:30:52 IST" name="TC090_View_Service_schedule_860_days" finished-at="2023-09-13T18:31:16 IST" depends-on-methods="TC087_View_Service_schedule_560_days()" duration-ms="24059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC090_View_Service_schedule_860_days -->
+        <test-method signature="TC091_View_Service_schedule_960_days()[pri:23, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:31:16 IST" name="TC091_View_Service_schedule_960_days" finished-at="2023-09-13T18:31:50 IST" depends-on-methods="TC087_View_Service_schedule_560_days()" duration-ms="33470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC091_View_Service_schedule_960_days -->
+        <test-method signature="TC092_Verify_Last_Serviced()[pri:24, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:31:50 IST" name="TC092_Verify_Last_Serviced" finished-at="2023-09-13T18:33:55 IST" duration-ms="124944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC092_Verify_Last_Serviced -->
+        <test-method signature="TC093_Verify_all_tips_list()[pri:25, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:33:55 IST" name="TC093_Verify_all_tips_list" finished-at="2023-09-13T18:35:23 IST" duration-ms="88648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC093_Verify_all_tips_list -->
+        <test-method signature="TC094_Verify_all_DIY_Videos_list()[pri:26, instance:Page_Test.Services_Page_Test@2bec854f]" started-at="2023-09-13T18:35:23 IST" name="TC094_Verify_all_DIY_Videos_list" finished-at="2023-09-13T18:36:40 IST" duration-ms="76549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC094_Verify_all_DIY_Videos_list -->
+      </class> <!-- Page_Test.Services_Page_Test -->
+      <class name="Page_Test.My_Profile_Page_Test">
+        <test-method signature="TC030_Verify_My_Profile()[pri:0, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:15:52 IST" name="TC030_Verify_My_Profile" finished-at="2023-09-13T18:16:00 IST" duration-ms="7613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC030_Verify_My_Profile -->
+        <test-method signature="TC031_verify_more_detais_button()[pri:1, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:16:00 IST" name="TC031_verify_more_detais_button" finished-at="2023-09-13T18:16:02 IST" duration-ms="2338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC031_verify_more_detais_button -->
+        <test-method signature="TC032_edit_profile_button()[pri:2, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:16:02 IST" name="TC032_edit_profile_button" finished-at="2023-09-13T18:16:18 IST" duration-ms="15859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC032_edit_profile_button -->
+        <test-method signature="TC033_edit_Personal_Details()[pri:3, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:16:18 IST" name="TC033_edit_Personal_Details" finished-at="2023-09-13T18:17:22 IST" duration-ms="63671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC033_edit_Personal_Details -->
+        <test-method signature="TC034_change_original_Personal_Details()[pri:4, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:17:22 IST" name="TC034_change_original_Personal_Details" finished-at="2023-09-13T18:17:39 IST" depends-on-methods="TC033_edit_Personal_Details()" duration-ms="17041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC034_change_original_Personal_Details -->
+        <test-method signature="TC035_Manage_License()[pri:5, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:17:39 IST" name="TC035_Manage_License" finished-at="2023-09-13T18:17:56 IST" duration-ms="17069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC035_Manage_License -->
+        <test-method signature="TC036_Verify_emergency_contacts()[pri:6, instance:Page_Test.My_Profile_Page_Test@15a04efb]" started-at="2023-09-13T18:17:56 IST" name="TC036_Verify_emergency_contacts" finished-at="2023-09-13T18:18:41 IST" duration-ms="45677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC036_Verify_emergency_contacts -->
+      </class> <!-- Page_Test.My_Profile_Page_Test -->
+      <class name="Page_Test.Login_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:05 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-09-13T18:06:29 IST" duration-ms="24279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC051_verify_Feedback()[pri:0, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:15:23 IST" name="TC051_verify_Feedback" finished-at="2023-09-07T13:17:22 IST" duration-ms="118836" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[7]}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[7]}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at Page_Test.Feedback_and_About_Hero_test.TC051_verify_Feedback(Feedback_and_About_Hero_test.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="TC001_Verify_Login_with_Invalid_credential()[pri:0, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:29 IST" name="TC001_Verify_Login_with_Invalid_credential" finished-at="2023-09-13T18:06:35 IST" duration-ms="5500" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC051_verify_Feedback -->
-        <test-method signature="TC052_verify_About_Hero()[pri:1, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:22 IST" name="TC052_verify_About_Hero" finished-at="2023-09-07T13:17:22 IST" duration-ms="11" status="PASS">
+        </test-method> <!-- TC001_Verify_Login_with_Invalid_credential -->
+        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:35 IST" name="TC002_invalidmobileno" finished-at="2023-09-13T18:06:44 IST" duration-ms="9420" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC052_verify_About_Hero -->
-        <test-method signature="TC053_verify_Side_menu_page_function()[pri:2, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:22 IST" name="TC053_verify_Side_menu_page_function" finished-at="2023-09-07T13:17:28 IST" duration-ms="6036" status="PASS">
+        </test-method> <!-- TC002_invalidmobileno -->
+        <test-method signature="TC003_Verify_Login_with_short_length_of_mobile_number_credential()[pri:2, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:44 IST" name="TC003_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2023-09-13T18:06:50 IST" duration-ms="5779" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC053_verify_Side_menu_page_function -->
-        <test-method signature="TC053_Vehicle_Details_in_Wheels_of_trust()[pri:3, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:28 IST" name="TC053_Vehicle_Details_in_Wheels_of_trust" finished-at="2023-09-07T13:17:35 IST" duration-ms="7057" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=(//android.view.View[contains(@text , 'Vehicle')])[1]}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=(//android.view.View[contains(@text , 'Vehicle')])[1]}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at Page_Test.Feedback_and_About_Hero_test.TC053_Vehicle_Details_in_Wheels_of_trust(Feedback_and_About_Hero_test.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TC003_Verify_Login_with_short_length_of_mobile_number_credential -->
+        <test-method signature="TC004_max_digit_mobile_number()[pri:3, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:50 IST" name="TC004_max_digit_mobile_number" finished-at="2023-09-13T18:06:57 IST" duration-ms="7039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC053_Vehicle_Details_in_Wheels_of_trust -->
-        <test-method signature="TC053_Chose_city_in_Vehicle_Details_in_Wheels_of_trust()[pri:4, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:35 IST" name="TC053_Chose_city_in_Vehicle_Details_in_Wheels_of_trust" finished-at="2023-09-07T13:17:35 IST" duration-ms="19" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRCodeCity']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRCodeCity']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at Page_Test.Feedback_and_About_Hero_test.TC053_Chose_city_in_Vehicle_Details_in_Wheels_of_trust(Feedback_and_About_Hero_test.java:90)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TC004_max_digit_mobile_number -->
+        <test-method signature="TC005_Terms_of_use_button()[pri:4, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:06:57 IST" name="TC005_Terms_of_use_button" finished-at="2023-09-13T18:07:09 IST" duration-ms="12223" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC053_Chose_city_in_Vehicle_Details_in_Wheels_of_trust -->
-        <test-method signature="TC053_Select_company_in_Vehicle_Details_in_Wheels_of_trust()[pri:5, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:35 IST" name="TC053_Select_company_in_Vehicle_Details_in_Wheels_of_trust" finished-at="2023-09-07T13:17:35 IST" duration-ms="23" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRcodeMake']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRcodeMake']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at Page_Test.Feedback_and_About_Hero_test.TC053_Select_company_in_Vehicle_Details_in_Wheels_of_trust(Feedback_and_About_Hero_test.java:100)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TC005_Terms_of_use_button -->
+        <test-method signature="TC006_Privacy_policy()[pri:5, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:07:09 IST" name="TC006_Privacy_policy" finished-at="2023-09-13T18:07:20 IST" duration-ms="10123" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC053_Select_company_in_Vehicle_Details_in_Wheels_of_trust -->
-        <test-method signature="TC053_Select_Model_in_Vehicle_Details_in_Wheels_of_trust()[pri:6, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:35 IST" name="TC053_Select_Model_in_Vehicle_Details_in_Wheels_of_trust" finished-at="2023-09-07T13:17:35 IST" duration-ms="23" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRCodeModel']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e, findElement {using=xpath, value=//android.view.View[@resource-id ='QRCodeModel']}]
-Capabilities {appium:app: C:\Users\Welcome\Documents\..., appium:appPackage: com.customerapp.hero, appium:automationName: uiautomator2, appium:avdLaunchTimeout: 900000, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Welcome\Documents\..., automationName: uiautomator2, avdLaunchTimeout: 900000, deviceName: Pixel_6_API_31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9acf9d61-5bad-4e68-8a9a-24e4d8c1b92e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at Page_Test.Feedback_and_About_Hero_test.TC053_Select_Model_in_Vehicle_Details_in_Wheels_of_trust(Feedback_and_About_Hero_test.java:107)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TC006_Privacy_policy -->
+        <test-method signature="TC007_contact_Us()[pri:6, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:07:20 IST" name="TC007_contact_Us" finished-at="2023-09-13T18:07:25 IST" duration-ms="5511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC053_Select_Model_in_Vehicle_Details_in_Wheels_of_trust -->
-        <test-method signature="Verify_joyride()[pri:7, instance:Page_Test.Feedback_and_About_Hero_test@1f760b47]" started-at="2023-09-07T13:17:35 IST" name="Verify_joyride" finished-at="2023-09-07T13:17:35 IST" duration-ms="36" status="PASS">
+        </test-method> <!-- TC007_contact_Us -->
+        <test-method signature="TC008_Verify_Login_with_valid_credential()[pri:7, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:07:25 IST" name="TC008_Verify_Login_with_valid_credential" finished-at="2023-09-13T18:07:55 IST" duration-ms="29486" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_joyride -->
-      </class> <!-- Page_Test.Feedback_and_About_Hero_test -->
-    </test> <!-- Feedback_and_About_Hero_test -->
+        </test-method> <!-- TC008_Verify_Login_with_valid_credential -->
+        <test-method signature="TC009_resend_butn()[pri:8, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:07:55 IST" name="TC009_resend_butn" finished-at="2023-09-13T18:08:10 IST" duration-ms="15547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_resend_butn -->
+        <test-method signature="TC010_inavalid_OTP()[pri:9, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:08:10 IST" name="TC010_inavalid_OTP" finished-at="2023-09-13T18:08:29 IST" duration-ms="18563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_inavalid_OTP -->
+        <test-method signature="TC011_edit_moble()[pri:10, instance:Page_Test.Login_Page_Test@43015c69]" started-at="2023-09-13T18:08:29 IST" name="TC011_edit_moble" finished-at="2023-09-13T18:09:08 IST" duration-ms="39124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_edit_moble -->
+      </class> <!-- Page_Test.Login_Page_Test -->
+      <class name="Page_Test.Select_Vehicle_Page_Test">
+        <test-method signature="TC012_verify_Nick_Name()[pri:0, instance:Page_Test.Select_Vehicle_Page_Test@7ba8c737]" started-at="2023-09-13T18:09:08 IST" name="TC012_verify_Nick_Name" finished-at="2023-09-13T18:09:24 IST" duration-ms="15867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_verify_Nick_Name -->
+        <test-method signature="TC013_Verify_With_30_letter_nick_name()[pri:1, instance:Page_Test.Select_Vehicle_Page_Test@7ba8c737]" started-at="2023-09-13T18:09:24 IST" name="TC013_Verify_With_30_letter_nick_name" finished-at="2023-09-13T18:09:34 IST" depends-on-methods="TC012_verify_Nick_Name()" duration-ms="10253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_Verify_With_30_letter_nick_name -->
+        <test-method signature="TC014_Verify_With_31_letter_nick_name()[pri:2, instance:Page_Test.Select_Vehicle_Page_Test@7ba8c737]" started-at="2023-09-13T18:09:34 IST" name="TC014_Verify_With_31_letter_nick_name" finished-at="2023-09-13T18:09:44 IST" depends-on-methods="TC013_Verify_With_30_letter_nick_name()" duration-ms="9886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014_Verify_With_31_letter_nick_name -->
+        <test-method signature="TC015_Verify_With_29_letter_nick_name()[pri:3, instance:Page_Test.Select_Vehicle_Page_Test@7ba8c737]" started-at="2023-09-13T18:09:44 IST" name="TC015_Verify_With_29_letter_nick_name" finished-at="2023-09-13T18:09:53 IST" depends-on-methods="TC014_Verify_With_31_letter_nick_name()" duration-ms="8798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_Verify_With_29_letter_nick_name -->
+        <test-method signature="TC016_Select_Vehicle()[pri:4, instance:Page_Test.Select_Vehicle_Page_Test@7ba8c737]" started-at="2023-09-13T18:09:53 IST" name="TC016_Select_Vehicle" finished-at="2023-09-13T18:10:13 IST" duration-ms="20148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_Select_Vehicle -->
+      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
+    </test> <!-- All test class -->
   </suite> <!-- Hero_App -->
 </testng-results>

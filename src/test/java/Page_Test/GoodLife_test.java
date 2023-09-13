@@ -11,11 +11,11 @@ public class GoodLife_test extends Base_Utility {
 	public Login_Page_Test login;
 
 	@Test(priority = 0)
-	public void TC081_verify_image_in_goodlife_page() throws InterruptedException {
+	public void TC095_verify_image_in_goodlife_page() throws InterruptedException {
 		msg("*********************Goodlife_page**************************");
 		ob = new GoodLife();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(3000);
 		Custom_click(ob.goodLife(), ob.goodLife().getText());
 		Thread.sleep(2000);
@@ -31,7 +31,7 @@ public class GoodLife_test extends Base_Utility {
 		}
 	}
 	@Test(priority = 1)
-	public void TC082_Verify_Pro_Membership() throws InterruptedException
+	public void TC096_Verify_Pro_Membership() throws InterruptedException
 	{
 		msg("Plan Name =" +ob.plan_name().getText());
 		ob.plan_info();
@@ -39,13 +39,13 @@ public class GoodLife_test extends Base_Utility {
 		ob.pro_membership_plan_info();
 	}
 	@Test(priority = 2)
-	public void TC083_Verify_Earning_History_in_Pro_Membership()
+	public void TC097_Verify_Earning_History_in_Pro_Membership()
 	{
 		Custom_click(ob.Earning_History(), ob.Earning_History().getText());
 			ob.earning_history();
 		}
 	@Test(priority = 3)
-	public void TC084_Verify_Redemption_History_in_Pro_Membership()
+	public void TC098_Verify_Redemption_History_in_Pro_Membership()
 	{
 		Custom_click(ob.Redemption_History(), ob.Redemption_History().getText());
 		try {
@@ -57,7 +57,7 @@ public class GoodLife_test extends Base_Utility {
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 		}
 	@Test(priority = 4)
-	public void TC085_Verify_Complete_profile()
+	public void TC099_Verify_Complete_profile()
 	{
 		msg(ob.Profile_text().getText());
 		Custom_click(ob.update_profile(), ob.update_profile().getText());
@@ -66,7 +66,7 @@ public class GoodLife_test extends Base_Utility {
 		Custom_click(ob.back_button(), " Back from Complete Profile Rewards");
 	}
 	@Test(priority = 5)
-	public void TC086_Verify_Welcome_Rewards()
+	public void TC100_Verify_Welcome_Rewards()
 	{
 		msg(ob.Welcome_text().getText());
 		Custom_click(ob.View_Details(), ob.View_Details().getText());
@@ -75,7 +75,7 @@ public class GoodLife_test extends Base_Utility {
 		Custom_click(ob.back_button(), " Back from Complete Profile Rewards");
 	}
 	@Test(priority = 6)
-	public void TC087_Verify_refer_friend_in_Goodlife() throws InterruptedException
+	public void TC101_Verify_refer_friend_in_Goodlife() throws InterruptedException
 	{
 		msg(ob.Referral_Offer().getText());
 		Custom_click(ob.Know_more(), ob.Know_more().getText());
@@ -87,7 +87,7 @@ public class GoodLife_test extends Base_Utility {
 		Custom_click(ob.back_button(), " Back from Referrals");
 	}
 	@Test(priority = 7)
-	public void TC088_verify_Winner_informaton()
+	public void TC102_verify_Winner_informaton()
 	{
 		scrollByText("Points Earning & Redemption");
 		try {
@@ -103,7 +103,7 @@ public class GoodLife_test extends Base_Utility {
 	}
 	
 	@Test(priority = 8)
-	public void TC089_verify_Points_Earning_and_Redemption() {
+	public void TC103_verify_Points_Earning_and_Redemption() {
 		msg(ob.point_earning_message().getText());
 			ob.points_earning_redemption_view_detail();
 			ob.point_earn_condition();
@@ -113,7 +113,7 @@ public class GoodLife_test extends Base_Utility {
 			Custom_click(ob.back_button(), " Back from points earning redemption ");
 	}
 	@Test(priority = 9)
-	public void TC090_verify_Service_Privilegers() {
+	public void TC104_verify_Service_Privilegers() {
 		Custom_click(ob.show_more_service_privilegers(), ob.show_more_service_privilegers().getText());
 		ob.service_previleges_all_message();
 		scrollByText("Show Less");
@@ -121,7 +121,7 @@ public class GoodLife_test extends Base_Utility {
 
 	}
 	@Test(priority = 10)
-	public void TC091_verify_Benefits_and_Experiences()
+	public void TC105_verify_Benefits_and_Experiences()
 	{
 		Scroll_down_page_Action("Benefits and Experiences");
 		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText() +" in Benefits & Experiences" );
@@ -129,7 +129,7 @@ public class GoodLife_test extends Base_Utility {
 		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText() +" in Benefits & Experiences" );
 	}
 	@Test(priority = 11)
-	public void TC092_verify_Remarkable_Rewards()
+	public void TC106_verify_Remarkable_Rewards()
 	{
 		Custom_click(ob.Show_more_in_remarkable_rewards(), ob.Show_more_in_remarkable_rewards().getText());
 		Scroll_down_page_Action("Remarkable show more");

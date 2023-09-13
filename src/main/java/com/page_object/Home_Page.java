@@ -305,8 +305,12 @@ public class Home_Page extends Base_Utility {
 	private WebElement locate_nearest_dealer_real_device;
 	@FindBy(xpath = "//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
 	private WebElement locate_the_nearest_dealer;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text ,'LOCATE THE')]")
+	private WebElement locate_the_nearest_dealer_real;
 	@FindBy(xpath ="//android.view.View[@resource-id ='OutletState']")
 	private WebElement State;
+	@FindBy(xpath ="(//android.widget.CheckedTextView[@resource-id ='android:id/text1'])[3]")
+	private WebElement State_check;
 	@FindBy(xpath ="//android.widget.CheckedTextView[@resource-id ='android:id/text1']")
 	private List<WebElement> select_state;
 	@FindBy(xpath ="//android.view.View[@resource-id ='OutletCity']")
@@ -319,10 +323,14 @@ public class Home_Page extends Base_Utility {
 	private WebElement Search_button;
 	@FindBy(xpath ="//android.view.View[contains(@text,'HERO MOTOCORP')]")
 	private WebElement Local_dealer_fullname;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'HERO MOTOCORP')]")
+	private WebElement Local_dealer_fullname_real;
 	@FindBy(xpath="//android.widget.TextView[contains(@text,'Hero Motocorp')]")
 	private WebElement Local_dealer_name;
 	@FindBy(xpath ="//android.view.View[contains(@text,'No')]")
 	private WebElement Local_dealer_address;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'No')]")
+	private WebElement Local_dealer_address_real;
 	public WebElement RSA() {
 		return RSA;
 	}
@@ -334,6 +342,10 @@ public class Home_Page extends Base_Utility {
 	{
 		return Local_dealer_fullname;
 	}
+	public WebElement Local_dealer_fullname_real()
+	{
+		return Local_dealer_fullname_real;
+	}
 	public WebElement Local_dealer_name()
 	{
 		return Local_dealer_name;
@@ -341,6 +353,10 @@ public class Home_Page extends Base_Utility {
 	public WebElement Local_dealer_address()
 	{
 		return Local_dealer_address;
+	}
+	public WebElement Local_dealer_address_real()
+	{
+		return Local_dealer_address_real;
 	}
 	public WebElement locate_nearest_dealer() {
 		return locate_nearest_dealer;
@@ -353,9 +369,16 @@ public class Home_Page extends Base_Utility {
 	public WebElement locate_the_nearest_dealer() {
 		return locate_the_nearest_dealer;
 	}
+	public WebElement locate_the_nearest_dealer_real() {
+		return locate_the_nearest_dealer_real;
+	}
 	public WebElement State()
 	{
 		return State;
+	}
+	public WebElement State_check()
+	{
+		return State_check;
 	}
 	public WebElement City()
 	{

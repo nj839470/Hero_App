@@ -106,6 +106,8 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	private WebElement goodlife_page_test;
 	@FindBy(xpath ="//android.view.View[@resource-id ='cookieNotice']")
 	private WebElement cookieNotice;
+	@FindBy(xpath ="//android.widget.Button[@text ='I Understand']")
+	private WebElement Accept_cookie;
 	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_trust']")
 	private WebElement wheels_of_trust;
 	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='eng_lang_select']")
@@ -165,6 +167,10 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	public WebElement cookieNotice()
 	{
 		return cookieNotice;
+	}
+	public WebElement Accept_cookie()
+	{
+		return Accept_cookie;
 	}
  //**********************************************Wheels of_Trust_Select_city*********************************
 	@FindBy(xpath ="//android.view.View[@resource-id ='QRCodeCity']")
@@ -289,21 +295,187 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		return next_button;
 	}
-	//**********************************************Wheels of_Trust_Select_Registraction_Months_And_Year*********************************
-	
+	//**********************************************Wheels of_Trust_Verify_Vehicle_Condition*********************************
+	@FindBy(xpath ="//android.view.View[contains(@text ,'silencer')]")
+	private WebElement silencer;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='smokeYes']")
+	private WebElement silencer_smoke;
+	@FindBy(xpath ="//android.view.View[contains(@text , 'Starting')]")
+	private WebElement Starting_Vehicle;
+	@FindBy(xpath ="//android.view.View[contains(@text , 'Check')]")
+	private WebElement How_to_check_all_issue;
+	@FindBy(xpath ="//android.view.View[contains(@text ,'We are happy to assist')]")
+	private WebElement issue_message;
+	@FindBy(xpath ="//android.view.View[@text ='×']")
+	private WebElement close_issue_instraction;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='startYes']")
+	private WebElement Start_normally;
+	@FindBy(xpath ="//android.view.View[contains(@text , 'Lights & Indicators')]")
+	private WebElement Light_Indicators;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='WorkingYes']")
+	private WebElement Light_Indicators_condition;
+	@FindBy(xpath="//android.view.View[contains(@text , 'Front Tyre')]")
+	private WebElement Front_Tyre;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='fronTtyreOk']")
+	private WebElement Front_Tyre_condition;
+	@FindBy(xpath="//android.view.View[contains(@text , 'Rear Tyre')]")
+	private WebElement Rear_Tyre;
+	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='rearTyreOk']")
+	private WebElement Rear_Tyre_condition;
+	@FindBy(xpath ="//android.view.View[contains(@text , 'Body Parts')]")
+	private WebElement Body_Parts;
+	@FindBy(xpath="//android.widget.RadioButton[@resource-id ='bodyPartOk']")
+	private WebElement Body_Parts_condition;
+	public WebElement silencer()
+	{
+		return silencer;
+	}
+	public WebElement silencer_smoke()
+	{
+		return silencer_smoke;
+	}
+	public WebElement Starting_Vehicle()
+	{
+		return Starting_Vehicle;
+	}
+	public WebElement How_to_check_all_issue()
+	{
+		return How_to_check_all_issue;
+	}
+	public WebElement issue_message()
+	{
+		return issue_message;
+	}
+	public WebElement close_issue_instraction()
+	{
+		return close_issue_instraction;
+	}
+	public WebElement Start_normally()
+	{
+		return Start_normally;
+	}
+	public WebElement Light_Indicators()
+	{
+		return Light_Indicators;
+	}
+	public WebElement Light_Indicators_condition()
+	{
+		return Light_Indicators_condition;
+	}
+	public WebElement Front_Tyre()
+	{
+		return Front_Tyre;
+	}
+	public WebElement Front_Tyre_condition()
+	{
+		return Front_Tyre_condition;
+	}
+	public WebElement Rear_Tyre()
+	{
+		return Rear_Tyre;
+	}
+	public WebElement Rear_Tyre_condition()
+	{
+		return Rear_Tyre_condition;
+	}
+	public WebElement Body_Parts()
+	{
+		return Body_Parts;
+	}
+	public WebElement Body_Parts_condition()
+	{
+		return Body_Parts_condition;
+	}
+	//*************************************Wheels of_Trust_Verify_Your_Details*****************************
+	@FindBy(xpath ="//android.view.View[contains(@text,'Sign in')]")
+	private WebElement sign_in;
+	@FindBy(xpath ="(//android.widget.Image[contains(@text ,'whatsapp')])[1]")
+	private WebElement whatsapp_button;
+	@FindBy(xpath ="//android.view.View[@resource-id ='root']//android.view.View")
+	private List<WebElement> whatsapp_info;
+	@FindBy(xpath ="//android.view.View[@text ='✕']")
+	private WebElement whatsapp_close;
+	@FindBy(xpath ="//android.view.View[contains(@text ,'Login')]")
+	private WebElement Login;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='name']")
+	private WebElement name;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='number']")
+	private WebElement number;
+	@FindBy(xpath ="//android.widget.EditText[@resource-id ='otp']")
+	private WebElement otp;
+	@FindBy(xpath="//android.widget.Button[@resource-id ='sendOtpQrcode']")
+	public WebElement send_otp;
+	@FindBy(xpath ="//android.view.View[contains(@text,'Please enter')]")
+	public WebElement otp_message;
+	@FindBy(xpath ="//android.widget.Button[@text ='Submit']")
+	public WebElement submit;
+	public WebElement sign_in()
+	{
+		return sign_in;
+	}
+	public WebElement whatsapp_button()
+	{
+		return whatsapp_button;
+	}
+	public void whatsapp_info()
+	{
+		for(int i=1;i<4;i++)
+		{
+			msg(whatsapp_info.get(i).getText());
+		}
+	}
+	public WebElement whatsapp_close()
+	{
+		return whatsapp_close;
+	}
+	public WebElement Login()
+	{
+		return Login;
+	}
+	public WebElement name()
+	{
+		return name;
+	}
+	public WebElement number()
+	{
+		return number;
+	}
+	public WebElement otp()
+	{
+		return otp;
+	}
+	public WebElement send_otp()
+	{
+		return send_otp;
+	}
+	public WebElement submit()
+	{
+		return submit;
+	}
+	public WebElement otp_message()
+	{
+		return otp_message;
+	}
 	//**********************************************Joyride*********************************
 	@FindBy(xpath ="//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/iv_joyride']")
 	private WebElement Joyride;
-	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/title']")
-	private WebElement Joyride_page_test;
-	
-	
+	@FindBy(xpath ="//android.widget.TextView[contains(@resource-id,'com.customerapp.hero:id')]")
+	private List<WebElement> Joyride_info;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
+	private WebElement nearest_dealer;
 	public WebElement Joyride()
 	{
 		return Joyride;
 	}
-	public WebElement Joyride_page_test()
+	public void Joyride_info()
 	{
-		return Joyride_page_test;
+		for(int i=1;i<Joyride_info.size()-1;i++)
+		{
+		msg(Joyride_info.get(i).getText());
+		}
+	}
+	public WebElement nearest_dealer()
+	{
+		return nearest_dealer;
 	}
 }

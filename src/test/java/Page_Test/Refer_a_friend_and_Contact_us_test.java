@@ -15,12 +15,12 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	public Refer_a_friend_and_Contact_us ob;
 	public Login_Page_Test login;
 	@Test(priority = 0)
-	public void TC039_Refer_a_friend() throws InterruptedException
+	public void TC043_Refer_a_friend() throws InterruptedException
 	{
 		msg("************************Refer a Friend**************************");
 		ob = new Refer_a_friend_and_Contact_us();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(3000);
 		try{
 		Custom_click(ob.home(), "Home");
@@ -34,7 +34,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		}
 	}
 	@Test(priority = 1)
-	public void TC040_Verify_Select_State()
+	public void TC044_Verify_Select_State()
 	{
 		try {
 		Custom_click(ob.Select_state(), ob.Select_state().getText());
@@ -44,7 +44,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		}
 	}
 	@Test(priority = 2)
-	public void TC041_Verify_Select_City()
+	public void TC045_Verify_Select_City()
 	{
 		try {
 		Custom_click(ob.Select_City(), ob.Select_City().getText());
@@ -55,7 +55,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		
 	}
 	@Test(priority = 3)
-	public void TC042_Verify_Select_Model()
+	public void TC046_Verify_Select_Model()
 	{
 		try {
 		Custom_click(ob.Select_Model(), ob.Select_Model().getText());
@@ -73,7 +73,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		} 
 	}
 	@Test(priority = 4)
-	public void TC043_Verify_Refer_yourself() throws InterruptedException
+	public void TC047_Verify_Refer_yourself() throws InterruptedException
 	{
 		Thread.sleep(2000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
@@ -105,39 +105,39 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	
 	}
 	@Test(priority = 5)
-	public void TC044_Verify_Facebook_in_Contact_us_page() throws InterruptedException
+	public void TC048_Verify_Facebook_in_Contact_us_page() throws InterruptedException
 	{
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.Contact_us(), ob.Contact_us().getText());
 		ob.facebook();
 		}
 	@Test(priority = 6)
-	public void TC045_Verify_instagram_in_Contact_us_page() throws InterruptedException
+	public void TC049_Verify_instagram_in_Contact_us_page() throws InterruptedException
 	{
 		ob.instagram();
 	}
 	@Test(priority = 7)
-	public void TC046_Verify_Whatsapp_in_Contact_us_page()
+	public void TC050_Verify_Whatsapp_in_Contact_us_page()
 	{
 		ob.Whatsapp();
 	}
 	@Test(priority = 8)
-	public void TC047_Verify_youTube_in_Contact_us_page() throws InterruptedException
+	public void TC051_Verify_youTube_in_Contact_us_page() throws InterruptedException
 	{
 		ob.youTube();
 	}
 	@Test(priority = 9)
-	public void TC048_Verify_Linkedin_in_Contact_us_page() throws InterruptedException
+	public void TC052_Verify_Linkedin_in_Contact_us_page() throws InterruptedException
 	{
 		ob.Linkedin();
 	}
 	@Test(priority = 10)
-	public void TC049_Verify_twitter_in_Contact_us_page() throws InterruptedException
+	public void TC053_Verify_twitter_in_Contact_us_page() throws InterruptedException
 	{
 		ob.twitter();
 	}
 	@Test(priority = 11)
-	public void TC050_Verify_Contact_via_Email() throws InterruptedException
+	public void TC054_Verify_Contact_via_Email() throws InterruptedException
 	{
 		Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
 		try {

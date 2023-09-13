@@ -13,12 +13,12 @@ public class E_Shop_test extends Base_Utility{
 	public Login_Page_Test login;
 	public E_Shop ob;
 	@Test(priority = 0)
-	public void registered_customers() throws InterruptedException
+	public void TC107_registered_customers() throws InterruptedException
 	{
 		msg("************************E Shop**************************");
 		ob = new E_Shop();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(5000);
 		try {
 		Custom_click(ob.E_shop(), ob.E_shop().getText());
@@ -49,7 +49,7 @@ public class E_Shop_test extends Base_Utility{
 		}
 	}
 	@Test(priority = 1)
-	public void new_customers() {
+	public void TC108_new_customers() {
 		try {
 		Custom_click(ob.user_account(), "User account");
 		msg(ob.newcustomer_heading().getText());
