@@ -129,12 +129,10 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC022_Select_State_For_Nearest_Dealer() throws InterruptedException {
 		Custom_click(ob.State(), ob.State().getText());
 		Thread.sleep(2000);
-		//For pCloudy please comment out line No:133 to 137.
-		String state_name = ob.State().getText();
-		if(state_name.equalsIgnoreCase("State*"))
-		{
+		try {
 			Custom_click(ob.State(), ob.State().getText());
-		}
+		}catch(Exception e) { msg("State is already open");}
+		
 		ob.select_state("Bihar");
 	}
 	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()" ,priority = 6)

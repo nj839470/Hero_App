@@ -171,7 +171,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement contact_via_email;
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/back_btn']")
 	private WebElement back;
-	@FindBy(xpath = "(//android.widget.TextView[@text])[4]")
+	@FindBy(xpath = "//android.widget.TextView[contains(@text, 'subscribers')]")
 	private WebElement subscribers_count;
 	@FindBy(xpath = "//android.widget.Button[@resource-id ='join-form-submit']")
 	private WebElement Linkedin_agree_and_join;

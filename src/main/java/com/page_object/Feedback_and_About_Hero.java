@@ -79,8 +79,12 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	private WebElement about_hero;
 	@FindBy(xpath ="//android.view.View[@resource-id='container-6a13db6644']/android.view.View")
 	private WebElement about_hero_message_1;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'Manufacturing Happiness')]")
+	private WebElement about_hero_message_1_real;
 	@FindBy(xpath ="//android.view.View[@resource-id='container-6a13db6644']/android.widget.TextView")
 	private WebElement about_hero_message_2;
+	@FindBy(xpath ="(//android.view.View[@resource-id='container-6a13db6644']/android.widget.TextView)[2]")
+	private WebElement about_hero_message_2_real;
 	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/cross']")
 	private WebElement Cross_button;
 	public WebElement about_hero()
@@ -91,9 +95,17 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		return about_hero_message_1;
 	}
+	public WebElement about_hero_message_1_real()
+	{
+		return about_hero_message_1_real;
+	}
 	public WebElement about_hero_message_2()
 	{
 		return about_hero_message_2;
+	}
+	public WebElement about_hero_message_2_real()
+	{
+		return about_hero_message_2_real;
 	}
 	public WebElement Cross_button()
 	{
@@ -304,10 +316,16 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	private WebElement Starting_Vehicle;
 	@FindBy(xpath ="//android.view.View[contains(@text , 'Check')]")
 	private WebElement How_to_check_all_issue;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text , 'How to')]")
+	private WebElement How_to_check_all_issue_real;
 	@FindBy(xpath ="//android.view.View[contains(@text ,'We are happy to assist')]")
 	private WebElement issue_message;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text ,'We are happy to assist')]")
+	private WebElement issue_message_real;
 	@FindBy(xpath ="//android.view.View[@text ='×']")
 	private WebElement close_issue_instraction;
+	@FindBy(xpath ="//android.widget.TextView[@text ='×']")
+	private WebElement close_issue_instraction_real;
 	@FindBy(xpath ="//android.widget.RadioButton[@resource-id ='startYes']")
 	private WebElement Start_normally;
 	@FindBy(xpath ="//android.view.View[contains(@text , 'Lights & Indicators')]")
@@ -342,13 +360,25 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		return How_to_check_all_issue;
 	}
+	public WebElement How_to_check_all_issue_real()
+	{
+		return How_to_check_all_issue_real;
+	}
 	public WebElement issue_message()
 	{
 		return issue_message;
 	}
+	public WebElement issue_message_real()
+	{
+		return issue_message_real;
+	}
 	public WebElement close_issue_instraction()
 	{
 		return close_issue_instraction;
+	}
+	public WebElement close_issue_instraction_real()
+	{
+		return close_issue_instraction_real;
 	}
 	public WebElement Start_normally()
 	{
@@ -389,14 +419,22 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	//*************************************Wheels of_Trust_Verify_Your_Details*****************************
 	@FindBy(xpath ="//android.view.View[contains(@text,'Sign in')]")
 	private WebElement sign_in;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'Sign in')]")
+	private WebElement sign_in_real;
 	@FindBy(xpath ="(//android.widget.Image[contains(@text ,'whatsapp')])[1]")
 	private WebElement whatsapp_button;
 	@FindBy(xpath ="//android.view.View[@resource-id ='root']//android.view.View")
 	private List<WebElement> whatsapp_info;
+	@FindBy(xpath ="//android.view.View[@resource-id ='root']//android.widget.TextView")
+	private List<WebElement> whatsapp_info_real;
 	@FindBy(xpath ="//android.view.View[@text ='✕']")
 	private WebElement whatsapp_close;
+	@FindBy(xpath ="//android.widget.TextView[@text ='✕']")
+	private WebElement whatsapp_close_real;
 	@FindBy(xpath ="//android.view.View[contains(@text ,'Login')]")
 	private WebElement Login;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text ,'Login')]")
+	private WebElement Login_real;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id ='name']")
 	private WebElement name;
 	@FindBy(xpath ="//android.widget.EditText[@resource-id ='number']")
@@ -407,11 +445,17 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	public WebElement send_otp;
 	@FindBy(xpath ="//android.view.View[contains(@text,'Please enter')]")
 	public WebElement otp_message;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'Please enter')]")
+	public WebElement otp_message_real;
 	@FindBy(xpath ="//android.widget.Button[@text ='Submit']")
 	public WebElement submit;
 	public WebElement sign_in()
 	{
 		return sign_in;
+	}
+	public WebElement sign_in_real()
+	{
+		return sign_in_real;
 	}
 	public WebElement whatsapp_button()
 	{
@@ -424,13 +468,28 @@ public class Feedback_and_About_Hero extends Base_Utility{
 			msg(whatsapp_info.get(i).getText());
 		}
 	}
+	public void whatsapp_info_real()
+	{
+		for(int i=0;i<3;i++)
+		{
+			msg(whatsapp_info_real.get(i).getText());
+		}
+	}
 	public WebElement whatsapp_close()
 	{
 		return whatsapp_close;
 	}
+	public WebElement whatsapp_close_real()
+	{
+		return whatsapp_close_real;
+	}
 	public WebElement Login()
 	{
 		return Login;
+	}
+	public WebElement Login_real()
+	{
+		return Login_real;
 	}
 	public WebElement name()
 	{
@@ -443,6 +502,10 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	public WebElement otp()
 	{
 		return otp;
+	}
+	public WebElement otp_message_real()
+	{
+		return otp_message_real;
 	}
 	public WebElement send_otp()
 	{

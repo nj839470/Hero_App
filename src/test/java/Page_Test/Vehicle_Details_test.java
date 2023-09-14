@@ -43,6 +43,7 @@ public class Vehicle_Details_test extends Base_Utility {
 		msg("Vehicle number =" + ob.Vehicle_number().getText());
 		}catch(Exception e) { msg("Vehicle number is not given");}
 		Custom_click(ob.verify_GoodLife(), " Verify Good Life");
+		Thread.sleep(5000);
 		msg("verify goodlife page =" +ob.verify_goodlife_page().getText());
 		Custom_click(ob.back_button(), " Back from GoodLife page");
 		Custom_click(ob.verify_joyRide(), " Verify JoyRide ");
