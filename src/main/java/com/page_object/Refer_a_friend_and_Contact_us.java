@@ -159,6 +159,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private List<WebElement> social_media_header;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/whatsapp_visit_page']")
 	private WebElement whatsapp_visit_page;
+	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.whatsapp:id/whatsapp_toolbar_home']")
+	private WebElement whatsapp_back;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_text']")
 	private List<WebElement> Visit_page_text;
 	@FindBy(xpath = "//android.widget.Button[@text ='Log in']")
@@ -230,6 +232,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				}
 			} catch (Exception e) {
 				msg("WhatsApp on your device is available");
+				Custom_click(whatsapp_back, " whatsapp back button");
+				driver.navigate().back();
 			}
 		} catch (Exception e) {
 			msg("" + e);
@@ -303,6 +307,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement add_email_address;
 	@FindBy(xpath = "(//android.widget.LinearLayout[@resource-id ='com.google.android.gm:id/account_setup_item'])[1]")
 	private WebElement google;
+	@FindBy(xpath ="//android.widget.ImageButton[@content-desc='Navigate up']")
+	private WebElement email_back;
 
 	public WebElement Contact_via_email() {
 		return Contact_via_email;
@@ -338,5 +344,9 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 
 	public WebElement google() {
 		return google;
+	}
+	public WebElement email_back()
+	{
+		return email_back;
 	}
 }

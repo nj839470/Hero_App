@@ -4,15 +4,25 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Services_Page_Test(failed)">
+  <test thread-count="5" name="Refer_a_friend_and_Contact_us_test(failed)">
     <classes>
-      <class name="Page_Test.Services_Page_Test">
+      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
         <methods>
-          <include name="TC093_Verify_all_tips_list"/>
+          <include name="TC049_Verify_instagram_in_Contact_us_page"/>
+          <include name="TC053_Verify_twitter_in_Contact_us_page"/>
+          <include name="TC045_Verify_Select_City"/>
+          <include name="TC048_Verify_Facebook_in_Contact_us_page"/>
+          <include name="TC051_Verify_youTube_in_Contact_us_page"/>
+          <include name="TC054_Verify_Contact_via_Email"/>
+          <include name="TC043_Refer_a_friend"/>
+          <include name="TC052_Verify_Linkedin_in_Contact_us_page"/>
+          <include name="TC044_Verify_Select_State"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC094_Verify_all_DIY_Videos_list"/>
+          <include name="TC047_Verify_Refer_yourself"/>
+          <include name="TC046_Verify_Select_Model"/>
+          <include name="TC050_Verify_Whatsapp_in_Contact_us_page"/>
         </methods>
-      </class> <!-- Page_Test.Services_Page_Test -->
+      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
     </classes>
-  </test> <!-- Services_Page_Test(failed) -->
+  </test> <!-- Refer_a_friend_and_Contact_us_test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
