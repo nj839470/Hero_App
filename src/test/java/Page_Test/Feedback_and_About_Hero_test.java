@@ -152,16 +152,16 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	@Test(priority = 8)
 	public void TC065_Verify_Your_Details_Through_WhatsApp_in_Wheels_of_trust() throws InterruptedException
 	{
-		//first four line for emulator
+		//first four line for emulator only
 //		msg(ob.sign_in().getText());
 //		Custom_click(ob.whatsapp_button(), ob.whatsapp_button().getText());
 		Thread.sleep(2000);
 //		ob.whatsapp_info();
 //		Custom_click(ob.whatsapp_close(), "Whatsapp close");
-		//below four line for real device.
+		//below four line for real device and pCloudy.
 		msg(ob.sign_in_real().getText());
 		Custom_click(ob.whatsapp_button(), ob.whatsapp_button().getText());
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		ob.whatsapp_info_real();
 		Custom_click(ob.whatsapp_close_real(), "Whatsapp close");
 	}

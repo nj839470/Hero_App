@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Services_Page_Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 13 17:09:23 IST 2023</td>
+<td>Started on:</td><td>Fri Sep 15 15:20:39 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1724 seconds (1724761 ms)</td>
+<tr><td>Total time:</td><td>1678 seconds (1678145 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,197 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list()'><b>TC094_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:412)
-	at Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list(Services_Page_Test.java:359)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1012373446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1012373446'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:412)
-	at Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list(Services_Page_Test.java:359)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC093_Verify_all_tips_list()'><b>TC093_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:386)
-	at Page_Test.Services_Page_Test.TC093_Verify_all_tips_list(Services_Page_Test.java:353)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600497367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1600497367'><pre>org.openqa.selenium.json.JsonException: Unable to parse: 
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.size(Unknown Source)
-	at com.page_object.Services_Page.tips_list(Services_Page.java:386)
-	at Page_Test.Services_Page_Test.TC093_Verify_all_tips_list(Services_Page_Test.java:353)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 41 more
-</pre></div></td>
-<td>0</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -267,109 +76,24 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC068_Vehicle_details_on_service_page()'><b>TC068_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td title='Page_Test.Services_Page_Test.TC072_View_Service_schedule_750()'><b>TC072_View_Service_schedule_750</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>101</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC075_View_Service_schedule_9500()'><b>TC075_View_Service_schedule_9500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>57</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC077_View_Service_schedule_15500()'><b>TC077_View_Service_schedule_15500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>55</td>
+<td>65</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
 <td title='Page_Test.Services_Page_Test.TC088_View_Service_schedule_660_days()'><b>TC088_View_Service_schedule_660_days</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>20</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC091_View_Service_schedule_960_days()'><b>TC091_View_Service_schedule_960_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>20</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC084_View_Service_schedule_260_days()'><b>TC084_View_Service_schedule_260_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>23</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC072_View_Service_schedule_750()'><b>TC072_View_Service_schedule_750</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>60</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC085_View_Service_schedule_360_days()'><b>TC085_View_Service_schedule_360_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>23</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC079_View_Service_schedule_21500()'><b>TC079_View_Service_schedule_21500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>57</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC090_View_Service_schedule_860_days()'><b>TC090_View_Service_schedule_860_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>20</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC080_View_Service_schedule_24500()'><b>TC080_View_Service_schedule_24500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>51</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC083_View_Service_schedule_160_days()'><b>TC083_View_Service_schedule_160_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>70</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC070_verify_Dealer_information()'><b>TC070_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>7</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC076_View_Service_schedule_12500()'><b>TC076_View_Service_schedule_12500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>61</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC087_View_Service_schedule_560_days()'><b>TC087_View_Service_schedule_560_days</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>21</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC092_Verify_Last_Serviced()'><b>TC092_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>602</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC073_View_Service_schedule_3500()'><b>TC073_View_Service_schedule_3500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>57</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC074_View_Service_schedule_6500()'><b>TC074_View_Service_schedule_6500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>60</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC069_verify_service_type()'><b>TC069_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>2</td>
-<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
-<tr>
-<td title='Page_Test.Services_Page_Test.TC078_View_Service_schedule_18500()'><b>TC078_View_Service_schedule_18500</b><br>Test class: Page_Test.Services_Page_Test</td>
-<td></td>
-<td>49</td>
+<td>52</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
 <td title='Page_Test.Services_Page_Test.TC082_View_Service_schedule_60_days()'><b>TC082_View_Service_schedule_60_days</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>54</td>
+<td>60</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC086_View_Service_schedule_460_days()'><b>TC086_View_Service_schedule_460_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>68</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
 <td title='Page_Test.Services_Page_Test.TC071_Verify_dealer_manager_info()'><b>TC071_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
@@ -377,19 +101,114 @@ Driver info: driver.version: RemoteWebDriver
 <td>6</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
+<td title='Page_Test.Services_Page_Test.TC080_View_Service_schedule_24500()'><b>TC080_View_Service_schedule_24500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>51</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC079_View_Service_schedule_21500()'><b>TC079_View_Service_schedule_21500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>55</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC074_View_Service_schedule_6500()'><b>TC074_View_Service_schedule_6500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>64</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC068_Vehicle_details_on_service_page()'><b>TC068_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>72</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC092_Verify_Last_Serviced()'><b>TC092_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>175</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC090_View_Service_schedule_860_days()'><b>TC090_View_Service_schedule_860_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>51</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC083_View_Service_schedule_160_days()'><b>TC083_View_Service_schedule_160_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>62</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC075_View_Service_schedule_9500()'><b>TC075_View_Service_schedule_9500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>58</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC070_verify_Dealer_information()'><b>TC070_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>6</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC084_View_Service_schedule_260_days()'><b>TC084_View_Service_schedule_260_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>65</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC089_View_Service_schedule_760_days()'><b>TC089_View_Service_schedule_760_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>55</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC091_View_Service_schedule_960_days()'><b>TC091_View_Service_schedule_960_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>59</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC087_View_Service_schedule_560_days()'><b>TC087_View_Service_schedule_560_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>53</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC093_Verify_all_tips_list()'><b>TC093_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>88</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC069_verify_service_type()'><b>TC069_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC077_View_Service_schedule_15500()'><b>TC077_View_Service_schedule_15500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>51</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC073_View_Service_schedule_3500()'><b>TC073_View_Service_schedule_3500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>60</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
 <td title='Page_Test.Services_Page_Test.TC081_View_Service_schedule_27500()'><b>TC081_View_Service_schedule_27500</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
 <td>59</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC086_View_Service_schedule_460_days()'><b>TC086_View_Service_schedule_460_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td title='Page_Test.Services_Page_Test.TC078_View_Service_schedule_18500()'><b>TC078_View_Service_schedule_18500</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>23</td>
+<td>52</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 <tr>
-<td title='Page_Test.Services_Page_Test.TC089_View_Service_schedule_760_days()'><b>TC089_View_Service_schedule_760_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td title='Page_Test.Services_Page_Test.TC085_View_Service_schedule_360_days()'><b>TC085_View_Service_schedule_360_days</b><br>Test class: Page_Test.Services_Page_Test</td>
 <td></td>
-<td>20</td>
+<td>60</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC076_View_Service_schedule_12500()'><b>TC076_View_Service_schedule_12500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>64</td>
+<td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list()'><b>TC094_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>71</td>
 <td>Page_Test.Services_Page_Test@1787f2a0</td></tr>
 </table><p>
 </body>

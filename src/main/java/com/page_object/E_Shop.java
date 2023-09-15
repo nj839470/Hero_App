@@ -16,6 +16,8 @@ public class E_Shop extends Base_Utility {
 
 	@FindBy(xpath = "//android.widget.FrameLayout[@content-desc='Eshop']/android.view.ViewGroup/android.widget.TextView")
 	private WebElement E_shop;
+	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/navigation_bar_item_small_label_view'])[3]")
+	private WebElement E_shop_pCloudy;
 	@FindBy(xpath = "//android.view.View[@content-desc='cart']")
 	private WebElement shoping_cart;
 	@FindBy(xpath="//android.view.View[contains(@text,'You have no items')]")
@@ -24,25 +26,41 @@ public class E_Shop extends Base_Utility {
 	private WebElement wishlist;
 	@FindBy(xpath = "//android.view.View[@resource-id ='block-customer-login-heading']")
 	private WebElement customer_login_heading;
+	@FindBy(xpath = "//android.widget.TextView[@resource-id ='block-customer-login-heading']")
+	private WebElement customer_login_heading_real;
 	@FindBy(xpath="//android.view.View[contains(@text,'If you have an account')]")
 	private WebElement registered_custombers_message;
+	@FindBy(xpath="//android.widget.TextView[contains(@text,'If you have an account')]")
+	private WebElement registered_custombers_message_real;
 	@FindBy(xpath = "//android.widget.EditText[@resource-id ='email']")
 	private WebElement enter_email_or_mobile_number;
 	@FindBy(xpath ="//android.view.View[@content-desc='Continue']")
 	private WebElement Continue_button;
 	@FindBy(xpath ="//android.view.View[contains(@text, 'Verify your mobile')]")
 	private WebElement verify_mobile;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text, 'Verify your mobile')]")
+	private WebElement verify_mobile_real;
 	@FindBy(xpath ="//android.view.View[contains(@text,'Please enter 4-Digit OTP')]")
 	private WebElement verify_mobile_message;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'Please enter 4-Digit OTP')]")
+	private WebElement verify_mobile_message_real;
 	@FindBy(xpath ="//android.view.View[@resource-id ='otp-pop-up-close']")
 	private WebElement otp_pop_up_close;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='otp-pop-up-close']")
+	private WebElement otp_pop_up_close_real;
 	@FindBy(xpath ="//android.view.View[@resource-id ='block-new-customer-heading']")
 	private WebElement new_customer_heading;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='block-new-customer-heading']")
+	private WebElement new_customer_heading_real;
 	@FindBy(xpath ="//android.view.View[@content-desc= 'CREATE AN ACCOUNT']/android.widget.TextView")
 	private WebElement Create_Account;
 	public WebElement E_shop()
 	{
 		return E_shop;
+	}
+	public WebElement E_shop_pCloudy()
+	{
+		return E_shop_pCloudy;
 	}
 	public WebElement shoping_cart()
 	{
@@ -60,9 +78,17 @@ public class E_Shop extends Base_Utility {
 	{
 		return customer_login_heading;
 	}
+	public WebElement customer_login_heading_real()
+	{
+		return customer_login_heading_real;
+	}
 	public WebElement registered_custombers_message()
 	{
 		return registered_custombers_message;
+	}
+	public WebElement registered_custombers_message_real()
+	{
+		return registered_custombers_message_real;
 	}
 	public WebElement enter_email_or_mobile_number()
 	{
@@ -76,17 +102,33 @@ public class E_Shop extends Base_Utility {
 	{
 		return verify_mobile;
 	}
+	public WebElement verify_mobile_real()
+	{
+		return verify_mobile_real;
+	}
 	public WebElement verify_mobile_message()
 	{
 		return verify_mobile_message;
+	}
+	public WebElement verify_mobile_message_real()
+	{
+		return verify_mobile_message_real;
 	}
 	public WebElement otp_pop_up_close()
 	{
 		return otp_pop_up_close;
 	}
+	public WebElement otp_pop_up_close_real()
+	{
+		return otp_pop_up_close_real;
+	}
 	public WebElement new_customer_heading()
 	{
 		return new_customer_heading;
+	}
+	public WebElement new_customer_heading_real()
+	{
+		return new_customer_heading_real;
 	}
 	public WebElement Create_Account()
 	{
@@ -97,8 +139,12 @@ public class E_Shop extends Base_Utility {
 	private WebElement user_account;
 	@FindBy(xpath ="//android.view.View[@resource-id = 'block-new-customer-heading']")
 	private WebElement newcustomer_heading;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id = 'block-new-customer-heading']")
+	private WebElement newcustomer_heading_real;
 	@FindBy(xpath ="//android.view.View[contains(@text,'Creating an account')]")
 	private WebElement newcustomer_message1;
+	@FindBy(xpath ="//android.widget.TextView[contains(@text,'Creating an account')]")
+	private WebElement newcustomer_message1_real;
 	@FindBy(xpath="//android.widget.TextView[contains(@text ,'See order and')]")
 	private WebElement newcustomer_message2;
 	@FindBy(xpath ="//android.widget.TextView[contains(@text ,'Track order')]")
@@ -135,9 +181,17 @@ public class E_Shop extends Base_Utility {
 	{
 		return newcustomer_heading;
 	}
+	public WebElement newcustomer_heading_real()
+	{
+		return newcustomer_heading_real;
+	}
 	public WebElement newcustomer_message1()
 	{
 		return newcustomer_message1;
+	}
+	public WebElement newcustomer_message1_real()
+	{
+		return newcustomer_message1_real;
 	}
 	public WebElement newcustomer_message2()
 	{

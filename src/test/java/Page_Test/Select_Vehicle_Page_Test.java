@@ -100,22 +100,20 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 			VerifyElementPresent(ob.continue_button(), "Continue Button after select vehicle is");
 			Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 			Thread.sleep(2000);
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-			Thread.sleep(2000);
-			Custom_click(ob.Allow(), ob.Allow().getText()
-					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+			//below 5 lines for emulator.
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//			Thread.sleep(2000);
+//			Custom_click(ob.Allow(), ob.Allow().getText()
+//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 //			Custom_click(ob.banner_Img_close(), " Banner Img close");
-//		Custom_click(ob.While_using_the_app(), "While using the app");
-//		Thread.sleep(2000);
-//		 Custom_click(ob.video_full_video(), "Video full");
-//		 Thread.sleep(2000);
-//		 Custom_click(ob.video_close_button(), "Vodeo close");
+		Custom_click(ob.While_using_the_app(), "While using the app");
+
 		} catch (Exception e) {
 			msg("" + e);
-			System.err.println(e);
+			System.out.println(e);
 		}
 	}
 

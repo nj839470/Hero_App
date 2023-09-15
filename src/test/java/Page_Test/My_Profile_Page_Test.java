@@ -87,12 +87,12 @@ public class My_Profile_Page_Test extends Base_Utility {
 			map.put("Name", ob.edit_full_name().getText());
 			map.put("Email ID", ob.edit_email_id().getText());
 			map.put("Registered mobile number", ob.edit_registered_mobile_number().getText());
-			custom_sendkeys(ob.edit_full_name(), config_getdata("edit_name_in_personal_detail"), " Change Name");
+			custom_sendkeys(ob.edit_full_name(), config_getdata("edit_name_in_personal_detail"), " Change Name");	
 			ob.gender_selection();
 			driver.navigate().back();
 			custom_sendkeys(ob.edit_email_id(), config_getdata("edit_email_id"), " Change Email id");
-//			driver.navigate().back(); 												//for pCloudy
-		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 		//for emulator
+			driver.navigate().back(); 												//for pCloudy
+//		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 		//for emulator
 			Custom_click(ob.edit_date_of_birth(), " Date of Birth");
 			Custom_click(ob.DOB_edit_button(), "Edit DOB");
 			ob.send_dob().clear();
@@ -103,14 +103,14 @@ public class My_Profile_Page_Test extends Base_Utility {
 				msg("DOB is not accepted " + config_getdata("edit_DOB"));
 				Custom_click(ob.Cancel_dob(), " Cancel DOB");
 			}
-//			driver.navigate().back(); 													//for pCloudy
+			driver.navigate().back(); 													//for pCloudy
 			custom_sendkeys(ob.blood_group(), "B+", "Blood group");
 			Custom_click(ob.blood_group(), " Blood group");
 			Scroll_down_page_Action("Street name");
 			custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
-//			driver.navigate().back(); 														//for pCloudy
-			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));			 //for emulator
-			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 			 //for emulator
+			driver.navigate().back(); 														//for pCloudy
+//			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));			 //for emulator
+//			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 			 //for emulator
 			Thread.sleep(2000);
 			Custom_click(ob.pin_code(), "Pin code");
 			ob.pin_code().clear();

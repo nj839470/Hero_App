@@ -149,8 +149,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		return Refer_yourself;
 	}
 
-	// ************************************ Contact Us
-	// **********************************
+	// ************************************ Contact Us **********************************
 	@FindBy(xpath = "(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/rv_item_lbl'])[6]")
 	private WebElement Contact_us;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id = 'com.customerapp.hero:id/lbl3']")
@@ -287,8 +286,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		}
 	}
 
-	// ************************************ Contact Via Email
-	// **********************************
+	// ************************************ Contact Via Email  **********************************
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement Contact_via_email;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.google.android.gm:id/welcome_tour_title']")
