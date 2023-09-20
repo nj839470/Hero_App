@@ -29,16 +29,16 @@ public class Login_Page_Test extends Base_Utility {
 		msg("************************Login page test**************************");
 		ob = new Login_page();
 		//below 6 lines for pCloudy	
-		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
 //		Custom_click(ob.Allow(), ob.Allow().getText()
 //				+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-		Custom_click(ob.ok(), "OK");			
+//		Custom_click(ob.ok(), "OK");			
 //		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
 //	Custom_click(ob.open(), "Open");	//This line for real device
-//	Custom_click(ob.close(), "Close button"); // for emulator and real device
+	Custom_click(ob.close(), "Close button"); // for emulator and real device
 	}
 
 	@Test(priority = 1)
@@ -74,8 +74,8 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC005_Terms_of_use_button() throws InterruptedException {
 		Custom_click(ob.Terms_of_Use(), "Terms of use button");
 		Thread.sleep(8000);
-//		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());	// For emulator
-		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText()); // for real device
+		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());	// For emulator
+//		msg("Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText()); // for real device
 		Custom_click(ob.back_page(), "back terms of use page ");
 	}
 
@@ -83,8 +83,8 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC006_Privacy_policy() throws InterruptedException {
 		Custom_click(ob.Privacy_Policy(), "Privacy Policy");
 		Thread.sleep(5000);
-//		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());// For emulator
-		msg("Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());// for real device
+		msg("Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());// For emulator
+//		msg("Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());// for real device
 		Custom_click(ob.back_page(), "back Privacy Policy page ");
 		
 	}
@@ -144,16 +144,16 @@ public class Login_Page_Test extends Base_Utility {
 //			Custom_click(ob.allow(), "Allow Now");
 //			Custom_click(ob.open(), "Open"); 	// this line for real device
 			//*****************************Below 8 line for Pcloudy **********************************
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
 //			Custom_click(ob.Allow(), ob.Allow().getText()
 //					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
+//			Custom_click(ob.ok(), "OK");			//this line is for pcloudy	
 //			Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
-//			Custom_click(ob.close(), "Close button"); // this line for real device and emulator
-			custom_sendkeys(ob.mobile_No(), config_getdata("mobileno"), "Login with Registerd mobile number");
+			Custom_click(ob.close(), "Close button"); // this line for real device and emulator
+			custom_sendkeys(ob.mobile_No(), "8888000999", "Login with Registerd mobile number");
 			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 			Custom_click(ob.continue_button(), "Coninue button");
 			Thread.sleep(15000);
@@ -161,18 +161,18 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob.verify_button(), "Verify Button");
 			Thread.sleep(2000);
 			// when excute select vehicle page class then need to comment below 7 line.
-			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
+			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+			Thread.sleep(2000);
+			Custom_click(ob1.Allow(), ob.Allow().getText()
+					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+			Custom_click(ob1.banner_Img_close(), " Banner Img close");
+
 			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
 			Thread.sleep(2000);
 //*****************************Below 6 line for emulator **********************************
-//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-//			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-//			Thread.sleep(2000);
-//			Custom_click(ob1.Allow(), ob.Allow().getText()
-//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-//			Custom_click(ob1.banner_Img_close(), " Banner Img close");
 //*****************************above 6 line for emulator **********************************
 		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
 		} catch (Exception e) {

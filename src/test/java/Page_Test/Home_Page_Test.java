@@ -47,11 +47,11 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
 		// Please comment out from line no 50 to 54 for When script execute from pcloudy
-//		try {
-//			Custom_click(ob.While_using_the_app(), "While using the app");
-//		} catch (Exception e) {
-//			msg("While Using the app pop up did not come");
-//		}
+		try {
+			Custom_click(ob.While_using_the_app(), "While using the app");
+		} catch (Exception e) {
+			msg("While Using the app pop up did not come");
+		}
 		Custom_click(ob.Search_destination(), "Search destination");
 		msg(ob.Search_here().getText());
 		Custom_click(ob.Back_button(), "Back from Search here");
@@ -109,8 +109,8 @@ public class Home_Page_Test extends Base_Utility {
 			Thread.sleep(1000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
 			try {
-//				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator
-				msg(ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
+				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator
+//				msg(ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
 				msg("Locate nearest dealer link is working");
 				Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
 			} catch (Exception e) {
@@ -154,12 +154,12 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException
 	{
 		Thread.sleep(3000);
-//		msg(ob.Local_dealer_fullname().getText());  // for emulator
-		msg(ob.Local_dealer_fullname_real().getText());   // for pCloudy and real device
+		msg(ob.Local_dealer_fullname().getText());  // for emulator
+//		msg(ob.Local_dealer_fullname_real().getText());   // for pCloudy and real device
 		Scroll_down_page_Action("View More");
 		msg(ob.Local_dealer_name().getText());
-//		msg(ob.Local_dealer_address().getText());   // for emulator
-		msg(ob.Local_dealer_address_real().getText());   // for pCloudy and real device
+		msg(ob.Local_dealer_address().getText());   // for emulator
+//		msg(ob.Local_dealer_address_real().getText());   // for pCloudy and real device
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 	@Test(priority = 9)

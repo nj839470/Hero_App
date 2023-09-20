@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestListener;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -49,7 +50,7 @@ public class Base_Utility
 	String confipath = System.getProperty("user.dir") + "\\config_data\\config.properties";
 	String excelpath = System.getProperty("user.dir") + "\\data\\data1.xlsx";
 	public static AndroidDriver driver;
-
+	
 	@BeforeTest
 	// ******************Automatic server start code ************************
 //	public void appiumTest() throws Exception {
@@ -84,59 +85,59 @@ public class Base_Utility
 //	}
 	// ******************Automatic server end code ************************
 	 //-----for virtual device---------
-//	public void OPEN_AND_INSTALL_APP() {
-//		try {
-//			//  DesiredCapabilities db = new DesiredCapabilities();
-//			UiAutomator2Options db = new UiAutomator2Options();
-//			db.setCapability("appium:automationName", "uiautomator2");
-//			db.setCapability("platformName", "Android");
-//			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-//			db.setCapability("appium:udid", "emulator-5554");
-//			db.setCapability("appium:avdLaunchTimeout", 900000);
-//			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug_33.apk"));
-//			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-//			db.setCapability("appium:ensureWebviewsHavePages", true);
-//			db.setCapability("appium:nativeWebScreenshot", true);
-//			db.setCapability("appium:newCommandTimeout", 9600);
-//			log = LogManager.getLogger("Hero_App");
-//			lis = new listner();
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//	}
-
-	// *************************pCloudy************************************************
-	
 	public void OPEN_AND_INSTALL_APP() {
 		try {
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-			capabilities.setCapability("pCloudy_DurationInMinutes", 90);
-			capabilities.setCapability("newCommandTimeout", 600);
-			capabilities.setCapability("launchTimeout", 90000);
-			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-			capabilities.setCapability("pCloudy_DeviceVersion", "11.0.0");
-			capabilities.setCapability("platformVersion", "11.0.0");
-			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("automationName", "uiautomator2");
-			capabilities.setCapability("pCloudy_ApplicationName", "app-debug_33.apk");
-			capabilities.setCapability("appPackage", "com.customerapp.hero");
-			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-			capabilities.setCapability("pCloudy_WildNet", "false");
-			capabilities.setCapability("pCloudy_EnableVideo", "true");
-			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
-			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
-			capabilities.setCapability("appiumVersion", "2.0.0");
-			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			 log = LogManager.getLogger("Hero_App");
-			 
+			//  DesiredCapabilities db = new DesiredCapabilities();
+			UiAutomator2Options db = new UiAutomator2Options();
+			db.setCapability("appium:automationName", "uiautomator2");
+			db.setCapability("platformName", "Android");
+			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+			db.setCapability("appium:udid", "emulator-5554");
+			db.setCapability("appium:avdLaunchTimeout", 900000);
+			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug_33.apk"));
+			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+			db.setCapability("appium:ensureWebviewsHavePages", true);
+			db.setCapability("appium:nativeWebScreenshot", true);
+			db.setCapability("appium:newCommandTimeout", 9600);
+			log = LogManager.getLogger("Hero_App");
+			lis = new listner();
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 	}
+
+	// *************************pCloudy************************************************
+	
+//	public void OPEN_AND_INSTALL_APP() {
+//		try {
+//			DesiredCapabilities capabilities = new DesiredCapabilities();
+//			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+//			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+//			capabilities.setCapability("pCloudy_DurationInMinutes", 90);
+//			capabilities.setCapability("newCommandTimeout", 600);
+//			capabilities.setCapability("launchTimeout", 90000);
+//			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+//			capabilities.setCapability("pCloudy_DeviceVersion", "11.0.0");
+//			capabilities.setCapability("platformVersion", "11.0.0");
+//			capabilities.setCapability("platformName", "Android");
+//			capabilities.setCapability("automationName", "uiautomator2");
+//			capabilities.setCapability("pCloudy_ApplicationName", "app-debug_33.apk");
+//			capabilities.setCapability("appPackage", "com.customerapp.hero");
+//			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+//			capabilities.setCapability("pCloudy_WildNet", "false");
+//			capabilities.setCapability("pCloudy_EnableVideo", "true");
+//			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
+//			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+//			capabilities.setCapability("appiumVersion", "2.0.0");
+//			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//			 log = LogManager.getLogger("Hero_App");
+//			 
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//	}
 	// -------- for real device----------
 //	public void OPEN_AND_INSTALL_APP() {
 //		try {
@@ -266,8 +267,8 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + " is not able to send" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error(fieldname + " is not able to send");
-			// lis.onTestFailure(null);
 		}
 
 	}
@@ -284,8 +285,9 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + "==Unable To Click ==" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error(fieldname + " is not clickable");
-			// lis.onTestFailure(null);
+			
 		}
 	}
 
@@ -309,6 +311,7 @@ public class Base_Utility
 		    	
 		    }catch(Exception e) {		    	
 			test.log(Status.FAIL,fieldname+ "Unable To Scroll page Action =="+e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 		    	log.error("==NOT==Unable To Scroll page down Action "+fieldname);
 			}	    
 	    }
@@ -344,6 +347,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			log.error("==NOT==Unable To Swipe page direction Action " + fieldname);
 			test.log(Status.FAIL,fieldname+ "Unable To Swipe page direction Action " + fieldname +e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 		}
 	}
 	//======================================================================================================================================================	    
@@ -368,14 +372,16 @@ public class Base_Utility
 				log.info("Image is present " + fieldname);
 			} else {
 				test.log(Status.FAIL, fieldname + "==Image is not present ==");
+				test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 				log.error("Image is not present" + fieldname);
-				// lis.onTestFailure(null);
+				
 
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + "==Image is not present ==" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error("Image is not present" + fieldname);
-			// lis.onTestFailure(null);
+			
 		}
 	}
 
@@ -391,7 +397,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, "==page is not loaded :" + e);
 			log.error("page is not able to loaded " + Title);
-			// lis.onTestFailure(null);
+		
 		}
 	}
 
@@ -408,8 +414,8 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + " not present" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error(fieldname + "  not present");
-			// lis.onTestFailure(null);
 		}
 
 	}
@@ -421,8 +427,8 @@ public class Base_Utility
 			log.info(filedname);
 		} catch (Exception e) {
 			test.log(Status.FAIL, filedname + e);
+			test.addScreenCaptureFromPath(lis.getcapcture(filedname));
 			log.error(filedname);
-			// lis.onTestFailure(null);
 		}
 
 	}

@@ -8,7 +8,6 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -23,9 +22,9 @@ public class listner extends Base_Utility implements ITestListener {
 	ThreadLocal<ExtentTest> extent_test=new ThreadLocal<ExtentTest>();
 
 		public void onTestStart(ITestResult result) {
-			test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
-	
-			extent_test.set(test);
+			test=extent.createTest(result.getTestClass().getName()+ " = " +result.getMethod().getMethodName());
+				
+			extent_test.set(test);	
 		}
 	
 		public void onTestSuccess(ITestResult result) {
@@ -38,18 +37,20 @@ public class listner extends Base_Utility implements ITestListener {
 	
 		public void onTestFailure(ITestResult result) {
 			test.log(Status.FAIL, "Test Case Fail");
-			if(result.getStatus()==ITestResult.FAILURE)
-			{
-				test.addScreenCaptureFromPath(getcapcture(result.getName()));
-			}
+			test.addScreenCaptureFromPath(getcapcture(result.getName()));
+//			if(result.getStatus()==ITestResult.FAILURE)
+//			{
+//				test.addScreenCaptureFromPath(getcapcture(result.getName()));
+//			}
 		}
 	
 		public void onTestSkipped(ITestResult result) {
 			test.log(Status.SKIP, "Test Case Skip");
-			if(result.getStatus()==ITestResult.SKIP)
-			{
-				test.addScreenCaptureFromPath(getcapcture(result.getName()));
-			}
+			test.addScreenCaptureFromPath(getcapcture(result.getName()));
+//			if(result.getStatus()==ITestResult.SKIP)
+//			{
+//				test.addScreenCaptureFromPath(getcapcture(result.getName()));
+//			}
 		}
 	
 	
