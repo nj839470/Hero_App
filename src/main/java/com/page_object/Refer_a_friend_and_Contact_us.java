@@ -61,7 +61,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 
 	public void Select_State(String value) {
 		for (int i = 0; i < Select_State_list.size(); i++) {
-			if (Select_State_list.get(i).getText().equalsIgnoreCase(value)) {
+			String state_name = Select_State_list.get(i).getText();
+			if (state_name.equalsIgnoreCase(value)) {
 				Custom_click(Select_State_list.get(i), value);
 				break;
 			} else {

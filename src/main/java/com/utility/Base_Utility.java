@@ -94,7 +94,7 @@ public class Base_Utility
 			db.setCapability("appium:deviceName", "Pixel_6_API_31");
 			db.setCapability("appium:udid", "emulator-5554");
 			db.setCapability("appium:avdLaunchTimeout", 900000);
-			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug_33.apk"));
+			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
 			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 			db.setCapability("appium:ensureWebviewsHavePages", true);
@@ -118,8 +118,8 @@ public class Base_Utility
 //			capabilities.setCapability("newCommandTimeout", 600);
 //			capabilities.setCapability("launchTimeout", 90000);
 //			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-//			capabilities.setCapability("pCloudy_DeviceVersion", "11.0.0");
-//			capabilities.setCapability("platformVersion", "11.0.0");
+//			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+//			capabilities.setCapability("platformVersion", "13.0.0");
 //			capabilities.setCapability("platformName", "Android");
 //			capabilities.setCapability("automationName", "uiautomator2");
 //			capabilities.setCapability("pCloudy_ApplicationName", "app-debug_33.apk");
