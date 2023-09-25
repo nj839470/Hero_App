@@ -161,20 +161,21 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob.verify_button(), "Verify Button");
 			Thread.sleep(2000);
 			// when excute select vehicle page class then need to comment below 7 line.
-			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+			Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
+			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
+			Thread.sleep(2000);
+			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
 			Custom_click(ob1.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
 			Thread.sleep(2000);
 			Custom_click(ob1.Allow(), ob.Allow().getText()
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-			Custom_click(ob1.banner_Img_close(), " Banner Img close");
+//			Custom_click(ob1.banner_Img_close(), " Banner Img close");
 
-			Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
-			Thread.sleep(2000);
-//*****************************Below 6 line for emulator **********************************
+		
 //*****************************above 6 line for emulator **********************************
-		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
+//		Custom_click(ob1.While_using_the_app(), "While using the app"); //this line is for pcloudy
 		} catch (Exception e) {
 			System.out.println("Problem with login" + e);
 		}

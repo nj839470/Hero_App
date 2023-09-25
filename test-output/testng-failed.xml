@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="Book_Service_test(failed)">
     <classes>
-      <class name="Page_Test.Feedback_and_About_Hero_test">
+      <class name="Page_Test.Book_Service_test">
         <methods>
-          <include name="TC065_Verify_Your_Details_Through_WhatsApp_in_Wheels_of_trust"/>
-          <include name="TC066_Verify_Your_Details_Through_OTP_in_Wheels_of_trust"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC064_Verify_Vehicle_Condition_in_Wheels_of_trust"/>
+          <include name="Review_Service_Details"/>
+          <include name="Book_service"/>
         </methods>
-      </class> <!-- Page_Test.Feedback_and_About_Hero_test -->
+      </class> <!-- Page_Test.Book_Service_test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- Book_Service_test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
