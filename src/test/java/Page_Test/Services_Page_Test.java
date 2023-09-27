@@ -10,7 +10,6 @@ import com.utility.Base_Utility;
 public class Services_Page_Test extends Base_Utility {
 	public Login_Page_Test login;
 	public Services_Page ob;
-
 	@Test(priority = 0)
 	public void TC068_Vehicle_details_on_service_page() throws InterruptedException {
 		msg("************************Service Page**************************");

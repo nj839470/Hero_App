@@ -17,6 +17,8 @@ public class Book_Service extends Base_Utility {
 	private WebElement Services;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_name']")
 	private WebElement Vehicle_brand_Name;
+	@FindBy(xpath ="//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_license_no']")
+	private WebElement Vehicle_license_no;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id='com.customerapp.hero:id/tv_nickname']")
 	private WebElement Vehicle_Nick_Name;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/tv_nextservice']")
@@ -37,7 +39,10 @@ public class Book_Service extends Base_Utility {
 	public WebElement Vehicle_Nick_Name() {
 		return Vehicle_Nick_Name;
 	}
-
+	public WebElement Vehicle_license_no()
+	{
+		return Vehicle_license_no;
+	}
 	public WebElement next_service_info() {
 		return next_service_info;
 	}

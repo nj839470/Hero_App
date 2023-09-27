@@ -105,7 +105,7 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(1000);
 		try {
-			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); // for emulator and pCloudy
+			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); 
 			Thread.sleep(1000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
 

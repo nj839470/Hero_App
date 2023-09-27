@@ -201,6 +201,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			msg("" + e);
+			Custom_click(back, " Back from facebook" );
 		}
 	}
 
@@ -214,6 +215,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			msg("" + e);
+			Custom_click(back, " Back from instagram" );
 		}
 	}
 
@@ -250,6 +252,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			msg("" + e);
+			Custom_click(back, " Back from Youtube");
 		}
 	}
 
@@ -284,6 +287,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			msg("" + e);
+			Custom_click(back, " Back from Twitter");
 		}
 	}
 

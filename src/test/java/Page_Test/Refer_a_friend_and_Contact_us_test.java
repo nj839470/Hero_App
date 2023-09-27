@@ -141,25 +141,25 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{
 		Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
 		//Line no from 144 to 162 need to comment out for pCloudy and real device it's only for emulator
-		try {
-		if(ob.Contact_via_email().isDisplayed()==true)
-		{
-			Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
-		}
-		}catch(Exception e) { msg("Contact via email has already open");};
-		Thread.sleep(2000);
-		msg(ob.Welcome_message().getText());
-		msg(ob.Welcome_message2().getText());
-		Custom_click(ob.welcome_tour_next(), "welcome tour next");
-		msg(ob.welcome_tour_promotion().getText());
-		Custom_click(ob.welcome_tour_done(), ob.welcome_tour_done().getText());
-		msg(ob.addresses_title().getText());
-		Custom_click(ob.add_email_address(), ob.add_email_address().getText());
-		Custom_click(ob.google(), "Setup email with google");
-		Thread.sleep(5000);
-		driver.navigate().back();
-		Thread.sleep(1000);
-		driver.navigate().back();
+//		try {
+//		if(ob.Contact_via_email().isDisplayed()==true)
+//		{
+//			Custom_click(ob.Contact_via_email(), ob.Contact_via_email().getText());
+//		}
+//		}catch(Exception e) { msg("Contact via email has already open");};
+//		Thread.sleep(2000);
+//		msg(ob.Welcome_message().getText());
+//		msg(ob.Welcome_message2().getText());
+//		Custom_click(ob.welcome_tour_next(), "welcome tour next");
+//		msg(ob.welcome_tour_promotion().getText());
+//		Custom_click(ob.welcome_tour_done(), ob.welcome_tour_done().getText());
+//		msg(ob.addresses_title().getText());
+//		Custom_click(ob.add_email_address(), ob.add_email_address().getText());
+//		Custom_click(ob.google(), "Setup email with google");
+//		Thread.sleep(5000);
+//		driver.navigate().back();
+//		Thread.sleep(1000);
+//		driver.navigate().back();
 		Thread.sleep(1000);
 		driver.navigate().back();
 		Thread.sleep(1000);

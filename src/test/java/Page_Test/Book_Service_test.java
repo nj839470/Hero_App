@@ -8,9 +8,8 @@ import com.utility.Base_Utility;
 public class Book_Service_test extends Base_Utility {
 	public Login_Page_Test login;
 	public Book_Service ob;
-
 	@Test(priority = 0)
-	public void previous_service_info() {
+	public void TC109_previous_service_info() {
 		ob = new Book_Service();
 		login = new Login_Page_Test();
 		login.login();
@@ -19,16 +18,21 @@ public class Book_Service_test extends Base_Utility {
 		msg(ob.service_date_time().getText());
 		Custom_click(ob.Book_Service_button(), ob.Book_Service_button().getText());
 		msg(ob.Vehicle_brand_Name().getText());
+		try {
 		msg(ob.Vehicle_Nick_Name().getText());
+		}catch(Exception e) {msg("Vehicle nick name is not given");}
+		try {
+		msg(ob.Vehicle_license_no().getText());
+		}catch(Exception e) {msg("Vehicle License number is not given");}
 	}
 
 	@Test(priority = 1)
-	public void Book_service() throws InterruptedException {
+	public void TC110_Book_service() throws InterruptedException {
 		msg(ob.select_date().getText());
 		ob.pick_date();
 		msg("Selected date = " + ob.Selected_date().getText());
 		msg(ob.select_time().getText());
-		swipe_page_direction(100, 1150, 590, 1150, "Pick time");
+		swipe_page_direction(100, 1250, 590, 1250, "Pick time");
 		msg("Selected Time =" + ob.Selected_time().getText());
 		msg("Service Centre Name =" + ob.center_Name().getText());
 		msg("Service Centre Address =" + ob.center_Address().getText());
@@ -40,11 +44,13 @@ public class Book_Service_test extends Base_Utility {
 		Scroll_down_page_Action("Additional Instructions");
 		msg("Customer Requests");
 		ob.Customer_Requests();
+		Scroll_down_page_Action("Review Service Details button");
 		custom_sendkeys(ob.Additional_Instructions(), "Bike Stand,light ETC", "Another issue");
+		driver.navigate().back();
 	}
 
 	@Test(priority = 2)
-	public void Review_Service_Details() {
+	public void TC111_Review_Service_Details() {
 		Custom_click(ob.Review_Service_Details_button(), ob.Review_Service_Details_button().getText());
 		ob.Service_Details();
 		Custom_click(ob.cancel_button(), "Cnacel Button");
