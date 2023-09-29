@@ -19,8 +19,8 @@ public class Vehicle_Details_test extends Base_Utility {
 	public void TC037_Verify_My_Vehicle() throws InterruptedException {
 		msg("*********************My Vehicle page**************************");
 		ob = new Vehicle_Details();
-//		login = new Login_Page_Test();
-//		login.login();
+		login = new Login_Page_Test();
+		login.login();
 		try {
 		Custom_click(ob.home(), "Home");
 		Thread.sleep(2000);

@@ -92,8 +92,8 @@ public class My_Profile_Page_Test extends Base_Utility {
 			ob.gender_selection();
 			driver.navigate().back();
 			custom_sendkeys(ob.edit_email_id(), config_getdata("edit_email_id"), " Change Email id");
-//			driver.navigate().back(); 												//for pCloudy
-			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 		//for emulator
+			driver.navigate().back(); 												//for pCloudy
+//			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 		//for emulator
 			Custom_click(ob.edit_date_of_birth(), " Date of Birth");
 			Custom_click(ob.DOB_edit_button(), "Edit DOB");
 			ob.send_dob().clear();
@@ -104,7 +104,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 				msg("DOB is not accepted " + config_getdata("edit_DOB"));
 				Custom_click(ob.Cancel_dob(), " Cancel DOB");
 			}
-//			driver.navigate().back(); 													//for pCloudy
+			driver.navigate().back(); 													//for pCloudy
 			custom_sendkeys(ob.blood_group(), "B+", "Blood group");
 			Custom_click(ob.blood_group(), " Blood group");
 			Scroll_down_page_Action("Street name");

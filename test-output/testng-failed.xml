@@ -6,29 +6,12 @@
   </listeners>
   <test thread-count="5" name="All test class(failed)">
     <classes>
-      <class name="Page_Test.GoodLife_test">
+      <class name="Page_Test.Login_Page_Test">
         <methods>
-          <include name="TC099_Verify_Complete_profile"/>
-          <include name="TC096_Verify_Pro_Membership"/>
-          <include name="TC097_Verify_Earning_History_in_Pro_Membership"/>
-          <include name="TC101_Verify_refer_friend_in_Goodlife"/>
-          <include name="TC105_verify_Benefits_and_Experiences"/>
-          <include name="TC100_Verify_Welcome_Rewards"/>
-          <include name="TC106_verify_Remarkable_Rewards"/>
-          <include name="TC095_verify_image_in_goodlife_page"/>
+          <include name="TC007_contact_Us"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC098_Verify_Redemption_History_in_Pro_Membership"/>
-          <include name="TC104_verify_Service_Privilegers"/>
-          <include name="TC103_verify_Points_Earning_and_Redemption"/>
         </methods>
-      </class> <!-- Page_Test.GoodLife_test -->
-      <class name="Page_Test.Services_Page_Test">
-        <methods>
-          <include name="TC093_Verify_all_tips_list"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC094_Verify_all_DIY_Videos_list"/>
-        </methods>
-      </class> <!-- Page_Test.Services_Page_Test -->
+      </class> <!-- Page_Test.Login_Page_Test -->
     </classes>
   </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
