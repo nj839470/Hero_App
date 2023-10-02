@@ -258,6 +258,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 
 	public void Linkedin() throws InterruptedException {
 		try {
+			Scroll_down_page_Action("Twitter");
 			String header = social_media_header.get(4).getText();
 			msg(Visit_page_text.get(4).getText());
 			Custom_click(visit_Page.get(3), header);
@@ -277,7 +278,6 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 
 	public void twitter() throws InterruptedException {
 		try {
-			Scroll_down_page_Action("Twitter");
 			String header = social_media_header.get(4).getText();
 			msg(Visit_page_text.get(4).getText());
 			Custom_click(visit_Page.get(4), header);

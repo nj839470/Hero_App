@@ -78,6 +78,7 @@ public class GoodLife_test extends Base_Utility {
 	public void TC101_Verify_refer_friend_in_Goodlife() throws InterruptedException
 	{
 		msg(ob.Referral_Offer().getText());
+//		scrollByText("Points Earning & Redemption");  for pCloudy version 11.0.0 only
 		Custom_click(ob.Know_more(), ob.Know_more().getText());
 		ob.Referral_all_offer();
 		Thread.sleep(2000);

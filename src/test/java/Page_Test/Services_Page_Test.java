@@ -69,8 +69,12 @@ public class Services_Page_Test extends Base_Utility {
 			Thread.sleep(1000);
 			driver.navigate().back();
 			Thread.sleep(1000);
-			msg("Manager contact number =" + ob.manage_phone_number().getText());
-		} catch (Exception e) {
+			try {
+				if(ob.Service_Schedule().isDisplayed()) { 
+					msg("Manager contact number =" + ob.manage_phone_number().getText());
+					msg("Service Schedule is visible"); }
+			}catch (Exception e) { driver.navigate().back(); }
+				} catch (Exception e) {
 			msg("" + e);
 
 		}
@@ -94,8 +98,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //		swipe_page_direction(46, 295, 159, 295, "3500 Kilometer");	// for real device
 //		swipe_page_direction(98, 565, 335, 565, "3500 Kilometer"); 	// for pCloudy device
-		swipe_page_direction(98, 465, 240, 465, "3500 Kilometer"); 	// for pCloudy device-13
-//		swipe_page_direction(69, 412, 250, 412, "3500 Kilometer");   // for Emulator
+//		swipe_page_direction(98, 465, 240, 465, "3500 Kilometer"); 	// for pCloudy device-13
+		swipe_page_direction(69, 412, 250, 412, "3500 Kilometer");   // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -108,8 +112,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //		swipe_page_direction(159, 295, 290, 295, "6500 Kilometer");	// for real device
 //			swipe_page_direction(335, 565, 590, 565, "6500 Kilometer"); 	// for pCloudy device
-			swipe_page_direction(240, 465, 440, 465, "6500 Kilometer"); 	// for pCloudy device-13
-//			swipe_page_direction(250, 412, 435, 412, "6500 Kilometer"); // for Emulator
+//			swipe_page_direction(240, 465, 440, 465, "6500 Kilometer"); 	// for pCloudy device-13
+			swipe_page_direction(250, 412, 435, 412, "6500 Kilometer"); // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -122,8 +126,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //		swipe_page_direction(290, 295, 416, 295, "9500 Kilometer"); // for real device
 //			swipe_page_direction(590, 565, 840, 565, "9500 Kilometer"); 	// for pCloudy device
-			swipe_page_direction(440, 465, 628, 465, "9500 Kilometer"); 	// for pCloudy device-13
-//			swipe_page_direction(435, 412, 620, 412, "9500 Kilometer"); // for emulator
+//			swipe_page_direction(440, 465, 628, 465, "9500 Kilometer"); 	// for pCloudy device-13
+			swipe_page_direction(435, 412, 620, 412, "9500 Kilometer"); // for emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -136,8 +140,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //		swipe_page_direction(416, 295, 545, 295, "12500 Kilometer"); // for real device
 //			swipe_page_direction(840, 565, 1100, 565, "12500 Kilometer"); 	// for pCloudy device
-			swipe_page_direction(628, 465, 815, 465, "12500 Kilometer"); 	// for pCloudy device-13
-//			swipe_page_direction(620, 412, 824, 412, "12500 Kilometer"); // for Emulator
+//			swipe_page_direction(628, 465, 815, 465, "12500 Kilometer"); 	// for pCloudy device-13
+			swipe_page_direction(620, 412, 824, 412, "12500 Kilometer"); // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -150,8 +154,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //		swipe_page_direction(545, 295, 675, 295, "15500 Kilometer"); // for real device
 //			swipe_page_direction(1100, 565, 1350, 565, "15500 Kilometer"); 	// for pCloudy device
-			swipe_page_direction(815, 465, 1005, 465, "15500 Kilometer"); 	// for pCloudy device-13
-//			swipe_page_direction(824, 412, 1002, 412, "15500 Kilometer"); // for Emulator
+//			swipe_page_direction(815, 465, 1005, 465, "15500 Kilometer"); 	// for pCloudy device-13
+			swipe_page_direction(824, 412, 1002, 412, "15500 Kilometer"); // for Emulator
 			String text = ob.KM_15500().getText();
 			Custom_click(ob.KM_15500(), text);
 			msg("Paid Service for = " + text);
@@ -219,10 +223,15 @@ public class Services_Page_Test extends Base_Utility {
 	public void TC082_View_Service_schedule_60_days() {
 		try {
 			Custom_click(ob.Days(), ob.Days().getText());
-			Thread.sleep(2000);
-//			swipe_page_direction(1002, 412, 69, 412, "60 Days"); // for Emulator
+			swipe_page_direction(1002, 412, 69, 412, "60 Days"); // for Emulator
 //			swipe_page_direction(1357, 565, 98, 565, "60 Days"); // for pCloudy
-			swipe_page_direction(1005, 465, 100, 465, "60 Days"); 	// for pCloudy device-13
+//			swipe_page_direction(1005, 465, 100, 465, "60 Days"); 	// for pCloudy device-13
+			// Line no: 230 to 234 is only for pCloudy device-13
+//			try {
+//			if(ob.Service_Schedule().isDisplayed()) {
+//			Custom_click(ob.Service_Schedule(), "View Service Schedule"); 
+//			Custom_click(ob.Days(), ob.Days().getText()); 
+//			}}catch(Exception e) { }
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -235,8 +244,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //			swipe_page_direction(46, 295, 159, 295, "160 Days");	// for real device
 //			swipe_page_direction(98, 565, 335, 565, "160 Days");    // for pCloudy
-			swipe_page_direction(98, 465, 240, 465, "160 Days"); 	// for pCloudy device-13
-//			swipe_page_direction(69, 412, 250, 412, "160 Days");     // for Emulator
+//			swipe_page_direction(98, 465, 240, 465, "160 Days"); 	// for pCloudy device-13
+			swipe_page_direction(69, 412, 250, 412, "160 Days");     // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -249,8 +258,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //			swipe_page_direction(159, 295, 290, 295, "260 Days");	// for real device
 //			swipe_page_direction(335, 565, 590, 565, "260 Days"); 	// for pCloudy device
-			swipe_page_direction(240, 465, 440, 465, "260 Days"); 	// for pCloudy device-13
-//			swipe_page_direction(250, 412, 435, 412, "260 Days"); // for Emulator
+//			swipe_page_direction(240, 465, 440, 465, "260 Days"); 	// for pCloudy device-13
+			swipe_page_direction(250, 412, 435, 412, "260 Days"); // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -263,8 +272,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //			swipe_page_direction(290, 295, 416, 295, "360 Days"); // for real device
 //			swipe_page_direction(590, 565, 840, 565, "360 Days"); 	// for pCloudy device
-			swipe_page_direction(440, 465, 628, 465, "360 Days"); 	// for pCloudy device-13
-//			swipe_page_direction(435, 412, 620, 412, "360 Days"); // for emulator
+//			swipe_page_direction(440, 465, 628, 465, "360 Days"); 	// for pCloudy device-13
+			swipe_page_direction(435, 412, 620, 412, "360 Days"); // for emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -277,8 +286,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //			swipe_page_direction(416, 295, 545, 295, "460 Days"); // for real device
 //			swipe_page_direction(840, 565, 1100, 565, "460 Days"); 	// for pCloudy device
-			swipe_page_direction(628, 465, 820, 465, "460 Days"); 	// for pCloudy device-13
-//		    swipe_page_direction(620, 412, 824, 412, "460 Days"); // for Emulator
+//			swipe_page_direction(628, 465, 820, 465, "460 Days"); 	// for pCloudy device-13
+		    swipe_page_direction(620, 412, 824, 412, "460 Days"); // for Emulator
 			ob.Service_schedule();
 		} catch (Exception e) {
 			msg("" + e);
@@ -291,8 +300,8 @@ public class Services_Page_Test extends Base_Utility {
 		try {
 //			swipe_page_direction(545, 295, 675, 295, "560 Days"); // for real device
 //			swipe_page_direction(1100, 565, 1350, 565, "560 Days"); 	// for pCloudy device
-			swipe_page_direction(820, 465, 1005, 465, "560 Days"); 	// for pCloudy device-13
-//			swipe_page_direction(824, 412, 1002, 412, "560 Days"); // for Emulator
+//			swipe_page_direction(820, 465, 1005, 465, "560 Days"); 	// for pCloudy device-13
+			swipe_page_direction(824, 412, 1002, 412, "560 Days"); // for Emulator
 			String text = ob.days_560().getText();
 			Custom_click(ob.days_560(), text);
 			msg("Paid Service for = " + text);

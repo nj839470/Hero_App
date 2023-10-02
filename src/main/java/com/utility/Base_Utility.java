@@ -118,8 +118,8 @@ public class Base_Utility
 //			capabilities.setCapability("newCommandTimeout", 600);
 //			capabilities.setCapability("launchTimeout", 90000);
 //			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-//			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-//			capabilities.setCapability("platformVersion", "13.0.0");
+//			capabilities.setCapability("pCloudy_DeviceVersion", "11.0.0");
+//			capabilities.setCapability("platformVersion", "11.0.0");
 //			capabilities.setCapability("platformName", "Android");
 //			capabilities.setCapability("automationName", "uiautomator2");
 //			capabilities.setCapability("pCloudy_ApplicationName", "app-debug_33.apk");

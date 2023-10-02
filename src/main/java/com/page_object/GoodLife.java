@@ -247,6 +247,7 @@ public class GoodLife extends Base_Utility {
 			} else if (i == 13) {
 				msg(point_earn_condition.get(i).getText());
 			} else if (i >= 14 && i <= 25) {
+//				if(i==21) { Scroll_down_page_Action("Become a GoodLife Member");}  // for pCloudy version 11.0.0
 				msg(point_earn_condition.get(i).getText() + " = " + point_earn_condition.get(i + 1).getText());
 				i++;
 			} else {

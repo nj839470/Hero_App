@@ -134,6 +134,7 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		Custom_click(ob.Start_normally(), ob.Start_normally().getText());
 		msg(ob.Light_Indicators().getText());
 		Custom_click(ob.Light_Indicators_condition(), ob.Light_Indicators_condition().getText());
+//		Scroll_down_page_Action("Next");  // for pCloudy version 11.0.0 only
 		msg(ob.Front_Tyre().getText());
 		Custom_click(ob.Front_Tyre_condition(), ob.Front_Tyre_condition().getText());
 		Scroll_down_page_Action("Next");
@@ -147,6 +148,7 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		Custom_click(ob.How_to_check_all_issue_real(), "How to check all issue instraction ");//For real device
 		msg(ob.issue_message_real().getText());									             //For real device
 		Custom_click(ob.close_issue_instraction_real(), "close issue instraction message");  //For real device
+//		Scroll_down_page_Action("Next");       // for pCloudy version 11.0.0 only
 		Custom_click(ob.next_button(), ob.next_button().getText());
 	}
 	@Test(priority = 8)

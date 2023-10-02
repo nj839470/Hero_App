@@ -101,19 +101,19 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 			Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 			Thread.sleep(2000);
 			//below 5 lines for emulator.
-//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-//			Thread.sleep(2000);
-//			Custom_click(ob.Allow(), ob.Allow().getText()
-//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+			Thread.sleep(2000);
+			Custom_click(ob.Allow(), ob.Allow().getText()
+					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 //			Custom_click(ob.banner_Img_close(), " Banner Img close");
-		Custom_click(ob.While_using_the_app(), "While using the app");    //this line is for pcloudy
+//		Custom_click(ob.While_using_the_app(), "While using the app");    //this line is for pcloudy
 
 		} catch (Exception e) {
 			msg("" + e);
-			System.out.println(e);
+			
 		}
 	}
 
