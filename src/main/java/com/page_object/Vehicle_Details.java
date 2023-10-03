@@ -120,10 +120,10 @@ public class Vehicle_Details extends Base_Utility {
 	public void vehicle_info() {
 		try {
 			for (int i = 0; i < vehicle_info.size(); i++) {
-				msg(Vehicle_header.get(i).getText() + " = " + vehicle_info.get(i).getText());
+				Message(Vehicle_header.get(i).getText() + " = " + vehicle_info.get(i).getText());
 			}
 		} catch (Exception e) {
-			msg("" + e);
+			Message("" + e);
 		}
 	}
 
@@ -177,11 +177,11 @@ public class Vehicle_Details extends Base_Utility {
 			Thread.sleep(2000);
 			try {
 				if (Document_Check != null) {
-					msg(Document_Check.getText());
+					Message(Document_Check.getText());
 					Custom_click(Back, name + " Back Document");
 				}
 			} catch (Exception e) {
-				msg(name + " is already available");
+				Message(name + " is already available");
 				Custom_click(Back, name + " Back Document");
 			}
 		}
@@ -245,36 +245,20 @@ public class Vehicle_Details extends Base_Utility {
 				String service_info = Service_history.get(i).getText();
 				if (service_info.equalsIgnoreCase("Details")) {
 					Custom_click(Service_history.get(i), service_info);
-					msg("Vehicle brand name in Service details= " + service_brand_name.getText());
-					msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
+					Message("Vehicle brand name in Service details= " + service_brand_name.getText());
+					Message("Vehicle Serial number in Service details  = " + service_seral_no.getText());
 					try {
 						if (sevice_center_info.get(0).isDisplayed() == true) {
-							msg("Service center name =" + sevice_center_info.get(0).getText());
-							msg("Service center address =" + sevice_center_info.get(1).getText());
+							Message("Service center name =" + sevice_center_info.get(0).getText());
+							Message("Service center address =" + sevice_center_info.get(1).getText());
 						}
 					} catch (Exception e) {
-						msg("Service center name is not given");
+						Message("Service center name is not given");
 					}
 					
-					msg("******************Job card , Completion date & price ************************");
-					msg("Estimated Amount =" + Estimated_Amount.getText());
-					msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
-//					if (invoice.getText().equalsIgnoreCase("Download invoice")) {
-//						Custom_click(invoice, "Download invoice");
-//						Thread.sleep(6000);
-//					}
-//					try {
-//						Custom_click(invoice, "view invoice");
-////			if(button_once.isDisplayed()==true)
-////			{															//for emulator
-////			Custom_click(button_once, "Just once");
-////		}
-//						Thread.sleep(2000);
-//						msg("invoice number =" + invoice_number.getText());
-//						driver.navigate().back();
-//					} catch (Exception e) {
-//						msg("Not able to download invoice");
-//					}
+					Message("******************Job card , Completion date & price ************************");
+					Message("Estimated Amount =" + Estimated_Amount.getText());
+					Message("Estimated Date & Time =" + Estimated_Date_Time.getText());
 					support_information();
 					Custom_click(collapse_arrow, "collapse Key arrow in");
 					Custom_click(collapse_arrow, "collapse Key arrow out");
@@ -284,10 +268,10 @@ public class Vehicle_Details extends Base_Utility {
 					driver.navigate().back();
 					Custom_click(Back, Service_history.get(0).getText());
 				} else {
-					msg(service_info);
+					Message(service_info);
 				}
 			} catch (Exception e) {
-				msg("" + e);
+				Message("" + e);
 			}
 		}
 	}
@@ -295,10 +279,10 @@ public class Vehicle_Details extends Base_Utility {
 	public void support_information() {
 		try {
 			for (int i = 0; i < support_info.size(); i++) {
-				msg("Support information =" + support_info.get(i).getText());
+				Message("Support information =" + support_info.get(i).getText());
 			}
 		} catch (Exception e) {
-			msg("" + e);
+			Message("" + e);
 
 		}
 	}

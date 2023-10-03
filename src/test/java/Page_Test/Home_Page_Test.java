@@ -21,13 +21,12 @@ public class Home_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC017_Home_page_verify() throws InterruptedException {
-		msg("************************Home_Page_Test**************************");
+		Message("************************Home_Page_Test**************************");
 		ob = new Home_Page();
 //		login = new Login_Page_Test();
 //		login.login();
-		try {
-			Thread.sleep(5000);
-			msg("Current Temperature is =" + ob.temperature().getText());
+		   Thread.sleep(5000);
+			msg(ob.temperature(),"Current Temperature is =" + ob.temperature().getText());
 			VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 			Thread.sleep(2000);
 			ob.all_vehicle_inside_drop_down();
@@ -36,52 +35,44 @@ public class Home_Page_Test extends Base_Utility {
 			Custom_click(ob.Collapse_btn(), " Return collapse button");
 			Thread.sleep(2000);
 			Custom_click(ob.notification(), "Notification");
-			msg("Total Notification are=" + ob.notification_count());
+			Message("Total Notification are=" + ob.notification_count());
 			Custom_click(ob.notification_back(), "Notification back");
-		} catch (Exception e) {
-			msg("" + e);
-
 		}
-	}
 
 	@Test(priority = 1)
 	public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
-		// Please comment out from line no 50 to 54 for When script execute from pcloudy
-		try {
-			Custom_click(ob.While_using_the_app(), "While using the app");
-		} catch (Exception e) {
-			msg("While Using the app pop up did not come");
-		}
+		// Please comment out from line no 46 to 51 for When script execute from pcloudy
+//		try {
+//			Custom_click(ob.While_using_the_app(), "While using the app");
+//		} catch (Exception e) {
+//			Message("While Using the app pop up did not come");
+//			test.addScreenCaptureFromPath(lis.getcapcture("While using the app"));
+//		}
 		Custom_click(ob.Search_destination(), "Search destination");
-		msg(ob.Search_here().getText());
+		msg(ob.Search_here(),ob.Search_here().getText());
 		Custom_click(ob.Back_button(), "Back from Search here");
 		Custom_click(ob.Back_button(), "Back from Navigation");
 	}
 
 	@Test(priority = 2)
 	public void TC019_Verify_Documents() throws InterruptedException {
-		try {
+	
 			Custom_click(ob.Documents_Menu(), "Document menu");
 			ob.Documents_list();
 			Custom_click(ob.Back(), "Back from Documents");
-		} catch (Exception e) {
-			msg("" + e);
-
 		}
-	}
 
 	@Test(priority = 3)
 	public void TC020_Verify_Relationship_Manager() throws InterruptedException {
-		try {
 			Thread.sleep(2000);
 			Custom_click(ob.Relationship_Manager(), "Relationship Manager");
 			Thread.sleep(2000);
 			try {
 				if (ob.Relationship_Manager_name().getSize() != null) {
-					msg("Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
-					msg("Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
-					msg("Relationship Manager Contact number is ="
+					msg(ob.Relationship_Manager_name(),"Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
+					msg(ob.Relationship_Manager_Address(),"Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
+					msg(ob.Relationship_Manager_Contact_number(),"Relationship Manager Contact number is ="
 							+ ob.Relationship_Manager_Contact_number().getText());
 					Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
 					driver.navigate().back();
@@ -89,15 +80,12 @@ public class Home_Page_Test extends Base_Utility {
 					driver.navigate().back();
 				}
 			} catch (Exception e) {
-				msg("Relationship Manager name is not given");
+				Message("Relationship Manager name is not given");
 			}
 			Thread.sleep(2000);
 			ob.Others_Contacts();
 			Custom_click(ob.Back(), "Back from Relationship Manager");
-		} catch (Exception e) {
-			msg("" + e);
 
-		}
 	}
 
 	@Test(priority = 4)
@@ -105,23 +93,22 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(2000);
 		try {
+			if(ob.locate_nearest_dealer().isDisplayed()) {
 			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); 
 			Thread.sleep(2000);
 //		Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
 
-				msg(ob.locate_the_nearest_dealer().getText()); // only for emulator
-//			msg(ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
-			msg("Locate nearest dealer link is working");
+//			msg(ob.locate_the_nearest_dealer(),ob.locate_the_nearest_dealer().getText()); // only for emulator
+			msg(ob.locate_the_nearest_dealer_real(),ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
+			Message("Locate nearest dealer link is working");
+			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, "Locate nearest dealer link is not given" + e);
 			log.error("Locate nearest dealer link is not given" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("Locate nearest dealer link is not given"));
 			Custom_click(ob.Back(), "Back from RSA");
 		}
-		try {
-			Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
-		} catch (Exception e) {
-			msg(" Coockie Pop-Up is not given");
-		}
+		Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
 	}
 
 	@Test(dependsOnMethods = "TC021_Verify_RSA()", priority = 5)
@@ -133,7 +120,7 @@ public class Home_Page_Test extends Base_Utility {
 				Custom_click(ob.State(), ob.State().getText());
 				}
 			} catch (Exception e) {
-				msg("State is already open");
+				Message("State is already open");
 			}
 
 		ob.select_state("Bihar");
@@ -158,72 +145,48 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 8)
 	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException {
 		Thread.sleep(3000);
-		msg(ob.Local_dealer_fullname().getText());  // for emulator
-//		msg(ob.Local_dealer_fullname_real().getText()); // for pCloudy and real device
+//		msg(ob.Local_dealer_fullname(),ob.Local_dealer_fullname().getText());  // for emulator
+		msg(ob.Local_dealer_fullname_real(),ob.Local_dealer_fullname_real().getText()); // for pCloudy and real device
 		Scroll_down_page_Action("View More");
 		Thread.sleep(1000);
-		msg(ob.Local_dealer_name().getText());
-		msg(ob.Local_dealer_address().getText());   // for emulator
-//		msg(ob.Local_dealer_address_real().getText()); // for pCloudy and real device
+		msg(ob.Local_dealer_name(),ob.Local_dealer_name().getText());
+//		msg(ob.Local_dealer_address(),ob.Local_dealer_address().getText());   // for emulator
+		msg(ob.Local_dealer_address_real(),ob.Local_dealer_address_real().getText()); // for pCloudy and real device
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 
 	@Test(priority = 9)
 	public void TC026_Verify_Technical_Support_Manager() throws InterruptedException {
-		try {
 			Custom_click(ob.Technical_Support(), "Technical Support");
 			Thread.sleep(2000);
-			try {
-				msg("Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
-				msg("Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
-				msg("Technical Support Manager contact number is ="
+			msg(ob.Technical_Support_Manager_Name(),"Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
+			msg(ob.Technical_Support_Manager_Address(),"Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
+			msg(ob.Technical_Support_Manager_Contact_Number(),"Technical Support Manager contact number is ="
 						+ ob.Technical_Support_Manager_Contact_Number().getText());
-			} catch (Exception e) {
-				msg("Technical Support Manager information not given");
-
-			}
-			Custom_click(ob.Back(), "Back from Technical Support Manager");
-		} catch (Exception e) {
-			msg("" + e);
-
+		  Custom_click(ob.Back(), "Back from Technical Support Manager");
 		}
-	}
 
 	@Test(priority = 10)
 	public void TC027_Verify_Dealer_Locator() throws InterruptedException {
-		try {
+	
 			Custom_click(ob.Dealer_Locator(), "Dealer Locator");
 			Thread.sleep(2000);
 			Custom_click(ob.Select_State(), "Select state");
 			ob.Select_State("BIHAR");
-		} catch (Exception e) {
-			msg("" + e);
-
 		}
-	}
 
 	@Test(priority = 11)
 	public void TC028_Select_city() {
-		try {
 			Custom_click(ob.Select_City(), "Select city");
 			ob.Select_City("BAGAHA");
-		} catch (Exception e) {
-			msg("" + e);
-
 		}
-	}
 
 	@Test(priority = 12)
 	public void TC029_View_dealer_name_and_address() {
-		try {
 			Custom_click(ob.map_view(), "Map View dealer name and address");
 			ob.Dealer_info();
 			Custom_click(ob.Back(), "Back from Dealer Locator");
-		} catch (Exception e) {
-			msg("" + e);
-
 		}
-	}
 //	@Test(priority = 13)
 //	public void verify_Service_at_home_page()
 //	{

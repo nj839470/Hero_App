@@ -47,13 +47,10 @@ public class Home_Page extends Base_Utility {
 	}
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
-		try {
+	
 			Custom_click(vehicle_drop_down, " Drop down");
 			Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
-		} catch (Exception e) {
-			msg("" + e);
-
-		}
+		
 	}
 
 	public WebElement vehicle_img() {
@@ -229,7 +226,7 @@ public class Home_Page extends Base_Utility {
 			Thread.sleep(2000);
 			try {
 				if (Document_Check != null) {
-					msg(Document_Check.getText());
+					Message(Document_Check.getText());
 					Custom_click(Add_Now, name + " Add now");
 					if (i == 1) {
 						Custom_click(While_using_the_app, "While using the app");
@@ -249,7 +246,7 @@ public class Home_Page extends Base_Utility {
 					Custom_click(Back, name + " Back Document");
 				}
 			} catch (Exception e) {
-				msg(name + " is already available");
+				Message(name + " is already available");
 				Custom_click(Back, name + " Back Document");
 			}
 		}
@@ -287,11 +284,11 @@ public class Home_Page extends Base_Utility {
 		try {
 			if (Others_Contacts.size() != 0) {
 				for (int i = 0; i < Others_Contacts.size(); i++) {
-					msg("Others Contacts information =" + Others_Contacts.get(i).getText());
+					Message("Others Contacts information =" + Others_Contacts.get(i).getText());
 				}
 			}
 		} catch (Exception e) {
-			msg("" + e);
+			Message("" + e);
 		}
 
 	}
@@ -553,12 +550,12 @@ public class Home_Page extends Base_Utility {
 
 	public void Dealer_info() {
 		int avilable_dealer = Dealer_name.size();
-		msg("Total available dealer is =" + avilable_dealer);
+		Message("Total available dealer is =" + avilable_dealer);
 		for (int i = 0; i < avilable_dealer; i++) {
-			msg((i + 1) + " Dealer name =" + Dealer_name.get(i).getText());
-			msg((i + 1) + " Dealer address =" + Dealer_address.getText());
-			msg((i + 1) + " Dealer distance =" + Dealer_distance.getText());
-			msg((i + 1) + " Dealer duration time =" + Dealer_duration_time.getText());
+			Message((i + 1) + " Dealer name =" + Dealer_name.get(i).getText());
+			Message((i + 1) + " Dealer address =" + Dealer_address.getText());
+			Message((i + 1) + " Dealer distance =" + Dealer_distance.getText());
+			Message((i + 1) + " Dealer duration time =" + Dealer_duration_time.getText());
 			Custom_click(Call_Dealer, (i + 1) + " Call Dealer button ");
 			driver.navigate().back();
 			driver.navigate().back();
@@ -734,7 +731,7 @@ public class Home_Page extends Base_Utility {
 	{
 		for(int i=0;i<Vehicle_Exchange_info.size()-1;i++)
 		{
-			msg(Vehicle_Exchange_info.get(i).getText());
+			msg(Vehicle_Exchange_info.get(i),Vehicle_Exchange_info.get(i).getText());
 		}
 	}
 	//****************************Community_and_Tips************************************

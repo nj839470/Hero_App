@@ -194,27 +194,28 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	public void facebook() throws InterruptedException {
 		try {
 			String header = social_media_header.get(0).getText();
-			msg(Visit_page_text.get(0).getText());
+			Message(Visit_page_text.get(0).getText());
 			Custom_click(visit_Page.get(0), header);
 			Thread.sleep(2000);
 			Custom_click(facebook_login, header + " Login");
-			Custom_click(back, " Back from " + header);
+			Custom_click(back, " Back from " + header); 
 		} catch (Exception e) {
-			msg("" + e);
-			Custom_click(back, " Back from facebook" );
+			Message("Facebook is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 		}
 	}
 
 	public void instagram() throws InterruptedException {
 		try {
 			String header = social_media_header.get(1).getText();
-			msg(Visit_page_text.get(1).getText());
+			Message(Visit_page_text.get(1).getText());
 			Custom_click(visit_Page.get(1), header);
 			Thread.sleep(4000);
 			Custom_click(instagram_login, header + " Login");
-			Custom_click(back, " Back from " + header);
+			Custom_click(back, " Back from " + header); 
 		} catch (Exception e) {
-			msg("" + e);
+			Message("instagram is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("instagram"));
 			Custom_click(back, " Back from instagram" );
 		}
 	}
@@ -222,46 +223,52 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	public void Whatsapp() {
 		try {
 			String header = social_media_header.get(2).getText();
-			msg(Visit_page_text.get(2).getText());
-			msg(" Whatsapp number =" + whatsapp_visit_page.getText());
+			Message(Visit_page_text.get(2).getText());
+			Message(" Whatsapp number =" + whatsapp_visit_page.getText());
 			Custom_click(whatsapp_visit_page, header);
 			try {
 				if (whatsapp_visit_page.isDisplayed() == true) {
-					msg("We can’t find WhatsApp on your device. Please install for better experience");
+					Message("We can’t find WhatsApp on your device. Please install for better experience");
 				} else {
 					Custom_click(back, " Back from " + header);
 					driver.navigate().back();
-				}
+				} 
 			} catch (Exception e) {
-				msg("WhatsApp on your device is available");
+				Message("WhatsApp on your device is available");
 				Custom_click(whatsapp_back, " whatsapp back button");
 				driver.navigate().back();
-			}
+			} 
 		} catch (Exception e) {
-			msg("" + e);
+			Message("Whatsapp is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("Whatsapp"));
+			Custom_click(back, " Back from Whatsapp" );
 		}
 	}
 
 	public void youTube() throws InterruptedException {
 		try {
 			String header = social_media_header.get(3).getText();
-			msg(Visit_page_text.get(3).getText());
+			Message(Visit_page_text.get(3).getText());
 			Custom_click(visit_Page.get(2), header);
 			Thread.sleep(2000);
-			msg("Total subscribers count =" + subscribers_count.getText());
+			Message("Total subscribers count =" + subscribers_count.getText());
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
-			msg("" + e);
-			Custom_click(back, " Back from Youtube");
+			Message("youTube is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("youTube"));
+			Custom_click(back, " Back from youTube" );
 		}
 	}
 
 	public void Linkedin() throws InterruptedException {
 		try {
-			Scroll_down_page_Action("Twitter");
-			String header = social_media_header.get(4).getText();
-			msg(Visit_page_text.get(4).getText());
-			Custom_click(visit_Page.get(3), header);
+			Scroll_down_page_Action("Twitter"); // for version 11.0.0
+			String header = social_media_header.get(2).getText(); // for version 11.0.0
+			Message(Visit_page_text.get(3).getText());   // for version 11.0.0
+			Custom_click(visit_Page.get(2), header);   // for version 11.0.0
+//			String header = social_media_header.get(4).getText(); // for all other device.
+//			Message(Visit_page_text.get(4).getText());            // for all other device.
+//			Custom_click(visit_Page.get(3), header);      // for all other device.
 			Thread.sleep(2000);
 			Custom_click(Close_linkedin_pop_message, "Close linkedin pop message");
 			try {
@@ -272,21 +279,27 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			}
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
-			msg("" + e);
+			Message("Linkedin is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("Linkedin"));
+			Custom_click(back, " Back from Linkedin" );
 		}
 	}
 
 	public void twitter() throws InterruptedException {
 		try {
-			String header = social_media_header.get(4).getText();
-			msg(Visit_page_text.get(4).getText());
-			Custom_click(visit_Page.get(4), header);
+//			Scroll_down_page_Action("Twitter");               // for all other device.
+//			String header = social_media_header.get(4).getText();  // for all other device.
+			String header = social_media_header.get(3).getText();  // for version 11.0.0
+			Message(Visit_page_text.get(4).getText());
+			Custom_click(visit_Page.get(3), header);			// for version 11.0.0
+//			Custom_click(visit_Page.get(4), header);     // for all other device.
 			Thread.sleep(7000);
-			msg(" Total Followers = " +Twiter_Followers.getText());
+			Message(" Total Followers = " +Twiter_Followers.getText());
 			Custom_click(Twiter_Follow, Twiter_Follow.getText());
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
-			msg("" + e);
+			Message("twitter is not visible" + e);
+			test.addScreenCaptureFromPath(lis.getcapcture("twitter"));
 			Custom_click(back, " Back from Twitter");
 		}
 	}

@@ -4,34 +4,14 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="E_Shop_test(failed)">
     <classes>
-      <class name="Page_Test.GoodLife_test">
+      <class name="Page_Test.E_Shop_test">
         <methods>
-          <include name="TC101_Verify_refer_friend_in_Goodlife"/>
-          <include name="TC105_verify_Benefits_and_Experiences"/>
-          <include name="TC106_verify_Remarkable_Rewards"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC104_verify_Service_Privilegers"/>
-          <include name="TC103_verify_Points_Earning_and_Redemption"/>
-        </methods>
-      </class> <!-- Page_Test.GoodLife_test -->
-      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
-        <methods>
-          <include name="TC054_Verify_Contact_via_Email"/>
+          <include name="TC108_new_customers"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
-      <class name="Page_Test.Home_Page_Test">
-        <methods>
-          <include name="TC025_Verify_Nearest_Dealer_info"/>
-          <include name="TC021_Verify_RSA"/>
-          <include name="TC024_Select_Locality_For_Nearest_Dealer"/>
-          <include name="TC022_Select_State_For_Nearest_Dealer"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC023_Select_City_For_Nearest_Dealer"/>
-        </methods>
-      </class> <!-- Page_Test.Home_Page_Test -->
+      </class> <!-- Page_Test.E_Shop_test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- E_Shop_test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

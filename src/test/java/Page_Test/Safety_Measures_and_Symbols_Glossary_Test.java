@@ -12,7 +12,7 @@ public class Safety_Measures_and_Symbols_Glossary_Test extends Base_Utility{
 	@Test(priority = 0)
 	public void TC055_Verify_Safety_Measures() throws InterruptedException
 	{
-		msg("************************Safety Measures and Symbols Glossary Test**************************");
+		Message("************************Safety Measures and Symbols Glossary Test**************************");
 		ob = new Safety_Measures_and_Symbols_Glossary();
 //		login = new Login_Page_Test();
 //		login.login();

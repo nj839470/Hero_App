@@ -16,7 +16,7 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC057_verify_Feedback() throws InterruptedException {
-		msg("************************Feedback and About Hero test**************************");
+		Message("************************Feedback and About Hero test**************************");
 		ob = new Feedback_and_About_Hero();
 //		login = new Login_Page_Test();
 //		login.login();
@@ -43,31 +43,22 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	}
 
 	@Test(priority = 1)
-	public void TC058_verify_About_Hero() {
-		try {
+	public void TC058_verify_About_Hero() throws InterruptedException {
 			Custom_click(ob.about_hero(), ob.about_hero().getText());
 			Thread.sleep(10000);
-//			msg(ob.about_hero_message_1().getText());      						// For emulator
-//			msg(ob.about_hero_message_2().getText());							// For emulator
-			msg(ob.about_hero_message_1_real().getText());						// For Real device & pCloudy
-			msg(ob.about_hero_message_2_real().getText());						// For Real device & pCloudy
+//			msg(ob.about_hero_message_1(),ob.about_hero_message_1().getText());      // For emulator
+//			msg(ob.about_hero_message_2(),ob.about_hero_message_2().getText());		// For emulator
+			msg(ob.about_hero_message_1_real(),ob.about_hero_message_1_real().getText());// For Real device & pCloudy
+			msg(ob.about_hero_message_2_real(),ob.about_hero_message_2_real().getText());// For Real device & pCloudy
 			Custom_click(ob.back_btn(), "Back from About Hero page");
-
-		} catch (Exception e) {
-			msg("" + e);
-		}
-	}
+ }
 
 	@Test(priority = 2)
-	public void TC059_verify_Side_menu_page_function() {
-		try {
+	public void TC059_verify_Side_menu_page_function() throws InterruptedException {
 			Custom_click(ob.goodlife(), "Goodlife");
 			Thread.sleep(6000);
-			msg("goodlife page test =" + ob.goodlife_page_test().getText());
+			msg(ob.goodlife_page_test(),"goodlife page test =" + ob.goodlife_page_test().getText());
 			Custom_click(ob.back_btn(), "Back from GoodLife page");
-		} catch (Exception e) {
-			msg("" + e);
-		}
 	}
 
 	@Test(priority = 3)
@@ -75,12 +66,13 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		Custom_click(ob.wheels_of_trust(), "Wheels of trust");
 		Thread.sleep(5000);
 		try {
+			if(ob.Language_select().isDisplayed()) {
 			Custom_click(ob.Language_select(), "English language");
 			Thread.sleep(2000);
-			msg(ob.cookieNotice().getText());
-			Custom_click(ob.Accept_cookie(), ob.Accept_cookie().getText());
+			msg(ob.cookieNotice(),ob.cookieNotice().getText());
+			Custom_click(ob.Accept_cookie(), ob.Accept_cookie().getText()); }
 		} catch (Exception e) {
-			msg("Language poup is not populate");
+			Message("Language poup is not populate");
 		}
 		Custom_click(ob.Vehicle_Details(), ob.Vehicle_Details().getText());
 		Custom_click(ob.State(), ob.State().getText());
@@ -94,7 +86,7 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		ob.Select_city("New Delhi");
 		Thread.sleep(2000);
 		custom_sendkeys(ob.Pincode(), "110037", "Pincode");
-		msg("Please " + ob.Two_Wheeler().getText());
+		msg(ob.Two_Wheeler(),"Please " + ob.Two_Wheeler().getText());
 		Custom_click(ob.motorcycle(), ob.motorcycle().getText());
 	}
 
@@ -128,40 +120,40 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	@Test(priority = 7)
 	public void TC064_Verify_Vehicle_Condition_in_Wheels_of_trust()
 	{
-		msg(ob.silencer().getText());
+		msg(ob.silencer(),ob.silencer().getText());
 		Custom_click(ob.silencer_smoke(), ob.silencer_smoke().getText());
-		msg(ob.Starting_Vehicle().getText());
+		msg(ob.Starting_Vehicle(),ob.Starting_Vehicle().getText());
 		Custom_click(ob.Start_normally(), ob.Start_normally().getText());
-		msg(ob.Light_Indicators().getText());
+		msg(ob.Light_Indicators(),ob.Light_Indicators().getText());
 		Custom_click(ob.Light_Indicators_condition(), ob.Light_Indicators_condition().getText());
-//		Scroll_down_page_Action("Next");  // for pCloudy version 11.0.0 only
-		msg(ob.Front_Tyre().getText());
+		Scroll_down_page_Action("Next");  // for pCloudy version 11.0.0 only
+		msg(ob.Front_Tyre(),ob.Front_Tyre().getText());
 		Custom_click(ob.Front_Tyre_condition(), ob.Front_Tyre_condition().getText());
-		Scroll_down_page_Action("Next");
-		msg(ob.Rear_Tyre().getText());
+//		Scroll_down_page_Action("Next");    // all other device except version 11.0.0
+		msg(ob.Rear_Tyre(),ob.Rear_Tyre().getText());
 		Custom_click(ob.Rear_Tyre_condition(), ob.Rear_Tyre_condition().getText());
-		msg(ob.Body_Parts().getText());
+		Scroll_down_page_Action("Next");       // for pCloudy version 11.0.0 only
+		msg(ob.Body_Parts(),ob.Body_Parts().getText());
 		Custom_click(ob.Body_Parts_condition(), ob.Body_Parts_condition().getText());
 //		Custom_click(ob.How_to_check_all_issue(), "How to check all issue instraction ");     //For emulator
-//		msg(ob.issue_message().getText());													  //For emulator
+//		msg(ob.issue_message(),ob.issue_message().getText());							//For emulator
 //		Custom_click(ob.close_issue_instraction(), "close issue instraction message");   	   //For emulator
 		Custom_click(ob.How_to_check_all_issue_real(), "How to check all issue instraction ");//For real device
-		msg(ob.issue_message_real().getText());									             //For real device
+		msg(ob.issue_message_real(),ob.issue_message_real().getText());				 //For real device
 		Custom_click(ob.close_issue_instraction_real(), "close issue instraction message");  //For real device
-//		Scroll_down_page_Action("Next");       // for pCloudy version 11.0.0 only
 		Custom_click(ob.next_button(), ob.next_button().getText());
 	}
 	@Test(priority = 8)
 	public void TC065_Verify_Your_Details_Through_WhatsApp_in_Wheels_of_trust() throws InterruptedException
 	{
 		//first four line for emulator only
-//		msg(ob.sign_in().getText());
+//		msg(ob.sign_in(),ob.sign_in().getText());
 //		Custom_click(ob.whatsapp_button(), ob.whatsapp_button().getText());
 //		Thread.sleep(5000);
 //		ob.whatsapp_info();
 //		Custom_click(ob.whatsapp_close(), "Whatsapp close");
 		//below four line for real device and pCloudy.
-		msg(ob.sign_in_real().getText());
+		msg(ob.sign_in_real(),ob.sign_in_real().getText());
 		Custom_click(ob.whatsapp_button(), ob.whatsapp_button().getText());
 		Thread.sleep(5000);
 		ob.whatsapp_info_real();
@@ -170,8 +162,8 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 	@Test(priority = 9)
 	public void TC066_Verify_Your_Details_Through_OTP_in_Wheels_of_trust() throws InterruptedException
 	{
-//		msg(ob.Login().getText());          //For Emulator
-		msg(ob.Login_real().getText());     //For Real Device
+//		msg(ob.Login(),ob.Login().getText());          //For Emulator
+		msg(ob.Login_real(),ob.Login_real().getText());     //For Real Device
 		custom_sendkeys(ob.name(), "Kundan Singh", "Name");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 		custom_sendkeys(ob.number(), "8767980978", "Contact number");
@@ -181,22 +173,19 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		custom_sendkeys(ob.otp(), "1234", "OTP");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));
 		Custom_click(ob.submit(), "Submit Button");
-//		msg(ob.otp_message().getText());         //For Emulator
-		msg(ob.otp_message_real().getText());     //For Real Device
+//		msg(ob.otp_message(),ob.otp_message().getText());         //For Emulator
+		msg(ob.otp_message_real(),ob.otp_message_real().getText());     //For Real Device
 		Custom_click(ob.back_btn(), "Back from wheels of trust page");
 	}
 	
 	@Test(priority = 10)
 	public void TC067_Verify_joyride() {
-		try {
 			Custom_click(ob.Joyride(), "Joyride");
 			ob.Joyride_info();
 			Custom_click(ob.nearest_dealer(), ob.nearest_dealer().getText());
 			Custom_click(ob.back_btn(), "Back from Dealer Locator");
 			Custom_click(ob.back_btn(), "Back from Joyride page");
 			driver.navigate().back();
-		} catch (Exception e) {
-			msg("" + e);
-		}
+		
 	}
 }

@@ -46,14 +46,14 @@ public class GoodLife extends Base_Utility {
 
 	public void plan_info() {
 		for (int i = 0; i < plan_info.size() - 1; i++) {
-			msg(plan_info.get(i).getText());
+			msg(plan_info.get(i),plan_info.get(i).getText());
 		}
 	}
 
 	public void pro_membership_plan_info() {
 		for (int i = 6; i <= 12; i++) {
 			if (i < 12) {
-				msg(pro_membership_plan_info.get(i).getText() + " = " + pro_membership_plan_info.get(i + 1).getText());
+				Message(pro_membership_plan_info.get(i).getText() + " = " + pro_membership_plan_info.get(i + 1).getText());
 				i++;
 			} else if (i == 12) {
 				Custom_click(pro_membership_plan_info.get(i), pro_membership_plan_info.get(i).getText());
@@ -76,10 +76,10 @@ public class GoodLife extends Base_Utility {
 	public void earning_history() {
 		try {
 			for (int i = 0; i < Earning_History_heading.size(); i++) {
-				msg(Earning_History_heading.get(i).getText() + " = " + Earning_History_value.get(i).getText());
+				Message(Earning_History_heading.get(i).getText() + " = " + Earning_History_value.get(i).getText());
 			}
 		} catch (Exception e) {
-			msg(" No Earning history ");
+			Message(" No Earning history ");
 		}
 	}
 
@@ -159,7 +159,7 @@ public class GoodLife extends Base_Utility {
 	public void Referral_all_offer() {
 		for (int i = 0; i < Referral_all_offer.size() - 1; i++) {
 			if (i < 7) {
-				msg(Referral_all_offer.get(i).getText());
+				msg(Referral_all_offer.get(i),Referral_all_offer.get(i).getText());
 			} else if (i == 7) {
 				Custom_click(Referral_all_offer.get(i), Referral_all_offer.get(i).getText());
 			}
@@ -192,9 +192,9 @@ public class GoodLife extends Base_Utility {
 	}
 
 	public void Winner_info() {
-		msg("******** Please look some winner name********");
+		Message("******** Please look some winner name********");
 		for (int i = 0; i < Winner_info.size(); i++) {
-			msg(Winner_info.get(i).getText());
+			msg(Winner_info.get(i),Winner_info.get(i).getText());
 		}
 	}
 
@@ -238,17 +238,16 @@ public class GoodLife extends Base_Utility {
 	}
 
 	public void point_earn_condition() {
-		for (int i = 0; i < point_earn_condition.size(); i++) {
+		for (int i = 0; i <= point_earn_condition.size(); i++) {
 			if (i < 3) {
-				msg(point_earn_condition.get(i).getText());
+				msg(point_earn_condition.get(i),point_earn_condition.get(i).getText());
 			} else if (i >= 3 && i <= 12) {
-				msg(point_earn_condition.get(i).getText() + " = " + point_earn_condition.get(i + 1).getText());
+				msg(point_earn_condition.get(i),point_earn_condition.get(i).getText() + " = " + point_earn_condition.get(i + 1).getText());
 				i++;
 			} else if (i == 13) {
-				msg(point_earn_condition.get(i).getText());
+				msg(point_earn_condition.get(i),point_earn_condition.get(i).getText());
 			} else if (i >= 14 && i <= 25) {
-//				if(i==21) { Scroll_down_page_Action("Become a GoodLife Member");}  // for pCloudy version 11.0.0
-				msg(point_earn_condition.get(i).getText() + " = " + point_earn_condition.get(i + 1).getText());
+			Message(point_earn_condition.get(i).getText() + " = " + point_earn_condition.get(i + 1).getText());
 				i++;
 			} else {
 				Scroll_down_page_Action("Become a GoodLife Member");
@@ -259,7 +258,7 @@ public class GoodLife extends Base_Utility {
 
 	public void Tier3_distance_message() {
 		int size = Tier3_distance_message.size();
-		msg(Tier3_distance.getText() + " = " +Tier3_distance_message.get(size-1).getText());
+		Message(Tier3_distance.getText() + " = " +Tier3_distance_message.get(size-1).getText());
 	}
 
 	public WebElement point_earning_end_message() {
@@ -281,7 +280,7 @@ public class GoodLife extends Base_Utility {
 
 	public void service_previleges_all_message() {
 		for (int i = 0; i < service_previleges_all_message.size(); i++) {
-			msg(service_previleges_all_message.get(i).getText());
+			Message(service_previleges_all_message.get(i).getText());
 		}
 	}
 
@@ -296,7 +295,7 @@ public class GoodLife extends Base_Utility {
 
 	public void Benefits_message() {
 		for (int i = 2; i < Benefits_message.size(); i++) {
-			msg(Benefits_message.get(i).getText());
+			Message(Benefits_message.get(i).getText());
 		}
 	}
 
@@ -312,7 +311,7 @@ public class GoodLife extends Base_Utility {
 
 	public void Remarkable_Rewards_message() {
 		for (int i = 2; i < Remarkable_Rewards_message.size(); i++) {
-			msg(Remarkable_Rewards_message.get(i).getText());
+			Message(Remarkable_Rewards_message.get(i).getText());
 		}
 	}
 

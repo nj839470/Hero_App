@@ -9,5 +9,6 @@ public interface library {
 	public void VerifyImagePresent(WebElement image, String fieldname);
 	public void PageLoaded();
 	public void VerifyElementPresent(WebElement ele, String fieldname);
-	public void msg(String filedname);
+	public void msg(WebElement ele, String filedname);
+	public void Message(String message);
 }

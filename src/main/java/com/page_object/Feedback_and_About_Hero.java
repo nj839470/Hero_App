@@ -465,14 +465,14 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		for(int i=1;i<4;i++)
 		{
-			msg(whatsapp_info.get(i).getText());
+			msg(whatsapp_info.get(i),whatsapp_info.get(i).getText());
 		}
 	}
 	public void whatsapp_info_real()
 	{
 		for(int i=0;i<3;i++)
 		{
-			msg(whatsapp_info_real.get(i).getText());
+			msg(whatsapp_info_real.get(i),whatsapp_info_real.get(i).getText());
 		}
 	}
 	public WebElement whatsapp_close()
@@ -534,7 +534,7 @@ public class Feedback_and_About_Hero extends Base_Utility{
 	{
 		for(int i=1;i<Joyride_info.size()-1;i++)
 		{
-		msg(Joyride_info.get(i).getText());
+		msg(Joyride_info.get(i),Joyride_info.get(i).getText());
 		}
 	}
 	public WebElement nearest_dealer()

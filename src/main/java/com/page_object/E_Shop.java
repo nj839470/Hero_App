@@ -273,14 +273,14 @@ public class E_Shop extends Base_Utility {
 				Custom_click(All_menu_inside_side_menu.get(i), menu_name);
 				for(int j=0 ,k=i;j<list_of_price.size()-1;j++)
 				{
-					msg(list_of_name.get(k).getText() +" = " + list_of_price.get(j).getText());
+					Message(list_of_name.get(k).getText() +" = " + list_of_price.get(j).getText());
 					k++;
 				}
 				Custom_click(All_menu_inside_side_menu.get(i), menu_name);
 			}
 		 else
 			{
-			 msg(menu_name);
+			 Message(menu_name);
 			}
 		}
 	}

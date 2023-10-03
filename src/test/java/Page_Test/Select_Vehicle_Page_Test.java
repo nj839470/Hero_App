@@ -18,7 +18,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 
 	@Test(priority = 0)
 	public void TC012_verify_Nick_Name() throws InterruptedException {
-		msg("************************Select_Vehicle_Page_Test**************************");
+		Message("************************Select_Vehicle_Page_Test**************************");
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
 //		login.login();
@@ -30,9 +30,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.nick_name_close_button(), "Nick name close button ");
 		Thread.sleep(2000);
 		if (ob.Nick_name().getText().equalsIgnoreCase(config_getdata("nickname"))) {
-			msg("Nick name saved with close button");
+			Message("Nick name saved with close button");
 		} else {
-			msg("Nick name is not saved");
+			Message("Nick name is not saved");
 		}
 
 	}
@@ -48,9 +48,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		String nick1 = ob.Nick_name().getText();
 		if (nick1.length() == 30) {
-			msg(" = 30 letter nick name are acceptable");
+			Message(" = 30 letter nick name are acceptable");
 		} else {
-			msg(" = 30 letter nick name are not acceptable");
+			Message(" = 30 letter nick name are not acceptable");
 		}
 
 	}
@@ -66,9 +66,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		String nick2 = ob.Nick_name().getText();
 		if (nick2.length() == 31) {
-			msg(" = 31 letter nick name are acceptable");
+			Message(" = 31 letter nick name are acceptable");
 		} else {
-			msg(" = 31 letter nick name are not acceptable");
+			Message(" = 31 letter nick name are not acceptable");
 		}
 
 	}
@@ -84,16 +84,16 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		String nick3 = ob.Nick_name().getText();
 		if (nick3.length() == 29) {
-			msg(" = 29 letter nick name are acceptable");
+			Message(" = 29 letter nick name are acceptable");
 		} else {
-			msg(" = 29 letter nick name are not acceptable");
+			Message(" = 29 letter nick name are not acceptable");
 		}
 
 	}
 
 	@Test(priority = 4)
 	public void TC016_Select_Vehicle() throws InterruptedException {
-		try {
+		
 			VerifyElementPresent(ob.continue_button(), "Continue Button before select vehicle is");
 			ob.vehicle_count();
 			Custom_click(ob.click_first_vehicle(), " Select first vehicle");
@@ -101,20 +101,15 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 			Custom_click(ob.continue_button(), "Continue Button after select vehicle");
 			Thread.sleep(2000);
 			//below 5 lines for emulator.
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
-			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-			Thread.sleep(2000);
-			Custom_click(ob.Allow(), ob.Allow().getText()
-					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
+//			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
+//			Thread.sleep(2000);
+//			Custom_click(ob.Allow(), ob.Allow().getText()
+//					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 //			Custom_click(ob.banner_Img_close(), " Banner Img close");
-//		Custom_click(ob.While_using_the_app(), "While using the app");    //this line is for pcloudy
-
-		} catch (Exception e) {
-			msg("" + e);
-			
-		}
+		Custom_click(ob.While_using_the_app(), "While using the app");    //this line is for pcloudy
 	}
 
 }

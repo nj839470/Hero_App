@@ -74,17 +74,15 @@ public class Services_Page extends Base_Utility {
 
 	public void dealer_info() {
 		try {
-			msg("Dealer name =" + dealer_info.get(0).getText());
-			msg("Dealer Address =" + dealer_info.get(1).getText());
+			Message("Dealer name =" + dealer_info.get(0).getText());
+			Message("Dealer Address =" + dealer_info.get(1).getText());
 			Custom_click(dealer_info.get(0), dealer_info.get(0).getText());
 			Custom_click(navigate_button, navigate_button.getText());
 //	Custom_click(navigate_button, navigate_button.getText());	// for pcloudy comment this line and below one
 //	msg("Dealer distance =" +dealer_distance.getText());
 		} catch (Exception e) {
-			msg("Dealer name is not given");
-			msg("" + e);
-
-		}
+			Message("Dealer name is not given" +e);
+				}
 		driver.navigate().back();
 	}
 
@@ -212,7 +210,7 @@ public class Services_Page extends Base_Utility {
 		{
 			if(i<10)
 			{
-			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
+			Message(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
 			if(i==6)
 			{
 				i=9;
@@ -224,14 +222,14 @@ public class Services_Page extends Base_Utility {
 				Custom_click(Service_schedule.get(i), Service_heading);
 				for(int j=0;j<Service_schedule_subtitle.size();j++)
 				{
-					msg(Service_schedule_subtitle.get(j).getText());
+					Message(Service_schedule_subtitle.get(j).getText());
 				}
 				Custom_click(Service_schedule.get(i),Service_heading);
 			}
 		}
 		}catch(Exception IndexOutOfBoundsException)
 		{
-			msg("" + Service_schedule.size()+" = " +i);
+			Message("" + Service_schedule.size()+" = " +i);
 		}
 		
 	}
@@ -244,7 +242,7 @@ public class Services_Page extends Base_Utility {
 		{
 			if(i<11)
 			{
-			msg(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
+				Message(Service_schedule.get(i).getText() + " = " +Service_schedule.get(i+3).getText());
 			if(i==7)
 			{
 				i=10;
@@ -256,14 +254,14 @@ public class Services_Page extends Base_Utility {
 				Custom_click(Service_schedule.get(i), Service_heading);
 				for(int j=0;j<Service_schedule_subtitle.size();j++)
 				{
-					msg(Service_schedule_subtitle.get(j).getText());
+					Message(Service_schedule_subtitle.get(j).getText());
 				}
 				Custom_click(Service_schedule.get(i),Service_heading);
 			}
 		}
 		}catch(Exception IndexOutOfBoundsException)
 		{
-			msg("" + Service_schedule.size()+" = " +i);
+			Message("" + Service_schedule.size()+" = " +i);
 		}
 	}
 //*********************************************Last Serviced********************************
@@ -301,10 +299,10 @@ public class Services_Page extends Base_Utility {
 	public void support_information() {
 		try {
 			for (int i = 0; i < support_info.size(); i++) {
-				msg("Support information =" + support_info.get(i).getText());
+				Message("Support information =" + support_info.get(i).getText());
 			}
 		} catch (Exception e) {
-			msg("" + e);
+			Message("" + e);
 
 		}
 	}
@@ -315,35 +313,31 @@ public class Services_Page extends Base_Utility {
 				String service_info = Service_history.get(i).getText();
 				if (service_info.equalsIgnoreCase("Details")) {
 					Custom_click(Service_history.get(i), service_info);
-					msg("Vehicle brand name in Service details= " + service_brand_name.getText());
-					msg("Vehicle Serial number in Service details  = " + service_seral_no.getText());
+					Message("Vehicle brand name in Service details= " + service_brand_name.getText());
+					Message("Vehicle Serial number in Service details  = " + service_seral_no.getText());
 					try {
 						if (sevice_center_info.get(0).isDisplayed() == true) {
-							msg("Service center name =" + sevice_center_info.get(0).getText());
+							Message("Service center name =" + sevice_center_info.get(0).getText());
 
 						}
 					} catch (Exception e) {
-						msg("Service center name is not given");
+						Message("Service center name is not given");
 					}
-					msg("Service center address =" + sevice_center_info.get(1).getText());
-					msg("******************Job card , Completion date & price ************************");
-					msg("Estimated Amount =" + Estimated_Amount.getText());
-					msg("Estimated Date & Time =" + Estimated_Date_Time.getText());
+					Message("Service center address =" + sevice_center_info.get(1).getText());
+					Message("******************Job card , Completion date & price ************************");
+					Message("Estimated Amount =" + Estimated_Amount.getText());
+					Message("Estimated Date & Time =" + Estimated_Date_Time.getText());
 					if (invoice.getText().equalsIgnoreCase("Download invoice")) {
 						Custom_click(invoice, "Download invoice");
 						Thread.sleep(6000);
 					}
 					try {
 						Custom_click(invoice, "view invoice");
-//			if(button_once.isDisplayed()==true)
-//			{															//for emulator
-//			Custom_click(button_once, "Just once");
-//		}
 						Thread.sleep(2000);
-						msg("invoice number =" + invoice_number.getText());
+						Message("invoice number =" + invoice_number.getText());
 						driver.navigate().back();
 					} catch (Exception e) {
-						msg("Not able to download invoice");
+						Message("Not able to download invoice");
 					}
 					support_information();
 					Custom_click(collapse_arrow, "collapse Key arrow in");
@@ -354,10 +348,10 @@ public class Services_Page extends Base_Utility {
 					driver.navigate().back();
 					Custom_click(back_button, Service_history.get(0).getText());
 			} else {
-					msg(service_info);
+				Message(service_info);
 				}
 			} catch (Exception e) {
-				msg("" + e);
+				Message("" + e);
 			}
 		}
 	}
@@ -386,19 +380,19 @@ public class Services_Page extends Base_Utility {
 		for (int i = 1; i < tips_list.size(); i++) {
 			try {
 			String tips = tips_list.get(i).getText();
-			msg(tips);
+			Message(tips);
 			Custom_click(tips_list.get(i), tips);
 			Thread.sleep(5000);
 			if (image_verify.isDisplayed()) {
-				msg(tips + " PDF image is available for guide");
+				Message(tips + " PDF image is available for guide");
 			} else {
-				msg(tips + " PDF image is not available for guide");
+				Message(tips + " PDF image is not available for guide");
 			}
 			Custom_click(back_button, "Back from " + tips);
 			i++;
 			}catch(Exception e)
 			{
-				msg(""+e);
+				Message(""+e);
 				
 			}
 		}
@@ -412,7 +406,7 @@ public class Services_Page extends Base_Utility {
 		for (int i = 2; i < DIY_Videos_list.size(); i++) {
 			try {
 				String video = DIY_Videos_list.get(i).getText();
-				msg(video + " Video");
+				Message(video + " Video");
 				i++;
 				Custom_click(DIY_Videos_list.get(i), video);
 				Thread.sleep(3000);
@@ -422,7 +416,7 @@ public class Services_Page extends Base_Utility {
 				i++;
 
 			} catch (Exception e) {
-				msg("" + e);
+				Message("" + e);
 
 			}
 		}
