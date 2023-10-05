@@ -91,7 +91,7 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(priority = 4)
 	public void TC021_Verify_RSA() throws InterruptedException {
 		Custom_click(ob.RSA(), "RSA");
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		try {
 			if(ob.locate_nearest_dealer().isDisplayed()) {
 			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); 
@@ -101,6 +101,7 @@ public class Home_Page_Test extends Base_Utility {
 //			msg(ob.locate_the_nearest_dealer(),ob.locate_the_nearest_dealer().getText()); // only for emulator
 			msg(ob.locate_the_nearest_dealer_real(),ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
 			Message("Locate nearest dealer link is working");
+			Thread.sleep(2000);
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, "Locate nearest dealer link is not given" + e);
@@ -111,7 +112,7 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
 	}
 
-	@Test(dependsOnMethods = "TC021_Verify_RSA()", priority = 5)
+	@Test(priority = 5)
 	public void TC022_Select_State_For_Nearest_Dealer() throws InterruptedException {
 		Custom_click(ob.State(), ob.State().getText());
 		Thread.sleep(2000);

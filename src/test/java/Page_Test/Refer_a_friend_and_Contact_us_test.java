@@ -141,7 +141,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 //		driver.navigate().back();
 //		Thread.sleep(1000);
 //		driver.navigate().back();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		driver.navigate().back();

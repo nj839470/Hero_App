@@ -320,10 +320,10 @@ public class Base_Utility
 		public static void Scroll_UP_page_Action(String fieldname) {  	
 		    try {
 		    	Dimension dim = driver.manage().window().getSize();	    	
-		    	int startx = (int) (dim.width*0.5);
-		    	int starty = (int) (dim.height*0.8);	    	
-		    	int endx   =  (int) (dim.width*0.2);  	
-		    	int endy   = (int) (dim.height*0.2);
+		    	int startx = (int) (dim.width/2);
+		    	int starty = (int) (dim.height/2);	    	
+		    	int endx   =  (int) (dim.width*0);  	
+		    	int endy   = (int) (dim.height*0);
 		    	TouchAction action = new TouchAction(driver);
 		    	for(int i=0;i<=1;i++) {
 		    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
@@ -423,7 +423,7 @@ public class Base_Utility
 	@Override
 	public void msg(WebElement ele , String filedname) {
 		try {
-			if(ele.isDisplayed() == true)
+			if(ele.isDisplayed())
 			{
 				wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 				wait.until(ExpectedConditions.visibilityOf(ele));
@@ -433,7 +433,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, filedname +" is not readable" +e);
 			test.addScreenCaptureFromPath(lis.getcapcture(filedname));
-			log.error(filedname+" is not readable");
+			log.error(filedname+" is not readable" +e);
 		}
 
 	}

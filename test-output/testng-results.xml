@@ -1,62 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-03T20:11:01 IST" name="Hero_App" finished-at="2023-10-03T20:14:15 IST" duration-ms="193858">
+  <suite started-at="2023-10-04T15:00:14 IST" name="Hero_App" finished-at="2023-10-04T15:07:20 IST" duration-ms="425475">
     <groups>
     </groups>
-    <test started-at="2023-10-03T20:11:01 IST" name="E_Shop_test" finished-at="2023-10-03T20:14:15 IST" duration-ms="193858">
-      <class name="Page_Test.E_Shop_test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-03T20:11:01 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-10-03T20:12:01 IST" duration-ms="59958" status="PASS">
+    <test started-at="2023-10-04T15:00:14 IST" name="Refer_a_friend_and_Contact_us_test" finished-at="2023-10-04T15:07:20 IST" duration-ms="425475">
+      <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:00:14 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-10-04T15:02:19 IST" duration-ms="124826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC107_registered_customers()[pri:0, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-03T20:12:01 IST" name="TC107_registered_customers" finished-at="2023-10-03T20:13:52 IST" duration-ms="111559" status="PASS">
+        <test-method signature="TC043_Refer_a_friend()[pri:0, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:02:19 IST" name="TC043_Refer_a_friend" finished-at="2023-10-04T15:03:54 IST" duration-ms="94665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC107_registered_customers -->
-        <test-method signature="TC108_new_customers()[pri:1, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-03T20:13:53 IST" name="TC108_new_customers" finished-at="2023-10-03T20:14:13 IST" duration-ms="20478" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.utility.listner.getcapcture(String)" because "com.utility.Base_Utility.lis" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.utility.listner.getcapcture(String)" because "com.utility.Base_Utility.lis" is null
-at com.utility.Base_Utility.Custom_click(Base_Utility.java:288)
-at Page_Test.E_Shop_test.TC108_new_customers(E_Shop_test.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- TC043_Refer_a_friend -->
+        <test-method signature="TC044_Verify_Select_State()[pri:1, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:03:54 IST" name="TC044_Verify_Select_State" finished-at="2023-10-04T15:04:14 IST" duration-ms="19653" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC108_new_customers -->
-      </class> <!-- Page_Test.E_Shop_test -->
-    </test> <!-- E_Shop_test -->
+        </test-method> <!-- TC044_Verify_Select_State -->
+        <test-method signature="TC045_Verify_Select_City()[pri:2, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:04:14 IST" name="TC045_Verify_Select_City" finished-at="2023-10-04T15:04:20 IST" duration-ms="6549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC045_Verify_Select_City -->
+        <test-method signature="TC046_Verify_Select_Model()[pri:3, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:04:20 IST" name="TC046_Verify_Select_Model" finished-at="2023-10-04T15:04:55 IST" duration-ms="34235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC046_Verify_Select_Model -->
+        <test-method signature="TC047_Verify_Refer_yourself()[pri:4, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:04:55 IST" name="TC047_Verify_Refer_yourself" finished-at="2023-10-04T15:05:41 IST" duration-ms="46407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC047_Verify_Refer_yourself -->
+        <test-method signature="TC048_Verify_Facebook_in_Contact_us_page()[pri:5, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:05:41 IST" name="TC048_Verify_Facebook_in_Contact_us_page" finished-at="2023-10-04T15:06:05 IST" duration-ms="23648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC048_Verify_Facebook_in_Contact_us_page -->
+        <test-method signature="TC049_Verify_instagram_in_Contact_us_page()[pri:6, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:06:05 IST" name="TC049_Verify_instagram_in_Contact_us_page" finished-at="2023-10-04T15:06:16 IST" duration-ms="11724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC049_Verify_instagram_in_Contact_us_page -->
+        <test-method signature="TC050_Verify_Whatsapp_in_Contact_us_page()[pri:7, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:06:16 IST" name="TC050_Verify_Whatsapp_in_Contact_us_page" finished-at="2023-10-04T15:06:22 IST" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC050_Verify_Whatsapp_in_Contact_us_page -->
+        <test-method signature="TC051_Verify_youTube_in_Contact_us_page()[pri:8, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:06:22 IST" name="TC051_Verify_youTube_in_Contact_us_page" finished-at="2023-10-04T15:06:29 IST" duration-ms="7092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC051_Verify_youTube_in_Contact_us_page -->
+        <test-method signature="TC052_Verify_Linkedin_in_Contact_us_page()[pri:9, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:06:29 IST" name="TC052_Verify_Linkedin_in_Contact_us_page" finished-at="2023-10-04T15:06:55 IST" duration-ms="25692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC052_Verify_Linkedin_in_Contact_us_page -->
+        <test-method signature="TC053_Verify_twitter_in_Contact_us_page()[pri:10, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:06:55 IST" name="TC053_Verify_twitter_in_Contact_us_page" finished-at="2023-10-04T15:07:10 IST" duration-ms="15144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC053_Verify_twitter_in_Contact_us_page -->
+        <test-method signature="TC054_Verify_Contact_via_Email()[pri:11, instance:Page_Test.Refer_a_friend_and_Contact_us_test@39fcbef6]" started-at="2023-10-04T15:07:10 IST" name="TC054_Verify_Contact_via_Email" finished-at="2023-10-04T15:07:20 IST" duration-ms="10104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC054_Verify_Contact_via_Email -->
+      </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+    </test> <!-- Refer_a_friend_and_Contact_us_test -->
   </suite> <!-- Hero_App -->
 </testng-results>

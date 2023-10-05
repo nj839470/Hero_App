@@ -17,8 +17,8 @@ public class E_Shop_test extends Base_Utility{
 	{
 		Message("************************E Shop**************************");
 		ob = new E_Shop();
-		login = new Login_Page_Test();
-		login.login();
+//		login = new Login_Page_Test();
+//		login.login();
 		Thread.sleep(5000);
 //		Custom_click(ob.E_shop(), ob.E_shop().getText());      //for emulator and real device
 		Custom_click(ob.E_shop_pCloudy(), ob.E_shop_pCloudy().getText());      //for pCloudy
@@ -45,7 +45,13 @@ public class E_Shop_test extends Base_Utility{
 	}
 	@Test(priority = 1)
 	public void TC108_new_customers() throws InterruptedException {
+		driver.navigate().back();
+		Thread.sleep(2000);
+		Custom_click(ob.E_shop_pCloudy(), ob.E_shop_pCloudy().getText());
+		Thread.sleep(10000);
 		Custom_click(ob.user_account(), "User account");
+		driver.navigate().back();
+		Thread.sleep(2000);
 //		msg(ob.newcustomer_heading(),ob.newcustomer_heading().getText());	//For Emulator only
 //		msg(ob.newcustomer_message1(),ob.newcustomer_message1().getText());	//For Emulator only
 		msg(ob.newcustomer_heading_real(),ob.newcustomer_heading_real().getText());	//For real device and pCloudy
