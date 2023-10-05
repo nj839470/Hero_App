@@ -4,14 +4,20 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="E_Shop_test(failed)">
+  <test thread-count="5" name="My_Profile_Page_Test(failed)">
     <classes>
-      <class name="Page_Test.E_Shop_test">
+      <class name="Page_Test.My_Profile_Page_Test">
         <methods>
-          <include name="TC108_new_customers"/>
+          <include name="TC033_edit_Personal_Details"/>
+          <include name="TC036_Verify_emergency_contacts"/>
+          <include name="TC034_change_original_Personal_Details"/>
+          <include name="TC035_Manage_License"/>
+          <include name="TC032_edit_profile_button"/>
+          <include name="TC031_verify_more_detais_button"/>
+          <include name="TC030_Verify_My_Profile"/>
           <include name="OPEN_AND_INSTALL_APP"/>
         </methods>
-      </class> <!-- Page_Test.E_Shop_test -->
+      </class> <!-- Page_Test.My_Profile_Page_Test -->
     </classes>
-  </test> <!-- E_Shop_test(failed) -->
+  </test> <!-- My_Profile_Page_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
