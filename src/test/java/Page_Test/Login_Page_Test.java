@@ -185,10 +185,10 @@ public class Login_Page_Test extends Base_Utility {
 			Custom_click(ob1.Allow(), ob.Allow().getText()
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 		}
-//			Custom_click(ob1.banner_Img_close(), " Banner Img close");
-		if (device.equalsIgnoreCase("pcloudy")) {
+			if (device.equalsIgnoreCase("pcloudy")) {
 			Custom_click(ob1.While_using_the_app(), "While using the app");
 		}
+		Custom_click(ob1.banner_Img_close(), " Banner Img close");
 	}
 
 }

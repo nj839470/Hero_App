@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T15:19:04 IST" name="Hero_App" finished-at="2023-10-05T15:25:32 IST" duration-ms="387559">
+  <suite started-at="2023-10-09T10:48:06 IST" name="Hero_App" finished-at="2023-10-09T10:53:37 IST" duration-ms="331461">
     <groups>
     </groups>
-    <test started-at="2023-10-05T15:19:04 IST" name="My_Profile_Page_Test" finished-at="2023-10-05T15:25:32 IST" duration-ms="387559">
-      <class name="Page_Test.My_Profile_Page_Test">
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:19:04 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-10-05T15:19:26 IST" duration-ms="21341" status="PASS">
+    <test started-at="2023-10-09T10:48:06 IST" name="E_Shop_test" finished-at="2023-10-09T10:53:37 IST" duration-ms="331461">
+      <class name="Page_Test.E_Shop_test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-09T10:48:06 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-10-09T10:50:09 IST" duration-ms="123232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC030_Verify_My_Profile()[pri:0, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:19:26 IST" name="TC030_Verify_My_Profile" finished-at="2023-10-05T15:21:13 IST" duration-ms="107124" status="PASS">
+        <test-method signature="TC107_registered_customers()[pri:0, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-09T10:50:09 IST" name="TC107_registered_customers" finished-at="2023-10-09T10:52:15 IST" duration-ms="125673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC030_Verify_My_Profile -->
-        <test-method signature="TC031_verify_more_detais_button()[pri:1, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:21:13 IST" name="TC031_verify_more_detais_button" finished-at="2023-10-05T15:21:15 IST" duration-ms="2069" status="PASS">
+        </test-method> <!-- TC107_registered_customers -->
+        <test-method signature="TC108_new_customers()[pri:1, instance:Page_Test.E_Shop_test@1852a3ff]" started-at="2023-10-09T10:52:15 IST" name="TC108_new_customers" finished-at="2023-10-09T10:53:37 IST" duration-ms="82346" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC031_verify_more_detais_button -->
-        <test-method signature="TC032_edit_profile_button()[pri:2, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:21:15 IST" name="TC032_edit_profile_button" finished-at="2023-10-05T15:22:07 IST" duration-ms="52201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC032_edit_profile_button -->
-        <test-method signature="TC033_edit_Personal_Details()[pri:3, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:22:07 IST" name="TC033_edit_Personal_Details" finished-at="2023-10-05T15:24:10 IST" duration-ms="122492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC033_edit_Personal_Details -->
-        <test-method signature="TC034_change_original_Personal_Details()[pri:4, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:24:10 IST" name="TC034_change_original_Personal_Details" finished-at="2023-10-05T15:24:25 IST" depends-on-methods="TC033_edit_Personal_Details()" duration-ms="15009" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC034_change_original_Personal_Details -->
-        <test-method signature="TC035_Manage_License()[pri:5, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:24:25 IST" name="TC035_Manage_License" finished-at="2023-10-05T15:24:46 IST" duration-ms="21186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC035_Manage_License -->
-        <test-method signature="TC036_Verify_emergency_contacts()[pri:6, instance:Page_Test.My_Profile_Page_Test@eda25e5]" started-at="2023-10-05T15:24:46 IST" name="TC036_Verify_emergency_contacts" finished-at="2023-10-05T15:25:32 IST" duration-ms="45933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC036_Verify_emergency_contacts -->
-      </class> <!-- Page_Test.My_Profile_Page_Test -->
-    </test> <!-- My_Profile_Page_Test -->
+        </test-method> <!-- TC108_new_customers -->
+      </class> <!-- Page_Test.E_Shop_test -->
+    </test> <!-- E_Shop_test -->
   </suite> <!-- Hero_App -->
 </testng-results>
