@@ -241,7 +241,7 @@ public class Base_Utility
 		report = new ExtentSparkReporter(path);
 		report.config().setDocumentTitle("Hero_App Test Report");
 		report.config().setReportName("Hero_App");
-		report.config().setTheme(Theme.STANDARD);
+		report.config().setTheme(Theme.DARK);
 		extent = new ExtentReports();
 		extent.attachReporter(report);
 		extent.setSystemInfo("Project Name", "Hero App");

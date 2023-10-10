@@ -165,7 +165,7 @@ public class Login_Page_Test extends Base_Utility {
 //			Custom_click(ob.open(), "Open"); 	// this line for real device
 			Custom_click(ob.close(), "Close button");
 		}
-		custom_sendkeys(ob.mobile_No(), "8726494540", "Login with Registerd mobile number");
+		custom_sendkeys(ob.mobile_No(), "9999999999", "Login with Registerd mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.continue_button(), "Coninue button");
 		Thread.sleep(15000);

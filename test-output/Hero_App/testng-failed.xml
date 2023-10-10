@@ -6,18 +6,12 @@
   </listeners>
   <test thread-count="5" name="All test class(failed)">
     <classes>
-      <class name="Page_Test.E_Shop_test">
+      <class name="Page_Test.GoodLife_test">
         <methods>
-          <include name="TC108_new_customers"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC095_verify_image_in_goodlife_page"/>
         </methods>
-      </class> <!-- Page_Test.E_Shop_test -->
-      <class name="Page_Test.Home_Page_Test">
-        <methods>
-          <include name="TC017_Home_page_verify"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-        </methods>
-      </class> <!-- Page_Test.Home_Page_Test -->
+      </class> <!-- Page_Test.GoodLife_test -->
     </classes>
   </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->
