@@ -23,6 +23,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		ob = new Select_Vehicle_Page();
 //		login = new Login_Page_Test();
 //		login.login();
+		Thread.sleep(5000);
 		Custom_click(ob.edit_nickame_button(), "Tap on pencil for Nick name ");
 		VerifyElementPresent(ob.save_button(), "Save button before updating the nick name is ");
 		ob.edit_nickame_text().clear();

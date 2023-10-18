@@ -196,26 +196,28 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 		return back;
 	}
 	public void facebook() throws InterruptedException {
-		try {
-			 header = social_media_header.get(0).getText();
+		
+			header = social_media_header.get(0).getText();
 			Message(Visit_page_text.get(0).getText());
 			Custom_click(visit_Page.get(0), header);
 			Thread.sleep(2000);
+			try {
 			custom_sendkeys(emailid, "Renu@gmail.com", "Email id");
 			Custom_click(facebook_login, header + " Login");
 			Custom_click(back, " Back from " + header); 
 		} catch (Exception e) {
 			Message("Facebook is not visible" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(back, " Back from " + header);
 		}
 	}
 
 	public void instagram() throws InterruptedException {
-		try {
-			 header = social_media_header.get(1).getText();
+			header = social_media_header.get(1).getText();
 			Message(Visit_page_text.get(1).getText());
 			Custom_click(visit_Page.get(1), header);
 			Thread.sleep(4000);
+			try {
 			Custom_click(instagram_login, header + " Login");
 			Custom_click(back, " Back from " + header); 
 		} catch (Exception e) {
@@ -251,11 +253,11 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	}
 
 	public void youTube() throws InterruptedException {
-		try {
-			 header = social_media_header.get(3).getText();
+	        header = social_media_header.get(3).getText();
 			Message(Visit_page_text.get(3).getText());
 			Custom_click(visit_Page.get(2), header);
 			Thread.sleep(2000);
+			try {
 			Message("Total subscribers count =" + subscribers_count.getText());
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {

@@ -16,7 +16,7 @@ public class Login_page extends Base_Utility {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath ="//android.widget.ImageView[@content-desc=\"Cancel\"]")
+	@FindBy(xpath ="//android.widget.ImageView[@content-desc='Cancel']")
 	private WebElement close;
 	@FindBy(id = "com.customerapp.hero:id/text_input_editext")
 	private WebElement mobile_No;

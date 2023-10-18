@@ -4,14 +4,26 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="All test class(failed)">
+  <test thread-count="5" name="Home_Page_Test(failed)">
     <classes>
-      <class name="Page_Test.GoodLife_test">
+      <class name="Page_Test.Home_Page_Test">
         <methods>
+          <include name="TC025_Verify_Nearest_Dealer_info"/>
+          <include name="TC017_Home_page_verify"/>
+          <include name="TC020_Verify_Relationship_Manager"/>
+          <include name="TC021_Verify_RSA"/>
+          <include name="TC019_Verify_Documents"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC095_verify_image_in_goodlife_page"/>
+          <include name="TC023_Select_City_For_Nearest_Dealer"/>
+          <include name="TC028_Select_city"/>
+          <include name="TC027_Verify_Dealer_Locator"/>
+          <include name="TC029_View_dealer_name_and_address"/>
+          <include name="TC024_Select_Locality_For_Nearest_Dealer"/>
+          <include name="TC022_Select_State_For_Nearest_Dealer"/>
+          <include name="TC018__verify_Navigate"/>
+          <include name="TC026_Verify_Technical_Support_Manager"/>
         </methods>
-      </class> <!-- Page_Test.GoodLife_test -->
+      </class> <!-- Page_Test.Home_Page_Test -->
     </classes>
-  </test> <!-- All test class(failed) -->
+  </test> <!-- Home_Page_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

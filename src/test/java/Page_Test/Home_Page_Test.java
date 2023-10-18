@@ -1,17 +1,14 @@
 package Page_Test;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.Status;
 import com.page_object.Home_Page;
-import com.page_object.Services_Page;
 import com.utility.Base_Utility;
-
-import android.view.Display;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 
 @Listeners(com.utility.listner.class)
 public class Home_Page_Test extends Base_Utility {
@@ -19,73 +16,76 @@ public class Home_Page_Test extends Base_Utility {
 	public Login_Page_Test login;
 	public Home_Page ob;
 	String device = config_getdata("Platform_name");
+
 	@Test(priority = 0)
 	public void TC017_Home_page_verify() throws InterruptedException {
 		Message("************************Home_Page_Test**************************");
 		ob = new Home_Page();
 //		login = new Login_Page_Test();
 //		login.login();
-		   Thread.sleep(5000);
-			msg(ob.temperature(),"Current Temperature is =" + ob.temperature().getText());
-			VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
-			Thread.sleep(2000);
-			ob.all_vehicle_inside_drop_down();
-			Custom_click(ob.Collapse_btn(), "Collapse button");
-			Thread.sleep(2000);
-			Custom_click(ob.Collapse_btn(), " Return collapse button");
-			Thread.sleep(2000);
-			Custom_click(ob.notification(), "Notification");
-			Message("Total Notification are=" + ob.notification_count());
-			Custom_click(ob.notification_back(), "Notification back");
-		}
+		Thread.sleep(5000);
+		msg(ob.temperature(), "Current Temperature is =" + ob.temperature().getText());
+		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
+		Thread.sleep(2000);
+		ob.all_vehicle_inside_drop_down();
+		Custom_click(ob.Collapse_btn(), "Collapse button");
+		Thread.sleep(2000);
+		Custom_click(ob.Collapse_btn(), " Return collapse button");
+		Thread.sleep(2000);
+		Custom_click(ob.notification(), "Notification");
+		Message("Total Notification are=" + ob.notification_count());
+		Custom_click(ob.notification_back(), "Notification back");
+	}
 
 	@Test(priority = 1)
 	public void TC018__verify_Navigate() {
 		Custom_click(ob.Navigate_menu(), "Navigate menu");
 		if (device.equalsIgnoreCase("emulator")) {
 			try {
-			Custom_click(ob.While_using_the_app(), "While using the app");
-		} catch (Exception e) {
-			Message("While Using the app pop up did not come");
-			test.addScreenCaptureFromPath(lis.getcapcture("While using the app")); 
-		}
+				Custom_click(ob.While_using_the_app(), "While using the app");
+			} catch (Exception e) {
+				Message("While Using the app pop up did not come");
+				test.addScreenCaptureFromPath(lis.getcapcture("While using the app"));
+			}
 		}
 		Custom_click(ob.Search_destination(), "Search destination");
-		msg(ob.Search_here(),ob.Search_here().getText());
+		msg(ob.Search_here(), ob.Search_here().getText());
 		Custom_click(ob.Back_button(), "Back from Search here");
 		Custom_click(ob.Back_button(), "Back from Navigation");
 	}
 
 	@Test(priority = 2)
 	public void TC019_Verify_Documents() throws InterruptedException {
-	
-			Custom_click(ob.Documents_Menu(), "Document menu");
-			ob.Documents_list();
-			Custom_click(ob.Back(), "Back from Documents");
-		}
+
+		Custom_click(ob.Documents_Menu(), "Document menu");
+		ob.Documents_list();
+		Custom_click(ob.Back(), "Back from Documents");
+	}
 
 	@Test(priority = 3)
 	public void TC020_Verify_Relationship_Manager() throws InterruptedException {
-			Thread.sleep(2000);
-			Custom_click(ob.Relationship_Manager(), "Relationship Manager");
-			Thread.sleep(2000);
-			try {
-				if (ob.Relationship_Manager_name().getSize() != null) {
-					msg(ob.Relationship_Manager_name(),"Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
-					msg(ob.Relationship_Manager_Address(),"Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
-					msg(ob.Relationship_Manager_Contact_number(),"Relationship Manager Contact number is ="
-							+ ob.Relationship_Manager_Contact_number().getText());
-					Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
-					driver.navigate().back();
-					driver.navigate().back();
-					driver.navigate().back();
-				}
-			} catch (Exception e) {
-				Message("Relationship Manager name is not given");
+		Thread.sleep(2000);
+		Custom_click(ob.Relationship_Manager(), "Relationship Manager");
+		Thread.sleep(2000);
+		try {
+			if (ob.Relationship_Manager_name().getSize() != null) {
+				msg(ob.Relationship_Manager_name(),
+						"Relationship Manager name is =" + ob.Relationship_Manager_name().getText());
+				msg(ob.Relationship_Manager_Address(),
+						"Relationship Manager address is =" + ob.Relationship_Manager_Address().getText());
+				msg(ob.Relationship_Manager_Contact_number(), "Relationship Manager Contact number is ="
+						+ ob.Relationship_Manager_Contact_number().getText());
+				Custom_click(ob.Relationship_Manager_Contact_number(), "Relationship manager contact");
+				driver.navigate().back();
+				driver.navigate().back();
+				driver.navigate().back();
 			}
-			Thread.sleep(2000);
-			ob.Others_Contacts();
-			Custom_click(ob.Back(), "Back from Relationship Manager");
+		} catch (Exception e) {
+			Message("Relationship Manager name is not given");
+		}
+		Thread.sleep(2000);
+		ob.Others_Contacts();
+		Custom_click(ob.Back(), "Back from Relationship Manager");
 
 	}
 
@@ -93,30 +93,33 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC021_Verify_RSA() throws InterruptedException {
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(4000);
-		try {
-		if(device.equalsIgnoreCase("realdevice")) {
-			Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); //for real device
+		if (device.equalsIgnoreCase("realdevice")) {
+			Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); // for real device
+		} else {
+			try {
+				Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+				Thread.sleep(2000);
+			} catch (Exception e) {
+				Message("Not able to click On Locate nearest deler link. Try again");
+				driver.navigate().refresh();
+				Thread.sleep(4000);
+				try {
+					Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+				} catch (Exception k) {
+					Message("Not able to click On Locate nearest deler link.");
+					Custom_click(ob.Back(), "Back from RSA");
+					Thread.sleep(2000);
 				}
-		else {
-			if(ob.locate_nearest_dealer().isDisplayed()) {
-			Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer"); 
-			Thread.sleep(2000);
 			}
-			if(device.equalsIgnoreCase("emulator")) {
-			msg(ob.locate_the_nearest_dealer(),ob.locate_the_nearest_dealer().getText()); // only for emulator
-			}
-			else {
-			msg(ob.locate_the_nearest_dealer_real(),ob.locate_the_nearest_dealer_real().getText()); // only for real device & pCloudy
-			}
-			Message("Locate nearest dealer link is working");
-			Thread.sleep(2000);
 		}
-		} catch (Exception e) {
-			test.log(Status.FAIL, "Locate nearest dealer link is not given" + e);
-			log.error("Locate nearest dealer link is not given" + e);
-			test.addScreenCaptureFromPath(lis.getcapcture("Locate nearest dealer link is not given"));
-			Custom_click(ob.Back(), "Back from RSA");
+		if (device.equalsIgnoreCase("emulator")) {
+			msg(ob.locate_the_nearest_dealer(), ob.locate_the_nearest_dealer().getText()); // only for emulator
+		} else {
+			msg(ob.locate_the_nearest_dealer_real(), ob.locate_the_nearest_dealer_real().getText()); // only for real
+																										// device &
+																										// pCloudy
 		}
+		Thread.sleep(2000);
 		Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
 	}
 
@@ -125,12 +128,12 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.State(), ob.State().getText());
 		Thread.sleep(2000);
 		try {
-			if(ob.State().isDisplayed()) {
+			if (ob.State().isDisplayed()) {
 				Custom_click(ob.State(), ob.State().getText());
-				}
-			} catch (Exception e) {
-				Message("State is already open");
 			}
+		} catch (Exception e) {
+			Message("State is already open");
+		}
 
 		ob.select_state("Bihar");
 	}
@@ -154,56 +157,58 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 8)
 	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException {
 		Thread.sleep(3000);
-		if(device.equalsIgnoreCase("emulator")) {
-		msg(ob.Local_dealer_fullname(),ob.Local_dealer_fullname().getText());  // for emulator
-		}
-		else {
-		msg(ob.Local_dealer_fullname_real(),ob.Local_dealer_fullname_real().getText()); // for pCloudy and real device
+		if (device.equalsIgnoreCase("emulator")) {
+			msg(ob.Local_dealer_fullname(), ob.Local_dealer_fullname().getText()); // for emulator
+		} else {
+			msg(ob.Local_dealer_fullname_real(), ob.Local_dealer_fullname_real().getText()); // for pCloudy and real
+																								// device
 		}
 		Scroll_down_page_Action("View More");
 		Thread.sleep(1000);
-		msg(ob.Local_dealer_name(),ob.Local_dealer_name().getText());
+		msg(ob.Local_dealer_name(), ob.Local_dealer_name().getText());
 		if (device.equalsIgnoreCase("emulator")) {
-		msg(ob.Local_dealer_address(),ob.Local_dealer_address().getText());   // for emulator
-		}
-		else {
-		msg(ob.Local_dealer_address_real(),ob.Local_dealer_address_real().getText()); // for pCloudy and real device
+			msg(ob.Local_dealer_address(), ob.Local_dealer_address().getText()); // for emulator
+		} else {
+			msg(ob.Local_dealer_address_real(), ob.Local_dealer_address_real().getText()); // for pCloudy and real
+																							// device
 		}
 		Custom_click(ob.Back(), "Back from RSA");
 	}
 
 	@Test(priority = 9)
 	public void TC026_Verify_Technical_Support_Manager() throws InterruptedException {
-			Custom_click(ob.Technical_Support(), "Technical Support");
-			Thread.sleep(2000);
-			msg(ob.Technical_Support_Manager_Name(),"Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
-			msg(ob.Technical_Support_Manager_Address(),"Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
-			msg(ob.Technical_Support_Manager_Contact_Number(),"Technical Support Manager contact number is ="
-						+ ob.Technical_Support_Manager_Contact_Number().getText());
-		  Custom_click(ob.Back(), "Back from Technical Support Manager");
-		}
+		Custom_click(ob.Technical_Support(), "Technical Support");
+		Thread.sleep(2000);
+		msg(ob.Technical_Support_Manager_Name(),
+				"Technical Support Manager Name is =" + ob.Technical_Support_Manager_Name().getText());
+		msg(ob.Technical_Support_Manager_Address(),
+				"Technical Support Manager address is =" + ob.Technical_Support_Manager_Address().getText());
+		msg(ob.Technical_Support_Manager_Contact_Number(), "Technical Support Manager contact number is ="
+				+ ob.Technical_Support_Manager_Contact_Number().getText());
+		Custom_click(ob.Back(), "Back from Technical Support Manager");
+	}
 
 	@Test(priority = 10)
 	public void TC027_Verify_Dealer_Locator() throws InterruptedException {
-	
-			Custom_click(ob.Dealer_Locator(), "Dealer Locator");
-			Thread.sleep(2000);
-			Custom_click(ob.Select_State(), "Select state");
-			ob.Select_State("BIHAR");
-		}
+
+		Custom_click(ob.Dealer_Locator(), "Dealer Locator");
+		Thread.sleep(2000);
+		Custom_click(ob.Select_State(), "Select state");
+		ob.Select_State("BIHAR");
+	}
 
 	@Test(priority = 11)
 	public void TC028_Select_city() {
-			Custom_click(ob.Select_City(), "Select city");
-			ob.Select_City("BAGAHA");
-		}
+		Custom_click(ob.Select_City(), "Select city");
+		ob.Select_City("BAGAHA");
+	}
 
 	@Test(priority = 12)
 	public void TC029_View_dealer_name_and_address() {
-			Custom_click(ob.map_view(), "Map View dealer name and address");
-			ob.Dealer_info();
-			Custom_click(ob.Back(), "Back from Dealer Locator");
-		}
+		Custom_click(ob.map_view(), "Map View dealer name and address");
+		ob.Dealer_info();
+		Custom_click(ob.Back(), "Back from Dealer Locator");
+	}
 //	@Test(priority = 13)
 //	public void verify_Service_at_home_page()
 //	{

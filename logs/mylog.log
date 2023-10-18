@@ -1,60 +1,110 @@
-[INFO ] 2023-10-10 12:48:20.490 [main] Hero_App - ************************Book_Service_Page_Test**************************
-[INFO ] 2023-10-10 12:48:23.773 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
-[INFO ] 2023-10-10 12:48:26.921 [main] Hero_App - Allow Hero App to access your contacts is clickable
-[INFO ] 2023-10-10 12:48:29.742 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
-[INFO ] 2023-10-10 12:48:32.923 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
-[INFO ] 2023-10-10 12:48:35.522 [main] Hero_App - OK is clickable
-[INFO ] 2023-10-10 12:48:41.281 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-10-10 12:48:47.111 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-10-10 12:49:07.627 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-10-10 12:49:10.339 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-10-10 12:49:12.983 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-10-10 12:49:15.611 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-10-10 12:49:17.988 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-10-10 12:49:20.655 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-10-10 12:49:23.469 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-10-10 12:49:31.343 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-10-10 12:49:34.854 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-10-10 12:49:40.264 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-10-10 12:49:42.335 [main] Hero_App -  Banner Img close is clickable
-[INFO ] 2023-10-10 12:49:47.295 [main] Hero_App - Services button is clickable
-[INFO ] 2023-10-10 12:49:49.872 [main] Hero_App - Service was due on
-[INFO ] 2023-10-10 12:49:51.888 [main] Hero_App - 30 Jul, 2014
-[INFO ] 2023-10-10 12:49:55.039 [main] Hero_App - Book Service is clickable
-[INFO ] 2023-10-10 12:49:57.761 [main] Hero_App - HF DELUXE
-[INFO ] 2023-10-10 12:50:02.772 [main] Hero_App - Ak
-[INFO ] 2023-10-10 12:50:23.151 [main] Hero_App - Vehicle License number is not given
-[INFO ] 2023-10-10 12:50:25.862 [main] Hero_App - Select a Date
-[INFO ] 2023-10-10 12:50:29.555 [main] Hero_App - 11 is clickable
-[INFO ] 2023-10-10 12:50:33.529 [main] Hero_App - 12 is clickable
-[INFO ] 2023-10-10 12:50:37.131 [main] Hero_App - 13 is clickable
-[INFO ] 2023-10-10 12:50:40.959 [main] Hero_App - 14 is clickable
-[INFO ] 2023-10-10 12:50:44.388 [main] Hero_App - 15 is clickable
-[INFO ] 2023-10-10 12:50:48.346 [main] Hero_App - 16 is clickable
-[INFO ] 2023-10-10 12:50:51.912 [main] Hero_App - Selected date = 16/10/2023
-[INFO ] 2023-10-10 12:50:54.878 [main] Hero_App - Select a Time
-[INFO ] 2023-10-10 12:50:56.389 [main] Hero_App - Successfully  Swipe page direction Action Pick time
-[INFO ] 2023-10-10 12:50:58.829 [main] Hero_App - Selected Time =9:00 AM
-[INFO ] 2023-10-10 12:51:02.529 [main] Hero_App - Service Centre Name =Ramesh Kapoor
-[INFO ] 2023-10-10 12:51:05.064 [main] Hero_App - Service Centre Address =A-19 JHILMIL IND AREA GT Road  EAST DELHI DELHI DELHI 110095
-[INFO ] 2023-10-10 12:51:09.134 [main] Hero_App - Center keyArrow is clickable
-[INFO ] 2023-10-10 12:51:12.354 [main] Hero_App - Select Service Center
-[INFO ] 2023-10-10 12:51:14.555 [main] Hero_App - Back from Select service center is clickable
-[INFO ] 2023-10-10 12:51:17.342 [main] Hero_App - Service Type Paid Service
-[INFO ] 2023-10-10 12:51:29.287 [main] Hero_App - Successfully  Scroll page down Action Additional Instructions
-[INFO ] 2023-10-10 12:51:29.288 [main] Hero_App - Customer Requests
-[INFO ] 2023-10-10 12:51:31.632 [main] Hero_App - Service is clickable
-[INFO ] 2023-10-10 12:51:36.069 [main] Hero_App - Starting trouble is clickable
-[INFO ] 2023-10-10 12:51:39.384 [main] Hero_App - Clutch cable hard is clickable
-[INFO ] 2023-10-10 12:51:43.975 [main] Hero_App - Engine Oil leakage is clickable
-[INFO ] 2023-10-10 12:51:56.962 [main] Hero_App - Successfully  Scroll page down Action Review Service Details button
-[INFO ] 2023-10-10 12:52:01.697 [main] Hero_App - Another issue send successfully
-[INFO ] 2023-10-10 12:52:05.559 [main] Hero_App - Review Service Details is clickable
-[INFO ] 2023-10-10 12:52:07.624 [main] Hero_App - HF DELUXE
-[INFO ] 2023-10-10 12:52:09.125 [main] Hero_App - Paid Service
-[INFO ] 2023-10-10 12:52:10.637 [main] Hero_App - Service Scheduled
-[INFO ] 2023-10-10 12:52:12.188 [main] Hero_App - 09:00 AM, 16 Oct, 2023
-[INFO ] 2023-10-10 12:52:13.872 [main] Hero_App - Ramesh Kapoor
-[INFO ] 2023-10-10 12:52:15.475 [main] Hero_App - A-19 JHILMIL IND AREA GT Road  EAST DELHI DELHI DELHI 110095
-[INFO ] 2023-10-10 12:52:17.872 [main] Hero_App - Cnacel Button is clickable
-[INFO ] 2023-10-10 12:52:21.265 [main] Hero_App - Back from Book Service page is clickable
+[INFO ] 2023-10-17 09:41:26.187 [main] Hero_App - ************************Home_Page_Test**************************
+[INFO ] 2023-10-17 09:41:29.458 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
+[INFO ] 2023-10-17 09:41:31.617 [main] Hero_App - Allow Hero App to access your contacts is clickable
+[INFO ] 2023-10-17 09:41:33.817 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
+[INFO ] 2023-10-17 09:41:36.071 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
+[INFO ] 2023-10-17 09:41:37.935 [main] Hero_App - OK is clickable
+[INFO ] 2023-10-17 09:41:42.745 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-10-17 09:41:46.304 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-10-17 09:42:07.535 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-10-17 09:42:09.686 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-10-17 09:42:11.935 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-10-17 09:42:14.093 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-10-17 09:42:16.351 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-10-17 09:42:18.522 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-10-17 09:42:21.062 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-10-17 09:42:26.624 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-10-17 09:42:28.543 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-10-17 09:42:31.916 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-10-17 09:43:01.246 [main] Hero_App - Navigate menu is clickable
+[INFO ] 2023-10-17 09:43:03.995 [main] Hero_App - Search destination is clickable
+[INFO ] 2023-10-17 09:43:06.677 [main] Hero_App - Navigation
+[INFO ] 2023-10-17 09:43:08.325 [main] Hero_App - Back from Search here is clickable
+[INFO ] 2023-10-17 09:43:11.396 [main] Hero_App - Back from Navigation is clickable
+[INFO ] 2023-10-17 09:43:13.789 [main] Hero_App - Document menu is clickable
+[INFO ] 2023-10-17 09:43:15.802 [main] Hero_App - Registration Certificate (R.C.) is clickable
+[INFO ] 2023-10-17 09:43:18.212 [main] Hero_App - You have not added your R.C.
+[INFO ] 2023-10-17 09:43:19.758 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-10-17 09:43:22.030 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-10-17 09:43:24.128 [main] Hero_App - Allow is clickable
+[INFO ] 2023-10-17 09:43:27.736 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-10-17 09:43:29.779 [main] Hero_App - Registration Certificate (R.C.) Document frmo library is clickable
+[INFO ] 2023-10-17 09:43:34.857 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-10-17 09:43:36.898 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-10-17 09:43:41.628 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
+[INFO ] 2023-10-17 09:43:44.414 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-10-17 09:43:46.572 [main] Hero_App - Registration Certificate (R.C.) Back Document is clickable
+[INFO ] 2023-10-17 09:43:48.098 [main] Hero_App - Insurance is clickable
+[INFO ] 2023-10-17 09:44:10.362 [main] Hero_App - Insurance is already available
+[INFO ] 2023-10-17 09:44:11.956 [main] Hero_App - Insurance Back Document is clickable
+[INFO ] 2023-10-17 09:44:13.907 [main] Hero_App - P.U.C. is clickable
+[INFO ] 2023-10-17 09:44:16.316 [main] Hero_App - You have not added your P.U.C.
+[INFO ] 2023-10-17 09:44:17.834 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-10-17 09:44:19.827 [main] Hero_App - P.U.C. Document frmo library is clickable
+[INFO ] 2023-10-17 09:44:24.449 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-10-17 09:44:26.506 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-10-17 09:44:31.196 [main] Hero_App - P.U.C. Add now is clickable
+[INFO ] 2023-10-17 09:44:33.156 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-10-17 09:44:35.017 [main] Hero_App - P.U.C. Back Document is clickable
+[INFO ] 2023-10-17 09:44:36.716 [main] Hero_App - Other is clickable
+[INFO ] 2023-10-17 09:44:39.036 [main] Hero_App - You have not added any documents
+[INFO ] 2023-10-17 09:44:40.579 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-10-17 09:44:42.670 [main] Hero_App - Other Document frmo library is clickable
+[INFO ] 2023-10-17 09:44:47.311 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-10-17 09:44:49.298 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-10-17 09:44:53.936 [main] Hero_App - Other Add now is clickable
+[INFO ] 2023-10-17 09:44:56.049 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-10-17 09:44:58.881 [main] Hero_App - Other Back Document is clickable
+[INFO ] 2023-10-17 09:45:01.658 [main] Hero_App - Back from Documents is clickable
+[INFO ] 2023-10-17 09:45:05.936 [main] Hero_App - Relationship Manager is clickable
+[INFO ] 2023-10-17 09:45:09.546 [main] Hero_App - Relationship Manager name is =ANIL TYAGI
+[INFO ] 2023-10-17 09:45:10.762 [main] Hero_App - Relationship Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
+[INFO ] 2023-10-17 09:45:11.892 [main] Hero_App - Relationship Manager Contact number is =8282828282
+[INFO ] 2023-10-17 09:45:13.467 [main] Hero_App - Relationship manager contact is clickable
+[INFO ] 2023-10-17 09:45:19.324 [main] Hero_App - Others Contacts information =Krishan Kumar Sharma
+[INFO ] 2023-10-17 09:45:19.897 [main] Hero_App - Others Contacts information =Territory Sales Manager
+[INFO ] 2023-10-17 09:45:20.551 [main] Hero_App - Others Contacts information =krishan.sharma@heromotocorp.com
+[INFO ] 2023-10-17 09:45:21.138 [main] Hero_App - Others Contacts information =NITIN PARASHAR
+[INFO ] 2023-10-17 09:45:21.705 [main] Hero_App - Others Contacts information =Area Sales Manager
+[INFO ] 2023-10-17 09:45:22.408 [main] Hero_App - Others Contacts information =nitin.parashar@heromotocorp.com
+[INFO ] 2023-10-17 09:45:24.723 [main] Hero_App - Back from Relationship Manager is clickable
+[INFO ] 2023-10-17 09:45:27.096 [main] Hero_App - RSA is clickable
+[INFO ] 2023-10-17 09:45:33.187 [main] Hero_App - locate nearest dealer is clickable
+[INFO ] 2023-10-17 09:45:36.716 [main] Hero_App - LOCATE THE NEAREST DEALER
+[INFO ] 2023-10-17 09:45:42.297 [main] Hero_App - I ACCEPT Coockie is clickable
+[INFO ] 2023-10-17 09:45:44.706 [main] Hero_App - State* is clickable
+[INFO ] 2023-10-17 09:46:06.941 [main] Hero_App - State is already open
+[INFO ] 2023-10-17 09:46:14.957 [main] Hero_App - Bihar is clickable
+[INFO ] 2023-10-17 09:46:21.697 [main] Hero_App - Please select city is clickable
+[INFO ] 2023-10-17 09:47:09.055 [main] Hero_App - Muzaffarpur is clickable
+[INFO ] 2023-10-17 09:47:14.980 [main] Hero_App - All is clickable
+[INFO ] 2023-10-17 09:47:30.809 [main] Hero_App - Sujawalpur is clickable
+[INFO ] 2023-10-17 09:47:36.487 [main] Hero_App - Search is clickable
+[INFO ] 2023-10-17 09:47:40.872 [main] Hero_App - HERO MOTOCORP DEALERS IN SUJAWALPUR, MUZAFFARPUR, BIHAR
+[INFO ] 2023-10-17 09:47:52.408 [main] Hero_App - Successfully  Scroll page down Action View More
+[INFO ] 2023-10-17 09:47:55.350 [main] Hero_App - M/S. S.K Enterprises - Hero Motocorp
+[INFO ] 2023-10-17 09:47:57.111 [main] Hero_App - No 143/48/75/2, Khasra No 306 to 309, Subha SakraSujawalpurMuzaffarpur - 843105
+[INFO ] 2023-10-17 09:48:00.486 [main] Hero_App - Back from RSA is clickable
+[INFO ] 2023-10-17 09:48:02.662 [main] Hero_App - Technical Support is clickable
+[INFO ] 2023-10-17 09:48:05.811 [main] Hero_App - Technical Support Manager Name is =SHAHNAWAZ QURESHI
+[INFO ] 2023-10-17 09:48:06.927 [main] Hero_App - Technical Support Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
+[INFO ] 2023-10-17 09:48:08.026 [main] Hero_App - Technical Support Manager contact number is =8282828282
+[INFO ] 2023-10-17 09:48:10.097 [main] Hero_App - Back from Technical Support Manager is clickable
+[INFO ] 2023-10-17 09:48:12.032 [main] Hero_App - Dealer Locator is clickable
+[INFO ] 2023-10-17 09:48:15.710 [main] Hero_App - Select state is clickable
+[INFO ] 2023-10-17 09:48:25.301 [main] Hero_App - BIHAR is clickable
+[INFO ] 2023-10-17 09:48:26.738 [main] Hero_App - Select city is clickable
+[INFO ] 2023-10-17 09:49:02.852 [main] Hero_App - BAGAHA is clickable
+[INFO ] 2023-10-17 09:49:04.707 [main] Hero_App - Map View dealer name and address is clickable
+[INFO ] 2023-10-17 09:49:05.512 [main] Hero_App - Total available dealer is =2
+[INFO ] 2023-10-17 09:49:06.012 [main] Hero_App - 1 Dealer name =MAA KALI AUTOMOBILES
+[INFO ] 2023-10-17 09:49:06.375 [main] Hero_App - 1 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
+[INFO ] 2023-10-17 09:49:06.766 [main] Hero_App - 1 Dealer distance =2168.4 Km.
+[INFO ] 2023-10-17 09:49:07.136 [main] Hero_App - 1 Dealer duration time =1 Day 15 hrs 39 mins
+[INFO ] 2023-10-17 09:49:08.602 [main] Hero_App - 1 Call Dealer button  is clickable
+[INFO ] 2023-10-17 09:49:12.015 [main] Hero_App - 2 Dealer name =VINAY AUTO AGENCY
+[INFO ] 2023-10-17 09:49:12.335 [main] Hero_App - 2 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
+[INFO ] 2023-10-17 09:49:12.656 [main] Hero_App - 2 Dealer distance =2168.4 Km.
+[INFO ] 2023-10-17 09:49:13.047 [main] Hero_App - 2 Dealer duration time =1 Day 15 hrs 39 mins
+[INFO ] 2023-10-17 09:49:14.069 [main] Hero_App - 2 Call Dealer button  is clickable
+[INFO ] 2023-10-17 09:49:19.842 [main] Hero_App - Back from Dealer Locator is clickable

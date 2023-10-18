@@ -9,12 +9,62 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Hero_App</th></tr>
-<tr><td><a href="#t0">Book_Service_test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">346,374</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Home_Page_Test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num attn">10</td><td class="num">67,068</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hero_App</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Book_Service_test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Page_Test.Book_Service_test</td><td><a href="#m0">TC109_previous_service_info</a></td><td rowspan="1">1696922300393</td><td rowspan="1">122758</td></tr><tr class="passedeven"><td><a href="#m1">TC110_Book_service</a></td><td rowspan="1">1696922423272</td><td rowspan="1">99278</td></tr><tr class="passedeven"><td><a href="#m2">TC111_Review_Service_Details</a></td><td rowspan="1">1696922522565</td><td rowspan="1">18700</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hero_App</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Home_Page_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="10">Page_Test.Home_Page_Test</td><td><a href="#m0">TC017_Home_page_verify</a></td><td rowspan="1">1697625944833</td><td rowspan="1">79</td></tr><tr class="failedeven"><td><a href="#m1">TC018__verify_Navigate</a></td><td rowspan="1">1697625945043</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m2">TC019_Verify_Documents</a></td><td rowspan="1">1697625945056</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m3">TC020_Verify_Relationship_Manager</a></td><td rowspan="1">1697625945070</td><td rowspan="1">2019</td></tr><tr class="failedeven"><td><a href="#m4">TC021_Verify_RSA</a></td><td rowspan="1">1697625947094</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m5">TC022_Select_State_For_Nearest_Dealer</a></td><td rowspan="1">1697625947104</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m6">TC026_Verify_Technical_Support_Manager</a></td><td rowspan="1">1697625947148</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m7">TC027_Verify_Dealer_Locator</a></td><td rowspan="1">1697625947158</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m8">TC028_Select_city</a></td><td rowspan="1">1697625947169</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m9">TC029_View_dealer_name_and_address</a></td><td rowspan="1">1697625947182</td><td rowspan="1">7</td></tr><tr><th colspan="4">Home_Page_Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">Page_Test.Home_Page_Test</td><td><a href="#m10">TC023_Select_City_For_Nearest_Dealer</a></td><td rowspan="1">1697625947120</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">TC024_Select_Locality_For_Nearest_Dealer</a></td><td rowspan="1">1697625947128</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m12">TC025_Verify_Nearest_Dealer_info</a></td><td rowspan="1">1697625947138</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Book_Service_test</h2><h3 id="m0">Page_Test.Book_Service_test#TC109_previous_service_info</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Page_Test.Book_Service_test#TC110_Book_service</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Page_Test.Book_Service_test#TC111_Review_Service_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Home_Page_Test</h2><h3 id="m0">Page_Test.Home_Page_Test#TC017_Home_page_verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.logging.log4j.Logger.info(String)&quot; because &quot;com.utility.Base_Utility.log&quot; is null
+	at com.utility.Base_Utility.Message(Base_Utility.java:442)
+	at Page_Test.Home_Page_Test.TC017_Home_page_verify(Home_Page_Test.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Page_Test.Home_Page_Test#TC018__verify_Navigate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Navigate_menu()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC018__verify_Navigate(Home_Page_Test.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Page_Test.Home_Page_Test#TC019_Verify_Documents</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Documents_Menu()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC019_Verify_Documents(Home_Page_Test.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Page_Test.Home_Page_Test#TC020_Verify_Relationship_Manager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Relationship_Manager()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC020_Verify_Relationship_Manager(Home_Page_Test.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Page_Test.Home_Page_Test#TC021_Verify_RSA</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.RSA()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC021_Verify_RSA(Home_Page_Test.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Page_Test.Home_Page_Test#TC022_Select_State_For_Nearest_Dealer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.State()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC022_Select_State_For_Nearest_Dealer(Home_Page_Test.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Page_Test.Home_Page_Test#TC026_Verify_Technical_Support_Manager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Technical_Support()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC026_Verify_Technical_Support_Manager(Home_Page_Test.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Page_Test.Home_Page_Test#TC027_Verify_Dealer_Locator</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Dealer_Locator()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC027_Verify_Dealer_Locator(Home_Page_Test.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Page_Test.Home_Page_Test#TC028_Select_city</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.Select_City()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC028_Select_city(Home_Page_Test.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Page_Test.Home_Page_Test#TC029_View_dealer_name_and_address</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.page_object.Home_Page.map_view()&quot; because &quot;this.ob&quot; is null
+	at Page_Test.Home_Page_Test.TC029_View_dealer_name_and_address(Home_Page_Test.java:208)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Page_Test.Home_Page_Test#TC023_Select_City_For_Nearest_Dealer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Page_Test.Home_Page_Test.TC023_Select_City_For_Nearest_Dealer() on instance Page_Test.Home_Page_Test@3d2ee678 depends on not successfully finished methods 
+[Page_Test.Home_Page_Test.TC022_Select_State_For_Nearest_Dealer() on instance Page_Test.Home_Page_Test@3d2ee678]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Page_Test.Home_Page_Test#TC024_Select_Locality_For_Nearest_Dealer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Page_Test.Home_Page_Test.TC024_Select_Locality_For_Nearest_Dealer() on instance Page_Test.Home_Page_Test@3d2ee678 depends on not successfully finished methods 
+[Page_Test.Home_Page_Test.TC022_Select_State_For_Nearest_Dealer() on instance Page_Test.Home_Page_Test@3d2ee678]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Page_Test.Home_Page_Test#TC025_Verify_Nearest_Dealer_info</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Page_Test.Home_Page_Test.TC025_Verify_Nearest_Dealer_info() on instance Page_Test.Home_Page_Test@3d2ee678 depends on not successfully finished methods 
+[Page_Test.Home_Page_Test.TC022_Select_State_For_Nearest_Dealer() on instance Page_Test.Home_Page_Test@3d2ee678]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

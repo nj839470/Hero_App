@@ -296,8 +296,10 @@ public class Home_Page extends Base_Utility {
 //****************************RSA************************************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[4]")
 	private WebElement RSA;
-	@FindBy(xpath = "//android.widget.TextView[@text ='Locate nearest dealer']")
+	@FindBy(xpath = "//android.view.View[@content-desc='Locate nearest dealer']/android.widget.TextView")
 	private WebElement locate_nearest_dealer;
+//	@FindBy(xpath = "//android.widget.TextView[@text ='Locate nearest dealer']")
+//	private WebElement locate_nearest_dealer;
 	@FindBy(xpath = "//android.view.View[@text ='Locate nearest dealer']")
 	private WebElement locate_nearest_dealer_real_device;
 	@FindBy(xpath = "//android.view.View[@text ='LOCATE THE NEAREST DEALER']")
