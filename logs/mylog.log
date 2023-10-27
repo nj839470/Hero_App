@@ -1,110 +1,163 @@
-[INFO ] 2023-10-17 09:41:26.187 [main] Hero_App - ************************Home_Page_Test**************************
-[INFO ] 2023-10-17 09:41:29.458 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
-[INFO ] 2023-10-17 09:41:31.617 [main] Hero_App - Allow Hero App to access your contacts is clickable
-[INFO ] 2023-10-17 09:41:33.817 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
-[INFO ] 2023-10-17 09:41:36.071 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
-[INFO ] 2023-10-17 09:41:37.935 [main] Hero_App - OK is clickable
-[INFO ] 2023-10-17 09:41:42.745 [main] Hero_App - Login with Registerd mobile number send successfully
-[INFO ] 2023-10-17 09:41:46.304 [main] Hero_App - Coninue button is clickable
-[INFO ] 2023-10-17 09:42:07.535 [main] Hero_App - enterOTP =1 send successfully
-[INFO ] 2023-10-17 09:42:09.686 [main] Hero_App - enterOTP =2 send successfully
-[INFO ] 2023-10-17 09:42:11.935 [main] Hero_App - enterOTP =3 send successfully
-[INFO ] 2023-10-17 09:42:14.093 [main] Hero_App - enterOTP =4 send successfully
-[INFO ] 2023-10-17 09:42:16.351 [main] Hero_App - enterOTP =5 send successfully
-[INFO ] 2023-10-17 09:42:18.522 [main] Hero_App - enterOTP =6 send successfully
-[INFO ] 2023-10-17 09:42:21.062 [main] Hero_App - Verify Button is clickable
-[INFO ] 2023-10-17 09:42:26.624 [main] Hero_App -  Select first vehicle is clickable
-[INFO ] 2023-10-17 09:42:28.543 [main] Hero_App - Continue Button after select vehicle is clickable
-[INFO ] 2023-10-17 09:42:31.916 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-10-17 09:43:01.246 [main] Hero_App - Navigate menu is clickable
-[INFO ] 2023-10-17 09:43:03.995 [main] Hero_App - Search destination is clickable
-[INFO ] 2023-10-17 09:43:06.677 [main] Hero_App - Navigation
-[INFO ] 2023-10-17 09:43:08.325 [main] Hero_App - Back from Search here is clickable
-[INFO ] 2023-10-17 09:43:11.396 [main] Hero_App - Back from Navigation is clickable
-[INFO ] 2023-10-17 09:43:13.789 [main] Hero_App - Document menu is clickable
-[INFO ] 2023-10-17 09:43:15.802 [main] Hero_App - Registration Certificate (R.C.) is clickable
-[INFO ] 2023-10-17 09:43:18.212 [main] Hero_App - You have not added your R.C.
-[INFO ] 2023-10-17 09:43:19.758 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-10-17 09:43:22.030 [main] Hero_App - While using the app is clickable
-[INFO ] 2023-10-17 09:43:24.128 [main] Hero_App - Allow is clickable
-[INFO ] 2023-10-17 09:43:27.736 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-10-17 09:43:29.779 [main] Hero_App - Registration Certificate (R.C.) Document frmo library is clickable
-[INFO ] 2023-10-17 09:43:34.857 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-10-17 09:43:36.898 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-10-17 09:43:41.628 [main] Hero_App - Registration Certificate (R.C.) Add now is clickable
-[INFO ] 2023-10-17 09:43:44.414 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-10-17 09:43:46.572 [main] Hero_App - Registration Certificate (R.C.) Back Document is clickable
-[INFO ] 2023-10-17 09:43:48.098 [main] Hero_App - Insurance is clickable
-[INFO ] 2023-10-17 09:44:10.362 [main] Hero_App - Insurance is already available
-[INFO ] 2023-10-17 09:44:11.956 [main] Hero_App - Insurance Back Document is clickable
-[INFO ] 2023-10-17 09:44:13.907 [main] Hero_App - P.U.C. is clickable
-[INFO ] 2023-10-17 09:44:16.316 [main] Hero_App - You have not added your P.U.C.
-[INFO ] 2023-10-17 09:44:17.834 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-10-17 09:44:19.827 [main] Hero_App - P.U.C. Document frmo library is clickable
-[INFO ] 2023-10-17 09:44:24.449 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-10-17 09:44:26.506 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-10-17 09:44:31.196 [main] Hero_App - P.U.C. Add now is clickable
-[INFO ] 2023-10-17 09:44:33.156 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-10-17 09:44:35.017 [main] Hero_App - P.U.C. Back Document is clickable
-[INFO ] 2023-10-17 09:44:36.716 [main] Hero_App - Other is clickable
-[INFO ] 2023-10-17 09:44:39.036 [main] Hero_App - You have not added any documents
-[INFO ] 2023-10-17 09:44:40.579 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-10-17 09:44:42.670 [main] Hero_App - Other Document frmo library is clickable
-[INFO ] 2023-10-17 09:44:47.311 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-10-17 09:44:49.298 [main] Hero_App - Take a Photo is clickable
-[INFO ] 2023-10-17 09:44:53.936 [main] Hero_App - Other Add now is clickable
-[INFO ] 2023-10-17 09:44:56.049 [main] Hero_App - Close upload document page is clickable
-[INFO ] 2023-10-17 09:44:58.881 [main] Hero_App - Other Back Document is clickable
-[INFO ] 2023-10-17 09:45:01.658 [main] Hero_App - Back from Documents is clickable
-[INFO ] 2023-10-17 09:45:05.936 [main] Hero_App - Relationship Manager is clickable
-[INFO ] 2023-10-17 09:45:09.546 [main] Hero_App - Relationship Manager name is =ANIL TYAGI
-[INFO ] 2023-10-17 09:45:10.762 [main] Hero_App - Relationship Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
-[INFO ] 2023-10-17 09:45:11.892 [main] Hero_App - Relationship Manager Contact number is =8282828282
-[INFO ] 2023-10-17 09:45:13.467 [main] Hero_App - Relationship manager contact is clickable
-[INFO ] 2023-10-17 09:45:19.324 [main] Hero_App - Others Contacts information =Krishan Kumar Sharma
-[INFO ] 2023-10-17 09:45:19.897 [main] Hero_App - Others Contacts information =Territory Sales Manager
-[INFO ] 2023-10-17 09:45:20.551 [main] Hero_App - Others Contacts information =krishan.sharma@heromotocorp.com
-[INFO ] 2023-10-17 09:45:21.138 [main] Hero_App - Others Contacts information =NITIN PARASHAR
-[INFO ] 2023-10-17 09:45:21.705 [main] Hero_App - Others Contacts information =Area Sales Manager
-[INFO ] 2023-10-17 09:45:22.408 [main] Hero_App - Others Contacts information =nitin.parashar@heromotocorp.com
-[INFO ] 2023-10-17 09:45:24.723 [main] Hero_App - Back from Relationship Manager is clickable
-[INFO ] 2023-10-17 09:45:27.096 [main] Hero_App - RSA is clickable
-[INFO ] 2023-10-17 09:45:33.187 [main] Hero_App - locate nearest dealer is clickable
-[INFO ] 2023-10-17 09:45:36.716 [main] Hero_App - LOCATE THE NEAREST DEALER
-[INFO ] 2023-10-17 09:45:42.297 [main] Hero_App - I ACCEPT Coockie is clickable
-[INFO ] 2023-10-17 09:45:44.706 [main] Hero_App - State* is clickable
-[INFO ] 2023-10-17 09:46:06.941 [main] Hero_App - State is already open
-[INFO ] 2023-10-17 09:46:14.957 [main] Hero_App - Bihar is clickable
-[INFO ] 2023-10-17 09:46:21.697 [main] Hero_App - Please select city is clickable
-[INFO ] 2023-10-17 09:47:09.055 [main] Hero_App - Muzaffarpur is clickable
-[INFO ] 2023-10-17 09:47:14.980 [main] Hero_App - All is clickable
-[INFO ] 2023-10-17 09:47:30.809 [main] Hero_App - Sujawalpur is clickable
-[INFO ] 2023-10-17 09:47:36.487 [main] Hero_App - Search is clickable
-[INFO ] 2023-10-17 09:47:40.872 [main] Hero_App - HERO MOTOCORP DEALERS IN SUJAWALPUR, MUZAFFARPUR, BIHAR
-[INFO ] 2023-10-17 09:47:52.408 [main] Hero_App - Successfully  Scroll page down Action View More
-[INFO ] 2023-10-17 09:47:55.350 [main] Hero_App - M/S. S.K Enterprises - Hero Motocorp
-[INFO ] 2023-10-17 09:47:57.111 [main] Hero_App - No 143/48/75/2, Khasra No 306 to 309, Subha SakraSujawalpurMuzaffarpur - 843105
-[INFO ] 2023-10-17 09:48:00.486 [main] Hero_App - Back from RSA is clickable
-[INFO ] 2023-10-17 09:48:02.662 [main] Hero_App - Technical Support is clickable
-[INFO ] 2023-10-17 09:48:05.811 [main] Hero_App - Technical Support Manager Name is =SHAHNAWAZ QURESHI
-[INFO ] 2023-10-17 09:48:06.927 [main] Hero_App - Technical Support Manager address is =A-19 JHILMIL IND AREA G.T. Road , EAST DELHI, DELHI, DELHI, 110095
-[INFO ] 2023-10-17 09:48:08.026 [main] Hero_App - Technical Support Manager contact number is =8282828282
-[INFO ] 2023-10-17 09:48:10.097 [main] Hero_App - Back from Technical Support Manager is clickable
-[INFO ] 2023-10-17 09:48:12.032 [main] Hero_App - Dealer Locator is clickable
-[INFO ] 2023-10-17 09:48:15.710 [main] Hero_App - Select state is clickable
-[INFO ] 2023-10-17 09:48:25.301 [main] Hero_App - BIHAR is clickable
-[INFO ] 2023-10-17 09:48:26.738 [main] Hero_App - Select city is clickable
-[INFO ] 2023-10-17 09:49:02.852 [main] Hero_App - BAGAHA is clickable
-[INFO ] 2023-10-17 09:49:04.707 [main] Hero_App - Map View dealer name and address is clickable
-[INFO ] 2023-10-17 09:49:05.512 [main] Hero_App - Total available dealer is =2
-[INFO ] 2023-10-17 09:49:06.012 [main] Hero_App - 1 Dealer name =MAA KALI AUTOMOBILES
-[INFO ] 2023-10-17 09:49:06.375 [main] Hero_App - 1 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
-[INFO ] 2023-10-17 09:49:06.766 [main] Hero_App - 1 Dealer distance =2168.4 Km.
-[INFO ] 2023-10-17 09:49:07.136 [main] Hero_App - 1 Dealer duration time =1 Day 15 hrs 39 mins
-[INFO ] 2023-10-17 09:49:08.602 [main] Hero_App - 1 Call Dealer button  is clickable
-[INFO ] 2023-10-17 09:49:12.015 [main] Hero_App - 2 Dealer name =VINAY AUTO AGENCY
-[INFO ] 2023-10-17 09:49:12.335 [main] Hero_App - 2 Dealer address =MAIN ROAD, CHAUTARWA, BAGAHA, BIHAR, 845101
-[INFO ] 2023-10-17 09:49:12.656 [main] Hero_App - 2 Dealer distance =2168.4 Km.
-[INFO ] 2023-10-17 09:49:13.047 [main] Hero_App - 2 Dealer duration time =1 Day 15 hrs 39 mins
-[INFO ] 2023-10-17 09:49:14.069 [main] Hero_App - 2 Call Dealer button  is clickable
-[INFO ] 2023-10-17 09:49:19.842 [main] Hero_App - Back from Dealer Locator is clickable
+[INFO ] 2023-10-27 15:09:05.937 [main] Hero_App - ************************Login page test**************************
+[INFO ] 2023-10-27 15:09:09.573 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-10-27 15:09:13.590 [main] Hero_App - Allow Hero App to access your phone call logs is clickable
+[INFO ] 2023-10-27 15:09:16.831 [main] Hero_App - Allow Hero App to access your contacts is clickable
+[INFO ] 2023-10-27 15:09:20.111 [main] Hero_App - Allow Hero App to make and manage phone calls is clickable
+[INFO ] 2023-10-27 15:09:23.327 [main] Hero_App - Allow Hero App to send and view SMS messages is clickable
+[INFO ] 2023-10-27 15:09:26.150 [main] Hero_App - OK is clickable
+[INFO ] 2023-10-27 15:09:32.087 [main] Hero_App - Login with unregisterd mobile number send successfully
+[INFO ] 2023-10-27 15:09:36.902 [main] Hero_App - Coninue button enter after unregistered mobile number is clickable
+[INFO ] 2023-10-27 15:09:39.051 [main] Hero_App - Number not registered
+[INFO ] 2023-10-27 15:09:41.918 [main] Hero_App - Cancel is clickable
+[INFO ] 2023-10-27 15:09:46.015 [main] Hero_App - Login with short_digit_mobile_number send successfully
+[INFO ] 2023-10-27 15:09:48.370 [main] Hero_App - Coninue button enter after short length of mobile number is  not present
+[INFO ] 2023-10-27 15:09:52.073 [main] Hero_App - Login with More than 10 digit mobile number send successfully
+[INFO ] 2023-10-27 15:09:53.941 [main] Hero_App - More then 10 digits mobiles number are not acceptable
+[INFO ] 2023-10-27 15:10:00.369 [main] Hero_App - Terms of use button is clickable
+[INFO ] 2023-10-27 15:10:12.784 [main] Hero_App - Terms of use: First condition = These Terms of Use along with 
+[INFO ] 2023-10-27 15:10:20.217 [main] Hero_App - back terms of use page  is clickable
+[INFO ] 2023-10-27 15:10:23.225 [main] Hero_App - Privacy Policy is clickable
+[INFO ] 2023-10-27 15:10:33.528 [main] Hero_App - Privacy policy : First Condition = This Privacy Policy ("Policy") apply to all visitors, users and others (hereinafter referred to as "You" or the "User") who access or use the
+[INFO ] 2023-10-27 15:10:41.643 [main] Hero_App - back Privacy Policy page  is clickable
+[INFO ] 2023-10-27 15:10:44.517 [main] Hero_App - Contact us is clickable
+[INFO ] 2023-10-27 15:10:48.202 [main] Hero_App - Welcome to the official account of Hero MotoCorp - your favourite & the world's largest two-wheeler Company
+[INFO ] 2023-10-27 15:10:51.757 [main] Hero_App - back Contact us page  is clickable
+[INFO ] 2023-10-27 15:10:55.458 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-10-27 15:10:59.231 [main] Hero_App - Coninue button is present
+[INFO ] 2023-10-27 15:11:01.694 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-10-27 15:11:24.767 [main] Hero_App - Resend button is present
+[INFO ] 2023-10-27 15:11:27.084 [main] Hero_App - Resend button is clickable
+[INFO ] 2023-10-27 15:11:48.528 [main] Hero_App - OTP is 4 send successfully
+[INFO ] 2023-10-27 15:11:50.638 [main] Hero_App - OTP is 5 send successfully
+[INFO ] 2023-10-27 15:11:52.684 [main] Hero_App - OTP is 6 send successfully
+[INFO ] 2023-10-27 15:11:54.936 [main] Hero_App - OTP is 7 send successfully
+[INFO ] 2023-10-27 15:11:57.394 [main] Hero_App - OTP is 8 send successfully
+[INFO ] 2023-10-27 15:11:59.958 [main] Hero_App - OTP is 9 send successfully
+[INFO ] 2023-10-27 15:12:03.335 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-10-27 15:12:06.510 [main] Hero_App - Verify Button is still present
+[INFO ] 2023-10-27 15:12:09.700 [main] Hero_App - Edit Mobile Number is clickable
+[INFO ] 2023-10-27 15:12:13.984 [main] Hero_App - Login with Registerd mobile number send successfully
+[INFO ] 2023-10-27 15:12:17.773 [main] Hero_App - Coninue button is clickable
+[INFO ] 2023-10-27 15:12:39.277 [main] Hero_App - enterOTP =1 send successfully
+[INFO ] 2023-10-27 15:12:41.427 [main] Hero_App - enterOTP =2 send successfully
+[INFO ] 2023-10-27 15:12:43.808 [main] Hero_App - enterOTP =3 send successfully
+[INFO ] 2023-10-27 15:12:46.035 [main] Hero_App - enterOTP =4 send successfully
+[INFO ] 2023-10-27 15:12:48.127 [main] Hero_App - enterOTP =5 send successfully
+[INFO ] 2023-10-27 15:12:50.438 [main] Hero_App - enterOTP =6 send successfully
+[INFO ] 2023-10-27 15:12:54.023 [main] Hero_App - Verify Button is clickable
+[INFO ] 2023-10-27 15:12:54.035 [main] Hero_App - ************************Select_Vehicle_Page_Test**************************
+[INFO ] 2023-10-27 15:13:01.727 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-10-27 15:13:03.853 [main] Hero_App - Save button before updating the nick name is  present
+[INFO ] 2023-10-27 15:13:09.076 [main] Hero_App - Nick Name  send successfully
+[INFO ] 2023-10-27 15:13:13.188 [main] Hero_App - Nick name close button  is clickable
+[INFO ] 2023-10-27 15:13:15.835 [main] Hero_App - Nick name saved with close button
+[INFO ] 2023-10-27 15:13:17.986 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-10-27 15:13:24.128 [main] Hero_App -  30 letter Nick Name  send successfully
+[INFO ] 2023-10-27 15:13:28.148 [main] Hero_App - Save button after updating the 30 letter nick name is  is clickable
+[INFO ] 2023-10-27 15:13:30.728 [main] Hero_App -  = 30 letter nick name are acceptable
+[INFO ] 2023-10-27 15:13:33.754 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-10-27 15:13:39.489 [main] Hero_App - 31 letter Nick Name  send successfully
+[INFO ] 2023-10-27 15:13:43.790 [main] Hero_App - Save button after updating 31 letter nick name the nick name   is clickable
+[INFO ] 2023-10-27 15:13:46.380 [main] Hero_App -  = 31 letter nick name are not acceptable
+[INFO ] 2023-10-27 15:13:49.015 [main] Hero_App - Tap on pencil for Nick name  is clickable
+[INFO ] 2023-10-27 15:13:55.071 [main] Hero_App - 29 letter Nick Name  send successfully
+[INFO ] 2023-10-27 15:14:00.892 [main] Hero_App - Save button after updating the 29 letter nick name  is clickable
+[INFO ] 2023-10-27 15:14:03.973 [main] Hero_App -  = 29 letter nick name are acceptable
+[INFO ] 2023-10-27 15:14:05.432 [main] Hero_App - Continue Button before select vehicle is present
+[INFO ] 2023-10-27 15:14:05.807 [main] Hero_App - We found 2 vehicles linked to you
+[INFO ] 2023-10-27 15:14:05.808 [main] Hero_App - Total number of Vehicles registered in this number is = 2
+[INFO ] 2023-10-27 15:14:08.367 [main] Hero_App -  Select first vehicle is clickable
+[INFO ] 2023-10-27 15:14:10.133 [main] Hero_App - Continue Button after select vehicle is present
+[INFO ] 2023-10-27 15:14:12.457 [main] Hero_App - Continue Button after select vehicle is clickable
+[INFO ] 2023-10-27 15:14:28.004 [main] Hero_App - ************************Home_Page_Test**************************
+[INFO ] 2023-10-27 15:14:38.472 [main] Hero_App - Current Temperature is =31°C
+[INFO ] 2023-10-27 15:14:44.207 [main] Hero_App - Vehicle Img is present
+[INFO ] 2023-10-27 15:14:54.344 [main] Hero_App -  Drop down is clickable
+[INFO ] 2023-10-27 15:14:56.332 [main] Hero_App - Select Vehicle is clickable
+[INFO ] 2023-10-27 15:15:05.411 [main] Hero_App - Notification is clickable
+[INFO ] 2023-10-27 15:15:06.690 [main] Hero_App - Total Notification are=2
+[INFO ] 2023-10-27 15:15:08.642 [main] Hero_App - Notification back is clickable
+[INFO ] 2023-10-27 15:15:16.385 [main] Hero_App - Navigate menu is clickable
+[INFO ] 2023-10-27 15:15:19.852 [main] Hero_App - Search destination is clickable
+[INFO ] 2023-10-27 15:15:23.189 [main] Hero_App - Search here
+[INFO ] 2023-10-27 15:15:27.120 [main] Hero_App - Place name send successfully
+[INFO ] 2023-10-27 15:15:33.225 [main] Hero_App - Heelalige Railway Station is clickable
+[INFO ] 2023-10-27 15:15:35.977 [main] Hero_App - Heelalige Railway Station
+[INFO ] 2023-10-27 15:15:37.627 [main] Hero_App - Heelalige, Anekal, District Bangalore Urban, Bengaluru, Karnataka, 560099
+[INFO ] 2023-10-27 15:15:40.735 [main] Hero_App - Navigate is clickable
+[INFO ] 2023-10-27 15:15:44.131 [main] Hero_App - Start button is clickable
+[INFO ] 2023-10-27 15:15:49.298 [main] Hero_App - Start is clickable
+[INFO ] 2023-10-27 15:15:57.191 [main] Hero_App -  Stop navigation is clickable
+[INFO ] 2023-10-27 15:16:00.695 [main] Hero_App - Back from Search here is clickable
+[INFO ] 2023-10-27 15:16:03.312 [main] Hero_App - Back from Navigation is clickable
+[INFO ] 2023-10-27 15:16:10.797 [main] Hero_App - Document menu is clickable
+[INFO ] 2023-10-27 15:16:13.523 [main] Hero_App - R.C.
+[INFO ] 2023-10-27 15:16:15.159 [main] Hero_App - R.C. Upload is clickable
+[INFO ] 2023-10-27 15:16:18.863 [main] Hero_App - While using the app is clickable
+[INFO ] 2023-10-27 15:16:21.631 [main] Hero_App - Allow is clickable
+[INFO ] 2023-10-27 15:16:24.886 [main] Hero_App - R.C. Upload is clickable
+[INFO ] 2023-10-27 15:16:28.022 [main] Hero_App - R.C. Document frmo library is clickable
+[INFO ] 2023-10-27 15:16:32.399 [main] Hero_App - R.C. Upload is clickable
+[INFO ] 2023-10-27 15:16:34.784 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-10-27 15:16:39.394 [main] Hero_App - R.C. Upload is clickable
+[INFO ] 2023-10-27 15:16:42.129 [main] Hero_App - Choose from Digilocker is clickable
+[INFO ] 2023-10-27 15:16:48.251 [main] Hero_App -  Back from Digilocker Login is clickable
+[INFO ] 2023-10-27 15:16:50.657 [main] Hero_App - R.C. Upload is clickable
+[INFO ] 2023-10-27 15:16:53.878 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-10-27 15:16:55.026 [main] Hero_App - Insurance
+[INFO ] 2023-10-27 15:16:55.440 [main] Hero_App - Insurance is already available
+[INFO ] 2023-10-27 15:16:57.015 [main] Hero_App - Insurance View File is clickable
+[INFO ] 2023-10-27 15:17:02.102 [main] Hero_App - Back from Insurance page is clickable
+[INFO ] 2023-10-27 15:17:03.484 [main] Hero_App - P.U.C.
+[INFO ] 2023-10-27 15:17:05.524 [main] Hero_App - P.U.C. Upload is clickable
+[INFO ] 2023-10-27 15:17:09.829 [main] Hero_App - P.U.C. Document frmo library is clickable
+[INFO ] 2023-10-27 15:17:15.059 [main] Hero_App - P.U.C. Upload is clickable
+[INFO ] 2023-10-27 15:17:18.194 [main] Hero_App - Take a Photo is clickable
+[INFO ] 2023-10-27 15:17:23.348 [main] Hero_App - P.U.C. Upload is clickable
+[INFO ] 2023-10-27 15:17:26.291 [main] Hero_App - Close upload document page is clickable
+[INFO ] 2023-10-27 15:17:30.279 [main] Hero_App - Back from Documents is clickable
+[INFO ] 2023-10-27 15:18:42.829 [main] Hero_App - Relationship Manager is clickable
+[INFO ] 2023-10-27 15:18:47.062 [main] Hero_App - Relationship Manager name is =
+[INFO ] 2023-10-27 15:18:48.528 [main] Hero_App - Relationship Manager address is =
+[INFO ] 2023-10-27 15:18:50.062 [main] Hero_App - Relationship Manager Contact number is =
+[INFO ] 2023-10-27 15:18:56.679 [main] Hero_App - Relationship manager contact is clickable
+[INFO ] 2023-10-27 16:04:01.261 [main] Hero_App - ************************My_Profile_Page_Test**************************
+[INFO ] 2023-10-27 16:04:01.650 [main] Hero_App - *********************My Vehicle page**************************
+[INFO ] 2023-10-27 16:04:01.765 [main] Hero_App - ************************Refer a Friend**************************
+[INFO ] 2023-10-27 16:04:06.851 [main] Hero_App - Whatsapp is not visibleorg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [bb5ae782-1da6-4ed0-ad4b-2246b072d8e0, findElements {using=xpath, value=//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_header']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30692, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30692, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30694, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30694, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bb5ae782-1da6-4ed0-ad4b-2246b072d8e0
+[INFO ] 2023-10-27 16:04:06.866 [main] Hero_App - Linkedin is not visiblejava.lang.NullPointerException: Cannot invoke "com.utility.listner.getcapcture(String)" because "com.utility.Base_Utility.lis" is null
+[INFO ] 2023-10-27 16:04:06.871 [main] Hero_App - twitter is not visibleorg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [bb5ae782-1da6-4ed0-ad4b-2246b072d8e0, findElements {using=xpath, value=//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_header']}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30692, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30692, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30694, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30694, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bb5ae782-1da6-4ed0-ad4b-2246b072d8e0
+[INFO ] 2023-10-27 16:04:06.886 [main] Hero_App - ************************Safety Measures and Symbols Glossary Test**************************
+[INFO ] 2023-10-27 16:04:12.851 [main] Hero_App - ************************Feedback and About Hero test**************************
+[INFO ] 2023-10-27 16:04:15.288 [main] Hero_App - ************************Service Page**************************
+[INFO ] 2023-10-27 16:04:17.722 [main] Hero_App - Dealer name is not givenorg.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [bb5ae782-1da6-4ed0-ad4b-2246b072d8e0, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id , 'com.customerapp.hero:id/tv_dealer')]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30692, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30692, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: GOOGLE, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30694, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: GOOGLE, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30694, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bb5ae782-1da6-4ed0-ad4b-2246b072d8e0
+[ERROR] 2023-10-27 16:04:18.302 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 3500 Kilometer
+[ERROR] 2023-10-27 16:04:18.468 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 6500 Kilometer
+[ERROR] 2023-10-27 16:04:18.630 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 9500 Kilometer
+[ERROR] 2023-10-27 16:04:18.798 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 12500 Kilometer
+[ERROR] 2023-10-27 16:04:19.010 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 15500 Kilometer
+[ERROR] 2023-10-27 16:04:19.700 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 160 Days
+[ERROR] 2023-10-27 16:04:19.868 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 260 Days
+[ERROR] 2023-10-27 16:04:20.042 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 360 Days
+[ERROR] 2023-10-27 16:04:20.212 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 460 Days
+[ERROR] 2023-10-27 16:04:20.381 [main] Hero_App - ==NOT==Unable To Swipe page direction Action 560 Days
+[INFO ] 2023-10-27 16:04:21.317 [main] Hero_App - *********************Goodlife_page**************************
+[INFO ] 2023-10-27 16:04:26.405 [main] Hero_App - ************************E Shop**************************

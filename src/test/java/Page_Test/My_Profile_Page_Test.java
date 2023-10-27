@@ -101,8 +101,9 @@ public class My_Profile_Page_Test extends Base_Utility {
 			Custom_click(ob.blood_group(), " Blood group");
 			Scroll_down_page_Action("Street name");
 			custom_sendkeys(ob.Street_name(), "Jindal colony", "Street name");
-			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));			 
-			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 			
+			driver.navigate().back();
+//			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB));			 
+//			((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.TAB)); 			
 			Thread.sleep(2000);
 			Custom_click(ob.pin_code(), "Pin code");
 			ob.pin_code().clear();

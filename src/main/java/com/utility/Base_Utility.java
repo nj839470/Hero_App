@@ -120,7 +120,7 @@ public class Base_Utility
 			capabilities.setCapability("platformVersion", "11.0.0");
 			capabilities.setCapability("platformName", "Android");
 			capabilities.setCapability("automationName", "uiautomator2");
-			capabilities.setCapability("pCloudy_ApplicationName", "app-debug_33.apk");
+			capabilities.setCapability("pCloudy_ApplicationName", "app-debug.apk");
 			capabilities.setCapability("appPackage", "com.customerapp.hero");
 			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
 			capabilities.setCapability("pCloudy_WildNet", "false");

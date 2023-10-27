@@ -112,9 +112,9 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 		}
 		if (device.equalsIgnoreCase("pcloudy")) {
-			Custom_click(ob.While_using_the_app(), "While using the app");
+//			Custom_click(ob.While_using_the_app(), "While using the app");
 		}
-		Custom_click(ob.banner_Img_close(), " Banner Img close");
+//		Custom_click(ob.banner_Img_close(), " Banner Img close");
 	
 		}
 }

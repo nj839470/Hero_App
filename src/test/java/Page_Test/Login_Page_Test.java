@@ -28,7 +28,9 @@ public class Login_Page_Test extends Base_Utility {
 	public void TC001_Verify_Login_with_Invalid_credential() {
 		Message("************************Login page test**************************");
 		ob = new Login_page();
+		ob1 = new Select_Vehicle_Page();
 		if (device.equalsIgnoreCase("pcloudy")) {
+		Custom_click(ob1.While_using_the_app(), "While using the app");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
@@ -49,6 +51,8 @@ public class Login_Page_Test extends Base_Utility {
 		custom_sendkeys(ob.mobile_No(), config_getdata("invalidmobileno"), "Login with unregisterd mobile number");
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Custom_click(ob.continue_button(), "Coninue button enter after unregistered mobile number");
+		msg(ob.registerd_message(), ob.registerd_message().getText());
+		Custom_click(ob.Cancel_not_registered(), ob.Cancel_not_registered().getText());
 	}
 
 	@Test(priority = 2)
@@ -80,7 +84,7 @@ public class Login_Page_Test extends Base_Utility {
 		if (device.equalsIgnoreCase("emulator")) {
 		msg(ob.Terms_of_Use_condition(), "Terms of use: First condition = " + ob.Terms_of_Use_condition().getText());
 		}
-		 else if (device.equalsIgnoreCase("emulator") || device.equalsIgnoreCase("realdevice")) {
+		 else if (device.equalsIgnoreCase("pcloudy") || device.equalsIgnoreCase("realdevice")) {
 		msg(ob.Terms_of_Use_condition_for_real_device(),
 				"Terms of use: First condition = " + ob.Terms_of_Use_condition_for_real_device().getText());
 		 }
@@ -94,7 +98,7 @@ public class Login_Page_Test extends Base_Utility {
 		if (device.equalsIgnoreCase("emulator")) {
 		msg(ob.Privacy_Policy_condition(),"Privacy policy : First Condition = " + ob.Privacy_Policy_condition().getText());
 		}
-		 else if(device.equalsIgnoreCase("emulator") || device.equalsIgnoreCase("realdevice")) {
+		 else if(device.equalsIgnoreCase("pcloudy") || device.equalsIgnoreCase("realdevice")) {
 		msg(ob.Terms_of_Use_condition_for_real_device(),
 				"Privacy policy : First Condition = " + ob.Terms_of_Use_condition_for_real_device().getText());
 		 }
@@ -153,6 +157,7 @@ public class Login_Page_Test extends Base_Utility {
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
 		if (device.equalsIgnoreCase("pcloudy")) {
+			Custom_click(ob1.While_using_the_app(), "While using the app");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
@@ -186,9 +191,9 @@ public class Login_Page_Test extends Base_Utility {
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 		}
 			if (device.equalsIgnoreCase("pcloudy")) {
-			Custom_click(ob1.While_using_the_app(), "While using the app");
+//			Custom_click(ob1.While_using_the_app(), "While using the app");
 		}
-		Custom_click(ob1.banner_Img_close(), " Banner Img close");
+//		Custom_click(ob1.banner_Img_close(), " Banner Img close");
 	}
 
 }

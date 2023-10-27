@@ -28,9 +28,9 @@ public class Home_Page_Test extends Base_Utility {
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 		Thread.sleep(2000);
 		ob.all_vehicle_inside_drop_down();
-		Custom_click(ob.Collapse_btn(), "Collapse button");
-		Thread.sleep(2000);
-		Custom_click(ob.Collapse_btn(), " Return collapse button");
+//		Custom_click(ob.Collapse_btn(), "Collapse button");
+//		Thread.sleep(2000);
+//		Custom_click(ob.Collapse_btn(), " Return collapse button");
 		Thread.sleep(2000);
 		Custom_click(ob.notification(), "Notification");
 		Message("Total Notification are=" + ob.notification_count());
@@ -50,6 +50,14 @@ public class Home_Page_Test extends Base_Utility {
 		}
 		Custom_click(ob.Search_destination(), "Search destination");
 		msg(ob.Search_here(), ob.Search_here().getText());
+		custom_sendkeys(ob.Search_here(), "railway station", "Place name");
+		Custom_click(ob.chose_place_name(), ob.chose_place_name().getText());
+		msg(ob.Searched_name(), ob.Searched_name().getText());
+		msg(ob.Searched_address(), ob.Searched_address().getText());
+		Custom_click(ob.Navigate_button(), ob.Navigate_button().getText());
+		Custom_click(ob.Start(), "Start button");
+		Custom_click(ob.Start_button(), ob.Start_button().getText());
+		Custom_click(ob.stop_navigation(), " Stop navigation");
 		Custom_click(ob.Back_button(), "Back from Search here");
 		Custom_click(ob.Back_button(), "Back from Navigation");
 	}
@@ -58,6 +66,7 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC019_Verify_Documents() throws InterruptedException {
 
 		Custom_click(ob.Documents_Menu(), "Document menu");
+		Thread.sleep(2000);
 		ob.Documents_list();
 		Custom_click(ob.Back(), "Back from Documents");
 	}
@@ -88,93 +97,119 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.Back(), "Back from Relationship Manager");
 
 	}
-
 	@Test(priority = 4)
-	public void TC021_Verify_RSA() throws InterruptedException {
+	public void TC021_Verify_RSA() throws InterruptedException
+	{
 		Custom_click(ob.RSA(), "RSA");
 		Thread.sleep(4000);
-		if (device.equalsIgnoreCase("realdevice")) {
-			Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); // for real device
-		} else {
-			try {
-				Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
-				Thread.sleep(2000);
-			} catch (Exception e) {
-				Message("Not able to click On Locate nearest deler link. Try again");
-				driver.navigate().refresh();
-				Thread.sleep(4000);
-				try {
-					Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
-				} catch (Exception k) {
-					Message("Not able to click On Locate nearest deler link.");
-					Custom_click(ob.Back(), "Back from RSA");
-					Thread.sleep(2000);
-				}
-			}
-		}
-		if (device.equalsIgnoreCase("emulator")) {
-			msg(ob.locate_the_nearest_dealer(), ob.locate_the_nearest_dealer().getText()); // only for emulator
-		} else {
-			msg(ob.locate_the_nearest_dealer_real(), ob.locate_the_nearest_dealer_real().getText()); // only for real
-																										// device &
-																										// pCloudy
-		}
-		Thread.sleep(2000);
-		Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
+		ob.RSA_info();
 	}
-
 	@Test(priority = 5)
-	public void TC022_Select_State_For_Nearest_Dealer() throws InterruptedException {
-		Custom_click(ob.State(), ob.State().getText());
+	public void TC022_Renew_RSA() throws InterruptedException
+	{
+		Custom_click(ob.renew_rsa(), ob.renew_rsa().getText());
 		Thread.sleep(2000);
-		try {
-			if (ob.State().isDisplayed()) {
-				Custom_click(ob.State(), ob.State().getText());
-			}
-		} catch (Exception e) {
-			Message("State is already open");
-		}
-
-		ob.select_state("Bihar");
-	}
-
-	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 6)
-	public void TC023_Select_City_For_Nearest_Dealer() throws InterruptedException {
-		Thread.sleep(3000);
-		Custom_click(ob.City(), ob.City().getText());
-		ob.select_city("Muzaffarpur");
-	}
-
-	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 7)
-	public void TC024_Select_Locality_For_Nearest_Dealer() throws InterruptedException {
-		Thread.sleep(3000);
-		Custom_click(ob.Locality(), ob.Locality().getText());
-		ob.select_Locality("Sujawalpur");
-		Thread.sleep(3000);
-		Custom_click(ob.Search_button(), ob.Search_button().getText());
-	}
-
-	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 8)
-	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException {
-		Thread.sleep(3000);
-		if (device.equalsIgnoreCase("emulator")) {
-			msg(ob.Local_dealer_fullname(), ob.Local_dealer_fullname().getText()); // for emulator
-		} else {
-			msg(ob.Local_dealer_fullname_real(), ob.Local_dealer_fullname_real().getText()); // for pCloudy and real
-																								// device
-		}
-		Scroll_down_page_Action("View More");
+		ob.RSA_info();
+		msg(ob.registration_number(), "Registraction number =" +ob.registration_number().getText());
+		Custom_click(ob.renew_rsa(), ob.renew_rsa().getText());
+		Thread.sleep(6000);
+		Custom_click(ob.Back(), "Back from Payment");
 		Thread.sleep(1000);
-		msg(ob.Local_dealer_name(), ob.Local_dealer_name().getText());
-		if (device.equalsIgnoreCase("emulator")) {
-			msg(ob.Local_dealer_address(), ob.Local_dealer_address().getText()); // for emulator
-		} else {
-			msg(ob.Local_dealer_address_real(), ob.Local_dealer_address_real().getText()); // for pCloudy and real
-																							// device
-		}
-		Custom_click(ob.Back(), "Back from RSA");
+		Custom_click(ob.Back(), "Back from Get RSA");
 	}
+	@Test(priority = 6)
+	public void TC023_frequently_asked_questions() throws InterruptedException
+	{
+		ob.asked_questions();
+		Custom_click(ob.Back(), "Back from Roadside Assistance");
+	}
+//	@Test(priority = 4)
+//	public void TC021_Verify_RSA() throws InterruptedException {
+//		Custom_click(ob.RSA(), "RSA");
+//		Thread.sleep(4000);
+//		if (device.equalsIgnoreCase("realdevice")) {
+//			Custom_click(ob.locate_nearest_dealer_real_device(), "locate nearest dealer"); // for real device
+//		} else {
+//			try {
+//				Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+//				Thread.sleep(2000);
+//			} catch (Exception e) {
+//				Message("Not able to click On Locate nearest deler link. Try again");
+//				driver.navigate().refresh();
+//				Thread.sleep(4000);
+//				try {
+//					Custom_click(ob.locate_nearest_dealer(), "locate nearest dealer");
+//				} catch (Exception k) {
+//					Message("Not able to click On Locate nearest deler link.");
+//					Custom_click(ob.Back(), "Back from RSA");
+//					Thread.sleep(2000);
+//				}
+//			}
+//		}
+//		if (device.equalsIgnoreCase("emulator")) {
+//			msg(ob.locate_the_nearest_dealer(), ob.locate_the_nearest_dealer().getText()); // only for emulator
+//		} else {
+//			msg(ob.locate_the_nearest_dealer_real(), ob.locate_the_nearest_dealer_real().getText()); // only for real
+//																										// device &
+//																										// pCloudy
+//		}
+//		Thread.sleep(2000);
+//		Custom_click(ob.accept_cookie(), ob.accept_cookie().getText() + " Coockie");
+//	}
+//
+//	@Test(priority = 5)
+//	public void TC022_Select_State_For_Nearest_Dealer() throws InterruptedException {
+//		Custom_click(ob.State(), ob.State().getText());
+//		Thread.sleep(2000);
+//		try {
+//			if (ob.State().isDisplayed()) {
+//				Custom_click(ob.State(), ob.State().getText());
+//			}
+//		} catch (Exception e) {
+//			Message("State is already open");
+//		}
+//
+//		ob.select_state("Bihar");
+//	}
+//
+//	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 6)
+//	public void TC023_Select_City_For_Nearest_Dealer() throws InterruptedException {
+//		Thread.sleep(3000);
+//		Custom_click(ob.City(), ob.City().getText());
+//		ob.select_city("Muzaffarpur");
+//	}
+//
+//	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 7)
+//	public void TC024_Select_Locality_For_Nearest_Dealer() throws InterruptedException {
+//		Thread.sleep(3000);
+//		Custom_click(ob.Locality(), ob.Locality().getText());
+//		ob.select_Locality("Sujawalpur");
+//		Thread.sleep(3000);
+//		Custom_click(ob.Search_button(), ob.Search_button().getText());
+//	}
+//
+//	@Test(dependsOnMethods = "TC022_Select_State_For_Nearest_Dealer()", priority = 8)
+//	public void TC025_Verify_Nearest_Dealer_info() throws InterruptedException {
+//		Thread.sleep(3000);
+//		if (device.equalsIgnoreCase("emulator")) {
+//			msg(ob.Local_dealer_fullname(), ob.Local_dealer_fullname().getText()); // for emulator
+//		} else {
+//			msg(ob.Local_dealer_fullname_real(), ob.Local_dealer_fullname_real().getText()); // for pCloudy and real
+//																								// device
+//		}
+////		Scroll_down_page_Action("View More");
+//		Thread.sleep(1000);
+//		msg(ob.Local_dealer_name(), ob.Local_dealer_name().getText());
+//		if (device.equalsIgnoreCase("emulator")) {
+//			msg(ob.Local_dealer_address(), ob.Local_dealer_address().getText()); // for emulator
+//		} else {
+//			msg(ob.Local_dealer_address_real(), ob.Local_dealer_address_real().getText()); // for pCloudy and real
+//																							// device
+//		}
+//		Custom_click(ob.Back(), "Back from RSA");
+//	}
 
+	
 	@Test(priority = 9)
 	public void TC026_Verify_Technical_Support_Manager() throws InterruptedException {
 		Custom_click(ob.Technical_Support(), "Technical Support");
