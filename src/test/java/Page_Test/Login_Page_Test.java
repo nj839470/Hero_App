@@ -176,7 +176,7 @@ public class Login_Page_Test extends Base_Utility {
 		Thread.sleep(15000);
 		ob.enter_Valid_OTP();
 		Custom_click(ob.verify_button(), "Verify Button");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		// when excute select vehicle page class then need to comment below 7 line.
 		Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
 		Custom_click(ob1.continue_button(), "Continue Button after select vehicle");

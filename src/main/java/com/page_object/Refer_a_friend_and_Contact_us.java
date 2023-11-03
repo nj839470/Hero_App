@@ -52,7 +52,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	}
 
 //************************************	Select_state **********************************
-	@FindBy(xpath = "(//android.widget.TextView[@text])[3]")
+	@FindBy(xpath = "//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/state_sp']")
 	private WebElement Select_state;
 	@FindBy(xpath = "//android.widget.TextView[@text]")
 	private List<WebElement> Select_State_list;
@@ -79,7 +79,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	}
 
 //************************************	Select_City **********************************
-	@FindBy(xpath = "(//android.widget.TextView[@text])[4]")
+	@FindBy(xpath = "//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/city_sp']")
 	private WebElement Select_City;
 
 	public WebElement Select_City() {
@@ -103,7 +103,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	}
 
 //************************************	Select_Model **********************************
-	@FindBy(xpath = "(//android.widget.TextView[@text])[5]")
+	@FindBy(xpath = "//android.widget.Spinner[@resource-id ='com.customerapp.hero:id/spinner_vehicle']")
 	private WebElement Select_Model;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement Submit_button;
@@ -169,7 +169,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private WebElement emailid;
 	@FindBy(xpath = "//android.widget.Button[contains(@text, 'Log')]")
 	private WebElement facebook_login;
-	@FindBy(xpath = "//android.view.View[@content-desc=\"Log in\"]/android.widget.TextView")
+	@FindBy(xpath = "//android.view.View[@content-desc='Log in']/android.widget.TextView")
 	private WebElement instagram_login;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl']")
 	private WebElement contact_via_email;
@@ -200,7 +200,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			header = social_media_header.get(0).getText();
 			Message(Visit_page_text.get(0).getText());
 			Custom_click(visit_Page.get(0), header);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			try {
 			custom_sendkeys(emailid, "Renu@gmail.com", "Email id");
 			Custom_click(facebook_login, header + " Login");

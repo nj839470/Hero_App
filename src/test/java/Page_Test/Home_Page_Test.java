@@ -23,7 +23,7 @@ public class Home_Page_Test extends Base_Utility {
 		ob = new Home_Page();
 //		login = new Login_Page_Test();
 //		login.login();
-		Thread.sleep(5000);
+		Thread.sleep(25000);
 		msg(ob.temperature(), "Current Temperature is =" + ob.temperature().getText());
 		VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
 		Thread.sleep(2000);
@@ -210,8 +210,8 @@ public class Home_Page_Test extends Base_Utility {
 //	}
 
 	
-	@Test(priority = 9)
-	public void TC026_Verify_Technical_Support_Manager() throws InterruptedException {
+	@Test(priority = 7)
+	public void TC024_Verify_Technical_Support_Manager() throws InterruptedException {
 		Custom_click(ob.Technical_Support(), "Technical Support");
 		Thread.sleep(2000);
 		msg(ob.Technical_Support_Manager_Name(),
@@ -223,8 +223,8 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.Back(), "Back from Technical Support Manager");
 	}
 
-	@Test(priority = 10)
-	public void TC027_Verify_Dealer_Locator() throws InterruptedException {
+	@Test(priority = 8)
+	public void TC025_Verify_Dealer_Locator() throws InterruptedException {
 
 		Custom_click(ob.Dealer_Locator(), "Dealer Locator");
 		Thread.sleep(2000);
@@ -232,14 +232,14 @@ public class Home_Page_Test extends Base_Utility {
 		ob.Select_State("BIHAR");
 	}
 
-	@Test(priority = 11)
-	public void TC028_Select_city() {
+	@Test(priority = 9)
+	public void TC026_Select_city() {
 		Custom_click(ob.Select_City(), "Select city");
 		ob.Select_City("BAGAHA");
 	}
 
-	@Test(priority = 12)
-	public void TC029_View_dealer_name_and_address() {
+	@Test(priority = 10)
+	public void TC027_View_dealer_name_and_address() {
 		Custom_click(ob.map_view(), "Map View dealer name and address");
 		ob.Dealer_info();
 		Custom_click(ob.Back(), "Back from Dealer Locator");

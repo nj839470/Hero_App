@@ -112,7 +112,7 @@ public class Base_Utility
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
 			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-			capabilities.setCapability("pCloudy_DurationInMinutes", 90);
+			capabilities.setCapability("pCloudy_DurationInMinutes",120);
 			capabilities.setCapability("newCommandTimeout", 600);
 			capabilities.setCapability("launchTimeout", 90000);
 			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");

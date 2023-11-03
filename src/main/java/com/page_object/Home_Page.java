@@ -465,7 +465,7 @@ public class Home_Page extends Base_Utility {
 	msg(answer, "Answer ="+answer.getText());
 	Custom_click(asked_questions.get(3), "Close question = "+asked_questions.get(3).getText());
 		}catch(Exception e)	{
-			Custom_click(Back(), "Back from Roadside Assistance");
+			Message("No question is available");
 		}
 		
 	}
