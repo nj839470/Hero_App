@@ -134,6 +134,7 @@ public class GoodLife_test extends Base_Utility {
 		scrollByText("Show Less");   // for version 11.0.0
 		}
 		ob.Benefits_message();
+		Scroll_down_page_Action("Benefits and Experiences"); 
 		Custom_click(ob.show_more_Benefits_and_Experiences(), ob.show_more_Benefits_and_Experiences().getText() +" in Benefits & Experiences" );
 		Custom_click(ob.back_button(), " Back from Hero GoodLife ");
 	}

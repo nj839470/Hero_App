@@ -24,6 +24,7 @@ public class Login_Page_Test extends Base_Utility {
 	public Login_page ob;
 	public Select_Vehicle_Page ob1;
 	String device = config_getdata("Platform_name");
+	String version = config_getdata("version");
 	@Test(priority = 0)
 	public void TC001_Verify_Login_with_Invalid_credential() {
 		Message("************************Login page test**************************");
@@ -35,11 +36,15 @@ public class Login_Page_Test extends Base_Utility {
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-//		Custom_click(ob.Allow(), ob.Allow().getText()
-//				+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-		Custom_click(ob.ok(), "OK");
-//		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+		if(version.equalsIgnoreCase("allother")) {
+		Custom_click(ob.Allow(), ob.Allow().getText()
+				+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 		}
+		Custom_click(ob.ok(), "OK");
+		if(version.equalsIgnoreCase("allother")) {
+		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
+		}
+	}
 	 else if (device.equalsIgnoreCase("emulator") || device.equalsIgnoreCase("realdevice")) {
       //	Custom_click(ob.open(), "Open");	//This line for real device
 		    Custom_click(ob.close(), "Close button"); // for emulator and real device

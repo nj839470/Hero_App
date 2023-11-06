@@ -75,7 +75,7 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC020_Verify_Relationship_Manager() throws InterruptedException {
 		Thread.sleep(2000);
 		Custom_click(ob.Relationship_Manager(), "Relationship Manager");
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		try {
 			if (ob.Relationship_Manager_name().getSize() != null) {
 				msg(ob.Relationship_Manager_name(),

@@ -6,15 +6,43 @@
   </listeners>
   <test thread-count="5" name="All test class(failed)">
     <classes>
+      <class name="Page_Test.GoodLife_test">
+        <methods>
+          <include name="TC103_verify_Benefits_and_Experiences"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+        </methods>
+      </class> <!-- Page_Test.GoodLife_test -->
       <class name="Page_Test.Refer_a_friend_and_Contact_us_test">
         <methods>
-          <include name="TC049_Verify_youTube_in_Contact_us_page"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="TC046_Verify_Facebook_in_Contact_us_page"/>
           <include name="TC047_Verify_instagram_in_Contact_us_page"/>
           <include name="TC048_Verify_Whatsapp_in_Contact_us_page"/>
         </methods>
       </class> <!-- Page_Test.Refer_a_friend_and_Contact_us_test -->
+      <class name="Page_Test.Vehicle_Details_test">
+        <methods>
+          <include name="TC040_Verify_Tips_and_DIY_videos_inside_sideMenu"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+        </methods>
+      </class> <!-- Page_Test.Vehicle_Details_test -->
+      <class name="Page_Test.Home_Page_Test">
+        <methods>
+          <include name="TC024_Verify_Technical_Support_Manager"/>
+          <include name="TC021_Verify_RSA"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+        </methods>
+      </class> <!-- Page_Test.Home_Page_Test -->
+      <class name="Page_Test.Feedback_and_About_Hero_test">
+        <methods>
+          <include name="TC061_Select_Model_in_Vehicle_Details_in_Wheels_of_trust"/>
+          <include name="TC059_Chose_city_in_Vehicle_Details_in_Wheels_of_trust"/>
+          <include name="TC064_Verify_Your_Details_Through_OTP_in_Wheels_of_trust"/>
+          <include name="TC062_Verify_Vehicle_Condition_in_Wheels_of_trust"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC063_Verify_Your_Details_Through_WhatsApp_in_Wheels_of_trust"/>
+        </methods>
+      </class> <!-- Page_Test.Feedback_and_About_Hero_test -->
     </classes>
   </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

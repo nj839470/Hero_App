@@ -94,7 +94,10 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		try {
 		Custom_click(ob.Contact_us(), ob.Contact_us().getText());
-		}catch(Exception e) {Custom_click(ob.side_menu_button(), "Side menu button"); }
+		}catch(Exception e) {
+			Custom_click(ob.side_menu_button(), "Side menu button"); 
+			Custom_click(ob.Contact_us(), ob.Contact_us().getText());
+		}
 		ob.facebook();
 		}
 	@Test(priority = 6)
