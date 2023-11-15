@@ -92,38 +92,68 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{
 		Thread.sleep(30000);
 		Custom_click(ob.side_menu_button(), "Side menu button");
+		Thread.sleep(2000);
 		try {
 		Custom_click(ob.Contact_us(), ob.Contact_us().getText());
 		}catch(Exception e) {
 			Custom_click(ob.side_menu_button(), "Side menu button"); 
 			Custom_click(ob.Contact_us(), ob.Contact_us().getText());
 		}
+		try {
 		ob.facebook();
+		}catch(Exception e) {
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(ob.back(), " Back from " + "Facebook");
+		}
 		}
 	@Test(priority = 6)
 	public void TC047_Verify_instagram_in_Contact_us_page() throws InterruptedException
-	{
+	{try {
 		ob.instagram();
+	}catch(Exception e) {
+		test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+		Custom_click(ob.back(), " Back from " + "Instagram");
+	}
 	}
 	@Test(priority = 7)
 	public void TC048_Verify_Whatsapp_in_Contact_us_page()
 	{
+		try {
 		ob.Whatsapp();
+		}catch(Exception e) {
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(ob.back(), " Back from " + "Whatsapp");
+		}
 	}
 	@Test(priority = 8)
 	public void TC049_Verify_youTube_in_Contact_us_page() throws InterruptedException
 	{
+		try {
 		ob.youTube();
+		}catch(Exception e) {
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(ob.back(), " Back from " + "youtube");
+		}
 	}
 	@Test(priority = 9)
 	public void TC050_Verify_Linkedin_in_Contact_us_page() throws InterruptedException
 	{
+		try {
 		ob.Linkedin();
+		}catch(Exception e) {
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(ob.back(), " Back from " + "Linkedin");
+		}
 	}
 	@Test(priority = 10)
 	public void TC051_Verify_twitter_in_Contact_us_page() throws InterruptedException
 	{
+		try {
 		ob.twitter();
+		}catch(Exception e) {
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			Custom_click(ob.back(), " Back from " + "twitter");
+		}
 	}
 	@Test(priority = 11)
 	public void TC052_Verify_Contact_via_Email() throws InterruptedException

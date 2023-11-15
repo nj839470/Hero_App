@@ -74,13 +74,14 @@ public class Feedback_and_About_Hero_test extends Base_Utility {
 		Custom_click(ob.wheels_of_trust(), "Wheels of trust");
 		Thread.sleep(5000);
 		try {
-			if(ob.Language_select().isDisplayed()) {
 			Custom_click(ob.Language_select(), "English language");
 			Thread.sleep(2000);
 			msg(ob.cookieNotice(),ob.cookieNotice().getText());
-			Custom_click(ob.Accept_cookie(), ob.Accept_cookie().getText()); }
+			Custom_click(ob.Accept_cookie(), ob.Accept_cookie().getText());
 		} catch (Exception e) {
 			Message("Language poup is not populate");
+			msg(ob.cookieNotice(),ob.cookieNotice().getText());
+			Custom_click(ob.Accept_cookie(), ob.Accept_cookie().getText());
 		}
 		Custom_click(ob.Vehicle_Details(), ob.Vehicle_Details().getText());
 		Custom_click(ob.State(), ob.State().getText());

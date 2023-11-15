@@ -72,14 +72,14 @@ public class Safety_Measures_and_Symbols_Glossary extends Base_Utility{
 			}
 			else
 			{
-				if(j==5)
+				if(j==4)
 				{
 					Message("Destination Reached not able to find");
 					break;
 				}
 			Scroll_down_page_Action(name);
 			j++;
-			i=15;
+			i=17;
 			}
 		}
 		}

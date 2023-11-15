@@ -256,7 +256,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	        header = social_media_header.get(3).getText();
 			Message(Visit_page_text.get(3).getText());
 			Custom_click(visit_Page.get(2), header);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			try {
 			Message("Total subscribers count =" + subscribers_count.getText());
 			Custom_click(back, " Back from " + header);
@@ -280,7 +280,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Message(Visit_page_text.get(4).getText());            // for all other device.
 			Custom_click(visit_Page.get(3), header);      // for all other device.
 			}
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			Custom_click(Close_linkedin_pop_message, "Close linkedin pop message");
 			try {
 				Custom_click(Linkedin_Join_now, header + " " + Linkedin_Join_now.getText());
