@@ -161,7 +161,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	private List<WebElement> social_media_header;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/whatsapp_visit_page']")
 	private WebElement whatsapp_visit_page;
-	@FindBy(xpath ="//android.widget.ImageView[@resource-id ='com.whatsapp:id/whatsapp_toolbar_home']")
+	@FindBy(xpath ="//android.widget.Button[@resource-id ='com.whatsapp:id/whatsapp_toolbar_home']")
 	private WebElement whatsapp_back;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id ='com.customerapp.hero:id/fb_text']")
 	private List<WebElement> Visit_page_text;
@@ -242,7 +242,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 				} 
 			} catch (Exception e) {
 				Message("WhatsApp on your device is available");
-				Custom_click(whatsapp_back, " whatsapp back button");
+//				Custom_click(whatsapp_back, " whatsapp back button");
+				driver.navigate().back();
 				driver.navigate().back();
 			} 
 		} catch (Exception e) {
@@ -253,7 +254,7 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 	}
 
 	public void youTube() throws InterruptedException {
-	        header = social_media_header.get(3).getText();
+			header = social_media_header.get(3).getText();
 			Message(Visit_page_text.get(3).getText());
 			Custom_click(visit_Page.get(2), header);
 			Thread.sleep(4000);
@@ -313,8 +314,8 @@ public class Refer_a_friend_and_Contact_us extends Base_Utility {
 			Custom_click(visit_Page.get(4), header);     // for all other device.
 			}
 			Thread.sleep(7000);
-			Message(" Total Followers = " +Twiter_Followers.getText());
-			Custom_click(Twiter_Follow, Twiter_Follow.getText());
+//			Message(" Total Followers = " +Twiter_Followers.getText());
+//			Custom_click(Twiter_Follow, Twiter_Follow.getText());
 			Custom_click(back, " Back from " + header);
 		} catch (Exception e) {
 			Message("twitter is not visible" + e);

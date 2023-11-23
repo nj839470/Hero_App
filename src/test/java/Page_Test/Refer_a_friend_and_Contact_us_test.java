@@ -102,8 +102,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.facebook();
 		}catch(Exception e) {
-			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 			Custom_click(ob.back(), " Back from " + "Facebook");
+			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 		}
 		}
 	@Test(priority = 6)
@@ -111,8 +111,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	{try {
 		ob.instagram();
 	}catch(Exception e) {
-		test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 		Custom_click(ob.back(), " Back from " + "Instagram");
+		test.addScreenCaptureFromPath(lis.getcapcture("Instagram"));
 	}
 	}
 	@Test(priority = 7)
@@ -121,8 +121,10 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.Whatsapp();
 		}catch(Exception e) {
-			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
+			try {
 			Custom_click(ob.back(), " Back from " + "Whatsapp");
+			} catch (Exception k) {driver.navigate().back();}
+			test.addScreenCaptureFromPath(lis.getcapcture("Whatsapp"));
 		}
 	}
 	@Test(priority = 8)
@@ -131,8 +133,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.youTube();
 		}catch(Exception e) {
-			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 			Custom_click(ob.back(), " Back from " + "youtube");
+			test.addScreenCaptureFromPath(lis.getcapcture("youtube"));
 		}
 	}
 	@Test(priority = 9)
@@ -141,8 +143,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.Linkedin();
 		}catch(Exception e) {
-			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 			Custom_click(ob.back(), " Back from " + "Linkedin");
+			test.addScreenCaptureFromPath(lis.getcapcture("Linkedin"));
 		}
 	}
 	@Test(priority = 10)
@@ -151,8 +153,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.twitter();
 		}catch(Exception e) {
-			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 			Custom_click(ob.back(), " Back from " + "twitter");
+			test.addScreenCaptureFromPath(lis.getcapcture("twitter"));
 		}
 	}
 	@Test(priority = 11)
