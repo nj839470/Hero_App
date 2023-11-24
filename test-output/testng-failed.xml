@@ -4,18 +4,28 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Select_Vehicle_Page(failed)">
+  <test thread-count="5" name="All test class(failed)">
     <classes>
-      <class name="Page_Test.Select_Vehicle_Page_Test">
+      <class name="Page_Test.E_Shop_test">
         <methods>
-          <include name="TC014_Verify_With_31_letter_nick_name"/>
-          <include name="TC016_Select_Vehicle"/>
-          <include name="TC012_verify_Nick_Name"/>
-          <include name="TC013_Verify_With_30_letter_nick_name"/>
+          <include name="TC104_registered_customers"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC015_Verify_With_29_letter_nick_name"/>
         </methods>
-      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
+      </class> <!-- Page_Test.E_Shop_test -->
+      <class name="Page_Test.GoodLife_test">
+        <methods>
+          <include name="TC103_verify_Benefits_and_Experiences"/>
+          <include name="TC095_Verify_Earning_History_in_Pro_Membership"/>
+          <include name="TC097_Verify_Complete_profile"/>
+          <include name="TC098_Verify_Welcome_Rewards"/>
+          <include name="TC099_Verify_refer_friend_in_Goodlife"/>
+          <include name="TC096_Verify_Redemption_History_in_Pro_Membership"/>
+          <include name="TC102_verify_Service_Privilegers"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC101_verify_Points_Earning_and_Redemption"/>
+          <include name="TC100_verify_Winner_informaton"/>
+        </methods>
+      </class> <!-- Page_Test.GoodLife_test -->
     </classes>
-  </test> <!-- Select_Vehicle_Page(failed) -->
+  </test> <!-- All test class(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

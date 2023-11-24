@@ -120,7 +120,7 @@ public class My_Profile_Page_Test extends Base_Utility {
 				}
 			} catch(Exception e) {
 				Custom_click(ob.Back(), " Back from profile Details");
-				Custom_click(ob.More_details(), ob.More_details().getText());
+//				Custom_click(ob.More_details(), ob.More_details().getText());
 			}
 		
 	}

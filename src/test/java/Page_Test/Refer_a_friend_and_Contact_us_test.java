@@ -15,6 +15,7 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 	public Refer_a_friend_and_Contact_us ob;
 	public Login_Page_Test login;
 	String device = config_getdata("Platform_name");
+	String enveronment = config_getdata("env"),mobileno;
 	@Test(priority = 0)
 	public void TC041_Refer_a_friend() throws InterruptedException
 	{
@@ -67,8 +68,15 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		Custom_click(ob.side_menu_button(), "Side menu button");
 		Custom_click(ob.refer_friend(), ob.refer_friend().getText()); 
 		Custom_click(ob.Refer_yourself(), ob.Refer_yourself().getText());
-		assertEquals(config_getdata("mobileno"), ob.friend_mob_no().getText());
-		if(config_getdata("mobileno").equalsIgnoreCase(ob.friend_mob_no().getText()))
+		Custom_click(ob.Select_state(), ob.Select_state().getText());
+		ob.Select_State_in_refer_yourself();
+		Custom_click(ob.Select_City(), ob.Select_City().getText());
+		ob.Select_City_in_refer_yourself();
+		if(enveronment.equalsIgnoreCase("prod"))
+		{  mobileno = config_getdata("prod_mobileno"); }
+		else {  mobileno = config_getdata("Stage_mobileno"); }
+		assertEquals(mobileno , ob.friend_mob_no().getText());
+		if(mobileno.equalsIgnoreCase(ob.friend_mob_no().getText()))
 		{
 			Message("Information matched as per registered account by mobile number");
 			Custom_click(ob.Select_Model(), ob.Select_Model().getText());
@@ -102,7 +110,8 @@ public class Refer_a_friend_and_Contact_us_test extends Base_Utility {
 		try {
 		ob.facebook();
 		}catch(Exception e) {
-			Custom_click(ob.back(), " Back from " + "Facebook");
+			driver.navigate().back();
+			Thread.sleep(3000);
 			test.addScreenCaptureFromPath(lis.getcapcture("facebook"));
 		}
 		}

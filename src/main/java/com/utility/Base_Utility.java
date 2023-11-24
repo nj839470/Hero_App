@@ -461,7 +461,7 @@ public class Base_Utility
 		try {
 			if(ele.isDisplayed())
 			{
-				wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 				wait.until(ExpectedConditions.visibilityOf(ele));
 			test.log(Status.PASS, filedname);
 			log.info(filedname);
