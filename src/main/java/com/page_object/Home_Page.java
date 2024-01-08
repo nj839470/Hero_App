@@ -203,6 +203,20 @@ public class Home_Page extends Base_Utility {
 //****************************Documents Page************************************
 	@FindBy(xpath = "(//android.view.ViewGroup[@resource-id ='com.customerapp.hero:id/root'])[4]")
 	private WebElement Documents_Menu;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/doc_name'])[1]")
+	private WebElement document_name1;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/doc_name'])[2]")
+	private WebElement document_name2;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/doc_name'])[3]")
+	private WebElement document_name3;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[1]")
+	private WebElement RC_Status;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[2]")
+	private WebElement Insurance_Status;
+	@FindBy(xpath ="(//android.widget.TextView[@resource-id ='com.customerapp.hero:id/btn_lbl'])[3]")
+	private WebElement PUC_Status;
+	@FindBy(xpath= "//android.widget.ImageView[@resource-id ='com.customerapp.hero:id/icon2']")
+	private WebElement Document_sideicon;
 	@FindBy(xpath = "//android.widget.TextView[@text ]")
 	private List<WebElement> Documents_list;
 	@FindBy(xpath = "//android.widget.TextView[@text ='Add now']")
@@ -298,6 +312,7 @@ public class Home_Page extends Base_Utility {
 				Message(name + " is already available");
 				Custom_click(Documents_list.get(i), name +" "+ Documents_list.get(i).getText());
 				Thread.sleep(3000);
+				Custom_click(Document_sideicon, "Document sideicon");
 				Custom_click(Back, "Back from " +name + " page");
 			}
 		}

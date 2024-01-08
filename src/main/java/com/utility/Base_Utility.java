@@ -55,7 +55,7 @@ public class Base_Utility
 	String excelpath = System.getProperty("user.dir") + "\\Data\\data1.xlsx";
 	public static AndroidDriver driver;
 	String enveronment = config_getdata("env");
-	
+
 	@BeforeTest
 
 	// ******************Automatic server start code ************************
@@ -91,110 +91,82 @@ public class Base_Utility
 	// ******************Automatic server end code ************************
 	public void OPEN_AND_INSTALL_APP() {
 		String Device_name = config_getdata("Platform_name");
-		if(Device_name.equalsIgnoreCase("emulator")) {
-		try {
-			//  DesiredCapabilities db = new DesiredCapabilities();
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "Pixel_6_API_31");
-			db.setCapability("appium:udid", "emulator-5554");
-			db.setCapability("appium:avdLaunchTimeout", 900000);
-			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 9600);
-			log = LogManager.getLogger("Hero_App");
-			lis = new listner();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-		else if(Device_name.equalsIgnoreCase("pcloudy")) {
-     try {
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-			capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-			capabilities.setCapability("pCloudy_DurationInMinutes",120);
-			capabilities.setCapability("newCommandTimeout", 600);
-			capabilities.setCapability("launchTimeout", 90000);
-			capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-			capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-			capabilities.setCapability("platformVersion", "13.0.0");
-			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("automationName", "uiautomator2");
-			if(enveronment.equalsIgnoreCase("prod")) {
-			capabilities.setCapability("pCloudy_ApplicationName", "app-release-prod-r8-21nov.apk");
+		if (Device_name.equalsIgnoreCase("emulator")) {
+			try {
+				// DesiredCapabilities db = new DesiredCapabilities();
+				UiAutomator2Options db = new UiAutomator2Options();
+				db.setCapability("appium:automationName", "uiautomator2");
+				db.setCapability("platformName", "Android");
+				db.setCapability("appium:deviceName", "Pixel_6_API_31");
+				db.setCapability("appium:udid", "emulator-5554");
+				db.setCapability("appium:avdLaunchTimeout", 900000);
+				db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug.apk"));
+				driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+				db.setCapability("appium:ensureWebviewsHavePages", true);
+				db.setCapability("appium:nativeWebScreenshot", true);
+				db.setCapability("appium:newCommandTimeout", 9600);
+				log = LogManager.getLogger("Hero_App");
+				lis = new listner();
+			} catch (Exception e) {
+				System.out.println(e);
 			}
-			else {
-				capabilities.setCapability("pCloudy_ApplicationName", "app-debug_9.apk");	
+		} else if (Device_name.equalsIgnoreCase("pcloudy")) {
+			try {
+				DesiredCapabilities capabilities = new DesiredCapabilities();
+				capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+				capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+				capabilities.setCapability("pCloudy_DurationInMinutes", 120);
+				capabilities.setCapability("newCommandTimeout", 600);
+				capabilities.setCapability("launchTimeout", 90000);
+				capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+				capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+				capabilities.setCapability("platformVersion", "13.0.0");
+				capabilities.setCapability("platformName", "Android");
+				capabilities.setCapability("automationName", "uiautomator2");
+				if (enveronment.equalsIgnoreCase("prod")) {
+					capabilities.setCapability("pCloudy_ApplicationName", "app-release-prod-r8-21nov.apk");
+				} else {
+					capabilities.setCapability("pCloudy_ApplicationName", "app-debug_9.apk");
+				}
+				capabilities.setCapability("appPackage", "com.customerapp.hero");
+				capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+				capabilities.setCapability("pCloudy_WildNet", "false");
+				capabilities.setCapability("pCloudy_EnableVideo", "true");
+				capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
+				capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+				capabilities.setCapability("appiumVersion", "2.0.0");
+				driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				log = LogManager.getLogger("Hero_App");
+			} catch (Exception e) {
+				System.out.println(e);
 			}
-			capabilities.setCapability("appPackage", "com.customerapp.hero");
-			capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-			capabilities.setCapability("pCloudy_WildNet", "false");
-			capabilities.setCapability("pCloudy_EnableVideo", "true");
-			capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
-			capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
-			capabilities.setCapability("appiumVersion", "2.0.0");
-			 driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			 log = LogManager.getLogger("Hero_App");
-			 
-//    	 DesiredCapabilities capabilities = new DesiredCapabilities();
-//    	 capabilities.setCapability("appium:newCommandTimeout", 600);
-//    	 capabilities.setCapability("appium:launchTimeout", 90000);
-//    	 capabilities.setCapability("appium:platformVersion", "13.0.0");
-//    	 capabilities.setCapability("appium:platformName", "Android");
-//    	 capabilities.setCapability("appium:automationName", "uiautomator2");
-//    	 capabilities.setCapability("appium:appPackage", "com.customerapp.hero");
-//    	 capabilities.setCapability("appium:appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-//    	 HashMap<String, Object> pcloudyOptions = new HashMap<String, Object>();
-//    	 pcloudyOptions.put("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-//    	 pcloudyOptions.put("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-//    	 pcloudyOptions.put("pCloudy_DurationInMinutes", 120);
-//    	 pcloudyOptions.put("pCloudy_DeviceManufacturer", "GOOGLE");
-//    	 pcloudyOptions.put("pCloudy_DeviceVersion", "13.0.0");
-//    	 pcloudyOptions.put("pCloudy_ApplicationName", "app-debug.apk");
-//    	 pcloudyOptions.put("pCloudy_WildNet", "false");
-//    	 pcloudyOptions.put("pCloudy_EnableVideo", "true");
-//    	 pcloudyOptions.put("pCloudy_EnablePerformanceData", "true");
-//    	 pcloudyOptions.put("pCloudy_EnableDeviceLogs", "true");
-//    	 pcloudyOptions.put("appiumVersion", "2.0.0");
-//    	 capabilities.setCapability("pcloudy:options", pcloudyOptions);
-//    	 driver = new AndroidDriver(new URL("https://ind-west.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-//    		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//			 log = LogManager.getLogger("Hero_App");
-
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-		}
-	else if(Device_name.equalsIgnoreCase("realdevice")) {
-		try {
-			UiAutomator2Options db = new UiAutomator2Options();
-			db.setCapability("appium:automationName", "uiautomator2");
-			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "realme C33 2023");
-			db.setCapability("appium:udid", "192.168.1.2:5555"); //3323262910AA04DS //192.168.1.2:5555
-			db.setCapability("appium:avdLaunchTimeout", 600000);
-			db.setCapability("appPackage", "com.customerapp.hero");
-			db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
-			db.setCapability("appium:noReset", "false");
+		} else if (Device_name.equalsIgnoreCase("realdevice")) {
+			try {
+				UiAutomator2Options db = new UiAutomator2Options();
+				db.setCapability("appium:automationName", "uiautomator2");
+				db.setCapability("platformName", "Android");
+				db.setCapability("appium:deviceName", "realme C33 2023");
+				db.setCapability("appium:udid", "3323262910AA04DS"); // 3323262910AA04DS //192.168.1.2:5555
+				db.setCapability("appium:avdLaunchTimeout", 600000);
+				db.setCapability("appPackage", "com.customerapp.hero");
+				db.setCapability("appActivity", "com.customerapp.hero.views.activity.HmcDashboard");
+				db.setCapability("appium:noReset", "false");
 //			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug-connected.apk"));
-			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-			db.setCapability("appium:ensureWebviewsHavePages", true);
-			db.setCapability("appium:nativeWebScreenshot", true);
-			db.setCapability("appium:newCommandTimeout", 6600);
-			log = LogManager.getLogger("Hero_App");
-			lis = new listner();
-		} catch (Exception e) {
-			System.out.println(e);
+				driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+				db.setCapability("appium:ensureWebviewsHavePages", true);
+				db.setCapability("appium:nativeWebScreenshot", true);
+				db.setCapability("appium:newCommandTimeout", 6600);
+				log = LogManager.getLogger("Hero_App");
+				lis = new listner();
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 		}
 	}
-	}
+
 	@Override
 	public String config_getdata(String key) {
 		String value = "";
@@ -275,7 +247,7 @@ public class Base_Utility
 	@Override
 	public ExtentReports getreports() {
 		String currenttime = new SimpleDateFormat("dd.MM.YYYY.HH.mm.ss").format(new Date());
-		String path = System.getProperty("user.dir") + "\\Report\\Test-Report -"+currenttime +".html";
+		String path = System.getProperty("user.dir") + "\\Report\\Test-Report -" + currenttime + ".html";
 		report = new ExtentSparkReporter(path);
 		report.config().setDocumentTitle("Hero_App Test Report");
 		report.config().setReportName("Hero_App");
@@ -323,54 +295,58 @@ public class Base_Utility
 			test.log(Status.FAIL, fieldname + "==Unable To Click ==" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error(fieldname + " is not clickable");
-			
+
 		}
 	}
 
 //======================================================================================================================================================	    
 	@SuppressWarnings({ "deprecation", "rawtypes" })
-	public static void Scroll_down_page_Action(String fieldname) {  	
-		    try {
-		    	Dimension dim = driver.manage().window().getSize();	
+	public static void Scroll_down_page_Action(String fieldname) {
+		try {
+			Dimension dim = driver.manage().window().getSize();
 //		    	System.out.println(dim);
-		    	int startx = (int)(dim.width/2);
-		    	int starty = (int)(dim.height/2);	    	
-		    	int endx   =  (int)(dim.width/2);  	
-		    	int endy   = (int)(dim.height*0.25);
-				TouchAction action = new TouchAction(driver);
-		    	for(int i=0;i<=1;i++) {
-		    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(10))).moveTo(PointOption.point(endx ,endy))
-		    		.release().perform();
-		    	}
-		    	test.log(Status.PASS, "Successfully Scroll page Action =="+ fieldname);
-		    	log.info("Successfully  Scroll page down Action "+fieldname);
-		    	
-		    }catch(Exception e) {		    	
-			test.log(Status.FAIL,fieldname+ "Unable To Scroll page Action =="+e);
+			int startx = (int) (dim.width / 2);
+			int starty = (int) (dim.height / 2);
+			int endx = (int) (dim.width / 2);
+			int endy = (int) (dim.height * 0.25);
+			TouchAction action = new TouchAction(driver);
+			for (int i = 0; i <= 1; i++) {
+				action.press(PointOption.point(startx, starty))
+						.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(10)))
+						.moveTo(PointOption.point(endx, endy)).release().perform();
+			}
+			test.log(Status.PASS, "Successfully Scroll page Action ==" + fieldname);
+			log.info("Successfully  Scroll page down Action " + fieldname);
+
+		} catch (Exception e) {
+			test.log(Status.FAIL, fieldname + "Unable To Scroll page Action ==" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
-		    	log.error("==NOT==Unable To Scroll page down Action "+fieldname);
-			}	    
-	    }
-	//======================================================================================================================================================	    
-	   @SuppressWarnings({ "deprecation", "rawtypes" })
-		public static void Scroll_UP_page_Action(String fieldname) {  	
-		    try {
-		    	Dimension dim = driver.manage().window().getSize();	    	
-		    	int startx = (int) (dim.width/2);
-		    	int starty = (int) (dim.height/2);	    	
-		    	int endx   =  (int) (dim.width*0);  	
-		    	int endy   = (int) (dim.height*0);
-		    	TouchAction action = new TouchAction(driver);
-		    	for(int i=0;i<=1;i++) {
-		    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
-		    		.release().perform();
-		    	}
-		    			log.info("Successfully  Scroll up page Action "+fieldname);
-		    	
-		    }catch(Exception e) {		    	
-						log.error("==NOT==Unable To Scroll up page Action "+fieldname);
-			}	    
-	    }
+			log.error("==NOT==Unable To Scroll page down Action " + fieldname);
+		}
+	}
+
+	// ======================================================================================================================================================
+	@SuppressWarnings({ "deprecation", "rawtypes" })
+	public static void Scroll_UP_page_Action(String fieldname) {
+		try {
+			Dimension dim = driver.manage().window().getSize();
+			int startx = (int) (dim.width / 2);
+			int starty = (int) (dim.height / 2);
+			int endx = (int) (dim.width * 0);
+			int endy = (int) (dim.height * 0);
+			TouchAction action = new TouchAction(driver);
+			for (int i = 0; i <= 1; i++) {
+				action.press(PointOption.point(startx, starty))
+						.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+						.moveTo(PointOption.point(endx, endy)).release().perform();
+			}
+			log.info("Successfully  Scroll up page Action " + fieldname);
+
+		} catch (Exception e) {
+			log.error("==NOT==Unable To Scroll up page Action " + fieldname);
+		}
+	}
+
 //======================================================================================================================================================
 	@SuppressWarnings({ "rawtypes", "deprecation" })
 	public void swipe_page_direction(int startx, int starty, int endx, int endy, String fieldname) {
@@ -379,23 +355,27 @@ public class Base_Utility
 			action.press(PointOption.point(startx, starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
 					.moveTo(PointOption.point(endx, endy)).release().perform();
 			log.info("Successfully  Swipe page direction Action " + fieldname);
-			test.log(Status.PASS, "Successfully  Swipe page direction Action = "+ fieldname);
+			test.log(Status.PASS, "Successfully  Swipe page direction Action = " + fieldname);
 		} catch (Exception e) {
 			log.error("==NOT==Unable To Swipe page direction Action " + fieldname);
-			test.log(Status.FAIL,fieldname+ "Unable To Swipe page direction Action " + fieldname +e);
+			test.log(Status.FAIL, fieldname + "Unable To Swipe page direction Action " + fieldname + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 		}
 	}
-	//======================================================================================================================================================	    
+
+	// ======================================================================================================================================================
 	public void scrollByText(String menuText) {
 
-        try {
+		try {
 
-             driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
-        } catch (Exception e) {
-           e.printStackTrace();
-        }
+			driver.findElement(MobileBy.AndroidUIAutomator(
+					"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\""
+							+ menuText + "\").instance(0));"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void VerifyImagePresent(WebElement image, String fieldname) {
@@ -410,14 +390,13 @@ public class Base_Utility
 				test.log(Status.FAIL, fieldname + "==Image is not present ==");
 				test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 				log.error("Image is not present" + fieldname);
-				
 
 			}
 		} catch (Exception e) {
 			test.log(Status.FAIL, fieldname + "==Image is not present ==" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
 			log.error("Image is not present" + fieldname);
-			
+
 		}
 	}
 
@@ -433,7 +412,7 @@ public class Base_Utility
 		} catch (Exception e) {
 			test.log(Status.FAIL, "==page is not loaded :" + e);
 			log.error("page is not able to loaded " + Title);
-		
+
 		}
 	}
 
@@ -457,19 +436,18 @@ public class Base_Utility
 	}
 
 	@Override
-	public void msg(WebElement ele , String filedname) {
+	public void msg(WebElement ele, String filedname) {
 		try {
-			if(ele.isDisplayed())
-			{
+			if (ele.isDisplayed()) {
 				wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 				wait.until(ExpectedConditions.visibilityOf(ele));
-			test.log(Status.PASS, filedname);
-			log.info(filedname);
+				test.log(Status.PASS, filedname);
+				log.info(filedname);
 			}
 		} catch (Exception e) {
-			test.log(Status.FAIL, filedname +" is not readable" +e);
+			test.log(Status.FAIL, filedname + " is not readable" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(filedname));
-			log.error(filedname+" is not readable" +e);
+			log.error(filedname + " is not readable" + e);
 		}
 
 	}
@@ -478,5 +456,5 @@ public class Base_Utility
 	public void Message(String message) {
 		test.log(Status.PASS, message);
 		log.info(message);
-		}
+	}
 }

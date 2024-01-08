@@ -31,22 +31,21 @@ public class Login_Page_Test extends Base_Utility {
 		Message("************************Login page test**************************");
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
-		if (device.equalsIgnoreCase("pcloudy")) {
+		if (device.equalsIgnoreCase("pcloudy")|| device.equalsIgnoreCase("realdevice")) {
 		Custom_click(ob1.While_using_the_app(), "While using the app");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
 		Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-		if(version.equalsIgnoreCase("allother")) {
 		Custom_click(ob.Allow(), ob.Allow().getText()
 				+ " Hero App to find, connect to, and determine the relative position of nearby devices");
-		}
 		Custom_click(ob.ok(), "OK");
 		if(version.equalsIgnoreCase("allother")) {
 		Custom_click(ob.Allow(), "Allow notification");  //this line is for pcloudy	
 		}
+		  Custom_click(ob.close(), "Close button");
 	}
-	 else if (device.equalsIgnoreCase("emulator") || device.equalsIgnoreCase("realdevice")) {
+	 else if (device.equalsIgnoreCase("emulator")) {
       //	Custom_click(ob.open(), "Open");	//This line for real device
 		    Custom_click(ob.close(), "Close button"); // for emulator and real device
 	     }
@@ -183,18 +182,21 @@ public class Login_Page_Test extends Base_Utility {
 	public void login() throws InterruptedException {
 		ob = new Login_page();
 		ob1 = new Select_Vehicle_Page();
-		if (device.equalsIgnoreCase("pcloudy")) {
+		if (device.equalsIgnoreCase("pcloudy")|| device.equalsIgnoreCase("realdevice")) {
 			Custom_click(ob1.While_using_the_app(), "While using the app");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your phone call logs");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to access your contacts");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to make and manage phone calls");
 			Custom_click(ob.Allow(), ob.Allow().getText() + " Hero App to send and view SMS messages");
-			Custom_click(ob.Allow(), ob.Allow().getText()   //this line is all other version except 11.0.0
+			Custom_click(ob.Allow(), ob.Allow().getText()   
 					+ " Hero App to find, connect to, and determine the relative position of nearby devices");
 			Custom_click(ob.ok(), "OK");
-			Custom_click(ob.Allow(), "Allow notification");  //this line is all other version except 11.0.0
-		} else if (device.equalsIgnoreCase("emulator") || device.equalsIgnoreCase("realdevice")) {
-//			Custom_click(ob.open(), "Open"); 	// this line for real device
+//			Custom_click(ob.Allow(), "Allow notification");  //this line is all other version except 11.0.0
+			if(device.equalsIgnoreCase("realdevice")) {
+				Custom_click(ob.close(), "Close button");
+			}
+		} else if (device.equalsIgnoreCase("emulator")) {
+			Custom_click(ob.open(), "Open"); 	// this line for real device
 			Custom_click(ob.close(), "Close button");
 		}
 		if(enveronment.equalsIgnoreCase("prod")) {
